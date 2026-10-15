@@ -1,0 +1,27 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "sections": [
+    {
+      "slug": "3-2",
+      "section": "3.2",
+      "title": "余式定理",
+      "en": {
+        "title": "The Remainder Theorem",
+        "chapter": "Unit 1 · Chapter 3 Polynomial Functions"
+      },
+      "counts": {
+        "concepts": 7,
+        "examples": 4,
+        "practice": 12,
+        "exercises": 20
+      },
+      "chapter": "Unit 1 · 第 3 章 多项式函数"
+    }
+  ]
+}

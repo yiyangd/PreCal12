@@ -1,0 +1,1066 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "source": {
+    "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+    "kind": "pdf",
+    "titlePages": [
+      1,
+      2
+    ],
+    "contentsPdfPages": [
+      5,
+      6
+    ],
+    "contentsPrintedPages": [
+      "iv",
+      "v"
+    ],
+    "reviewed": true,
+    "note": "English titles and page references transcribed from and visually checked against the original contents. Chinese titles are matching translations. Numbered sections, chapter reviews/tests, and unit wrap-up/review/test entries are all preserved."
+  },
+  "units": [
+    {
+      "number": 1,
+      "title": "变换与函数",
+      "en": {
+        "title": "Transformations and Functions"
+      },
+      "printedPage": 2,
+      "pdfPage": 11,
+      "chapters": [
+        {
+          "number": 1,
+          "title": "函数变换",
+          "en": {
+            "title": "Function Transformations"
+          },
+          "printedPage": 4,
+          "pdfPage": 13,
+          "sections": [
+            {
+              "section": "1.1",
+              "slug": "1-1",
+              "title": "水平与竖直平移",
+              "en": {
+                "title": "Horizontal and Vertical Translations"
+              },
+              "printedPage": 6,
+              "pdfPage": 15,
+              "status": "planned"
+            },
+            {
+              "section": "1.2",
+              "slug": "1-2",
+              "title": "反射与伸缩",
+              "en": {
+                "title": "Reflections and Stretches"
+              },
+              "printedPage": 16,
+              "pdfPage": 25,
+              "status": "planned"
+            },
+            {
+              "section": "1.3",
+              "slug": "1-3",
+              "title": "组合变换",
+              "en": {
+                "title": "Combining Transformations"
+              },
+              "printedPage": 32,
+              "pdfPage": 41,
+              "status": "planned"
+            },
+            {
+              "section": "1.4",
+              "slug": "1-4",
+              "title": "关系的逆",
+              "en": {
+                "title": "Inverse of a Relation"
+              },
+              "printedPage": 44,
+              "pdfPage": 53,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 1 章复习",
+              "en": {
+                "title": "Chapter 1 Review"
+              },
+              "printedPage": 56,
+              "pdfPage": 65,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 1 章练习测试",
+              "en": {
+                "title": "Chapter 1 Practice Test"
+              },
+              "printedPage": 58,
+              "pdfPage": 67,
+              "status": "planned"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "根式函数",
+          "en": {
+            "title": "Radical Functions"
+          },
+          "printedPage": 60,
+          "pdfPage": 69,
+          "sections": [
+            {
+              "section": "2.1",
+              "slug": "2-1",
+              "title": "根式函数及其变换",
+              "en": {
+                "title": "Radical Functions and Transformations"
+              },
+              "printedPage": 62,
+              "pdfPage": 71,
+              "status": "planned"
+            },
+            {
+              "section": "2.2",
+              "slug": "2-2",
+              "title": "函数的平方根",
+              "en": {
+                "title": "Square Root of a Function"
+              },
+              "printedPage": 78,
+              "pdfPage": 87,
+              "status": "planned"
+            },
+            {
+              "section": "2.3",
+              "slug": "2-3",
+              "title": "用图像解根式方程",
+              "en": {
+                "title": "Solving Radical Equations Graphically"
+              },
+              "printedPage": 90,
+              "pdfPage": 99,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 2 章复习",
+              "en": {
+                "title": "Chapter 2 Review"
+              },
+              "printedPage": 99,
+              "pdfPage": 108,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 2 章练习测试",
+              "en": {
+                "title": "Chapter 2 Practice Test"
+              },
+              "printedPage": 102,
+              "pdfPage": 111,
+              "status": "planned"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "多项式函数",
+          "en": {
+            "title": "Polynomial Functions"
+          },
+          "printedPage": 104,
+          "pdfPage": 113,
+          "sections": [
+            {
+              "section": "3.1",
+              "slug": "3-1",
+              "title": "多项式函数的特征",
+              "en": {
+                "title": "Characteristics of Polynomial Functions"
+              },
+              "printedPage": 106,
+              "pdfPage": 115,
+              "status": "planned"
+            },
+            {
+              "section": "3.2",
+              "slug": "3-2",
+              "title": "余式定理",
+              "en": {
+                "title": "The Remainder Theorem"
+              },
+              "printedPage": 118,
+              "pdfPage": 127,
+              "status": "ready",
+              "href": "sections/3-2/",
+              "counts": {
+                "concepts": 7,
+                "examples": 4,
+                "investigations": 8,
+                "yourTurn": 4,
+                "exercises": 20
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+                "kind": "pdf",
+                "pdfPages": [
+                  127,
+                  128,
+                  129,
+                  130,
+                  131,
+                  132,
+                  133,
+                  134
+                ],
+                "printedPages": [
+                  118,
+                  119,
+                  120,
+                  121,
+                  122,
+                  123,
+                  124,
+                  125
+                ]
+              }
+            },
+            {
+              "section": "3.3",
+              "slug": "3-3",
+              "title": "因式定理",
+              "en": {
+                "title": "The Factor Theorem"
+              },
+              "printedPage": 126,
+              "pdfPage": 135,
+              "status": "planned"
+            },
+            {
+              "section": "3.4",
+              "slug": "3-4",
+              "title": "多项式函数的方程与图像",
+              "en": {
+                "title": "Equations and Graphs of Polynomial Functions"
+              },
+              "printedPage": 136,
+              "pdfPage": 145,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 3 章复习",
+              "en": {
+                "title": "Chapter 3 Review"
+              },
+              "printedPage": 153,
+              "pdfPage": 162,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 3 章练习测试",
+              "en": {
+                "title": "Chapter 3 Practice Test"
+              },
+              "printedPage": 155,
+              "pdfPage": 164,
+              "status": "planned"
+            }
+          ]
+        }
+      ],
+      "extras": [
+        {
+          "kind": "project",
+          "title": "第 1 单元项目总结",
+          "en": {
+            "title": "Unit 1 Project Wrap-Up"
+          },
+          "printedPage": 157,
+          "pdfPage": 166,
+          "status": "planned"
+        },
+        {
+          "kind": "cumulative-review",
+          "title": "累积复习：第 1–3 章",
+          "en": {
+            "title": "Cumulative Review, Chapters 1–3"
+          },
+          "printedPage": 158,
+          "pdfPage": 167,
+          "status": "planned"
+        },
+        {
+          "kind": "unit-test",
+          "title": "第 1 单元测试",
+          "en": {
+            "title": "Unit 1 Test"
+          },
+          "printedPage": 160,
+          "pdfPage": 169,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "三角学",
+      "en": {
+        "title": "Trigonometry"
+      },
+      "printedPage": 162,
+      "pdfPage": 171,
+      "chapters": [
+        {
+          "number": 4,
+          "title": "三角学与单位圆",
+          "en": {
+            "title": "Trigonometry and the Unit Circle"
+          },
+          "printedPage": 164,
+          "pdfPage": 173,
+          "sections": [
+            {
+              "section": "4.1",
+              "slug": "4-1",
+              "title": "角与角的度量",
+              "en": {
+                "title": "Angles and Angle Measure"
+              },
+              "printedPage": 166,
+              "pdfPage": 175,
+              "status": "planned"
+            },
+            {
+              "section": "4.2",
+              "slug": "4-2",
+              "title": "单位圆",
+              "en": {
+                "title": "The Unit Circle"
+              },
+              "printedPage": 180,
+              "pdfPage": 189,
+              "status": "planned"
+            },
+            {
+              "section": "4.3",
+              "slug": "4-3",
+              "title": "三角比",
+              "en": {
+                "title": "Trigonometric Ratios"
+              },
+              "printedPage": 191,
+              "pdfPage": 200,
+              "status": "planned"
+            },
+            {
+              "section": "4.4",
+              "slug": "4-4",
+              "title": "三角方程初步",
+              "en": {
+                "title": "Introduction to Trigonometric Equations"
+              },
+              "printedPage": 206,
+              "pdfPage": 215,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 4 章复习",
+              "en": {
+                "title": "Chapter 4 Review"
+              },
+              "printedPage": 215,
+              "pdfPage": 224,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 4 章练习测试",
+              "en": {
+                "title": "Chapter 4 Practice Test"
+              },
+              "printedPage": 218,
+              "pdfPage": 227,
+              "status": "planned"
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "三角函数及其图像",
+          "en": {
+            "title": "Trigonometric Functions and Graphs"
+          },
+          "printedPage": 220,
+          "pdfPage": 229,
+          "sections": [
+            {
+              "section": "5.1",
+              "slug": "5-1",
+              "title": "正弦与余弦函数的图像",
+              "en": {
+                "title": "Graphing Sine and Cosine Functions"
+              },
+              "printedPage": 222,
+              "pdfPage": 231,
+              "status": "planned"
+            },
+            {
+              "section": "5.2",
+              "slug": "5-2",
+              "title": "正弦型函数的变换",
+              "en": {
+                "title": "Transformations of Sinusoidal Functions"
+              },
+              "printedPage": 238,
+              "pdfPage": 247,
+              "status": "planned"
+            },
+            {
+              "section": "5.3",
+              "slug": "5-3",
+              "title": "正切函数",
+              "en": {
+                "title": "The Tangent Function"
+              },
+              "printedPage": 256,
+              "pdfPage": 265,
+              "status": "planned"
+            },
+            {
+              "section": "5.4",
+              "slug": "5-4",
+              "title": "三角函数的方程与图像",
+              "en": {
+                "title": "Equations and Graphs of Trigonometric Functions"
+              },
+              "printedPage": 266,
+              "pdfPage": 275,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 5 章复习",
+              "en": {
+                "title": "Chapter 5 Review"
+              },
+              "printedPage": 282,
+              "pdfPage": 291,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 5 章练习测试",
+              "en": {
+                "title": "Chapter 5 Practice Test"
+              },
+              "printedPage": 286,
+              "pdfPage": 295,
+              "status": "planned"
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "三角恒等式",
+          "en": {
+            "title": "Trigonometric Identities"
+          },
+          "printedPage": 288,
+          "pdfPage": 297,
+          "sections": [
+            {
+              "section": "6.1",
+              "slug": "6-1",
+              "title": "倒数、商与勾股恒等式",
+              "en": {
+                "title": "Reciprocal, Quotient, and Pythagorean Identities"
+              },
+              "printedPage": 290,
+              "pdfPage": 299,
+              "status": "planned"
+            },
+            {
+              "section": "6.2",
+              "slug": "6-2",
+              "title": "和角、差角与倍角恒等式",
+              "en": {
+                "title": "Sum, Difference, and Double-Angle Identities"
+              },
+              "printedPage": 299,
+              "pdfPage": 308,
+              "status": "planned"
+            },
+            {
+              "section": "6.3",
+              "slug": "6-3",
+              "title": "证明恒等式",
+              "en": {
+                "title": "Proving Identities"
+              },
+              "printedPage": 309,
+              "pdfPage": 318,
+              "status": "planned"
+            },
+            {
+              "section": "6.4",
+              "slug": "6-4",
+              "title": "用恒等式解三角方程",
+              "en": {
+                "title": "Solving Trigonometric Equations Using Identities"
+              },
+              "printedPage": 316,
+              "pdfPage": 325,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 6 章复习",
+              "en": {
+                "title": "Chapter 6 Review"
+              },
+              "printedPage": 322,
+              "pdfPage": 331,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 6 章练习测试",
+              "en": {
+                "title": "Chapter 6 Practice Test"
+              },
+              "printedPage": 324,
+              "pdfPage": 333,
+              "status": "planned"
+            }
+          ]
+        }
+      ],
+      "extras": [
+        {
+          "kind": "project",
+          "title": "第 2 单元项目总结",
+          "en": {
+            "title": "Unit 2 Project Wrap-Up"
+          },
+          "printedPage": 325,
+          "pdfPage": 334,
+          "status": "planned"
+        },
+        {
+          "kind": "cumulative-review",
+          "title": "累积复习：第 4–6 章",
+          "en": {
+            "title": "Cumulative Review, Chapters 4–6"
+          },
+          "printedPage": 326,
+          "pdfPage": 335,
+          "status": "planned"
+        },
+        {
+          "kind": "unit-test",
+          "title": "第 2 单元测试",
+          "en": {
+            "title": "Unit 2 Test"
+          },
+          "printedPage": 328,
+          "pdfPage": 337,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "指数与对数函数",
+      "en": {
+        "title": "Exponential and Logarithmic Functions"
+      },
+      "printedPage": 330,
+      "pdfPage": 339,
+      "chapters": [
+        {
+          "number": 7,
+          "title": "指数函数",
+          "en": {
+            "title": "Exponential Functions"
+          },
+          "printedPage": 332,
+          "pdfPage": 341,
+          "sections": [
+            {
+              "section": "7.1",
+              "slug": "7-1",
+              "title": "指数函数的特征",
+              "en": {
+                "title": "Characteristics of Exponential Functions"
+              },
+              "printedPage": 334,
+              "pdfPage": 343,
+              "status": "planned"
+            },
+            {
+              "section": "7.2",
+              "slug": "7-2",
+              "title": "指数函数的变换",
+              "en": {
+                "title": "Transformations of Exponential Functions"
+              },
+              "printedPage": 346,
+              "pdfPage": 355,
+              "status": "planned"
+            },
+            {
+              "section": "7.3",
+              "slug": "7-3",
+              "title": "解指数方程",
+              "en": {
+                "title": "Solving Exponential Equations"
+              },
+              "printedPage": 358,
+              "pdfPage": 367,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 7 章复习",
+              "en": {
+                "title": "Chapter 7 Review"
+              },
+              "printedPage": 366,
+              "pdfPage": 375,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 7 章练习测试",
+              "en": {
+                "title": "Chapter 7 Practice Test"
+              },
+              "printedPage": 368,
+              "pdfPage": 377,
+              "status": "planned"
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "对数函数",
+          "en": {
+            "title": "Logarithmic Functions"
+          },
+          "printedPage": 370,
+          "pdfPage": 379,
+          "sections": [
+            {
+              "section": "8.1",
+              "slug": "8-1",
+              "title": "理解对数",
+              "en": {
+                "title": "Understanding Logarithms"
+              },
+              "printedPage": 372,
+              "pdfPage": 381,
+              "status": "planned"
+            },
+            {
+              "section": "8.2",
+              "slug": "8-2",
+              "title": "对数函数的变换",
+              "en": {
+                "title": "Transformations of Logarithmic Functions"
+              },
+              "printedPage": 383,
+              "pdfPage": 392,
+              "status": "planned"
+            },
+            {
+              "section": "8.3",
+              "slug": "8-3",
+              "title": "对数运算法则",
+              "en": {
+                "title": "Laws of Logarithms"
+              },
+              "printedPage": 392,
+              "pdfPage": 401,
+              "status": "planned"
+            },
+            {
+              "section": "8.4",
+              "slug": "8-4",
+              "title": "对数与指数方程",
+              "en": {
+                "title": "Logarithmic and Exponential Equations"
+              },
+              "printedPage": 404,
+              "pdfPage": 413,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 8 章复习",
+              "en": {
+                "title": "Chapter 8 Review"
+              },
+              "printedPage": 416,
+              "pdfPage": 425,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 8 章练习测试",
+              "en": {
+                "title": "Chapter 8 Practice Test"
+              },
+              "printedPage": 419,
+              "pdfPage": 428,
+              "status": "planned"
+            }
+          ]
+        }
+      ],
+      "extras": [
+        {
+          "kind": "project",
+          "title": "第 3 单元项目总结",
+          "en": {
+            "title": "Unit 3 Project Wrap-Up"
+          },
+          "printedPage": 421,
+          "pdfPage": 430,
+          "status": "planned"
+        },
+        {
+          "kind": "cumulative-review",
+          "title": "累积复习：第 7–8 章",
+          "en": {
+            "title": "Cumulative Review, Chapters 7–8"
+          },
+          "printedPage": 422,
+          "pdfPage": 431,
+          "status": "planned"
+        },
+        {
+          "kind": "unit-test",
+          "title": "第 3 单元测试",
+          "en": {
+            "title": "Unit 3 Test"
+          },
+          "printedPage": 424,
+          "pdfPage": 433,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "方程与函数",
+      "en": {
+        "title": "Equations and Functions"
+      },
+      "printedPage": 426,
+      "pdfPage": 435,
+      "chapters": [
+        {
+          "number": 9,
+          "title": "有理函数",
+          "en": {
+            "title": "Rational Functions"
+          },
+          "printedPage": 428,
+          "pdfPage": 437,
+          "sections": [
+            {
+              "section": "9.1",
+              "slug": "9-1",
+              "title": "用变换探究有理函数",
+              "en": {
+                "title": "Exploring Rational Functions Using Transformations"
+              },
+              "printedPage": 430,
+              "pdfPage": 439,
+              "status": "planned"
+            },
+            {
+              "section": "9.2",
+              "slug": "9-2",
+              "title": "分析有理函数",
+              "en": {
+                "title": "Analysing Rational Functions"
+              },
+              "printedPage": 446,
+              "pdfPage": 455,
+              "status": "planned"
+            },
+            {
+              "section": "9.3",
+              "slug": "9-3",
+              "title": "联系图像与有理方程",
+              "en": {
+                "title": "Connecting Graphs and Rational Equations"
+              },
+              "printedPage": 457,
+              "pdfPage": 466,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 9 章复习",
+              "en": {
+                "title": "Chapter 9 Review"
+              },
+              "printedPage": 468,
+              "pdfPage": 477,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 9 章练习测试",
+              "en": {
+                "title": "Chapter 9 Practice Test"
+              },
+              "printedPage": 470,
+              "pdfPage": 479,
+              "status": "planned"
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "函数运算",
+          "en": {
+            "title": "Function Operations"
+          },
+          "printedPage": 472,
+          "pdfPage": 481,
+          "sections": [
+            {
+              "section": "10.1",
+              "slug": "10-1",
+              "title": "函数的和与差",
+              "en": {
+                "title": "Sums and Differences of Functions"
+              },
+              "printedPage": 474,
+              "pdfPage": 483,
+              "status": "planned"
+            },
+            {
+              "section": "10.2",
+              "slug": "10-2",
+              "title": "函数的积与商",
+              "en": {
+                "title": "Products and Quotients of Functions"
+              },
+              "printedPage": 488,
+              "pdfPage": 497,
+              "status": "planned"
+            },
+            {
+              "section": "10.3",
+              "slug": "10-3",
+              "title": "复合函数",
+              "en": {
+                "title": "Composite Functions"
+              },
+              "printedPage": 499,
+              "pdfPage": 508,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 10 章复习",
+              "en": {
+                "title": "Chapter 10 Review"
+              },
+              "printedPage": 510,
+              "pdfPage": 519,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 10 章练习测试",
+              "en": {
+                "title": "Chapter 10 Practice Test"
+              },
+              "printedPage": 512,
+              "pdfPage": 521,
+              "status": "planned"
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "title": "排列、组合与二项式定理",
+          "en": {
+            "title": "Permutations, Combinations, and the Binomial Theorem"
+          },
+          "printedPage": 514,
+          "pdfPage": 523,
+          "sections": [
+            {
+              "section": "11.1",
+              "slug": "11-1",
+              "title": "排列",
+              "en": {
+                "title": "Permutations"
+              },
+              "printedPage": 516,
+              "pdfPage": 525,
+              "status": "planned"
+            },
+            {
+              "section": "11.2",
+              "slug": "11-2",
+              "title": "组合",
+              "en": {
+                "title": "Combinations"
+              },
+              "printedPage": 528,
+              "pdfPage": 537,
+              "status": "planned"
+            },
+            {
+              "section": "11.3",
+              "slug": "11-3",
+              "title": "二项式定理",
+              "en": {
+                "title": "Binomial Theorem"
+              },
+              "printedPage": 537,
+              "pdfPage": 546,
+              "status": "planned"
+            }
+          ],
+          "extras": [
+            {
+              "kind": "review",
+              "title": "第 11 章复习",
+              "en": {
+                "title": "Chapter 11 Review"
+              },
+              "printedPage": 546,
+              "pdfPage": 555,
+              "status": "planned"
+            },
+            {
+              "kind": "practice-test",
+              "title": "第 11 章练习测试",
+              "en": {
+                "title": "Chapter 11 Practice Test"
+              },
+              "printedPage": 548,
+              "pdfPage": 557,
+              "status": "planned"
+            }
+          ]
+        }
+      ],
+      "extras": [
+        {
+          "kind": "project",
+          "title": "第 4 单元项目总结",
+          "en": {
+            "title": "Unit 4 Project Wrap-Up"
+          },
+          "printedPage": 549,
+          "pdfPage": 558,
+          "status": "planned"
+        },
+        {
+          "kind": "cumulative-review",
+          "title": "累积复习：第 9–11 章",
+          "en": {
+            "title": "Cumulative Review, Chapters 9–11"
+          },
+          "printedPage": 550,
+          "pdfPage": 559,
+          "status": "planned"
+        },
+        {
+          "kind": "unit-test",
+          "title": "第 4 单元测试",
+          "en": {
+            "title": "Unit 4 Test"
+          },
+          "printedPage": 552,
+          "pdfPage": 561,
+          "status": "planned"
+        }
+      ]
+    }
+  ],
+  "referenceMaterials": [
+    {
+      "title": "答案",
+      "en": {
+        "title": "Answers"
+      },
+      "printedPage": 554,
+      "pdfPage": 563
+    },
+    {
+      "title": "术语表",
+      "en": {
+        "title": "Glossary"
+      },
+      "printedPage": 638,
+      "pdfPage": 647
+    },
+    {
+      "title": "索引",
+      "en": {
+        "title": "Index"
+      },
+      "printedPage": 643,
+      "pdfPage": 652
+    },
+    {
+      "title": "图片及资料来源",
+      "en": {
+        "title": "Credits"
+      },
+      "printedPage": 646,
+      "pdfPage": 655
+    }
+  ],
+  "counts": {
+    "units": 4,
+    "chapters": 11,
+    "sections": 39,
+    "readySections": 1,
+    "plannedSections": 38
+  }
+}

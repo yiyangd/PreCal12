@@ -1,0 +1,3396 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "3-2",
+    "section": "3.2",
+    "title": "余式定理",
+    "description": "Unit 1 · 第 3 章 多项式函数。学习长除法、合成除法与余式定理；包括全部探究题、教材例题、Your Turn 与节后习题（含 C1–C3）。",
+    "en": {
+      "title": "The Remainder Theorem",
+      "description": "Unit 1 · Chapter 3 Polynomial Functions. Study long division, synthetic division and the remainder theorem, with every investigation, textbook example, Your Turn and section exercise, including C1–C3."
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+      "kind": "pdf",
+      "pdfPages": [
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "printedPages": [
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125
+      ]
+    },
+    "concepts": [
+      {
+        "id": "division-identity",
+        "title": "除法恒等式与检验",
+        "summary": "被除式 = 除式 × 商 + 余数：$P(x)=(x-a)Q(x)+R$。分式形式为 $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$，要求 $x\\ne a$。",
+        "method": [
+          {
+            "title": "辨认四个量",
+            "body": "分别找出被除式、除式、商和余数。"
+          },
+          {
+            "title": "乘回检验",
+            "body": "展开“除式 × 商 + 余数”，与原被除式逐项比较。"
+          }
+        ],
+        "pitfalls": [
+          "恒等式在 $x=a$ 仍成立；原分式在 $x=a$ 无定义。余数为零也不能取消原分式的限制。"
+        ],
+        "en": {
+          "title": "The division identity and checking",
+          "summary": "Dividend = divisor × quotient + remainder: $P(x)=(x-a)Q(x)+R$. In fraction form, $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$, with $x\\ne a$.",
+          "method": [
+            {
+              "title": "Identify four quantities",
+              "body": "Identify the dividend, divisor, quotient and remainder."
+            },
+            {
+              "title": "Check by multiplication",
+              "body": "Expand divisor × quotient + remainder and compare each coefficient with the original dividend."
+            }
+          ],
+          "pitfalls": [
+            "The polynomial identity remains valid at $x=a$; the original fraction is undefined there. A zero remainder does not remove that restriction."
+          ]
+        }
+      },
+      {
+        "id": "long-division",
+        "title": "多项式长除法",
+        "summary": "按降幂排列并补齐缺项，用“除、乘、减、带下”反复降低次数。",
+        "method": [
+          {
+            "title": "整理被除式",
+            "body": "按次数降序写出各项；缺项系数记为零。"
+          },
+          {
+            "title": "求商项并相减",
+            "body": "用当前首项除以除式首项；乘回整个除式，再减去整个乘积。"
+          },
+          {
+            "title": "重复到余数",
+            "body": "带下下一项，直到余式次数小于除式次数。一次除式对应常数余数。"
+          }
+        ],
+        "pitfalls": [
+          "减去多项式时，每一项都要变号。"
+        ],
+        "en": {
+          "title": "Polynomial long division",
+          "summary": "Arrange terms in descending powers, include missing powers, and repeat divide, multiply, subtract and bring down.",
+          "method": [
+            {
+              "title": "Prepare the dividend",
+              "body": "Write terms in descending powers and use zero coefficients for missing powers."
+            },
+            {
+              "title": "Find a quotient term and subtract",
+              "body": "Divide the current leading term by the divisor’s leading term. Multiply the entire divisor, then subtract the entire product."
+            },
+            {
+              "title": "Repeat to the remainder",
+              "body": "Bring down the next term until the remainder has smaller degree than the divisor. A linear divisor leaves a constant remainder."
+            }
+          ],
+          "pitfalls": [
+            "When subtracting a polynomial, change the sign of every term."
+          ]
+        }
+      },
+      {
+        "id": "box-models",
+        "title": "由体积或面积求尺寸",
+        "summary": "长方体满足 $V=lwh$；体积除以一个已知尺寸得到另两尺寸的乘积。圆柱满足 $V=\\pi r^2h$。",
+        "method": [
+          {
+            "title": "先除再解释",
+            "body": "将体积除以已知的高或长，商表示底面积或另一截面的面积。"
+          },
+          {
+            "title": "分解并检查尺寸",
+            "body": "分解面积式得到可能的尺寸；将尺寸乘回核对体积，并检查正值与题设范围。"
+          }
+        ],
+        "pitfalls": [
+          "非零余数意味着不能直接只用多项式商作为精确尺寸；分式余项也必须保留。"
+        ],
+        "en": {
+          "title": "Dimensions from volume or area",
+          "summary": "For a rectangular prism, $V=lwh$. Dividing by one known dimension gives the product of the other two. For a cylinder, $V=\\pi r^2h$.",
+          "method": [
+            {
+              "title": "Divide and interpret",
+              "body": "Divide volume by the known height or length. Interpret the quotient as a base or cross-sectional area."
+            },
+            {
+              "title": "Factor and check dimensions",
+              "body": "Factor the area expression to obtain possible dimensions. Multiply them to check the volume, and enforce positive dimensions and the stated range."
+            }
+          ],
+          "pitfalls": [
+            "A nonzero remainder means that the polynomial quotient alone is not an exact dimension; retain the remainder term."
+          ]
+        }
+      },
+      {
+        "id": "synthetic-division",
+        "title": "合成除法：根与相加法",
+        "summary": "对除式 $x-a$，左侧写根 $a$，补齐零系数；落下首系数，再反复乘 $a$、与下一列相加。最后一格是余数。教材使用“除式常数与相减法”，两者等价；本页表格统一使用根与相加法。",
+        "method": [
+          {
+            "title": "找根与补零",
+            "body": "例如 $x+3=x-(-3)$，本页表格左侧写 $-3$；$x^3-10x+6$ 的系数为 $1,0,-10,6$。"
+          },
+          {
+            "title": "乘、加、读结果",
+            "body": "落下首项；乘左侧根，与下一系数相加，直到末列。商比被除式低一次，末列不属于商。"
+          }
+        ],
+        "pitfalls": [
+          "不要将本页的相加法与教材的相减法符号混用。"
+        ],
+        "en": {
+          "title": "Synthetic division: root and addition",
+          "summary": "For divisor $x-a$, write its root $a$ at the left and include zero coefficients. Bring down the first coefficient, then multiply by $a$ and add the next coefficient. The last entry is the remainder. The textbook uses the equivalent divisor-constant/subtraction convention; this page consistently uses root/addition tables.",
+          "method": [
+            {
+              "title": "Find the root and include zeros",
+              "body": "For example, $x+3=x-(-3)$, so our left entry is $-3$. The coefficients of $x^3-10x+6$ are $1,0,-10,6$."
+            },
+            {
+              "title": "Multiply, add and read the result",
+              "body": "Bring down the first entry. Multiply by the root and add the next coefficient, through the final column. The quotient has degree one less than the dividend; the last entry is separate."
+            }
+          ],
+          "pitfalls": [
+            "Do not mix the signs of our addition convention with the textbook’s subtraction convention."
+          ]
+        }
+      },
+      {
+        "id": "remainder-theorem",
+        "title": "余式定理",
+        "summary": "用 $x-a$ 除 $P(x)$，余数是 $R=P(a)$。在 $P(x)=(x-a)Q(x)+R$ 中代入 $x=a$，商项变为零。",
+        "method": [
+          {
+            "title": "找除式的零点",
+            "body": "解 $x-a=0$。除式为 $x+c$ 时，代入 $-c$。"
+          },
+          {
+            "title": "代入并计算",
+            "body": "给负数底数加括号，逐项求幂、相乘、相加。无需先求商。"
+          }
+        ],
+        "pitfalls": [
+          "余数为零说明一次除式是因式；非零说明不是因式。$(-4)^3$ 与 $-4^4$ 的括号含义不同。"
+        ],
+        "en": {
+          "title": "The remainder theorem",
+          "summary": "When $P(x)$ is divided by $x-a$, the remainder is $R=P(a)$. Substitute $x=a$ in $P(x)=(x-a)Q(x)+R$: the quotient term vanishes.",
+          "method": [
+            {
+              "title": "Find the divisor’s zero",
+              "body": "Solve $x-a=0$. For divisor $x+c$, substitute $-c$."
+            },
+            {
+              "title": "Substitute and evaluate",
+              "body": "Use parentheses around negative bases. Evaluate powers, multiply and add; finding the quotient first is unnecessary."
+            }
+          ],
+          "pitfalls": [
+            "A zero remainder means the linear divisor is a factor; a nonzero remainder means it is not. Track parentheses carefully in powers of negative numbers."
+          ]
+        }
+      },
+      {
+        "id": "parameter-remainders",
+        "title": "用余数条件求参数",
+        "summary": "此拓展来自习题 8–10、14–15。将每个条件写为 $P(a)=R$；若两个除法余数相同，则令对应的函数值相等。",
+        "method": [
+          {
+            "title": "建立方程",
+            "body": "逐个求除式的根并代入；两个未知数通常需要两个独立方程。"
+          },
+          {
+            "title": "求解并回代",
+            "body": "解一次方程、二次方程或方程组；逐个回代检查所有条件。"
+          }
+        ],
+        "pitfalls": [
+          "若除式为 $x+k$，代入的是 $-k$；求参数时不要丢掉二次方程的另一个根。"
+        ],
+        "en": {
+          "title": "Find parameters from remainder conditions",
+          "summary": "This extension comes from Exercises 8–10 and 14–15. Translate each condition into $P(a)=R$. Equal remainders mean equal values at the corresponding roots.",
+          "method": [
+            {
+              "title": "Build equations",
+              "body": "Find each divisor’s root and substitute. Two unknowns normally require two independent equations."
+            },
+            {
+              "title": "Solve and substitute back",
+              "body": "Solve the linear equation, quadratic equation or system, then verify every condition."
+            }
+          ],
+          "pitfalls": [
+            "For divisor $x+k$, substitute $-k$. Preserve both roots of a quadratic parameter equation."
+          ]
+        }
+      },
+      {
+        "id": "nonmonic-construction",
+        "title": "非首一除式与构造多项式",
+        "summary": "此拓展来自习题 16–17。对 $bx-c$（$b\\ne0$），余数为 $P(c/b)$。若要构造余数为 $R$ 的多项式，可写 $P(x)=(bx-c)Q(x)+R$，选择合适次数的非零 $Q$。",
+        "method": [
+          {
+            "title": "把除式首项化为一",
+            "body": "$bx-c=b(x-c/b)$。用 $c/b$ 合成除法，余数不变；若要原除式的商，须再除以 $b$。"
+          },
+          {
+            "title": "构造与检验",
+            "body": "选择 $Q$，让 $\\deg P=\\deg Q+1$，再代入除式的根核对指定余数。"
+          }
+        ],
+        "pitfalls": [
+          "只缩放商，不缩放余数。构造题通常有无限多组正确答案。"
+        ],
+        "en": {
+          "title": "Non-monic divisors and constructing polynomials",
+          "summary": "This extension comes from Exercises 16–17. For divisor $bx-c$ with $b\\ne0$, the remainder is $P(c/b)$. To construct a polynomial with remainder $R$, write $P(x)=(bx-c)Q(x)+R$ and choose a nonzero $Q$ of the required degree.",
+          "method": [
+            {
+              "title": "Normalize the divisor",
+              "body": "$bx-c=b(x-c/b)$. Synthetic division at $c/b$ gives the same remainder. Divide its quotient by $b$ to obtain the quotient for the original divisor."
+            },
+            {
+              "title": "Construct and verify",
+              "body": "Choose $Q$ so that $\\deg P=\\deg Q+1$, then substitute the divisor’s root to verify the required remainder."
+            }
+          ],
+          "pitfalls": [
+            "Scale the quotient, not the remainder. Construction questions usually have infinitely many correct answers."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1：辨认除法中的量",
+        "prompt": "观察原图的两道长除法：(a) $327\\div12$；(b) $(x^2+7x+17)\\div(x+3)$。对 (a)、(b) 分别指出除数（式）、被除数（式）、商和余数。",
+        "concept": "division-identity",
+        "printedPage": 118,
+        "pdfPage": 127,
+        "steps": [
+          {
+            "title": "(a) 数的除法",
+            "body": "$327=12(27)+3$，所以除数 $12$，被除数 $327$，商 $27$，余数 $3$。"
+          },
+          {
+            "title": "(b) 式的除法",
+            "body": "$x^2+7x+17=(x+3)(x+4)+5$；除式为 $x+3$，被除式为 $x^2+7x+17$，商为 $x+4$，余数为 $5$。"
+          }
+        ],
+        "answer": "(a) $12,327,27,3$；(b) $x+3,x^2+7x+17,x+4,5$（按除式、被除式、商、余数顺序）。",
+        "en": {
+          "label": "Investigate 1: identify division quantities",
+          "prompt": "Examine the two long-division statements in the given figure: (a) $327\\div12$; (b) $(x^2+7x+17)\\div(x+3)$. For each statement, identify the divisor, dividend, quotient and remainder.",
+          "steps": [
+            {
+              "title": "(a) Numerical division",
+              "body": "$327=12(27)+3$: divisor $12$, dividend $327$, quotient $27$, remainder $3$."
+            },
+            {
+              "title": "(b) Polynomial division",
+              "body": "$x^2+7x+17=(x+3)(x+4)+5$: divisor $x+3$, dividend $x^2+7x+17$, quotient $x+4$, remainder $5$."
+            }
+          ],
+          "answer": "(a) $12,327,27,3$; (b) $x+3,x^2+7x+17,x+4,5$, in the order divisor, dividend, quotient, remainder."
+        },
+        "sourceImage": "assets/investigate-1.png",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 2：比较长除法",
+        "prompt": "(a) 描述探究 1(a) 中数的长除法过程。(b) 描述探究 1(b) 中多项式除以二项式的长除法过程。(c) 两个过程有什么相同和不同？",
+        "concept": "long-division",
+        "printedPage": 119,
+        "pdfPage": 128,
+        "steps": [
+          {
+            "title": "(a) 数的每一步",
+            "body": "$32\\div12$ 商 $2$（表示 $20$），$32-24=8$；带下 $7$ 得 $87$。$87\\div12$ 商 $7$，$87-84=3$。总商 $27$，余数 $3$。"
+          },
+          {
+            "title": "(b) 多项式的每一步",
+            "body": "$x^2\\div x=x$；减去 $x(x+3)=x^2+3x$ 得 $4x+17$。$4x\\div x=4$；减去 $4(x+3)=4x+12$ 得余数 $5$。"
+          },
+          {
+            "title": "(c) 比较",
+            "body": "两者都按“除、乘、减、带下”进行。数的除法按十进制位值排列，余数小于正除数；多项式按次数排列，余式次数小于除式次数。"
+          }
+        ],
+        "answer": "两者算法相同；排列依据和余数停止条件分别是位值/大小与次数。",
+        "en": {
+          "label": "Investigate 2: compare long division",
+          "prompt": "(a) Describe the long-division process used to divide the numbers in Investigate 1(a). (b) Describe the long-division process used to divide the polynomial by the binomial in Investigate 1(b). (c) What similarities and differences do you observe?",
+          "steps": [
+            {
+              "title": "(a) Numerical steps",
+              "body": "$32\\div12$ gives $2$ in the tens place; $32-24=8$. Bring down $7$ to get $87$. The next quotient digit is $7$ and $87-84=3$. Quotient $27$, remainder $3$."
+            },
+            {
+              "title": "(b) Polynomial steps",
+              "body": "$x^2\\div x=x$. Subtract $x(x+3)=x^2+3x$ to obtain $4x+17$. Then $4x\\div x=4$; subtract $4(x+3)=4x+12$ to leave $5$."
+            },
+            {
+              "title": "(c) Compare",
+              "body": "Both use divide, multiply, subtract and bring down. Numerical division follows base-ten place value and leaves a remainder smaller than the positive divisor. Polynomial division follows powers and leaves a remainder of smaller degree than the divisor."
+            }
+          ],
+          "answer": "The algorithm is shared; organization and stopping conditions use place value/size versus polynomial degree."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 3：检验长除法",
+        "prompt": "说明如何检验探究 1 中两道长除法结果。",
+        "concept": "division-identity",
+        "printedPage": 119,
+        "pdfPage": 128,
+        "steps": [
+          {
+            "title": "检验数的结果",
+            "body": "$12\\times27+3=324+3=327$，等于被除数。"
+          },
+          {
+            "title": "检验多项式结果",
+            "body": "$(x+3)(x+4)+5=x^2+7x+12+5=x^2+7x+17$，等于被除式。"
+          }
+        ],
+        "answer": "用“除式 × 商 + 余数”还原被除式。",
+        "en": {
+          "label": "Investigate 3: check division",
+          "prompt": "Describe how you would check that the result of each long-division statement in Investigate 1 is correct.",
+          "steps": [
+            {
+              "title": "Check numerical division",
+              "body": "$12\\times27+3=324+3=327$, the original dividend."
+            },
+            {
+              "title": "Check polynomial division",
+              "body": "$(x+3)(x+4)+5=x^2+7x+12+5=x^2+7x+17$, the original dividend."
+            }
+          ],
+          "answer": "Multiply divisor by quotient and add the remainder to recover the dividend."
+        }
+      },
+      {
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "探究 4：完成余数表",
+        "prompt": "复制原图表格。被除式为 $P(x)=x^3+2x^2-5x-6$。对五个除式 $x-3,x-2,x-1,x+1,x+2$，指出 $x-a$ 中的 $a$，求 $P(a)$ 并填入最后一列。原表已给商与余数。",
+        "concept": "remainder-theorem",
+        "printedPage": 119,
+        "pdfPage": 128,
+        "steps": [
+          {
+            "title": "第 1 行",
+            "body": "$a=3$，$P(3)=(3)^3+2(3)^2-5(3)-6=24$。"
+          },
+          {
+            "title": "第 2 行",
+            "body": "$a=2$，$P(2)=(2)^3+2(2)^2-5(2)-6=0$。"
+          },
+          {
+            "title": "第 3 行",
+            "body": "$a=1$，$P(1)=(1)^3+2(1)^2-5(1)-6=-8$。"
+          },
+          {
+            "title": "第 4 行",
+            "body": "$a=-1$，$P(-1)=(-1)^3+2(-1)^2-5(-1)-6=0$。"
+          },
+          {
+            "title": "第 5 行",
+            "body": "$a=-2$，$P(-2)=(-2)^3+2(-2)^2-5(-2)-6=4$。"
+          }
+        ],
+        "answer": "各行 $(a,P(a))$ 依次为 $(3,24),(2,0),(1,-8),(-1,0),(-2,4)$。",
+        "en": {
+          "label": "Investigate 4: complete the remainder table",
+          "prompt": "Copy the given table. The dividend is $P(x)=x^3+2x^2-5x-6$. For each divisor $x-3,x-2,x-1,x+1,x+2$, identify $a$ in $x-a$, substitute $x=a$ into the dividend, and record the value in the final column. The source table supplies each quotient and remainder.",
+          "steps": [
+            {
+              "title": "Row 1",
+              "body": "$a=3$ and $P(3)=(3)^3+2(3)^2-5(3)-6=24$."
+            },
+            {
+              "title": "Row 2",
+              "body": "$a=2$ and $P(2)=(2)^3+2(2)^2-5(2)-6=0$."
+            },
+            {
+              "title": "Row 3",
+              "body": "$a=1$ and $P(1)=(1)^3+2(1)^2-5(1)-6=-8$."
+            },
+            {
+              "title": "Row 4",
+              "body": "$a=-1$ and $P(-1)=(-1)^3+2(-1)^2-5(-1)-6=0$."
+            },
+            {
+              "title": "Row 5",
+              "body": "$a=-2$ and $P(-2)=(-2)^3+2(-2)^2-5(-2)-6=4$."
+            }
+          ],
+          "answer": "The rows give $(a,P(a))=(3,24),(2,0),(1,-8),(-1,0),(-2,4)$, respectively."
+        },
+        "sourceImage": "assets/investigate-4.png"
+      },
+      {
+        "id": "investigate-5",
+        "type": "practice",
+        "label": "探究 5：比较结果",
+        "prompt": "比较表中长除法的每个余数与代入值，有什么发现？",
+        "concept": "remainder-theorem",
+        "printedPage": 119,
+        "pdfPage": 128,
+        "steps": [
+          {
+            "title": "逐行比较",
+            "body": "长除法的余数依次为 $24,0,-8,0,4$；代入 $a=3,2,1,-1,-2$ 的函数值也依次为 $24,0,-8,0,4$。"
+          },
+          {
+            "title": "概括规律",
+            "body": "每行中余数都等于 $P(a)$。"
+          }
+        ],
+        "answer": "除以 $x-a$ 的余数与 $P(a)$ 相同。",
+        "en": {
+          "label": "Investigate 5: compare results",
+          "prompt": "Compare each long-division remainder in the table with the value obtained by substituting $x=a$ into the dividend. What do you notice?",
+          "steps": [
+            {
+              "title": "Compare every row",
+              "body": "The long-division remainders are $24,0,-8,0,4$. The values at $a=3,2,1,-1,-2$ are also $24,0,-8,0,4$, respectively."
+            },
+            {
+              "title": "State the pattern",
+              "body": "In every row, the remainder equals $P(a)$."
+            }
+          ],
+          "answer": "The remainder on division by $x-a$ equals $P(a)$."
+        }
+      },
+      {
+        "id": "investigate-6",
+        "type": "practice",
+        "label": "探究 6：提出猜想",
+        "prompt": "提出一个不用除法就能求余数的猜想。",
+        "concept": "remainder-theorem",
+        "printedPage": 119,
+        "pdfPage": 128,
+        "steps": [
+          {
+            "title": "找除式根",
+            "body": "若除式为 $x-a$，先找使除式为零的 $a$。"
+          },
+          {
+            "title": "由表格猜想",
+            "body": "直接算 $P(a)$；猜想该数就是余数。探究 4 的五行都符合。"
+          }
+        ],
+        "answer": "猜想：$R=P(a)$。",
+        "en": {
+          "label": "Investigate 6: make a conjecture",
+          "prompt": "Make a conjecture about how to determine a remainder without using division.",
+          "steps": [
+            {
+              "title": "Find the divisor’s root",
+              "body": "For divisor $x-a$, find the value $a$ that makes it zero."
+            },
+            {
+              "title": "Conjecture from the table",
+              "body": "Evaluate $P(a)$ directly and conjecture that it is the remainder. All five rows in Investigate 4 agree."
+            }
+          ],
+          "answer": "Conjecture: $R=P(a)$."
+        }
+      },
+      {
+        "id": "investigate-7",
+        "type": "practice",
+        "label": "探究 7：预测并验证",
+        "prompt": "(a) 用猜想预测 $2x^3-4x^2+3x-6$ 分别除以 (i) $x+1$，(ii) $x+3$，(iii) $x-2$ 的余数。(b) 用长除法验证三个预测。",
+        "concept": "remainder-theorem",
+        "printedPage": 119,
+        "pdfPage": 128,
+        "steps": [
+          {
+            "title": "(a)(i) 代入预测",
+            "body": "$a=-1$；$P(-1)=2(-1)^3-4(-1)^2+3(-1)-6=-15$。"
+          },
+          {
+            "title": "(b)(i) 长除法第 1 轮",
+            "body": "商的下一项为 $2x^2$。相乘得 $(x+1)(2x^2)=2x^3+2x^2$；减去整个乘积，带下余下各项，得到 $-6x^2+3x-6$。"
+          },
+          {
+            "title": "(b)(i) 长除法第 2 轮",
+            "body": "商的下一项为 $-6x$。相乘得 $(x+1)(-6x)=-6x^2-6x$；减去整个乘积，带下余下各项，得到 $9x-6$。"
+          },
+          {
+            "title": "(b)(i) 长除法第 3 轮",
+            "body": "商的下一项为 $9$。相乘得 $(x+1)(9)=9x+9$；减去整个乘积，带下余下各项，得到 $-15$。"
+          },
+          {
+            "title": "(b)(i) 读出结果",
+            "body": "商 $2x^2-6x+9$，余数 $-15$，与预测相同。"
+          },
+          {
+            "title": "(a)(ii) 代入预测",
+            "body": "$a=-3$；$P(-3)=2(-3)^3-4(-3)^2+3(-3)-6=-105$。"
+          },
+          {
+            "title": "(b)(ii) 长除法第 1 轮",
+            "body": "商的下一项为 $2x^2$。相乘得 $(x+3)(2x^2)=2x^3+6x^2$；减去整个乘积，带下余下各项，得到 $-10x^2+3x-6$。"
+          },
+          {
+            "title": "(b)(ii) 长除法第 2 轮",
+            "body": "商的下一项为 $-10x$。相乘得 $(x+3)(-10x)=-10x^2-30x$；减去整个乘积，带下余下各项，得到 $33x-6$。"
+          },
+          {
+            "title": "(b)(ii) 长除法第 3 轮",
+            "body": "商的下一项为 $33$。相乘得 $(x+3)(33)=33x+99$；减去整个乘积，带下余下各项，得到 $-105$。"
+          },
+          {
+            "title": "(b)(ii) 读出结果",
+            "body": "商 $2x^2-10x+33$，余数 $-105$，与预测相同。"
+          },
+          {
+            "title": "(a)(iii) 代入预测",
+            "body": "$a=2$；$P(2)=2(2)^3-4(2)^2+3(2)-6=0$。"
+          },
+          {
+            "title": "(b)(iii) 长除法第 1 轮",
+            "body": "商的下一项为 $2x^2$。相乘得 $(x-2)(2x^2)=2x^3-4x^2$；减去整个乘积，带下余下各项，得到 $3x-6$。"
+          },
+          {
+            "title": "(b)(iii) 长除法第 2 轮",
+            "body": "商的下一项为 $0$。相乘得 $(x-2)(0)=0$；减去整个乘积，带下余下各项，得到 $3x-6$。"
+          },
+          {
+            "title": "(b)(iii) 长除法第 3 轮",
+            "body": "商的下一项为 $3$。相乘得 $(x-2)(3)=3x-6$；减去整个乘积，带下余下各项，得到 $0$。"
+          },
+          {
+            "title": "(b)(iii) 读出结果",
+            "body": "商 $2x^2+3$，余数 $0$，与预测相同。"
+          }
+        ],
+        "answer": "(i) $R=-15$；(ii) $R=-105$；(iii) $R=0$。",
+        "en": {
+          "label": "Investigate 7: predict and verify",
+          "prompt": "(a) Use your conjecture to predict the remainder when $2x^3-4x^2+3x-6$ is divided by (i) $x+1$, (ii) $x+3$, (iii) $x-2$. (b) Verify your predictions using long division.",
+          "steps": [
+            {
+              "title": "(a)(i) Predict by substitution",
+              "body": "$a=-1$; $P(-1)=2(-1)^3-4(-1)^2+3(-1)-6=-15$."
+            },
+            {
+              "title": "(b)(i) Long division: round 1",
+              "body": "The next quotient term is $2x^2$. Multiply: $(x+1)(2x^2)=2x^3+2x^2$. Subtract the entire product and bring down the remaining terms to obtain $-6x^2+3x-6$."
+            },
+            {
+              "title": "(b)(i) Long division: round 2",
+              "body": "The next quotient term is $-6x$. Multiply: $(x+1)(-6x)=-6x^2-6x$. Subtract the entire product and bring down the remaining terms to obtain $9x-6$."
+            },
+            {
+              "title": "(b)(i) Long division: round 3",
+              "body": "The next quotient term is $9$. Multiply: $(x+1)(9)=9x+9$. Subtract the entire product and bring down the remaining terms to obtain $-15$."
+            },
+            {
+              "title": "(b)(i) Read the result",
+              "body": "Quotient $2x^2-6x+9$, remainder $-15$, agreeing with the prediction."
+            },
+            {
+              "title": "(a)(ii) Predict by substitution",
+              "body": "$a=-3$; $P(-3)=2(-3)^3-4(-3)^2+3(-3)-6=-105$."
+            },
+            {
+              "title": "(b)(ii) Long division: round 1",
+              "body": "The next quotient term is $2x^2$. Multiply: $(x+3)(2x^2)=2x^3+6x^2$. Subtract the entire product and bring down the remaining terms to obtain $-10x^2+3x-6$."
+            },
+            {
+              "title": "(b)(ii) Long division: round 2",
+              "body": "The next quotient term is $-10x$. Multiply: $(x+3)(-10x)=-10x^2-30x$. Subtract the entire product and bring down the remaining terms to obtain $33x-6$."
+            },
+            {
+              "title": "(b)(ii) Long division: round 3",
+              "body": "The next quotient term is $33$. Multiply: $(x+3)(33)=33x+99$. Subtract the entire product and bring down the remaining terms to obtain $-105$."
+            },
+            {
+              "title": "(b)(ii) Read the result",
+              "body": "Quotient $2x^2-10x+33$, remainder $-105$, agreeing with the prediction."
+            },
+            {
+              "title": "(a)(iii) Predict by substitution",
+              "body": "$a=2$; $P(2)=2(2)^3-4(2)^2+3(2)-6=0$."
+            },
+            {
+              "title": "(b)(iii) Long division: round 1",
+              "body": "The next quotient term is $2x^2$. Multiply: $(x-2)(2x^2)=2x^3-4x^2$. Subtract the entire product and bring down the remaining terms to obtain $3x-6$."
+            },
+            {
+              "title": "(b)(iii) Long division: round 2",
+              "body": "The next quotient term is $0$. Multiply: $(x-2)(0)=0$. Subtract the entire product and bring down the remaining terms to obtain $3x-6$."
+            },
+            {
+              "title": "(b)(iii) Long division: round 3",
+              "body": "The next quotient term is $3$. Multiply: $(x-2)(3)=3x-6$. Subtract the entire product and bring down the remaining terms to obtain $0$."
+            },
+            {
+              "title": "(b)(iii) Read the result",
+              "body": "Quotient $2x^2+3$, remainder $0$, agreeing with the prediction."
+            }
+          ],
+          "answer": "(i) $R=-15$; (ii) $R=-105$; (iii) $R=0$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "investigate-8",
+        "type": "practice",
+        "label": "探究 8：表达余式定理",
+        "prompt": "描述多项式 $P(x)$ 除以 $x-a$ 的余数与 $P(a)$ 之间的关系。",
+        "concept": "remainder-theorem",
+        "printedPage": 119,
+        "pdfPage": 128,
+        "steps": [
+          {
+            "title": "写出除法恒等式",
+            "body": "$P(x)=(x-a)Q(x)+R$。"
+          },
+          {
+            "title": "令除式为零",
+            "body": "令 $x=a$，得到 $P(a)=(a-a)Q(a)+R=R$。"
+          }
+        ],
+        "answer": "$R=P(a)$。",
+        "en": {
+          "label": "Investigate 8: state the relationship",
+          "prompt": "Describe the relationship between the remainder when a polynomial $P(x)$ is divided by $x-a$, and the value of $P(a)$.",
+          "steps": [
+            {
+              "title": "Write the division identity",
+              "body": "$P(x)=(x-a)Q(x)+R$."
+            },
+            {
+              "title": "Set the divisor to zero",
+              "body": "Put $x=a$: $P(a)=(a-a)Q(a)+R=R$."
+            }
+          ],
+          "answer": "$R=P(a)$."
+        }
+      },
+      {
+        "id": "example-1",
+        "type": "example",
+        "label": "教材例题 1：多项式除以二项式",
+        "prompt": "(a) 用 $x-2$ 除 $P(x)=5x^3+10x-13x^2-9$，将结果写为 $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$。(b) 指出变量限制。(c) 写出检验除法的恒等式。(d) 验证答案。",
+        "concept": "long-division",
+        "printedPage": 120,
+        "pdfPage": 129,
+        "steps": [
+          {
+            "title": "(a) 按降幂排列",
+            "body": "$P(x)=5x^3-13x^2+10x-9$。"
+          },
+          {
+            "title": "长除法第 1 轮",
+            "body": "商的下一项为 $5x^2$。相乘得 $(x-2)(5x^2)=5x^3-10x^2$；减去整个乘积，带下余下各项，得到 $-3x^2+10x-9$。"
+          },
+          {
+            "title": "长除法第 2 轮",
+            "body": "商的下一项为 $-3x$。相乘得 $(x-2)(-3x)=-3x^2+6x$；减去整个乘积，带下余下各项，得到 $4x-9$。"
+          },
+          {
+            "title": "长除法第 3 轮",
+            "body": "商的下一项为 $4$。相乘得 $(x-2)(4)=4x-8$；减去整个乘积，带下余下各项，得到 $-1$。"
+          },
+          {
+            "title": "(b) 写出分式与限制",
+            "body": "$\\frac{P(x)}{x-2}=5x^2-3x+4-\\frac{1}{x-2}$，$x\\ne2$。"
+          },
+          {
+            "title": "(c)、(d) 乘回检验",
+            "body": "$P(x)=(x-2)(5x^2-3x+4)-1=5x^3-3x^2+4x-10x^2+6x-8-1=5x^3-13x^2+10x-9$。"
+          }
+        ],
+        "answer": "$Q(x)=5x^2-3x+4$，$R=-1$；原分式限制 $x\\ne2$。",
+        "en": {
+          "label": "Textbook Example 1: divide by a binomial",
+          "prompt": "(a) Divide $P(x)=5x^3+10x-13x^2-9$ by $x-2$. Express the result in the form $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$. (b) Identify any restrictions on the variable. (c) Write the corresponding statement that can be used to check the division. (d) Verify your answer.",
+          "steps": [
+            {
+              "title": "(a) Arrange in descending powers",
+              "body": "$P(x)=5x^3-13x^2+10x-9$."
+            },
+            {
+              "title": "Long division: round 1",
+              "body": "The next quotient term is $5x^2$. Multiply: $(x-2)(5x^2)=5x^3-10x^2$. Subtract the entire product and bring down the remaining terms to obtain $-3x^2+10x-9$."
+            },
+            {
+              "title": "Long division: round 2",
+              "body": "The next quotient term is $-3x$. Multiply: $(x-2)(-3x)=-3x^2+6x$. Subtract the entire product and bring down the remaining terms to obtain $4x-9$."
+            },
+            {
+              "title": "Long division: round 3",
+              "body": "The next quotient term is $4$. Multiply: $(x-2)(4)=4x-8$. Subtract the entire product and bring down the remaining terms to obtain $-1$."
+            },
+            {
+              "title": "(b) State the fraction and restriction",
+              "body": "$\\frac{P(x)}{x-2}=5x^2-3x+4-\\frac{1}{x-2}$, $x\\ne2$."
+            },
+            {
+              "title": "(c), (d) Check by multiplication",
+              "body": "$P(x)=(x-2)(5x^2-3x+4)-1=5x^3-3x^2+4x-10x^2+6x-8-1=5x^3-13x^2+10x-9$."
+            }
+          ],
+          "answer": "$Q(x)=5x^2-3x+4$, $R=-1$; the original fraction requires $x\\ne2$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "id": "practice-1",
+        "type": "practice",
+        "label": "Your Turn 1",
+        "prompt": "(a) 用 $x-1$ 除 $P(x)=x^4-2x^3+x^2-3x+4$，将结果写为 $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$。(b) 指出变量限制。(c) 验证答案。",
+        "concept": "long-division",
+        "printedPage": 121,
+        "pdfPage": 130,
+        "steps": [
+          {
+            "title": "长除法第 1 轮",
+            "body": "商的下一项为 $x^3$。相乘得 $(x-1)(x^3)=x^4-x^3$；减去整个乘积，带下余下各项，得到 $-x^3+x^2-3x+4$。"
+          },
+          {
+            "title": "长除法第 2 轮",
+            "body": "商的下一项为 $-x^2$。相乘得 $(x-1)(-x^2)=-x^3+x^2$；减去整个乘积，带下余下各项，得到 $-3x+4$。"
+          },
+          {
+            "title": "长除法第 3 轮",
+            "body": "商的下一项为 $0$。相乘得 $(x-1)(0)=0$；减去整个乘积，带下余下各项，得到 $-3x+4$。"
+          },
+          {
+            "title": "长除法第 4 轮",
+            "body": "商的下一项为 $-3$。相乘得 $(x-1)(-3)=-3x+3$；减去整个乘积，带下余下各项，得到 $1$。"
+          },
+          {
+            "title": "(a)、(b) 结果及限制",
+            "body": "$\\frac{P(x)}{x-1}=x^3-x^2-3+\\frac1{x-1}$，$x\\ne1$。"
+          },
+          {
+            "title": "(c) 验证",
+            "body": "$(x-1)(x^3-x^2-3)+1=x^4-2x^3+x^2-3x+3+1=x^4-2x^3+x^2-3x+4$。"
+          }
+        ],
+        "answer": "$Q=x^3-x^2-3$，$R=1$；$x\\ne1$。",
+        "en": {
+          "label": "Your Turn 1",
+          "prompt": "(a) Divide $P(x)=x^4-2x^3+x^2-3x+4$ by $x-1$. Express the result in the form $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$. (b) Identify any restrictions on the variable. (c) Verify your answer.",
+          "steps": [
+            {
+              "title": "Long division: round 1",
+              "body": "The next quotient term is $x^3$. Multiply: $(x-1)(x^3)=x^4-x^3$. Subtract the entire product and bring down the remaining terms to obtain $-x^3+x^2-3x+4$."
+            },
+            {
+              "title": "Long division: round 2",
+              "body": "The next quotient term is $-x^2$. Multiply: $(x-1)(-x^2)=-x^3+x^2$. Subtract the entire product and bring down the remaining terms to obtain $-3x+4$."
+            },
+            {
+              "title": "Long division: round 3",
+              "body": "The next quotient term is $0$. Multiply: $(x-1)(0)=0$. Subtract the entire product and bring down the remaining terms to obtain $-3x+4$."
+            },
+            {
+              "title": "Long division: round 4",
+              "body": "The next quotient term is $-3$. Multiply: $(x-1)(-3)=-3x+3$. Subtract the entire product and bring down the remaining terms to obtain $1$."
+            },
+            {
+              "title": "(a), (b) Result and restriction",
+              "body": "$\\frac{P(x)}{x-1}=x^3-x^2-3+\\frac1{x-1}$, $x\\ne1$."
+            },
+            {
+              "title": "(c) Verify",
+              "body": "$(x-1)(x^3-x^2-3)+1=x^4-2x^3+x^2-3x+3+1=x^4-2x^3+x^2-3x+4$."
+            }
+          ],
+          "answer": "$Q=x^3-x^2-3$, $R=1$; $x\\ne1$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "id": "example-2",
+        "type": "example",
+        "label": "教材例题 2：套盒的尺寸",
+        "prompt": "本节引言中的套盒体积（立方厘米）为 $V(x)=x^3+7x^2+14x+8$，高（厘米）为 $h=x+1$。用 $x$ 表示盒子可能的尺寸。引言给出 $x$ 为整数且 $5\\le x\\le15$，高为 6–16 cm。",
+        "concept": "box-models",
+        "printedPage": 121,
+        "pdfPage": 130,
+        "steps": [
+          {
+            "title": "建立底面积",
+            "body": "$V=lwh$，所以 $lw=V/(x+1)$。"
+          },
+          {
+            "title": "长除法第 1 轮",
+            "body": "商的下一项为 $x^2$。相乘得 $(x+1)(x^2)=x^3+x^2$；减去整个乘积，带下余下各项，得到 $6x^2+14x+8$。"
+          },
+          {
+            "title": "长除法第 2 轮",
+            "body": "商的下一项为 $6x$。相乘得 $(x+1)(6x)=6x^2+6x$；减去整个乘积，带下余下各项，得到 $8x+8$。"
+          },
+          {
+            "title": "长除法第 3 轮",
+            "body": "商的下一项为 $8$。相乘得 $(x+1)(8)=8x+8$；减去整个乘积，带下余下各项，得到 $0$。"
+          },
+          {
+            "title": "分解底面积",
+            "body": "$lw=x^2+6x+8=(x+2)(x+4)$，可取 $w=x+2$、$l=x+4$。"
+          },
+          {
+            "title": "检查模型与范围",
+            "body": "$(x+1)(x+2)(x+4)=x^3+7x^2+14x+8$。$x=5,6,\\ldots,15$ 时三个尺寸均为正，高为 6–16 cm。"
+          }
+        ],
+        "answer": "可能的 $(h,w,l)=(x+1,x+2,x+4)$ cm，$x\\in\\{5,6,\\ldots,15\\}$；底面长、宽可互换。",
+        "en": {
+          "label": "Textbook Example 2: nested box dimensions",
+          "prompt": "The volume of the nested boxes from the section introduction, in cubic centimetres, is $V(x)=x^3+7x^2+14x+8$. What are possible dimensions in terms of $x$ if the height, in centimetres, is $x+1$? The introduction specifies integer $x$ with $5\\le x\\le15$, and heights from 6 to 16 cm.",
+          "steps": [
+            {
+              "title": "Set up the base area",
+              "body": "$V=lwh$, so $lw=V/(x+1)$."
+            },
+            {
+              "title": "Long division: round 1",
+              "body": "The next quotient term is $x^2$. Multiply: $(x+1)(x^2)=x^3+x^2$. Subtract the entire product and bring down the remaining terms to obtain $6x^2+14x+8$."
+            },
+            {
+              "title": "Long division: round 2",
+              "body": "The next quotient term is $6x$. Multiply: $(x+1)(6x)=6x^2+6x$. Subtract the entire product and bring down the remaining terms to obtain $8x+8$."
+            },
+            {
+              "title": "Long division: round 3",
+              "body": "The next quotient term is $8$. Multiply: $(x+1)(8)=8x+8$. Subtract the entire product and bring down the remaining terms to obtain $0$."
+            },
+            {
+              "title": "Factor the base area",
+              "body": "$lw=x^2+6x+8=(x+2)(x+4)$, so possible choices are $w=x+2$, $l=x+4$."
+            },
+            {
+              "title": "Check the model and range",
+              "body": "$(x+1)(x+2)(x+4)=x^3+7x^2+14x+8$. For $x=5,6,\\ldots,15$, all dimensions are positive and heights range from 6 to 16 cm."
+            }
+          ],
+          "answer": "Possible $(h,w,l)=(x+1,x+2,x+4)$ cm, $x\\in\\{5,6,\\ldots,15\\}$; length and width can be interchanged."
+        },
+        "sourceImage": "assets/example-2.png"
+      },
+      {
+        "id": "practice-2",
+        "type": "practice",
+        "label": "Your Turn 2",
+        "prompt": "长方体的体积为 $V(x)=x^3+3x^2-36x+32$。若长为 $l=x-4$，用 $x$ 表示宽 $w$ 和高 $h$ 的可能值。",
+        "concept": "box-models",
+        "printedPage": 121,
+        "pdfPage": 130,
+        "steps": [
+          {
+            "title": "长除法第 1 轮",
+            "body": "商的下一项为 $x^2$。相乘得 $(x-4)(x^2)=x^3-4x^2$；减去整个乘积，带下余下各项，得到 $7x^2-36x+32$。"
+          },
+          {
+            "title": "长除法第 2 轮",
+            "body": "商的下一项为 $7x$。相乘得 $(x-4)(7x)=7x^2-28x$；减去整个乘积，带下余下各项，得到 $-8x+32$。"
+          },
+          {
+            "title": "长除法第 3 轮",
+            "body": "商的下一项为 $-8$。相乘得 $(x-4)(-8)=-8x+32$；减去整个乘积，带下余下各项，得到 $0$。"
+          },
+          {
+            "title": "分解面积",
+            "body": "$wh=x^2+7x-8=(x+8)(x-1)$，故可取 $w=x+8$、$h=x-1$。"
+          },
+          {
+            "title": "检查实际尺寸",
+            "body": "$(x-4)(x+8)(x-1)=x^3+3x^2-36x+32$。所有尺寸要为正，需 $x>4$；宽、高也可互换。"
+          }
+        ],
+        "answer": "$w=x+8$，$h=x-1$（或互换），实际长方体要求 $x>4$。",
+        "en": {
+          "label": "Your Turn 2",
+          "prompt": "The volume of a rectangular prism is $V(x)=x^3+3x^2-36x+32$. Determine possible measures for $w$ and $h$ in terms of $x$ if its length is $l=x-4$.",
+          "steps": [
+            {
+              "title": "Long division: round 1",
+              "body": "The next quotient term is $x^2$. Multiply: $(x-4)(x^2)=x^3-4x^2$. Subtract the entire product and bring down the remaining terms to obtain $7x^2-36x+32$."
+            },
+            {
+              "title": "Long division: round 2",
+              "body": "The next quotient term is $7x$. Multiply: $(x-4)(7x)=7x^2-28x$. Subtract the entire product and bring down the remaining terms to obtain $-8x+32$."
+            },
+            {
+              "title": "Long division: round 3",
+              "body": "The next quotient term is $-8$. Multiply: $(x-4)(-8)=-8x+32$. Subtract the entire product and bring down the remaining terms to obtain $0$."
+            },
+            {
+              "title": "Factor the area",
+              "body": "$wh=x^2+7x-8=(x+8)(x-1)$, so possible choices are $w=x+8$, $h=x-1$."
+            },
+            {
+              "title": "Check physical dimensions",
+              "body": "$(x-4)(x+8)(x-1)=x^3+3x^2-36x+32$. Positive dimensions require $x>4$; width and height may be interchanged."
+            }
+          ],
+          "answer": "$w=x+8$, $h=x-1$ (or interchanged); a physical prism requires $x>4$."
+        },
+        "sourceImage": "assets/practice-2.png"
+      },
+      {
+        "id": "example-3",
+        "type": "example",
+        "label": "教材例题 3：合成除法",
+        "prompt": "(a) 用合成除法计算 $(2x^3+3x^2-4x+15)\\div(x+3)$。(b) 用长除法检查结果。",
+        "concept": "synthetic-division",
+        "printedPage": 122,
+        "pdfPage": 131,
+        "steps": [
+          {
+            "title": "(a) 确定表格约定",
+            "body": "$x+3=x-(-3)$。本页采用根 $-3$ 与相加法；教材使用 $+3$ 与相减法，得到的结果相同。系数为 $2,3,-4,15$。"
+          },
+          {
+            "title": "(a) 逐列乘加",
+            "body": "落下 $2$。$3+(-3)(2)=-3$；$-4+(-3)(-3)=5$；$15+(-3)(5)=0$。商为 $2x^2-3x+5$，余数为 $0$，原分式要求 $x\\ne-3$。"
+          },
+          {
+            "title": "(b) 长除法第 1 轮",
+            "body": "商的下一项为 $2x^2$。相乘得 $(x+3)(2x^2)=2x^3+6x^2$；减去整个乘积，带下余下各项，得到 $-3x^2-4x+15$。"
+          },
+          {
+            "title": "(b) 长除法第 2 轮",
+            "body": "商的下一项为 $-3x$。相乘得 $(x+3)(-3x)=-3x^2-9x$；减去整个乘积，带下余下各项，得到 $5x+15$。"
+          },
+          {
+            "title": "(b) 长除法第 3 轮",
+            "body": "商的下一项为 $5$。相乘得 $(x+3)(5)=5x+15$；减去整个乘积，带下余下各项，得到 $0$。"
+          }
+        ],
+        "answer": "$Q=2x^2-3x+5$，$R=0$；$x\\ne-3$。两种方法相符。",
+        "en": {
+          "label": "Textbook Example 3: synthetic division",
+          "prompt": "(a) Use synthetic division to divide $2x^3+3x^2-4x+15$ by $x+3$. (b) Check the results using long division.",
+          "steps": [
+            {
+              "title": "(a) Set the table convention",
+              "body": "$x+3=x-(-3)$. Our table uses root $-3$ and addition; the source uses $+3$ and subtraction. Both give the same result. Coefficients: $2,3,-4,15$."
+            },
+            {
+              "title": "(a) Multiply and add by column",
+              "body": "Bring down $2$. Then $3+(-3)(2)=-3$; $-4+(-3)(-3)=5$; $15+(-3)(5)=0$. The quotient is $2x^2-3x+5$, remainder $0$, and the original fraction requires $x\\ne-3$."
+            },
+            {
+              "title": "(b) Long division: round 1",
+              "body": "The next quotient term is $2x^2$. Multiply: $(x+3)(2x^2)=2x^3+6x^2$. Subtract the entire product and bring down the remaining terms to obtain $-3x^2-4x+15$."
+            },
+            {
+              "title": "(b) Long division: round 2",
+              "body": "The next quotient term is $-3x$. Multiply: $(x+3)(-3x)=-3x^2-9x$. Subtract the entire product and bring down the remaining terms to obtain $5x+15$."
+            },
+            {
+              "title": "(b) Long division: round 3",
+              "body": "The next quotient term is $5$. Multiply: $(x+3)(5)=5x+15$. Subtract the entire product and bring down the remaining terms to obtain $0$."
+            }
+          ],
+          "answer": "$Q=2x^2-3x+5$, $R=0$; $x\\ne-3$. Both methods agree."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "syntheticDivisions": [
+          {
+            "rootLatex": "-3",
+            "coefficientsLatex": [
+              "2",
+              "3",
+              "-4",
+              "15"
+            ],
+            "productsLatex": [
+              null,
+              "-6",
+              "9",
+              "-15"
+            ],
+            "bottomLatex": [
+              "2",
+              "-3",
+              "5",
+              "0"
+            ],
+            "remainderLatex": "0",
+            "quotientLatex": "2x^2-3x+5"
+          }
+        ]
+      },
+      {
+        "id": "practice-3",
+        "type": "practice",
+        "label": "Your Turn 3",
+        "prompt": "用合成除法计算 $\\frac{x^3+7x^2-3x+4}{x-2}$。",
+        "concept": "synthetic-division",
+        "printedPage": 122,
+        "pdfPage": 131,
+        "steps": [
+          {
+            "title": "确定根和系数",
+            "body": "除式根为 $2$，系数为 $1,7,-3,4$。"
+          },
+          {
+            "title": "逐列计算",
+            "body": "落下 $1$；$7+2(1)=9$；$-3+2(9)=15$；$4+2(15)=34$。"
+          },
+          {
+            "title": "写结果并检验",
+            "body": "$\\frac{x^3+7x^2-3x+4}{x-2}=x^2+9x+15+\\frac{34}{x-2}$，$x\\ne2$。$(x-2)(x^2+9x+15)+34=x^3+7x^2-3x+4$。"
+          }
+        ],
+        "answer": "$Q=x^2+9x+15$，$R=34$；$x\\ne2$。",
+        "en": {
+          "label": "Your Turn 3",
+          "prompt": "Use synthetic division to determine $\\frac{x^3+7x^2-3x+4}{x-2}$.",
+          "steps": [
+            {
+              "title": "Identify root and coefficients",
+              "body": "The divisor’s root is $2$; coefficients are $1,7,-3,4$."
+            },
+            {
+              "title": "Compute each column",
+              "body": "Bring down $1$; $7+2(1)=9$; $-3+2(9)=15$; $4+2(15)=34$."
+            },
+            {
+              "title": "State and check the result",
+              "body": "$\\frac{x^3+7x^2-3x+4}{x-2}=x^2+9x+15+\\frac{34}{x-2}$, $x\\ne2$. Check: $(x-2)(x^2+9x+15)+34=x^3+7x^2-3x+4$."
+            }
+          ],
+          "answer": "$Q=x^2+9x+15$, $R=34$; $x\\ne2$."
+        },
+        "syntheticDivisions": [
+          {
+            "rootLatex": "2",
+            "coefficientsLatex": [
+              "1",
+              "7",
+              "-3",
+              "4"
+            ],
+            "productsLatex": [
+              null,
+              "2",
+              "18",
+              "30"
+            ],
+            "bottomLatex": [
+              "1",
+              "9",
+              "15",
+              "34"
+            ],
+            "remainderLatex": "34",
+            "quotientLatex": "x^2+9x+15"
+          }
+        ]
+      },
+      {
+        "id": "example-4",
+        "type": "example",
+        "label": "教材例题 4：应用余式定理",
+        "prompt": "(a) 用余式定理求 $P(x)=x^3-10x+6$ 除以 $x+4$ 的余数。(b) 用合成除法验证。",
+        "concept": "remainder-theorem",
+        "printedPage": 123,
+        "pdfPage": 132,
+        "steps": [
+          {
+            "title": "(a) 求函数值",
+            "body": "$x+4=x-(-4)$，所以 $R=P(-4)=(-4)^3-10(-4)+6=-64+40+6=-18$。"
+          },
+          {
+            "title": "(b) 补零并合成",
+            "body": "写系数 $1,0,-10,6$，左侧为 $-4$。落下 $1$；$0-4=-4$；$-10+16=6$；$6-24=-18$。末格余数为 $-18$，与 (a) 一致。"
+          }
+        ],
+        "answer": "余数为 $-18$。",
+        "en": {
+          "label": "Textbook Example 4: apply the remainder theorem",
+          "prompt": "(a) Use the remainder theorem to determine the remainder when $P(x)=x^3-10x+6$ is divided by $x+4$. (b) Verify using synthetic division.",
+          "steps": [
+            {
+              "title": "(a) Evaluate the polynomial",
+              "body": "$x+4=x-(-4)$, so $R=P(-4)=(-4)^3-10(-4)+6=-64+40+6=-18$."
+            },
+            {
+              "title": "(b) Include zero and divide synthetically",
+              "body": "Use coefficients $1,0,-10,6$ with root $-4$. Bring down $1$; $0-4=-4$; $-10+16=6$; $6-24=-18$. The final entry is $-18$, agreeing with (a)."
+            }
+          ],
+          "answer": "The remainder is $-18$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "syntheticDivisions": [
+          {
+            "rootLatex": "-4",
+            "coefficientsLatex": [
+              "1",
+              "0",
+              "-10",
+              "6"
+            ],
+            "productsLatex": [
+              null,
+              "-4",
+              "16",
+              "-24"
+            ],
+            "bottomLatex": [
+              "1",
+              "-4",
+              "6",
+              "-18"
+            ],
+            "remainderLatex": "-18",
+            "quotientLatex": "x^2-4x+6"
+          }
+        ]
+      },
+      {
+        "id": "practice-4",
+        "type": "practice",
+        "label": "Your Turn 4",
+        "prompt": "$11x-4x^4-7$ 除以 $x-3$ 的余数是多少？用长除法或合成除法验证。",
+        "concept": "remainder-theorem",
+        "printedPage": 123,
+        "pdfPage": 132,
+        "steps": [
+          {
+            "title": "用余式定理",
+            "body": "$a=3$；$P(3)=11(3)-4(3^4)-7=33-324-7=-298$。"
+          },
+          {
+            "title": "按降幂补零",
+            "body": "$P(x)=-4x^4+0x^3+0x^2+11x-7$；使用根 $3$。"
+          },
+          {
+            "title": "合成除法核验",
+            "body": "落下 $-4$；$0+3(-4)=-12$；$0+3(-12)=-36$；$11+3(-36)=-97$；$-7+3(-97)=-298$。余数与代入值相同。"
+          }
+        ],
+        "answer": "余数 $R=-298$。",
+        "en": {
+          "label": "Your Turn 4",
+          "prompt": "What is the remainder when $11x-4x^4-7$ is divided by $x-3$? Verify using either long or synthetic division.",
+          "steps": [
+            {
+              "title": "Use the remainder theorem",
+              "body": "$a=3$; $P(3)=11(3)-4(3^4)-7=33-324-7=-298$."
+            },
+            {
+              "title": "Order terms and include zeros",
+              "body": "$P(x)=-4x^4+0x^3+0x^2+11x-7$; use root $3$."
+            },
+            {
+              "title": "Verify synthetically",
+              "body": "Bring down $-4$; $0+3(-4)=-12$; $0+3(-12)=-36$; $11+3(-36)=-97$; $-7+3(-97)=-298$. The final remainder agrees with substitution."
+            }
+          ],
+          "answer": "The remainder is $R=-298$."
+        },
+        "syntheticDivisions": [
+          {
+            "rootLatex": "3",
+            "coefficientsLatex": [
+              "-4",
+              "0",
+              "0",
+              "11",
+              "-7"
+            ],
+            "productsLatex": [
+              null,
+              "-12",
+              "-36",
+              "-108",
+              "-291"
+            ],
+            "bottomLatex": [
+              "-4",
+              "-12",
+              "-36",
+              "-97",
+              "-298"
+            ],
+            "remainderLatex": "-298",
+            "quotientLatex": "-4x^3-12x^2-36x-97"
+          }
+        ]
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "(a) 用长除法将 $x^2+10x-24$ 除以 $x - 2$，结果写成 $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$。 (b) 写出变量限制。 (c) 写出用来检验除法的对应恒等式。 (d) 验证答案。",
+        "concept": [
+          "long-division",
+          "division-identity"
+        ],
+        "steps": [
+          {
+            "title": "(a) 长除法第 1 步",
+            "body": "首项相除：$x^{2}\\div x=x$。乘回除式：$(x - 2)(x)=x^{2} - 2x$。相减：$(x^{2} + 10x - 24)-(x^{2} - 2x)=12x - 24$。"
+          },
+          {
+            "title": "(a) 长除法第 2 步",
+            "body": "首项相除：$12x\\div x=12$。乘回除式：$(x - 2)(12)=12x - 24$。相减：$(12x - 24)-(12x - 24)=0$。"
+          },
+          {
+            "title": "(a) 读出商和余数",
+            "body": "$Q=x + 12$，$R=0$。余数为零，或余式次数小于一次除式的次数，除法结束。"
+          },
+          {
+            "title": "(a) 写成所求形式",
+            "body": "$\\frac{x^2+10x-24}{x - 2}=x + 12$。"
+          },
+          {
+            "title": "(b) 排除零除式",
+            "body": "$x - 2\\ne0$，所以 $x\\ne 2$。"
+          },
+          {
+            "title": "(c) 建立检验恒等式",
+            "body": "被除式 = 除式 × 商 + 余数：$x^2+10x-24=(x - 2)(x + 12)$。"
+          },
+          {
+            "title": "(d) 展开乘积核对",
+            "body": "$(x-2)(x+12)=x^2+12x-2x-24=x^2+10x-24$，恰好等于原被除式。"
+          }
+        ],
+        "answer": "(a) $\\frac{x^2+10x-24}{x - 2}=x + 12$；(b) $x\\ne 2$；(c) $x^2+10x-24=(x - 2)(x + 12)$；(d) 展开后与原式相同。",
+        "pdfPage": 133,
+        "printedPage": 124,
+        "en": {
+          "prompt": "(a) Use long division to divide $x^2+10x-24$ by $x - 2$. Express the result in the form $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$. (b) Identify any restrictions on the variable. (c) Write the corresponding statement that can be used to check the division. (d) Verify your answer.",
+          "steps": [
+            {
+              "title": "(a) Long division, step 1",
+              "body": "Divide the leading terms: $x^{2}\\div x=x$. Multiply by the divisor: $(x - 2)(x)=x^{2} - 2x$. Subtract: $(x^{2} + 10x - 24)-(x^{2} - 2x)=12x - 24$."
+            },
+            {
+              "title": "(a) Long division, step 2",
+              "body": "Divide the leading terms: $12x\\div x=12$. Multiply by the divisor: $(x - 2)(12)=12x - 24$. Subtract: $(12x - 24)-(12x - 24)=0$."
+            },
+            {
+              "title": "(a) Read the quotient and remainder",
+              "body": "$Q=x + 12$ and $R=0$. The remainder is zero or has lower degree than the linear divisor, so the division is complete."
+            },
+            {
+              "title": "(a) Write the requested form",
+              "body": "$\\frac{x^2+10x-24}{x - 2}=x + 12$."
+            },
+            {
+              "title": "(b) Exclude a zero divisor",
+              "body": "$x - 2\\ne0$, so $x\\ne 2$."
+            },
+            {
+              "title": "(c) State the checking identity",
+              "body": "Dividend = divisor × quotient + remainder: $x^2+10x-24=(x - 2)(x + 12)$."
+            },
+            {
+              "title": "(d) Expand to verify",
+              "body": "$(x-2)(x+12)=x^2+12x-2x-24=x^2+10x-24$, which is the original dividend."
+            }
+          ],
+          "answer": "(a) $\\frac{x^2+10x-24}{x - 2}=x + 12$; (b) $x\\ne 2$; (c) $x^2+10x-24=(x - 2)(x + 12)$; (d) Expansion reproduces the original dividend."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "(a) 用长除法将 $3x^4-4x^3-6x^2+17x-8$ 除以 $x + 1$，结果写成 $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$。 (b) 写出变量限制。 (c) 写出用来检验除法的对应恒等式。 (d) 验证答案。",
+        "concept": [
+          "long-division",
+          "division-identity"
+        ],
+        "steps": [
+          {
+            "title": "(a) 长除法第 1 步",
+            "body": "首项相除：$3x^{4}\\div x=3x^{3}$。乘回除式：$(x + 1)(3x^{3})=3x^{4} + 3x^{3}$。相减：$(3x^{4} - 4x^{3} - 6x^{2} + 17x - 8)-(3x^{4} + 3x^{3})=-7x^{3} - 6x^{2} + 17x - 8$。"
+          },
+          {
+            "title": "(a) 长除法第 2 步",
+            "body": "首项相除：$-7x^{3}\\div x=-7x^{2}$。乘回除式：$(x + 1)(-7x^{2})=-7x^{3} - 7x^{2}$。相减：$(-7x^{3} - 6x^{2} + 17x - 8)-(-7x^{3} - 7x^{2})=x^{2} + 17x - 8$。"
+          },
+          {
+            "title": "(a) 长除法第 3 步",
+            "body": "首项相除：$x^{2}\\div x=x$。乘回除式：$(x + 1)(x)=x^{2} + x$。相减：$(x^{2} + 17x - 8)-(x^{2} + x)=16x - 8$。"
+          },
+          {
+            "title": "(a) 长除法第 4 步",
+            "body": "首项相除：$16x\\div x=16$。乘回除式：$(x + 1)(16)=16x + 16$。相减：$(16x - 8)-(16x + 16)=-24$。"
+          },
+          {
+            "title": "(a) 读出商和余数",
+            "body": "$Q=3x^{3} - 7x^{2} + x + 16$，$R=-24$。余数为零，或余式次数小于一次除式的次数，除法结束。"
+          },
+          {
+            "title": "(a) 写成所求形式",
+            "body": "$\\frac{3x^4-4x^3-6x^2+17x-8}{x + 1}=3x^{3} - 7x^{2} + x + 16 - \\frac{24}{x + 1}$。"
+          },
+          {
+            "title": "(b) 排除零除式",
+            "body": "$x + 1\\ne0$，所以 $x\\ne -1$。"
+          },
+          {
+            "title": "(c) 建立检验恒等式",
+            "body": "被除式 = 除式 × 商 + 余数：$3x^4-4x^3-6x^2+17x-8=(x + 1)(3x^{3} - 7x^{2} + x + 16) - 24$。"
+          },
+          {
+            "title": "(d) 展开乘积核对",
+            "body": "$(x+1)(3x^3-7x^2+x+16)-24=3x^4-7x^3+x^2+16x+3x^3-7x^2+x+16-24=3x^4-4x^3-6x^2+17x-8$，恰好等于原被除式。"
+          }
+        ],
+        "answer": "(a) $\\frac{3x^4-4x^3-6x^2+17x-8}{x + 1}=3x^{3} - 7x^{2} + x + 16 - \\frac{24}{x + 1}$；(b) $x\\ne -1$；(c) $3x^4-4x^3-6x^2+17x-8=(x + 1)(3x^{3} - 7x^{2} + x + 16) - 24$；(d) 展开后与原式相同。",
+        "pdfPage": 133,
+        "printedPage": 124,
+        "en": {
+          "prompt": "(a) Use long division to divide $3x^4-4x^3-6x^2+17x-8$ by $x + 1$. Express the result in the form $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$. (b) Identify any restrictions on the variable. (c) Write the corresponding statement that can be used to check the division. (d) Verify your answer.",
+          "steps": [
+            {
+              "title": "(a) Long division, step 1",
+              "body": "Divide the leading terms: $3x^{4}\\div x=3x^{3}$. Multiply by the divisor: $(x + 1)(3x^{3})=3x^{4} + 3x^{3}$. Subtract: $(3x^{4} - 4x^{3} - 6x^{2} + 17x - 8)-(3x^{4} + 3x^{3})=-7x^{3} - 6x^{2} + 17x - 8$."
+            },
+            {
+              "title": "(a) Long division, step 2",
+              "body": "Divide the leading terms: $-7x^{3}\\div x=-7x^{2}$. Multiply by the divisor: $(x + 1)(-7x^{2})=-7x^{3} - 7x^{2}$. Subtract: $(-7x^{3} - 6x^{2} + 17x - 8)-(-7x^{3} - 7x^{2})=x^{2} + 17x - 8$."
+            },
+            {
+              "title": "(a) Long division, step 3",
+              "body": "Divide the leading terms: $x^{2}\\div x=x$. Multiply by the divisor: $(x + 1)(x)=x^{2} + x$. Subtract: $(x^{2} + 17x - 8)-(x^{2} + x)=16x - 8$."
+            },
+            {
+              "title": "(a) Long division, step 4",
+              "body": "Divide the leading terms: $16x\\div x=16$. Multiply by the divisor: $(x + 1)(16)=16x + 16$. Subtract: $(16x - 8)-(16x + 16)=-24$."
+            },
+            {
+              "title": "(a) Read the quotient and remainder",
+              "body": "$Q=3x^{3} - 7x^{2} + x + 16$ and $R=-24$. The remainder is zero or has lower degree than the linear divisor, so the division is complete."
+            },
+            {
+              "title": "(a) Write the requested form",
+              "body": "$\\frac{3x^4-4x^3-6x^2+17x-8}{x + 1}=3x^{3} - 7x^{2} + x + 16 - \\frac{24}{x + 1}$."
+            },
+            {
+              "title": "(b) Exclude a zero divisor",
+              "body": "$x + 1\\ne0$, so $x\\ne -1$."
+            },
+            {
+              "title": "(c) State the checking identity",
+              "body": "Dividend = divisor × quotient + remainder: $3x^4-4x^3-6x^2+17x-8=(x + 1)(3x^{3} - 7x^{2} + x + 16) - 24$."
+            },
+            {
+              "title": "(d) Expand to verify",
+              "body": "$(x+1)(3x^3-7x^2+x+16)-24=3x^4-7x^3+x^2+16x+3x^3-7x^2+x+16-24=3x^4-4x^3-6x^2+17x-8$, which is the original dividend."
+            }
+          ],
+          "answer": "(a) $\\frac{3x^4-4x^3-6x^2+17x-8}{x + 1}=3x^{3} - 7x^{2} + x + 16 - \\frac{24}{x + 1}$; (b) $x\\ne -1$; (c) $3x^4-4x^3-6x^2+17x-8=(x + 1)(3x^{3} - 7x^{2} + x + 16) - 24$; (d) Expansion reproduces the original dividend."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "用长除法求各题的商 $Q$。 (a) $(x^3+3x^2-3x-2)\\div(x - 1)$；(b) $(x^3+2x^2-7x-2)\\div(x - 2)$；(c) $(2w^3+3w^2-5w+2)\\div(w + 3)$；(d) $(9m^3-6m^2+3m+2)\\div(m - 1)$；(e) $(t^4+6t^3-3t^2-t+8)\\div(t + 1)$；(f) $(2y^4-3y^2+1)\\div(y - 3)$。",
+        "concept": [
+          "long-division",
+          "division-identity"
+        ],
+        "steps": [
+          {
+            "title": "(a) 长除法第 1 步",
+            "body": "首项相除：$x^{3}\\div x=x^{2}$。乘回除式：$(x - 1)(x^{2})=x^{3} - x^{2}$。相减：$(x^{3} + 3x^{2} - 3x - 2)-(x^{3} - x^{2})=4x^{2} - 3x - 2$。"
+          },
+          {
+            "title": "(a) 长除法第 2 步",
+            "body": "首项相除：$4x^{2}\\div x=4x$。乘回除式：$(x - 1)(4x)=4x^{2} - 4x$。相减：$(4x^{2} - 3x - 2)-(4x^{2} - 4x)=x - 2$。"
+          },
+          {
+            "title": "(a) 长除法第 3 步",
+            "body": "首项相除：$x\\div x=1$。乘回除式：$(x - 1)(1)=x - 1$。相减：$(x - 2)-(x - 1)=-1$。"
+          },
+          {
+            "title": "(a) 读出商和余数",
+            "body": "$Q=x^{2} + 4x + 1$，$R=-1$。余数为零，或余式次数小于一次除式的次数，除法结束。"
+          },
+          {
+            "title": "(b) 长除法第 1 步",
+            "body": "首项相除：$x^{3}\\div x=x^{2}$。乘回除式：$(x - 2)(x^{2})=x^{3} - 2x^{2}$。相减：$(x^{3} + 2x^{2} - 7x - 2)-(x^{3} - 2x^{2})=4x^{2} - 7x - 2$。"
+          },
+          {
+            "title": "(b) 长除法第 2 步",
+            "body": "首项相除：$4x^{2}\\div x=4x$。乘回除式：$(x - 2)(4x)=4x^{2} - 8x$。相减：$(4x^{2} - 7x - 2)-(4x^{2} - 8x)=x - 2$。"
+          },
+          {
+            "title": "(b) 长除法第 3 步",
+            "body": "首项相除：$x\\div x=1$。乘回除式：$(x - 2)(1)=x - 2$。相减：$(x - 2)-(x - 2)=0$。"
+          },
+          {
+            "title": "(b) 读出商和余数",
+            "body": "$Q=x^{2} + 4x + 1$，$R=0$。余数为零，或余式次数小于一次除式的次数，除法结束。"
+          },
+          {
+            "title": "(c) 长除法第 1 步",
+            "body": "首项相除：$2w^{3}\\div w=2w^{2}$。乘回除式：$(w + 3)(2w^{2})=2w^{3} + 6w^{2}$。相减：$(2w^{3} + 3w^{2} - 5w + 2)-(2w^{3} + 6w^{2})=-3w^{2} - 5w + 2$。"
+          },
+          {
+            "title": "(c) 长除法第 2 步",
+            "body": "首项相除：$-3w^{2}\\div w=-3w$。乘回除式：$(w + 3)(-3w)=-3w^{2} - 9w$。相减：$(-3w^{2} - 5w + 2)-(-3w^{2} - 9w)=4w + 2$。"
+          },
+          {
+            "title": "(c) 长除法第 3 步",
+            "body": "首项相除：$4w\\div w=4$。乘回除式：$(w + 3)(4)=4w + 12$。相减：$(4w + 2)-(4w + 12)=-10$。"
+          },
+          {
+            "title": "(c) 读出商和余数",
+            "body": "$Q=2w^{2} - 3w + 4$，$R=-10$。余数为零，或余式次数小于一次除式的次数，除法结束。"
+          },
+          {
+            "title": "(d) 长除法第 1 步",
+            "body": "首项相除：$9m^{3}\\div m=9m^{2}$。乘回除式：$(m - 1)(9m^{2})=9m^{3} - 9m^{2}$。相减：$(9m^{3} - 6m^{2} + 3m + 2)-(9m^{3} - 9m^{2})=3m^{2} + 3m + 2$。"
+          },
+          {
+            "title": "(d) 长除法第 2 步",
+            "body": "首项相除：$3m^{2}\\div m=3m$。乘回除式：$(m - 1)(3m)=3m^{2} - 3m$。相减：$(3m^{2} + 3m + 2)-(3m^{2} - 3m)=6m + 2$。"
+          },
+          {
+            "title": "(d) 长除法第 3 步",
+            "body": "首项相除：$6m\\div m=6$。乘回除式：$(m - 1)(6)=6m - 6$。相减：$(6m + 2)-(6m - 6)=8$。"
+          },
+          {
+            "title": "(d) 读出商和余数",
+            "body": "$Q=9m^{2} + 3m + 6$，$R=8$。余数为零，或余式次数小于一次除式的次数，除法结束。"
+          },
+          {
+            "title": "(e) 长除法第 1 步",
+            "body": "首项相除：$t^{4}\\div t=t^{3}$。乘回除式：$(t + 1)(t^{3})=t^{4} + t^{3}$。相减：$(t^{4} + 6t^{3} - 3t^{2} - t + 8)-(t^{4} + t^{3})=5t^{3} - 3t^{2} - t + 8$。"
+          },
+          {
+            "title": "(e) 长除法第 2 步",
+            "body": "首项相除：$5t^{3}\\div t=5t^{2}$。乘回除式：$(t + 1)(5t^{2})=5t^{3} + 5t^{2}$。相减：$(5t^{3} - 3t^{2} - t + 8)-(5t^{3} + 5t^{2})=-8t^{2} - t + 8$。"
+          },
+          {
+            "title": "(e) 长除法第 3 步",
+            "body": "首项相除：$-8t^{2}\\div t=-8t$。乘回除式：$(t + 1)(-8t)=-8t^{2} - 8t$。相减：$(-8t^{2} - t + 8)-(-8t^{2} - 8t)=7t + 8$。"
+          },
+          {
+            "title": "(e) 长除法第 4 步",
+            "body": "首项相除：$7t\\div t=7$。乘回除式：$(t + 1)(7)=7t + 7$。相减：$(7t + 8)-(7t + 7)=1$。"
+          },
+          {
+            "title": "(e) 读出商和余数",
+            "body": "$Q=t^{3} + 5t^{2} - 8t + 7$，$R=1$。余数为零，或余式次数小于一次除式的次数，除法结束。"
+          },
+          {
+            "title": "(f) 补齐缺项",
+            "body": "$2y^{4} + 0y^{3} - 3y^{2} + 0y + 1$：用零系数占位，按降幂排列。"
+          },
+          {
+            "title": "(f) 长除法第 1 步",
+            "body": "首项相除：$2y^{4}\\div y=2y^{3}$。乘回除式：$(y - 3)(2y^{3})=2y^{4} - 6y^{3}$。相减：$(2y^{4} - 3y^{2} + 1)-(2y^{4} - 6y^{3})=6y^{3} - 3y^{2} + 1$。"
+          },
+          {
+            "title": "(f) 长除法第 2 步",
+            "body": "首项相除：$6y^{3}\\div y=6y^{2}$。乘回除式：$(y - 3)(6y^{2})=6y^{3} - 18y^{2}$。相减：$(6y^{3} - 3y^{2} + 1)-(6y^{3} - 18y^{2})=15y^{2} + 1$。"
+          },
+          {
+            "title": "(f) 长除法第 3 步",
+            "body": "首项相除：$15y^{2}\\div y=15y$。乘回除式：$(y - 3)(15y)=15y^{2} - 45y$。相减：$(15y^{2} + 1)-(15y^{2} - 45y)=45y + 1$。"
+          },
+          {
+            "title": "(f) 长除法第 4 步",
+            "body": "首项相除：$45y\\div y=45$。乘回除式：$(y - 3)(45)=45y - 135$。相减：$(45y + 1)-(45y - 135)=136$。"
+          },
+          {
+            "title": "(f) 读出商和余数",
+            "body": "$Q=2y^{3} + 6y^{2} + 15y + 45$，$R=136$。余数为零，或余式次数小于一次除式的次数，除法结束。"
+          }
+        ],
+        "answer": "(a) $Q=x^{2} + 4x + 1$, $R=-1$；(b) $Q=x^{2} + 4x + 1$, $R=0$；(c) $Q=2w^{2} - 3w + 4$, $R=-10$；(d) $Q=9m^{2} + 3m + 6$, $R=8$；(e) $Q=t^{3} + 5t^{2} - 8t + 7$, $R=1$；(f) $Q=2y^{3} + 6y^{2} + 15y + 45$, $R=136$。",
+        "pdfPage": 133,
+        "printedPage": 124,
+        "en": {
+          "prompt": "Determine each quotient, $Q$, using long division. (a) $(x^3+3x^2-3x-2)\\div(x - 1)$; (b) $(x^3+2x^2-7x-2)\\div(x - 2)$; (c) $(2w^3+3w^2-5w+2)\\div(w + 3)$; (d) $(9m^3-6m^2+3m+2)\\div(m - 1)$; (e) $(t^4+6t^3-3t^2-t+8)\\div(t + 1)$; (f) $(2y^4-3y^2+1)\\div(y - 3)$.",
+          "steps": [
+            {
+              "title": "(a) Long division, step 1",
+              "body": "Divide the leading terms: $x^{3}\\div x=x^{2}$. Multiply by the divisor: $(x - 1)(x^{2})=x^{3} - x^{2}$. Subtract: $(x^{3} + 3x^{2} - 3x - 2)-(x^{3} - x^{2})=4x^{2} - 3x - 2$."
+            },
+            {
+              "title": "(a) Long division, step 2",
+              "body": "Divide the leading terms: $4x^{2}\\div x=4x$. Multiply by the divisor: $(x - 1)(4x)=4x^{2} - 4x$. Subtract: $(4x^{2} - 3x - 2)-(4x^{2} - 4x)=x - 2$."
+            },
+            {
+              "title": "(a) Long division, step 3",
+              "body": "Divide the leading terms: $x\\div x=1$. Multiply by the divisor: $(x - 1)(1)=x - 1$. Subtract: $(x - 2)-(x - 1)=-1$."
+            },
+            {
+              "title": "(a) Read the quotient and remainder",
+              "body": "$Q=x^{2} + 4x + 1$ and $R=-1$. The remainder is zero or has lower degree than the linear divisor, so the division is complete."
+            },
+            {
+              "title": "(b) Long division, step 1",
+              "body": "Divide the leading terms: $x^{3}\\div x=x^{2}$. Multiply by the divisor: $(x - 2)(x^{2})=x^{3} - 2x^{2}$. Subtract: $(x^{3} + 2x^{2} - 7x - 2)-(x^{3} - 2x^{2})=4x^{2} - 7x - 2$."
+            },
+            {
+              "title": "(b) Long division, step 2",
+              "body": "Divide the leading terms: $4x^{2}\\div x=4x$. Multiply by the divisor: $(x - 2)(4x)=4x^{2} - 8x$. Subtract: $(4x^{2} - 7x - 2)-(4x^{2} - 8x)=x - 2$."
+            },
+            {
+              "title": "(b) Long division, step 3",
+              "body": "Divide the leading terms: $x\\div x=1$. Multiply by the divisor: $(x - 2)(1)=x - 2$. Subtract: $(x - 2)-(x - 2)=0$."
+            },
+            {
+              "title": "(b) Read the quotient and remainder",
+              "body": "$Q=x^{2} + 4x + 1$ and $R=0$. The remainder is zero or has lower degree than the linear divisor, so the division is complete."
+            },
+            {
+              "title": "(c) Long division, step 1",
+              "body": "Divide the leading terms: $2w^{3}\\div w=2w^{2}$. Multiply by the divisor: $(w + 3)(2w^{2})=2w^{3} + 6w^{2}$. Subtract: $(2w^{3} + 3w^{2} - 5w + 2)-(2w^{3} + 6w^{2})=-3w^{2} - 5w + 2$."
+            },
+            {
+              "title": "(c) Long division, step 2",
+              "body": "Divide the leading terms: $-3w^{2}\\div w=-3w$. Multiply by the divisor: $(w + 3)(-3w)=-3w^{2} - 9w$. Subtract: $(-3w^{2} - 5w + 2)-(-3w^{2} - 9w)=4w + 2$."
+            },
+            {
+              "title": "(c) Long division, step 3",
+              "body": "Divide the leading terms: $4w\\div w=4$. Multiply by the divisor: $(w + 3)(4)=4w + 12$. Subtract: $(4w + 2)-(4w + 12)=-10$."
+            },
+            {
+              "title": "(c) Read the quotient and remainder",
+              "body": "$Q=2w^{2} - 3w + 4$ and $R=-10$. The remainder is zero or has lower degree than the linear divisor, so the division is complete."
+            },
+            {
+              "title": "(d) Long division, step 1",
+              "body": "Divide the leading terms: $9m^{3}\\div m=9m^{2}$. Multiply by the divisor: $(m - 1)(9m^{2})=9m^{3} - 9m^{2}$. Subtract: $(9m^{3} - 6m^{2} + 3m + 2)-(9m^{3} - 9m^{2})=3m^{2} + 3m + 2$."
+            },
+            {
+              "title": "(d) Long division, step 2",
+              "body": "Divide the leading terms: $3m^{2}\\div m=3m$. Multiply by the divisor: $(m - 1)(3m)=3m^{2} - 3m$. Subtract: $(3m^{2} + 3m + 2)-(3m^{2} - 3m)=6m + 2$."
+            },
+            {
+              "title": "(d) Long division, step 3",
+              "body": "Divide the leading terms: $6m\\div m=6$. Multiply by the divisor: $(m - 1)(6)=6m - 6$. Subtract: $(6m + 2)-(6m - 6)=8$."
+            },
+            {
+              "title": "(d) Read the quotient and remainder",
+              "body": "$Q=9m^{2} + 3m + 6$ and $R=8$. The remainder is zero or has lower degree than the linear divisor, so the division is complete."
+            },
+            {
+              "title": "(e) Long division, step 1",
+              "body": "Divide the leading terms: $t^{4}\\div t=t^{3}$. Multiply by the divisor: $(t + 1)(t^{3})=t^{4} + t^{3}$. Subtract: $(t^{4} + 6t^{3} - 3t^{2} - t + 8)-(t^{4} + t^{3})=5t^{3} - 3t^{2} - t + 8$."
+            },
+            {
+              "title": "(e) Long division, step 2",
+              "body": "Divide the leading terms: $5t^{3}\\div t=5t^{2}$. Multiply by the divisor: $(t + 1)(5t^{2})=5t^{3} + 5t^{2}$. Subtract: $(5t^{3} - 3t^{2} - t + 8)-(5t^{3} + 5t^{2})=-8t^{2} - t + 8$."
+            },
+            {
+              "title": "(e) Long division, step 3",
+              "body": "Divide the leading terms: $-8t^{2}\\div t=-8t$. Multiply by the divisor: $(t + 1)(-8t)=-8t^{2} - 8t$. Subtract: $(-8t^{2} - t + 8)-(-8t^{2} - 8t)=7t + 8$."
+            },
+            {
+              "title": "(e) Long division, step 4",
+              "body": "Divide the leading terms: $7t\\div t=7$. Multiply by the divisor: $(t + 1)(7)=7t + 7$. Subtract: $(7t + 8)-(7t + 7)=1$."
+            },
+            {
+              "title": "(e) Read the quotient and remainder",
+              "body": "$Q=t^{3} + 5t^{2} - 8t + 7$ and $R=1$. The remainder is zero or has lower degree than the linear divisor, so the division is complete."
+            },
+            {
+              "title": "(f) Insert missing powers",
+              "body": "Write $2y^{4} + 0y^{3} - 3y^{2} + 0y + 1$ in descending powers, using zero coefficients as placeholders."
+            },
+            {
+              "title": "(f) Long division, step 1",
+              "body": "Divide the leading terms: $2y^{4}\\div y=2y^{3}$. Multiply by the divisor: $(y - 3)(2y^{3})=2y^{4} - 6y^{3}$. Subtract: $(2y^{4} - 3y^{2} + 1)-(2y^{4} - 6y^{3})=6y^{3} - 3y^{2} + 1$."
+            },
+            {
+              "title": "(f) Long division, step 2",
+              "body": "Divide the leading terms: $6y^{3}\\div y=6y^{2}$. Multiply by the divisor: $(y - 3)(6y^{2})=6y^{3} - 18y^{2}$. Subtract: $(6y^{3} - 3y^{2} + 1)-(6y^{3} - 18y^{2})=15y^{2} + 1$."
+            },
+            {
+              "title": "(f) Long division, step 3",
+              "body": "Divide the leading terms: $15y^{2}\\div y=15y$. Multiply by the divisor: $(y - 3)(15y)=15y^{2} - 45y$. Subtract: $(15y^{2} + 1)-(15y^{2} - 45y)=45y + 1$."
+            },
+            {
+              "title": "(f) Long division, step 4",
+              "body": "Divide the leading terms: $45y\\div y=45$. Multiply by the divisor: $(y - 3)(45)=45y - 135$. Subtract: $(45y + 1)-(45y - 135)=136$."
+            },
+            {
+              "title": "(f) Read the quotient and remainder",
+              "body": "$Q=2y^{3} + 6y^{2} + 15y + 45$ and $R=136$. The remainder is zero or has lower degree than the linear divisor, so the division is complete."
+            }
+          ],
+          "answer": "(a) $Q=x^{2} + 4x + 1$, $R=-1$; (b) $Q=x^{2} + 4x + 1$, $R=0$; (c) $Q=2w^{2} - 3w + 4$, $R=-10$; (d) $Q=9m^{2} + 3m + 6$, $R=8$; (e) $Q=t^{3} + 5t^{2} - 8t + 7$, $R=1$; (f) $Q=2y^{3} + 6y^{2} + 15y + 45$, $R=136$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "用合成除法求各题的商 $Q$。 (a) $(x^3+x^2+3)\\div(x + 4)$；(b) $(m^4-2m^3+m^2+12m-6)\\div(m - 2)$；(c) $(2-x+x^2-x^3-x^4)\\div(x + 2)$；(d) $(2s^3+3s^2-9s-10)\\div(s - 2)$；(e) $(h^3+2h^2-3h+9)\\div(h + 3)$；(f) $(2x^3+7x^2-x+1)\\div(x + 2)$。",
+        "concept": [
+          "synthetic-division",
+          "division-identity"
+        ],
+        "steps": [
+          {
+            "title": "(a) 设置合成除法",
+            "body": "除式为 $(x + 4)=x-(-4)$，所以用 $a=-4$。原多项式先按降幂排列为 $x^{3} + x^{2} + 0x + 3$。系数依次为 $1, 1, 0, 3$，缺项系数写 $0$；先落下 $1$。"
+          },
+          {
+            "title": "(a) 逐列乘加",
+            "body": "依次计算：$(-4)(1)=-4,\\quad 1+(-4)=-3$；$(-4)(-3)=12,\\quad 0+(12)=12$；$(-4)(12)=-48,\\quad 3+(-48)=-45$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(a) 读出结果",
+            "body": "$Q=x^{2} - 3x + 12$，$R=-45$。"
+          },
+          {
+            "title": "(b) 设置合成除法",
+            "body": "除式为 $(m - 2)=m-(2)$，所以用 $a=2$。原多项式先按降幂排列为 $m^{4} - 2m^{3} + m^{2} + 12m - 6$。系数依次为 $1, -2, 1, 12, -6$，缺项系数写 $0$；先落下 $1$。"
+          },
+          {
+            "title": "(b) 逐列乘加",
+            "body": "依次计算：$(2)(1)=2,\\quad -2+(2)=0$；$(2)(0)=0,\\quad 1+(0)=1$；$(2)(1)=2,\\quad 12+(2)=14$；$(2)(14)=28,\\quad -6+(28)=22$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(b) 读出结果",
+            "body": "$Q=m^{3} + m + 14$，$R=22$。"
+          },
+          {
+            "title": "(c) 设置合成除法",
+            "body": "除式为 $(x + 2)=x-(-2)$，所以用 $a=-2$。原多项式先按降幂排列为 $-x^{4} - x^{3} + x^{2} - x + 2$。系数依次为 $-1, -1, 1, -1, 2$，缺项系数写 $0$；先落下 $-1$。"
+          },
+          {
+            "title": "(c) 逐列乘加",
+            "body": "依次计算：$(-2)(-1)=2,\\quad -1+(2)=1$；$(-2)(1)=-2,\\quad 1+(-2)=-1$；$(-2)(-1)=2,\\quad -1+(2)=1$；$(-2)(1)=-2,\\quad 2+(-2)=0$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(c) 读出结果",
+            "body": "$Q=-x^{3} + x^{2} - x + 1$，$R=0$。"
+          },
+          {
+            "title": "(d) 设置合成除法",
+            "body": "除式为 $(s - 2)=s-(2)$，所以用 $a=2$。原多项式先按降幂排列为 $2s^{3} + 3s^{2} - 9s - 10$。系数依次为 $2, 3, -9, -10$，缺项系数写 $0$；先落下 $2$。"
+          },
+          {
+            "title": "(d) 逐列乘加",
+            "body": "依次计算：$(2)(2)=4,\\quad 3+(4)=7$；$(2)(7)=14,\\quad -9+(14)=5$；$(2)(5)=10,\\quad -10+(10)=0$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(d) 读出结果",
+            "body": "$Q=2s^{2} + 7s + 5$，$R=0$。"
+          },
+          {
+            "title": "(e) 设置合成除法",
+            "body": "除式为 $(h + 3)=h-(-3)$，所以用 $a=-3$。原多项式先按降幂排列为 $h^{3} + 2h^{2} - 3h + 9$。系数依次为 $1, 2, -3, 9$，缺项系数写 $0$；先落下 $1$。"
+          },
+          {
+            "title": "(e) 逐列乘加",
+            "body": "依次计算：$(-3)(1)=-3,\\quad 2+(-3)=-1$；$(-3)(-1)=3,\\quad -3+(3)=0$；$(-3)(0)=0,\\quad 9+(0)=9$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(e) 读出结果",
+            "body": "$Q=h^{2} - h$，$R=9$。"
+          },
+          {
+            "title": "(f) 设置合成除法",
+            "body": "除式为 $(x + 2)=x-(-2)$，所以用 $a=-2$。原多项式先按降幂排列为 $2x^{3} + 7x^{2} - x + 1$。系数依次为 $2, 7, -1, 1$，缺项系数写 $0$；先落下 $2$。"
+          },
+          {
+            "title": "(f) 逐列乘加",
+            "body": "依次计算：$(-2)(2)=-4,\\quad 7+(-4)=3$；$(-2)(3)=-6,\\quad -1+(-6)=-7$；$(-2)(-7)=14,\\quad 1+(14)=15$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(f) 读出结果",
+            "body": "$Q=2x^{2} + 3x - 7$，$R=15$。"
+          }
+        ],
+        "answer": "(a) $Q=x^{2} - 3x + 12$, $R=-45$；(b) $Q=m^{3} + m + 14$, $R=22$；(c) $Q=-x^{3} + x^{2} - x + 1$, $R=0$；(d) $Q=2s^{2} + 7s + 5$, $R=0$；(e) $Q=h^{2} - h$, $R=9$；(f) $Q=2x^{2} + 3x - 7$, $R=15$。",
+        "pdfPage": 133,
+        "printedPage": 124,
+        "en": {
+          "prompt": "Determine each quotient, $Q$, using synthetic division. (a) $(x^3+x^2+3)\\div(x + 4)$; (b) $(m^4-2m^3+m^2+12m-6)\\div(m - 2)$; (c) $(2-x+x^2-x^3-x^4)\\div(x + 2)$; (d) $(2s^3+3s^2-9s-10)\\div(s - 2)$; (e) $(h^3+2h^2-3h+9)\\div(h + 3)$; (f) $(2x^3+7x^2-x+1)\\div(x + 2)$.",
+          "steps": [
+            {
+              "title": "(a) Set up synthetic division",
+              "body": "The divisor is $(x + 4)=x-(-4)$, so use $a=-4$. First rewrite the original polynomial in descending powers as $x^{3} + x^{2} + 0x + 3$. The coefficients are $1, 1, 0, 3$; include $0$ for any missing power. Bring down $1$."
+            },
+            {
+              "title": "(a) Multiply and add column by column",
+              "body": "Calculate in order: $(-4)(1)=-4,\\quad 1+(-4)=-3$; $(-4)(-3)=12,\\quad 0+(12)=12$; $(-4)(12)=-48,\\quad 3+(-48)=-45$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(a) Read the result",
+              "body": "$Q=x^{2} - 3x + 12$ and $R=-45$."
+            },
+            {
+              "title": "(b) Set up synthetic division",
+              "body": "The divisor is $(m - 2)=m-(2)$, so use $a=2$. First rewrite the original polynomial in descending powers as $m^{4} - 2m^{3} + m^{2} + 12m - 6$. The coefficients are $1, -2, 1, 12, -6$; include $0$ for any missing power. Bring down $1$."
+            },
+            {
+              "title": "(b) Multiply and add column by column",
+              "body": "Calculate in order: $(2)(1)=2,\\quad -2+(2)=0$; $(2)(0)=0,\\quad 1+(0)=1$; $(2)(1)=2,\\quad 12+(2)=14$; $(2)(14)=28,\\quad -6+(28)=22$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(b) Read the result",
+              "body": "$Q=m^{3} + m + 14$ and $R=22$."
+            },
+            {
+              "title": "(c) Set up synthetic division",
+              "body": "The divisor is $(x + 2)=x-(-2)$, so use $a=-2$. First rewrite the original polynomial in descending powers as $-x^{4} - x^{3} + x^{2} - x + 2$. The coefficients are $-1, -1, 1, -1, 2$; include $0$ for any missing power. Bring down $-1$."
+            },
+            {
+              "title": "(c) Multiply and add column by column",
+              "body": "Calculate in order: $(-2)(-1)=2,\\quad -1+(2)=1$; $(-2)(1)=-2,\\quad 1+(-2)=-1$; $(-2)(-1)=2,\\quad -1+(2)=1$; $(-2)(1)=-2,\\quad 2+(-2)=0$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(c) Read the result",
+              "body": "$Q=-x^{3} + x^{2} - x + 1$ and $R=0$."
+            },
+            {
+              "title": "(d) Set up synthetic division",
+              "body": "The divisor is $(s - 2)=s-(2)$, so use $a=2$. First rewrite the original polynomial in descending powers as $2s^{3} + 3s^{2} - 9s - 10$. The coefficients are $2, 3, -9, -10$; include $0$ for any missing power. Bring down $2$."
+            },
+            {
+              "title": "(d) Multiply and add column by column",
+              "body": "Calculate in order: $(2)(2)=4,\\quad 3+(4)=7$; $(2)(7)=14,\\quad -9+(14)=5$; $(2)(5)=10,\\quad -10+(10)=0$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(d) Read the result",
+              "body": "$Q=2s^{2} + 7s + 5$ and $R=0$."
+            },
+            {
+              "title": "(e) Set up synthetic division",
+              "body": "The divisor is $(h + 3)=h-(-3)$, so use $a=-3$. First rewrite the original polynomial in descending powers as $h^{3} + 2h^{2} - 3h + 9$. The coefficients are $1, 2, -3, 9$; include $0$ for any missing power. Bring down $1$."
+            },
+            {
+              "title": "(e) Multiply and add column by column",
+              "body": "Calculate in order: $(-3)(1)=-3,\\quad 2+(-3)=-1$; $(-3)(-1)=3,\\quad -3+(3)=0$; $(-3)(0)=0,\\quad 9+(0)=9$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(e) Read the result",
+              "body": "$Q=h^{2} - h$ and $R=9$."
+            },
+            {
+              "title": "(f) Set up synthetic division",
+              "body": "The divisor is $(x + 2)=x-(-2)$, so use $a=-2$. First rewrite the original polynomial in descending powers as $2x^{3} + 7x^{2} - x + 1$. The coefficients are $2, 7, -1, 1$; include $0$ for any missing power. Bring down $2$."
+            },
+            {
+              "title": "(f) Multiply and add column by column",
+              "body": "Calculate in order: $(-2)(2)=-4,\\quad 7+(-4)=3$; $(-2)(3)=-6,\\quad -1+(-6)=-7$; $(-2)(-7)=14,\\quad 1+(14)=15$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(f) Read the result",
+              "body": "$Q=2x^{2} + 3x - 7$ and $R=15$."
+            }
+          ],
+          "answer": "(a) $Q=x^{2} - 3x + 12$, $R=-45$; (b) $Q=m^{3} + m + 14$, $R=22$; (c) $Q=-x^{3} + x^{2} - x + 1$, $R=0$; (d) $Q=2s^{2} + 7s + 5$, $R=0$; (e) $Q=h^{2} - h$, $R=9$; (f) $Q=2x^{2} + 3x - 7$, $R=15$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "syntheticDivisions": [
+          {
+            "rootLatex": "-4",
+            "coefficientsLatex": [
+              "1",
+              "1",
+              "0",
+              "3"
+            ],
+            "productsLatex": [
+              null,
+              "-4",
+              "12",
+              "-48"
+            ],
+            "bottomLatex": [
+              "1",
+              "-3",
+              "12",
+              "-45"
+            ],
+            "remainderLatex": "-45",
+            "quotientLatex": "x^{2} - 3x + 12"
+          },
+          {
+            "rootLatex": "2",
+            "coefficientsLatex": [
+              "1",
+              "-2",
+              "1",
+              "12",
+              "-6"
+            ],
+            "productsLatex": [
+              null,
+              "2",
+              "0",
+              "2",
+              "28"
+            ],
+            "bottomLatex": [
+              "1",
+              "0",
+              "1",
+              "14",
+              "22"
+            ],
+            "remainderLatex": "22",
+            "quotientLatex": "m^{3} + m + 14"
+          },
+          {
+            "rootLatex": "-2",
+            "coefficientsLatex": [
+              "-1",
+              "-1",
+              "1",
+              "-1",
+              "2"
+            ],
+            "productsLatex": [
+              null,
+              "2",
+              "-2",
+              "2",
+              "-2"
+            ],
+            "bottomLatex": [
+              "-1",
+              "1",
+              "-1",
+              "1",
+              "0"
+            ],
+            "remainderLatex": "0",
+            "quotientLatex": "-x^{3} + x^{2} - x + 1"
+          },
+          {
+            "rootLatex": "2",
+            "coefficientsLatex": [
+              "2",
+              "3",
+              "-9",
+              "-10"
+            ],
+            "productsLatex": [
+              null,
+              "4",
+              "14",
+              "10"
+            ],
+            "bottomLatex": [
+              "2",
+              "7",
+              "5",
+              "0"
+            ],
+            "remainderLatex": "0",
+            "quotientLatex": "2s^{2} + 7s + 5"
+          },
+          {
+            "rootLatex": "-3",
+            "coefficientsLatex": [
+              "1",
+              "2",
+              "-3",
+              "9"
+            ],
+            "productsLatex": [
+              null,
+              "-3",
+              "3",
+              "0"
+            ],
+            "bottomLatex": [
+              "1",
+              "-1",
+              "0",
+              "9"
+            ],
+            "remainderLatex": "9",
+            "quotientLatex": "h^{2} - h"
+          },
+          {
+            "rootLatex": "-2",
+            "coefficientsLatex": [
+              "2",
+              "7",
+              "-1",
+              "1"
+            ],
+            "productsLatex": [
+              null,
+              "-4",
+              "-6",
+              "14"
+            ],
+            "bottomLatex": [
+              "2",
+              "3",
+              "-7",
+              "15"
+            ],
+            "remainderLatex": "15",
+            "quotientLatex": "2x^{2} + 3x - 7"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "完成各题除法，结果写成 $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$ 的形式，并写出变量限制。 (a) $(x^3+7x^2-3x+4)\\div(x + 2)$；(b) $(11t-4t^4-7)\\div(t - 3)$；(c) $(x^3+3x^2-2x+5)\\div(x + 1)$；(d) $(4n^2+7n-5)\\div(n + 3)$；(e) $(4n^3-15n+2)\\div(n - 3)$；(f) $(x^3+6x^2-4x+1)\\div(x + 2)$。",
+        "concept": [
+          "synthetic-division",
+          "division-identity"
+        ],
+        "steps": [
+          {
+            "title": "(a) 设置合成除法",
+            "body": "除式为 $(x + 2)=x-(-2)$，所以用 $a=-2$。原多项式先按降幂排列为 $x^{3} + 7x^{2} - 3x + 4$。系数依次为 $1, 7, -3, 4$，缺项系数写 $0$；先落下 $1$。"
+          },
+          {
+            "title": "(a) 逐列乘加",
+            "body": "依次计算：$(-2)(1)=-2,\\quad 7+(-2)=5$；$(-2)(5)=-10,\\quad -3+(-10)=-13$；$(-2)(-13)=26,\\quad 4+(26)=30$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(a) 读出结果",
+            "body": "$Q=x^{2} + 5x - 13$，$R=30$。"
+          },
+          {
+            "title": "(a) 分式形式与限制",
+            "body": "$\\frac{x^3+7x^2-3x+4}{x + 2}=x^{2} + 5x - 13 + \\frac{30}{x + 2}$，其中 $x\\ne -2$。"
+          },
+          {
+            "title": "(b) 设置合成除法",
+            "body": "除式为 $(t - 3)=t-(3)$，所以用 $a=3$。原多项式先按降幂排列为 $-4t^{4} + 0t^{3} + 0t^{2} + 11t - 7$。系数依次为 $-4, 0, 0, 11, -7$，缺项系数写 $0$；先落下 $-4$。"
+          },
+          {
+            "title": "(b) 逐列乘加",
+            "body": "依次计算：$(3)(-4)=-12,\\quad 0+(-12)=-12$；$(3)(-12)=-36,\\quad 0+(-36)=-36$；$(3)(-36)=-108,\\quad 11+(-108)=-97$；$(3)(-97)=-291,\\quad -7+(-291)=-298$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(b) 读出结果",
+            "body": "$Q=-4t^{3} - 12t^{2} - 36t - 97$，$R=-298$。"
+          },
+          {
+            "title": "(b) 分式形式与限制",
+            "body": "$\\frac{11t-4t^4-7}{t - 3}=-4t^{3} - 12t^{2} - 36t - 97 - \\frac{298}{t - 3}$，其中 $t\\ne 3$。"
+          },
+          {
+            "title": "(c) 设置合成除法",
+            "body": "除式为 $(x + 1)=x-(-1)$，所以用 $a=-1$。原多项式先按降幂排列为 $x^{3} + 3x^{2} - 2x + 5$。系数依次为 $1, 3, -2, 5$，缺项系数写 $0$；先落下 $1$。"
+          },
+          {
+            "title": "(c) 逐列乘加",
+            "body": "依次计算：$(-1)(1)=-1,\\quad 3+(-1)=2$；$(-1)(2)=-2,\\quad -2+(-2)=-4$；$(-1)(-4)=4,\\quad 5+(4)=9$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(c) 读出结果",
+            "body": "$Q=x^{2} + 2x - 4$，$R=9$。"
+          },
+          {
+            "title": "(c) 分式形式与限制",
+            "body": "$\\frac{x^3+3x^2-2x+5}{x + 1}=x^{2} + 2x - 4 + \\frac{9}{x + 1}$，其中 $x\\ne -1$。"
+          },
+          {
+            "title": "(d) 设置合成除法",
+            "body": "除式为 $(n + 3)=n-(-3)$，所以用 $a=-3$。原多项式先按降幂排列为 $4n^{2} + 7n - 5$。系数依次为 $4, 7, -5$，缺项系数写 $0$；先落下 $4$。"
+          },
+          {
+            "title": "(d) 逐列乘加",
+            "body": "依次计算：$(-3)(4)=-12,\\quad 7+(-12)=-5$；$(-3)(-5)=15,\\quad -5+(15)=10$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(d) 读出结果",
+            "body": "$Q=4n - 5$，$R=10$。"
+          },
+          {
+            "title": "(d) 分式形式与限制",
+            "body": "$\\frac{4n^2+7n-5}{n + 3}=4n - 5 + \\frac{10}{n + 3}$，其中 $n\\ne -3$。"
+          },
+          {
+            "title": "(e) 设置合成除法",
+            "body": "除式为 $(n - 3)=n-(3)$，所以用 $a=3$。原多项式先按降幂排列为 $4n^{3} + 0n^{2} - 15n + 2$。系数依次为 $4, 0, -15, 2$，缺项系数写 $0$；先落下 $4$。"
+          },
+          {
+            "title": "(e) 逐列乘加",
+            "body": "依次计算：$(3)(4)=12,\\quad 0+(12)=12$；$(3)(12)=36,\\quad -15+(36)=21$；$(3)(21)=63,\\quad 2+(63)=65$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(e) 读出结果",
+            "body": "$Q=4n^{2} + 12n + 21$，$R=65$。"
+          },
+          {
+            "title": "(e) 分式形式与限制",
+            "body": "$\\frac{4n^3-15n+2}{n - 3}=4n^{2} + 12n + 21 + \\frac{65}{n - 3}$，其中 $n\\ne 3$。"
+          },
+          {
+            "title": "(f) 设置合成除法",
+            "body": "除式为 $(x + 2)=x-(-2)$，所以用 $a=-2$。原多项式先按降幂排列为 $x^{3} + 6x^{2} - 4x + 1$。系数依次为 $1, 6, -4, 1$，缺项系数写 $0$；先落下 $1$。"
+          },
+          {
+            "title": "(f) 逐列乘加",
+            "body": "依次计算：$(-2)(1)=-2,\\quad 6+(-2)=4$；$(-2)(4)=-8,\\quad -4+(-8)=-12$；$(-2)(-12)=24,\\quad 1+(24)=25$。最后一个数为余数，之前各数为商的系数。"
+          },
+          {
+            "title": "(f) 读出结果",
+            "body": "$Q=x^{2} + 4x - 12$，$R=25$。"
+          },
+          {
+            "title": "(f) 分式形式与限制",
+            "body": "$\\frac{x^3+6x^2-4x+1}{x + 2}=x^{2} + 4x - 12 + \\frac{25}{x + 2}$，其中 $x\\ne -2$。"
+          }
+        ],
+        "answer": "(a) $\\frac{x^3+7x^2-3x+4}{x + 2}=x^{2} + 5x - 13 + \\frac{30}{x + 2}$, $x\\ne -2$；(b) $\\frac{11t-4t^4-7}{t - 3}=-4t^{3} - 12t^{2} - 36t - 97 - \\frac{298}{t - 3}$, $t\\ne 3$；(c) $\\frac{x^3+3x^2-2x+5}{x + 1}=x^{2} + 2x - 4 + \\frac{9}{x + 1}$, $x\\ne -1$；(d) $\\frac{4n^2+7n-5}{n + 3}=4n - 5 + \\frac{10}{n + 3}$, $n\\ne -3$；(e) $\\frac{4n^3-15n+2}{n - 3}=4n^{2} + 12n + 21 + \\frac{65}{n - 3}$, $n\\ne 3$；(f) $\\frac{x^3+6x^2-4x+1}{x + 2}=x^{2} + 4x - 12 + \\frac{25}{x + 2}$, $x\\ne -2$。",
+        "pdfPage": 133,
+        "printedPage": 124,
+        "en": {
+          "prompt": "Perform each division. Express the result in the form $\\frac{P(x)}{x-a}=Q(x)+\\frac{R}{x-a}$. Identify any restrictions on the variable. (a) $(x^3+7x^2-3x+4)\\div(x + 2)$; (b) $(11t-4t^4-7)\\div(t - 3)$; (c) $(x^3+3x^2-2x+5)\\div(x + 1)$; (d) $(4n^2+7n-5)\\div(n + 3)$; (e) $(4n^3-15n+2)\\div(n - 3)$; (f) $(x^3+6x^2-4x+1)\\div(x + 2)$.",
+          "steps": [
+            {
+              "title": "(a) Set up synthetic division",
+              "body": "The divisor is $(x + 2)=x-(-2)$, so use $a=-2$. First rewrite the original polynomial in descending powers as $x^{3} + 7x^{2} - 3x + 4$. The coefficients are $1, 7, -3, 4$; include $0$ for any missing power. Bring down $1$."
+            },
+            {
+              "title": "(a) Multiply and add column by column",
+              "body": "Calculate in order: $(-2)(1)=-2,\\quad 7+(-2)=5$; $(-2)(5)=-10,\\quad -3+(-10)=-13$; $(-2)(-13)=26,\\quad 4+(26)=30$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(a) Read the result",
+              "body": "$Q=x^{2} + 5x - 13$ and $R=30$."
+            },
+            {
+              "title": "(a) Fraction form and restriction",
+              "body": "$\\frac{x^3+7x^2-3x+4}{x + 2}=x^{2} + 5x - 13 + \\frac{30}{x + 2}$, where $x\\ne -2$."
+            },
+            {
+              "title": "(b) Set up synthetic division",
+              "body": "The divisor is $(t - 3)=t-(3)$, so use $a=3$. First rewrite the original polynomial in descending powers as $-4t^{4} + 0t^{3} + 0t^{2} + 11t - 7$. The coefficients are $-4, 0, 0, 11, -7$; include $0$ for any missing power. Bring down $-4$."
+            },
+            {
+              "title": "(b) Multiply and add column by column",
+              "body": "Calculate in order: $(3)(-4)=-12,\\quad 0+(-12)=-12$; $(3)(-12)=-36,\\quad 0+(-36)=-36$; $(3)(-36)=-108,\\quad 11+(-108)=-97$; $(3)(-97)=-291,\\quad -7+(-291)=-298$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(b) Read the result",
+              "body": "$Q=-4t^{3} - 12t^{2} - 36t - 97$ and $R=-298$."
+            },
+            {
+              "title": "(b) Fraction form and restriction",
+              "body": "$\\frac{11t-4t^4-7}{t - 3}=-4t^{3} - 12t^{2} - 36t - 97 - \\frac{298}{t - 3}$, where $t\\ne 3$."
+            },
+            {
+              "title": "(c) Set up synthetic division",
+              "body": "The divisor is $(x + 1)=x-(-1)$, so use $a=-1$. First rewrite the original polynomial in descending powers as $x^{3} + 3x^{2} - 2x + 5$. The coefficients are $1, 3, -2, 5$; include $0$ for any missing power. Bring down $1$."
+            },
+            {
+              "title": "(c) Multiply and add column by column",
+              "body": "Calculate in order: $(-1)(1)=-1,\\quad 3+(-1)=2$; $(-1)(2)=-2,\\quad -2+(-2)=-4$; $(-1)(-4)=4,\\quad 5+(4)=9$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(c) Read the result",
+              "body": "$Q=x^{2} + 2x - 4$ and $R=9$."
+            },
+            {
+              "title": "(c) Fraction form and restriction",
+              "body": "$\\frac{x^3+3x^2-2x+5}{x + 1}=x^{2} + 2x - 4 + \\frac{9}{x + 1}$, where $x\\ne -1$."
+            },
+            {
+              "title": "(d) Set up synthetic division",
+              "body": "The divisor is $(n + 3)=n-(-3)$, so use $a=-3$. First rewrite the original polynomial in descending powers as $4n^{2} + 7n - 5$. The coefficients are $4, 7, -5$; include $0$ for any missing power. Bring down $4$."
+            },
+            {
+              "title": "(d) Multiply and add column by column",
+              "body": "Calculate in order: $(-3)(4)=-12,\\quad 7+(-12)=-5$; $(-3)(-5)=15,\\quad -5+(15)=10$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(d) Read the result",
+              "body": "$Q=4n - 5$ and $R=10$."
+            },
+            {
+              "title": "(d) Fraction form and restriction",
+              "body": "$\\frac{4n^2+7n-5}{n + 3}=4n - 5 + \\frac{10}{n + 3}$, where $n\\ne -3$."
+            },
+            {
+              "title": "(e) Set up synthetic division",
+              "body": "The divisor is $(n - 3)=n-(3)$, so use $a=3$. First rewrite the original polynomial in descending powers as $4n^{3} + 0n^{2} - 15n + 2$. The coefficients are $4, 0, -15, 2$; include $0$ for any missing power. Bring down $4$."
+            },
+            {
+              "title": "(e) Multiply and add column by column",
+              "body": "Calculate in order: $(3)(4)=12,\\quad 0+(12)=12$; $(3)(12)=36,\\quad -15+(36)=21$; $(3)(21)=63,\\quad 2+(63)=65$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(e) Read the result",
+              "body": "$Q=4n^{2} + 12n + 21$ and $R=65$."
+            },
+            {
+              "title": "(e) Fraction form and restriction",
+              "body": "$\\frac{4n^3-15n+2}{n - 3}=4n^{2} + 12n + 21 + \\frac{65}{n - 3}$, where $n\\ne 3$."
+            },
+            {
+              "title": "(f) Set up synthetic division",
+              "body": "The divisor is $(x + 2)=x-(-2)$, so use $a=-2$. First rewrite the original polynomial in descending powers as $x^{3} + 6x^{2} - 4x + 1$. The coefficients are $1, 6, -4, 1$; include $0$ for any missing power. Bring down $1$."
+            },
+            {
+              "title": "(f) Multiply and add column by column",
+              "body": "Calculate in order: $(-2)(1)=-2,\\quad 6+(-2)=4$; $(-2)(4)=-8,\\quad -4+(-8)=-12$; $(-2)(-12)=24,\\quad 1+(24)=25$. The last number is the remainder; the preceding numbers are the quotient coefficients."
+            },
+            {
+              "title": "(f) Read the result",
+              "body": "$Q=x^{2} + 4x - 12$ and $R=25$."
+            },
+            {
+              "title": "(f) Fraction form and restriction",
+              "body": "$\\frac{x^3+6x^2-4x+1}{x + 2}=x^{2} + 4x - 12 + \\frac{25}{x + 2}$, where $x\\ne -2$."
+            }
+          ],
+          "answer": "(a) $\\frac{x^3+7x^2-3x+4}{x + 2}=x^{2} + 5x - 13 + \\frac{30}{x + 2}$, $x\\ne -2$; (b) $\\frac{11t-4t^4-7}{t - 3}=-4t^{3} - 12t^{2} - 36t - 97 - \\frac{298}{t - 3}$, $t\\ne 3$; (c) $\\frac{x^3+3x^2-2x+5}{x + 1}=x^{2} + 2x - 4 + \\frac{9}{x + 1}$, $x\\ne -1$; (d) $\\frac{4n^2+7n-5}{n + 3}=4n - 5 + \\frac{10}{n + 3}$, $n\\ne -3$; (e) $\\frac{4n^3-15n+2}{n - 3}=4n^{2} + 12n + 21 + \\frac{65}{n - 3}$, $n\\ne 3$; (f) $\\frac{x^3+6x^2-4x+1}{x + 2}=x^{2} + 4x - 12 + \\frac{25}{x + 2}$, $x\\ne -2$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "number": 6,
+        "prompt": "用余式定理求下列各多项式除以 $x+2$ 的余数。 (a) $x^3+3x^2-5x+2$；(b) $2x^4-2x^3+5x$；(c) $x^4+x^3-5x^2+2x-7$；(d) $8x^3+4x^2-19$；(e) $3x^3-12x-2$；(f) $2x^3+3x^2-5x+2$。",
+        "concept": [
+          "remainder-theorem"
+        ],
+        "steps": [
+          {
+            "title": "(a) 确定代入值",
+            "body": "除式 $x + 2=x-(-2)$，由余式定理，余数是 $P(-2)$。"
+          },
+          {
+            "title": "(a) 代入并计算",
+            "body": "$P(-2)=(-2)^{3} + 3(-2)^{2} - 5(-2) + 2=-8 + 12 + 10 + 2=16$，所以余数为 $16$。"
+          },
+          {
+            "title": "(b) 确定代入值",
+            "body": "除式 $x + 2=x-(-2)$，由余式定理，余数是 $P(-2)$。"
+          },
+          {
+            "title": "(b) 代入并计算",
+            "body": "$P(-2)=2(-2)^{4} - 2(-2)^{3} + 5(-2)=32 + 16 - 10=38$，所以余数为 $38$。"
+          },
+          {
+            "title": "(c) 确定代入值",
+            "body": "除式 $x + 2=x-(-2)$，由余式定理，余数是 $P(-2)$。"
+          },
+          {
+            "title": "(c) 代入并计算",
+            "body": "$P(-2)=(-2)^{4} + (-2)^{3} - 5(-2)^{2} + 2(-2) - 7=16 - 8 - 20 - 4 - 7=-23$，所以余数为 $-23$。"
+          },
+          {
+            "title": "(d) 确定代入值",
+            "body": "除式 $x + 2=x-(-2)$，由余式定理，余数是 $P(-2)$。"
+          },
+          {
+            "title": "(d) 代入并计算",
+            "body": "$P(-2)=8(-2)^{3} + 4(-2)^{2} - 19=-64 + 16 - 19=-67$，所以余数为 $-67$。"
+          },
+          {
+            "title": "(e) 确定代入值",
+            "body": "除式 $x + 2=x-(-2)$，由余式定理，余数是 $P(-2)$。"
+          },
+          {
+            "title": "(e) 代入并计算",
+            "body": "$P(-2)=3(-2)^{3} - 12(-2) - 2=-24 + 24 - 2=-2$，所以余数为 $-2$。"
+          },
+          {
+            "title": "(f) 确定代入值",
+            "body": "除式 $x + 2=x-(-2)$，由余式定理，余数是 $P(-2)$。"
+          },
+          {
+            "title": "(f) 代入并计算",
+            "body": "$P(-2)=2(-2)^{3} + 3(-2)^{2} - 5(-2) + 2=-16 + 12 + 10 + 2=8$，所以余数为 $8$。"
+          }
+        ],
+        "answer": "(a) $16$；(b) $38$；(c) $-23$；(d) $-67$；(e) $-2$；(f) $8$。",
+        "pdfPage": 133,
+        "printedPage": 124,
+        "en": {
+          "prompt": "Use the remainder theorem to determine the remainder when each polynomial is divided by $x+2$. (a) $x^3+3x^2-5x+2$; (b) $2x^4-2x^3+5x$; (c) $x^4+x^3-5x^2+2x-7$; (d) $8x^3+4x^2-19$; (e) $3x^3-12x-2$; (f) $2x^3+3x^2-5x+2$.",
+          "steps": [
+            {
+              "title": "(a) Identify the input",
+              "body": "The divisor is $x + 2=x-(-2)$, so the remainder theorem gives remainder $P(-2)$."
+            },
+            {
+              "title": "(a) Substitute and evaluate",
+              "body": "$P(-2)=(-2)^{3} + 3(-2)^{2} - 5(-2) + 2=-8 + 12 + 10 + 2=16$, so the remainder is $16$."
+            },
+            {
+              "title": "(b) Identify the input",
+              "body": "The divisor is $x + 2=x-(-2)$, so the remainder theorem gives remainder $P(-2)$."
+            },
+            {
+              "title": "(b) Substitute and evaluate",
+              "body": "$P(-2)=2(-2)^{4} - 2(-2)^{3} + 5(-2)=32 + 16 - 10=38$, so the remainder is $38$."
+            },
+            {
+              "title": "(c) Identify the input",
+              "body": "The divisor is $x + 2=x-(-2)$, so the remainder theorem gives remainder $P(-2)$."
+            },
+            {
+              "title": "(c) Substitute and evaluate",
+              "body": "$P(-2)=(-2)^{4} + (-2)^{3} - 5(-2)^{2} + 2(-2) - 7=16 - 8 - 20 - 4 - 7=-23$, so the remainder is $-23$."
+            },
+            {
+              "title": "(d) Identify the input",
+              "body": "The divisor is $x + 2=x-(-2)$, so the remainder theorem gives remainder $P(-2)$."
+            },
+            {
+              "title": "(d) Substitute and evaluate",
+              "body": "$P(-2)=8(-2)^{3} + 4(-2)^{2} - 19=-64 + 16 - 19=-67$, so the remainder is $-67$."
+            },
+            {
+              "title": "(e) Identify the input",
+              "body": "The divisor is $x + 2=x-(-2)$, so the remainder theorem gives remainder $P(-2)$."
+            },
+            {
+              "title": "(e) Substitute and evaluate",
+              "body": "$P(-2)=3(-2)^{3} - 12(-2) - 2=-24 + 24 - 2=-2$, so the remainder is $-2$."
+            },
+            {
+              "title": "(f) Identify the input",
+              "body": "The divisor is $x + 2=x-(-2)$, so the remainder theorem gives remainder $P(-2)$."
+            },
+            {
+              "title": "(f) Substitute and evaluate",
+              "body": "$P(-2)=2(-2)^{3} + 3(-2)^{2} - 5(-2) + 2=-16 + 12 + 10 + 2=8$, so the remainder is $8$."
+            }
+          ],
+          "answer": "(a) $16$; (b) $38$; (c) $-23$; (d) $-67$; (e) $-2$; (f) $8$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "number": 7,
+        "prompt": "求下列各除法的余数。 (a) $(x^3+2x^2-3x+9)\\div(x + 3)$；(b) $(2t-4t^3-3t^2)\\div(t - 2)$；(c) $(x^3+2x^2-3x+5)\\div(x - 3)$；(d) $(n^4-3n^2-5n+2)\\div(n - 2)$。",
+        "concept": [
+          "remainder-theorem"
+        ],
+        "steps": [
+          {
+            "title": "(a) 确定代入值",
+            "body": "除式 $x + 3=x-(-3)$，由余式定理，余数是 $P(-3)$。"
+          },
+          {
+            "title": "(a) 代入并计算",
+            "body": "$P(-3)=(-3)^{3} + 2(-3)^{2} - 3(-3) + 9=-27 + 18 + 9 + 9=9$，所以余数为 $9$。"
+          },
+          {
+            "title": "(b) 确定代入值",
+            "body": "除式 $t - 2=t-(2)$，由余式定理，余数是 $P(2)$。"
+          },
+          {
+            "title": "(b) 代入并计算",
+            "body": "$P(2)=-4(2)^{3} - 3(2)^{2} + 2(2)=-32 - 12 + 4=-40$，所以余数为 $-40$。"
+          },
+          {
+            "title": "(c) 确定代入值",
+            "body": "除式 $x - 3=x-(3)$，由余式定理，余数是 $P(3)$。"
+          },
+          {
+            "title": "(c) 代入并计算",
+            "body": "$P(3)=(3)^{3} + 2(3)^{2} - 3(3) + 5=27 + 18 - 9 + 5=41$，所以余数为 $41$。"
+          },
+          {
+            "title": "(d) 确定代入值",
+            "body": "除式 $n - 2=n-(2)$，由余式定理，余数是 $P(2)$。"
+          },
+          {
+            "title": "(d) 代入并计算",
+            "body": "$P(2)=(2)^{4} - 3(2)^{2} - 5(2) + 2=16 - 12 - 10 + 2=-4$，所以余数为 $-4$。"
+          }
+        ],
+        "answer": "(a) $9$；(b) $-40$；(c) $41$；(d) $-4$。",
+        "pdfPage": 133,
+        "printedPage": 124,
+        "en": {
+          "prompt": "Determine the remainder resulting from each division. (a) $(x^3+2x^2-3x+9)\\div(x + 3)$; (b) $(2t-4t^3-3t^2)\\div(t - 2)$; (c) $(x^3+2x^2-3x+5)\\div(x - 3)$; (d) $(n^4-3n^2-5n+2)\\div(n - 2)$.",
+          "steps": [
+            {
+              "title": "(a) Identify the input",
+              "body": "The divisor is $x + 3=x-(-3)$, so the remainder theorem gives remainder $P(-3)$."
+            },
+            {
+              "title": "(a) Substitute and evaluate",
+              "body": "$P(-3)=(-3)^{3} + 2(-3)^{2} - 3(-3) + 9=-27 + 18 + 9 + 9=9$, so the remainder is $9$."
+            },
+            {
+              "title": "(b) Identify the input",
+              "body": "The divisor is $t - 2=t-(2)$, so the remainder theorem gives remainder $P(2)$."
+            },
+            {
+              "title": "(b) Substitute and evaluate",
+              "body": "$P(2)=-4(2)^{3} - 3(2)^{2} + 2(2)=-32 - 12 + 4=-40$, so the remainder is $-40$."
+            },
+            {
+              "title": "(c) Identify the input",
+              "body": "The divisor is $x - 3=x-(3)$, so the remainder theorem gives remainder $P(3)$."
+            },
+            {
+              "title": "(c) Substitute and evaluate",
+              "body": "$P(3)=(3)^{3} + 2(3)^{2} - 3(3) + 5=27 + 18 - 9 + 5=41$, so the remainder is $41$."
+            },
+            {
+              "title": "(d) Identify the input",
+              "body": "The divisor is $n - 2=n-(2)$, so the remainder theorem gives remainder $P(2)$."
+            },
+            {
+              "title": "(d) Substitute and evaluate",
+              "body": "$P(2)=(2)^{4} - 3(2)^{2} - 5(2) + 2=16 - 12 - 10 + 2=-4$, so the remainder is $-4$."
+            }
+          ],
+          "answer": "(a) $9$; (b) $-40$; (c) $41$; (d) $-4$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 8,
+        "prompt": "若各题的余数为 $3$，求 $k$。 (a) $(x^3+4x^2-x+k)\\div(x-1)$；(b) $(x^3+x^2+kx-15)\\div(x-2)$；(c) $(x^3+kx^2+x+5)\\div(x+2)$；(d) $(kx^3+3x+1)\\div(x+2)$。",
+        "concept": [
+          "remainder-theorem",
+          "parameter-remainders"
+        ],
+        "steps": [
+          {
+            "title": "(a) 令函数值等于余数",
+            "body": "除式的零点为 $a=1$，因此 $P(1)=3$，即 $1^3+4(1)^2-1+k=3$。"
+          },
+          {
+            "title": "(a) 解参数并核对",
+            "body": "合并同类项：$4+k=3$，解得 $k=-1$。代回原多项式：$P(1)=1+4-1-1=3$，确实得到余数 $3$。"
+          },
+          {
+            "title": "(b) 令函数值等于余数",
+            "body": "除式的零点为 $a=2$，因此 $P(2)=3$，即 $2^3+2^2+2k-15=3$。"
+          },
+          {
+            "title": "(b) 解参数并核对",
+            "body": "合并同类项：$2k-3=3$，解得 $k=3$。代回原多项式：$P(2)=8+4+6-15=3$，确实得到余数 $3$。"
+          },
+          {
+            "title": "(c) 令函数值等于余数",
+            "body": "除式的零点为 $a=-2$，因此 $P(-2)=3$，即 $(-2)^3+k(-2)^2+(-2)+5=3$。"
+          },
+          {
+            "title": "(c) 解参数并核对",
+            "body": "合并同类项：$4k-5=3$，解得 $k=2$。代回原多项式：$P(-2)=-8+8-2+5=3$，确实得到余数 $3$。"
+          },
+          {
+            "title": "(d) 令函数值等于余数",
+            "body": "除式的零点为 $a=-2$，因此 $P(-2)=3$，即 $k(-2)^3+3(-2)+1=3$。"
+          },
+          {
+            "title": "(d) 解参数并核对",
+            "body": "合并同类项：$-8k-5=3$，解得 $k=-1$。代回原多项式：$P(-2)=8-6+1=3$，确实得到余数 $3$。"
+          }
+        ],
+        "answer": "(a) $k=-1$；(b) $k=3$；(c) $k=2$；(d) $k=-1$。",
+        "pdfPage": 133,
+        "printedPage": 124,
+        "en": {
+          "prompt": "For each dividend, determine the value of $k$ if the remainder is $3$. (a) $(x^3+4x^2-x+k)\\div(x-1)$; (b) $(x^3+x^2+kx-15)\\div(x-2)$; (c) $(x^3+kx^2+x+5)\\div(x+2)$; (d) $(kx^3+3x+1)\\div(x+2)$.",
+          "steps": [
+            {
+              "title": "(a) Set the value equal to the remainder",
+              "body": "The divisor is zero at $a=1$, so $P(1)=3$, giving $1^3+4(1)^2-1+k=3$."
+            },
+            {
+              "title": "(a) Solve and check",
+              "body": "Combine like terms: $4+k=3$, so $k=-1$. Substitute into the original polynomial: $P(1)=1+4-1-1=3$, confirming remainder $3$."
+            },
+            {
+              "title": "(b) Set the value equal to the remainder",
+              "body": "The divisor is zero at $a=2$, so $P(2)=3$, giving $2^3+2^2+2k-15=3$."
+            },
+            {
+              "title": "(b) Solve and check",
+              "body": "Combine like terms: $2k-3=3$, so $k=3$. Substitute into the original polynomial: $P(2)=8+4+6-15=3$, confirming remainder $3$."
+            },
+            {
+              "title": "(c) Set the value equal to the remainder",
+              "body": "The divisor is zero at $a=-2$, so $P(-2)=3$, giving $(-2)^3+k(-2)^2+(-2)+5=3$."
+            },
+            {
+              "title": "(c) Solve and check",
+              "body": "Combine like terms: $4k-5=3$, so $k=2$. Substitute into the original polynomial: $P(-2)=-8+8-2+5=3$, confirming remainder $3$."
+            },
+            {
+              "title": "(d) Set the value equal to the remainder",
+              "body": "The divisor is zero at $a=-2$, so $P(-2)=3$, giving $k(-2)^3+3(-2)+1=3$."
+            },
+            {
+              "title": "(d) Solve and check",
+              "body": "Combine like terms: $-8k-5=3$, so $k=-1$. Substitute into the original polynomial: $P(-2)=8-6+1=3$, confirming remainder $3$."
+            }
+          ],
+          "answer": "(a) $k=-1$; (b) $k=3$; (c) $k=2$; (d) $k=-1$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 9,
+        "prompt": "当多项式 $P(x)=-2x^3+cx^2-5x+2$ 分别除以 $x-2$ 与 $x+1$ 时，若余数相同，$c$ 的值是多少？",
+        "concept": [
+          "remainder-theorem",
+          "parameter-remainders"
+        ],
+        "steps": [
+          {
+            "title": "用余式定理表达两个余数",
+            "body": "除以 $x-2$ 的余数为 $P(2)=-2(2)^3+c(2)^2-5(2)+2=4c-24$；除以 $x+1$ 的余数为 $P(-1)=-2(-1)^3+c(-1)^2-5(-1)+2=c+9$。"
+          },
+          {
+            "title": "令两个余数相等",
+            "body": "解 $4c-24=c+9$，得 $3c=33$，所以 $c=11$。"
+          },
+          {
+            "title": "核对共同余数",
+            "body": "代入 $c=11$：$P(2)=44-24=20$，$P(-1)=11+9=20$，两个余数确实相同。"
+          }
+        ],
+        "answer": "$c=11$，共同余数为 $20$。",
+        "pdfPage": 133,
+        "printedPage": 124,
+        "en": {
+          "prompt": "For what value of $c$ will the polynomial $P(x)=-2x^3+cx^2-5x+2$ have the same remainder when it is divided by $x-2$ and by $x+1$?",
+          "steps": [
+            {
+              "title": "Express both remainders",
+              "body": "The remainder for $x-2$ is $P(2)=-2(2)^3+c(2)^2-5(2)+2=4c-24$. The remainder for $x+1$ is $P(-1)=-2(-1)^3+c(-1)^2-5(-1)+2=c+9$."
+            },
+            {
+              "title": "Equate the remainders",
+              "body": "Solve $4c-24=c+9$: $3c=33$, hence $c=11$."
+            },
+            {
+              "title": "Check the common remainder",
+              "body": "For $c=11$, $P(2)=44-24=20$ and $P(-1)=11+9=20$, so the remainders agree."
+            }
+          ],
+          "answer": "$c=11$; the common remainder is $20$."
+        }
+      },
+      {
+        "number": 10,
+        "prompt": "将 $3x^2+6x-10$ 除以 $x+k$，余数为 $14$。求 $k$ 的值（可能不止一个）。",
+        "concept": [
+          "remainder-theorem",
+          "parameter-remainders"
+        ],
+        "steps": [
+          {
+            "title": "注意代入值的符号",
+            "body": "因为 $x+k=x-(-k)$，由余式定理应代入 $x=-k$：$P(-k)=3(-k)^2+6(-k)-10=14$。"
+          },
+          {
+            "title": "整理并分解二次方程",
+            "body": "$3k^2-6k-24=0$。两边除以 $3$，得 $k^2-2k-8=0$，所以 $(k-4)(k+2)=0$，得 $k=4$ 或 $k=-2$。"
+          },
+          {
+            "title": "逐一核对两解",
+            "body": "当 $k=4$ 时，$P(-4)=3(16)-24-10=14$；当 $k=-2$ 时，$P(2)=3(4)+12-10=14$。二次方程的两个根都满足原条件。"
+          }
+        ],
+        "answer": "$k=4$ 或 $k=-2$。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "When $3x^2+6x-10$ is divided by $x+k$, the remainder is $14$. Determine the value(s) of $k$.",
+          "steps": [
+            {
+              "title": "Identify the sign of the input",
+              "body": "Since $x+k=x-(-k)$, the remainder theorem requires $x=-k$: $P(-k)=3(-k)^2+6(-k)-10=14$."
+            },
+            {
+              "title": "Simplify and factor the quadratic",
+              "body": "$3k^2-6k-24=0$. Divide by $3$ to obtain $k^2-2k-8=0$, hence $(k-4)(k+2)=0$. Therefore $k=4$ or $k=-2$."
+            },
+            {
+              "title": "Check both solutions",
+              "body": "If $k=4$, then $P(-4)=3(16)-24-10=14$. If $k=-2$, then $P(2)=3(4)+12-10=14$. Both roots of the quadratic satisfy the original condition."
+            }
+          ],
+          "answer": "$k=4$ or $k=-2$."
+        }
+      },
+      {
+        "number": 11,
+        "prompt": "矩形的面积 $A(x)$ 由多项式 $2x^2-x-6$ 表示。(a) 如果矩形的高是 $x-2$，用 $x$ 表示宽。(b) 如果把高改为 $x-3$，除法的余数是多少？这个余数表示什么？",
+        "concept": [
+          "box-models",
+          "long-division",
+          "remainder-theorem"
+        ],
+        "steps": [
+          {
+            "title": "(a) 用面积除以高",
+            "body": "$2x^2\\div x=2x$；减去 $(x-2)(2x)=2x^2-4x$ 后剩下 $3x-6$。再取商 $3$，减去 $3(x-2)=3x-6$ 后余数为 $0$。因此 $A(x)=(x-2)(2x+3)$。"
+          },
+          {
+            "title": "(a) 检查实际尺寸",
+            "body": "宽为 $2x+3$。矩形的高必须为正，所以 $x-2>0$，即 $x>2$；此时宽也为正。"
+          },
+          {
+            "title": "(b) 改用高 $x-3$ 做除法",
+            "body": "$2x^2\\div x=2x$；减去 $2x(x-3)$ 后剩下 $5x-6$。再取商 $5$，减去 $5(x-3)=5x-15$ 后余数为 $9$。因此 $A(x)=(x-3)(2x+5)+9$。"
+          },
+          {
+            "title": "(b) 解释余数与准确的宽",
+            "body": "把高为 $x-3$、宽为多项式商 $2x+5$ 的矩形面积从 $A(x)$ 中扣除，还剩 $9$ 平方单位。若仍要求总面积恰好是 $A(x)$，实际宽应为 $2x+5+\\frac{9}{x-3}$；对应的实际定义域是 $x>3$。余数 $9$ 是面积，不是长度。"
+          },
+          {
+            "title": "用余数定理核对",
+            "body": "$A(2)=8-2-6=0$，与 (a) 的余数一致；$A(3)=18-3-6=9$，与 (b) 的余数一致。"
+          }
+        ],
+        "answer": "(a) 宽 $2x+3$，实际矩形要求 $x>2$。(b) 余数为 $9$ 平方单位，表示用高 $x-3$ 与多项式商 $2x+5$ 相乘后尚未计入的面积；准确的宽为 $2x+5+\\frac{9}{x-3}$，$x>3$。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "The area, $A(x)$, of a rectangle is represented by the polynomial $2x^2-x-6$. (a) If the height of the rectangle is $x-2$, what is the width in terms of $x$? (b) If the height of the rectangle were changed to $x-3$, what would the remainder of the quotient be? What does this remainder represent?",
+          "steps": [
+            {
+              "title": "(a) Divide the area by the height",
+              "body": "$2x^2\\div x=2x$. Subtract $(x-2)(2x)=2x^2-4x$ to obtain $3x-6$. The next quotient term is $3$; subtract $3(x-2)=3x-6$ to obtain a remainder of $0$. Thus $A(x)=(x-2)(2x+3)$."
+            },
+            {
+              "title": "(a) Check the physical dimensions",
+              "body": "The width is $2x+3$. A physical rectangle requires $x-2>0$, so $x>2$; its width is also positive on this domain."
+            },
+            {
+              "title": "(b) Divide using the new height $x-3$",
+              "body": "$2x^2\\div x=2x$. Subtract $2x(x-3)$ to obtain $5x-6$. The next quotient term is $5$; subtract $5(x-3)=5x-15$ to obtain a remainder of $9$. Therefore $A(x)=(x-3)(2x+5)+9$."
+            },
+            {
+              "title": "(b) Interpret the remainder and the exact width",
+              "body": "After subtracting the area of a rectangle with height $x-3$ and polynomial width $2x+5$, an area of $9$ square units remains. To retain exactly the original area $A(x)$, the width must be $2x+5+\\frac{9}{x-3}$, with physical domain $x>3$. The remainder $9$ measures area, not length."
+            },
+            {
+              "title": "Check using the remainder theorem",
+              "body": "$A(2)=8-2-6=0$, agreeing with part (a), and $A(3)=18-3-6=9$, agreeing with part (b)."
+            }
+          ],
+          "answer": "(a) Width $2x+3$, with $x>2$ for a physical rectangle. (b) Remainder $9$ square units: the area left after multiplying the new height $x-3$ by the polynomial quotient $2x+5$. The exact width is $2x+5+\\frac{9}{x-3}$, with $x>3$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 12,
+        "prompt": "两个数的乘积 $P(n)$ 由表达式 $2n^2-4n+3$ 表示，其中 $n$ 为实数。(a) 如果其中一个数表示为 $n-3$，另一个数由什么表达式表示？(b) 当 $n=1$ 时，这两个数分别是多少？",
+        "concept": [
+          "division-identity",
+          "long-division"
+        ],
+        "steps": [
+          {
+            "title": "(a) 把乘积除以已知因数",
+            "body": "另一个数为 $\\frac{2n^2-4n+3}{n-3}$。先取商 $2n$，减去 $2n(n-3)=2n^2-6n$ 后剩下 $2n+3$；再取商 $2$，减去 $2(n-3)=2n-6$ 后剩下 $9$。"
+          },
+          {
+            "title": "(a) 写出完整表达式和限制",
+            "body": "$P(n)=(n-3)(2n+2)+9$，所以另一个数为 $2n+2+\\frac{9}{n-3}$，其中 $n\\ne3$。当 $n=3$ 时，给定的一个数是 $0$，但乘积 $P(3)=9$，因此不存在满足题意的另一个有限实数。"
+          },
+          {
+            "title": "(b) 代入并核对乘积",
+            "body": "当 $n=1$ 时，第一个数为 $1-3=-2$。第二个数为 $2(1)+2+\\frac{9}{1-3}=4-\\frac92=-\\frac12$。核对：$(-2)(-\\frac12)=1=P(1)$。"
+          }
+        ],
+        "answer": "(a) $2n+2+\\frac{9}{n-3}$，$n\\ne3$。(b) 两个数是 $-2$ 与 $-\\frac12$。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "The product, $P(n)$, of two numbers is represented by the expression $2n^2-4n+3$, where $n$ is a real number. (a) If one of the numbers is represented by $n-3$, what expression represents the other number? (b) What are the two numbers if $n=1$?",
+          "steps": [
+            {
+              "title": "(a) Divide the product by the known factor",
+              "body": "The other number is $\\frac{2n^2-4n+3}{n-3}$. Start with quotient term $2n$; subtract $2n(n-3)=2n^2-6n$ to obtain $2n+3$. Then use quotient term $2$; subtract $2(n-3)=2n-6$ to obtain the remainder $9$."
+            },
+            {
+              "title": "(a) State the complete expression and restriction",
+              "body": "$P(n)=(n-3)(2n+2)+9$, so the other number is $2n+2+\\frac{9}{n-3}$, where $n\\ne3$. At $n=3$, the specified number would be $0$ while $P(3)=9$, so no finite real second number can satisfy the stated product."
+            },
+            {
+              "title": "(b) Substitute and check the product",
+              "body": "At $n=1$, the first number is $1-3=-2$. The second is $2(1)+2+\\frac{9}{1-3}=4-\\frac92=-\\frac12$. Check: $(-2)(-\\frac12)=1=P(1)$."
+            }
+          ],
+          "answer": "(a) $2n+2+\\frac{9}{n-3}$, $n\\ne3$. (b) The numbers are $-2$ and $-\\frac12$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 13,
+        "prompt": "设计团队发现，一种经济的圆柱形产品容器，其体积 $V$（立方厘米）可用 $V(x)=9\\pi x^3+51\\pi x^2+88\\pi x+48\\pi$ 建模，其中 $x$ 是满足 $2\\le x\\le8$ 的整数。各圆柱的高 $h$（厘米）为 $h(x)=x+3$。(a) 求商 $\\frac{V(x)}{h(x)}$ 并解释其意义。(b) 利用 (a) 的结果，将容器体积写成 $\\pi r^2h$ 的形式。(c) 对给定的 $x$ 值，容器可能的实际尺寸是什么？",
+        "concept": [
+          "box-models",
+          "long-division"
+        ],
+        "steps": [
+          {
+            "title": "(a) 用体积除以高",
+            "body": "先提出 $\\pi$，再计算 $(9x^3+51x^2+88x+48)\\div(x+3)$。商的第一项为 $9x^2$，相减剩 $24x^2+88x+48$；下一项为 $24x$，相减剩 $16x+48$；最后取商 $16$，余数为 $0$。因此 $\\frac{V(x)}{h(x)}=\\pi(9x^2+24x+16)$。"
+          },
+          {
+            "title": "(a)、(b) 识别底面积与半径",
+            "body": "圆柱满足 $V=\\pi r^2h$，所以体积除以高得到底面积，单位为平方厘米。由于 $9x^2+24x+16=(3x+4)^2$，底面积是 $\\pi(3x+4)^2$。因此 $r=\\sqrt{(3x+4)^2}=|3x+4|=3x+4$，因为题设 $2\\le x\\le8$。体积可写成 $V(x)=\\pi(3x+4)^2(x+3)$。"
+          },
+          {
+            "title": "(c) 逐一列出全部七种容器",
+            "body": "按 $(x;\\ r,\\ h)$ 列出，半径和高的单位均为厘米：$(2;10,5)$；$(3;13,6)$；$(4;16,7)$；$(5;19,8)$；$(6;22,9)$；$(7;25,10)$；$(8;28,11)$。相应直径分别为 $20,26,32,38,44,50,56$ 厘米。"
+          },
+          {
+            "title": "乘回原式并检查定义域",
+            "body": "$\\pi(3x+4)^2(x+3)=\\pi(9x^3+51x^2+88x+48)$，与题给模型完全相同。仅取整数 $x=2,3,4,5,6,7,8$；这些值使半径和高都严格为正，因此全部七组尺寸有效。"
+          }
+        ],
+        "answer": "(a) $\\pi(9x^2+24x+16)\\ \\mathrm{cm}^2$，表示圆柱底面积。(b) $V=\\pi(3x+4)^2(x+3)$，故 $r=3x+4$、$h=x+3$（厘米）。(c) $(r,h)$（厘米）：$(10,5),(13,6),(16,7),(19,8),(22,9),(25,10),(28,11)$。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "A design team determines that a cost-efficient way of manufacturing cylindrical containers for their products is to have the volume, $V$, in cubic centimetres, modelled by $V(x)=9\\pi x^3+51\\pi x^2+88\\pi x+48\\pi$, where $x$ is an integer such that $2\\le x\\le8$. The height, $h$, in centimetres, of each cylinder is a linear function given by $h(x)=x+3$. (a) Determine the quotient $\\frac{V(x)}{h(x)}$ and interpret this result. (b) Use your answer in part (a) to express the volume of a container in the form $\\pi r^2h$. (c) What are the possible dimensions of the containers for the given values of $x$?",
+          "steps": [
+            {
+              "title": "(a) Divide the volume by the height",
+              "body": "Factor out $\\pi$ and divide $9x^3+51x^2+88x+48$ by $x+3$. The first quotient term is $9x^2$, leaving $24x^2+88x+48$. The next term is $24x$, leaving $16x+48$. The final term is $16$, with remainder $0$. Thus $\\frac{V(x)}{h(x)}=\\pi(9x^2+24x+16)$."
+            },
+            {
+              "title": "(a), (b) Identify the base area and radius",
+              "body": "Since $V=\\pi r^2h$, volume divided by height is the base area, in square centimetres. Here $9x^2+24x+16=(3x+4)^2$, so the base area is $\\pi(3x+4)^2$. Therefore $r=\\sqrt{(3x+4)^2}=|3x+4|=3x+4$, because $2\\le x\\le8$. The volume is $V(x)=\\pi(3x+4)^2(x+3)$."
+            },
+            {
+              "title": "(c) List all seven possible containers",
+              "body": "Writing each option as $(x;\\ r,\\ h)$, with radius and height in centimetres, gives $(2;10,5)$; $(3;13,6)$; $(4;16,7)$; $(5;19,8)$; $(6;22,9)$; $(7;25,10)$; $(8;28,11)$. The corresponding diameters are $20,26,32,38,44,50,56$ cm."
+            },
+            {
+              "title": "Multiply back and check the domain",
+              "body": "$\\pi(3x+4)^2(x+3)=\\pi(9x^3+51x^2+88x+48)$, exactly the given model. Only the integers $x=2,3,4,5,6,7,8$ are allowed; every listed radius and height is strictly positive."
+            }
+          ],
+          "answer": "(a) $\\pi(9x^2+24x+16)\\ \\mathrm{cm}^2$, the circular base area. (b) $V=\\pi(3x+4)^2(x+3)$, so $r=3x+4$ and $h=x+3$ cm. (c) $(r,h)$ in centimetres: $(10,5),(13,6),(16,7),(19,8),(22,9),(25,10),(28,11)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 14,
+        "prompt": "多项式 $mx^3-3x^2+nx+2$ 除以 $x+3$ 时余数为 $-1$，除以 $x-2$ 时余数为 $-4$。求 $m$ 与 $n$。",
+        "concept": [
+          "parameter-remainders",
+          "remainder-theorem"
+        ],
+        "steps": [
+          {
+            "title": "由第一个余数建立方程",
+            "body": "令 $P(x)=mx^3-3x^2+nx+2$。除式 $x+3=x-(-3)$，所以 $P(-3)=-1$。即 $-27m-27-3n+2=-1$，整理得 $9m+n=-8$。"
+          },
+          {
+            "title": "由第二个余数建立方程",
+            "body": "除式 $x-2$ 给出 $P(2)=-4$，所以 $8m-12+2n+2=-4$，整理得 $4m+n=3$。"
+          },
+          {
+            "title": "消元求参数",
+            "body": "将 $9m+n=-8$ 减去 $4m+n=3$，得 $5m=-11$，所以 $m=-\\frac{11}{5}$。代入 $4m+n=3$ 得 $n=3+\\frac{44}{5}=\\frac{59}{5}$。"
+          },
+          {
+            "title": "分别核对两个余数",
+            "body": "$P(-3)=\\frac{297}{5}-27-\\frac{177}{5}+2=24-25=-1$；$P(2)=-\\frac{88}{5}-12+\\frac{118}{5}+2=6-10=-4$。两个条件均成立，且两条独立线性方程给出唯一解。"
+          }
+        ],
+        "answer": "$m=-\\frac{11}{5}$，$n=\\frac{59}{5}$。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "When the polynomial $mx^3-3x^2+nx+2$ is divided by $x+3$, the remainder is $-1$. When it is divided by $x-2$, the remainder is $-4$. What are the values of $m$ and $n$?",
+          "steps": [
+            {
+              "title": "Use the first remainder",
+              "body": "Let $P(x)=mx^3-3x^2+nx+2$. Since $x+3=x-(-3)$, $P(-3)=-1$. Thus $-27m-27-3n+2=-1$, which simplifies to $9m+n=-8$."
+            },
+            {
+              "title": "Use the second remainder",
+              "body": "The divisor $x-2$ gives $P(2)=-4$. Therefore $8m-12+2n+2=-4$, or $4m+n=3$."
+            },
+            {
+              "title": "Solve the system",
+              "body": "Subtract $4m+n=3$ from $9m+n=-8$ to obtain $5m=-11$, so $m=-\\frac{11}{5}$. Substitution into $4m+n=3$ gives $n=3+\\frac{44}{5}=\\frac{59}{5}$."
+            },
+            {
+              "title": "Check both remainders",
+              "body": "$P(-3)=\\frac{297}{5}-27-\\frac{177}{5}+2=24-25=-1$, and $P(2)=-\\frac{88}{5}-12+\\frac{118}{5}+2=6-10=-4$. Both conditions hold; the two independent linear equations give a unique solution."
+            }
+          ],
+          "answer": "$m=-\\frac{11}{5}$ and $n=\\frac{59}{5}$."
+        }
+      },
+      {
+        "number": 15,
+        "prompt": "多项式 $3x^3+ax^2+bx-9$ 除以 $x-2$ 时余数为 $-5$，除以 $x+1$ 时余数为 $-16$。求 $a$ 与 $b$。",
+        "concept": [
+          "parameter-remainders",
+          "remainder-theorem"
+        ],
+        "steps": [
+          {
+            "title": "把两个余数转为函数值",
+            "body": "令 $P(x)=3x^3+ax^2+bx-9$。$P(2)=-5$ 给出 $24+4a+2b-9=-5$，所以 $2a+b=-10$。$P(-1)=-16$ 给出 $-3+a-b-9=-16$，所以 $a-b=-4$。"
+          },
+          {
+            "title": "相加消去 $b$",
+            "body": "将 $2a+b=-10$ 与 $a-b=-4$ 相加，得 $3a=-14$，因此 $a=-\\frac{14}{3}$。由 $b=a+4$ 得 $b=-\\frac{14}{3}+\\frac{12}{3}=-\\frac23$。"
+          },
+          {
+            "title": "代回核对",
+            "body": "$P(2)=24-\\frac{56}{3}-\\frac43-9=15-20=-5$；$P(-1)=-3-\\frac{14}{3}+\\frac23-9=-12-4=-16$。两条方程独立，故参数解唯一。"
+          }
+        ],
+        "answer": "$a=-\\frac{14}{3}$，$b=-\\frac23$。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "When the polynomial $3x^3+ax^2+bx-9$ is divided by $x-2$, the remainder is $-5$. When it is divided by $x+1$, the remainder is $-16$. What are the values of $a$ and $b$?",
+          "steps": [
+            {
+              "title": "Translate both remainders into values",
+              "body": "Let $P(x)=3x^3+ax^2+bx-9$. From $P(2)=-5$, obtain $24+4a+2b-9=-5$, so $2a+b=-10$. From $P(-1)=-16$, obtain $-3+a-b-9=-16$, so $a-b=-4$."
+            },
+            {
+              "title": "Add to eliminate $b$",
+              "body": "Adding $2a+b=-10$ and $a-b=-4$ gives $3a=-14$, so $a=-\\frac{14}{3}$. Then $b=a+4=-\\frac{14}{3}+\\frac{12}{3}=-\\frac23$."
+            },
+            {
+              "title": "Substitute back",
+              "body": "$P(2)=24-\\frac{56}{3}-\\frac43-9=15-20=-5$, and $P(-1)=-3-\\frac{14}{3}+\\frac23-9=-12-4=-16$. The equations are independent, so this parameter pair is unique."
+            }
+          ],
+          "answer": "$a=-\\frac{14}{3}$ and $b=-\\frac23$."
+        }
+      },
+      {
+        "number": 16,
+        "prompt": "说明如何用合成除法求 $10x^4-11x^3-8x^2+7x+9$ 除以 $2x-3$ 的余数。",
+        "concept": [
+          "nonmonic-construction",
+          "synthetic-division",
+          "division-identity"
+        ],
+        "steps": [
+          {
+            "title": "先确定合成除法的数",
+            "body": "$2x-3=2(x-\\frac32)$，它在 $x=\\frac32$ 时为零。因此先用 $\\frac32$ 对系数 $10,-11,-8,7,9$ 做合成除法；这一步直接得到的是除以 $x-\\frac32$ 的商。"
+          },
+          {
+            "title": "逐列进行乘加",
+            "body": "落下 $10$；$10\\cdot\\frac32=15$，$-11+15=4$；$4\\cdot\\frac32=6$，$-8+6=-2$；$-2\\cdot\\frac32=-3$，$7-3=4$；$4\\cdot\\frac32=6$，$9+6=15$。底行是 $10,4,-2,4,15$，末项 $15$ 是余数。"
+          },
+          {
+            "title": "区分商的缩放与余数",
+            "body": "合成除法给出 $P(x)=(x-\\frac32)(10x^3+4x^2-2x+4)+15$。改用除式 $2x-3$ 时，商要除以 $2$，但余数不变：$P(x)=(2x-3)(5x^3+2x^2-x+2)+15$。不能把余数也除以 $2$。"
+          },
+          {
+            "title": "乘回并核对余数",
+            "body": "展开 $(2x-3)(5x^3+2x^2-x+2)+15$ 得 $10x^4-11x^3-8x^2+7x+9$。令 $x=\\frac32$，除式项消失，因此 $P(\\frac32)=15$，再次核对余数。"
+          }
+        ],
+        "answer": "用 $\\frac32$ 合成除法，底行 $10,4,-2,4,15$。除以 $2x-3$ 的余数为 $15$；对应商为 $5x^3+2x^2-x+2$。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "Explain how to determine the remainder when $10x^4-11x^3-8x^2+7x+9$ is divided by $2x-3$ using synthetic division.",
+          "steps": [
+            {
+              "title": "Find the synthetic-division value",
+              "body": "$2x-3=2(x-\\frac32)$ vanishes at $x=\\frac32$. Use $\\frac32$ with coefficients $10,-11,-8,7,9$. This first gives the quotient for division by $x-\\frac32$."
+            },
+            {
+              "title": "Multiply and add column by column",
+              "body": "Bring down $10$. Then $10\\cdot\\frac32=15$ and $-11+15=4$; $4\\cdot\\frac32=6$ and $-8+6=-2$; $-2\\cdot\\frac32=-3$ and $7-3=4$; $4\\cdot\\frac32=6$ and $9+6=15$. The bottom row is $10,4,-2,4,15$; its last entry is the remainder $15$."
+            },
+            {
+              "title": "Separate quotient scaling from the remainder",
+              "body": "Synthetic division gives $P(x)=(x-\\frac32)(10x^3+4x^2-2x+4)+15$. For divisor $2x-3$, divide the quotient by $2$, leaving the remainder unchanged: $P(x)=(2x-3)(5x^3+2x^2-x+2)+15$. Do not divide the remainder by $2$."
+            },
+            {
+              "title": "Check the division identity",
+              "body": "Expanding $(2x-3)(5x^3+2x^2-x+2)+15$ recovers $10x^4-11x^3-8x^2+7x+9$. At $x=\\frac32$, the divisor term vanishes, so $P(\\frac32)=15$, confirming the remainder."
+            }
+          ],
+          "answer": "Use $\\frac32$ in synthetic division to obtain bottom row $10,4,-2,4,15$. The remainder for divisor $2x-3$ is $15$; its quotient is $5x^3+2x^2-x+2$."
+        },
+        "syntheticDivisions": [
+          {
+            "rootLatex": "\\frac32",
+            "coefficientsLatex": [
+              "10",
+              "-11",
+              "-8",
+              "7",
+              "9"
+            ],
+            "productsLatex": [
+              null,
+              "15",
+              "6",
+              "-3",
+              "6"
+            ],
+            "bottomLatex": [
+              "10",
+              "4",
+              "-2",
+              "4",
+              "15"
+            ],
+            "remainderLatex": "15",
+            "quotientLatex": "10x^3+4x^2-2x+4"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "prompt": "对每组条件，写出一个满足要求的多项式。(a) 二次多项式，除以 $x-3$ 时余数为 $-4$。(b) 三次多项式，除以 $x+2$ 时余数为 $4$。(c) 四次多项式，除以 $2x-1$ 时余数为 $1$。",
+        "concept": [
+          "nonmonic-construction",
+          "division-identity",
+          "remainder-theorem"
+        ],
+        "steps": [
+          {
+            "title": "(a) 构造二次多项式",
+            "body": "在除式的倍数上加余数：取 $P_a(x)=(x-3)^2-4=x^2-6x+5$。最高次项为 $x^2$，所以确实是二次；$P_a(3)=0-4=-4$，满足条件。"
+          },
+          {
+            "title": "(b) 构造三次多项式",
+            "body": "取 $P_b(x)=(x+2)^3+4=x^3+6x^2+12x+12$。最高次项为 $x^3$；$P_b(-2)=0+4=4$，故除以 $x+2$ 的余数为 $4$。"
+          },
+          {
+            "title": "(c) 构造四次多项式",
+            "body": "取 $P_c(x)=(2x-1)^4+1=16x^4-32x^3+24x^2-8x+2$。最高次项 $16x^4$ 非零，所以是四次。恒等式 $P_c(x)=(2x-1)(2x-1)^3+1$ 直接给出余数 $1$；同时 $P_c(\\frac12)=1$。"
+          },
+          {
+            "title": "说明答案不唯一",
+            "body": "以上每题只要求一个例子。更一般地，可取 $P_a=(x-3)Q_1-4$、$P_b=(x+2)Q_2+4$、$P_c=(2x-1)Q_3+1$，其中 $Q_1,Q_2,Q_3$ 的次数必须分别恰为 $1,2,3$，以保证结果恰为二次、三次、四次。"
+          }
+        ],
+        "answer": "答案不唯一。一组答案为：(a) $x^2-6x+5$；(b) $x^3+6x^2+12x+12$；(c) $16x^4-32x^3+24x^2-8x+2$。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "Write a polynomial that satisfies each set of conditions. (a) A quadratic polynomial that gives a remainder of $-4$ when it is divided by $x-3$. (b) A cubic polynomial that gives a remainder of $4$ when it is divided by $x+2$. (c) A quartic polynomial that gives a remainder of $1$ when it is divided by $2x-1$.",
+          "steps": [
+            {
+              "title": "(a) Construct a quadratic",
+              "body": "Add the required remainder to a multiple of the divisor: take $P_a(x)=(x-3)^2-4=x^2-6x+5$. Its leading term is $x^2$, so it is quadratic, and $P_a(3)=0-4=-4$."
+            },
+            {
+              "title": "(b) Construct a cubic",
+              "body": "Take $P_b(x)=(x+2)^3+4=x^3+6x^2+12x+12$. Its leading term is $x^3$, and $P_b(-2)=0+4=4$, so its remainder on division by $x+2$ is $4$."
+            },
+            {
+              "title": "(c) Construct a quartic",
+              "body": "Take $P_c(x)=(2x-1)^4+1=16x^4-32x^3+24x^2-8x+2$. Its nonzero leading term $16x^4$ makes it quartic. The identity $P_c(x)=(2x-1)(2x-1)^3+1$ directly gives remainder $1$, and $P_c(\\frac12)=1$."
+            },
+            {
+              "title": "Explain why the answers are not unique",
+              "body": "Each part requests one example. More generally, $P_a=(x-3)Q_1-4$, $P_b=(x+2)Q_2+4$, and $P_c=(2x-1)Q_3+1$ work when $Q_1,Q_2,Q_3$ have degrees exactly $1,2,3$, respectively, ensuring the required degrees $2,3,4$."
+            }
+          ],
+          "answer": "Answers vary. One set is: (a) $x^2-6x+5$; (b) $x^3+6x^2+12x+12$; (c) $16x^4-32x^3+24x^2-8x+2$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": "C1",
+        "prompt": "数的长除法与多项式长除法有哪些相同之处？又有哪些不同之处？",
+        "concept": [
+          "long-division",
+          "division-identity"
+        ],
+        "steps": [
+          {
+            "title": "比较共同的操作",
+            "body": "两种方法都重复“除、乘、减、落下一项”的步骤，逐步确定商；两种方法都可用“被除式 $=$ 除式 $\\times$ 商 $+$ 余数”核对。"
+          },
+          {
+            "title": "比较排列依据与商的确定",
+            "body": "数的长除法按十进制位值排列数字，每一步选择一个商的数字；多项式长除法按变量的降幂排列项，缺少的幂次要补零，每一步用当前首项除以除式首项，得到一个商的项。多项式系数可以为负数或分数。"
+          },
+          {
+            "title": "比较停止条件并举例",
+            "body": "对于正整数的整数除法，停止时余数满足 $0\\le R<D$（$D$ 为除数）。对于多项式除法，停止时余数为零或次数小于除式次数；除以一次多项式时余数为常数，不要求非负。例如 $327=12(27)+3$，而 $x^2+7x+17=(x+3)(x+4)+5$。"
+          }
+        ],
+        "answer": "相同：都反复除、乘、减、落下一项，并用“除式 $\\times$ 商 $+$ 余数”核对。不同：数按位值排列，多项式按幂次排列且缺项补零；整数余数按大小限制，多项式余数按次数限制。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "How are numerical long division and polynomial long division similar, and how are they different?",
+          "steps": [
+            {
+              "title": "Compare the shared operations",
+              "body": "Both repeatedly divide, multiply, subtract, and bring down the next entry to build the quotient. Both are checked using dividend $=$ divisor $\\times$ quotient $+$ remainder."
+            },
+            {
+              "title": "Compare the organization and quotient choices",
+              "body": "Numerical long division organizes digits by place value and chooses one quotient digit at a time. Polynomial long division organizes terms by descending powers, inserts zeros for missing powers, and divides leading terms to obtain one quotient term at a time. Polynomial coefficients may be negative or fractional."
+            },
+            {
+              "title": "Compare the stopping rules and examples",
+              "body": "For integer division by a positive integer $D$, the final remainder satisfies $0\\le R<D$. For polynomial division, the remainder is zero or has smaller degree than the divisor; division by a linear polynomial gives a constant remainder, which need not be nonnegative. For example, $327=12(27)+3$, while $x^2+7x+17=(x+3)(x+4)+5$."
+            }
+          ],
+          "answer": "Both use repeated division, multiplication, subtraction, and bringing down, and both check by divisor $\\times$ quotient $+$ remainder. Numbers are organized by place value; polynomials by powers, with zeros for missing terms. Integer remainders are limited by size; polynomial remainders by degree."
+        }
+      },
+      {
+        "number": "C2",
+        "prompt": "多项式 $bx^2+cx+d$ 除以 $x-a$ 时余数为零。(a) 由此可以得到什么结论？(b) 用 $a,b,c,d$ 写出余数的表达式。",
+        "concept": [
+          "remainder-theorem",
+          "division-identity"
+        ],
+        "steps": [
+          {
+            "title": "(a) 从除法恒等式得出结论",
+            "body": "余数为零意味着 $bx^2+cx+d=(x-a)Q(x)$，所以 $x-a$ 是该多项式的因式；代入 $x=a$ 可得该多项式的值为 $0$。"
+          },
+          {
+            "title": "(b) 代入除式的零点",
+            "body": "余数定理给出 $R=P(a)=ba^2+ca+d$。题设余数为零，因此系数满足 $ba^2+ca+d=0$。"
+          }
+        ],
+        "answer": "(a) $x-a$ 是 $bx^2+cx+d$ 的因式，且 $P(a)=0$。(b) $R=ba^2+ca+d=0$。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "When the polynomial $bx^2+cx+d$ is divided by $x-a$, the remainder is zero. (a) What can you conclude from this result? (b) Write an expression for the remainder in terms of $a$, $b$, $c$, and $d$.",
+          "steps": [
+            {
+              "title": "(a) Draw the conclusion from the division identity",
+              "body": "A zero remainder gives $bx^2+cx+d=(x-a)Q(x)$. Thus $x-a$ is a factor, and substituting $x=a$ makes the polynomial equal to $0$."
+            },
+            {
+              "title": "(b) Evaluate at the zero of the divisor",
+              "body": "The remainder theorem gives $R=P(a)=ba^2+ca+d$. Because the stated remainder is zero, the coefficients satisfy $ba^2+ca+d=0$."
+            }
+          ],
+          "answer": "(a) $x-a$ is a factor of $bx^2+cx+d$, and $P(a)=0$. (b) $R=ba^2+ca+d=0$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": "C3",
+        "prompt": "悬索桥的支撑缆索可用函数 $h(d)=0.0003d^2+2$ 建模，其中 $h(d)$ 是缆索高出路面的高度（米），$d$ 是距缆索最低点的水平距离（米；图中以左右方向区分正负坐标）。(a) $0.0003d^2+2$ 除以 $d-500$ 的余数是多少？(b) $0.0003d^2+2$ 除以 $d+500$ 的余数是多少？(c) 比较 (a)、(b) 的结果，利用 $h(d)=0.0003d^2+2$ 的图像解释。",
+        "concept": [
+          "remainder-theorem"
+        ],
+        "steps": [
+          {
+            "title": "(a) 计算 $h(500)$",
+            "body": "除式 $d-500$ 的零点为 $500$，所以余数为 $h(500)=0.0003(500)^2+2=0.0003(250000)+2=75+2=77$。这个函数值表示距最低点水平 $500$ 米处的缆索高出路面 $77$ 米。"
+          },
+          {
+            "title": "(b) 计算 $h(-500)$",
+            "body": "除式 $d+500=d-(-500)$ 的零点为 $-500$。余数为 $h(-500)=0.0003(-500)^2+2=0.0003(250000)+2=77$。注意平方作用于整个负数。"
+          },
+          {
+            "title": "(c) 用对称性解释相同余数",
+            "body": "图像是顶点为 $(0,2)$、关于竖直线 $d=0$ 对称的开口向上的抛物线；代数上 $h(-d)=h(d)$。$d=500$ 与 $d=-500$ 分别表示最低点右、左两侧各 $500$ 米的位置，实际水平距离均为 $500$ 米；对称位置的高度相同，故余数相同，均为 $77$，相应高度均为 $77$ 米。"
+          }
+        ],
+        "answer": "(a) $77$。(b) $77$。(c) 图像关于 $d=0$ 对称，所以 $h(500)=h(-500)=77$；最低点左右各 $500$ 米处的缆索都高出路面 $77$ 米。",
+        "pdfPage": 134,
+        "printedPage": 125,
+        "en": {
+          "prompt": "The support cable for a suspension bridge can be modelled by the function $h(d)=0.0003d^2+2$, where $h(d)$ is the height, in metres, of the cable above the road, and $d$ is the horizontal distance, in metres, from the lowest point on the cable. (a) What is the remainder when $0.0003d^2+2$ is divided by $d-500$? (b) What is the remainder when $0.0003d^2+2$ is divided by $d+500$? (c) Compare your results from parts (a) and (b). Use the graph of $h(d)=0.0003d^2+2$ to explain your findings.",
+          "steps": [
+            {
+              "title": "(a) Evaluate $h(500)$",
+              "body": "The zero of $d-500$ is $500$, so the remainder is $h(500)=0.0003(500)^2+2=0.0003(250000)+2=75+2=77$. This value means the cable is $77$ m above the road at a horizontal distance of $500$ m from its lowest point."
+            },
+            {
+              "title": "(b) Evaluate $h(-500)$",
+              "body": "The zero of $d+500=d-(-500)$ is $-500$. The remainder is $h(-500)=0.0003(-500)^2+2=0.0003(250000)+2=77$. Square the entire negative number."
+            },
+            {
+              "title": "(c) Explain the equal remainders by symmetry",
+              "body": "The graph is an upward-opening parabola with vertex $(0,2)$ and symmetry axis $d=0$; algebraically, $h(-d)=h(d)$. The signed coordinates $d=500$ and $d=-500$ locate points $500$ m to the right and left of the lowest point, respectively. Their physical horizontal distances are both $500$ m. Symmetric points have equal heights, so both remainders are $77$, corresponding to heights of $77$ m."
+            }
+          ],
+          "answer": "(a) $77$. (b) $77$. (c) Symmetry about $d=0$ gives $h(500)=h(-500)=77$. The cable is $77$ m above the road at points $500$ m to either side of its lowest point."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/connection-c3.png"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "investigate-5",
+      "investigate-6",
+      "investigate-7",
+      "investigate-8",
+      "practice-1",
+      "practice-2",
+      "practice-3",
+      "practice-4"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "expectedSubparts": {
+      "investigate-1": [
+        "a",
+        "b"
+      ],
+      "investigate-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "investigate-7": [
+        "a",
+        "b"
+      ],
+      "example-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "practice-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-3": [
+        "a",
+        "b"
+      ],
+      "example-4": [
+        "a",
+        "b"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-11": [
+        "a",
+        "b"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-17": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-C2": [
+        "a",
+        "b"
+      ],
+      "exercise-C3": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+      "pdfPages": [
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "printedPages": [
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125
+      ]
+    },
+    "boundary": "Section 3.2 starts on printed 118 / PDF 127; Section 3.3 starts on printed 126 / PDF 135 and is excluded.",
+    "sourceFigures": [
+      {
+        "file": "investigate-1.png",
+        "pdfPage": 127,
+        "description": "The two supplied long-division statements"
+      },
+      {
+        "file": "investigate-4.png",
+        "pdfPage": 128,
+        "description": "Five-row polynomial dividend, divisor, quotient and remainder table"
+      },
+      {
+        "file": "example-2.png",
+        "pdfPage": 130,
+        "description": "Nested box dimensions"
+      },
+      {
+        "file": "practice-2.png",
+        "pdfPage": 130,
+        "description": "Rectangular prism, length x-4"
+      },
+      {
+        "file": "connection-c3.png",
+        "pdfPage": 134,
+        "description": "Given suspension bridge graph"
+      }
+    ],
+    "notes": [
+      "Investigate 7(a) includes i, ii, iii; 7(b) verifies all three by long division.",
+      "Investigate 4 has five table rows, all retained.",
+      "C1-C3 retain the printed source numbering; the local checker explicitly accepts C-prefixed identifiers.",
+      "The source uses a subtraction-form synthetic table with the opposite sign. Teaching tables use the equivalent root/add convention and explicitly explain the change."
+    ]
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "reviewFiles": [
+      "audit/intro-independent-review.json",
+      "audit/tail-independent-review.json",
+      "audit/first-independent-review.json"
+    ]
+  }
+}
