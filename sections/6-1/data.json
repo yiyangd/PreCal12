@@ -1,0 +1,1863 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "6-1",
+    "section": "6.1",
+    "title": "倒数、商与勾股恒等式",
+    "description": "检查共同定义域，以数表、图像和代数研究三角恒等式，并完成本节全部原题。",
+    "en": {
+      "title": "Reciprocal, Quotient, and Pythagorean Identities",
+      "description": "Check common domains, investigate identities numerically and graphically, and solve every original question in this section."
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298
+      ],
+      "pdfPages": [
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307
+      ]
+    },
+    "concepts": [
+      {
+        "id": "identity-domain",
+        "title": "恒等式与共同定义域",
+        "summary": "恒等式在两边都有定义的每一个值都成立；有限次代入和图像只能提供证据。",
+        "method": [
+          {
+            "title": "先检查原式",
+            "body": "列出每个函数的限制，并要求每一个原分母非零。"
+          },
+          {
+            "title": "再验证或证明",
+            "body": "数值检查分别算两边；一般结论用对所有允许值成立的代数推导。"
+          }
+        ],
+        "pitfalls": [
+          "约分不会恢复原来排除的值。",
+          "共同定义域相同的部分可相等，但两条曲线的完整定义域可能不同。"
+        ],
+        "en": {
+          "title": "Identities and common domains",
+          "summary": "An identity holds at every value in the common domain. Finite samples and graphs provide evidence, not a general proof.",
+          "method": [
+            {
+              "title": "Check the original expressions",
+              "body": "List the restrictions of every function and require every original denominator to be nonzero."
+            },
+            {
+              "title": "Then test or prove",
+              "body": "Evaluate the sides separately for numerical checks; establish a general conclusion algebraically on the common domain."
+            }
+          ],
+          "pitfalls": [
+            "Cancellation does not restore values excluded by the original expression.",
+            "Expressions can agree on their common domain while their full graph domains differ."
+          ]
+        }
+      },
+      {
+        "id": "reciprocal-quotient",
+        "title": "倒数与商恒等式",
+        "summary": "$\\csc x=1/\\sin x$，$\\sec x=1/\\cos x$，$\\tan x=\\sin x/\\cos x$，$\\cot x=\\cos x/\\sin x$。",
+        "method": [
+          {
+            "title": "化为正弦余弦",
+            "body": "先在原式允许的条件下写出每一个比。"
+          },
+          {
+            "title": "整理分式",
+            "body": "乘以倒数、约去非零公因子，并保留所有原限制。"
+          }
+        ],
+        "pitfalls": [
+          "$\\cot x=1/\\tan x$ 只在两边都有定义时使用；$\\cot(\\pi/2)=0$，但 $\\tan(\\pi/2)$ 无定义。"
+        ],
+        "en": {
+          "title": "Reciprocal and quotient identities",
+          "summary": "$\\csc x=1/\\sin x$, $\\sec x=1/\\cos x$, $\\tan x=\\sin x/\\cos x$, and $\\cot x=\\cos x/\\sin x$.",
+          "method": [
+            {
+              "title": "Rewrite using sine and cosine",
+              "body": "Express each ratio using sine and cosine on the original domain."
+            },
+            {
+              "title": "Simplify the fractions",
+              "body": "Multiply by reciprocals, cancel only nonzero common factors, and retain all original restrictions."
+            }
+          ],
+          "pitfalls": [
+            "Use $\\cot x=1/\\tan x$ only on the common domain: $\\cot(\\pi/2)=0$ but $\\tan(\\pi/2)$ is undefined."
+          ]
+        }
+      },
+      {
+        "id": "pythagorean",
+        "title": "勾股恒等式及其推导",
+        "summary": "单位圆给出 $\\cos^2x+\\sin^2x=1$。分别除以 $\\sin^2x$ 或 $\\cos^2x$，得到 $\\cot^2x+1=\\csc^2x$ 与 $1+\\tan^2x=\\sec^2x$。",
+        "method": [
+          {
+            "title": "选择所需形式",
+            "body": "要消去 $1-\\sin^2x$ 用 $\\cos^2x$；要消去 $\\csc^2x-\\cot^2x$ 用 $1$。"
+          },
+          {
+            "title": "保留除法条件",
+            "body": "除以 $\\sin^2x$ 要求 $x\\ne n\\pi$；除以 $\\cos^2x$ 要求 $x\\ne\\pi/2+n\\pi$，$n\\in\\mathbb Z$。"
+          }
+        ],
+        "pitfalls": [
+          "$\\sqrt{\\sin^2x}=|\\sin x|$，不总是 $\\sin x$。"
+        ],
+        "en": {
+          "title": "Pythagorean identities and derivation",
+          "summary": "The unit circle gives $\\cos^2x+\\sin^2x=1$. Divide by $\\sin^2x$ or $\\cos^2x$ to obtain $\\cot^2x+1=\\csc^2x$ or $1+\\tan^2x=\\sec^2x$.",
+          "method": [
+            {
+              "title": "Choose the useful form",
+              "body": "Replace $1-\\sin^2x$ by $\\cos^2x$, or $\\csc^2x-\\cot^2x$ by $1$."
+            },
+            {
+              "title": "Keep division restrictions",
+              "body": "Dividing by $\\sin^2x$ requires $x\\ne n\\pi$; dividing by $\\cos^2x$ requires $x\\ne\\pi/2+n\\pi$, $n\\in\\mathbb Z$."
+            }
+          ],
+          "pitfalls": [
+            "$\\sqrt{\\sin^2x}=|\\sin x|$, which is not always $\\sin x$."
+          ]
+        }
+      },
+      {
+        "id": "applications",
+        "title": "应用与量的含义",
+        "summary": "使用题目给定的光量模型，先辨认变量、角度和所求量，再代入恒等式。",
+        "method": [
+          {
+            "title": "保留情境条件",
+            "body": "距离 $R>0$；题目以垂线为角度基准时按该基准代入。"
+          },
+          {
+            "title": "精确值与百分数",
+            "body": "先算精确三角比，再将损失比例乘 $100\\%$。"
+          }
+        ],
+        "pitfalls": [
+          "区别题目给定的“减少量”与剩余量；按原题的表述作答。"
+        ],
+        "en": {
+          "title": "Applications and interpretation",
+          "summary": "Use the stated light model, identifying the variables, angle convention, and requested quantity before applying an identity.",
+          "method": [
+            {
+              "title": "Keep the context",
+              "body": "A distance has $R>0$. Measure the angle from the perpendicular when that is the stated convention."
+            },
+            {
+              "title": "Use exact ratios before percentages",
+              "body": "Calculate exact trigonometric ratios, then multiply a loss fraction by $100\\%$."
+            }
+          ],
+          "pitfalls": [
+            "Distinguish a stated decrease from the remaining amount, following the wording of the problem."
+          ]
+        }
+      },
+      {
+        "id": "algebra-tools",
+        "title": "展开、共轭与反例",
+        "summary": "展开平方可消去交叉项；共轭把 $1\\pm\\cos x$ 的乘积变为 $\\sin^2x$；一个允许值处的反例就能否定恒等式。",
+        "method": [
+          {
+            "title": "写出具体代数",
+            "body": "使用 $(a+b)^2=a^2+2ab+b^2$ 或 $(a+b)(a-b)=a^2-b^2$。"
+          },
+          {
+            "title": "检查额外除数",
+            "body": "乘以共轭除以共轭前检查它非零；若引入零分母，原式的对应有效值必须另行保留。"
+          }
+        ],
+        "pitfalls": [
+          "“若干次相等”不能证明“每一个允许值都相等”。"
+        ],
+        "en": {
+          "title": "Expansion, conjugates, and counterexamples",
+          "summary": "Expanding squares can cancel cross terms. A conjugate changes $(1+\\cos x)(1-\\cos x)$ into $\\sin^2x$. One permissible counterexample disproves an identity.",
+          "method": [
+            {
+              "title": "Show the algebra",
+              "body": "Use $(a+b)^2=a^2+2ab+b^2$ or $(a+b)(a-b)=a^2-b^2$."
+            },
+            {
+              "title": "Check new divisors",
+              "body": "Before multiplying and dividing by a conjugate, check that it is nonzero. Treat any originally valid values excluded by the new denominator separately."
+            }
+          ],
+          "pitfalls": [
+            "Agreement at a few values does not establish agreement at every permissible value."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1",
+        "prompt": "在 $-360^\\circ\\le x<360^\\circ$ 上作 $y=\\sin x$ 和 $y=\\cos x\\tan x$ 的图像。两条曲线分别画在相同范围、相同比例的坐标网格中。你发现什么？",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "描出两曲线",
+            "body": "$\\sin x$ 的零点在区间内为 $-360^\\circ,-180^\\circ,0^\\circ,180^\\circ$；峰谷在 $-270^\\circ,-90^\\circ,90^\\circ,270^\\circ$。用相同刻度画第二条曲线。"
+          },
+          {
+            "title": "比较定义域",
+            "body": "当 $\\cos x\\ne0$ 时，$\\cos x\\tan x=\\cos x(\\sin x/\\cos x)=\\sin x$。但四个奇数倍 $90^\\circ$ 处第二式无定义，第一式仍有值。"
+          }
+        ],
+        "answer": "可见部分重合；第二条曲线在 $-270^\\circ,-90^\\circ,90^\\circ,270^\\circ$ 有缺点，屏幕可能未显示。",
+        "printedPage": 290,
+        "pdfPage": 299,
+        "en": {
+          "label": "Investigate 1",
+          "prompt": "Graph $y=\\sin x$ and $y=\\cos x\\tan x$ over $-360^\\circ\\le x<360^\\circ$ on separate grids using the same range and scale. What do you notice?",
+          "steps": [
+            {
+              "title": "Plot the curves",
+              "body": "The sine zeros in the interval are $-360^\\circ,-180^\\circ,0^\\circ,180^\\circ$; extrema occur at $-270^\\circ,-90^\\circ,90^\\circ,270^\\circ$. Plot the second curve on the same scale."
+            },
+            {
+              "title": "Compare domains",
+              "body": "When $\\cos x\\ne0$, $\\cos x\\tan x=\\cos x(\\sin x/\\cos x)=\\sin x$. At the four odd multiples of $90^\\circ$, the second expression is undefined while sine is defined."
+            }
+          ],
+          "answer": "The visible portions coincide; the second curve has holes at $-270^\\circ,-90^\\circ,90^\\circ,270^\\circ$, which a screen may not reveal."
+        },
+        "sourceImage": "assets/6-1-investigate-given.png",
+        "solutionImage": "assets/6-1-investigate-graph.png"
+      },
+      {
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 2",
+        "prompt": "在 $-360^\\circ\\le x<360^\\circ$ 上，以 $30^\\circ$ 的倍数为自变量，为这两个函数制作并分析数值表，描述发现。",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "第一圈数值",
+            "body": "依次取 $x=-360,-330,-300,-270,-240,-210,-180,-150,-120,-90,-60,-30$（度）。$\\sin x$ 依次为 $0,1/2,\\sqrt3/2,1,\\sqrt3/2,1/2,0,-1/2,-\\sqrt3/2,-1,-\\sqrt3/2,-1/2$。"
+          },
+          {
+            "title": "第二圈及第二列",
+            "body": "$x=0,30,60,90,120,150,180,210,240,270,300,330$（度）有同一列正弦值。$\\cos x\\tan x$ 在所有其他表格点都等于对应正弦值；仅 $x=-270,-90,90,270$（度）四格无定义。"
+          }
+        ],
+        "answer": "所有共同允许的表格点数值相等；表格还能揭示图像易漏掉的四个无定义点。",
+        "printedPage": 290,
+        "pdfPage": 299,
+        "en": {
+          "label": "Investigate 2",
+          "prompt": "Make and analyse a table of values for these functions at multiples of $30^\\circ$ over $-360^\\circ\\le x<360^\\circ$. Describe your findings.",
+          "steps": [
+            {
+              "title": "First cycle",
+              "body": "For $x=-360,-330,-300,-270,-240,-210,-180,-150,-120,-90,-60,-30$ degrees, the sine values are $0,1/2,\\sqrt3/2,1,\\sqrt3/2,1/2,0,-1/2,-\\sqrt3/2,-1,-\\sqrt3/2,-1/2$."
+            },
+            {
+              "title": "Second cycle and second column",
+              "body": "The same sine list applies at $x=0,30,60,90,120,150,180,210,240,270,300,330$ degrees. The product $\\cos x\\tan x$ matches the corresponding sine entry everywhere except at $x=-270,-90,90,270$ degrees, where it is undefined."
+            }
+          ],
+          "answer": "All sampled common-domain values agree; the table also reveals four undefined points easily hidden by graphing resolution."
+        }
+      },
+      {
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 3",
+        "prompt": "利用你对 $\\tan x$ 的知识，化简 $\\cos x\\tan x$。",
+        "concept": "reciprocal-quotient",
+        "steps": [
+          {
+            "title": "代入商恒等式",
+            "body": "$\\cos x\\tan x=\\cos x\\cdot\\sin x/\\cos x=\\sin x$，约去 $\\cos x$ 要求它非零。"
+          }
+        ],
+        "answer": "$\\sin x$，原限制 $x\\ne90^\\circ+180^\\circ n$，$n\\in\\mathbb Z$。",
+        "printedPage": 290,
+        "pdfPage": 299,
+        "en": {
+          "label": "Investigate 3",
+          "prompt": "Use your knowledge of $\\tan x$ to simplify $\\cos x\\tan x$.",
+          "steps": [
+            {
+              "title": "Use the quotient identity",
+              "body": "$\\cos x\\tan x=\\cos x\\cdot\\sin x/\\cos x=\\sin x$, with $\\cos x\\ne0$ for cancellation."
+            }
+          ],
+          "answer": "$\\sin x$, retaining $x\\ne90^\\circ+180^\\circ n$, $n\\in\\mathbb Z$."
+        }
+      },
+      {
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "思考与回答 4",
+        "prompt": "(a) $y=\\sin x$ 与 $y=\\cos x\\tan x$ 的曲线完全相同吗？解释理由。 (b) 为什么同时观察图像和数值表很重要？",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "(a) 比较完整图像",
+            "body": "在 $x=90^\\circ+180^\\circ n$，$\\sin x=\\pm1$，但 $\\tan x$ 无定义。故完整曲线不同，虽在共同定义域上重合。"
+          },
+          {
+            "title": "(b) 比较信息",
+            "body": "图像显示整体形状，但像素可掩盖缺点；含这些角度的数值表显示无定义。因此两者结合能发现定义域差别；仍须代数核对一般情况。"
+          }
+        ],
+        "answer": "(a) 不完全相同。(b) 两种表示互补，能发现单靠屏幕看不出的限制。",
+        "printedPage": 291,
+        "pdfPage": 300,
+        "en": {
+          "label": "Reflect and Respond 4",
+          "prompt": "(a) Are the curves $y=\\sin x$ and $y=\\cos x\\tan x$ identical? Explain. (b) Why is it important to examine both graphs and a table of values?",
+          "steps": [
+            {
+              "title": "(a) Compare complete graphs",
+              "body": "At $x=90^\\circ+180^\\circ n$, $\\sin x=\\pm1$ but $\\tan x$ is undefined. Thus the complete curves differ, although they coincide on their common domain."
+            },
+            {
+              "title": "(b) Compare the evidence",
+              "body": "A graph shows the overall shape but pixels may hide holes. A table containing these angles shows undefined entries. Together they reveal the domain difference; algebra is still needed for a general conclusion."
+            }
+          ],
+          "answer": "(a) They are not identical as complete graphs. (b) The representations complement each other and expose restrictions hidden on a screen."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "investigate-5",
+        "type": "practice",
+        "label": "思考与回答 5",
+        "prompt": "方程 $\\sin x=\\cos x\\tan x$ 中 $x$ 的不允许值是什么？解释。",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "检查每个函数",
+            "body": "$\\sin x$ 和 $\\cos x$ 对所有实数角都有定义；$\\tan x=\\sin x/\\cos x$ 要求 $\\cos x\\ne0$，故排除所有奇数倍 $90^\\circ$。"
+          }
+        ],
+        "answer": "不允许值：$x=90^\\circ+180^\\circ n$，$n\\in\\mathbb Z$。",
+        "printedPage": 291,
+        "pdfPage": 300,
+        "en": {
+          "label": "Reflect and Respond 5",
+          "prompt": "What are the non-permissible values of $x$ in $\\sin x=\\cos x\\tan x$? Explain.",
+          "steps": [
+            {
+              "title": "Check each function",
+              "body": "Sine and cosine are defined for every real angle. Since $\\tan x=\\sin x/\\cos x$, cosine must be nonzero, excluding every odd multiple of $90^\\circ$."
+            }
+          ],
+          "answer": "Non-permissible values: $x=90^\\circ+180^\\circ n$, $n\\in\\mathbb Z$."
+        }
+      },
+      {
+        "id": "investigate-6",
+        "type": "practice",
+        "label": "思考与回答 6",
+        "prompt": "在第 2 步的区间之外，是否存在允许的 $x$ 值使 $\\sin x$ 与 $\\cos x\\tan x$ 不相等？与同学交流。",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "对任意角作代数推导",
+            "body": "任取允许的实数角 $x$，有 $\\cos x\\ne0$，所以 $\\cos x\\tan x=\\cos x(\\sin x/\\cos x)=\\sin x$，与区间无关。"
+          },
+          {
+            "title": "组织交流依据",
+            "body": "可把上述对任意角成立的约分式作为交流依据。交流是课外互动，这里不声称已实际与同学讨论。"
+          }
+        ],
+        "answer": "不存在；在所有共同允许的实数角上两式相等。",
+        "printedPage": 291,
+        "pdfPage": 300,
+        "en": {
+          "label": "Reflect and Respond 6",
+          "prompt": "Are there permissible values of $x$ outside the domain in Step 2 for which $\\sin x$ and $\\cos x\\tan x$ are unequal? Share your response with a classmate.",
+          "steps": [
+            {
+              "title": "Use an arbitrary permissible angle",
+              "body": "For any permissible real angle, $\\cos x\\ne0$, so $\\cos x\\tan x=\\cos x(\\sin x/\\cos x)=\\sin x$, independently of the interval."
+            },
+            {
+              "title": "Prepare the explanation",
+              "body": "The general cancellation is a complete justification to share. The peer discussion is an external activity, not a claimed interaction here."
+            }
+          ],
+          "answer": "No. The expressions agree at every angle in their common real domain."
+        }
+      },
+      {
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1：数值与图像验证",
+        "prompt": "对于 $\\sec\\theta=\\dfrac{\\tan\\theta}{\\sin\\theta}$： (a) 求角度制下的不允许值。 (b) 用数值验证 $\\theta=60^\\circ$ 和 $\\theta=\\pi/4$ 是方程的解。 (c) 在 $-360^\\circ<\\theta\\le360^\\circ$ 上使用技术作图，判断它是否可能是恒等式。",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "(a) 合并原限制",
+            "body": "$\\sec\\theta$ 和 $\\tan\\theta$ 要求 $\\cos\\theta\\ne0$；右式分母要求 $\\sin\\theta\\ne0$。合并排除 $\\theta=90^\\circ n$，$n\\in\\mathbb Z$。"
+          },
+          {
+            "title": "(b) 两个精确检查",
+            "body": "在 $60^\\circ$，左边 $1/(1/2)=2$，右边 $\\sqrt3/(\\sqrt3/2)=2$。在 $\\pi/4$，左边 $1/(\\sqrt2/2)=\\sqrt2$，右边 $1/(\\sqrt2/2)=\\sqrt2$。"
+          },
+          {
+            "title": "(c) 图像与一般依据",
+            "body": "图上两边在共同定义域重合；右式在正弦零点额外缺点。对允许的角，$\\dfrac{\\tan\\theta}{\\sin\\theta}=\\dfrac{\\sin\\theta/\\cos\\theta}{\\sin\\theta}=1/\\cos\\theta=\\sec\\theta$。图像提示可能是恒等式，最后的代数在共同定义域上确认。"
+          }
+        ],
+        "answer": "(a) 排除 $90^\\circ n$。(b) 两次分别得 $2$、$\\sqrt2$。(c) 是共同定义域上的恒等式。",
+        "printedPage": 291,
+        "pdfPage": 300,
+        "en": {
+          "label": "Example 1: Numerical and Graphical Verification",
+          "prompt": "For $\\sec\\theta=\\dfrac{\\tan\\theta}{\\sin\\theta}$: (a) Determine the non-permissible values in degrees. (b) Numerically verify that $\\theta=60^\\circ$ and $\\theta=\\pi/4$ are solutions. (c) Use technology to decide graphically whether it could be an identity over $-360^\\circ<\\theta\\le360^\\circ$.",
+          "steps": [
+            {
+              "title": "(a) Combine original restrictions",
+              "body": "Secant and tangent require $\\cos\\theta\\ne0$; the right-hand denominator requires $\\sin\\theta\\ne0$. Together they exclude $\\theta=90^\\circ n$, $n\\in\\mathbb Z$."
+            },
+            {
+              "title": "(b) Two exact checks",
+              "body": "At $60^\\circ$, the left side is $1/(1/2)=2$ and the right side is $\\sqrt3/(\\sqrt3/2)=2$. At $\\pi/4$, both sides equal $1/(\\sqrt2/2)=\\sqrt2$."
+            },
+            {
+              "title": "(c) Graph and general justification",
+              "body": "The graphs coincide on the common domain; the quotient has additional holes at sine zeros. For every permissible angle, $\\dfrac{\\tan\\theta}{\\sin\\theta}=\\dfrac{\\sin\\theta/\\cos\\theta}{\\sin\\theta}=1/\\cos\\theta=\\sec\\theta$. Graphs suggest an identity; this algebra confirms it on the common domain."
+            }
+          ],
+          "answer": "(a) Exclude $90^\\circ n$. (b) The checks give $2$ and $\\sqrt2$. (c) It is an identity on the common domain."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/6-1-example-1-graph.png"
+      },
+      {
+        "id": "margin-p292",
+        "type": "practice",
+        "label": "例题 1 旁注（292 页）",
+        "prompt": "(a) 为什么必须排除这些值？ (b) 它们与左边所排除的值有何关系？ (c) 从 $\\sin\\theta=0$ 找到的值已包含在先前的限制中吗？ (d) 为什么代入 $60^\\circ$ 不能证明恒等式？",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "(a) 零分母",
+            "body": "$\\tan\\theta=\\sin\\theta/\\cos\\theta$，故 $\\cos\\theta=0$ 时函数无定义，不能把乘法或约分当作补定义。"
+          },
+          {
+            "title": "(b) 同一余弦限制",
+            "body": "左右都排除 $90^\\circ+180^\\circ n$，因为 $\\sec\\theta=1/\\cos\\theta$ 也有同一零分母。"
+          },
+          {
+            "title": "(c) 额外限制",
+            "body": "$\\sin\\theta=0$ 给出 $180^\\circ n$，与奇数倍 $90^\\circ$ 不重合；必须再排除。并集是 $90^\\circ n$。"
+          },
+          {
+            "title": "(d) 一个值不是所有值",
+            "body": "在 $60^\\circ$ 两边都等于 $2$ 只确认该角是解；恒等式要求每一个允许角都成立。"
+          }
+        ],
+        "answer": "(a) 避免零分母。(b) 余弦限制相同。(c) 正弦零点是新增限制。(d) 有限代入不能证明全称结论。",
+        "printedPage": 292,
+        "pdfPage": 301,
+        "en": {
+          "label": "Example 1 Margin Questions (p. 292)",
+          "prompt": "(a) Why must these values be excluded? (b) How do they compare with the non-permissible values for the left side? (c) Are the values from $\\sin\\theta=0$ included among those already found? (d) Why does substituting $60^\\circ$ not prove the identity?",
+          "steps": [
+            {
+              "title": "(a) Zero denominator",
+              "body": "Tangent is $\\sin\\theta/\\cos\\theta$, so it is undefined when $\\cos\\theta=0$; multiplying or cancelling cannot define it there."
+            },
+            {
+              "title": "(b) Same cosine restriction",
+              "body": "Both sides exclude $90^\\circ+180^\\circ n$, since $\\sec\\theta=1/\\cos\\theta$ has the same zero denominator."
+            },
+            {
+              "title": "(c) Additional restriction",
+              "body": "Sine zeros are $180^\\circ n$, distinct from odd multiples of $90^\\circ$. They add new exclusions; the union is $90^\\circ n$."
+            },
+            {
+              "title": "(d) One value is not every value",
+              "body": "Both sides being $2$ at $60^\\circ$ confirms only that angle as a solution. An identity must hold at every permissible angle."
+            }
+          ],
+          "answer": "(a) Avoid zero denominators. (b) The cosine exclusions agree. (c) Sine zeros add exclusions. (d) Finite substitution cannot prove a universal claim."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "id": "margin-p293-graph",
+        "type": "practice",
+        "label": "例题 1 图像旁注",
+        "prompt": "(a) 图像怎样显示恒等式中的不允许值？ (b) 对方程两边的相关函数作图能证明恒等式吗？解释。",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "(a) 间断与缺点",
+            "body": "在 $90^\\circ+180^\\circ n$ 可见竖直渐近线；右式在 $180^\\circ n$ 还有可去缺点，常被屏幕连线隐藏。图像需结合定义域计算解释。"
+          },
+          {
+            "title": "(b) 有限视窗",
+            "body": "有限视窗、像素和采样不能检查所有实数；即使看起来重合也只是证据。例题的代数约分才对每个允许值成立。"
+          }
+        ],
+        "answer": "(a) 渐近线及缺点表示被排除的角。(b) 不能，仅凭图像不足以证明。",
+        "printedPage": 293,
+        "pdfPage": 302,
+        "en": {
+          "label": "Example 1 Graph Margin Questions",
+          "prompt": "(a) How do the graphs show non-permissible values for this identity? (b) Does graphing the related functions on each side prove an identity? Explain.",
+          "steps": [
+            {
+              "title": "(a) Discontinuities and holes",
+              "body": "Vertical asymptotes occur at $90^\\circ+180^\\circ n$. The quotient also has removable holes at $180^\\circ n$, often hidden by screen line segments. Interpret the graph together with domain calculations."
+            },
+            {
+              "title": "(b) Finite window",
+              "body": "A finite window, pixels, and samples cannot check all real values. Apparent overlap is evidence only; algebraic cancellation supplies the general argument."
+            }
+          ],
+          "answer": "(a) Asymptotes and holes represent excluded angles. (b) No; graphs alone are insufficient."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "配套练习 1",
+        "prompt": "对于 $\\cot x=\\dfrac{\\cos x}{\\sin x}$： (a) 求角度制下的不允许值。 (b) 验证 $x=45^\\circ$ 和 $x=\\pi/6$ 是解。 (c) 在 $-360^\\circ<x\\le360^\\circ$ 上使用技术作图判断是否可能为恒等式。",
+        "concept": "reciprocal-quotient",
+        "steps": [
+          {
+            "title": "(a) 正弦非零",
+            "body": "两边都要求 $\\sin x\\ne0$，故排除 $x=180^\\circ n$，$n\\in\\mathbb Z$。"
+          },
+          {
+            "title": "(b) 精确代入",
+            "body": "$x=45^\\circ$ 时，$\\cot45^\\circ=1$，右边 $(\\sqrt2/2)/(\\sqrt2/2)=1$。$x=\\pi/6$ 时，$\\cot(\\pi/6)=\\sqrt3$，右边 $(\\sqrt3/2)/(1/2)=\\sqrt3$。"
+          },
+          {
+            "title": "(c) 重合与依据",
+            "body": "两图的竖直渐近线都在 $180^\\circ n$，其余部分重合。这也由 $\\cot x=\\cos x/\\sin x$ 的商恒等式对所有允许角直接保证。"
+          }
+        ],
+        "answer": "排除 $180^\\circ n$；代入分别得 $1$、$\\sqrt3$；在共同定义域上为恒等式。",
+        "printedPage": 293,
+        "pdfPage": 302,
+        "en": {
+          "label": "Your Turn 1",
+          "prompt": "For $\\cot x=\\dfrac{\\cos x}{\\sin x}$: (a) Determine the non-permissible values in degrees. (b) Verify that $x=45^\\circ$ and $x=\\pi/6$ are solutions. (c) Use technology to decide graphically whether it could be an identity over $-360^\\circ<x\\le360^\\circ$.",
+          "steps": [
+            {
+              "title": "(a) Nonzero sine",
+              "body": "Both sides require $\\sin x\\ne0$, excluding $x=180^\\circ n$, $n\\in\\mathbb Z$."
+            },
+            {
+              "title": "(b) Exact substitution",
+              "body": "At $45^\\circ$, cotangent is $1$ and the quotient is $(\\sqrt2/2)/(\\sqrt2/2)=1$. At $\\pi/6$, cotangent is $\\sqrt3$ and the quotient is $(\\sqrt3/2)/(1/2)=\\sqrt3$."
+            },
+            {
+              "title": "(c) Overlap and justification",
+              "body": "Both graphs have vertical asymptotes at $180^\\circ n$ and coincide elsewhere. The quotient identity $\\cot x=\\cos x/\\sin x$ establishes this for all permissible angles."
+            }
+          ],
+          "answer": "Exclude $180^\\circ n$; the checks give $1$ and $\\sqrt3$. It is an identity on the common domain."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/6-1-your-turn-1-graph.png"
+      },
+      {
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2：用恒等式化简",
+        "prompt": "(a) 求 $\\dfrac{\\cot x}{\\csc x\\cos x}$ 中 $x$ 的不允许值（弧度）。 (b) 化简该式。",
+        "concept": "reciprocal-quotient",
+        "steps": [
+          {
+            "title": "(a) 检查函数与外分母",
+            "body": "$\\cot x$ 与 $\\csc x$ 要求 $\\sin x\\ne0$；外分母 $\\csc x\\cos x$ 还要求 $\\cos x\\ne0$（$\\csc x$ 从不为零）。故排除 $x=n\\pi/2$。"
+          },
+          {
+            "title": "(b) 化成相同分式",
+            "body": "$\\dfrac{\\cot x}{\\csc x\\cos x}=\\dfrac{\\cos x/\\sin x}{(1/\\sin x)\\cos x}=\\dfrac{\\cos x/\\sin x}{\\cos x/\\sin x}=1$；分子分母相同且非零。"
+          }
+        ],
+        "answer": "$1$，保留 $x\\ne n\\pi/2$，$n\\in\\mathbb Z$。",
+        "printedPage": 293,
+        "pdfPage": 302,
+        "en": {
+          "label": "Example 2: Simplify Using Identities",
+          "prompt": "(a) Determine the non-permissible values, in radians, in $\\dfrac{\\cot x}{\\csc x\\cos x}$. (b) Simplify the expression.",
+          "steps": [
+            {
+              "title": "(a) Check functions and the outer denominator",
+              "body": "Cotangent and cosecant require $\\sin x\\ne0$. The outer denominator $\\csc x\\cos x$ also requires $\\cos x\\ne0$, since cosecant is never zero. Thus exclude $x=n\\pi/2$."
+            },
+            {
+              "title": "(b) Obtain identical fractions",
+              "body": "$\\dfrac{\\cot x}{\\csc x\\cos x}=\\dfrac{\\cos x/\\sin x}{(1/\\sin x)\\cos x}=\\dfrac{\\cos x/\\sin x}{\\cos x/\\sin x}=1$, since that common fraction is nonzero."
+            }
+          ],
+          "answer": "$1$, retaining $x\\ne n\\pi/2$, $n\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "margin-p293-domain",
+        "type": "practice",
+        "label": "例题 2 定义域旁注",
+        "prompt": "(a) 为什么两个倒数函数都有这些不允许值？ (b) 为什么可以把所有限制写成一个一般式？",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "(a) 同一零因子",
+            "body": "$\\cot x=\\cos x/\\sin x$、$\\csc x=1/\\sin x$ 的分母均含 $\\sin x$；在 $x=n\\pi$ 都无定义。"
+          },
+          {
+            "title": "(b) 偶数与奇数倍",
+            "body": "$n\\pi$ 是 $\\pi/2$ 的偶数倍，$\\pi/2+n\\pi$ 是奇数倍。二者并集正好是 $n\\pi/2$。"
+          }
+        ],
+        "answer": "共同的正弦零分母给出 $n\\pi$；加上余弦零点后合成 $n\\pi/2$。",
+        "printedPage": 293,
+        "pdfPage": 302,
+        "en": {
+          "label": "Example 2 Domain Margin Questions",
+          "prompt": "(a) Why are these values non-permissible for both reciprocal functions? (b) Why can the restrictions be written as one general restriction?",
+          "steps": [
+            {
+              "title": "(a) The same zero factor",
+              "body": "Both $\\cot x=\\cos x/\\sin x$ and $\\csc x=1/\\sin x$ have denominator $\\sin x$ and are undefined at $x=n\\pi$."
+            },
+            {
+              "title": "(b) Even and odd multiples",
+              "body": "The angles $n\\pi$ are even multiples of $\\pi/2$; $\\pi/2+n\\pi$ are odd multiples. Their union is precisely $n\\pi/2$."
+            }
+          ],
+          "answer": "The shared sine denominator excludes $n\\pi$; including cosine zeros gives all $n\\pi/2$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "配套练习 2",
+        "prompt": "(a) 求 $\\dfrac{\\sec x}{\\tan x}$ 中 $x$ 的不允许值（弧度）。 (b) 化简该式。",
+        "concept": "reciprocal-quotient",
+        "steps": [
+          {
+            "title": "(a) 检查原分母",
+            "body": "$\\sec x$ 与 $\\tan x$ 要求 $\\cos x\\ne0$，且分母 $\\tan x\\ne0$ 要求 $\\sin x\\ne0$。故 $x\\ne n\\pi/2$。"
+          },
+          {
+            "title": "(b) 乘以倒数",
+            "body": "$\\dfrac{\\sec x}{\\tan x}=\\dfrac{1/\\cos x}{\\sin x/\\cos x}=\\dfrac1{\\sin x}=\\csc x$。"
+          }
+        ],
+        "answer": "$\\csc x$，原限制 $x\\ne n\\pi/2$，$n\\in\\mathbb Z$。",
+        "printedPage": 294,
+        "pdfPage": 303,
+        "en": {
+          "label": "Your Turn 2",
+          "prompt": "(a) Determine the non-permissible values, in radians, in $\\dfrac{\\sec x}{\\tan x}$. (b) Simplify the expression.",
+          "steps": [
+            {
+              "title": "(a) Check the original denominator",
+              "body": "Secant and tangent require $\\cos x\\ne0$, and the outer denominator $\\tan x\\ne0$ also requires $\\sin x\\ne0$. Thus $x\\ne n\\pi/2$."
+            },
+            {
+              "title": "(b) Multiply by the reciprocal",
+              "body": "$\\dfrac{\\sec x}{\\tan x}=\\dfrac{1/\\cos x}{\\sin x/\\cos x}=\\dfrac1{\\sin x}=\\csc x$."
+            }
+          ],
+          "answer": "$\\csc x$, retaining $x\\ne n\\pi/2$, $n\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3：使用勾股恒等式",
+        "prompt": "(a) 验证 $x=\\pi/6$ 时 $\\cot^2x+1=\\csc^2x$ 成立。 (b) 利用商恒等式，把 $\\cos^2x+\\sin^2x=1$ 写成等价恒等式 $\\cot^2x+1=\\csc^2x$。",
+        "concept": "pythagorean",
+        "steps": [
+          {
+            "title": "(a) 分别算两边",
+            "body": "$\\cot(\\pi/6)=\\sqrt3$，故左边 $(\\sqrt3)^2+1=4$；$\\csc(\\pi/6)=2$，故右边 $2^2=4$。"
+          },
+          {
+            "title": "(b) 除以正弦平方",
+            "body": "对 $x\\ne n\\pi$，将 $\\cos^2x+\\sin^2x=1$ 的每一项除以 $\\sin^2x$：$\\cos^2x/\\sin^2x+1=1/\\sin^2x$，即 $\\cot^2x+1=\\csc^2x$。"
+          }
+        ],
+        "answer": "(a) 两边都为 $4$。(b) 恒等式在 $x\\ne n\\pi$ 上成立。",
+        "printedPage": 295,
+        "pdfPage": 304,
+        "en": {
+          "label": "Example 3: Use the Pythagorean Identity",
+          "prompt": "(a) Verify that $\\cot^2x+1=\\csc^2x$ when $x=\\pi/6$. (b) Use quotient identities to express $\\cos^2x+\\sin^2x=1$ as the equivalent identity $\\cot^2x+1=\\csc^2x$.",
+          "steps": [
+            {
+              "title": "(a) Evaluate separately",
+              "body": "$\\cot(\\pi/6)=\\sqrt3$, so the left side is $(\\sqrt3)^2+1=4$. Since $\\csc(\\pi/6)=2$, the right side is $2^2=4$."
+            },
+            {
+              "title": "(b) Divide by sine squared",
+              "body": "For $x\\ne n\\pi$, divide every term of $\\cos^2x+\\sin^2x=1$ by $\\sin^2x$ to obtain $\\cos^2x/\\sin^2x+1=1/\\sin^2x$, hence $\\cot^2x+1=\\csc^2x$."
+            }
+          ],
+          "answer": "(a) Both sides equal $4$. (b) The identity holds for $x\\ne n\\pi$, $n\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/6-1-unit-circle-given.png"
+      },
+      {
+        "id": "margin-p295",
+        "type": "practice",
+        "label": "例题 3 旁注",
+        "prompt": "(a) 为什么两边乘 $1/\\sin^2x$？ (b) 还可以怎样化简这个方程？",
+        "concept": "pythagorean",
+        "steps": [
+          {
+            "title": "(a) 产生目标比",
+            "body": "$\\cos^2x/\\sin^2x=\\cot^2x$，$\\sin^2x/\\sin^2x=1$，$1/\\sin^2x=\\csc^2x$，恰好得到所需形式。"
+          },
+          {
+            "title": "(b) 另一种等价操作",
+            "body": "也可直接说“每项除以 $\\sin^2x$”；若改除以 $\\cos^2x$，得到另一形式 $1+\\tan^2x=\\sec^2x$。前者要求 $\\sin x\\ne0$，后者要求 $\\cos x\\ne0$。"
+          }
+        ],
+        "answer": "这使正弦余弦的平方变成所需商与倒数；也可除以对应平方以得到另一形式。",
+        "printedPage": 295,
+        "pdfPage": 304,
+        "en": {
+          "label": "Example 3 Margin Questions",
+          "prompt": "(a) Why multiply both sides by $1/\\sin^2x$? (b) How else could you simplify the equation?",
+          "steps": [
+            {
+              "title": "(a) Produce the required ratios",
+              "body": "The terms become $\\cos^2x/\\sin^2x=\\cot^2x$, $\\sin^2x/\\sin^2x=1$, and $1/\\sin^2x=\\csc^2x$, exactly the target form."
+            },
+            {
+              "title": "(b) An equivalent operation and another form",
+              "body": "Equivalently, divide each term by $\\sin^2x$. Dividing instead by $\\cos^2x$ gives $1+\\tan^2x=\\sec^2x$. The first division requires nonzero sine; the second requires nonzero cosine."
+            }
+          ],
+          "answer": "The division creates the required quotient and reciprocal squares; dividing by the other square yields the other form."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "配套练习 3",
+        "prompt": "(a) 在 $x=3\\pi/4$ 处用数值验证 $1+\\tan^2x=\\sec^2x$。 (b) 把 $\\cos^2x+\\sin^2x=1$ 写成等价恒等式 $1+\\tan^2x=\\sec^2x$。",
+        "concept": "pythagorean",
+        "steps": [
+          {
+            "title": "(a) 第二象限符号",
+            "body": "$\\tan(3\\pi/4)=-1$，$\\sec(3\\pi/4)=-\\sqrt2$。左边 $1+(-1)^2=2$，右边 $(-\\sqrt2)^2=2$。"
+          },
+          {
+            "title": "(b) 除以余弦平方",
+            "body": "当 $x\\ne\\pi/2+n\\pi$，每项除以 $\\cos^2x$，得 $1+\\sin^2x/\\cos^2x=1/\\cos^2x$，故 $1+\\tan^2x=\\sec^2x$。"
+          }
+        ],
+        "answer": "(a) 两边都为 $2$。(b) 恒等式要求 $x\\ne\\pi/2+n\\pi$，$n\\in\\mathbb Z$。",
+        "printedPage": 295,
+        "pdfPage": 304,
+        "en": {
+          "label": "Your Turn 3",
+          "prompt": "(a) Verify $1+\\tan^2x=\\sec^2x$ numerically for $x=3\\pi/4$. (b) Express $\\cos^2x+\\sin^2x=1$ as the equivalent identity $1+\\tan^2x=\\sec^2x$.",
+          "steps": [
+            {
+              "title": "(a) Quadrant II signs",
+              "body": "$\\tan(3\\pi/4)=-1$ and $\\sec(3\\pi/4)=-\\sqrt2$. The left side is $1+(-1)^2=2$ and the right side is $(-\\sqrt2)^2=2$."
+            },
+            {
+              "title": "(b) Divide by cosine squared",
+              "body": "For $x\\ne\\pi/2+n\\pi$, divide each term by $\\cos^2x$: $1+\\sin^2x/\\cos^2x=1/\\cos^2x$, giving $1+\\tan^2x=\\sec^2x$."
+            }
+          ],
+          "answer": "(a) Both sides equal $2$. (b) The identity requires $x\\ne\\pi/2+n\\pi$, $n\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "求下列各式中 $x$ 的不允许值（弧度）： (a) $\\dfrac{\\cos x}{\\sin x}$；(b) $\\dfrac{\\sin x}{\\tan x}$； (c) $\\dfrac{\\cot x}{1-\\sin x}$；(d) $\\dfrac{\\tan x}{\\cos x+1}$。",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "(a) 正弦分母",
+            "body": "$\\sin x=0$ 当且仅当 $x=n\\pi$；这些值被排除。"
+          },
+          {
+            "title": "(b) 内外分母",
+            "body": "$\\tan x$ 要有定义，故 $\\cos x\\ne0$；且它作分母，要 $\\tan x\\ne0$，故 $\\sin x\\ne0$。排除 $x=n\\pi/2$。"
+          },
+          {
+            "title": "(c) 余切及外分母",
+            "body": "$\\cot x$ 要求 $\\sin x\\ne0$，给出 $x\\ne n\\pi$；$1-\\sin x\\ne0$ 还要求 $x\\ne\\pi/2+2n\\pi$。"
+          },
+          {
+            "title": "(d) 正切及外分母",
+            "body": "$\\tan x$ 排除 $x=\\pi/2+n\\pi$；$\\cos x+1=0$ 当 $x=\\pi+2n\\pi$，也要排除。"
+          }
+        ],
+        "answer": "不允许值：(a) $n\\pi$；(b) $n\\pi/2$；(c) $n\\pi$ 或 $\\pi/2+2n\\pi$；(d) $\\pi/2+n\\pi$ 或 $\\pi+2n\\pi$；$n\\in\\mathbb Z$。",
+        "printedPage": 296,
+        "pdfPage": 305,
+        "en": {
+          "prompt": "Determine the non-permissible values of $x$, in radians, for each expression: (a) $\\dfrac{\\cos x}{\\sin x}$; (b) $\\dfrac{\\sin x}{\\tan x}$; (c) $\\dfrac{\\cot x}{1-\\sin x}$; (d) $\\dfrac{\\tan x}{\\cos x+1}$.",
+          "steps": [
+            {
+              "title": "(a) Sine denominator",
+              "body": "The denominator vanishes exactly at $x=n\\pi$, so exclude these angles."
+            },
+            {
+              "title": "(b) Inner and outer denominators",
+              "body": "Tangent must be defined, requiring $\\cos x\\ne0$, and nonzero as the outer denominator, requiring $\\sin x\\ne0$. Exclude $x=n\\pi/2$."
+            },
+            {
+              "title": "(c) Cotangent and the outer denominator",
+              "body": "Cotangent requires $\\sin x\\ne0$, excluding $n\\pi$. The denominator $1-\\sin x$ also excludes $\\pi/2+2n\\pi$."
+            },
+            {
+              "title": "(d) Tangent and the outer denominator",
+              "body": "Tangent excludes $x=\\pi/2+n\\pi$. Also $\\cos x+1=0$ at $x=\\pi+2n\\pi$, which must be excluded."
+            }
+          ],
+          "answer": "Excluded values: (a) $n\\pi$; (b) $n\\pi/2$; (c) $n\\pi$ or $\\pi/2+2n\\pi$; (d) $\\pi/2+n\\pi$ or $\\pi+2n\\pi$; $n\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "为什么有些恒等式会有不允许值？",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "找出运算限制",
+            "body": "一些三角函数本身是商，例如 $\\tan x=\\sin x/\\cos x$；分式还可能有外分母。任何分母为零都使原式无定义，不能作为方程中的有效值。"
+          },
+          {
+            "title": "联系恒等式定义",
+            "body": "恒等式只要求在两边共同有定义的每个值上成立。例如 $\\tan x=\\sin x/\\cos x$ 排除 $\\pi/2+n\\pi$。"
+          }
+        ],
+        "answer": "因为原式中的函数或分母在某些角度无定义；恒等式的结论限于共同定义域。",
+        "printedPage": 296,
+        "pdfPage": 305,
+        "en": {
+          "prompt": "Why do some identities have non-permissible values?",
+          "steps": [
+            {
+              "title": "Identify restrictions of operations",
+              "body": "Some trigonometric functions are quotients, such as $\\tan x=\\sin x/\\cos x$. A compound expression can have additional denominators. A zero denominator makes the original expression undefined, so that angle is not permissible."
+            },
+            {
+              "title": "Connect to the definition",
+              "body": "An identity is required to hold at every value where both sides are defined. For example, $\\tan x=\\sin x/\\cos x$ excludes $\\pi/2+n\\pi$."
+            }
+          ],
+          "answer": "Functions or denominators in the original expressions are undefined at certain angles; the identity holds on the common domain."
+        }
+      },
+      {
+        "number": 3,
+        "prompt": "把各式化成三个基本三角函数 $\\sin x,\\cos x,\\tan x$ 中的一个。在 (a) 中还用技术作图验证原式与化简式等价： (a) $\\sec x\\sin x$；(b) $\\sec x\\cot x\\sin^2x$；(c) $\\dfrac{\\cos x}{\\cot x}$。",
+        "concept": "reciprocal-quotient",
+        "steps": [
+          {
+            "title": "(a) 正切",
+            "body": "$\\sec x\\sin x=\\sin x/\\cos x=\\tan x$，要求 $x\\ne\\pi/2+n\\pi$。两图在各渐近线之间完全重合，渐近线相同。"
+          },
+          {
+            "title": "(b) 正弦",
+            "body": "$\\sec x\\cot x\\sin^2x=(1/\\cos x)(\\cos x/\\sin x)\\sin^2x=\\sin x$。原式要求正弦、余弦都非零，即 $x\\ne n\\pi/2$。"
+          },
+          {
+            "title": "(c) 正弦并保留限制",
+            "body": "$\\dfrac{\\cos x}{\\cot x}=\\dfrac{\\cos x}{\\cos x/\\sin x}=\\sin x$。原余切要有定义且非零，故同样 $x\\ne n\\pi/2$。"
+          }
+        ],
+        "answer": "(a) $\\tan x$，$x\\ne\\pi/2+n\\pi$；(b)(c) $\\sin x$，$x\\ne n\\pi/2$；$n\\in\\mathbb Z$。",
+        "printedPage": 296,
+        "pdfPage": 305,
+        "en": {
+          "prompt": "Simplify each expression to one of $\\sin x$, $\\cos x$, or $\\tan x$. For (a), also verify graphically using technology that the original expression is equivalent to its simplified form: (a) $\\sec x\\sin x$; (b) $\\sec x\\cot x\\sin^2x$; (c) $\\dfrac{\\cos x}{\\cot x}$.",
+          "steps": [
+            {
+              "title": "(a) Tangent",
+              "body": "$\\sec x\\sin x=\\sin x/\\cos x=\\tan x$, requiring $x\\ne\\pi/2+n\\pi$. The graphs coincide between the same vertical asymptotes."
+            },
+            {
+              "title": "(b) Sine",
+              "body": "$\\sec x\\cot x\\sin^2x=(1/\\cos x)(\\cos x/\\sin x)\\sin^2x=\\sin x$. The original sine and cosine denominators require $x\\ne n\\pi/2$."
+            },
+            {
+              "title": "(c) Sine with original restrictions",
+              "body": "$\\dfrac{\\cos x}{\\cot x}=\\dfrac{\\cos x}{\\cos x/\\sin x}=\\sin x$. The original cotangent must be defined and nonzero, so again $x\\ne n\\pi/2$."
+            }
+          ],
+          "answer": "(a) $\\tan x$, $x\\ne\\pi/2+n\\pi$. (b),(c) $\\sin x$, $x\\ne n\\pi/2$; $n\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/6-1-exercise-3-graph.png"
+      },
+      {
+        "number": 4,
+        "prompt": "化简并写成 $\\csc x,\\sec x,\\cot x$ 中的一个： (a) $\\left(\\dfrac{\\cos x}{\\tan x}\\right)\\left(\\dfrac{\\tan x}{\\sin x}\\right)$； (b) $\\csc x\\cot x\\sec x\\sin x$；(c) $\\dfrac{\\cos x}{1-\\sin^2x}$。",
+        "concept": "reciprocal-quotient",
+        "steps": [
+          {
+            "title": "(a) 约去非零正切",
+            "body": "$\\dfrac{\\cos x\\tan x}{\\tan x\\sin x}=\\cos x/\\sin x=\\cot x$。原式需 $\\sin x\\ne0$、$\\cos x\\ne0$，故 $x\\ne n\\pi/2$。"
+          },
+          {
+            "title": "(b) 展开各比",
+            "body": "$(1/\\sin x)(\\cos x/\\sin x)(1/\\cos x)\\sin x=1/\\sin x=\\csc x$。保留 $x\\ne n\\pi/2$。"
+          },
+          {
+            "title": "(c) 勾股代换",
+            "body": "$\\cos x/(1-\\sin^2x)=\\cos x/\\cos^2x=1/\\cos x=\\sec x$；要求 $x\\ne\\pi/2+n\\pi$。"
+          }
+        ],
+        "answer": "(a) $\\cot x$、(b) $\\csc x$，均保留 $x\\ne n\\pi/2$；(c) $\\sec x$，$x\\ne\\pi/2+n\\pi$。",
+        "printedPage": 296,
+        "pdfPage": 305,
+        "en": {
+          "prompt": "Simplify and write each expression as $\\csc x$, $\\sec x$, or $\\cot x$: (a) $\\left(\\dfrac{\\cos x}{\\tan x}\\right)\\left(\\dfrac{\\tan x}{\\sin x}\\right)$; (b) $\\csc x\\cot x\\sec x\\sin x$; (c) $\\dfrac{\\cos x}{1-\\sin^2x}$.",
+          "steps": [
+            {
+              "title": "(a) Cancel nonzero tangent",
+              "body": "$\\dfrac{\\cos x\\tan x}{\\tan x\\sin x}=\\cos x/\\sin x=\\cot x$. The original expression requires both sine and cosine nonzero, so $x\\ne n\\pi/2$."
+            },
+            {
+              "title": "(b) Rewrite the ratios",
+              "body": "$(1/\\sin x)(\\cos x/\\sin x)(1/\\cos x)\\sin x=1/\\sin x=\\csc x$. Retain $x\\ne n\\pi/2$."
+            },
+            {
+              "title": "(c) Pythagorean substitution",
+              "body": "$\\cos x/(1-\\sin^2x)=\\cos x/\\cos^2x=1/\\cos x=\\sec x$, requiring $x\\ne\\pi/2+n\\pi$."
+            }
+          ],
+          "answer": "(a) $\\cot x$ and (b) $\\csc x$, retaining $x\\ne n\\pi/2$; (c) $\\sec x$, $x\\ne\\pi/2+n\\pi$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "(a) 验证 $\\dfrac{\\sec x}{\\tan x+\\cot x}=\\sin x$ 在 $x=30^\\circ$ 及 $x=\\pi/4$ 时成立。 (b) 求 $0^\\circ\\le x<360^\\circ$ 内方程的不允许值。",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "(a) 两个精确值",
+            "body": "当 $x=30^\\circ$，左边 $\\dfrac{2/\\sqrt3}{1/\\sqrt3+\\sqrt3}=\\dfrac{2/\\sqrt3}{4/\\sqrt3}=1/2=\\sin30^\\circ$。当 $x=\\pi/4$，左边 $\\sqrt2/(1+1)=\\sqrt2/2=\\sin(\\pi/4)$。"
+          },
+          {
+            "title": "(b) 完整分母检查",
+            "body": "$\\sec x,\\tan x$ 排除余弦零点；$\\cot x$ 排除正弦零点。在其余角上，$\\tan x+\\cot x=(\\sin^2x+\\cos^2x)/(\\sin x\\cos x)=1/(\\sin x\\cos x)$，不会为零。"
+          }
+        ],
+        "answer": "(a) 两次均成立，值为 $1/2$、$\\sqrt2/2$。(b) $0^\\circ,90^\\circ,180^\\circ,270^\\circ$。",
+        "printedPage": 296,
+        "pdfPage": 305,
+        "en": {
+          "prompt": "(a) Verify that $\\dfrac{\\sec x}{\\tan x+\\cot x}=\\sin x$ for $x=30^\\circ$ and $x=\\pi/4$. (b) What are the non-permissible values in $0^\\circ\\le x<360^\\circ$?",
+          "steps": [
+            {
+              "title": "(a) Two exact checks",
+              "body": "At $30^\\circ$, the left side is $\\dfrac{2/\\sqrt3}{1/\\sqrt3+\\sqrt3}=\\dfrac{2/\\sqrt3}{4/\\sqrt3}=1/2=\\sin30^\\circ$. At $\\pi/4$, it is $\\sqrt2/(1+1)=\\sqrt2/2=\\sin(\\pi/4)$."
+            },
+            {
+              "title": "(b) Check the entire denominator",
+              "body": "Secant and tangent exclude cosine zeros; cotangent excludes sine zeros. Elsewhere $\\tan x+\\cot x=(\\sin^2x+\\cos^2x)/(\\sin x\\cos x)=1/(\\sin x\\cos x)$ is never zero."
+            }
+          ],
+          "answer": "(a) Both checks succeed, with values $1/2$ and $\\sqrt2/2$. (b) $0^\\circ,90^\\circ,180^\\circ,270^\\circ$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 6,
+        "prompt": "考虑方程 $\\dfrac{\\sin x\\cos x}{1+\\cos x}=\\dfrac{1-\\cos x}{\\tan x}$。 (a) 求不允许值（弧度）。 (b) 在 $0\\le x<2\\pi$ 上使用技术作两边的图像；它可能是恒等式吗？ (c) 用精确值验证 $x=\\pi/4$ 时成立。",
+        "concept": [
+          "identity-domain",
+          "pythagorean"
+        ],
+        "steps": [
+          {
+            "title": "(a) 合并限制",
+            "body": "左边要求 $1+\\cos x\\ne0$；右边正切要有定义且非零，故 $\\cos x\\ne0$、$\\sin x\\ne0$。后两条件已排除 $\\cos x=-1$，所以总限制 $x\\ne n\\pi/2$。"
+          },
+          {
+            "title": "(b) 作图并解释",
+            "body": "共同定义域中两图重合：$\\dfrac{\\sin x\\cos x}{1+\\cos x}=\\dfrac{\\cos x\\sin^2x}{\\sin x(1+\\cos x)}=\\dfrac{\\cos x(1-\\cos x)}{\\sin x}=\\dfrac{1-\\cos x}{\\tan x}$。左式在 $0,\\pi/2,3\\pi/2$ 有值而右式无定义；在 $\\pi$ 两式均无定义。"
+          },
+          {
+            "title": "(c) 分别代入",
+            "body": "$\\sin(\\pi/4)=\\cos(\\pi/4)=\\sqrt2/2$，$\\tan(\\pi/4)=1$。左边 $\\dfrac{1/2}{1+\\sqrt2/2}=\\dfrac1{2+\\sqrt2}=1-\\sqrt2/2$；右边 $(1-\\sqrt2/2)/1=1-\\sqrt2/2$。"
+          }
+        ],
+        "answer": "(a) 排除 $n\\pi/2$。(b) 图像支持，代数确认共同定义域上的恒等式。(c) 两边都为 $1-\\sqrt2/2$。",
+        "printedPage": 297,
+        "pdfPage": 306,
+        "en": {
+          "prompt": "Consider $\\dfrac{\\sin x\\cos x}{1+\\cos x}=\\dfrac{1-\\cos x}{\\tan x}$. (a) Determine the non-permissible values in radians. (b) Graph both sides using technology on $0\\le x<2\\pi$. Could it be an identity? (c) Verify it at $x=\\pi/4$ using exact values.",
+          "steps": [
+            {
+              "title": "(a) Combine restrictions",
+              "body": "The left denominator requires $1+\\cos x\\ne0$. The right tangent must be defined and nonzero, requiring $\\cos x\\ne0$ and $\\sin x\\ne0$. These already exclude $\\cos x=-1$, so exclude all $x=n\\pi/2$."
+            },
+            {
+              "title": "(b) Graph and explain",
+              "body": "The curves coincide on their common domain: $\\dfrac{\\sin x\\cos x}{1+\\cos x}=\\dfrac{\\cos x\\sin^2x}{\\sin x(1+\\cos x)}=\\dfrac{\\cos x(1-\\cos x)}{\\sin x}=\\dfrac{1-\\cos x}{\\tan x}$. The left side is defined at $0,\\pi/2,3\\pi/2$ while the right side is not; both are undefined at $\\pi$."
+            },
+            {
+              "title": "(c) Substitute separately",
+              "body": "$\\sin(\\pi/4)=\\cos(\\pi/4)=\\sqrt2/2$ and $\\tan(\\pi/4)=1$. The left side is $\\dfrac{1/2}{1+\\sqrt2/2}=\\dfrac1{2+\\sqrt2}=1-\\sqrt2/2$; the right side is also $1-\\sqrt2/2$."
+            }
+          ],
+          "answer": "(a) Exclude $n\\pi/2$. (b) The graphs support, and algebra confirms, an identity on the common domain. (c) Both sides equal $1-\\sqrt2/2$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/6-1-exercise-6-graph.png"
+      },
+      {
+        "number": 7,
+        "prompt": "一个偏振镜相对于第二个偏振镜转过角 $\\theta$ 时，通过两镜的光量减少 $1-\\sin^2\\theta$。 (a) 把这个减少量写成只含余弦的等价式。 (b) $\\theta=\\pi/6$ 时损失多少比例的光？ (c) $\\theta=60^\\circ$ 时损失百分之几？",
+        "concept": [
+          "applications",
+          "pythagorean"
+        ],
+        "steps": [
+          {
+            "title": "(a) 代入勾股恒等式",
+            "body": "按题目给定的减少量，$1-\\sin^2\\theta=\\cos^2\\theta$。"
+          },
+          {
+            "title": "(b) 计算损失比例",
+            "body": "$\\cos^2(\\pi/6)=(\\sqrt3/2)^2=3/4$。"
+          },
+          {
+            "title": "(c) 转成百分数",
+            "body": "$\\cos^260^\\circ=(1/2)^2=1/4$；$1/4\\times100\\%=25\\%$。"
+          }
+        ],
+        "answer": "(a) $\\cos^2\\theta$；(b) $3/4$；(c) $25\\%$，均按原题给定的“减少量”计算。",
+        "printedPage": 297,
+        "pdfPage": 306,
+        "en": {
+          "prompt": "When a polarizing lens is rotated through an angle $\\theta$ over a second lens, the amount of light passing through both lenses decreases by $1-\\sin^2\\theta$. (a) Write an equivalent expression for this decrease using only cosine. (b) What fraction of light is lost when $\\theta=\\pi/6$? (c) What percent is lost when $\\theta=60^\\circ$?",
+          "steps": [
+            {
+              "title": "(a) Use the Pythagorean identity",
+              "body": "For the decrease stated in the question, $1-\\sin^2\\theta=\\cos^2\\theta$."
+            },
+            {
+              "title": "(b) Calculate the loss fraction",
+              "body": "$\\cos^2(\\pi/6)=(\\sqrt3/2)^2=3/4$."
+            },
+            {
+              "title": "(c) Convert to a percentage",
+              "body": "$\\cos^260^\\circ=(1/2)^2=1/4$, so the loss is $25\\%$."
+            }
+          ],
+          "answer": "(a) $\\cos^2\\theta$; (b) $3/4$; (c) $25\\%$, using the decrease explicitly stated in the problem."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 8,
+        "prompt": "比较 $y=\\sin x$ 与 $y=\\sqrt{1-\\cos^2x}$： (a) 验证 $x=\\pi/3,5\\pi/6,\\pi$ 时 $\\sin x=\\sqrt{1-\\cos^2x}$。 (b) 在同一窗口中作两函数图像。 (c) 这个方程是恒等式吗？解释。",
+        "concept": [
+          "identity-domain",
+          "pythagorean"
+        ],
+        "steps": [
+          {
+            "title": "(a) 三个精确检查",
+            "body": "$x=\\pi/3$：$\\sin x=\\sqrt3/2$，根式为 $\\sqrt{1-(1/2)^2}=\\sqrt3/2$。$x=5\\pi/6$：$\\sin x=1/2$，根式为 $\\sqrt{1-(-\\sqrt3/2)^2}=1/2$。$x=\\pi$：两边分别为 $0$、$\\sqrt{1-(-1)^2}=0$。"
+          },
+          {
+            "title": "(b) 作图与平方根",
+            "body": "$\\sqrt{1-\\cos^2x}=\\sqrt{\\sin^2x}=|\\sin x|$。图像把正弦曲线在横轴下的部分反射到上方；两式均对所有实数有定义。"
+          },
+          {
+            "title": "(c) 给出允许的反例",
+            "body": "取 $x=3\\pi/2$：左边 $-1$，右边 $\\sqrt{1-0}=1$，不相等。仅当 $\\sin x\\ge0$ 时相等，例如 $[2n\\pi,(2n+1)\\pi]$。"
+          }
+        ],
+        "answer": "(a) 分别同为 $\\sqrt3/2,1/2,0$。(b) 第二图为 $|\\sin x|$。(c) 不是恒等式。",
+        "printedPage": 297,
+        "pdfPage": 306,
+        "en": {
+          "prompt": "Compare $y=\\sin x$ and $y=\\sqrt{1-\\cos^2x}$: (a) Verify their equality at $x=\\pi/3,5\\pi/6,\\pi$. (b) Graph both in the same window. (c) Is $\\sin x=\\sqrt{1-\\cos^2x}$ an identity? Explain.",
+          "steps": [
+            {
+              "title": "(a) Three exact checks",
+              "body": "At $\\pi/3$, sine is $\\sqrt3/2$ and the radical is $\\sqrt{1-(1/2)^2}=\\sqrt3/2$. At $5\\pi/6$, sine is $1/2$ and the radical is $\\sqrt{1-(-\\sqrt3/2)^2}=1/2$. At $\\pi$, both sides equal $0$."
+            },
+            {
+              "title": "(b) Graph and principal square root",
+              "body": "$\\sqrt{1-\\cos^2x}=\\sqrt{\\sin^2x}=|\\sin x|$. The graph reflects every negative sine arch above the axis; both expressions are defined for all real numbers."
+            },
+            {
+              "title": "(c) Give a permissible counterexample",
+              "body": "At $x=3\\pi/2$, the left side is $-1$ and the right side is $1$. Equality holds only where $\\sin x\\ge0$, namely $[2n\\pi,(2n+1)\\pi]$, $n\\in\\mathbb Z$."
+            }
+          ],
+          "answer": "(a) The shared values are $\\sqrt3/2,1/2,0$. (b) The second graph is $|\\sin x|$. (c) It is not an identity."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/6-1-exercise-8-graph.png"
+      },
+      {
+        "number": 9,
+        "prompt": "照度 $E$ 衡量从光源射到表面的光量。光线与表面垂线的夹角为 $\\theta$ 时，$\\sec\\theta=\\dfrac{I}{ER^2}$，其中 $I$ 是发光强度，$R$ 是光源至表面的距离。 (a) 把 $E$ 独立写出，并用 $\\cos\\theta$ 表示。 (b) 证明 $E=\\dfrac{I\\cot\\theta}{R^2\\csc\\theta}$ 与 (a) 的公式等价。",
+        "concept": [
+          "applications",
+          "reciprocal-quotient"
+        ],
+        "steps": [
+          {
+            "title": "(a) 解出照度",
+            "body": "在原式允许的条件 $R\\ne0,E\\ne0,\\cos\\theta\\ne0$ 下，两边乘 $ER^2$ 得 $ER^2\\sec\\theta=I$，故 $E=I/(R^2\\sec\\theta)=I\\cos\\theta/R^2$。情境中 $R>0$。"
+          },
+          {
+            "title": "(b) 化简比值",
+            "body": "若再有 $\\sin\\theta\\ne0$，则 $\\dfrac{I\\cot\\theta}{R^2\\csc\\theta}=\\dfrac{I(\\cos\\theta/\\sin\\theta)}{R^2(1/\\sin\\theta)}=I\\cos\\theta/R^2$。这在两式的共同定义域上等价；$\\theta=0$ 时 (a) 可用，但含余切余割的形式无定义。"
+          }
+        ],
+        "answer": "(a) $E=I\\cos\\theta/R^2$。(b) 含余切与余割的式子在其允许值上化成同一公式。",
+        "printedPage": 297,
+        "pdfPage": 306,
+        "en": {
+          "prompt": "Illuminance $E$ measures light arriving from a source at a surface. For light at angle $\\theta$ measured from the perpendicular, $\\sec\\theta=\\dfrac{I}{ER^2}$, where $I$ is luminous intensity and $R$ is the distance from source to surface. (a) Isolate $E$ and express it using $\\cos\\theta$. (b) Show that $E=\\dfrac{I\\cot\\theta}{R^2\\csc\\theta}$ is equivalent to the equation in (a).",
+          "steps": [
+            {
+              "title": "(a) Isolate illuminance",
+              "body": "On the original domain $R\\ne0$, $E\\ne0$, $\\cos\\theta\\ne0$, multiply by $ER^2$: $ER^2\\sec\\theta=I$. Thus $E=I/(R^2\\sec\\theta)=I\\cos\\theta/R^2$. In context $R>0$."
+            },
+            {
+              "title": "(b) Simplify the ratio",
+              "body": "If also $\\sin\\theta\\ne0$, then $\\dfrac{I\\cot\\theta}{R^2\\csc\\theta}=\\dfrac{I(\\cos\\theta/\\sin\\theta)}{R^2(1/\\sin\\theta)}=I\\cos\\theta/R^2$. The formulas agree on their common domain. At $\\theta=0$, (a) is usable but the cotangent/cosecant form is undefined."
+            }
+          ],
+          "answer": "(a) $E=I\\cos\\theta/R^2$. (b) The cotangent/cosecant expression simplifies to the same formula on its domain."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/6-1-exercise-9-given.png"
+      },
+      {
+        "number": 10,
+        "prompt": "把 $\\dfrac{\\csc x}{\\tan x+\\cot x}$ 化为三个基本三角比中的一个。原式在 $0\\le x<2\\pi$ 内有哪些不允许值？",
+        "concept": [
+          "reciprocal-quotient",
+          "pythagorean"
+        ],
+        "steps": [
+          {
+            "title": "先检查原式",
+            "body": "$\\csc x,\\cot x$ 要求 $\\sin x\\ne0$；$\\tan x$ 要求 $\\cos x\\ne0$。在这些限制下，$\\tan x+\\cot x=1/(\\sin x\\cos x)$ 从不为零。"
+          },
+          {
+            "title": "通分并相除",
+            "body": "$\\dfrac{1/\\sin x}{\\sin x/\\cos x+\\cos x/\\sin x}=\\dfrac{1/\\sin x}{1/(\\sin x\\cos x)}=\\cos x$。"
+          }
+        ],
+        "answer": "$\\cos x$；原式排除 $0,\\pi/2,\\pi,3\\pi/2$。",
+        "printedPage": 297,
+        "pdfPage": 306,
+        "en": {
+          "prompt": "Simplify $\\dfrac{\\csc x}{\\tan x+\\cot x}$ to one of the three primary trigonometric ratios. What are the non-permissible values of the original expression in $0\\le x<2\\pi$?",
+          "steps": [
+            {
+              "title": "Check the original expression",
+              "body": "Cosecant and cotangent require nonzero sine; tangent requires nonzero cosine. Under these restrictions, $\\tan x+\\cot x=1/(\\sin x\\cos x)$ is never zero."
+            },
+            {
+              "title": "Combine and divide",
+              "body": "$\\dfrac{1/\\sin x}{\\sin x/\\cos x+\\cos x/\\sin x}=\\dfrac{1/\\sin x}{1/(\\sin x\\cos x)}=\\cos x$."
+            }
+          ],
+          "answer": "$\\cos x$; the original expression excludes $0,\\pi/2,\\pi,3\\pi/2$."
+        }
+      },
+      {
+        "number": 11,
+        "prompt": "(a) 使用技术作图，判断 $\\dfrac{\\csc^2x-\\cot^2x}{\\cos x}$ 看来与 $\\csc x$ 还是 $\\sec x$ 等价。 (b) 求 (a) 中恒等式的不允许值（弧度）。 (c) 将原式写成 (a) 中认出的单个倒数三角比。",
+        "concept": [
+          "pythagorean",
+          "identity-domain"
+        ],
+        "steps": [
+          {
+            "title": "(a) 比较图形",
+            "body": "分式的各分支与 $\\sec x$ 重合，而非 $\\csc x$；例如 $x=\\pi/6$ 时值为 $2/\\sqrt3$，不同于 $\\csc(\\pi/6)=2$。"
+          },
+          {
+            "title": "(b) 保留原函数限制",
+            "body": "$\\csc x,\\cot x$ 要求 $\\sin x\\ne0$；外分母要求 $\\cos x\\ne0$。合并排除 $x=n\\pi/2$。"
+          },
+          {
+            "title": "(c) 使用平方差恒等式",
+            "body": "$\\csc^2x-\\cot^2x=1$，故原式 $=1/\\cos x=\\sec x$，但不能恢复被原余割余切排除的 $n\\pi$。"
+          }
+        ],
+        "answer": "(a)(c) $\\sec x$；(b) 不允许值 $x=n\\pi/2$，$n\\in\\mathbb Z$。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "(a) Use technology to determine graphically whether $\\dfrac{\\csc^2x-\\cot^2x}{\\cos x}$ appears equivalent to $\\csc x$ or $\\sec x$. (b) Determine the non-permissible values in radians for that identity. (c) Express the original expression as the single reciprocal ratio identified in (a).",
+          "steps": [
+            {
+              "title": "(a) Compare graphs",
+              "body": "The branches match $\\sec x$, not $\\csc x$. For example, at $\\pi/6$ the value is $2/\\sqrt3$, whereas cosecant is $2$."
+            },
+            {
+              "title": "(b) Keep original function restrictions",
+              "body": "Cosecant and cotangent require nonzero sine; the outer denominator requires nonzero cosine. Together exclude $x=n\\pi/2$."
+            },
+            {
+              "title": "(c) Use the Pythagorean difference",
+              "body": "Since $\\csc^2x-\\cot^2x=1$, the expression is $1/\\cos x=\\sec x$. The sine zeros $n\\pi$ remain excluded by the original functions."
+            }
+          ],
+          "answer": "(a),(c) $\\sec x$. (b) Exclude $x=n\\pi/2$, $n\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/6-1-exercise-11-graph.png"
+      },
+      {
+        "number": 12,
+        "prompt": "(a) 在 $\\dfrac{\\cot x}{\\sec x}+\\sin x=\\csc x$ 中代入 $x=\\pi/4$，用精确值判断它是否可能为恒等式。 (b) 用代数确认左边化简为 $\\csc x$。",
+        "concept": [
+          "reciprocal-quotient",
+          "pythagorean"
+        ],
+        "steps": [
+          {
+            "title": "(a) 两边各自计算",
+            "body": "左边 $1/\\sqrt2+\\sqrt2/2=\\sqrt2$；右边 $1/(\\sqrt2/2)=\\sqrt2$。这个检查支持“可能”，但不单独构成证明。"
+          },
+          {
+            "title": "(b) 商与勾股化简",
+            "body": "原式要求 $\\sin x\\ne0,\\cos x\\ne0$。$\\dfrac{\\cot x}{\\sec x}+\\sin x=\\dfrac{\\cos x/\\sin x}{1/\\cos x}+\\sin x=\\dfrac{\\cos^2x+\\sin^2x}{\\sin x}=1/\\sin x=\\csc x$。"
+          }
+        ],
+        "answer": "(a) 两边都为 $\\sqrt2$。(b) 恒等式在原共同定义域 $x\\ne n\\pi/2$ 上成立。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "(a) Substitute $x=\\pi/4$ into $\\dfrac{\\cot x}{\\sec x}+\\sin x=\\csc x$ using exact values to determine whether it could be an identity. (b) Confirm algebraically that the left side simplifies to $\\csc x$.",
+          "steps": [
+            {
+              "title": "(a) Evaluate each side",
+              "body": "The left side is $1/\\sqrt2+\\sqrt2/2=\\sqrt2$, matching $\\csc(\\pi/4)=\\sqrt2$. This supports the possibility but does not prove an identity."
+            },
+            {
+              "title": "(b) Quotient and Pythagorean simplification",
+              "body": "The original expression requires $\\sin x\\ne0$ and $\\cos x\\ne0$. Then $\\dfrac{\\cot x}{\\sec x}+\\sin x=\\dfrac{\\cos x/\\sin x}{1/\\cos x}+\\sin x=\\dfrac{\\cos^2x+\\sin^2x}{\\sin x}=1/\\sin x=\\csc x$."
+            }
+          ],
+          "answer": "(a) Both sides equal $\\sqrt2$. (b) The identity holds on the original common domain $x\\ne n\\pi/2$, $n\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 13,
+        "prompt": "Stan、Lina 和 Giselle 想判断 $\\sin x+\\cos x=\\tan x+1$ 是否为恒等式。 (a) Stan 代入 $x=0$，结果是什么？ (b) Lina 代入 $x=\\pi/2$，她观察到什么？ (c) Stan 说 Lina 选的值不允许，解释原因。 (d) Giselle 代入 $x=\\pi/4$，她发现什么？ (e) 三人有足够信息判断该方程是否为恒等式吗？解释。",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "(a) 零角",
+            "body": "左边 $\\sin0+\\cos0=0+1=1$；右边 $\\tan0+1=0+1=1$，此角满足方程。"
+          },
+          {
+            "title": "(b)(c) 不允许的代入",
+            "body": "在 $\\pi/2$，左边 $1+0=1$；右边 $\\tan(\\pi/2)+1$ 无定义，因为 $\\cos(\\pi/2)=0$。这不是共同定义域内的反例。"
+          },
+          {
+            "title": "(d) 允许的反例",
+            "body": "在 $\\pi/4$，左边 $\\sqrt2/2+\\sqrt2/2=\\sqrt2$；右边 $1+1=2$。$\\sqrt2\\ne2$，且此角允许。"
+          },
+          {
+            "title": "(e) 作出判断",
+            "body": "一个允许值处不相等足以否定恒等式；因此 Giselle 的代入已经提供足够信息。"
+          }
+        ],
+        "answer": "(a) $1=1$；(b)(c) 右边无定义，不是允许的测试；(d) $\\sqrt2\\ne2$；(e) 是，足以断定它不是恒等式。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "Stan, Lina, and Giselle are deciding whether $\\sin x+\\cos x=\\tan x+1$ is an identity. (a) Stan substitutes $x=0$. What is the result? (b) Lina substitutes $x=\\pi/2$. What does she observe? (c) Explain why Lina's choice is not permissible. (d) Giselle substitutes $x=\\pi/4$. What does she find? (e) Do they have enough information to conclude whether the equation is an identity? Explain.",
+          "steps": [
+            {
+              "title": "(a) Zero angle",
+              "body": "The left side is $0+1=1$; the right side is $0+1=1$. The equation holds at this angle."
+            },
+            {
+              "title": "(b),(c) Impermissible substitution",
+              "body": "At $\\pi/2$, the left side is $1+0=1$, but the right side is undefined because $\\cos(\\pi/2)=0$. This is not a counterexample within the common domain."
+            },
+            {
+              "title": "(d) A permissible counterexample",
+              "body": "At $\\pi/4$, the left side is $\\sqrt2/2+\\sqrt2/2=\\sqrt2$, while the right side is $1+1=2$. The values differ at a permissible angle."
+            },
+            {
+              "title": "(e) Conclude",
+              "body": "One unequal pair at a permissible value disproves an identity, so Giselle's substitution provides enough information."
+            }
+          ],
+          "answer": "(a) $1=1$. (b),(c) The right side is undefined, so this is not a permissible test. (d) $\\sqrt2\\ne2$. (e) Yes; it is not an identity."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      {
+        "number": 14,
+        "prompt": "化简 $(\\sin x+\\cos x)^2+(\\sin x-\\cos x)^2$。",
+        "concept": [
+          "algebra-tools",
+          "pythagorean"
+        ],
+        "steps": [
+          {
+            "title": "展开两个平方",
+            "body": "$\\sin^2x+2\\sin x\\cos x+\\cos^2x+\\sin^2x-2\\sin x\\cos x+\\cos^2x$。"
+          },
+          {
+            "title": "消交叉项再合并",
+            "body": "$2\\sin^2x+2\\cos^2x=2(\\sin^2x+\\cos^2x)=2$，对所有实数 $x$ 成立。"
+          }
+        ],
+        "answer": "$2$（所有实数 $x$）。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "Simplify $(\\sin x+\\cos x)^2+(\\sin x-\\cos x)^2$.",
+          "steps": [
+            {
+              "title": "Expand both squares",
+              "body": "The expansion is $\\sin^2x+2\\sin x\\cos x+\\cos^2x+\\sin^2x-2\\sin x\\cos x+\\cos^2x$."
+            },
+            {
+              "title": "Cancel cross terms and combine",
+              "body": "$2\\sin^2x+2\\cos^2x=2(\\sin^2x+\\cos^2x)=2$ for every real $x$."
+            }
+          ],
+          "answer": "$2$ for every real $x$."
+        }
+      },
+      {
+        "number": 15,
+        "prompt": "已知 $\\csc^2x+\\sin^2x=7.89$，求 $\\dfrac1{\\csc^2x}+\\dfrac1{\\sin^2x}$ 的值。",
+        "concept": "reciprocal-quotient",
+        "steps": [
+          {
+            "title": "利用互为倒数",
+            "body": "已知式有定义保证 $\\sin x\\ne0$。$1/\\csc^2x=\\sin^2x$，而 $1/\\sin^2x=\\csc^2x$。"
+          },
+          {
+            "title": "交换相加顺序",
+            "body": "所求 $=\\sin^2x+\\csc^2x=7.89$；不需求出角 $x$。"
+          }
+        ],
+        "answer": "$7.89$。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "Given $\\csc^2x+\\sin^2x=7.89$, find $\\dfrac1{\\csc^2x}+\\dfrac1{\\sin^2x}$.",
+          "steps": [
+            {
+              "title": "Use reciprocals",
+              "body": "The given expression is defined only if $\\sin x\\ne0$. Then $1/\\csc^2x=\\sin^2x$ and $1/\\sin^2x=\\csc^2x$."
+            },
+            {
+              "title": "Reverse the sum",
+              "body": "The required sum is $\\sin^2x+\\csc^2x=7.89$; finding the angle is unnecessary."
+            }
+          ],
+          "answer": "$7.89$."
+        }
+      },
+      {
+        "number": 16,
+        "prompt": "用代数证明 $\\dfrac1{1+\\sin\\theta}+\\dfrac1{1-\\sin\\theta}=2\\sec^2\\theta$ 为恒等式。",
+        "concept": [
+          "algebra-tools",
+          "pythagorean"
+        ],
+        "steps": [
+          {
+            "title": "先限定共同定义域",
+            "body": "$1\\pm\\sin\\theta\\ne0$ 等价于 $\\sin\\theta\\ne\\pm1$，也即 $\\cos\\theta\\ne0$。右式正有同一限制：$\\theta\\ne\\pi/2+n\\pi$。"
+          },
+          {
+            "title": "通分和勾股代换",
+            "body": "$\\dfrac{(1-\\sin\\theta)+(1+\\sin\\theta)}{(1+\\sin\\theta)(1-\\sin\\theta)}=\\dfrac2{1-\\sin^2\\theta}=\\dfrac2{\\cos^2\\theta}=2\\sec^2\\theta$。"
+          }
+        ],
+        "answer": "恒等式成立，共同定义域 $\\theta\\ne\\pi/2+n\\pi$，$n\\in\\mathbb Z$。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "Show algebraically that $\\dfrac1{1+\\sin\\theta}+\\dfrac1{1-\\sin\\theta}=2\\sec^2\\theta$ is an identity.",
+          "steps": [
+            {
+              "title": "State the common domain",
+              "body": "The denominators require $\\sin\\theta\\ne\\pm1$, equivalent to $\\cos\\theta\\ne0$. This is also the restriction on the right: $\\theta\\ne\\pi/2+n\\pi$."
+            },
+            {
+              "title": "Combine and use Pythagoras",
+              "body": "$\\dfrac{(1-\\sin\\theta)+(1+\\sin\\theta)}{(1+\\sin\\theta)(1-\\sin\\theta)}=\\dfrac2{1-\\sin^2\\theta}=\\dfrac2{\\cos^2\\theta}=2\\sec^2\\theta$."
+            }
+          ],
+          "answer": "The identity holds for $\\theta\\ne\\pi/2+n\\pi$, $n\\in\\mathbb Z$."
+        }
+      },
+      {
+        "number": 17,
+        "prompt": "求使 $\\dfrac{2-\\cos^2x}{\\sin x}=m+\\sin x$ 成为恒等式的 $m$ 的表达式。",
+        "concept": "pythagorean",
+        "steps": [
+          {
+            "title": "改写分子",
+            "body": "$2-\\cos^2x=1+(1-\\cos^2x)=1+\\sin^2x$。原式要求 $\\sin x\\ne0$。"
+          },
+          {
+            "title": "拆成两项",
+            "body": "$\\dfrac{1+\\sin^2x}{\\sin x}=1/\\sin x+\\sin x=\\csc x+\\sin x$。与右边比较得 $m=\\csc x$。"
+          }
+        ],
+        "answer": "$m=\\csc x$，$x\\ne n\\pi$，$n\\in\\mathbb Z$。$m$ 是关于 $x$ 的表达式。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "Determine an expression for $m$ that makes $\\dfrac{2-\\cos^2x}{\\sin x}=m+\\sin x$ an identity.",
+          "steps": [
+            {
+              "title": "Rewrite the numerator",
+              "body": "$2-\\cos^2x=1+(1-\\cos^2x)=1+\\sin^2x$. The original expression requires $\\sin x\\ne0$."
+            },
+            {
+              "title": "Split the fraction",
+              "body": "$\\dfrac{1+\\sin^2x}{\\sin x}=1/\\sin x+\\sin x=\\csc x+\\sin x$. Comparing with the right side gives $m=\\csc x$."
+            }
+          ],
+          "answer": "$m=\\csc x$, $x\\ne n\\pi$, $n\\in\\mathbb Z$. Here $m$ is an expression in $x$."
+        }
+      },
+      {
+        "number": "C1",
+        "prompt": "如果学生不知道 $\\cot^2x+1=\\csc^2x$ 这种勾股恒等式，说明如何利用 $1=\\dfrac{\\sin^2x}{\\sin^2x}$ 化简含 $\\cot^2x+1$ 的式子。",
+        "concept": [
+          "reciprocal-quotient",
+          "pythagorean"
+        ],
+        "steps": [
+          {
+            "title": "化为共同分母",
+            "body": "当 $\\sin x\\ne0$，$\\cot^2x+1=\\cos^2x/\\sin^2x+\\sin^2x/\\sin^2x$。"
+          },
+          {
+            "title": "只用基础勾股形式",
+            "body": "合并得 $(\\cos^2x+\\sin^2x)/\\sin^2x=1/\\sin^2x=\\csc^2x$。这独立推导出所需形式，无需预先知道它。"
+          }
+        ],
+        "answer": "$\\cot^2x+1=\\csc^2x$，$x\\ne n\\pi$，$n\\in\\mathbb Z$。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "Explain how a student who does not know $\\cot^2x+1=\\csc^2x$ can simplify an expression containing $\\cot^2x+1$ using $1=\\dfrac{\\sin^2x}{\\sin^2x}$.",
+          "steps": [
+            {
+              "title": "Use a common denominator",
+              "body": "When $\\sin x\\ne0$, $\\cot^2x+1=\\cos^2x/\\sin^2x+\\sin^2x/\\sin^2x$."
+            },
+            {
+              "title": "Use the basic Pythagorean form",
+              "body": "Combine to get $(\\cos^2x+\\sin^2x)/\\sin^2x=1/\\sin^2x=\\csc^2x$. This derives the needed form without assuming it beforehand."
+            }
+          ],
+          "answer": "$\\cot^2x+1=\\csc^2x$, $x\\ne n\\pi$, $n\\in\\mathbb Z$."
+        }
+      },
+      {
+        "number": "C2",
+        "prompt": "有些三角表达式可通过乘共轭来化简。把 $\\dfrac{\\sin\\theta}{1+\\cos\\theta}$ 的分子分母同乘分母的共轭 $1-\\cos\\theta$，并说明此过程如何帮助化简。",
+        "concept": [
+          "algebra-tools",
+          "pythagorean"
+        ],
+        "steps": [
+          {
+            "title": "先区分原限制与新增限制",
+            "body": "原式要求 $\\cos\\theta\\ne-1$，即 $\\theta\\ne(2n+1)\\pi$。同乘同除 $1-\\cos\\theta$ 还要求 $\\cos\\theta\\ne1$，故这些角需另行处理。"
+          },
+          {
+            "title": "乘共轭并用勾股恒等式",
+            "body": "当 $\\sin\\theta\\ne0$，$\\dfrac{\\sin\\theta(1-\\cos\\theta)}{(1+\\cos\\theta)(1-\\cos\\theta)}=\\dfrac{\\sin\\theta(1-\\cos\\theta)}{1-\\cos^2\\theta}=\\dfrac{\\sin\\theta(1-\\cos\\theta)}{\\sin^2\\theta}=\\dfrac{1-\\cos\\theta}{\\sin\\theta}=\\csc\\theta-\\cot\\theta$。共轭把分母变为可用勾股恒等式改写的平方差。"
+          },
+          {
+            "title": "补回原式允许的特殊值",
+            "body": "若 $\\theta=2n\\pi$，原式等于 $0/(1+1)=0$，但化简后的分式无定义。因此若保持原完整定义域，应写：$\\theta\\notin\\pi\\mathbb Z$ 时为 $(1-\\cos\\theta)/\\sin\\theta$，$\\theta=2n\\pi$ 时为 $0$；奇数倍 $\\pi$ 仍排除。"
+          }
+        ],
+        "answer": "共同定义域上为 $(1-\\cos\\theta)/\\sin\\theta=\\csc\\theta-\\cot\\theta$；原式在 $2n\\pi$ 处另有值 $0$。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "Multiplying by a conjugate can help simplify trigonometric expressions. Simplify $\\dfrac{\\sin\\theta}{1+\\cos\\theta}$ by multiplying numerator and denominator by the conjugate $1-\\cos\\theta$. Describe how this helps.",
+          "steps": [
+            {
+              "title": "Separate original and new restrictions",
+              "body": "The original expression requires $\\cos\\theta\\ne-1$, excluding $(2n+1)\\pi$. Multiplying and dividing by $1-\\cos\\theta$ also requires $\\cos\\theta\\ne1$, so those angles need separate treatment."
+            },
+            {
+              "title": "Multiply by the conjugate and use Pythagoras",
+              "body": "When $\\sin\\theta\\ne0$, $\\dfrac{\\sin\\theta(1-\\cos\\theta)}{(1+\\cos\\theta)(1-\\cos\\theta)}=\\dfrac{\\sin\\theta(1-\\cos\\theta)}{1-\\cos^2\\theta}=\\dfrac{\\sin\\theta(1-\\cos\\theta)}{\\sin^2\\theta}=\\dfrac{1-\\cos\\theta}{\\sin\\theta}=\\csc\\theta-\\cot\\theta$. The conjugate creates a difference of squares, allowing the Pythagorean substitution."
+            },
+            {
+              "title": "Retain originally valid special values",
+              "body": "At $\\theta=2n\\pi$, the original value is $0/(1+1)=0$, while the transformed fraction is undefined. To preserve the full original domain, use $(1-\\cos\\theta)/\\sin\\theta$ for $\\theta\\notin\\pi\\mathbb Z$ and $0$ for $\\theta=2n\\pi$; odd multiples of $\\pi$ remain excluded."
+            }
+          ],
+          "answer": "On the common domain the result is $(1-\\cos\\theta)/\\sin\\theta=\\csc\\theta-\\cot\\theta$; the original expression additionally has value $0$ at $2n\\pi$."
+        }
+      },
+      {
+        "number": "C3",
+        "prompt": "迷你实验：探究不同定义域对表面恒等式的影响。 1. 在同一网格上作 $y=\\tan x$ 与 $y=\\left|\\dfrac{\\sin x}{\\cos x}\\right|$，定义域 $0\\le x<\\pi/2$。图像是否提供 $\\tan x=|\\sin x/\\cos x|$ 是恒等式的证据？解释。 2. 将定义域扩大到 $-2\\pi<x\\le2\\pi$ 再作图。该方程是恒等式吗？解释。 3. 找一个不同的三角方程，它在一个受限区间成立，但检查所有允许值时不是恒等式。记录并与同学比较。 4. 此活动怎样说明用图像与数值方法验证潜在恒等式的弱点？",
+        "concept": "identity-domain",
+        "steps": [
+          {
+            "title": "1. 第一象限范围",
+            "body": "在 $0\\le x<\\pi/2$，$\\tan x\\ge0$，故 $|\\sin x/\\cos x|=|\\tan x|=\\tan x$。图像完全重合，提供局部相等的证据；它不能证明对全部允许实数都成立。"
+          },
+          {
+            "title": "2. 扩大区间后的反例",
+            "body": "两式都排除 $x=\\pi/2+n\\pi$。在扩大区间内取 $x=-\\pi/4$，$\\tan x=-1$，绝对值式为 $1$，故不是恒等式；所有正切为负的分支都会反射。"
+          },
+          {
+            "title": "3. 一个具体不同例子",
+            "body": "取 $\\cos x=\\sqrt{1-\\sin^2x}$。在 $-\\pi/2\\le x\\le\\pi/2$，右式 $=|\\cos x|=\\cos x$；但 $x=\\pi$ 时左边 $-1$，右边 $1$。这是可供同学比较的例子，不声称已实际交流。"
+          },
+          {
+            "title": "4. 说明方法局限",
+            "body": "有限取样可能全部落在相等区间；有限图窗与像素可能隐藏其他分支和缺点。因此可用它们寻找证据或反例，而一般恒等式须在共同定义域上代数证明。"
+          }
+        ],
+        "answer": "1. 受限区间内相等。2. 扩大区间后不是恒等式。3. $\\cos x=\\sqrt{1-\\sin^2x}$ 是一个例子。4. 图像与有限数值不能取代全域证明。",
+        "printedPage": 298,
+        "pdfPage": 307,
+        "en": {
+          "prompt": "Mini Lab: Explore how different domains affect apparent identities. 1. Graph $y=\\tan x$ and $y=\\left|\\dfrac{\\sin x}{\\cos x}\\right|$ on the same grid for $0\\le x<\\pi/2$. Is there graphical evidence that their equality is an identity? Explain. 2. Graph them again over $-2\\pi<x\\le2\\pi$. Is the equation an identity? Explain. 3. Find and record a different trigonometric equation that holds on a restricted domain but is not an identity when all permissible values are checked. Compare with a classmate. 4. How does this activity show the weakness of graphical and numerical methods for verifying potential identities?",
+          "steps": [
+            {
+              "title": "1. First-quadrant interval",
+              "body": "On $0\\le x<\\pi/2$, tangent is nonnegative, so $|\\sin x/\\cos x|=|\\tan x|=\\tan x$. The graphs coincide, providing evidence of equality on this interval, not a proof for all permissible real angles."
+            },
+            {
+              "title": "2. Counterexample on the expanded interval",
+              "body": "Both expressions exclude $x=\\pi/2+n\\pi$. Within the expanded interval, at $x=-\\pi/4$, tangent is $-1$ while the absolute-value expression is $1$. Thus it is not an identity; all negative tangent branches are reflected."
+            },
+            {
+              "title": "3. A different concrete example",
+              "body": "Use $\\cos x=\\sqrt{1-\\sin^2x}$. On $-\\pi/2\\le x\\le\\pi/2$, the right side is $|\\cos x|=\\cos x$. At $x=\\pi$, however, the left side is $-1$ and the right side is $1$. This is an example to compare with a classmate, not a claimed interaction."
+            },
+            {
+              "title": "4. Explain the limitation",
+              "body": "Finite samples may all lie in an interval of agreement; a finite window and pixels may hide other branches and holes. These methods can find evidence or counterexamples, but a general identity needs an algebraic proof on the common domain."
+            }
+          ],
+          "answer": "1. They agree on the restricted interval. 2. They are not an identity on the expanded domain. 3. $\\cos x=\\sqrt{1-\\sin^2x}$ is one example. 4. Graphs and finite samples cannot replace a proof over the common domain."
+        },
+        "subpartIds": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "solutionImage": "assets/6-1-exercise-c3-graph.png"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "investigate-5",
+      "investigate-6",
+      "margin-p292",
+      "margin-p293-graph",
+      "your-turn-1",
+      "margin-p293-domain",
+      "your-turn-2",
+      "margin-p295",
+      "your-turn-3"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "expectedSubparts": {
+      "investigate-4": [
+        "a",
+        "b"
+      ],
+      "example-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "margin-p292": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "margin-p293-graph": [
+        "a",
+        "b"
+      ],
+      "your-turn-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-2": [
+        "a",
+        "b"
+      ],
+      "margin-p293-domain": [
+        "a",
+        "b"
+      ],
+      "your-turn-2": [
+        "a",
+        "b"
+      ],
+      "example-3": [
+        "a",
+        "b"
+      ],
+      "margin-p295": [
+        "a",
+        "b"
+      ],
+      "your-turn-3": [
+        "a",
+        "b"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-5": [
+        "a",
+        "b"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-9": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-C3": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original-page and mathematics review completed by a reviewer independent of the author. Review record: audit/6-1-independent-review.json. Final file hashes recorded separately."
+  }
+}

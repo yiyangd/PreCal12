@@ -1,0 +1,686 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "6-test",
+    "section": "6 Practice Test",
+    "title": "第 6 章练习测试",
+    "en": {
+      "title": "Chapter 6 Practice Test",
+      "description": "Complete source questions and worked solutions. In solutions, s = sin u, c = cos u and t = tan u, where u is the current part's angle (such as x, A, B or θ), unless the question explicitly defines a different variable."
+    },
+    "source": {
+      "kind": "pdf",
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "printedPages": [
+        324
+      ],
+      "pdfPages": [
+        333
+      ]
+    },
+    "concepts": [
+      {
+        "id": "simplify",
+        "title": "恒等式化简",
+        "summary": "在原定义域内识别等价表达式。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先化为正弦余弦，或逆用和差角、倍角公式；保留分母不为零的条件。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Identity simplification",
+          "summary": "Recognize equivalent expressions on their original domains.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Convert to sine/cosine, or recognize sum/difference and double-angle formulas in reverse. Retain nonzero-denominator conditions."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "exact",
+        "title": "象限与精确值",
+        "summary": "先确定符号，再代入和差角公式。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "由 $\\sin^2\\theta+\\cos^2\\theta=1$ 求另一比值，根据象限选择正负，再展开角度。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Quadrants and exact values",
+          "summary": "Determine signs before substituting into angle formulas.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $\\sin^2\\theta+\\cos^2\\theta=1$ to find the other ratio, choose the quadrant sign, then expand the angle."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "proof",
+        "title": "共同定义域上的证明",
+        "summary": "代数证明须明确原函数限制。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "从一边代换到另一边；若变形延拓了原式，应说明延拓与原式的区别。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Proof on the common domain",
+          "summary": "An algebraic proof retains restrictions from the original functions.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Transform one side into the other. If simplification continuously extends the original expression, state that distinction."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "substitute",
+        "title": "恒等式代换与因式分解",
+        "summary": "先化为一个三角函数的代数方程。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用 $\\sin2x=2\\sin x\\cos x$、$\\cos2x=1-2\\sin^2x=2\\cos^2x-1$ 代换，再因式分解或用求根公式。"
+          }
+        ],
+        "pitfalls": [
+          "不要除以可能为零的三角因子；先保留每个零因子分支。"
+        ],
+        "en": {
+          "title": "Substitution and factoring",
+          "summary": "Rewrite as an algebraic equation in one trigonometric function.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Substitute $\\sin2x=2\\sin x\\cos x$ or $\\cos2x=1-2\\sin^2x=2\\cos^2x-1$, then factor or use the quadratic formula."
+            }
+          ],
+          "pitfalls": [
+            "Keep every zero-factor branch before dividing by a trigonometric factor."
+          ]
+        }
+      },
+      {
+        "id": "domain",
+        "title": "原式禁值与候选解",
+        "summary": "约分或清分母不能改变原式定义域。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先列 $\\sin x\\ne0$ 或 $\\cos x\\ne0$ 等限制，再解方程并代回原式；舍去绝对值超过1的正弦或余弦值。"
+          }
+        ],
+        "pitfalls": [
+          "图像可能掩盖孤立的空点。"
+        ],
+        "en": {
+          "title": "Original restrictions and candidates",
+          "summary": "Cancellation and clearing denominators retain the original domain.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Record restrictions such as $\\sin x\\ne0$ or $\\cos x\\ne0$, solve, and check the original equation. Reject sine/cosine values outside $[-1,1]$."
+            }
+          ],
+          "pitfalls": [
+            "A graph can hide isolated holes."
+          ]
+        }
+      },
+      {
+        "id": "complete",
+        "title": "区间解与一般解",
+        "summary": "列出全部象限及周期，再核对端点。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "弧度的一般解写 $n\\in\\mathbb Z$；对 $\\sin2x=a$ 先解完整的 $2x$ 区间，再除以2。"
+          }
+        ],
+        "pitfalls": [
+          "角度和弧度不混用，开闭端点按题目保留。"
+        ],
+        "en": {
+          "title": "Interval and general solutions",
+          "summary": "List every quadrant and period, then check endpoints.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $n\\in\\mathbb Z$ for general solutions. For $\\sin2x=a$, solve over the full interval for $2x$ before dividing by 2."
+            }
+          ],
+          "pitfalls": [
+            "Keep degrees and radians distinct and respect open/closed endpoints."
+          ]
+        }
+      },
+      {
+        "id": "verify",
+        "title": "图像核验与错误分析",
+        "summary": "代数确定精确解，图像核对交点与漏解。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "同时画原等式两边或画“左边减右边”，核对零点与原式禁值。"
+          }
+        ],
+        "pitfalls": [
+          "数值图像不能代替完整的一般解证明。"
+        ],
+        "en": {
+          "title": "Graph checks and error analysis",
+          "summary": "Algebra gives exact solutions; graphs check intersections and omissions.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Plot both original sides, or their difference, and compare zeros while retaining excluded inputs."
+            }
+          ],
+          "pitfalls": [
+            "A numerical graph does not prove a complete general solution."
+          ]
+        }
+      }
+    ],
+    "questions": [],
+    "kind": "practice-test",
+    "description": "完整原题与逐步解析。解答中以 s = sin u、c = cos u、t = tan u 作代换，u 为当前小问的角（如 x、A、B、θ）；另有明确约定时依该题。"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "哪一式与 $\\frac{\\cos2x-1}{\\sin2x}$ 等价？A $-\\tan x$；B $-\\cot x$；C $\\tan x$；D $\\cot x$。",
+        "concept": "simplify",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\frac{-2\\sin^2x}{2\\sin x\\cos x}=-\\tan x.$ 原分母要求sin x、cos x均非零。"
+          }
+        ],
+        "answer": "A: $-\\tan x$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Which expression equals $\\frac{\\cos2x-1}{\\sin2x}$? A $-\\tan x$; B $-\\cot x$; C $\\tan x$; D $\\cot x$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\frac{-2\\sin^2x}{2\\sin x\\cos x}=-\\tan x.$ The original denominator requires both sin x and cos x nonzero."
+            }
+          ],
+          "answer": "A: $-\\tan x$"
+        },
+        "number": 1
+      },
+      {
+        "prompt": "哪一式与 $\\cot\\theta+\\tan\\theta$ 等价？A $1/(\\sin\\theta\\cos\\theta)$；B $(\\cos\\theta+\\sin\\theta)/(\\sin\\theta\\cos\\theta)$；C 1；D 2。",
+        "concept": "simplify",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$c/s+s/c=(c^2+s^2)/(sc)=1/(sc).$ 共同定义域sinθ cosθ≠0。"
+          }
+        ],
+        "answer": "A: $1/(\\sin\\theta\\cos\\theta)$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Which expression equals $\\cot\\theta+\\tan\\theta$? A $1/(\\sin\\theta\\cos\\theta)$; B $(\\cos\\theta+\\sin\\theta)/(\\sin\\theta\\cos\\theta)$; C 1; D 2.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$c/s+s/c=(c^2+s^2)/(sc)=1/(sc).$ The common domain is sinθ cosθ≠0."
+            }
+          ],
+          "answer": "A: $1/(\\sin\\theta\\cos\\theta)$"
+        },
+        "number": 2
+      },
+      {
+        "prompt": "哪一式与 $\\tan^2\\theta\\csc\\theta+1/\\sin\\theta$ 等价？A $\\sec^3\\theta$；B $\\csc^3\\theta$；C $\\csc^2\\theta\\sec\\theta$；D $\\sec^2\\theta\\csc\\theta$。",
+        "concept": "simplify",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$(\\tan^2\\theta+1)\\csc\\theta=\\sec^2\\theta\\csc\\theta.$ sinθ、cosθ均必须非零。"
+          }
+        ],
+        "answer": "D: $\\sec^2\\theta\\csc\\theta$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Which expression equals $\\tan^2\\theta\\csc\\theta+1/\\sin\\theta$? A $\\sec^3\\theta$; B $\\csc^3\\theta$; C $\\csc^2\\theta\\sec\\theta$; D $\\sec^2\\theta\\csc\\theta$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$(\\tan^2\\theta+1)\\csc\\theta=\\sec^2\\theta\\csc\\theta.$ Both sinθ and cosθ must be nonzero."
+            }
+          ],
+          "answer": "D: $\\sec^2\\theta\\csc\\theta$"
+        },
+        "number": 3
+      },
+      {
+        "prompt": "哪一个单一三角函数与 $\\cos(\\pi/5)\\cos(\\pi/6)-\\sin(\\pi/5)\\sin(\\pi/6)$ 等价？A cos(π/30)；B sin(π/30)；C sin(11π/30)；D cos(11π/30)。",
+        "concept": "simplify",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cos(\\pi/5+\\pi/6)=\\cos(11\\pi/30).$ 逆用余弦和角公式，分母通分为30。"
+          }
+        ],
+        "answer": "D: $\\cos(11\\pi/30)$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Which single function equals $\\cos(\\pi/5)\\cos(\\pi/6)-\\sin(\\pi/5)\\sin(\\pi/6)$? A cos(π/30); B sin(π/30); C sin(11π/30); D cos(11π/30).",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cos(\\pi/5+\\pi/6)=\\cos(11\\pi/30).$ Use the cosine sum formula in reverse and denominator 30."
+            }
+          ],
+          "answer": "D: $\\cos(11\\pi/30)$"
+        },
+        "number": 4
+      },
+      {
+        "prompt": "化简 $4\\cos^2x-2$ 得到哪一式？A 2cos2x；B 4cos2x；C 2cos4x；D 4cosx。",
+        "concept": "simplify",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$4\\cos^2x-2=2(2\\cos^2x-1)=2\\cos2x.$ 对每个实数x成立。"
+          }
+        ],
+        "answer": "A: $2\\cos2x$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Which expression equals $4\\cos^2x-2$? A 2cos2x; B 4cos2x; C 2cos4x; D 4cosx.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$4\\cos^2x-2=2(2\\cos^2x-1)=2\\cos2x.$ This holds for every real x."
+            }
+          ],
+          "answer": "A: $2\\cos2x$"
+        },
+        "number": 5
+      },
+      {
+        "prompt": "若 $\\sin\\theta=c$ 且 $0\\le\\theta<\\pi/2$，哪一式与cos(π+θ)等价？A 1-c；B c-1；C $\\sqrt{1-c^2}$；D $-\\sqrt{1-c^2}$。",
+        "concept": "simplify",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cos\\theta=\\sqrt{1-c^2}>0;\\quad\\cos(\\pi+\\theta)=-\\cos\\theta.$ 第一象限及θ=0的cos为正；c的范围为0≤c<1。"
+          }
+        ],
+        "answer": "D: $-\\sqrt{1-c^2}$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "If $\\sin\\theta=c$ and $0\\le\\theta<\\pi/2$, which expression equals cos(π+θ)? A 1-c; B c-1; C $\\sqrt{1-c^2}$; D $-\\sqrt{1-c^2}$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cos\\theta=\\sqrt{1-c^2}>0;\\quad\\cos(\\pi+\\theta)=-\\cos\\theta.$ Cosine is positive in quadrant I and at θ=0; 0≤c<1."
+            }
+          ],
+          "answer": "D: $-\\sqrt{1-c^2}$"
+        },
+        "number": 6
+      },
+      {
+        "prompt": "求精确值：(a) cos105°；(b) sin(5π/12)。",
+        "concept": "exact",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\cos(60^\\circ+45^\\circ)=(1/2)(\\sqrt2/2)-(\\sqrt3/2)(\\sqrt2/2).$ 和角余弦减去正弦乘积。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\sin(\\pi/4+\\pi/6)=(\\sqrt2/2)(\\sqrt3/2)+(\\sqrt2/2)(1/2).$ 和角正弦相加两项。"
+          }
+        ],
+        "answer": "(a) $(\\sqrt2-\\sqrt6)/4$； (b) $(\\sqrt6+\\sqrt2)/4$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Find the exact values: (a) cos105°; (b) sin(5π/12).",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\cos(60^\\circ+45^\\circ)=(1/2)(\\sqrt2/2)-(\\sqrt3/2)(\\sqrt2/2).$ The cosine sum subtracts the sine product."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\sin(\\pi/4+\\pi/6)=(\\sqrt2/2)(\\sqrt3/2)+(\\sqrt2/2)(1/2).$ Add the two products in the sine sum formula."
+            }
+          ],
+          "answer": "(a) $(\\sqrt2-\\sqrt6)/4$; (b) $(\\sqrt6+\\sqrt2)/4$"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": 7
+      },
+      {
+        "prompt": "证明 $\\cot\\theta-\\tan\\theta=2\\cot2\\theta$，并求非允许值。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cot\\theta-\\tan\\theta=\\frac{c^2-s^2}{sc}=\\frac{2\\cos2\\theta}{\\sin2\\theta}=2\\cot2\\theta.$ 两边共同定义域要求sinθ、cosθ、sin2θ均非零，合并为θ≠nπ/2。"
+          }
+        ],
+        "answer": "成立 / proved; 禁值 / excluded: $\\theta=n\\pi/2,\\ n\\in\\mathbb Z$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Prove $\\cot\\theta-\\tan\\theta=2\\cot2\\theta$ and determine non-permissible values.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cot\\theta-\\tan\\theta=\\frac{c^2-s^2}{sc}=\\frac{2\\cos2\\theta}{\\sin2\\theta}=2\\cot2\\theta.$ The common domain requires sinθ,cosθ,sin2θ nonzero, combining to θ≠nπ/2."
+            }
+          ],
+          "answer": "Proved; Excluded: $\\theta=n\\pi/2,\\ n\\in\\mathbb Z$"
+        },
+        "number": 8
+      },
+      {
+        "prompt": "两位物理学生研究光通过偏振片后的强度：I为透射光强，I₀为初始光强，θ为偏振轴夹角。Theo公式 $I=I_0\\cos^2\\theta$，Sany公式 $I=I_0-I_0/\\csc^2\\theta$。证明两公式等价。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$I_0-\\frac{I_0}{\\csc^2\\theta}=I_0-I_0\\sin^2\\theta=I_0(1-\\sin^2\\theta)=I_0\\cos^2\\theta.$ 证明适用于原Sany公式定义域sinθ≠0；在sinθ=0处原csc未定义，但化简后的表达式可连续延拓为I=I₀。必须区分原式和延拓。"
+          }
+        ],
+        "answer": "$I=I_0\\cos^2\\theta\\quad(\\sin\\theta\\ne0)$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Two physics students study light through a filter. I is transmitted intensity, I₀ initial intensity, and θ the angle between polarization axes. Theo uses $I=I_0\\cos^2\\theta$; Sany uses $I=I_0-I_0/\\csc^2\\theta$. Prove their formulas equivalent.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$I_0-\\frac{I_0}{\\csc^2\\theta}=I_0-I_0\\sin^2\\theta=I_0(1-\\sin^2\\theta)=I_0\\cos^2\\theta.$ The proof holds on Sany’s original domain sinθ≠0. At sinθ=0 the original cosecant is undefined, although the simplified expression extends continuously to I=I₀. Distinguish the original formula from its extension."
+            }
+          ],
+          "answer": "$I=I_0\\cos^2\\theta\\quad(\\sin\\theta\\ne0)$"
+        },
+        "number": 9
+      },
+      {
+        "prompt": "求弧度制一般解：(a) $\\sec A+2=0$；(b) $2\\sin B=3\\tan^2B$；(c) $\\sin2\\theta\\sin\\theta+\\cos^2\\theta=1$。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$1/\\cos A=-2\\Rightarrow\\cos A=-1/2.$ cos A非零，第二、三象限分别给2π/3与4π/3加整周期。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\cos B\\ne0;\\quad2s(1-s^2)=3s^2\\Rightarrow s(2s^2+3s-2)=s(2s-1)(s+2)=0.$ s=0或1/2，舍去s=-2；所有留下角的cos非零。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$2s^2c+c^2=1\\Rightarrow2s^2c-s^2=s^2(2c-1)=0.$ s=0给πn；c=1/2给±π/3加整周期；原式无禁值。"
+          }
+        ],
+        "answer": "(a) $A=\\pm2\\pi/3+2\\pi n,\\ n\\in\\mathbb Z$； (b) $B=\\pi n,\\ \\pi/6+2\\pi n,\\ 5\\pi/6+2\\pi n;\\ n\\in\\mathbb Z$； (c) $\\theta=\\pi n,\\ \\pm\\pi/3+2\\pi n;\\ n\\in\\mathbb Z$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Find general solutions in radians: (a) $\\sec A+2=0$; (b) $2\\sin B=3\\tan^2B$; (c) $\\sin2\\theta\\sin\\theta+\\cos^2\\theta=1$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$1/\\cos A=-2\\Rightarrow\\cos A=-1/2.$ Cosine is nonzero. Quadrants II and III give 2π/3 and 4π/3 plus full periods."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\cos B\\ne0;\\quad2s(1-s^2)=3s^2\\Rightarrow s(2s^2+3s-2)=s(2s-1)(s+2)=0.$ Keep s=0 or 1/2; reject s=-2. All resulting angles have nonzero cosine."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$2s^2c+c^2=1\\Rightarrow2s^2c-s^2=s^2(2c-1)=0.$ s=0 gives πn; c=1/2 gives ±π/3 plus full periods. The original equation has no exclusions."
+            }
+          ],
+          "answer": "(a) $A=\\pm2\\pi/3+2\\pi n,\\ n\\in\\mathbb Z$; (b) $B=\\pi n,\\ \\pi/6+2\\pi n,\\ 5\\pi/6+2\\pi n;\\ n\\in\\mathbb Z$; (c) $\\theta=\\pi n,\\ \\pm\\pi/3+2\\pi n;\\ n\\in\\mathbb Z$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 10
+      },
+      {
+        "prompt": "代数解 $\\sin2x+2\\cos x=0$，给出弧度制一般解。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$2\\cos x(\\sin x+1)=0.$ cos x=0给π/2+πn；sin x=-1给3π/2+2πn，已经包含在前一分支中。"
+          }
+        ],
+        "answer": "$x=\\pi/2+\\pi n,\\ n\\in\\mathbb Z$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Solve $\\sin2x+2\\cos x=0$ algebraically. Give the general solution in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$2\\cos x(\\sin x+1)=0.$ cos x=0 gives π/2+πn. The branch sin x=-1 gives 3π/2+2πn, already included."
+            }
+          ],
+          "answer": "$x=\\pi/2+\\pi n,\\ n\\in\\mathbb Z$"
+        },
+        "number": 11
+      },
+      {
+        "prompt": "若 $\\sin\\theta=-4/5$ 且θ在第三象限，求cos(θ-π/6)的精确值。",
+        "concept": "exact",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cos\\theta=-\\sqrt{1-16/25}=-3/5;\\quad\\cos(\\theta-\\pi/6)=(-3/5)(\\sqrt3/2)+(-4/5)(1/2).$ 第三象限的余弦为负，按差角公式相加。"
+          }
+        ],
+        "answer": "$-(3\\sqrt3+4)/10$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "If $\\sin\\theta=-4/5$ and θ is in quadrant III, find the exact value of cos(θ-π/6).",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cos\\theta=-\\sqrt{1-16/25}=-3/5;\\quad\\cos(\\theta-\\pi/6)=(-3/5)(\\sqrt3/2)+(-4/5)(1/2).$ Cosine is negative in quadrant III; add the products in the cosine difference formula."
+            }
+          ],
+          "answer": "$-(3\\sqrt3+4)/10$"
+        },
+        "number": 12
+      },
+      {
+        "prompt": "在 $0\\le x<2\\pi$ 代数解 $2\\tan x\\cos^2x=1$。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cos x\\ne0;\\quad2\\sin x\\cos x=1\\Rightarrow\\sin2x=1.$ 0≤2x<4π给2x=π/2、5π/2；除以2，两个解均符合cos≠0。"
+          }
+        ],
+        "answer": "$x=\\pi/4,5\\pi/4$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Solve $2\\tan x\\cos^2x=1$ algebraically for $0\\le x<2\\pi$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cos x\\ne0;\\quad2\\sin x\\cos x=1\\Rightarrow\\sin2x=1.$ For 0≤2x<4π, 2x=π/2 or 5π/2. Divide by 2; both solutions respect cos≠0."
+            }
+          ],
+          "answer": "$x=\\pi/4,5\\pi/4$"
+        },
+        "number": 13
+      },
+      {
+        "prompt": "在 $0^\\circ\\le x<360^\\circ$ 解 $\\sin^2x+\\cos2x-\\cos x=0$，并用图像核验。",
+        "concept": "verify",
+        "steps": [
+          {
+            "title": "代换、分解并核对",
+            "body": "$\\sin^2x+\\cos2x-\\cos x=(1-c^2)+(2c^2-1)-c=c(c-1)=0.$ cos x=0给90°、270°；cos x=1给0°。360°不包含。差函数图在0°接触横轴，在90°、270°穿过横轴。"
+          }
+        ],
+        "answer": "$x=0^\\circ,90^\\circ,270^\\circ$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Solve $\\sin^2x+\\cos2x-\\cos x=0$ for $0^\\circ\\le x<360^\\circ$ and verify graphically.",
+          "steps": [
+            {
+              "title": "Substitute, factor and check",
+              "body": "$\\sin^2x+\\cos2x-\\cos x=(1-c^2)+(2c^2-1)-c=c(c-1)=0.$ cos x=0 gives 90°,270°; cos x=1 gives 0°. The endpoint 360° is excluded. The difference graph touches the axis at 0° and crosses at 90°,270°."
+            }
+          ],
+          "answer": "$x=0^\\circ,90^\\circ,270^\\circ$"
+        },
+        "number": 14,
+        "solutionImage": "assets/6-test-14.png"
+      },
+      {
+        "prompt": "证明：(a) $\\frac{\\cot x}{\\csc x-1}=\\frac{\\csc x+1}{\\cot x}$；(b) $\\sin(x+y)\\sin(x-y)=\\sin^2x-\\sin^2y$。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\frac{\\cot x}{\\csc x-1}=\\frac{\\cot x(\\csc x+1)}{\\csc^2x-1}=\\frac{\\cot x(\\csc x+1)}{\\cot^2x}=\\frac{\\csc x+1}{\\cot x}.$ 共同定义域sin x≠0、cos x≠0，故cot非零，csc也不等于±1，乘共轭与约分合法。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$[\\sin x\\cos y+\\cos x\\sin y][\\sin x\\cos y-\\cos x\\sin y]=\\sin^2x\\cos^2y-\\cos^2x\\sin^2y=\\sin^2x(1-\\sin^2y)-(1-\\sin^2x)\\sin^2y=\\sin^2x-\\sin^2y.$ 用平方差和勾股公式，所有实数x、y均成立，无禁值。"
+          }
+        ],
+        "answer": "(a) 成立 / proved; $\\sin x\\cos x\\ne0$； (b) 对所有实数成立 / true for all real $x,y$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Prove: (a) $\\frac{\\cot x}{\\csc x-1}=\\frac{\\csc x+1}{\\cot x}$; (b) $\\sin(x+y)\\sin(x-y)=\\sin^2x-\\sin^2y$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\frac{\\cot x}{\\csc x-1}=\\frac{\\cot x(\\csc x+1)}{\\csc^2x-1}=\\frac{\\cot x(\\csc x+1)}{\\cot^2x}=\\frac{\\csc x+1}{\\cot x}.$ On the common domain sin x≠0 and cos x≠0, cot is nonzero and csc≠±1, so conjugate multiplication and cancellation are valid."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$[\\sin x\\cos y+\\cos x\\sin y][\\sin x\\cos y-\\cos x\\sin y]=\\sin^2x\\cos^2y-\\cos^2x\\sin^2y=\\sin^2x(1-\\sin^2y)-(1-\\sin^2x)\\sin^2y=\\sin^2x-\\sin^2y.$ Use a difference of squares and the Pythagorean identity. This holds for all real x,y without exclusions."
+            }
+          ],
+          "answer": "(a) Proved; $\\sin x\\cos x\\ne0$; (b) True for all real $x,y$"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": 15
+      },
+      {
+        "prompt": "代数求 $2\\cos^2x+3\\sin x-3=0$ 的弧度制一般解。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$2(1-s^2)+3s-3=0\\Rightarrow2s^2-3s+1=(2s-1)(s-1)=0.$ s=1/2给π/6与5π/6加整周期；s=1给π/2加整周期，无禁值。"
+          }
+        ],
+        "answer": "$x=\\pi/6+2\\pi n,\\ \\pi/2+2\\pi n,\\ 5\\pi/6+2\\pi n;\\ n\\in\\mathbb Z$",
+        "printedPage": 324,
+        "pdfPage": 333,
+        "en": {
+          "prompt": "Find algebraically the general solution in radians of $2\\cos^2x+3\\sin x-3=0$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$2(1-s^2)+3s-3=0\\Rightarrow2s^2-3s+1=(2s-1)(s-1)=0.$ s=1/2 gives π/6 and 5π/6 plus full periods; s=1 gives π/2 plus full periods. There are no exclusions."
+            }
+          ],
+          "answer": "$x=\\pi/6+2\\pi n,\\ \\pi/2+2\\pi n,\\ 5\\pi/6+2\\pi n;\\ n\\in\\mathbb Z$"
+        },
+        "number": 16
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "expectedSubparts": {
+      "exercise-7": [
+        "a",
+        "b"
+      ],
+      "exercise-10": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-15": [
+        "a",
+        "b"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original-page and mathematics review completed by a reviewer independent of the author. Review record: audit/root-independent-review.json. Final file hashes recorded separately."
+  }
+}

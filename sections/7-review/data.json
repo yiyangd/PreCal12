@@ -1,0 +1,816 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "7-review",
+    "section": "7 Review",
+    "kind": "review",
+    "title": "第 7 章复习",
+    "en": {
+      "title": "Chapter 7 Review"
+    },
+    "source": {
+      "kind": "pdf",
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "printedPages": [
+        366,
+        367
+      ],
+      "pdfPages": [
+        375,
+        376
+      ]
+    },
+    "concepts": [
+      {
+        "id": "properties",
+        "title": "指数函数特征",
+        "summary": "对 $y=c^x$，$c>0$ 且 $c\\ne1$；定义域为实数，值域为正数，纵截距为 $(0,1)$。",
+        "method": [
+          {
+            "title": "读底数与图像",
+            "body": "当 $c>1$ 时递增；当 $0<c<1$ 时递减。用已知点代入求底数，水平渐近线为 $y=0$。"
+          }
+        ],
+        "pitfalls": [
+          "指数函数趋近渐近线，不会到达渐近线。"
+        ],
+        "en": {
+          "title": "Characteristics of exponential functions",
+          "summary": "For $y=c^x$, $c>0$ and $c\\ne1$. The domain is all real numbers, the range is positive, and the y-intercept is $(0,1)$.",
+          "method": [
+            {
+              "title": "Read the base and graph",
+              "body": "The function increases for $c>1$ and decreases for $0<c<1$. Substitute a given point to determine the base; the horizontal asymptote is $y=0$."
+            }
+          ],
+          "pitfalls": [
+            "An exponential curve approaches its horizontal asymptote without reaching it."
+          ]
+        }
+      },
+      {
+        "id": "transformations",
+        "title": "指数图像变换",
+        "summary": "对非恒定函数 $y=a c^{b(x-h)}+k$（$c>0,c\\ne1,a\\ne0,b\\ne0$），水平伸缩因子为 $1/|b|$，竖直伸缩因子为 $|a|$，平移为 $(h,k)$。",
+        "method": [
+          {
+            "title": "变换关键点",
+            "body": "将 $y=c^x$ 上的 $(u,v)$ 变为 $(u/b+h,av+k)$；$a<0$ 关于横轴反射，$b<0$ 关于纵轴反射。先伸缩、反射，再平移。"
+          }
+        ],
+        "pitfalls": [
+          "先把指数写成 $b(x-h)$；水平渐近线为 $y=k$，不能把水平位移 $h$ 当作渐近线高度。"
+        ],
+        "en": {
+          "title": "Transformations of exponential graphs",
+          "summary": "For the nonconstant function $y=a c^{b(x-h)}+k$ ($c>0,c\\ne1,a\\ne0,b\\ne0$), the horizontal scale factor is $1/|b|$, the vertical scale factor is $|a|$, and the translation is $(h,k)$.",
+          "method": [
+            {
+              "title": "Transform key points",
+              "body": "Map a point $(u,v)$ on $y=c^x$ to $(u/b+h,av+k)$. Negative $a$ reflects in the x-axis; negative $b$ reflects in the y-axis. Scale and reflect before translating."
+            }
+          ],
+          "pitfalls": [
+            "Factor the exponent as $b(x-h)$ first. The horizontal asymptote is $y=k$; do not confuse the horizontal shift $h$ with the asymptote height."
+          ]
+        }
+      },
+      {
+        "id": "equations",
+        "title": "解指数方程",
+        "summary": "能化为相同合法底数时令指数相等；底数不同时可用图像交点和数值逼近。",
+        "method": [
+          {
+            "title": "写出可核对的方程",
+            "body": "先用幂的乘方与负指数法则化简，再解一次方程；图解结果注明近似及舍入位数。"
+          }
+        ],
+        "pitfalls": [
+          "不要把不同底数的指数直接设为相等。"
+        ],
+        "en": {
+          "title": "Solving exponential equations",
+          "summary": "Equate exponents after rewriting with a common valid base; otherwise use graph intersections and numerical approximation.",
+          "method": [
+            {
+              "title": "Form a checkable equation",
+              "body": "Use powers of powers and negative exponent laws, then solve the resulting linear equation. Label graphical results as approximate and round as requested."
+            }
+          ],
+          "pitfalls": [
+            "Exponents of unequal bases cannot simply be equated."
+          ]
+        }
+      },
+      {
+        "id": "models",
+        "title": "增长、衰减与实际时间",
+        "summary": "增长因子为 $1+r$；半衰期为 $h$ 的剩余量为 $M_0(1/2)^{t/h}$。每年复利 $m$ 次用 $A=P(1+r/m)^{mt}$。",
+        "method": [
+          {
+            "title": "设定时间起点和单位",
+            "body": "明确初值、每期因子与期数，代入目标值；用图像或逐步逼近求时间，再应用整数期数等实际限制。"
+          }
+        ],
+        "pitfalls": [
+          "百分比损失与剩余百分比不同；按期入账时须向上取整到完整期数。"
+        ],
+        "en": {
+          "title": "Growth, decay, and contextual time",
+          "summary": "A growth factor is $1+r$; a quantity with half-life $h$ is $M_0(1/2)^{t/h}$. Interest compounded $m$ times per year gives $A=P(1+r/m)^{mt}$.",
+          "method": [
+            {
+              "title": "Set the time origin and units",
+              "body": "Identify the initial amount, factor per period, and number of periods. Substitute the target, estimate time by graphing or iteration, and apply constraints such as whole credited periods."
+            }
+          ],
+          "pitfalls": [
+            "Distinguish a percentage blocked from the percentage transmitted. For periodically credited interest, round up to a whole period."
+          ]
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "将集合 A 中各项与集合 B 的图像配对。集合 A：a) 一个国家的人口（单位：百万）每年增长 $1.5\\%$；b) $y=10^x$；c) 钨-187 是半衰期为 1 天的放射性同位素；d) $y=0.2^x$。集合 B 的 A、B、C、D 图像见原图。",
+        "concept": "properties",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 每年乘 $1.015>1$，增长较慢。B 图横轴每格代表较多年份，曲线缓慢增长，因此配 B。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 底数 $10>1$，且 $(0,1)$、$(1,10)$ 在曲线上。D 图快速递增并符合这些点，因此配 D。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) 每天剩原来一半，模型为 $M=M_0(1/2)^t$。A 图从 $(0,1)$ 下降到约 $(1,1/2)$，因此配 A。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "d) $0.2^x=(1/5)^x$，每增加 1 个横轴单位只剩 $20\\%$；C 比 A 衰减更快，因此配 C。"
+          }
+        ],
+        "answer": "a) B；b) D；c) A；d) C。",
+        "printedPage": 366,
+        "pdfPage": 375,
+        "en": {
+          "prompt": "Match each item in Set A with its graph from Set B. Set A: a) The population of a country, in millions, grows at a rate of $1.5\\%$ per year. b) $y=10^x$. c) Tungsten-187 is a radioactive isotope with a half-life of 1 day. d) $y=0.2^x$. Set B consists of graphs A, B, C, and D in the given figure.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) The yearly multiplier is $1.015>1$, giving slow growth. Graph B uses a long time scale and shows this gradual growth, so choose B."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) The base $10>1$ gives rapid growth, with points $(0,1)$ and $(1,10)$. Graph D has these features, so choose D."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) Half remains each day, giving $M=M_0(1/2)^t$. Graph A falls from $(0,1)$ to about $(1,1/2)$, so choose A."
+            },
+            {
+              "title": "Step 4",
+              "body": "d) $0.2^x=(1/5)^x$ leaves only $20\\%$ for each unit increase in x. Graph C decays faster than A, so choose C."
+            }
+          ],
+          "answer": "a) B; b) D; c) A; d) C."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/7r-q1-source.png"
+      },
+      {
+        "number": 2,
+        "prompt": "考虑指数函数 $y=0.3^x$。a) 制作数值表并画出函数图像。b) 写出定义域、值域、截距、递增或递减区间及所有渐近线。",
+        "concept": "properties",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 取 $x=-2,-1,0,1,2$，依次得到 $y=100/9,10/3,1,0.3,0.09$。例如 $0.3^{-2}=1/(0.3)^2=100/9$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "a) 标出这些点并用平滑递减曲线连接。向右曲线趋近横轴；向左不断上升，解析图按此函数绘制。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "b) 合法底数 $0<0.3<1$，所以定义域为 $\\mathbb R$，值域为 $(0,\\infty)$；纵截距为 $(0,1)$，无横截距；在 $\\mathbb R$ 上严格递减，无递增区间，水平渐近线为 $y=0$，无竖直渐近线。"
+          }
+        ],
+        "answer": "a) 数值表和曲线见步骤与解析图；b) $D=\\mathbb R$，$R=(0,\\infty)$，纵截距 $(0,1)$，无横截距，处处递减，渐近线 $y=0$。",
+        "printedPage": 366,
+        "pdfPage": 375,
+        "en": {
+          "prompt": "Consider the exponential function $y=0.3^x$. a) Make a table of values and sketch the graph. b) Identify the domain, range, intercepts, intervals of increase or decrease, and any asymptotes.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) For $x=-2,-1,0,1,2$, the corresponding y-values are $100/9,10/3,1,0.3,0.09$. For example, $0.3^{-2}=1/(0.3)^2=100/9$."
+            },
+            {
+              "title": "Step 2",
+              "body": "a) Plot these points and join them with a smooth decreasing curve. It approaches the x-axis to the right and rises without bound to the left; the solution figure plots this function."
+            },
+            {
+              "title": "Step 3",
+              "body": "b) Since $0<0.3<1$, the domain is $\\mathbb R$ and the range is $(0,\\infty)$. The y-intercept is $(0,1)$; there is no x-intercept. It decreases strictly on $\\mathbb R$, has no increasing interval, has horizontal asymptote $y=0$, and has no vertical asymptote."
+            }
+          ],
+          "answer": "a) See the table and plotted curve; b) $D=\\mathbb R$, $R=(0,\\infty)$, y-intercept $(0,1)$, no x-intercept, decreasing everywhere, asymptote $y=0$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/7r-q2-solution.png"
+      },
+      {
+        "number": 3,
+        "prompt": "原图表示哪个形如 $y=c^x$ 的指数函数？",
+        "concept": "properties",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "从原图读取点 $(-1,4)$，代入得 $c^{-1}=4$，即 $1/c=4$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "因此 $c=1/4$。检查另外两点：$(1/4)^{-2}=16$，$(1/4)^0=1$，均符合原图。底数 $1/4$ 合法且小于 1，图像应递减。"
+          }
+        ],
+        "answer": "$y=(1/4)^x$。",
+        "printedPage": 366,
+        "pdfPage": 375,
+        "en": {
+          "prompt": "What exponential function in the form $y=c^x$ is represented by the given graph?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Read the given point $(-1,4)$. Substitution gives $c^{-1}=4$, or $1/c=4$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Thus $c=1/4$. Check the other labelled points: $(1/4)^{-2}=16$ and $(1/4)^0=1$. Both agree with the graph. The valid base $1/4<1$ also explains the decreasing curve."
+            }
+          ],
+          "answer": "$y=(1/4)^x$."
+        },
+        "sourceImage": "assets/7r-q3-source.png"
+      },
+      {
+        "number": 4,
+        "prompt": "一元按年利率 $3.25\\%$ 投资 $t$ 年后的价值 $v$ 由 $v=1.0325^t$ 给出。a) 解释底数为何是 $1.0325$。b) 投资 10 年后，一元的价值是多少？c) 价值达到两元需要多久？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 每年的新价值是原价值的 $100\\%+3.25\\%=103.25\\%$，乘数为 $1+0.0325=1.0325$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 代入 $t=10$：$v=1.0325^{10}=1.376894\\ldots$，按货币舍入为 $1.38$ 元。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) 解 $1.0325^t=2$。绘制 $y=1.0325^t$ 与 $y=2$ 并逼近交点，得 $t\\approx21.6723$。例如 $t=21.67$ 时略小于 2，$t=21.68$ 时略大于 2，因此给定模型的时间约为 $21.67$ 年。若仅在每个整年末计入利息，首个达标年末是第 22 年。"
+          }
+        ],
+        "answer": "a) $1+0.0325=1.0325$；b) 约 $1.38$ 元；c) 按给定模型约 $21.67$ 年（只在整年末入账时为 22 年）。",
+        "printedPage": 366,
+        "pdfPage": 375,
+        "en": {
+          "prompt": "The value v of one dollar invested for t years at an annual interest rate of $3.25\\%$ is given by $v=1.0325^t$. a) Explain why the base is $1.0325$. b) What is the value after 10 years? c) How long will it take for the invested dollar to reach two dollars?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Each year the value becomes $100\\%+3.25\\%=103.25\\%$ of its previous value, so the multiplier is $1+0.0325=1.0325$."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) Substitute $t=10$: $v=1.0325^{10}=1.376894\\ldots$, or 1.38 dollars to the nearest cent."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) Solve $1.0325^t=2$. Graph $y=1.0325^t$ and $y=2$ and refine their intersection to obtain $t\\approx21.6723$. The value is just below 2 at $t=21.67$ and just above 2 at $t=21.68$, so the stated model gives about $21.67$ years. If interest is credited only at whole year-ends, the first qualifying year-end is year 22."
+            }
+          ],
+          "answer": "a) $1+0.0325=1.0325$; b) about 1.38 dollars; c) about $21.67$ years under the stated model (22 years if credited only at year-ends)."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "将 $y=4^x$ 的图像变换为 $y=-2(4)^{3(x-1)}+2$。a) 写出参数和对应变换。b) 抄写并完成原表：横向伸缩、纵向伸缩、左右平移、上下平移各行的参数值与函数方程。c) 画出 $y=-2(4)^{3(x-1)}+2$ 的图像。d) 写出该函数的定义域、值域、水平渐近线方程和所有截距。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 比较 $a4^{b(x-h)}+k$，得到 $a=-2,b=3,h=1,k=2$。横向压缩为 $1/3$，纵向拉伸为 2 倍并关于横轴反射，然后右移 1、上移 2。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 按表中顺序累计变换。横向拉伸：$b=3$（伸缩因子 $1/3$），$y=4^{3x}$。纵向拉伸：$a=-2$（因子 2 并反射），$y=-2(4)^{3x}$。左右平移：$h=1$，$y=-2(4)^{3(x-1)}$。上下平移：$k=2$，$y=-2(4)^{3(x-1)}+2$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) 关键点映射为 $(u,v)\\mapsto(u/3+1,-2v+2)$。原点表中的 $(-1,1/4),(0,1),(1,4)$ 分别变为 $(2/3,3/2),(1,0),(4/3,-6)$；曲线递减，在左端从下方趋近 $y=2$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "d) 因为 $4^{3(x-1)}>0$，所以 $y<2$。定义域为 $\\mathbb R$，值域为 $(-\\infty,2)$，水平渐近线为 $y=2$。"
+          },
+          {
+            "title": "第 5 步",
+            "body": "d) 令 $y=0$：$4^{3(x-1)}=1=4^0$，得 $x=1$。令 $x=0$：$y=-2\\cdot4^{-3}+2=2-1/32=63/32$。"
+          }
+        ],
+        "answer": "a,b) $a=-2,b=3,h=1,k=2$，累积方程见步骤；c) 见解析图；d) $D=\\mathbb R$，$R=(-\\infty,2)$，渐近线 $y=2$，横截距 $(1,0)$，纵截距 $(0,63/32)$。",
+        "printedPage": 366,
+        "pdfPage": 375,
+        "en": {
+          "prompt": "The graph of $y=4^x$ is transformed to obtain $y=-2(4)^{3(x-1)}+2$. a) State the parameters and corresponding transformations. b) Copy and complete the given table: for horizontal stretch, vertical stretch, left/right translation, and up/down translation, give the parameter value and function equation. c) Sketch $y=-2(4)^{3(x-1)}+2$. d) Identify its domain, range, horizontal asymptote, and all intercepts.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) In $a4^{b(x-h)}+k$, the parameters are $a=-2,b=3,h=1,k=2$. Compress horizontally by factor $1/3$, stretch vertically by factor 2 and reflect in the x-axis, then translate right 1 and up 2."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) Complete the table cumulatively in its printed order. Horizontal stretch: $b=3$ (scale factor $1/3$), $y=4^{3x}$. Vertical stretch: $a=-2$ (factor 2 and reflection), $y=-2(4)^{3x}$. Left/right translation: $h=1$, $y=-2(4)^{3(x-1)}$. Up/down translation: $k=2$, $y=-2(4)^{3(x-1)}+2$."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) The point mapping is $(u,v)\\mapsto(u/3+1,-2v+2)$. Base points $(-1,1/4),(0,1),(1,4)$ become $(2/3,3/2),(1,0),(4/3,-6)$. The curve decreases and approaches $y=2$ from below at its left end."
+            },
+            {
+              "title": "Step 4",
+              "body": "d) Since $4^{3(x-1)}>0$, all values satisfy $y<2$. The domain is $\\mathbb R$, the range is $(-\\infty,2)$, and the horizontal asymptote is $y=2$."
+            },
+            {
+              "title": "Step 5",
+              "body": "d) For $y=0$, $4^{3(x-1)}=1=4^0$, so $x=1$. For $x=0$, $y=-2\\cdot4^{-3}+2=2-1/32=63/32$."
+            }
+          ],
+          "answer": "a,b) $a=-2,b=3,h=1,k=2$; cumulative equations are shown in the steps. c) See the plotted curve. d) $D=\\mathbb R$, $R=(-\\infty,2)$, asymptote $y=2$, x-intercept $(1,0)$, y-intercept $(0,63/32)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/7r-q5-table.png",
+        "solutionImage": "assets/7r-q5-solution.png"
+      },
+      {
+        "number": 6,
+        "prompt": "分别指出原图 a)、b)、c) 中把基本函数 $y=3^x$ 变为红色图像所需的变换。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 红色点 $(2,1/3),(3,1),(4,3)$ 分别对应基本图的 $(-1,1/3),(0,1),(1,3)$，横坐标均增加 3。因此向右平移 3，方程为 $y=3^{x-3}$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 红色渐近线为 $y=-4$。基本点 $(-1,1/3),(0,1),(1,3)$ 的纵坐标减 4，得到 $(-1,-11/3),(0,-3),(1,-1)$，与标注一致。因此向下平移 4，方程为 $y=3^x-4$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) 红色渐近线为 $y=2$，图像递减。先将基本图向左移 1，再关于横轴反射，最后向上移 2，得到 $y=-3^{x+1}+2$。代入 $x=-2,-1,0$ 分别得 $5/3,1,-1$，与三处标注一致。等价地，可关于横轴反射、纵向伸长 3 再向上移 2。"
+          }
+        ],
+        "answer": "a) 右移 3；b) 下移 4；c) 左移 1、关于横轴反射、上移 2（有等价变换描述）。",
+        "printedPage": 367,
+        "pdfPage": 376,
+        "en": {
+          "prompt": "Identify the transformation(s) used in each of graphs a), b), and c) to transform the base function $y=3^x$ into the red graph.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) The red points $(2,1/3),(3,1),(4,3)$ correspond to base points $(-1,1/3),(0,1),(1,3)$ with every x-coordinate increased by 3. Translate right 3: $y=3^{x-3}$."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) The red asymptote is $y=-4$. Subtracting 4 from the y-coordinates of $(-1,1/3),(0,1),(1,3)$ gives $(-1,-11/3),(0,-3),(1,-1)$, matching all labels. Translate down 4: $y=3^x-4$."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) The red asymptote is $y=2$ and the curve decreases. Translate the base left 1, reflect in the x-axis, and translate up 2: $y=-3^{x+1}+2$. Substituting $x=-2,-1,0$ gives $5/3,1,-1$, matching the three labels. Equivalently, reflect in the x-axis, stretch vertically by 3, and translate up 2."
+            }
+          ],
+          "answer": "a) Right 3; b) down 4; c) left 1, reflect in the x-axis, up 2 (equivalent descriptions are possible)."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/7r-q6-source.png"
+      },
+      {
+        "number": 7,
+        "prompt": "写出每组变换所得的函数方程，再画出图像。a) 将 $f(x)=5^x$ 纵向伸长 4 倍、横向伸缩因子为 $1/2$、关于纵轴反射，最后向上平移 1、向左平移 4。b) 将 $g(x)=(1/2)^x$ 横向伸缩因子设为 $1/4$、纵向伸长 3 倍、关于横轴反射，最后向右平移 2、向下平移 1。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 横向因子 $1/2$ 使指数内系数为 2，纵轴反射使其为 $-2$；左移 4 使用 $x+4$。再乘 4、加 1，得 $f_{\\mathrm{new}}(x)=4(5)^{-2(x+4)}+1$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "a) 点映射为 $(u,v)\\mapsto(-u/2-4,4v+1)$。基本点 $(-1,1/5),(0,1),(1,5)$ 变为 $(-3.5,1.8),(-4,5),(-4.5,21)$。画过这些点的递减曲线，渐近线 $y=1$，值域 $y>1$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "b) 横向因子 $1/4$ 对应指数系数 4；右移 2 使用 $x-2$。纵向伸长 3 且横轴反射给系数 $-3$，下移 1 得 $g_{\\mathrm{new}}(x)=-3(1/2)^{4(x-2)}-1$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "b) 点映射为 $(u,v)\\mapsto(u/4+2,-3v-1)$。点 $(-1,2),(0,1),(1,1/2)$ 变为 $(1.75,-7),(2,-4),(2.25,-2.5)$。曲线递增，向右从下方趋近 $y=-1$，值域 $y<-1$。"
+          }
+        ],
+        "answer": "a) $4(5)^{-2(x+4)}+1$；b) $-3(1/2)^{4(x-2)}-1$；图像见解析图。",
+        "printedPage": 367,
+        "pdfPage": 376,
+        "en": {
+          "prompt": "Write the equation resulting from each set of transformations, then sketch the graph. a) $f(x)=5^x$ is stretched vertically by a factor of 4, stretched horizontally by a factor of $1/2$, reflected in the y-axis, and translated 1 unit up and 4 units left. b) $g(x)=(1/2)^x$ is stretched horizontally by a factor of $1/4$, stretched vertically by a factor of 3, reflected in the x-axis, and translated 2 units right and 1 unit down.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) A horizontal scale factor $1/2$ makes the inner coefficient 2; reflection in the y-axis makes it $-2$. Use $x+4$ for left 4, then multiply by 4 and add 1: $f_{\\mathrm{new}}(x)=4(5)^{-2(x+4)}+1$."
+            },
+            {
+              "title": "Step 2",
+              "body": "a) Map $(u,v)$ to $(-u/2-4,4v+1)$. Base points $(-1,1/5),(0,1),(1,5)$ become $(-3.5,1.8),(-4,5),(-4.5,21)$. Sketch a decreasing curve through them, with asymptote $y=1$ and range $y>1$."
+            },
+            {
+              "title": "Step 3",
+              "body": "b) Horizontal scale factor $1/4$ gives inner coefficient 4; right 2 gives $x-2$. A vertical stretch by 3 and reflection in the x-axis give coefficient $-3$. Down 1 yields $g_{\\mathrm{new}}(x)=-3(1/2)^{4(x-2)}-1$."
+            },
+            {
+              "title": "Step 4",
+              "body": "b) Map $(u,v)$ to $(u/4+2,-3v-1)$. Points $(-1,2),(0,1),(1,1/2)$ become $(1.75,-7),(2,-4),(2.25,-2.5)$. The curve increases toward $y=-1$ from below on the right, with range $y<-1$."
+            }
+          ],
+          "answer": "a) $4(5)^{-2(x+4)}+1$; b) $-3(1/2)^{4(x-2)}-1$; see the solution graphs."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/7r-q7-solution.png"
+      },
+      {
+        "number": 8,
+        "prompt": "函数 $T=190(1/2)^{t/10}$ 可用来确定某脂肪含量的牛奶保持新鲜的时间 $t$（小时），其中 $T$ 是储存温度（摄氏度）。a) 说明各参数怎样变换基本函数 $T=(1/2)^t$。b) 画出变换后的函数。c) 写出此情境的定义域和值域。d) 牛奶在 $22\\,^{\\circ}\\mathrm C$ 能保持新鲜多久？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 指数系数为 $1/10$，所以横向伸长 10 倍；外系数为 190，所以纵向伸长 190 倍。没有反射和平移。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 取 $t=0,10,20,30,40$ 小时，得到 $T=190,95,47.5,23.75,11.875$ 摄氏度。以时间为横轴、温度为纵轴画递减曲线，水平渐近线为 $T=0$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) 新鲜时长不能为负，所以按给定模型取 $t\\ge0$；从 $T(0)=190$ 且随 $t$ 递减趋近 0，得到 $0<T\\le190$ 摄氏度。原题未给额外储存温度限制；这是给定模型在非负时间上的范围；原题没有指定更窄的实际适用区间。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "d) 代入 $T=22$：$(1/2)^{t/10}=22/190=11/95$。在图上找 $T=22$ 与曲线交点并数值逼近，得 $t\\approx31.1042$ 小时；代回 $190(1/2)^{31.1042/10}\\approx22$。"
+          }
+        ],
+        "answer": "a) 横向 10 倍、纵向 190 倍；b) 见图；c) $t\\in[0,\\infty)$，$T\\in(0,190]$；d) 约 $31.1$ 小时。",
+        "printedPage": 367,
+        "pdfPage": 376,
+        "en": {
+          "prompt": "The function $T=190(1/2)^{t/10}$ can determine the length of time t, in hours, that milk of a certain fat content remains fresh. T is the storage temperature in degrees Celsius. a) Describe how each parameter transforms the base $T=(1/2)^t$. b) Graph the transformed function. c) State the domain and range for this situation. d) How long will milk remain fresh at $22\\,^{\\circ}\\mathrm C$?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) The inner coefficient $1/10$ stretches horizontally by a factor of 10. The outside coefficient 190 stretches vertically by a factor of 190. There are no reflections or translations."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) At $t=0,10,20,30,40$ hours, $T=190,95,47.5,23.75,11.875$ degrees Celsius. With time on the horizontal axis and temperature on the vertical axis, draw a decreasing curve with horizontal asymptote $T=0$."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) Freshness time cannot be negative, so use $t\\ge0$. Since $T(0)=190$ and T decreases toward 0, the model gives $0<T\\le190$ degrees Celsius. No additional storage-temperature restriction is supplied; this is the mathematical range for nonnegative time, with no narrower applicability interval specified in the question."
+            },
+            {
+              "title": "Step 4",
+              "body": "d) Substitute $T=22$: $(1/2)^{t/10}=22/190=11/95$. Find the intersection with $T=22$ and refine numerically to obtain $t\\approx31.1042$ hours. Substitution gives $190(1/2)^{31.1042/10}\\approx22$."
+            }
+          ],
+          "answer": "a) Horizontal factor 10 and vertical factor 190; b) see graph; c) $t\\in[0,\\infty)$, $T\\in(0,190]$; d) about $31.1$ hours."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/7r-q8-solution.png"
+      },
+      {
+        "number": 9,
+        "prompt": "将各式写成以 6 为底的幂：a) $36$；b) $1/36$；c) $(\\sqrt[3]{216})^5$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 因为 $6\\cdot6=36$，所以 $36=6^2$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) $1/36=1/6^2=6^{-2}$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) $216=6^3$，所以 $\\sqrt[3]{216}=6$，再取五次方得 $(\\sqrt[3]{216})^5=6^5$。"
+          }
+        ],
+        "answer": "a) $6^2$；b) $6^{-2}$；c) $6^5$。",
+        "printedPage": 367,
+        "pdfPage": 376,
+        "en": {
+          "prompt": "Write each as a power of 6: a) $36$; b) $1/36$; c) $(\\sqrt[3]{216})^5$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Since $6\\cdot6=36$, $36=6^2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) $1/36=1/6^2=6^{-2}$."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) Since $216=6^3$, $\\sqrt[3]{216}=6$. Raising to the fifth power gives $(\\sqrt[3]{216})^5=6^5$."
+            }
+          ],
+          "answer": "a) $6^2$; b) $6^{-2}$; c) $6^5$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 10,
+        "prompt": "解各方程，并使用绘图技术检查答案。a) $3^{5x}=27^{x-1}$；b) $(1/8)^{2x+1}=32^{x-3}$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 因为 $27=3^3$，方程化为 $3^{5x}=3^{3x-3}$。底数合法且不为 1，所以 $5x=3x-3$，得 $x=-3/2$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "a) 代回：两边都是 $3^{-15/2}$。解析图绘出两条原函数，在 $(-1.5,0.0002639919\\ldots)$ 相交。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "b) 写成底数 2：$1/8=2^{-3}$、$32=2^5$，得 $2^{-3(2x+1)}=2^{5(x-3)}$。于是 $-6x-3=5x-15$，$11x=12$，$x=12/11$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "b) 代回后两边指数均为 $-105/11$。原函数图像交点约为 $(1.090909,0.0013382334)$，与精确解相符。"
+          }
+        ],
+        "answer": "a) $x=-3/2$；b) $x=12/11$。",
+        "printedPage": 367,
+        "pdfPage": 376,
+        "en": {
+          "prompt": "Solve each equation and check your answers using graphing technology. a) $3^{5x}=27^{x-1}$; b) $(1/8)^{2x+1}=32^{x-3}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Since $27=3^3$, rewrite as $3^{5x}=3^{3x-3}$. The valid base is not 1, so $5x=3x-3$, giving $x=-3/2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "a) Substitution gives $3^{-15/2}$ on both sides. The plotted original functions intersect at $(-1.5,0.0002639919\\ldots)$."
+            },
+            {
+              "title": "Step 3",
+              "body": "b) Use base 2: $1/8=2^{-3}$ and $32=2^5$, so $2^{-3(2x+1)}=2^{5(x-3)}$. Thus $-6x-3=5x-15$, $11x=12$, and $x=12/11$."
+            },
+            {
+              "title": "Step 4",
+              "body": "b) After substitution, both base-2 exponents are $-105/11$. The original graphs intersect at about $(1.090909,0.0013382334)$, agreeing with the exact answer."
+            }
+          ],
+          "answer": "a) $x=-3/2$; b) $x=12/11$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/7r-q10-solution.png"
+      },
+      {
+        "number": 11,
+        "prompt": "解出 $x$，答案保留两位小数。a) $3^{x-2}=5^x$；b) $2^{x-2}=3^{x+1}$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 将 $3^{x-2}=3^x/9$，两边除以正数 $5^x$ 并乘 9，得到 $(3/5)^x=9$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "a) 绘制 $y=(3/5)^x$ 与 $y=9$ 并逼近交点。唯一交点的横坐标为 $-4.301320\\ldots$；取 $x=-4.30$ 时 $(3/5)^x\\approx8.9939$，与 9 接近。底数在 0 与 1 之间，曲线严格递减，所以没有其他解。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "b) $2^{x-2}=2^x/4$、$3^{x+1}=3\\cdot3^x$。两边整理得 $(2/3)^x=12$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "b) 绘制 $y=(2/3)^x$ 与 $y=12$ 并逼近，得唯一解 $x=-6.128533\\ldots$，保留两位小数为 $-6.13$。两方程的底数均合法，所有代数除法都除以正数，没有丢失或增加解。"
+          }
+        ],
+        "answer": "a) $x\\approx-4.30$；b) $x\\approx-6.13$。",
+        "printedPage": 367,
+        "pdfPage": 376,
+        "en": {
+          "prompt": "Solve for x. Round answers to two decimal places. a) $3^{x-2}=5^x$; b) $2^{x-2}=3^{x+1}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Write $3^{x-2}=3^x/9$. Divide by the positive quantity $5^x$ and multiply by 9 to obtain $(3/5)^x=9$."
+            },
+            {
+              "title": "Step 2",
+              "body": "a) Graph $y=(3/5)^x$ and $y=9$ and refine the intersection. Its x-coordinate is $-4.301320\\ldots$. At the rounded value $x=-4.30$, $(3/5)^x\\approx8.9939$, close to 9. The base is between 0 and 1, so the strictly decreasing curve gives only one solution."
+            },
+            {
+              "title": "Step 3",
+              "body": "b) Use $2^{x-2}=2^x/4$ and $3^{x+1}=3\\cdot3^x$. Rearrangement gives $(2/3)^x=12$."
+            },
+            {
+              "title": "Step 4",
+              "body": "b) Graph $y=(2/3)^x$ and $y=12$ and refine their intersection to obtain the unique root $x=-6.128533\\ldots$, or $-6.13$ to two decimal places. All bases are valid and all divisions were by positive quantities, so no solutions were lost or introduced."
+            }
+          ],
+          "answer": "a) $x\\approx-4.30$; b) $x\\approx-6.13$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 12,
+        "prompt": "镍-65（Ni-65）的半衰期为 $2.5$ 小时。a) 写出描述此情境的指数函数。b) 10 小时后，还剩原样本的几分之几？c) 衰变至原质量的 $1/1024$ 需要多久？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 设初始质量为 $M_0>0$，$t$ 为从观察开始算起的小时数。经过 $t/2.5$ 个半衰期，故 $M(t)=M_0(1/2)^{t/2.5}$，$t\\ge0$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 10 小时为 $10/2.5=4$ 个半衰期，所以剩余比例为 $(1/2)^4=1/16=6.25\\%$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) $1/1024=(1/2)^{10}$，因此 $t/2.5=10$，$t=25$ 小时。代回模型确实得 $M_0/1024$。"
+          }
+        ],
+        "answer": "a) $M(t)=M_0(1/2)^{t/2.5}$，$t\\ge0$；b) $1/16$；c) $25$ 小时。",
+        "printedPage": 367,
+        "pdfPage": 376,
+        "en": {
+          "prompt": "Nickel-65 (Ni-65) has a half-life of $2.5$ h. a) Write an exponential function to model this situation. b) What fraction of a sample remains after 10 h? c) How long will it take for a sample to decay to $1/1024$ of its original mass?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Let $M_0>0$ be the initial mass and let t be hours since observation began. There are $t/2.5$ half-lives, so $M(t)=M_0(1/2)^{t/2.5}$ for $t\\ge0$."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) Ten hours is $10/2.5=4$ half-lives. The remaining fraction is $(1/2)^4=1/16=6.25\\%$."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) Since $1/1024=(1/2)^{10}$, $t/2.5=10$ and $t=25$ h. Substitution gives exactly $M_0/1024$."
+            }
+          ],
+          "answer": "a) $M(t)=M_0(1/2)^{t/2.5}$, $t\\ge0$; b) $1/16$; c) $25$ h."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "expectedSubparts": {
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-7": [
+        "a",
+        "b"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-10": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b"
+      ],
+      "exercise-12": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "inventoryBasis": "Independent visual inspection of original PDF page renders, before solution authoring. No coverage derived from content JSON."
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independent source and mathematical review passed. Controller revision 1 was independently checked against the original pages: canonical parameters, base-1 exception, bilingual steps, and corrected Review7a figure label. See the section independent audit and controller-revision-1-independent.json."
+  }
+}

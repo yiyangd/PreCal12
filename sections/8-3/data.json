@@ -1,0 +1,2650 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "8-3",
+    "section": "8.3",
+    "title": "对数运算法则",
+    "en": {
+      "title": "Laws of Logarithms",
+      "description": "Product, quotient and power laws; domains, logarithmic scales, change of base and data models."
+    },
+    "description": "积、商与幂法则、定义域、对数标度、换底和数据模型。",
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        392,
+        403
+      ],
+      "pdfPages": [
+        401,
+        412
+      ]
+    },
+    "concepts": [
+      {
+        "id": "laws",
+        "title": "积、商与幂的对数法则",
+        "summary": "若 $M,N>0$、$c>0$ 且 $c\\ne1$，则 $\\log_c(MN)=\\log_cM+\\log_cN$，$\\log_c(M/N)=\\log_cM-\\log_cN$，$\\log_c(M^P)=P\\log_cM$。",
+        "method": [
+          {
+            "title": "第 1 步",
+            "body": "设 $M=c^u,N=c^v$；由指数法则得 $MN=c^{u+v}$、$M/N=c^{u-v}$、$M^P=c^{uP}$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "取以 $c$ 为底的对数，分别得到和、差与倍数。"
+          }
+        ],
+        "pitfalls": [
+          "对数没有把和拆开的法则。",
+          "$\\log_c(M^2)=2\\log_c|M|$ 对 $M\\ne0$ 成立；写成 $2\\log_cM$ 还需 $M>0$。"
+        ],
+        "en": {
+          "title": "Product, quotient and power laws",
+          "summary": "For $M,N>0$, $c>0$, $c\\ne1$, $\\log_c(MN)=\\log_cM+\\log_cN$, $\\log_c(M/N)=\\log_cM-\\log_cN$, and $\\log_c(M^P)=P\\log_cM$.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Write $M=c^u,N=c^v$; exponent laws give $MN=c^{u+v}$, $M/N=c^{u-v}$ and $M^P=c^{uP}$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Take base-$c$ logarithms to obtain the sum, difference and multiple."
+            }
+          ],
+          "pitfalls": [
+            "There is no logarithm law that separates a sum.",
+            "$\\log_c(M^2)=2\\log_c|M|$ for $M\\ne0$; $2\\log_cM$ additionally requires $M>0$."
+          ]
+        }
+      },
+      {
+        "id": "expand",
+        "title": "展开对数并保留定义域",
+        "summary": "把乘、除、根式写成和、差与系数；每个新真数必须为正。",
+        "method": [
+          {
+            "title": "第 1 步",
+            "body": "先检查原真数的正性，再把根式写成分数指数。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "用积、商、幂法则逐层展开；若原式容许负因子，使用绝对值或明确正变量分支。"
+          }
+        ],
+        "pitfalls": [
+          "不得把原式较大的定义域悄悄缩小。"
+        ],
+        "en": {
+          "title": "Expand logarithms and preserve the domain",
+          "summary": "Convert products, quotients and roots into sums, differences and coefficients; every new logarithmic argument must be positive.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Check positivity in the original expression, then write roots as fractional powers."
+            },
+            {
+              "title": "Step 2",
+              "body": "Apply the laws one layer at a time; use absolute values or explicitly state a positive-variable branch when the original permits negative factors."
+            }
+          ],
+          "pitfalls": [
+            "Do not silently shrink the original domain."
+          ]
+        }
+      },
+      {
+        "id": "evaluate",
+        "title": "合并并精确求值",
+        "summary": "先把系数移入指数，再把同底对数合并，最后写成底数的幂。",
+        "method": [
+          {
+            "title": "第 1 步",
+            "body": "保留括号前的负号：减去一组对数等于除以整组真数的积。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "把最终真数写成 $c^r$，用 $\\log_c(c^r)=r$；小数只在最后舍入。"
+          }
+        ],
+        "pitfalls": [
+          "不同底数的对数不能直接用积商法则合并。"
+        ],
+        "en": {
+          "title": "Combine and evaluate exactly",
+          "summary": "Move coefficients into exponents, combine logarithms of the same base, then recognize a power of the base.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Preserve a minus sign before brackets: subtracting a sum divides by the product of all its arguments."
+            },
+            {
+              "title": "Step 2",
+              "body": "Write the final argument as $c^r$ and use $\\log_c(c^r)=r$; round decimals only at the end."
+            }
+          ],
+          "pitfalls": [
+            "The product and quotient laws combine logarithms only when their bases agree."
+          ]
+        }
+      },
+      {
+        "id": "domain",
+        "title": "化为一个对数及原始限制",
+        "summary": "合并后可以约因子，但限制由原式每个真数严格为正共同决定。",
+        "method": [
+          {
+            "title": "第 1 步",
+            "body": "分别解所有原真数 $>0$，取交集。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "用幂法则、积商法则合并，再因式分解约简，保留原限制。"
+          }
+        ],
+        "pitfalls": [
+          "约去的因子不能使原来被排除的点重新有效。"
+        ],
+        "en": {
+          "title": "A single logarithm and original restrictions",
+          "summary": "Factors may cancel after combining; restrictions still come from the intersection of strict positivity conditions in the original.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Solve every original argument $>0$ and intersect the solutions."
+            },
+            {
+              "title": "Step 2",
+              "body": "Use the power, product and quotient laws, then factor and simplify while retaining the original restrictions."
+            }
+          ],
+          "pitfalls": [
+            "Cancelling a factor does not restore an excluded value."
+          ]
+        }
+      },
+      {
+        "id": "scales",
+        "title": "分贝、pH 与对数比值",
+        "summary": "声强级 $\\beta=10\\log(I/I_0)$；$\\mathrm{pH}=-\\log[H^+]$。差值对应比值的对数。",
+        "method": [
+          {
+            "title": "第 1 步",
+            "body": "对同一参考量作差：$\\beta_2-\\beta_1=10\\log(I_2/I_1)$；浓度比为 $10^{\\mathrm{pH}_1-\\mathrm{pH}_2}$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "转为指数形式，检查比值无单位，原浓度或强度单位正确。电压增益题使用系数 $20$。"
+          }
+        ],
+        "pitfalls": [
+          "教材使用的“响度倍数”在本节模型中指物理声强之比；不是人的主观感受倍数。"
+        ],
+        "en": {
+          "title": "Decibels, pH and logarithmic ratios",
+          "summary": "Sound level is $\\beta=10\\log(I/I_0)$ and $\\mathrm{pH}=-\\log[H^+]$. A difference of levels corresponds to a logarithm of a ratio.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Subtract using the same reference: $\\beta_2-\\beta_1=10\\log(I_2/I_1)$; the concentration ratio is $10^{\\mathrm{pH}_1-\\mathrm{pH}_2}$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Convert to exponential form; ratios are dimensionless while concentrations and intensities retain their units. Voltage gain uses a factor of $20$."
+            }
+          ],
+          "pitfalls": [
+            "In this section the model interprets “times as loud” as a physical intensity ratio, not a ratio of perceived loudness."
+          ]
+        }
+      },
+      {
+        "id": "change-base",
+        "title": "换底与恒等式",
+        "summary": "$\\log_cx=\\log_dx/\\log_dc$，其中 $x>0$，$c,d>0$ 且都不等于 $1$。",
+        "method": [
+          {
+            "title": "第 1 步",
+            "body": "设 $u=\\log_cx$，则 $c^u=x$。两边取以 $d$ 为底的对数得 $u\\log_dc=\\log_dx$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "因 $c\\ne1$，$\\log_dc\\ne0$；相除得到换底式，并逐项核查恒等式分母。"
+          }
+        ],
+        "pitfalls": [
+          "取对数真数 $p$ 可为 $1$，但含 $1/\\log_qp$ 时必须排除 $p=1$。"
+        ],
+        "en": {
+          "title": "Change of base and identities",
+          "summary": "$\\log_cx=\\log_dx/\\log_dc$ for $x>0$, $c,d>0$, with both bases different from $1$.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Let $u=\\log_cx$, so $c^u=x$. Taking base-$d$ logs gives $u\\log_dc=\\log_dx$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Since $c\\ne1$, $\\log_dc\\ne0$. Divide to obtain the formula, and check every denominator in an identity."
+            }
+          ],
+          "pitfalls": [
+            "An argument $p$ may equal $1$, but $1/\\log_qp$ requires $p\\ne1$."
+          ]
+        }
+      },
+      {
+        "id": "graph-laws",
+        "title": "对数法则与图像变换",
+        "summary": "同一代数式在共同定义域上可相等，而函数的完整图像仍可能不同。",
+        "method": [
+          {
+            "title": "第 1 步",
+            "body": "用法则在有效定义域内重写为基础对数函数的变换。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "比较定义域、渐近线、截距和分支；例如 $\\log x^2=2\\log|x|$ 有左右两支。"
+          }
+        ],
+        "pitfalls": [
+          "$\\log x^2$ 与 $2\\log x$ 的定义域分别是 $x\\ne0$ 与 $x>0$。"
+        ],
+        "en": {
+          "title": "Logarithm laws and graph transformations",
+          "summary": "Expressions may agree on their common domain while their complete function graphs differ.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Rewrite as transformations of a parent logarithmic function within the valid domain."
+            },
+            {
+              "title": "Step 2",
+              "body": "Compare domains, asymptotes, intercepts and branches; for example, $\\log x^2=2\\log|x|$ has two branches."
+            }
+          ],
+          "pitfalls": [
+            "The domains of $\\log x^2$ and $2\\log x$ are $x\\ne0$ and $x>0$, respectively."
+          ]
+        }
+      },
+      {
+        "id": "modelling",
+        "title": "比较数据模型",
+        "summary": "按给定函数族拟合时，要说明准则，检查所有数据点与长期行为。",
+        "method": [
+          {
+            "title": "第 1 步",
+            "body": "对给定参数形式求最小平方误差，并列出参数、有效域与单位。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "比较残差总和及是否有合理的累计收入上限；不能声称近似拟合精确通过每个点。"
+          }
+        ],
+        "pitfalls": [
+          "表中的有限观测值不能唯一证明某模型代表全部未来。"
+        ],
+        "en": {
+          "title": "Compare models with data",
+          "summary": "When fitting a prescribed function family, state a criterion, inspect all residuals and consider long-term behaviour.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Minimize squared errors for the stated parameter form and report parameters, domain and units."
+            },
+            {
+              "title": "Step 2",
+              "body": "Compare residual sums of squares and whether a cumulative revenue limit is reasonable; do not call an approximate fit exact."
+            }
+          ],
+          "pitfalls": [
+            "A finite data table cannot establish that a model describes all future observations."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "(a) 证明 $\\log(1000\\times100)\\ne(\\log1000)(\\log100)$。(b) 用计算器求下列表达式，保留四位小数：(i) $\\log6+\\log5$；(ii) $\\log21$；(iii) $\\log11+\\log9$；(iv) $\\log99$；(v) $\\log7+\\log3$；(vi) $\\log30$。(c) 据此对正实数 $M,N$ 猜想 $\\log M+\\log N$ 的法则。(d) 用此法则把 $\\log1000+\\log100$ 写为一个对数。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 左边 $\\log100000=5$；右边 $3\\times2=6$，所以不相等。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b-i) $0.778151\\ldots+0.698970\\ldots=1.4771$；(b-ii) $\\log21=1.3222$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(b-iii) $1.041393\\ldots+0.954243\\ldots=1.9956$；(b-iv) $\\log99=1.9956$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(b-v) $0.845098\\ldots+0.477121\\ldots=1.3222$；(b-vi) $\\log30=1.4771$。"
+          },
+          {
+            "title": "第 5 步",
+            "body": "(c) 配对 (i,vi)、(ii,v)、(iii,iv)，猜想 $\\log M+\\log N=\\log(MN)$，$M,N>0$。(d) 得 $\\log(1000\\times100)=\\log100000$。"
+          }
+        ],
+        "answer": "(a) $5\\ne6$；(b) $1.4771,1.3222,1.9956,1.9956,1.3222,1.4771$；(c) 积法则；(d) $\\log100000$。",
+        "printedPage": 392,
+        "pdfPage": 401,
+        "en": {
+          "prompt": "(a) Show that $\\log(1000\\times100)\\ne(\\log1000)(\\log100)$. (b) Use a calculator to find each value to four decimal places: (i) $\\log6+\\log5$; (ii) $\\log21$; (iii) $\\log11+\\log9$; (iv) $\\log99$; (v) $\\log7+\\log3$; (vi) $\\log30$. (c) Suggest a law for $\\log M+\\log N$ for positive real $M,N$. (d) Express $\\log1000+\\log100$ as a single logarithm.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The left side is $\\log100000=5$; the right side is $3\\times2=6$, so they differ."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b-i) $0.778151\\ldots+0.698970\\ldots=1.4771$; (b-ii) $\\log21=1.3222$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b-iii) $1.041393\\ldots+0.954243\\ldots=1.9956$; (b-iv) $\\log99=1.9956$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(b-v) $0.845098\\ldots+0.477121\\ldots=1.3222$; (b-vi) $\\log30=1.4771$."
+            },
+            {
+              "title": "Step 5",
+              "body": "(c) The matching pairs (i,vi), (ii,v), (iii,iv) suggest $\\log M+\\log N=\\log(MN)$, $M,N>0$. (d) Thus the single logarithm is $\\log100000$."
+            }
+          ],
+          "answer": "(a) $5\\ne6$; (b) $1.4771,1.3222,1.9956,1.9956,1.3222,1.4771$; (c) product law; (d) $\\log100000$.",
+          "label": "Investigate 1"
+        },
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1",
+        "subpartIds": [
+          "a",
+          "bi",
+          "bii",
+          "biii",
+          "biv",
+          "bv",
+          "bvi",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "(a) 证明 $\\log(1000/100)\\ne\\log1000/\\log100$。(b) 求四位小数：(i) $\\log12$；(ii) $\\log35-\\log5$；(iii) $\\log36$；(iv) $\\log72-\\log2$；(v) $\\log48-\\log4$；(vi) $\\log7$。(c) 对正实数 $M,N$ 猜想 $\\log M-\\log N$ 的法则。(d) 将 $\\log1000-\\log100$ 写为一个对数。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 左边 $\\log10=1$，右边 $3/2=1.5$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b-i) $\\log12=1.0792$；(b-ii) $1.544068\\ldots-0.698970\\ldots=0.8451$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(b-iii) $\\log36=1.5563$；(b-iv) $1.857332\\ldots-0.301030\\ldots=1.5563$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(b-v) $1.681241\\ldots-0.602060\\ldots=1.0792$；(b-vi) $\\log7=0.8451$。"
+          },
+          {
+            "title": "第 5 步",
+            "body": "(c) 配对得 $\\log M-\\log N=\\log(M/N)$，$M,N>0$。(d) $\\log(1000/100)=\\log10$。"
+          }
+        ],
+        "answer": "(a) $1\\ne1.5$；(b) $1.0792,0.8451,1.5563,1.5563,1.0792,0.8451$；(c) 商法则；(d) $\\log10$。",
+        "printedPage": 393,
+        "pdfPage": 402,
+        "en": {
+          "prompt": "(a) Show that $\\log(1000/100)\\ne\\log1000/\\log100$. (b) Evaluate to four decimal places: (i) $\\log12$; (ii) $\\log35-\\log5$; (iii) $\\log36$; (iv) $\\log72-\\log2$; (v) $\\log48-\\log4$; (vi) $\\log7$. (c) Suggest a law for $\\log M-\\log N$, $M,N>0$. (d) Write $\\log1000-\\log100$ as a single logarithm.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The left side is $\\log10=1$ and the right side is $3/2=1.5$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b-i) $\\log12=1.0792$; (b-ii) $1.544068\\ldots-0.698970\\ldots=0.8451$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b-iii) $\\log36=1.5563$; (b-iv) $1.857332\\ldots-0.301030\\ldots=1.5563$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(b-v) $1.681241\\ldots-0.602060\\ldots=1.0792$; (b-vi) $\\log7=0.8451$."
+            },
+            {
+              "title": "Step 5",
+              "body": "(c) The pairs suggest $\\log M-\\log N=\\log(M/N)$ for $M,N>0$. (d) The result is $\\log(1000/100)=\\log10$."
+            }
+          ],
+          "answer": "(a) $1\\ne1.5$; (b) $1.0792,0.8451,1.5563,1.5563,1.0792,0.8451$; (c) quotient law; (d) $\\log10$.",
+          "label": "Investigate 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 2",
+        "subpartIds": [
+          "a",
+          "bi",
+          "bii",
+          "biii",
+          "biv",
+          "bv",
+          "bvi",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "(a) 证明 $\\log1000^2\\ne(\\log1000)^2$。(b) 求四位小数：(i) $3\\log5$；(ii) $\\log49$；(iii) $\\log125$；(iv) $\\log16$；(v) $4\\log2$；(vi) $2\\log7$。(c) 对正实数 $M$ 与任意实数 $P$，猜想 $P\\log M$ 的法则。(d) 把 $2\\log1000$ 写为没有系数的对数。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $\\log(10^6)=6$，但 $(\\log1000)^2=3^2=9$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b-i) $3(0.698970\\ldots)=2.0969$；(b-ii) $\\log49=1.6902$；(b-iii) $\\log125=2.0969$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(b-iv) $\\log16=1.2041$；(b-v) $4(0.301030\\ldots)=1.2041$；(b-vi) $2(0.845098\\ldots)=1.6902$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(c) 配对得 $P\\log M=\\log(M^P)$，$M>0$。(d) $2\\log1000=\\log1000^2=\\log1000000$。"
+          }
+        ],
+        "answer": "(a) $6\\ne9$；(b) $2.0969,1.6902,2.0969,1.2041,1.2041,1.6902$；(c) 幂法则；(d) $\\log1000000$。",
+        "printedPage": 393,
+        "pdfPage": 402,
+        "en": {
+          "prompt": "(a) Show that $\\log1000^2\\ne(\\log1000)^2$. (b) Evaluate to four decimal places: (i) $3\\log5$; (ii) $\\log49$; (iii) $\\log125$; (iv) $\\log16$; (v) $4\\log2$; (vi) $2\\log7$. (c) Suggest a law for $P\\log M$, where $M>0$ and $P$ is real. (d) Express $2\\log1000$ as a logarithm without a coefficient.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $\\log(10^6)=6$, whereas $(\\log1000)^2=3^2=9$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b-i) $3(0.698970\\ldots)=2.0969$; (b-ii) $\\log49=1.6902$; (b-iii) $\\log125=2.0969$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b-iv) $\\log16=1.2041$; (b-v) $4(0.301030\\ldots)=1.2041$; (b-vi) $2(0.845098\\ldots)=1.6902$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(c) The matching values suggest $P\\log M=\\log(M^P)$ for $M>0$. (d) $2\\log1000=\\log1000^2=\\log1000000$."
+            }
+          ],
+          "answer": "(a) $6\\ne9$; (b) $2.0969,1.6902,2.0969,1.2041,1.2041,1.6902$; (c) power law; (d) $\\log1000000$.",
+          "label": "Investigate 3"
+        },
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 3",
+        "subpartIds": [
+          "a",
+          "bi",
+          "bii",
+          "biii",
+          "biv",
+          "bv",
+          "bvi",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "常用对数的法则适用于一切正且不为 $1$ 的底数。不用科技求值：(a) $\\log_6 18+\\log_6 2$；(b) $\\log_2 40-\\log_2 5$；(c) $4\\log_9 3$。",
+        "concept": "evaluate",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $\\log_6(18\\cdot2)=\\log_6 36=\\log_6 6^2=2$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $\\log_2(40/5)=\\log_2 8=3$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $4\\log_9 3=\\log_9 3^4=\\log_9 81=2$；所有底数及真数合法。"
+          }
+        ],
+        "answer": "(a) $2$；(b) $3$；(c) $2$。",
+        "printedPage": 393,
+        "pdfPage": 402,
+        "en": {
+          "prompt": "The laws also hold for any positive base other than $1$. Without technology evaluate (a) $\\log_6 18+\\log_6 2$; (b) $\\log_2 40-\\log_2 5$; (c) $4\\log_9 3$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $\\log_6(18\\cdot2)=\\log_6 36=\\log_6 6^2=2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $\\log_2(40/5)=\\log_2 8=3$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $4\\log_9 3=\\log_9 3^4=\\log_9 81=2$; all bases and arguments are valid."
+            }
+          ],
+          "answer": "(a) $2$; (b) $3$; (c) $2$.",
+          "label": "Reflect and Respond 4"
+        },
+        "id": "reflect-4",
+        "type": "practice",
+        "label": "反思与回应 4",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "指数法则为 $(c^x)(c^y)=c^{x+y}$、$c^x/c^y=c^{x-y}$（$c\\ne0$）、$(c^x)^y=c^{xy}$。解释三条对数法则分别如何与它们相联系。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "在实数对数中取 $c>0,c\\ne1$。设 $M=c^u,N=c^v$，于是 $\\log_cM=u,\\log_cN=v$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "积法则给 $MN=c^{u+v}$，所以 $\\log_c(MN)=u+v=\\log_cM+\\log_cN$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "商法则给 $M/N=c^{u-v}$，所以 $\\log_c(M/N)=u-v=\\log_cM-\\log_cN$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "幂的幂法则给 $M^P=c^{uP}$，所以 $\\log_c(M^P)=uP=P\\log_cM$。正底数保证任意实指数有效。"
+          }
+        ],
+        "answer": "对数是指数，乘、除、乘方分别对应指数相加、相减、相乘。",
+        "printedPage": 393,
+        "pdfPage": 402,
+        "en": {
+          "prompt": "Explain how the three logarithm laws correspond to the exponent laws $(c^x)(c^y)=c^{x+y}$, $c^x/c^y=c^{x-y}$ ($c\\ne0$), and $(c^x)^y=c^{xy}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "For real logarithms require $c>0,c\\ne1$. Set $M=c^u,N=c^v$, so $\\log_cM=u,\\log_cN=v$."
+            },
+            {
+              "title": "Step 2",
+              "body": "The product rule gives $MN=c^{u+v}$, hence $\\log_c(MN)=u+v=\\log_cM+\\log_cN$."
+            },
+            {
+              "title": "Step 3",
+              "body": "The quotient rule gives $M/N=c^{u-v}$, hence $\\log_c(M/N)=u-v=\\log_cM-\\log_cN$."
+            },
+            {
+              "title": "Step 4",
+              "body": "The power-of-a-power rule gives $M^P=c^{uP}$, hence $\\log_c(M^P)=uP=P\\log_cM$. Positive bases allow every real exponent."
+            }
+          ],
+          "answer": "Logarithms are exponents: multiplying, dividing and raising to a power correspond to adding, subtracting and multiplying exponents.",
+          "label": "Reflect and Respond 5"
+        },
+        "id": "reflect-5",
+        "type": "practice",
+        "label": "反思与回应 5"
+      },
+      {
+        "prompt": "怎样只用积法则与幂法则证明对数的商法则？",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "取 $M,N>0,c>0,c\\ne1$，将 $M/N$ 写成 $MN^{-1}$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "$\\log_c(MN^{-1})=\\log_cM+\\log_c(N^{-1})=\\log_cM-\\log_cN$。因 $N^{-1}>0$，两条法则均有效。"
+          }
+        ],
+        "answer": "$\\log_c(M/N)=\\log_cM-\\log_cN$。",
+        "printedPage": 394,
+        "pdfPage": 403,
+        "en": {
+          "prompt": "How can you prove the quotient law using the product and power laws?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "For $M,N>0,c>0,c\\ne1$, write $M/N=MN^{-1}$."
+            },
+            {
+              "title": "Step 2",
+              "body": "$\\log_c(MN^{-1})=\\log_cM+\\log_c(N^{-1})=\\log_cM-\\log_cN$. Since $N^{-1}>0$, both laws apply."
+            }
+          ],
+          "answer": "$\\log_c(M/N)=\\log_cM-\\log_cN$.",
+          "label": "Margin: prove the quotient law"
+        },
+        "id": "sidebar-quotient",
+        "type": "practice",
+        "label": "旁注：证明商法则"
+      },
+      {
+        "prompt": "把各式写成 $x,y,z$ 的单独对数：(a) $\\log_5\\frac{xy}{z}$；(b) $\\log_7\\sqrt[3]{x}$；(c) $\\log_6\\frac1{x^2}$；(d) $\\log\\frac{x^3}{y\\sqrt z}$。",
+        "concept": "expand",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "按教材的正变量分支：(a) $\\log_5(xy)-\\log_5z=\\log_5x+\\log_5y-\\log_5z$，$x,y,z>0$。原式更大的定义域为 $z\\ne0,xy/z>0$；其通式是 $\\log_5|x|+\\log_5|y|-\\log_5|z|$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) 真数 $\\sqrt[3]x>0$ 要求 $x>0$；$\\log_7x^{1/3}=\\frac13\\log_7x$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $1/x^2>0$ 当且仅当 $x\\ne0$。$\\log_6(1/x^2)=-\\log_6x^2=-2\\log_6|x|$。若进一步取 $x>0$，即教材的 $-2\\log_6x$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) 正变量时：$\\log x^3-\\log y-\\log z^{1/2}=3\\log x-\\log y-\\frac12\\log z$。原式要求 $z>0$ 且 $x,y$ 同号且非零；全域形式为 $3\\log|x|-\\log|y|-\\frac12\\log z$。"
+          }
+        ],
+        "answer": "正变量形式：(a) $\\log_5x+\\log_5y-\\log_5z$；(b) $\\frac13\\log_7x$；(c) $-2\\log_6x$；(d) $3\\log x-\\log y-\\frac12\\log z$。全域扩展见步骤。",
+        "printedPage": 395,
+        "pdfPage": 404,
+        "en": {
+          "prompt": "Write each expression in terms of individual logarithms of $x,y,z$: (a) $\\log_5\\frac{xy}{z}$; (b) $\\log_7\\sqrt[3]{x}$; (c) $\\log_6\\frac1{x^2}$; (d) $\\log\\frac{x^3}{y\\sqrt z}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "On the textbook positive-variable branch, (a) $\\log_5(xy)-\\log_5z=\\log_5x+\\log_5y-\\log_5z$, $x,y,z>0$. The full original domain is $z\\ne0,xy/z>0$; there the absolute-value form is $\\log_5|x|+\\log_5|y|-\\log_5|z|$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) The argument $\\sqrt[3]x>0$ requires $x>0$; $\\log_7x^{1/3}=\\frac13\\log_7x$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $1/x^2>0$ exactly when $x\\ne0$. Thus $\\log_6(1/x^2)=-\\log_6x^2=-2\\log_6|x|$. For $x>0$ this is the textbook form $-2\\log_6x$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) For positive variables, $\\log x^3-\\log y-\\log z^{1/2}=3\\log x-\\log y-\\frac12\\log z$. The full domain requires $z>0$ and nonzero $x,y$ of the same sign; there use $3\\log|x|-\\log|y|-\\frac12\\log z$."
+            }
+          ],
+          "answer": "Positive-variable forms: (a) $\\log_5x+\\log_5y-\\log_5z$; (b) $\\frac13\\log_7x$; (c) $-2\\log_6x$; (d) $3\\log x-\\log y-\\frac12\\log z$. See steps for full-domain forms.",
+          "label": "Textbook Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "教材例题 1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "例题 1(c) 也可先对原式用商法则。试用此法并核对答案。",
+        "concept": "expand",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "$\\log_6(1/x^2)=\\log_61-\\log_6x^2=0-2\\log_6|x|$，$x\\ne0$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "当 $x>0$，$|x|=x$，结果为 $-2\\log_6x$，与教材的正变量展开相同。"
+          }
+        ],
+        "answer": "$-2\\log_6|x|$（$x\\ne0$）；正变量时为 $-2\\log_6x$。",
+        "printedPage": 395,
+        "pdfPage": 404,
+        "en": {
+          "prompt": "For Example 1(c), start with the quotient law on the original expression and check the same answer.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "$\\log_6(1/x^2)=\\log_61-\\log_6x^2=0-2\\log_6|x|$, $x\\ne0$."
+            },
+            {
+              "title": "Step 2",
+              "body": "When $x>0$, $|x|=x$, so this is $-2\\log_6x$, agreeing with the positive-variable expansion."
+            }
+          ],
+          "answer": "$-2\\log_6|x|$ ($x\\ne0$); $-2\\log_6x$ for positive $x$.",
+          "label": "Margin: another expansion"
+        },
+        "id": "sidebar-example-1",
+        "type": "practice",
+        "label": "旁注：另一种展开"
+      },
+      {
+        "prompt": "把各式写成 $x,y,z$ 的单独对数：(a) $\\log_6\\frac xy$；(b) $\\log_5\\sqrt{xy}$；(c) $\\log_3\\frac9{\\sqrt[3]{x^2}}$；(d) $\\log_7\\frac{x^5y}{\\sqrt z}$。",
+        "concept": "expand",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 正变量时 $\\log_6x-\\log_6y$。原式允许 $x,y$ 同号非零，此时全域形式为 $\\log_6|x|-\\log_6|y|$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $xy>0$；$\\log_5(xy)^{1/2}=\\frac12\\log_5(xy)=\\frac12\\log_5|x|+\\frac12\\log_5|y|$。若 $x,y>0$，去掉绝对值。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $x\\ne0$；$\\log_39-\\frac13\\log_3x^2=2-\\frac23\\log_3|x|$。正变量时为 $2-\\frac23\\log_3x$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) $z>0$ 且 $xy>0$；全域形式为 $5\\log_7|x|+\\log_7|y|-\\frac12\\log_7z$，正变量时去掉绝对值。"
+          }
+        ],
+        "answer": "正变量时：(a) $\\log_6x-\\log_6y$；(b) $\\frac12(\\log_5x+\\log_5y)$；(c) $2-\\frac23\\log_3x$；(d) $5\\log_7x+\\log_7y-\\frac12\\log_7z$。",
+        "printedPage": 395,
+        "pdfPage": 404,
+        "en": {
+          "prompt": "Write each expression in terms of individual logarithms of $x,y,z$: (a) $\\log_6\\frac xy$; (b) $\\log_5\\sqrt{xy}$; (c) $\\log_3\\frac9{\\sqrt[3]{x^2}}$; (d) $\\log_7\\frac{x^5y}{\\sqrt z}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) For positive variables, $\\log_6x-\\log_6y$. The original permits nonzero $x,y$ of the same sign; on that domain use $\\log_6|x|-\\log_6|y|$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Require $xy>0$; $\\log_5(xy)^{1/2}=\\frac12\\log_5(xy)=\\frac12\\log_5|x|+\\frac12\\log_5|y|$. Remove absolute values when $x,y>0$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Require $x\\ne0$; $\\log_39-\\frac13\\log_3x^2=2-\\frac23\\log_3|x|$. For positive $x$ this is $2-\\frac23\\log_3x$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) Require $z>0$ and $xy>0$; the full-domain form is $5\\log_7|x|+\\log_7|y|-\\frac12\\log_7z$, with absolute values removed for positive variables."
+            }
+          ],
+          "answer": "For positive variables: (a) $\\log_6x-\\log_6y$; (b) $\\frac12(\\log_5x+\\log_5y)$; (c) $2-\\frac23\\log_3x$; (d) $5\\log_7x+\\log_7y-\\frac12\\log_7z$.",
+          "label": "Your Turn 1"
+        },
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "轮到你 1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "用对数法则化简并求值：(a) $\\log_68+\\log_69-\\log_62$；(b) $\\log_7(7\\sqrt7)$；(c) $2\\log_212-(\\log_26+\\frac13\\log_227)$。",
+        "concept": "evaluate",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 合并为 $\\log_6(8\\cdot9/2)=\\log_636=2$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $7\\sqrt7=7^{3/2}$，所以 $\\log_7(7^{3/2})=3/2$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $\\log_2144-\\log_2(6\\cdot27^{1/3})=\\log_2(144/18)=\\log_28=3$。全部真数为正。"
+          }
+        ],
+        "answer": "(a) $2$；(b) $3/2$；(c) $3$。",
+        "printedPage": 396,
+        "pdfPage": 405,
+        "en": {
+          "prompt": "Use the laws of logarithms to simplify and evaluate: (a) $\\log_68+\\log_69-\\log_62$; (b) $\\log_7(7\\sqrt7)$; (c) $2\\log_212-(\\log_26+\\frac13\\log_227)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Combine to get $\\log_6(8\\cdot9/2)=\\log_636=2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $7\\sqrt7=7^{3/2}$, so $\\log_7(7^{3/2})=3/2$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $\\log_2144-\\log_2(6\\cdot27^{1/3})=\\log_2(144/18)=\\log_28=3$. Every argument is positive."
+            }
+          ],
+          "answer": "(a) $2$; (b) $3/2$; (c) $3$.",
+          "label": "Textbook Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "教材例题 2",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "怎样只用指数知识与幂法则求 $\\log_7(7\\sqrt7)$？",
+        "concept": "evaluate",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "$7\\sqrt7=7^1\\cdot7^{1/2}=7^{3/2}$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "$\\log_7(7^{3/2})=\\frac32\\log_77=\\frac32$。"
+          }
+        ],
+        "answer": "$3/2$。",
+        "printedPage": 396,
+        "pdfPage": 405,
+        "en": {
+          "prompt": "How can you evaluate $\\log_7(7\\sqrt7)$ using exponent knowledge and only the power law?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "$7\\sqrt7=7^1\\cdot7^{1/2}=7^{3/2}$."
+            },
+            {
+              "title": "Step 2",
+              "body": "$\\log_7(7^{3/2})=\\frac32\\log_77=\\frac32$."
+            }
+          ],
+          "answer": "$3/2$.",
+          "label": "Margin: powers only"
+        },
+        "id": "sidebar-example-2",
+        "type": "practice",
+        "label": "旁注：指数法"
+      },
+      {
+        "prompt": "用对数法则化简并求值：(a) $\\log_3(9\\sqrt3)$；(b) $\\log_51000-\\log_54-\\log_52$；(c) $2\\log_36-\\frac12\\log_364+\\log_32$。",
+        "concept": "evaluate",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $9\\sqrt3=3^{2+1/2}=3^{5/2}$，故值为 $5/2$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $\\log_5[1000/(4\\cdot2)]=\\log_5125=3$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $\\log_3(6^2\\cdot2/\\sqrt{64})=\\log_3(72/8)=\\log_39=2$；所有真数为正。"
+          }
+        ],
+        "answer": "(a) $5/2$；(b) $3$；(c) $2$。",
+        "printedPage": 396,
+        "pdfPage": 405,
+        "en": {
+          "prompt": "Use the laws to simplify and evaluate: (a) $\\log_3(9\\sqrt3)$; (b) $\\log_51000-\\log_54-\\log_52$; (c) $2\\log_36-\\frac12\\log_364+\\log_32$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $9\\sqrt3=3^{2+1/2}=3^{5/2}$, giving $5/2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $\\log_5[1000/(4\\cdot2)]=\\log_5125=3$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $\\log_3(6^2\\cdot2/\\sqrt{64})=\\log_3(72/8)=\\log_39=2$; all arguments are positive."
+            }
+          ],
+          "answer": "(a) $5/2$; (b) $3$; (c) $2$.",
+          "label": "Your Turn 2"
+        },
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "轮到你 2",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "将各式写成最简的一个对数，并说明变量限制：(a) $\\log_7x^2+\\log_7x-\\frac{5\\log_7x}{2}$；(b) $\\log_5(2x-2)-\\log_5(x^2+2x-3)$。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 原式含 $\\log_7x$，所以 $x>0$。合并为 $\\log_7[x^2x/x^{5/2}]=\\log_7x^{1/2}=\\log_7\\sqrt x$，亦为 $\\frac12\\log_7x$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $2x-2>0$ 给 $x>1$；$(x+3)(x-1)>0$ 给 $x<-3$ 或 $x>1$。交集 $x>1$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "在此交集上 $\\log_5\\frac{2(x-1)}{(x+3)(x-1)}=\\log_5\\frac2{x+3}$。约分后仍保留 $x>1$。"
+          }
+        ],
+        "answer": "(a) $\\log_7\\sqrt x$，$x>0$；(b) $\\log_5\\frac2{x+3}$，$x>1$。",
+        "printedPage": 397,
+        "pdfPage": 406,
+        "en": {
+          "prompt": "Write each as a single logarithm in simplest form and state restrictions: (a) $\\log_7x^2+\\log_7x-\\frac{5\\log_7x}{2}$; (b) $\\log_5(2x-2)-\\log_5(x^2+2x-3)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The original contains $\\log_7x$, so $x>0$. Combine to get $\\log_7[x^2x/x^{5/2}]=\\log_7x^{1/2}=\\log_7\\sqrt x$, also $\\frac12\\log_7x$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $2x-2>0$ gives $x>1$; $(x+3)(x-1)>0$ gives $x<-3$ or $x>1$. Their intersection is $x>1$."
+            },
+            {
+              "title": "Step 3",
+              "body": "On this intersection, $\\log_5\\frac{2(x-1)}{(x+3)(x-1)}=\\log_5\\frac2{x+3}$. Retain $x>1$ after cancellation."
+            }
+          ],
+          "answer": "(a) $\\log_7\\sqrt x$, $x>0$; (b) $\\log_5\\frac2{x+3}$, $x>1$.",
+          "label": "Textbook Example 3"
+        },
+        "id": "example-3",
+        "type": "example",
+        "label": "教材例题 3",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "例题 3(b) 的二次不等式 $x^2+2x-3>0$ 还可以怎样解？",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "方法一：零点为 $-3,1$，抛物线开口向上，所以两零点外侧函数为正，即 $x<-3$ 或 $x>1$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "方法二：配方为 $(x+1)^2>4$，故 $|x+1|>2$，得到 $x<-3$ 或 $x>1$。再与另一个真数的 $x>1$ 取交集。"
+          }
+        ],
+        "answer": "图像法或配方法；二次式为正的范围 $(-\\infty,-3)\\cup(1,\\infty)$，原对数式范围 $x>1$。",
+        "printedPage": 397,
+        "pdfPage": 406,
+        "en": {
+          "prompt": "What other methods solve the quadratic inequality $x^2+2x-3>0$ in Example 3(b)?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Method 1: the zeros are $-3,1$ and the parabola opens upward, so it is positive outside the zeros: $x<-3$ or $x>1$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Method 2: completing the square gives $(x+1)^2>4$, hence $|x+1|>2$, so $x<-3$ or $x>1$. Intersect with the other argument restriction $x>1$."
+            }
+          ],
+          "answer": "Use the graph or complete the square: the quadratic is positive on $(-\\infty,-3)\\cup(1,\\infty)$; the original logarithmic expression requires $x>1$.",
+          "label": "Margin: quadratic inequality"
+        },
+        "id": "sidebar-example-3",
+        "type": "practice",
+        "label": "旁注：二次不等式"
+      },
+      {
+        "prompt": "写成最简的一个对数并说明变量限制：(a) $4\\log_3x-\\frac12(\\log_3x+5\\log_3x)$；(b) $\\log_2(x^2-9)-\\log_2(x^2-x-6)$。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $x>0$；$4\\log_3x-\\frac12(6\\log_3x)=(4-3)\\log_3x=\\log_3x$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $x^2-9>0$ 给 $x<-3$ 或 $x>3$；$(x-3)(x+2)>0$ 给 $x<-2$ 或 $x>3$；交集为 $x<-3$ 或 $x>3$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "$\\log_2\\frac{(x-3)(x+3)}{(x-3)(x+2)}=\\log_2\\frac{x+3}{x+2}$，保留上述交集。"
+          }
+        ],
+        "answer": "(a) $\\log_3x$，$x>0$；(b) $\\log_2\\frac{x+3}{x+2}$，$x<-3$ 或 $x>3$。",
+        "printedPage": 397,
+        "pdfPage": 406,
+        "en": {
+          "prompt": "Write each as a single logarithm in simplest form and state restrictions: (a) $4\\log_3x-\\frac12(\\log_3x+5\\log_3x)$; (b) $\\log_2(x^2-9)-\\log_2(x^2-x-6)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Require $x>0$; $4\\log_3x-\\frac12(6\\log_3x)=(4-3)\\log_3x=\\log_3x$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $x^2-9>0$ gives $x<-3$ or $x>3$; $(x-3)(x+2)>0$ gives $x<-2$ or $x>3$. The intersection is $x<-3$ or $x>3$."
+            },
+            {
+              "title": "Step 3",
+              "body": "$\\log_2\\frac{(x-3)(x+3)}{(x-3)(x+2)}=\\log_2\\frac{x+3}{x+2}$, retaining that intersection."
+            }
+          ],
+          "answer": "(a) $\\log_3x$, $x>0$; (b) $\\log_2\\frac{x+3}{x+2}$, $x<-3$ or $x>3$.",
+          "label": "Your Turn 3"
+        },
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "轮到你 3",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "声强级 $\\beta$（dB）定义为 $\\beta=10\\log(I/I_0)$，其中 $I$ 的单位为 $\\mathrm{W/m^2}$，$I_0=10^{-12}\\ \\mathrm{W/m^2}$ 为正常听力阈值。(a) 教材称超过 $85$ dB 应戴听力防护；链锯约 $85$ dB，带耳机的便携播放器最高音量约 $110$ dB。播放器声强是链锯的多少倍？(b) 按题设，至多为耳语声强 $100000$ 倍的声音无论多久或多频繁都被认为安全。耳语约 $20$ dB。按此题设求所对应的声强级。",
+        "concept": "scales",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "先相减消去共同参考量：$\\beta_2-\\beta_1=10[\\log(I_2/I_0)-\\log(I_1/I_0)]=10\\log(I_2/I_1)$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(a) $110-85=10\\log(I_2/I_1)$，所以 $I_2/I_1=10^{2.5}\\approx316.23$，约 $316$ 倍。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(b) $\\beta_2-20=10\\log100000=50$，故 $\\beta_2=70$ dB。比值至多 $100000$ 时对应 $\\beta_2\\le70$ dB。此结论只按教材题设计算。"
+          }
+        ],
+        "answer": "(a) 约 $316$ 倍；(b) 按题设为至多 $70$ dB。",
+        "printedPage": 398,
+        "pdfPage": 407,
+        "en": {
+          "prompt": "The intensity level $\\beta$ in decibels is $\\beta=10\\log(I/I_0)$, where $I$ is in $\\mathrm{W/m^2}$ and $I_0=10^{-12}\\ \\mathrm{W/m^2}$ is the threshold for normal hearing. (a) The textbook recommends hearing protection above $85$ dB. A chainsaw is about $85$ dB and a portable media player with headphones reaches about $110$ dB. How many times as intense is the player? (b) Under the problem's assumption, sounds at most $100000$ times as intense as a whisper are considered safe regardless of duration or frequency. A whisper is about $20$ dB. Find the corresponding sound level under that assumption.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Subtract to cancel the common reference: $\\beta_2-\\beta_1=10[\\log(I_2/I_0)-\\log(I_1/I_0)]=10\\log(I_2/I_1)$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(a) $110-85=10\\log(I_2/I_1)$, hence $I_2/I_1=10^{2.5}\\approx316.23$, about $316$ times."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b) $\\beta_2-20=10\\log100000=50$, so $\\beta_2=70$ dB. A ratio at most $100000$ corresponds to $\\beta_2\\le70$ dB. This is a calculation under the supplied textbook premise."
+            }
+          ],
+          "answer": "(a) About $316$ times as intense; (b) at most $70$ dB under the stated premise.",
+          "label": "Textbook Example 4"
+        },
+        "id": "example-4",
+        "type": "example",
+        "label": "教材例题 4",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "还有什么方法求例题 4(a) 的 $I_2/I_1$？",
+        "concept": "scales",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "分别解强度：$I_1=I_0\\,10^{85/10}=10^{-3.5}\\ \\mathrm{W/m^2}$，$I_2=I_0\\,10^{110/10}=10^{-1}\\ \\mathrm{W/m^2}$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "相除得 $I_2/I_1=10^{-1}/10^{-3.5}=10^{2.5}\\approx316.23$，单位约去。"
+          }
+        ],
+        "answer": "$I_2/I_1=10^{2.5}\\approx316$。",
+        "printedPage": 399,
+        "pdfPage": 408,
+        "en": {
+          "prompt": "What other approach finds $I_2/I_1$ in Example 4(a)?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Solve separately: $I_1=I_0\\,10^{85/10}=10^{-3.5}\\ \\mathrm{W/m^2}$ and $I_2=I_0\\,10^{110/10}=10^{-1}\\ \\mathrm{W/m^2}$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Divide: $I_2/I_1=10^{-1}/10^{-3.5}=10^{2.5}\\approx316.23$; the units cancel."
+            }
+          ],
+          "answer": "$I_2/I_1=10^{2.5}\\approx316$.",
+          "label": "Margin: another comparison"
+        },
+        "id": "sidebar-example-4",
+        "type": "practice",
+        "label": "旁注：另一种比较方法"
+      },
+      {
+        "prompt": "pH 标度衡量溶液酸碱性：$\\mathrm{pH}=-\\log[H^+]$，$[H^+]$ 是氢离子浓度（mol/L）。纯水等中性溶液 pH 为 $7$；小于 $7$ 为酸性，大于 $7$ 为碱性；越接近 $0$ 酸性越强。(a) 可乐的一种常见成分磷酸也用于许多除锈剂。可乐 pH 为 $2.5$，牛奶 pH 为 $6.6$。可乐的氢离子浓度为牛奶的多少倍？(b) 苹果的氢离子浓度为梨的 $5$ 倍；梨 pH 为 $3.8$，求苹果的 pH。",
+        "concept": "scales",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $[H^+]_c=10^{-2.5}$、$[H^+]_m=10^{-6.6}$；比值 $10^{-2.5}/10^{-6.6}=10^{4.1}\\approx12589.25$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $[H^+]_a=5\\cdot10^{-3.8}$，所以 $\\mathrm{pH}_a=-\\log(5\\cdot10^{-3.8})=3.8-\\log5\\approx3.1010$。浓度为正且苹果 pH 更低，方向合理。"
+          }
+        ],
+        "answer": "(a) 约 $12589$ 倍；(b) pH 约 $3.10$。",
+        "printedPage": 399,
+        "pdfPage": 408,
+        "en": {
+          "prompt": "The pH scale measures acidity or alkalinity: $\\mathrm{pH}=-\\log[H^+]$, where $[H^+]$ is hydrogen ion concentration in mol/L. A neutral solution such as pure water has pH $7$; pH below $7$ is acidic and above $7$ is basic; lower pH means greater acidity. (a) Phosphoric acid, used in many rust removers, is also a common cola ingredient. Cola has pH $2.5$ and milk pH $6.6$. How many times as acidic is cola? (b) An apple is $5$ times as acidic as a pear. A pear has pH $3.8$. Find the apple's pH.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $[H^+]_c=10^{-2.5}$ and $[H^+]_m=10^{-6.6}$; their ratio is $10^{-2.5}/10^{-6.6}=10^{4.1}\\approx12589.25$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $[H^+]_a=5\\cdot10^{-3.8}$, so $\\mathrm{pH}_a=-\\log(5\\cdot10^{-3.8})=3.8-\\log5\\approx3.1010$. The concentration is positive and the apple has lower pH, as expected."
+            }
+          ],
+          "answer": "(a) About $12589$ times; (b) pH approximately $3.10$.",
+          "label": "Your Turn 4"
+        },
+        "id": "your-turn-4",
+        "type": "practice",
+        "label": "轮到你 4",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/8-3-ph-scale.png"
+      },
+      {
+        "prompt": "表格给出一部热门新电影累计票房（百万美元）。周数 $x=1,2,\\ldots,19$，对应收入依次为 $70,144,191,229,256,275,291,304,313,320,325,328,330,332,334,335,335,336,337$。(1) 求形式为 $y=20\\log_{1.3}(x-h)+k$ 的对数模型以拟合数据。(2) 求形式为 $y=-104(0.74)^{x-h}+k$ 的指数模型。(3) 比较两者，说明是否某个更好。",
+        "concept": "modelling",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "这是一道拟合活动，并未指定必须经过哪些点。以下以全部 $19$ 个观测的平方残差和最小为统一准则；每个 $x$ 以周计，$y$ 以百万美元计。两族都不能精确通过每个四舍五入数据点。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(1) 令 $A=20/\\ln1.3$，则模型为 $A\\ln(x-h)+k$。须 $h<1$ 才包含全部周数。固定 $h$ 时，令 $k=\\frac1{19}\\Sigma[y_i-A\\ln(x_i-h)]$，使平方残差和对 $k$ 最小。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "数值最小化余下的单变量平方残差和，得到 $h\\approx0.597493$、$k\\approx135.840049$。模型为 $y=20\\log_{1.3}(x-0.5975)+135.8400$，定义域 $x>0.5975$；平方残差和约 $2670.923$，均方根误差约 $11.856$ 百万美元。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(2) 写成 $y=C(0.74)^x+k$，其中 $C=-104(0.74)^{-h}<0$。设 $u_i=(0.74)^{x_i}$，用直线最小二乘 $C=\\frac{\\Sigma(u_i-\\bar u)(y_i-\\bar y)}{\\Sigma(u_i-\\bar u)^2}$，$k=\\bar y-C\\bar u$。"
+          },
+          {
+            "title": "第 5 步",
+            "body": "代入表格得 $C\\approx-359.561174$、$k\\approx337.105969$。由 $h=-\\ln(-C/104)/\\ln0.74$ 得 $h\\approx4.119802$，所以 $y=-104(0.74)^{x-4.1198}+337.1060$。平方残差和约 $37.707$，均方根误差约 $1.409$ 百万美元。"
+          },
+          {
+            "title": "第 6 步",
+            "body": "(3) 指数模型误差较小，且 $x\\to\\infty$ 时累计收入趋向 $337.11$ 百万美元，符合票房增长趋缓的趋势。对数模型无限增长，在较晚周数上系统性高估。拟合不能保证对未知未来成立；本题比较只基于所给数据和合理趋势。"
+          }
+        ],
+        "answer": "一种明确的全表最小二乘答案：对数 $y=20\\log_{1.3}(x-0.5975)+135.8400$；指数 $y=-104(0.74)^{x-4.1198}+337.1060$；指数模型的残差和更小且有合理上限，因此较好。",
+        "printedPage": 403,
+        "pdfPage": 412,
+        "en": {
+          "prompt": "The table shows cumulative box-office receipts in millions of dollars for a popular new movie. At weeks $x=1,2,\\ldots,19$, revenues are $70,144,191,229,256,275,291,304,313,320,325,328,330,332,334,335,335,336,337$. (1) Fit a logarithmic model of the form $y=20\\log_{1.3}(x-h)+k$. (2) Fit an exponential model of the form $y=-104(0.74)^{x-h}+k$. (3) Compare the models and explain whether one is better.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "This fitting activity does not specify interpolation points. Use the same criterion for both families: minimize the sum of squared residuals over all $19$ observations. The units are weeks for $x$ and millions of dollars for $y$. Neither family passes exactly through every rounded data point."
+            },
+            {
+              "title": "Step 2",
+              "body": "(1) Let $A=20/\\ln1.3$, making the model $A\\ln(x-h)+k$. Require $h<1$ to include all weeks. For fixed $h$, the minimizing intercept is $k=\\frac1{19}\\Sigma[y_i-A\\ln(x_i-h)]$."
+            },
+            {
+              "title": "Step 3",
+              "body": "Numerically minimizing the remaining one-variable sum gives $h\\approx0.597493$ and $k\\approx135.840049$. The model is $y=20\\log_{1.3}(x-0.5975)+135.8400$, with domain $x>0.5975$. Its squared-error sum is about $2670.923$ and its root mean squared error about $11.856$ million dollars."
+            },
+            {
+              "title": "Step 4",
+              "body": "(2) Write $y=C(0.74)^x+k$, with $C=-104(0.74)^{-h}<0$. Let $u_i=(0.74)^{x_i}$ and use linear least squares: $C=\\frac{\\Sigma(u_i-\\bar u)(y_i-\\bar y)}{\\Sigma(u_i-\\bar u)^2}$, $k=\\bar y-C\\bar u$."
+            },
+            {
+              "title": "Step 5",
+              "body": "The data give $C\\approx-359.561174$ and $k\\approx337.105969$. From $h=-\\ln(-C/104)/\\ln0.74$, $h\\approx4.119802$, giving $y=-104(0.74)^{x-4.1198}+337.1060$. The squared-error sum is about $37.707$ and the root mean squared error about $1.409$ million dollars."
+            },
+            {
+              "title": "Step 6",
+              "body": "(3) The exponential model has smaller error and approaches $337.11$ million dollars as $x\\to\\infty$, matching the observed leveling of cumulative revenue. The logarithmic model grows without bound and systematically overestimates later weeks. This comparison uses the given data and plausible trend; it does not establish a guaranteed future law."
+            }
+          ],
+          "answer": "One explicit all-data least-squares answer: logarithmic $y=20\\log_{1.3}(x-0.5975)+135.8400$; exponential $y=-104(0.74)^{x-4.1198}+337.1060$. The exponential model has smaller squared error and a plausible upper limit, so it fits better.",
+          "label": "Project Corner: Modelling Data"
+        },
+        "id": "project-corner",
+        "type": "practice",
+        "label": "项目角：数据建模",
+        "subpartIds": [
+          "logarithmicmodel",
+          "exponentialmodel",
+          "comparison"
+        ],
+        "sourceImage": "assets/8-3-project-table.png",
+        "solutionImage": "assets/8-3-project-models.png"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "把每式写成 $x,y,z$ 的单独对数：(a) $\\log_7(xy^3\\sqrt z)$；(b) $\\log_5(xyz)^8$；(c) $\\log\\frac{x^2}{y\\sqrt[3]z}$；(d) $\\log_3\\left(x\\sqrt{\\frac yz}\\right)$。",
+        "concept": "expand",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "按正变量展开：(a) $\\log_7x+\\log_7y^3+\\log_7z^{1/2}=\\log_7x+3\\log_7y+\\frac12\\log_7z$。全域 $z>0,xy>0$ 上把 $x,y$ 换为 $|x|,|y|$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) 正变量时 $8\\log_5(xyz)=8\\log_5x+8\\log_5y+8\\log_5z$。原式全域为 $xyz\\ne0$，此时为 $8\\log_5|x|+8\\log_5|y|+8\\log_5|z|$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) 正变量时 $\\log x^2-\\log y-\\log z^{1/3}=2\\log x-\\log y-\\frac13\\log z$。全域为 $x\\ne0,yz>0$，此时对 $x,y,z$ 使用绝对值。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) 正变量时 $\\log_3x+\\frac12\\log_3(y/z)=\\log_3x+\\frac12\\log_3y-\\frac12\\log_3z$。全域为 $x>0,yz>0$，在后两项使用 $|y|,|z|$。"
+          }
+        ],
+        "answer": "(a) $\\log_7x+3\\log_7y+\\frac12\\log_7z$；(b) $8(\\log_5x+\\log_5y+\\log_5z)$；(c) $2\\log x-\\log y-\\frac13\\log z$；(d) $\\log_3x+\\frac12\\log_3y-\\frac12\\log_3z$（正变量形式；全域见步骤）。",
+        "printedPage": 400,
+        "pdfPage": 409,
+        "en": {
+          "prompt": "Write each expression in terms of individual logarithms of $x,y,z$: (a) $\\log_7(xy^3\\sqrt z)$; (b) $\\log_5(xyz)^8$; (c) $\\log\\frac{x^2}{y\\sqrt[3]z}$; (d) $\\log_3\\left(x\\sqrt{\\frac yz}\\right)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "For positive variables, (a) $\\log_7x+\\log_7y^3+\\log_7z^{1/2}=\\log_7x+3\\log_7y+\\frac12\\log_7z$. On the full domain $z>0,xy>0$, use $|x|,|y|$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) For positive variables, $8\\log_5(xyz)=8\\log_5x+8\\log_5y+8\\log_5z$. The full original domain is $xyz\\ne0$, where the form is $8\\log_5|x|+8\\log_5|y|+8\\log_5|z|$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) For positive variables, $\\log x^2-\\log y-\\log z^{1/3}=2\\log x-\\log y-\\frac13\\log z$. The full domain is $x\\ne0,yz>0$; use absolute values of $x,y,z$ there."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) For positive variables, $\\log_3x+\\frac12\\log_3(y/z)=\\log_3x+\\frac12\\log_3y-\\frac12\\log_3z$. The full domain is $x>0,yz>0$; use $|y|,|z|$ in the last two terms."
+            }
+          ],
+          "answer": "(a) $\\log_7x+3\\log_7y+\\frac12\\log_7z$; (b) $8(\\log_5x+\\log_5y+\\log_5z)$; (c) $2\\log x-\\log y-\\frac13\\log z$; (d) $\\log_3x+\\frac12\\log_3y-\\frac12\\log_3z$ (positive-variable forms; see steps for full domains)."
+        },
+        "number": 1,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "用对数法则化简并求值：(a) $\\log_{12}24-\\log_{12}6+\\log_{12}36$；(b) $3\\log_510-\\frac12\\log_564$；(c) $\\log_3(27\\sqrt3)$；(d) $\\log_272-\\frac12(\\log_23+\\log_227)$。",
+        "concept": "evaluate",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $\\log_{12}(24\\cdot36/6)=\\log_{12}144=2$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $\\log_5(10^3/64^{1/2})=\\log_5(1000/8)=\\log_5125=3$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $\\log_3(3^3\\cdot3^{1/2})=\\log_3 3^{7/2}=7/2$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) $\\log_272-\\log_2\\sqrt{3\\cdot27}=\\log_2(72/9)=\\log_28=3$。各真数均为正。"
+          }
+        ],
+        "answer": "(a) $2$；(b) $3$；(c) $7/2$；(d) $3$。",
+        "printedPage": 400,
+        "pdfPage": 409,
+        "en": {
+          "prompt": "Use the laws to simplify and evaluate: (a) $\\log_{12}24-\\log_{12}6+\\log_{12}36$; (b) $3\\log_510-\\frac12\\log_564$; (c) $\\log_3(27\\sqrt3)$; (d) $\\log_272-\\frac12(\\log_23+\\log_227)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $\\log_{12}(24\\cdot36/6)=\\log_{12}144=2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $\\log_5(10^3/64^{1/2})=\\log_5(1000/8)=\\log_5125=3$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $\\log_3(3^3\\cdot3^{1/2})=\\log_3 3^{7/2}=7/2$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) $\\log_272-\\log_2\\sqrt{3\\cdot27}=\\log_2(72/9)=\\log_28=3$. All arguments are positive."
+            }
+          ],
+          "answer": "(a) $2$; (b) $3$; (c) $7/2$; (d) $3$."
+        },
+        "number": 2,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "写成最简的一个对数：(a) $\\log_9x-\\log_9y+4\\log_9z$；(b) $\\frac{\\log_3x}{2}-2\\log_3y$；(c) $\\log_6x-\\frac15(\\log_6x+2\\log_6y)$；(d) $\\frac{\\log x}{3}+\\frac{\\log y}{3}$。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $4\\log_9z=\\log_9z^4$，合并为 $\\log_9(xz^4/y)$；原式要求 $x,y,z>0$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $\\log_3x^{1/2}-\\log_3y^2=\\log_3(\\sqrt x/y^2)$；$x,y>0$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) 分配负系数得到 $\\frac45\\log_6x-\\frac25\\log_6y=\\log_6(x^{4/5}/y^{2/5})$；$x,y>0$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) $\\log x^{1/3}+\\log y^{1/3}=\\log\\sqrt[3]{xy}$；$x,y>0$。"
+          }
+        ],
+        "answer": "(a) $\\log_9\\frac{xz^4}y$；(b) $\\log_3\\frac{\\sqrt x}{y^2}$；(c) $\\log_6\\frac{x^{4/5}}{y^{2/5}}$；(d) $\\log\\sqrt[3]{xy}$，保留原式正变量限制。",
+        "printedPage": 400,
+        "pdfPage": 409,
+        "en": {
+          "prompt": "Write each as a single logarithm in simplest form: (a) $\\log_9x-\\log_9y+4\\log_9z$; (b) $\\frac{\\log_3x}{2}-2\\log_3y$; (c) $\\log_6x-\\frac15(\\log_6x+2\\log_6y)$; (d) $\\frac{\\log x}{3}+\\frac{\\log y}{3}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $4\\log_9z=\\log_9z^4$, giving $\\log_9(xz^4/y)$; the original requires $x,y,z>0$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $\\log_3x^{1/2}-\\log_3y^2=\\log_3(\\sqrt x/y^2)$; $x,y>0$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Distribute the negative coefficient: $\\frac45\\log_6x-\\frac25\\log_6y=\\log_6(x^{4/5}/y^{2/5})$; $x,y>0$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) $\\log x^{1/3}+\\log y^{1/3}=\\log\\sqrt[3]{xy}$; $x,y>0$."
+            }
+          ],
+          "answer": "(a) $\\log_9\\frac{xz^4}y$; (b) $\\log_3\\frac{\\sqrt x}{y^2}$; (c) $\\log_6\\frac{x^{4/5}}{y^{2/5}}$; (d) $\\log\\sqrt[3]{xy}$, retaining the original positive-variable restrictions."
+        },
+        "number": 3,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "对数原用于简化计算。仅用纸笔、法则及 $\\log1.44\\approx0.15836$、$\\log1.2\\approx0.07918$、$\\log1.728\\approx0.23754$ 计算：(a) $1.44\\times1.2$；(b) $1.728\\div1.2$；(c) $\\sqrt{1.44}$。",
+        "concept": "evaluate",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 乘积的对数 $0.15836+0.07918=0.23754\\approx\\log1.728$，故乘积为 $1.728$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) 商的对数 $0.23754-0.07918=0.15836\\approx\\log1.44$，故商为 $1.44$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) 平方根的对数 $\\frac12(0.15836)=0.07918\\approx\\log1.2$，故主平方根为 $1.2$。检查 $1.2^2=1.44$。"
+          }
+        ],
+        "answer": "(a) $1.728$；(b) $1.44$；(c) $1.2$。",
+        "printedPage": 400,
+        "pdfPage": 409,
+        "en": {
+          "prompt": "Use only paper and pencil, the logarithm laws, and $\\log1.44\\approx0.15836$, $\\log1.2\\approx0.07918$, $\\log1.728\\approx0.23754$ to calculate: (a) $1.44\\times1.2$; (b) $1.728\\div1.2$; (c) $\\sqrt{1.44}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The logarithm of the product is $0.15836+0.07918=0.23754\\approx\\log1.728$, so the product is $1.728$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) The logarithm of the quotient is $0.23754-0.07918=0.15836\\approx\\log1.44$, so the quotient is $1.44$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) The logarithm of the square root is $\\frac12(0.15836)=0.07918\\approx\\log1.2$, so the principal square root is $1.2$. Check $1.2^2=1.44$."
+            }
+          ],
+          "answer": "(a) $1.728$; (b) $1.44$; (c) $1.2$."
+        },
+        "number": 4,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "求值：(a) $3^k$，其中 $k=\\log_240-\\log_25$；(b) $7^n$，其中 $n=3\\log_84$。",
+        "concept": "evaluate",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $k=\\log_2(40/5)=\\log_28=3$，所以 $3^k=3^3=27$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $n=\\log_84^3=\\log_864=2$，所以 $7^n=7^2=49$。"
+          }
+        ],
+        "answer": "(a) $27$；(b) $49$。",
+        "printedPage": 400,
+        "pdfPage": 409,
+        "en": {
+          "prompt": "Evaluate: (a) $3^k$, where $k=\\log_240-\\log_25$; (b) $7^n$, where $n=3\\log_84$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $k=\\log_2(40/5)=\\log_28=3$, hence $3^k=3^3=27$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $n=\\log_84^3=\\log_864=2$, hence $7^n=7^2=49$."
+            }
+          ],
+          "answer": "(a) $27$; (b) $49$."
+        },
+        "number": 5,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "从 $y=\\log_2x$ 得到 $y=\\log_2(8x)$ 可以用伸缩或平移。(a) 描述所需伸缩。(b) 描述所需平移。",
+        "concept": "graph-laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $f(8x)$ 把原图点 $(u,\\log_2u)$ 变为 $(u/8,\\log_2u)$，所以沿水平方向缩为原来的 $1/8$。定义域仍为 $x>0$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) 对 $x>0$，$\\log_2(8x)=\\log_28+\\log_2x=3+\\log_2x$，所以向上平移 $3$ 个单位。"
+          }
+        ],
+        "answer": "(a) 水平缩为 $1/8$；(b) 上移 $3$。",
+        "printedPage": 400,
+        "pdfPage": 409,
+        "en": {
+          "prompt": "To obtain $y=\\log_2(8x)$ from $y=\\log_2x$, you can use a stretch or a translation. (a) Describe the stretch. (b) Describe the translation.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $f(8x)$ maps $(u,\\log_2u)$ to $(u/8,\\log_2u)$, so apply a horizontal compression by a factor of $1/8$. The domain remains $x>0$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) For $x>0$, $\\log_2(8x)=\\log_28+\\log_2x=3+\\log_2x$, so translate upward $3$ units."
+            }
+          ],
+          "answer": "(a) Horizontal compression by $1/8$; (b) upward translation by $3$."
+        },
+        "number": 6,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "判断各式真伪并解释。设 $c,x,y>0$ 且 $c\\ne1$：(a) $\\frac{\\log_cx}{\\log_cy}=\\log_cx-\\log_cy$；(b) $\\log_c(x+y)=\\log_cx+\\log_cy$；(c) $\\log_c c^n=n$；(d) $(\\log_cx)^n=n\\log_cx$；(e) $-\\log_c(1/x)=\\log_cx$。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 假。还必须排除 $y=1$ 才有左式。取 $c=10,x=100,y=10$，左边 $2/1=2$，右边 $2-1=1$。差才等于 $\\log_c(x/y)$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) 假。取 $c=10,x=y=1$：左边 $\\log2>0$，右边 $0+0=0$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) 真。$\\log_c c^n=n\\log_cc=n$，对任意实数 $n$ 成立。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) 假。取 $c=10,x=1000,n=2$：左边 $3^2=9$，右边 $2\\cdot3=6$。幂法则中的幂必须在真数上。"
+          },
+          {
+            "title": "第 5 步",
+            "body": "(e) 真。$-\\log_c x^{-1}=-(-\\log_cx)=\\log_cx$，因 $x>0$ 两式均有定义。"
+          }
+        ],
+        "answer": "(a) 假；(b) 假；(c) 真；(d) 假；(e) 真。",
+        "printedPage": 401,
+        "pdfPage": 410,
+        "en": {
+          "prompt": "Decide whether each equation is true or false and justify. Assume $c,x,y>0$, $c\\ne1$: (a) $\\frac{\\log_cx}{\\log_cy}=\\log_cx-\\log_cy$; (b) $\\log_c(x+y)=\\log_cx+\\log_cy$; (c) $\\log_c c^n=n$; (d) $(\\log_cx)^n=n\\log_cx$; (e) $-\\log_c(1/x)=\\log_cx$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) False. The left side also requires $y\\ne1$. With $c=10,x=100,y=10$, the left side is $2/1=2$ but the right side is $2-1=1$. The difference, not the quotient, equals $\\log_c(x/y)$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) False. Set $c=10,x=y=1$: the left side is $\\log2>0$ while the right side is $0+0=0$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) True. $\\log_c c^n=n\\log_cc=n$ for every real $n$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) False. With $c=10,x=1000,n=2$, the left side is $3^2=9$ and the right side is $2\\cdot3=6$. The exponent in the power law belongs to the argument."
+            },
+            {
+              "title": "Step 5",
+              "body": "(e) True. $-\\log_c x^{-1}=-(-\\log_cx)=\\log_cx$; both sides are defined because $x>0$."
+            }
+          ],
+          "answer": "(a) False; (b) false; (c) true; (d) false; (e) true."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      {
+        "prompt": "已知 $\\log3=P$、$\\log5=Q$，用 $P,Q$ 表示：(a) $\\log(3/5)$；(b) $\\log15$；(c) $\\log(3\\sqrt5)$；(d) $\\log(25/9)$。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $\\log(3/5)=\\log3-\\log5=P-Q$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $\\log15=\\log(3\\cdot5)=\\log3+\\log5=P+Q$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $\\log(3\\sqrt5)=\\log3+\\frac12\\log5=P+Q/2$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) $\\log(5^2/3^2)=2\\log5-2\\log3=2Q-2P$。各真数均为正。"
+          }
+        ],
+        "answer": "(a) $P-Q$；(b) $P+Q$；(c) $P+Q/2$；(d) $2Q-2P$。",
+        "printedPage": 401,
+        "pdfPage": 410,
+        "en": {
+          "prompt": "If $\\log3=P$ and $\\log5=Q$, express in terms of $P,Q$: (a) $\\log(3/5)$; (b) $\\log15$; (c) $\\log(3\\sqrt5)$; (d) $\\log(25/9)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $\\log(3/5)=\\log3-\\log5=P-Q$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $\\log15=\\log(3\\cdot5)=\\log3+\\log5=P+Q$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $\\log(3\\sqrt5)=\\log3+\\frac12\\log5=P+Q/2$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) $\\log(5^2/3^2)=2\\log5-2\\log3=2Q-2P$. All arguments are positive."
+            }
+          ],
+          "answer": "(a) $P-Q$; (b) $P+Q$; (c) $P+Q/2$; (d) $2Q-2P$."
+        },
+        "number": 8,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "已知 $\\log_27=K$，用 $K$ 表示：(a) $\\log_27^6$；(b) $\\log_214$；(c) $\\log_2(49\\times4)$；(d) $\\log_2\\frac{\\sqrt[5]7}{8}$。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $\\log_27^6=6\\log_27=6K$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $\\log_2(2\\cdot7)=\\log_22+\\log_27=1+K$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $\\log_2(7^2\\cdot2^2)=2\\log_27+2=2K+2$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) $\\log_27^{1/5}-\\log_28=K/5-3$。"
+          }
+        ],
+        "answer": "(a) $6K$；(b) $K+1$；(c) $2K+2$；(d) $K/5-3$。",
+        "printedPage": 401,
+        "pdfPage": 410,
+        "en": {
+          "prompt": "If $\\log_27=K$, express in terms of $K$: (a) $\\log_27^6$; (b) $\\log_214$; (c) $\\log_2(49\\times4)$; (d) $\\log_2\\frac{\\sqrt[5]7}{8}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $\\log_27^6=6\\log_27=6K$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $\\log_2(2\\cdot7)=\\log_22+\\log_27=1+K$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $\\log_2(7^2\\cdot2^2)=2\\log_27+2=2K+2$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) $\\log_27^{1/5}-\\log_28=K/5-3$."
+            }
+          ],
+          "answer": "(a) $6K$; (b) $K+1$; (c) $2K+2$; (d) $K/5-3$."
+        },
+        "number": 9,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "写成最简的一个对数并说明变量限制：(a) $\\log_5x+\\log_5\\sqrt{x^3}-2\\log_5x$；(b) $\\log_{11}\\frac{x}{\\sqrt x}+\\log_{11}\\sqrt{x^5}-\\frac73\\log_{11}x$。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 原对数要求 $x>0$，此时根式亦正。合并为 $\\log_5[x\\cdot x^{3/2}/x^2]=\\log_5x^{1/2}=\\log_5\\sqrt x$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $x>0$ 同时保证根式、分母及真数有效。$x/\\sqrt x=x^{1/2}$，$\\sqrt{x^5}=x^{5/2}$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "指数相加减为 $\\frac12+\\frac52-\\frac73=3-\\frac73=\\frac23$，故为 $\\log_{11}x^{2/3}$，仍需 $x>0$。"
+          }
+        ],
+        "answer": "(a) $\\log_5\\sqrt x$；(b) $\\log_{11}x^{2/3}$；均为 $x>0$。",
+        "printedPage": 401,
+        "pdfPage": 410,
+        "en": {
+          "prompt": "Write each as a single logarithm in simplest form and state restrictions: (a) $\\log_5x+\\log_5\\sqrt{x^3}-2\\log_5x$; (b) $\\log_{11}\\frac{x}{\\sqrt x}+\\log_{11}\\sqrt{x^5}-\\frac73\\log_{11}x$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The original logarithms require $x>0$, which also makes the root positive. Combine to get $\\log_5[x\\cdot x^{3/2}/x^2]=\\log_5x^{1/2}=\\log_5\\sqrt x$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $x>0$ makes the roots, denominator and arguments valid. Then $x/\\sqrt x=x^{1/2}$ and $\\sqrt{x^5}=x^{5/2}$."
+            },
+            {
+              "title": "Step 3",
+              "body": "The resulting exponent is $\\frac12+\\frac52-\\frac73=3-\\frac73=\\frac23$, so the result is $\\log_{11}x^{2/3}$, still with $x>0$."
+            }
+          ],
+          "answer": "(a) $\\log_5\\sqrt x$; (b) $\\log_{11}x^{2/3}$; both require $x>0$."
+        },
+        "number": 10,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "写成最简的一个对数并说明变量限制：(a) $\\log_2(x^2-25)-\\log_2(3x-15)$；(b) $\\log_7(x^2-16)-\\log_7(x^2-2x-8)$；(c) $2\\log_8(x+3)-\\log_8(x^2+x-6)$。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $x^2-25>0$ 给 $x<-5$ 或 $x>5$；$3x-15>0$ 给 $x>5$。交集 $x>5$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "$\\log_2\\frac{(x-5)(x+5)}{3(x-5)}=\\log_2\\frac{x+5}{3}$，$x>5$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(b) $x^2-16>0$ 给 $x<-4$ 或 $x>4$；$(x-4)(x+2)>0$ 给 $x<-2$ 或 $x>4$。交集 $x<-4$ 或 $x>4$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "$\\log_7\\frac{(x-4)(x+4)}{(x-4)(x+2)}=\\log_7\\frac{x+4}{x+2}$，保留原交集。"
+          },
+          {
+            "title": "第 5 步",
+            "body": "(c) $x+3>0$ 给 $x>-3$；$(x+3)(x-2)>0$ 给 $x<-3$ 或 $x>2$；交集 $x>2$。"
+          },
+          {
+            "title": "第 6 步",
+            "body": "$\\log_8\\frac{(x+3)^2}{(x+3)(x-2)}=\\log_8\\frac{x+3}{x-2}$，$x>2$。三题化简后均没有扩大原定义域。"
+          }
+        ],
+        "answer": "(a) $\\log_2\\frac{x+5}{3}$，$x>5$；(b) $\\log_7\\frac{x+4}{x+2}$，$x<-4$ 或 $x>4$；(c) $\\log_8\\frac{x+3}{x-2}$，$x>2$。",
+        "printedPage": 401,
+        "pdfPage": 410,
+        "en": {
+          "prompt": "Write each as a single logarithm in simplest form and state restrictions: (a) $\\log_2(x^2-25)-\\log_2(3x-15)$; (b) $\\log_7(x^2-16)-\\log_7(x^2-2x-8)$; (c) $2\\log_8(x+3)-\\log_8(x^2+x-6)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $x^2-25>0$ gives $x<-5$ or $x>5$; $3x-15>0$ gives $x>5$. The intersection is $x>5$."
+            },
+            {
+              "title": "Step 2",
+              "body": "$\\log_2\\frac{(x-5)(x+5)}{3(x-5)}=\\log_2\\frac{x+5}{3}$, $x>5$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b) $x^2-16>0$ gives $x<-4$ or $x>4$; $(x-4)(x+2)>0$ gives $x<-2$ or $x>4$. The intersection is $x<-4$ or $x>4$."
+            },
+            {
+              "title": "Step 4",
+              "body": "$\\log_7\\frac{(x-4)(x+4)}{(x-4)(x+2)}=\\log_7\\frac{x+4}{x+2}$, retaining the original intersection."
+            },
+            {
+              "title": "Step 5",
+              "body": "(c) $x+3>0$ gives $x>-3$; $(x+3)(x-2)>0$ gives $x<-3$ or $x>2$. The intersection is $x>2$."
+            },
+            {
+              "title": "Step 6",
+              "body": "$\\log_8\\frac{(x+3)^2}{(x+3)(x-2)}=\\log_8\\frac{x+3}{x-2}$, $x>2$. None of the simplified forms enlarges the original domain."
+            }
+          ],
+          "answer": "(a) $\\log_2\\frac{x+5}{3}$, $x>5$; (b) $\\log_7\\frac{x+4}{x+2}$, $x<-4$ or $x>4$; (c) $\\log_8\\frac{x+3}{x-2}$, $x>2$."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "证明各等式对 $c>0,c\\ne1$ 成立：(a) $\\log_c48-(\\log_c3+\\log_c2)=\\log_c8$；(b) $7\\log_c4=14\\log_c2$；(c) $\\frac12(\\log_c2+\\log_c6)=\\log_c2+\\log_c\\sqrt3$；(d) $\\log_c(5c)^2=2(\\log_c5+1)$。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 左边 $\\log_c48-\\log_c6=\\log_c(48/6)=\\log_c8$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $7\\log_c4=7\\log_c2^2=7\\cdot2\\log_c2=14\\log_c2$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) 左边 $\\frac12\\log_c12=\\log_c\\sqrt{12}=\\log_c(2\\sqrt3)=\\log_c2+\\log_c\\sqrt3$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) $5c>0$，所以 $\\log_c(5c)^2=2\\log_c(5c)=2(\\log_c5+\\log_cc)=2(\\log_c5+1)$。各法则均在正真数上使用。"
+          }
+        ],
+        "answer": "(a)–(d) 均成立，推导见步骤。",
+        "printedPage": 401,
+        "pdfPage": 410,
+        "en": {
+          "prompt": "Show that each equation is true for $c>0,c\\ne1$: (a) $\\log_c48-(\\log_c3+\\log_c2)=\\log_c8$; (b) $7\\log_c4=14\\log_c2$; (c) $\\frac12(\\log_c2+\\log_c6)=\\log_c2+\\log_c\\sqrt3$; (d) $\\log_c(5c)^2=2(\\log_c5+1)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The left side is $\\log_c48-\\log_c6=\\log_c(48/6)=\\log_c8$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $7\\log_c4=7\\log_c2^2=7\\cdot2\\log_c2=14\\log_c2$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) The left side is $\\frac12\\log_c12=\\log_c\\sqrt{12}=\\log_c(2\\sqrt3)=\\log_c2+\\log_c\\sqrt3$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) Since $5c>0$, $\\log_c(5c)^2=2\\log_c(5c)=2(\\log_c5+\\log_cc)=2(\\log_c5+1)$. Each law is applied to positive arguments."
+            }
+          ],
+          "answer": "(a)–(d) are true, as derived in the steps."
+        },
+        "number": 12,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "声强级 $\\beta=10\\log(I/I_0)$，$I$ 单位为 $\\mathrm{W/m^2}$，$I_0=10^{-12}\\ \\mathrm{W/m^2}$ 是听力阈值。(a) 吹风机声强为 $0.00001\\ \\mathrm{W/m^2}$，求分贝值。(b) 消防车警笛为 $118$ dB，城市交通为 $85$ dB，警笛的声强为交通声强的多少倍？(c) Elly 的农用拖拉机声强为汽车的 $63$ 倍，汽车为 $80$ dB，求拖拉机分贝值。",
+        "concept": "scales",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $I/I_0=10^{-5}/10^{-12}=10^7$，故 $\\beta=10\\log10^7=70$ dB。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $118-85=33=10\\log(I_s/I_t)$，所以 $I_s/I_t=10^{3.3}\\approx1995.26$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $\\beta_{\\mathrm{tractor}}-80=10\\log63\\approx17.9934$，所以 $\\beta_{\\mathrm{tractor}}\\approx97.99$ dB。强度比无单位。"
+          }
+        ],
+        "answer": "(a) $70$ dB；(b) 约 $1995$ 倍；(c) 约 $98.0$ dB。",
+        "printedPage": 401,
+        "pdfPage": 410,
+        "en": {
+          "prompt": "Sound level is $\\beta=10\\log(I/I_0)$, where $I$ is in $\\mathrm{W/m^2}$ and $I_0=10^{-12}\\ \\mathrm{W/m^2}$ is the hearing threshold. (a) A hairdryer has intensity $0.00001\\ \\mathrm{W/m^2}$. Find its decibel level. (b) A fire-truck siren is $118$ dB and city traffic $85$ dB. How many times as loud (in intensity) is the siren? (c) Elly's tractor is $63$ times as intense as her $80$ dB car. Find the tractor's level.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $I/I_0=10^{-5}/10^{-12}=10^7$, hence $\\beta=10\\log10^7=70$ dB."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $118-85=33=10\\log(I_s/I_t)$, so $I_s/I_t=10^{3.3}\\approx1995.26$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $\\beta_{\\mathrm{tractor}}-80=10\\log63\\approx17.9934$, so $\\beta_{\\mathrm{tractor}}\\approx97.99$ dB. The intensity ratios are dimensionless."
+            }
+          ],
+          "answer": "(a) $70$ dB; (b) about $1995$ times; (c) about $98.0$ dB."
+        },
+        "number": 13,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "Abdi 错误地说：“20 dB 的噪声是 10 dB 噪声的两倍响。”解释其推理错误。",
+        "concept": "scales",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "分贝是对数标度，不能把数值直接相除当作声强比。$20-10=10\\log(I_{20}/I_{10})$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "$\\log(I_{20}/I_{10})=1$，故强度比为 $10$，不是 $2$。主观响度并不由本题的物理声强公式直接给出。"
+          }
+        ],
+        "answer": "20 dB 对应的物理声强是 10 dB 的 $10$ 倍；不能用分贝值的比来求声强比。",
+        "printedPage": 401,
+        "pdfPage": 410,
+        "en": {
+          "prompt": "Abdi incorrectly says, “A noise of $20$ dB is twice as loud as a noise of $10$ dB.” Explain the error.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Decibels form a logarithmic scale; dividing the level numbers does not give an intensity ratio. $20-10=10\\log(I_{20}/I_{10})$."
+            },
+            {
+              "title": "Step 2",
+              "body": "$\\log(I_{20}/I_{10})=1$, so the intensity ratio is $10$, not $2$. Perceived loudness is not directly given by this physical intensity formula."
+            }
+          ],
+          "answer": "The physical intensity at $20$ dB is $10$ times that at $10$ dB; a ratio of decibel numbers is not an intensity ratio."
+        },
+        "number": 14
+      },
+      {
+        "prompt": "分贝也用于电子学的电流、电压比。放大器增益为 $G=20\\log(V/V_i)$，其中 $V$ 为输出电压、$V_i$ 为输入电压。输入 $0.2$ V 时增益 $24$ dB，求输出电压，保留到 $0.1$ V。",
+        "concept": "scales",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "$24=20\\log(V/0.2)$，故 $\\log(V/0.2)=1.2$，需要 $V>0$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "$V/0.2=10^{1.2}$，所以 $V=0.2\\cdot10^{1.2}\\approx3.1698$ V；舍入为 $3.2$ V。"
+          }
+        ],
+        "answer": "$V\\approx3.2$ V。",
+        "printedPage": 401,
+        "pdfPage": 410,
+        "en": {
+          "prompt": "Decibels are also used for current and voltage ratios. Amplifier gain is $G=20\\log(V/V_i)$, where $V$ is output and $V_i$ input voltage. If gain is $24$ dB for input $0.2$ V, find the output to the nearest tenth of a volt.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "$24=20\\log(V/0.2)$, so $\\log(V/0.2)=1.2$, requiring $V>0$."
+            },
+            {
+              "title": "Step 2",
+              "body": "$V/0.2=10^{1.2}$, so $V=0.2\\cdot10^{1.2}\\approx3.1698$ V, which rounds to $3.2$ V."
+            }
+          ],
+          "answer": "$V\\approx3.2$ V."
+        },
+        "number": 15
+      },
+      {
+        "prompt": "pH 定义为 $\\mathrm{pH}=-\\log[H^+]$，氢离子浓度单位为 mol/L。(a) 教材将乳酸性酸中毒描述为乳酸盐升高且血液 pH 低于 $7.35$，并给出病人血液 pH 为 $7.0$ 的情境。求 pH 为 $7.0$ 时的氢离子浓度。(b) 燃烧产物与大气水分反应可产生酸雨；题设认为 pH 小于 $5.3$ 为酸性雨。安大略部分地区雨水平均 pH 约 $4.5$。pH $4.5$ 的酸雨氢离子浓度为 pH $5.6$ 的正常雨水多少倍？(c) Alana 的护发素氢离子浓度为洗发液的 $500$ 倍。洗发液 pH 为 $6.1$，求护发素 pH。",
+        "concept": "scales",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $7.0=-\\log[H^+]$，所以 $[H^+]=10^{-7.0}=1.0\\times10^{-7}$ mol/L。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) 浓度比为 $10^{-4.5}/10^{-5.6}=10^{1.1}\\approx12.5893$，约 $12.6$ 倍。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $[H^+]_c=500\\cdot10^{-6.1}$，所以 $\\mathrm{pH}_c=-\\log(500\\cdot10^{-6.1})=6.1-\\log500\\approx3.4010$。均得到正浓度；更高浓度对应更低 pH。"
+          }
+        ],
+        "answer": "(a) $1.0\\times10^{-7}$ mol/L；(b) 约 $12.6$ 倍；(c) pH 约 $3.40$。",
+        "printedPage": 402,
+        "pdfPage": 411,
+        "en": {
+          "prompt": "The pH scale is $\\mathrm{pH}=-\\log[H^+]$, with concentration in mol/L. (a) The textbook describes lactic acidosis as elevated lactates and blood pH below $7.35$, and gives a severely ill patient with blood pH $7.0$. Find the hydrogen ion concentration for pH $7.0$. (b) Acid rain results when combustion compounds react with atmospheric water. The problem treats rain below pH $5.3$ as acidic; some Ontario rain averages pH $4.5$. How many times as acidic is pH $4.5$ rain as normal pH $5.6$ rain? (c) Alana's conditioner is $500$ times as acidic as her pH $6.1$ shampoo. Find the conditioner's pH.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $7.0=-\\log[H^+]$, so $[H^+]=10^{-7.0}=1.0\\times10^{-7}$ mol/L."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) The concentration ratio is $10^{-4.5}/10^{-5.6}=10^{1.1}\\approx12.5893$, about $12.6$ times."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $[H^+]_c=500\\cdot10^{-6.1}$, so $\\mathrm{pH}_c=-\\log(500\\cdot10^{-6.1})=6.1-\\log500\\approx3.4010$. Concentrations are positive; greater concentration gives lower pH."
+            }
+          ],
+          "answer": "(a) $1.0\\times10^{-7}$ mol/L; (b) about $12.6$ times; (c) pH approximately $3.40$."
+        },
+        "number": 16,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "排气速度为 $3.1$ km/s 的火箭，速度变化可用齐奥尔科夫斯基方程 $\\Delta v=\\frac{3.1}{0.434}(\\log m_0-\\log m_f)$ 求出（km/s），$m_0,m_f$ 为燃烧前后总质量（kg）。若质量比 $m_0/m_f=1.06$，求速度变化，保留到 $0.01$ km/s。",
+        "concept": "scales",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "因两质量为正，用商法则：$\\log m_0-\\log m_f=\\log(m_0/m_f)=\\log1.06\\approx0.025305865$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "$\\Delta v=(3.1/0.434)(0.025305865\\ldots)\\approx0.180756$ km/s，故为 $0.18$ km/s。质量比大于 $1$，所以变化为正。"
+          }
+        ],
+        "answer": "$\\Delta v\\approx0.18$ km/s。",
+        "printedPage": 402,
+        "pdfPage": 411,
+        "en": {
+          "prompt": "For a rocket with exhaust velocity $3.1$ km/s, the Tsiolkovsky equation gives $\\Delta v=\\frac{3.1}{0.434}(\\log m_0-\\log m_f)$ in km/s, where $m_0,m_f$ are initial and final total masses in kg. If $m_0/m_f=1.06$, find the velocity change to the nearest hundredth of a kilometre per second.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Since both masses are positive, the quotient law gives $\\log m_0-\\log m_f=\\log(m_0/m_f)=\\log1.06\\approx0.025305865$."
+            },
+            {
+              "title": "Step 2",
+              "body": "$\\Delta v=(3.1/0.434)(0.025305865\\ldots)\\approx0.180756$ km/s, giving $0.18$ km/s. The ratio exceeds $1$, so the change is positive."
+            }
+          ],
+          "answer": "$\\Delta v\\approx0.18$ km/s."
+        },
+        "number": 17
+      },
+      {
+        "prompt": "在同一坐标系画 $y=\\log x^2$ 和 $y=2\\log x$。(a) 图像有哪些相同和不同？(b) 为什么不完全相同？(c) 虽然两函数不相同，等式 $\\log x^2=2\\log x$ 在双方对数都有定义时成立。此等式的 $x$ 限制是什么？",
+        "concept": "graph-laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "作图：$y=\\log x^2=2\\log|x|$，取点 $(\\pm0.1,-2),(\\pm1,0),(\\pm10,2)$；$y=2\\log x$ 只取这些点的正 $x$ 分支。两者有竖直渐近线 $x=0$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(a) 在 $x>0$ 完全重合且值域都是实数。第一幅图另有关于 $y$ 轴对称的负 $x$ 分支；第一函数零点为 $\\pm1$，第二函数零点仅 $1$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(b) $x^2>0$ 给 $x\\ne0$，所以 $\\log x^2$ 定义域是 $(-\\infty,0)\\cup(0,\\infty)$；$\\log x$ 只在 $x>0$ 有定义。函数的定义域不同。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(c) 等式需取共同定义域，即 $x>0$；在该域幂法则合法。"
+          }
+        ],
+        "answer": "(a) 正半轴上重合，$\\log x^2$ 另有负半轴分支；(b) 定义域不同；(c) $x>0$。",
+        "printedPage": 402,
+        "pdfPage": 411,
+        "en": {
+          "prompt": "Graph $y=\\log x^2$ and $y=2\\log x$ on the same grid. (a) How are the graphs alike and different? (b) Why are they not identical? (c) Although these are different functions, the equation $\\log x^2=2\\log x$ is true where both logarithms are defined. What is its restriction on $x$?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Plot $y=\\log x^2=2\\log|x|$ using $(\\pm0.1,-2),(\\pm1,0),(\\pm10,2)$. The function $y=2\\log x$ contains only the positive-$x$ branch. Both have vertical asymptote $x=0$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(a) They coincide for $x>0$ and both have range all real numbers. The first also has a negative-$x$ branch reflected in the $y$ axis; its zeros are $\\pm1$, while the second has only $x=1$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b) $x^2>0$ gives $x\\ne0$, so $\\log x^2$ has domain $(-\\infty,0)\\cup(0,\\infty)$, whereas $\\log x$ requires $x>0$. The functions have different domains."
+            },
+            {
+              "title": "Step 4",
+              "body": "(c) The equation uses the common domain $x>0$, on which the power law is valid."
+            }
+          ],
+          "answer": "(a) Same positive branch; $\\log x^2$ also has a negative branch. (b) Their domains differ. (c) $x>0$."
+        },
+        "number": 18,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/8-3-ex18-graph.png"
+      },
+      {
+        "prompt": "(a) 证明换底公式 $\\log_cx=\\frac{\\log_dx}{\\log_dc}$，$c,d$ 为正且不为 $1$ 的实数。(b) 取 $d=10$，用常用对数计算 $\\log_2 9.5$，保留四位小数。(c) 地质学的 Krumbein $\\varphi$ 标度用 $\\varphi=-\\log_2D$ 分类砂砾等天然沉积物粒径，$D$ 为直径（mm）。把公式写成常用对数形式。(d) 卵石的 $\\varphi=-5.7$，中砂的 $\\varphi=2$；卵石直径是中砂的多少倍？用 (c) 的两种公式分别求。",
+        "concept": "change-base",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 另需 $x>0$。令 $u=\\log_cx$，即 $c^u=x$。取以 $d$ 为底的对数：$u\\log_dc=\\log_dx$。因 $c\\ne1$，$\\log_dc\\ne0$，得 $u=\\log_dx/\\log_dc$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $\\log_2 9.5=\\log9.5/\\log2=0.977723605\\ldots/0.301029996\\ldots\\approx3.2479$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) 换底得 $\\varphi=-\\log D/\\log2$，其中 $D>0$。这里对数中使用直径以 mm 表示的数值。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) 以 $2$ 为底：$D_p=2^{5.7}$ mm、$D_s=2^{-2}$ mm，所以 $D_p/D_s=2^{5.7-(-2)}=2^{7.7}\\approx207.9366$。"
+          },
+          {
+            "title": "第 5 步",
+            "body": "用常用对数：$\\log D_p=5.7\\log2$、$\\log D_s=-2\\log2$，相减得 $\\log(D_p/D_s)=7.7\\log2$。因此 $D_p/D_s=10^{7.7\\log2}\\approx207.9366$，结果一致。"
+          }
+        ],
+        "answer": "(a) 公式已证（$x>0$）；(b) $3.2479$；(c) $\\varphi=-\\log D/\\log2$；(d) 约 $208$ 倍。",
+        "printedPage": 402,
+        "pdfPage": 411,
+        "en": {
+          "prompt": "(a) Prove $\\log_cx=\\frac{\\log_dx}{\\log_dc}$, where $c,d$ are positive real bases other than $1$. (b) Use $d=10$ and common logarithms to find $\\log_2 9.5$ to four decimal places. (c) The Krumbein $\\varphi$ scale classifies natural sediments by $\\varphi=-\\log_2D$, where diameter $D$ is in mm. Express the formula using common logarithms. (d) A pebble has $\\varphi=-5.7$ and medium sand $\\varphi=2$. How many times the sand's diameter is the pebble's diameter? Use both versions of the formula.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Also require $x>0$. Let $u=\\log_cx$, so $c^u=x$. Taking base-$d$ logarithms gives $u\\log_dc=\\log_dx$. Since $c\\ne1$, $\\log_dc\\ne0$; divide to obtain $u=\\log_dx/\\log_dc$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $\\log_2 9.5=\\log9.5/\\log2=0.977723605\\ldots/0.301029996\\ldots\\approx3.2479$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Change base to get $\\varphi=-\\log D/\\log2$, $D>0$. The logarithm uses the numerical diameter measured in mm."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) Using base $2$, $D_p=2^{5.7}$ mm and $D_s=2^{-2}$ mm, so $D_p/D_s=2^{5.7-(-2)}=2^{7.7}\\approx207.9366$."
+            },
+            {
+              "title": "Step 5",
+              "body": "Using common logarithms, $\\log D_p=5.7\\log2$ and $\\log D_s=-2\\log2$, so $\\log(D_p/D_s)=7.7\\log2$. Thus $D_p/D_s=10^{7.7\\log2}\\approx207.9366$, the same result."
+            }
+          ],
+          "answer": "(a) Formula proved for $x>0$; (b) $3.2479$; (c) $\\varphi=-\\log D/\\log2$; (d) about $208$ times."
+        },
+        "number": 19,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "证明各恒等式：(a) $\\log_{q^3}p^3=\\log_qp$；(b) $\\frac1{\\log_p2}-\\frac1{\\log_q2}=\\log_2\\frac pq$；(c) $\\frac1{\\log_qp}+\\frac1{\\log_qp}=\\frac1{\\log_{q^2}p}$；(d) $\\log_{1/q}p=\\log_q\\frac1p$。",
+        "concept": "change-base",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) 限制 $p>0,q>0,q\\ne1$。换底：$\\log_{q^3}p^3=\\frac{3\\log p}{3\\log q}=\\frac{\\log p}{\\log q}=\\log_qp$。$p=1$ 亦可。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) 限制 $p,q>0,p,q\\ne1$。$1/\\log_p2=\\log_2p$，$1/\\log_q2=\\log_2q$，故左边 $\\log_2p-\\log_2q=\\log_2(p/q)$。两个分母非零，因为 $2\\ne1$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) 限制 $p,q>0,p,q\\ne1$。原题确有两个相同的项。左边为 $2\\frac{\\log q}{\\log p}$；右边 $1/\\log_{q^2}p=\\frac{\\log q^2}{\\log p}=2\\frac{\\log q}{\\log p}$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) 限制 $p>0,q>0,q\\ne1$。$\\log_{1/q}p=\\frac{\\log p}{\\log(q^{-1})}=-\\frac{\\log p}{\\log q}=\\frac{\\log(p^{-1})}{\\log q}=\\log_q(1/p)$。"
+          }
+        ],
+        "answer": "(a)–(d) 在步骤所列共同定义域上均成立。",
+        "printedPage": 402,
+        "pdfPage": 411,
+        "en": {
+          "prompt": "Prove each identity: (a) $\\log_{q^3}p^3=\\log_qp$; (b) $\\frac1{\\log_p2}-\\frac1{\\log_q2}=\\log_2\\frac pq$; (c) $\\frac1{\\log_qp}+\\frac1{\\log_qp}=\\frac1{\\log_{q^2}p}$; (d) $\\log_{1/q}p=\\log_q\\frac1p$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Require $p>0,q>0,q\\ne1$. Change base: $\\log_{q^3}p^3=\\frac{3\\log p}{3\\log q}=\\frac{\\log p}{\\log q}=\\log_qp$. The value $p=1$ is allowed."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Require $p,q>0,p,q\\ne1$. The reciprocals are $1/\\log_p2=\\log_2p$ and $1/\\log_q2=\\log_2q$, so their difference is $\\log_2(p/q)$. Both denominators are nonzero since $2\\ne1$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Require $p,q>0,p,q\\ne1$. The two identical terms are as printed. The left side is $2\\frac{\\log q}{\\log p}$; the right side is $1/\\log_{q^2}p=\\frac{\\log q^2}{\\log p}=2\\frac{\\log q}{\\log p}$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) Require $p>0,q>0,q\\ne1$. Then $\\log_{1/q}p=\\frac{\\log p}{\\log(q^{-1})}=-\\frac{\\log p}{\\log q}=\\frac{\\log(p^{-1})}{\\log q}=\\log_q(1/p)$."
+            }
+          ],
+          "answer": "(a)–(d) hold on the common domains stated in the steps."
+        },
+        "number": 20,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "描述如何由 $y=\\log x$ 的图像得到：(a) $y=\\log x^3$；(b) $y=\\log(x+2)^5$；(c) $y=\\log(1/x)$；(d) $y=\\log\\frac1{\\sqrt{x-6}}$。",
+        "concept": "graph-laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $x^3>0$ 要求 $x>0$；$y=3\\log x$，所以竖直伸长为 $3$ 倍。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) $(x+2)^5>0$ 要求 $x>-2$；$y=5\\log(x+2)$，所以向左平移 $2$，再竖直伸长为 $5$ 倍。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "(c) $1/x>0$ 要求 $x>0$；$y=-\\log x$，所以关于 $x$ 轴反射。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "(d) 根式在分母且为正，所以 $x>6$。$y=-\\frac12\\log(x-6)$，所以向右平移 $6$，竖直缩为 $1/2$，关于 $x$ 轴反射。"
+          }
+        ],
+        "answer": "(a) 竖直伸长 $3$ 倍；(b) 左移 $2$、竖直伸长 $5$ 倍；(c) 关于 $x$ 轴反射；(d) 右移 $6$、竖直缩为 $1/2$、关于 $x$ 轴反射。",
+        "printedPage": 403,
+        "pdfPage": 412,
+        "en": {
+          "prompt": "Describe how to obtain each graph from $y=\\log x$: (a) $y=\\log x^3$; (b) $y=\\log(x+2)^5$; (c) $y=\\log(1/x)$; (d) $y=\\log\\frac1{\\sqrt{x-6}}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $x^3>0$ requires $x>0$; $y=3\\log x$, so stretch vertically by a factor of $3$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $(x+2)^5>0$ requires $x>-2$; $y=5\\log(x+2)$, so translate left $2$ and stretch vertically by a factor of $5$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $1/x>0$ requires $x>0$; $y=-\\log x$, so reflect in the $x$ axis."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) The positive root is in the denominator, so $x>6$. Since $y=-\\frac12\\log(x-6)$, translate right $6$, compress vertically by $1/2$, and reflect in the $x$ axis."
+            }
+          ],
+          "answer": "(a) Vertical stretch by $3$; (b) left $2$, vertical stretch by $5$; (c) reflection in the $x$ axis; (d) right $6$, vertical compression by $1/2$, reflection in the $x$ axis."
+        },
+        "number": "C1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "求 $\\log_2(\\sin\\frac\\pi4)+\\log_2(\\sin\\frac{3\\pi}4)$。",
+        "concept": "evaluate",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "角度以弧度给出；$\\sin(\\pi/4)=\\sin(3\\pi/4)=\\sqrt2/2>0$，所以两个对数均有定义。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "用积法则得 $\\log_2[(\\sqrt2/2)^2]=\\log_2(1/2)=\\log_2 2^{-1}=-1$。"
+          }
+        ],
+        "answer": "$-1$。",
+        "printedPage": 403,
+        "pdfPage": 412,
+        "en": {
+          "prompt": "Evaluate $\\log_2(\\sin\\frac\\pi4)+\\log_2(\\sin\\frac{3\\pi}4)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "The angles are in radians; $\\sin(\\pi/4)=\\sin(3\\pi/4)=\\sqrt2/2>0$, so both logarithms are defined."
+            },
+            {
+              "title": "Step 2",
+              "body": "The product law gives $\\log_2[(\\sqrt2/2)^2]=\\log_2(1/2)=\\log_2 2^{-1}=-1$."
+            }
+          ],
+          "answer": "$-1$."
+        },
+        "number": "C2"
+      },
+      {
+        "prompt": "(a) 等差数列的和 $\\log2+\\log4+\\log8+\\log16+\\log32$ 的公差 $d$ 是什么？(b) 将此和表示为公差的倍数。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "(a) $\\log4-\\log2=\\log(4/2)=\\log2$；后续相邻真数比皆为 $2$，故 $d=\\log2$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "(b) 五项为 $d,2d,3d,4d,5d$，和为 $(1+2+3+4+5)d=15d$。亦可验证积为 $2^{15}$，对数为 $15\\log2$。"
+          }
+        ],
+        "answer": "(a) $d=\\log2$；(b) $15d$。",
+        "printedPage": 403,
+        "pdfPage": 412,
+        "en": {
+          "prompt": "(a) What is the common difference $d$ in the arithmetic series $\\log2+\\log4+\\log8+\\log16+\\log32$? (b) Express its sum as a multiple of the common difference.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $\\log4-\\log2=\\log(4/2)=\\log2$; every subsequent ratio is also $2$, hence $d=\\log2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) The terms are $d,2d,3d,4d,5d$ and their sum is $(1+2+3+4+5)d=15d$. Equivalently their arguments multiply to $2^{15}$, whose log is $15\\log2$."
+            }
+          ],
+          "answer": "(a) $d=\\log2$; (b) $15d$."
+        },
+        "number": "C3",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "为三条对数法则分别复制所示 Frayer 模板，在相应位置写出法则名称、代数表示、文字描述、例子与常见错误。",
+        "concept": "laws",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "积法则：代数式 $\\log_c(MN)=\\log_cM+\\log_cN$；文字：积的对数等于各因数对数之和。例：$\\log_2(4\\cdot8)=2+3=5$。错误：误写 $\\log_c(M+N)=\\log_cM+\\log_cN$。条件为 $M,N>0,c>0,c\\ne1$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "商法则：$\\log_c(M/N)=\\log_cM-\\log_cN$；文字：商的对数等于被除数对数减除数对数。例：$\\log_3(81/3)=4-1=3$。错误：用两个对数相除或颠倒相减顺序。条件同上。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "幂法则：$\\log_c(M^P)=P\\log_cM$；文字：幂的对数等于指数乘底数的对数。例：$\\log_5(25^3)=3\\log_525=6$。错误：误把 $(\\log_cM)^P$ 写为 $P\\log_cM$，或对负 $M$ 不检查定义域。条件为 $M>0,c>0,c\\ne1,P\\in\\mathbb R$。"
+          }
+        ],
+        "answer": "三个完成示例分别见步骤；模板可用同样五个栏目组织。",
+        "printedPage": 403,
+        "pdfPage": 412,
+        "en": {
+          "prompt": "Copy the Frayer template for each logarithm law. Give the name, algebraic representation, written description, example and common errors in the appropriate spaces.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Product law: $\\log_c(MN)=\\log_cM+\\log_cN$. Description: the logarithm of a product is the sum of the logarithms. Example: $\\log_2(4\\cdot8)=2+3=5$. Error: claiming $\\log_c(M+N)=\\log_cM+\\log_cN$. Conditions: $M,N>0,c>0,c\\ne1$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Quotient law: $\\log_c(M/N)=\\log_cM-\\log_cN$. Description: the logarithm of a quotient is the logarithm of the dividend minus that of the divisor. Example: $\\log_3(81/3)=4-1=3$. Errors: dividing the logarithms or reversing the subtraction. The same positivity and base conditions apply."
+            },
+            {
+              "title": "Step 3",
+              "body": "Power law: $\\log_c(M^P)=P\\log_cM$. Description: the logarithm of a power is its exponent times the logarithm of the base. Example: $\\log_5(25^3)=3\\log_525=6$. Errors: replacing $(\\log_cM)^P$ by $P\\log_cM$, or ignoring the domain when $M$ is negative. Conditions: $M>0,c>0,c\\ne1,P\\in\\mathbb R$."
+            }
+          ],
+          "answer": "The steps give a completed model for each law, organized into the template's five requested fields."
+        },
+        "number": "C4",
+        "subpartIds": [
+          "product",
+          "quotient",
+          "power"
+        ],
+        "sourceImage": "assets/8-3-frayer.png"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "reflect-4",
+      "reflect-5",
+      "sidebar-quotient",
+      "sidebar-example-1",
+      "your-turn-1",
+      "sidebar-example-2",
+      "your-turn-2",
+      "sidebar-example-3",
+      "your-turn-3",
+      "sidebar-example-4",
+      "your-turn-4",
+      "project-corner"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "expectedSubparts": {
+      "investigate-1": [
+        "a",
+        "bi",
+        "bii",
+        "biii",
+        "biv",
+        "bv",
+        "bvi",
+        "c",
+        "d"
+      ],
+      "investigate-2": [
+        "a",
+        "bi",
+        "bii",
+        "biii",
+        "biv",
+        "bv",
+        "bvi",
+        "c",
+        "d"
+      ],
+      "investigate-3": [
+        "a",
+        "bi",
+        "bii",
+        "biii",
+        "biv",
+        "bv",
+        "bvi",
+        "c",
+        "d"
+      ],
+      "reflect-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "your-turn-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "example-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-3": [
+        "a",
+        "b"
+      ],
+      "your-turn-3": [
+        "a",
+        "b"
+      ],
+      "example-4": [
+        "a",
+        "b"
+      ],
+      "your-turn-4": [
+        "a",
+        "b"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-5": [
+        "a",
+        "b"
+      ],
+      "exercise-6": [
+        "a",
+        "b"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-10": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-16": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-18": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-19": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-20": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-C1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-C3": [
+        "a",
+        "b"
+      ],
+      "exercise-C4": [
+        "product",
+        "quotient",
+        "power"
+      ],
+      "project-corner": [
+        "logarithmicmodel",
+        "exponentialmodel",
+        "comparison"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "reviewer": "Chapter 8 lead, independent of author_8_3",
+    "note": "All PDF401–412 pages visually reread; all 43 bilingual records and 132 leaf tasks reviewed with independent algebra, domains, proof hypotheses, application ratios and all-data model recalculation. See audit/8-3-independent.md and calculation JSON."
+  }
+}

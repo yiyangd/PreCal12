@@ -1,0 +1,732 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "8-test",
+    "section": "8 Practice Test",
+    "title": "第 8 章练习测试",
+    "en": {
+      "title": "Chapter 8 Practice Test"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        419,
+        420
+      ],
+      "pdfPages": [
+        428,
+        429
+      ]
+    },
+    "concepts": [
+      {
+        "id": "inverse",
+        "title": "对数基础与选择题",
+        "summary": "$\\log_bx=y\\Leftrightarrow b^y=x$，$b>0,b\\ne1,x>0$。反函数图关于 $y=x$ 对称。",
+        "method": [
+          {
+            "title": "检查",
+            "body": "把选项转回指数式或核对图像域、渐近线与单调性。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Logarithm fundamentals and multiple choice",
+          "summary": "$\\log_bx=y\\Leftrightarrow b^y=x$, with $b>0,b\\ne1,x>0$. Inverse graphs reflect in $y=x$.",
+          "method": [
+            {
+              "title": "Check",
+              "body": "Convert choices back to exponential form or check a graph’s domain, asymptote and monotonicity."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "transform",
+        "title": "变换与图像特征",
+        "summary": "用 $b(x-h)>0$ 求域，用 $x=h$ 求垂直渐近线；令 $x=0$ 或 $y=0$ 求截距并核对域。",
+        "method": [
+          {
+            "title": "点映射",
+            "body": "对 $a\\log_c(b(x-h))+k$ 使用 $(u,v)\\mapsto(u/b+h,av+k)$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Transformations and graph characteristics",
+          "summary": "Use $b(x-h)>0$ for the domain and $x=h$ for the vertical asymptote. Set $x=0$ or $y=0$ for intercepts and check the domain.",
+          "method": [
+            {
+              "title": "Map points",
+              "body": "For $a\\log_c(b(x-h))+k$, use $(u,v)\\mapsto(u/b+h,av+k)$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "equations",
+        "title": "对数与指数方程",
+        "summary": "对数方程保留所有原真数的正限制；候选值必须代回。指数方程取对数后保留精确式到最后舍入。",
+        "method": [
+          {
+            "title": "求解",
+            "body": "合并对数并指数化，或对指数两边取对数；验证全部候选。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Logarithmic and exponential equations",
+          "summary": "Keep positivity restrictions for every original log argument and substitute candidates back. For exponential equations, retain exact log expressions until rounding.",
+          "method": [
+            {
+              "title": "Solve",
+              "body": "Combine and exponentiate logs, or take logs of exponential sides; verify all candidates."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "applications",
+        "title": "应用与解释",
+        "summary": "先统一单位和每期利率；科学尺度的对数差表示倍数。增长与衰减周期保持正值，实际支付按完整期数判断。",
+        "method": [
+          {
+            "title": "建模",
+            "body": "写出比值或现金流方程，再求未知时间、周期或比例。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Applications and interpretation",
+          "summary": "Align units and periodic rates. Log differences on scientific scales represent ratios. Growth and decay periods are positive, and actual payments require whole-period interpretation.",
+          "method": [
+            {
+              "title": "Model",
+              "body": "Write a ratio or cash-flow equation, then solve for time, period or ratio."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "kind": "practice-test"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "选择 $y=(1/4)^x$ 的逆函数图：A、B、C、D见原图。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "交换 $x,y$ 得 $x=(1/4)^y$，所以 $y=\\log_{1/4}x$。它定义在 $x>0$，递减，过 $(1,0),(1/4,1),(4,-1)$，渐近线 $x=0$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "D符合这些特征；A、B是指数形，C是递增对数形。"
+          }
+        ],
+        "answer": "D。",
+        "printedPage": 419,
+        "pdfPage": 428,
+        "en": {
+          "prompt": "Which graph represents the inverse of $y=(1/4)^x$? Choose A, B, C or D from the given graphs.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Swapping $x,y$ gives $x=(1/4)^y$, so $y=\\log_{1/4}x$. It is defined for $x>0$, decreases, passes through $(1,0),(1/4,1),(4,-1)$ and has asymptote $x=0$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "D has these features. A and B are exponential-shaped curves, while C is an increasing log curve."
+            }
+          ],
+          "answer": "D."
+        },
+        "number": 1,
+        "sourceImage": "assets/8-test-1-source.png"
+      },
+      {
+        "prompt": "$k=-\\log_h5$ 的指数形式是：A $h^k=1/5$；B $h^k=-5$；C $k^h=1/5$；D $k^h=-5$。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$-k=\\log_h5$，所以 $h^{-k}=5$，取倒数得 $h^k=1/5$。前提 $h>0,h\\ne1$。"
+          }
+        ],
+        "answer": "A。",
+        "printedPage": 419,
+        "pdfPage": 428,
+        "en": {
+          "prompt": "The exponential form of $k=-\\log_h5$ is: A $h^k=1/5$; B $h^k=-5$; C $k^h=1/5$; D $k^h=-5$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$-k=\\log_h5$ means $h^{-k}=5$. Taking reciprocals gives $h^k=1/5$, with $h>0,h\\ne1$."
+            }
+          ],
+          "answer": "A."
+        },
+        "number": 2
+      },
+      {
+        "prompt": "$y=\\log_3x$ 变成 $y=\\log_3\\sqrt{x+7}$。选择：A 竖直因子1/2、上移7；B 竖直因子1/2、左移7；C 水平因子1/2、上移7；D 水平因子1/2、左移7。",
+        "concept": "transform",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "对数真数要求 $\\sqrt{x+7}>0$，即 $x>-7$。幂法则给 $y=\\frac12\\log_3(x+7)$，所以竖直缩为1/2、左移7。"
+          }
+        ],
+        "answer": "B。",
+        "printedPage": 419,
+        "pdfPage": 428,
+        "en": {
+          "prompt": "$y=\\log_3x$ is transformed to $y=\\log_3\\sqrt{x+7}$. Choose: A vertical factor 1/2 and up 7; B vertical factor 1/2 and left 7; C horizontal factor 1/2 and up 7; D horizontal factor 1/2 and left 7.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "The log requires $\\sqrt{x+7}>0$, hence $x>-7$. The power law gives $y=\\frac12\\log_3(x+7)$: vertical factor 1/2 and left 7."
+            }
+          ],
+          "answer": "B."
+        },
+        "number": 3
+      },
+      {
+        "prompt": "$\\log_3(x^p/x^q)$ 等于：A $(p-q)\\log_3x$；B $p/q$；C $p-q$；D $(p/q)\\log_3x$。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "在 $x>0$ 的通常实幂域上，$x^p/x^q=x^{p-q}$，再用幂法则得 $(p-q)\\log_3x$。"
+          }
+        ],
+        "answer": "A（$x>0$）。",
+        "printedPage": 419,
+        "pdfPage": 428,
+        "en": {
+          "prompt": "$\\log_3(x^p/x^q)$ equals: A $(p-q)\\log_3x$; B $p/q$; C $p-q$; D $(p/q)\\log_3x$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "On the usual real-power domain $x>0$, $x^p/x^q=x^{p-q}$. The power law gives $(p-q)\\log_3x$."
+            }
+          ],
+          "answer": "A, for $x>0$."
+        },
+        "number": 4
+      },
+      {
+        "prompt": "若 $x=\\log_2 3$，则 $\\log_2(8\\sqrt3)$ 是：A $x/2+8$；B $2x+8$；C $x/2+3$；D $2x+3$。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$\\log_2(8\\sqrt3)=\\log_2 8+\\frac12\\log_2 3=3+x/2$，因为 $8=2^3$。"
+          }
+        ],
+        "answer": "C。",
+        "printedPage": 419,
+        "pdfPage": 428,
+        "en": {
+          "prompt": "If $x=\\log_2 3$, then $\\log_2(8\\sqrt3)$ is: A $x/2+8$; B $2x+8$; C $x/2+3$; D $2x+3$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$\\log_2(8\\sqrt3)=\\log_2 8+\\frac12\\log_2 3=3+x/2$, since $8=2^3$."
+            }
+          ],
+          "answer": "C."
+        },
+        "number": 5
+      },
+      {
+        "prompt": "$pH=-\\log[H^+]$（mol/L）。乙酸pH2.9，甲酸浓度为其4倍。甲酸pH为：A1.1；B2.3；C3.5；D6.9。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$[H^+]_f=4\\cdot10^{-2.9}$，故 $pH_f=-\\log(4\\cdot10^{-2.9})=2.9-\\log4\\approx2.29794$，即2.3。"
+          }
+        ],
+        "answer": "B，2.3。",
+        "printedPage": 419,
+        "pdfPage": 428,
+        "en": {
+          "prompt": "$pH=-\\log[H^+]$, with concentration in mol/L. Acetic acid has pH 2.9; formic acid is four times as concentrated. Its pH is A1.1, B2.3, C3.5 or D6.9.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$[H^+]_f=4\\cdot10^{-2.9}$, so $pH_f=2.9-\\log4\\approx2.29794$, rounding to 2.3."
+            }
+          ],
+          "answer": "B, 2.3."
+        },
+        "number": 6
+      },
+      {
+        "prompt": "求 $x$：(a) $\\log_9x=-2$；(b) $\\log_x125=3/2$；(c) $\\log_3(\\log_x125)=1$；(d) $7^{\\log_7 3}=x$；(e) $\\log_2(8^{x-3})=4$。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x=9^{-2}=1/81>0$。(b) 底数 $x>0,x\\ne1$；$x^{3/2}=125$，$x=125^{2/3}=25$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 外层对数给 $\\log_x125=3$；$x^3=125$，$x=5$。底数5合法，内层值3为正。(d) 逆性质给 $x=3$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(e) $8^{x-3}>0$ 对所有实 $x$。$\\log_2(8^{x-3})=3(x-3)=4$，所以 $x=13/3$；原真数为16。"
+          }
+        ],
+        "answer": "(a)1/81；(b)25；(c)5；(d)3；(e)13/3。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "Find $x$: (a) $\\log_9x=-2$; (b) $\\log_x125=3/2$; (c) $\\log_3(\\log_x125)=1$; (d) $7^{\\log_7 3}=x$; (e) $\\log_2(8^{x-3})=4$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x=9^{-2}=1/81>0$. (b) Base $x>0,x\\ne1$: $x^{3/2}=125$ gives $x=25$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) The outer log gives $\\log_x125=3$, so $x^3=125$ and $x=5$. Base 5 is valid and the inner value 3 is positive. (d) The inverse property gives $x=3$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(e) $8^{x-3}>0$ for all real $x$. The left side is $3(x-3)=4$, so $x=13/3$, giving original argument 16."
+            }
+          ],
+          "answer": "(a)1/81; (b)25; (c)5; (d)3; (e)13/3."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      {
+        "prompt": "若 $5^{m+n}=125$ 且 $\\log_{m-n}8=3$，求 $m,n$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$125=5^3$，故 $m+n=3$。第二式要求 $m-n>0,m-n\\ne1$，且 $(m-n)^3=8$，故 $m-n=2$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "相加得 $2m=5$，$m=5/2$；再 $n=3-5/2=1/2$。底数2合法且 $\\log_2 8=3$。"
+          }
+        ],
+        "answer": "$m=5/2,n=1/2$。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "If $5^{m+n}=125$ and $\\log_{m-n}8=3$, find $m,n$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$125=5^3$, so $m+n=3$. The second requires $m-n>0,m-n\\ne1$ and gives $(m-n)^3=8$, hence $m-n=2$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Adding gives $m=5/2$, then $n=1/2$. Base 2 is valid and $\\log_2 8=3$."
+            }
+          ],
+          "answer": "$m=5/2,n=1/2$."
+        },
+        "number": 8
+      },
+      {
+        "prompt": "描述从 $y=\\log_2x$ 到 $y=-5\\log_2(8(x-1))$ 的一系列变换。还能用什么另一组变换？",
+        "concept": "transform",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "直接点映射为 $(u,v)\\mapsto(u/8+1,-5v)$：水平缩为1/8、竖直伸为5倍并关于 $x$轴反射、最后右移1。域 $x>1$，渐近线 $x=1$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "另一法：$-5\\log_2(8(x-1))=-5\\log_2(x-1)-15$。先竖直伸5倍并 $x$轴反射，再右移1、下移15。两式在 $x>1$ 完全相同。"
+          }
+        ],
+        "answer": "两组有效变换如上；共同域 $x>1$。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "Describe transformations from $y=\\log_2x$ to $y=-5\\log_2(8(x-1))$. What other series could be used?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "The direct mapping is $(u,v)\\mapsto(u/8+1,-5v)$: horizontal factor 1/8, vertical factor 5 with reflection in the $x$-axis, then right 1. Domain $x>1$, asymptote $x=1$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Alternatively, $-5\\log_2(8(x-1))=-5\\log_2(x-1)-15$. Vertically scale by 5 and reflect in the $x$-axis, then translate right 1 and down 15. The formulas agree for $x>1$."
+            }
+          ],
+          "answer": "Two valid series are given above; both have domain $x>1$."
+        },
+        "number": 9
+      },
+      {
+        "prompt": "对 $y=2\\log_5(x+5)+6$ 求：(a)渐近线；(b)定义域和值域；(c)$y$截距；(d)$x$截距。",
+        "concept": "transform",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x+5=0$ 给 $x=-5$。(b) 真数正给 $x>-5$；值域为 $\\mathbb R$。(c) $x=0$ 时 $y=2\\log_5 5+6=8$，截距 $(0,8)$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) $0=2\\log_5(x+5)+6$，$x+5=5^{-3}=1/125$，所以 $x=-624/125$，位于域内。"
+          }
+        ],
+        "answer": "(a)$x=-5$；(b)$(-5,\\infty),\\mathbb R$；(c)$(0,8)$；(d)$(-624/125,0)$。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "For $y=2\\log_5(x+5)+6$, find (a)asymptote, (b)domain and range, (c)$y$-intercept, (d)$x$-intercept.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x+5=0$ gives $x=-5$. (b) Positivity gives domain $x>-5$; range is $\\mathbb R$. (c) At $x=0$, $y=2\\log_5 5+6=8$, so $(0,8)$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) Set $y=0$: $x+5=5^{-3}=1/125$, hence $x=-624/125$, inside the domain."
+            }
+          ],
+          "answer": "(a)$x=-5$; (b)$(-5,\\infty),\\mathbb R$; (c)$(0,8)$; (d)$(-624/125,0)$."
+        },
+        "number": 10,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "求 $x$：(a) $\\log_2(x-4)-\\log_2(x+2)=4$；(b) $\\log_2(x-4)=4-\\log_2(x+2)$；(c) $\\log_2((x^2-2x)^7)=21$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 域 $x>4$；$(x-4)/(x+2)=16$ 给 $x=-12/5$，不在域内，故无解。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 域 $x>4$；$(x-4)(x+2)=16$，$x^2-2x-24=(x-6)(x+4)=0$，只取6；原真数2、8积16。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 七次幂为正要求 $x^2-2x>0$，即 $x<0$ 或 $x>2$。$(x^2-2x)^7=2^{21}$，故 $x^2-2x=8$，$(x-4)(x+2)=0$。$-2,4$ 均令原真数 $8^7=2^{21}$。"
+          }
+        ],
+        "answer": "(a)无解；(b)6；(c)−2,4。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "Find $x$: (a) $\\log_2(x-4)-\\log_2(x+2)=4$; (b) $\\log_2(x-4)=4-\\log_2(x+2)$; (c) $\\log_2((x^2-2x)^7)=21$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Domain $x>4$. $(x-4)/(x+2)=16$ gives $x=-12/5$, outside the domain; no solution."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Domain $x>4$. $(x-4)(x+2)=16$ gives $(x-6)(x+4)=0$; retain 6, whose argument product is $2\\cdot8=16$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Positivity of the seventh power requires $x^2-2x>0$, hence $x<0$ or $x>2$. From $(x^2-2x)^7=2^{21}$ obtain $x^2-2x=8$, giving $(x-4)(x+2)=0$. Both −2 and 4 produce original argument $8^7=2^{21}$."
+            }
+          ],
+          "answer": "(a)No solution; (b)6; (c)−2,4."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "求 $x$ 至两位小数：(a) $3^{2x+1}=75$；(b) $12^{x-2}=3^{2x+1}$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $(2x+1)\\log3=\\log75$，$x=(\\log75/\\log3-1)/2\\approx1.46$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $(x-2)\\log12=(2x+1)\\log3$，$x(\\log12-2\\log3)=2\\log12+\\log3$，所以 $x=(2\\log12+\\log3)/(\\log12-2\\log3)\\approx21.09$。分母 $\\log(4/3)>0$，精确值可验等式。"
+          }
+        ],
+        "answer": "(a)1.46；(b)21.09。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "Solve to two decimal places: (a) $3^{2x+1}=75$; (b) $12^{x-2}=3^{2x+1}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $(2x+1)\\log3=\\log75$ gives $x=(\\log75/\\log3-1)/2\\approx1.46$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $(x-2)\\log12=(2x+1)\\log3$ gives $x(\\log12-2\\log3)=2\\log12+\\log3$, so $x=(2\\log12+\\log3)/(\\log12-2\\log3)\\approx21.09$. The denominator $\\log(4/3)>0$; the exact value verifies the equation."
+            }
+          ],
+          "answer": "(a)1.46; (b)21.09."
+        },
+        "number": 12,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "Holly将中奖1 000 000元全投年金，年利率6%，半年复利。每半年末取35 000元，能取多少年？用 $PV=R[1-(1+i)^{-n}]/i$，$n$为等额付款数、$i$每期利率。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$i=0.06/2=0.03$。$1000000=35000[1-(1.03)^{-n}]/0.03$，所以 $(1.03)^{-n}=1-30000/35000=1/7$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "$n=\\log7/\\log1.03\\approx65.8318$ 次，即模型约32.9159年。实际可足额取65次，最后足额付款在32.5年；第66次（33年）只能取余款。不能把65.8318向上取整为66次完整35 000元。"
+          }
+        ],
+        "answer": "65次完整提款，持续至32.5年；模型耗尽时间约32.92年，第33年末仅余款。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "Holly invests a 1 000 000 dollars lottery win in an annuity at 6% annually, compounded semi-annually. She withdraws 35 000 dollars at each six-month end. For how many years can she make withdrawals? Use $PV=R[1-(1+i)^{-n}]/i$, with $n$ equal payments and periodic rate $i$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$i=0.03$. From $1000000=35000[1-(1.03)^{-n}]/0.03$, obtain $(1.03)^{-n}=1-30000/35000=1/7$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "$n=\\log7/\\log1.03\\approx65.8318$ payments, or 32.9159 model years. In practice, 65 full withdrawals are possible, the last at 32.5 years; only a partial balance is available at payment 66, year 33. Rounding up would incorrectly promise 66 full 35 000 dollars payments."
+            }
+          ],
+          "answer": "65 full withdrawals through 32.5 years; model duration about 32.92 years, with only a partial final withdrawal at year 33."
+        },
+        "number": 13
+      },
+      {
+        "prompt": "跨细胞壁运输1 mol物质的自由能变化 $\\Delta G=1427.6(\\log C_2-\\log C_1)$ Cal，$C_1$细胞内浓度、$C_2$细胞外浓度。若葡萄糖 $\\Delta G=4200$ Cal，外浓度是内浓度多少倍？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$C_1,C_2>0$。$\\log(C_2/C_1)=4200/1427.6\\approx2.94200$，所以 $C_2/C_1=10^{4200/1427.6}\\approx874.985$。正能量差对应外浓度更大。"
+          }
+        ],
+        "answer": "约875倍。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "The free-energy change to transport one mole across a cell wall is $\\Delta G=1427.6(\\log C_2-\\log C_1)$ Cal, where $C_1$ is inside and $C_2$ outside concentration. If glucose transport has $\\Delta G=4200$ Cal, how many times as great is the outside concentration?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$C_1,C_2>0$. $\\log(C_2/C_1)=4200/1427.6\\approx2.94200$, hence $C_2/C_1=10^{4200/1427.6}\\approx874.985$. The positive energy difference corresponds to greater outside concentration."
+            }
+          ],
+          "answer": "Approximately 875 times."
+        },
+        "number": 14
+      },
+      {
+        "prompt": "声级 $\\beta=10\\log(I/I_0)$ dB，$I_0=10^{-12}$ W/m²。餐厅冰箱45 dB，老板拟再放一台相同冰箱并排运行，担心太吵。应担心吗？说明。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "一台声强 $I=I_0 10^{4.5}$。按两台独立声源的声强相加，合声强为 $2I$，声级 $10\\log(2I/I_0)=45+10\\log2\\approx48.01$ dB。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "只增加约3.01 dB，并非90 dB。“太吵”没有给定判据，故不能从数据断定舒适度；可说明数值增幅有限，是否可接受需与餐厅的噪声要求比较。"
+          }
+        ],
+        "answer": "合计约48.0 dB，增加3.0 dB；是否太吵需给定标准。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "Sound level is $\\beta=10\\log(I/I_0)$ dB, with $I_0=10^{-12}$ W/m². A restaurant refrigerator is 45 dB. The owner wants a second identical refrigerator side by side and worries the combined noise will be too loud. Should she be concerned? Justify.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "One unit has intensity $I=I_0 10^{4.5}$. Adding intensities for two independent sources gives $2I$, hence combined level $45+10\\log2\\approx48.01$ dB."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "The increase is about 3.01 dB, not a doubling of the decibel number. No criterion for “too loud” is specified, so comfort cannot be decided from the data alone; compare the calculated level with the restaurant’s noise requirements."
+            }
+          ],
+          "answer": "About 48.0 dB combined, a 3.0 dB increase; whether that is too loud needs a stated criterion."
+        },
+        "number": 15
+      },
+      {
+        "prompt": "乙醇生物反应器酵母初始4.0 g/L，8 h后12.8 g/L。求倍增时间至0.1 h。",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "设倍增时间 $d>0$，$12.8=4.0\\cdot2^{8/d}$。$3.2=2^{8/d}$，$d=8\\log2/\\log3.2\\approx4.7674$ h，舍入4.8 h。未舍入值代回给12.8 g/L。"
+          }
+        ],
+        "answer": "4.8 h。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "A yeast culture in an ethanol bioreactor starts at 4.0 g/L and reaches 12.8 g/L after 8 h. Find its doubling time to the nearest tenth of an hour.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Let doubling time $d>0$. $12.8=4.0\\cdot2^{8/d}$ gives $3.2=2^{8/d}$, so $d=8\\log2/\\log3.2\\approx4.7674$ h, rounding to 4.8 h. The unrounded value reproduces 12.8 g/L."
+            }
+          ],
+          "answer": "4.8 h."
+        },
+        "number": 16
+      },
+      {
+        "prompt": "CPI以1992年固定商品篮价格为100%，2006年为129.9%。若保持相同增长率，哪一年价格成为1992年的两倍？",
+        "concept": "applications",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "设 $t$ 为1992年后年数，指数模型 $C(t)=100a^t$。$a^{14}=1.299$，故 $a=1.299^{1/14}\\approx1.01886$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "$200=100a^t$，$t=\\log2/\\log a=14\\log2/\\log1.299\\approx37.0958$ 年。连续模型日期 $1992+t\\approx2029.10$，在2029年内；若仅比较年度同一日期的CPI，则第一次不低于200%是在2030年（38个完整年）。"
+          }
+        ],
+        "answer": "连续指数模型约在2029年；按整年观测首次达标为2030年。",
+        "printedPage": 420,
+        "pdfPage": 429,
+        "en": {
+          "prompt": "The CPI compares a fixed basket with its 1992 price, set at 100%. In 2006 the price was 129.9%. If it keeps growing at the same rate, in what year will the basket cost twice its 1992 price?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Let $t$ be years after 1992 and $C(t)=100a^t$. Since $a^{14}=1.299$, $a=1.299^{1/14}\\approx1.01886$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "$200=100a^t$ gives $t=14\\log2/\\log1.299\\approx37.0958$ years. The continuous model reaches double at $1992+t\\approx2029.10$, during 2029. If comparing only annual observations at the same date, the first at least 200% is 2030, after 38 whole years."
+            }
+          ],
+          "answer": "Continuous exponential model: during 2029; first whole-year observation at least double: 2030."
+        },
+        "number": 17
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "expectedSubparts": {
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-10": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ]
+    },
+    "source": "Independent visual inventory from original PDF pages before solutions",
+    "pages": [
+      {
+        "pdfPage": 428,
+        "printedPage": 419,
+        "items": [
+          "Multiple choice1–6, all A–D choices"
+        ],
+        "figures": [
+          "Q1 four given graph choices A–D"
+        ]
+      },
+      {
+        "pdfPage": 429,
+        "printedPage": 420,
+        "items": [
+          "7a–e;8;9;10a–d;11a–c;12a–b;13;14;15;16;17"
+        ],
+        "figures": []
+      }
+    ],
+    "notes": [
+      "All multiple-choice alternatives preserved. Test7e is log_2(8^(x−3))=4; checked original superscript."
+    ]
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independently compared with all original source pages and all question/subpart solutions, including logarithm domains, all candidates, graph readings, negative-base exceptions, and discrete financial timing. Review and direct corrections are documented in audit/root-sections-independent.md; browser/build validation is a separate integration task."
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "7-overview",
+    "kind": "overview",
+    "section": "7 Overview",
+    "title": "指数函数：章开篇",
+    "en": {
+      "title": "Exponential Functions: Chapter Opening"
+    },
+    "source": {
+      "kind": "pdf",
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "printedPages": [
+        332,
+        333
+      ],
+      "pdfPages": [
+        341,
+        342
+      ]
+    },
+    "concepts": [
+      {
+        "id": "context",
+        "title": "放射性与几何增长",
+        "summary": "原开篇以夜光表盘的镭与氚说明指数衰减；细菌与投资说明几何增长。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "对相同间隔比较数量之比，建立指数模型；本章学习特征、变换及解指数方程。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Radioactivity and geometric growth",
+          "summary": "The opening uses radium and tritium watch dials to introduce exponential decay; bacteria and investments illustrate geometric growth.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Compare ratios over equal intervals to build exponential models; this chapter studies characteristics, transformations, and exponential equations."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "terms",
+        "title": "本章术语",
+        "summary": "指数函数、指数增长、指数衰减、半衰期、指数方程。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "指数函数变量在指数上；增长因子大于1；衰减因子介于0与1；半衰期是剩余量减半所需时间；指数方程含未知指数。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Chapter vocabulary",
+          "summary": "Exponential function, exponential growth, exponential decay, half-life, exponential equation.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "An exponential function has a variable exponent; a growth factor exceeds 1; a decay factor lies between 0 and 1; half-life is time to halve; an exponential equation contains an unknown exponent."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "career",
+        "title": "职业联系：化学",
+        "summary": "化学帮助认识周围世界，并创造新物质与材料。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "化学家合成、发现和表征分子及反应，可研究合成纤维、药物、可持续能源和更环保的制造过程。原职业网站为延伸阅读；开篇无编号准备题。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Career Link: chemistry",
+          "summary": "Chemistry helps explain the world and create new substances and materials.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Chemists synthesize, discover, and characterize molecules and reactions; applications include synthetic fibres, pharmaceuticals, sustainable energy, and greener manufacturing. The career website is enrichment; the opening has no numbered preparation questions."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "history",
+        "title": "历史旁注",
+        "summary": "原书提及镭曾添加于日用品，后来发现严重健康影响而禁止这些用途。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "把该段作为理解教材历史背景的叙述；数学任务是建立增长与衰减模型。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Historical sidebar",
+          "summary": "The textbook notes radium was once added to consumer products before serious adverse health effects led to prohibitions.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Read this as the textbook’s historical context; the mathematical task is to model growth and decay."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": []
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [],
+    "expectedSubparts": {}
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independently read originalPDF341–342/printed332–333. Introductory applications, keyterms, historicalsidebarandCareerLinkaretaughtasprose;therearenoactualquestionsormathsolutionsinthissourceoverview. Evidence:audit/7-overview-independent.json."
+  }
+}

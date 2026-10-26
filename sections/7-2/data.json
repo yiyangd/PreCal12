@@ -1,0 +1,2030 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "7-2",
+    "section": "7.2",
+    "title": "指数函数的变换",
+    "en": {
+      "title": "Transformations of Exponential Functions",
+      "description": "Apply parameter transformations, sketch exponential graphs, and model growth, decay and limiting levels."
+    },
+    "description": "运用参数变换描绘指数图像，建立增长、衰减与极限值模型。",
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357
+      ],
+      "pdfPages": [
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366
+      ]
+    },
+    "concepts": [
+      {
+        "id": "parameters",
+        "title": "参数与点的映射",
+        "summary": "对 $y=a c^{b(x-h)}+k$，先缩放或反射，再平移；通常 $c>0,c\\ne1,a\\ne0,b\\ne0$。",
+        "method": [
+          {
+            "title": "步骤 1",
+            "body": "基图 $y=c^x$ 上的点 $(u,v)$ 变为 $(u/b+h,av+k)$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "$|a|$ 为竖直伸缩因子，$a<0$ 关于 $x$ 轴反射；$1/|b|$ 为水平伸缩因子，$b<0$ 关于 $y$ 轴反射。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "$h$ 为向右的有向位移，$k$ 为向上的有向位移。若 $a=0$ 或 $b=0$，所得为常值函数，不能使用 $1/|b|$。"
+          }
+        ],
+        "pitfalls": [
+          "先将指数完全因式分解；$2x-2=2(x-1)$。",
+          "水平伸缩因子是倒数；先反射/伸缩再平移。"
+        ],
+        "en": {
+          "title": "Parameters and point mapping",
+          "summary": "For $y=a c^{b(x-h)}+k$, scale or reflect before translating; ordinarily $c>0,c\\ne1,a\\ne0,b\\ne0$.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "A base point $(u,v)$ on $y=c^x$ maps to $(u/b+h,av+k)$."
+            },
+            {
+              "title": "Step 2",
+              "body": "$|a|$ is the vertical scale factor; $a<0$ reflects in the $x$-axis. $1/|b|$ is the horizontal scale factor; $b<0$ reflects in the $y$-axis."
+            },
+            {
+              "title": "Step 3",
+              "body": "$h$ is the signed rightward translation; $k$ is the signed upward translation. If $a=0$ or $b=0$, the result is constant and $1/|b|$ cannot be used."
+            }
+          ],
+          "pitfalls": [
+            "Factor the exponent first: $2x-2=2(x-1)$.",
+            "The horizontal factor is reciprocal; reflect/scale before translating."
+          ]
+        }
+      },
+      {
+        "id": "sketch",
+        "title": "图像、定义域与值域",
+        "summary": "非退化变换指数函数定义域为实数，水平渐近线为 $y=k$。",
+        "method": [
+          {
+            "title": "步骤 1",
+            "body": "变换至少三个基图点，并画穿过这些点的平滑曲线。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "若 $a>0$，值域为 $(k,\\infty)$；若 $a<0$，值域为 $(-\\infty,k)$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "代入 $x=0$ 得纵截距；令 $y=0$ 并检查正指数项是否可能满足。"
+          }
+        ],
+        "pitfalls": [
+          "图像不接触渐近线；近似截距必须标明近似。"
+        ],
+        "en": {
+          "title": "Sketches, domain and range",
+          "summary": "A nonconstant transformed exponential has domain all real numbers and horizontal asymptote $y=k$.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Transform at least three base points and draw a smooth curve through them."
+            },
+            {
+              "title": "Step 2",
+              "body": "For $a>0$ the range is $(k,\\infty)$; for $a<0$ it is $(-\\infty,k)$."
+            },
+            {
+              "title": "Step 3",
+              "body": "Set $x=0$ for the vertical intercept; set $y=0$ and check whether a positive exponential can satisfy the equation."
+            }
+          ],
+          "pitfalls": [
+            "The graph never meets its asymptote; label approximate intercepts as approximations."
+          ]
+        }
+      },
+      {
+        "id": "models",
+        "title": "增长、衰减与时间尺度",
+        "summary": "$Q(t)=A r^{t/d}+K$ 表示每 $d$ 个时间单位，离极限 $K$ 的差乘以 $r$。",
+        "method": [
+          {
+            "title": "步骤 1",
+            "body": "确定初始时刻与单位，计算 $A=Q(0)-K$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "增长 $p\\%$ 用 $r=1+p/100$；衰减 $p\\%$ 用 $r=1-p/100$；半衰期用 $r=1/2$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "代入时间并按情境限制定义域；图解或数值求交点应明确为近似。"
+          }
+        ],
+        "pitfalls": [
+          "冷却百分比作用于高于环境温度的温差。",
+          "连续模型的人口可取实数值，报告人数时再舍入。"
+        ],
+        "en": {
+          "title": "Growth, decay and time scales",
+          "summary": "$Q(t)=A r^{t/d}+K$ multiplies the difference from the limiting level $K$ by $r$ every $d$ time units.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Specify the initial time and units; compute $A=Q(0)-K$."
+            },
+            {
+              "title": "Step 2",
+              "body": "For $p\\%$ growth use $r=1+p/100$; for $p\\%$ decay use $r=1-p/100$; a half-life uses $r=1/2$."
+            },
+            {
+              "title": "Step 3",
+              "body": "Substitute time and restrict the domain to the context; label graphical or numerical intersections as approximate."
+            }
+          ],
+          "pitfalls": [
+            "A cooling percentage applies to the temperature difference above ambient.",
+            "A continuous population model takes real values; round only when reporting a count."
+          ]
+        }
+      },
+      {
+        "id": "intercepts",
+        "title": "截距与参数条件",
+        "summary": "对于非退化模型，纵截距为 $a c^{-bh}+k$；横截距要求 $-k/a>0$。",
+        "method": [
+          {
+            "title": "步骤 1",
+            "body": "若 $a$ 与 $k$ 同号或 $k=0$，没有横截距。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "若 $a,k$ 异号，方程 $c^{b(x-h)}=-k/a$ 有且仅有一个实解；可用图解求近似。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "讨论参数影响时区分一般情况与特殊消去、常值退化情况。"
+          }
+        ],
+        "pitfalls": [
+          "负号在指数外与指数内分别代表不同的反射。"
+        ],
+        "en": {
+          "title": "Intercepts and parameter conditions",
+          "summary": "For a nonconstant model, the vertical intercept is $a c^{-bh}+k$; a horizontal intercept requires $-k/a>0$.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "If $a$ and $k$ have the same sign, or $k=0$, there is no horizontal intercept."
+            },
+            {
+              "title": "Step 2",
+              "body": "If $a,k$ have opposite signs, $c^{b(x-h)}=-k/a$ has exactly one real solution; a graph can give an approximation."
+            },
+            {
+              "title": "Step 3",
+              "body": "Distinguish general parameter effects from special cancellation and constant degeneracies."
+            }
+          ],
+          "pitfalls": [
+            "A minus outside the power and a minus in the exponent produce different reflections."
+          ]
+        }
+      },
+      {
+        "id": "fitting",
+        "title": "从实际图拟合模型",
+        "summary": "给定渐近线与另一个图上点，可确定指数变换中的剩余参数；读图数值通常只是近似。",
+        "method": [
+          {
+            "title": "步骤 1",
+            "body": "从顶点或渐近线确定 $h,k$ 中已知的量。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "选择图上可辨认的点代入，说明该点是近似读数。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "用数据趋势与情境检查模型；累计收入应趋于有限总额而不是后来下降。"
+          }
+        ],
+        "pitfalls": [
+          "不能从低精度图断言唯一精确拟合。"
+        ],
+        "en": {
+          "title": "Fit a model to graphical data",
+          "summary": "An asymptote and another graphical point can determine the remaining parameter of a transformed exponential; graph readings are usually approximate.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Use the vertex or asymptote to identify known values of $h,k$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Substitute an identifiable plotted point, explicitly stating that it is approximate."
+            },
+            {
+              "title": "Step 3",
+              "body": "Check the trend against the context; cumulative revenue should approach a total rather than later decrease."
+            }
+          ],
+          "pitfalls": [
+            "A low-resolution plot does not establish a unique exact fit."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "以 $y=3^x$ 为基图，对 (a) $y=2(3)^{x-4}$；(b) $y=-\\frac12(3)^{x/5}-5$，分别 (i) 写出参数并描述变换；(ii) 列表表示给定点在每次变换后的变化；(iii) 画基图及变换图；(iv) 描述定义域、值域、水平渐近线和截距的变化。给定基图点为 $(-1,1/3),(0,1),(1,3),(2,9),(3,27)$。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "a(i)：参数与变换",
+            "body": "$a=2,b=1,h=4,k=0$。先竖直拉伸2倍，再右移4；没有反射、水平伸缩或竖直平移。映射 $(u,v)\\mapsto(u+4,2v)$。"
+          },
+          {
+            "title": "a(ii)：逐列变换",
+            "body": "竖直拉伸后的五点：$(-1,2/3),(0,2),(1,6),(2,18),(3,54)$。再右移4：$(3,2/3),(4,2),(5,6),(6,18),(7,54)$。"
+          },
+          {
+            "title": "a(iii)：作图",
+            "body": "在同一坐标系画给定基图点及变换后的五点。两曲线均递增并从上方趋近 $y=0$；变换曲线在 $(4,2)$ 通过。解析图显示两条真实指数曲线。"
+          },
+          {
+            "title": "a(iv)：特征与截距",
+            "body": "定义域仍为 $\\mathbb R$；值域仍为 $(0,\\infty)$；渐近线仍为 $y=0$，仍无横截距。令 $x=0$ 得 $y=2(3)^{-4}=2/81\\approx0.02469$，纵截距由1变为 $2/81$。"
+          },
+          {
+            "title": "b(i)：参数与变换",
+            "body": "$a=-1/2,b=1/5,h=0,k=-5$。水平拉伸5倍，竖直压缩到 $1/2$ 并关于 $x$ 轴反射，最后下移5。映射为 $(u,v)\\mapsto(5u,-v/2-5)$。"
+          },
+          {
+            "title": "b(ii)：全部中间列",
+            "body": "水平拉伸后：$(-5,1/3),(0,1),(5,3),(10,9),(15,27)$。乘 $-1/2$ 后：$(-5,-1/6),(0,-1/2),(5,-3/2),(10,-9/2),(15,-27/2)$。下移5后：$(-5,-31/6),(0,-11/2),(5,-13/2),(10,-19/2),(15,-37/2)$。"
+          },
+          {
+            "title": "b(iii)：作图",
+            "body": "标出最后一列的五点，画递减曲线；当 $x\\to-\\infty$ 时从下方趋近 $y=-5$。基图仍趋近 $y=0$；二者见解析图。"
+          },
+          {
+            "title": "b(iv)：特征与截距",
+            "body": "定义域仍为 $\\mathbb R$；值域变为 $(-\\infty,-5)$；渐近线变为 $y=-5$。所有函数值都小于 $-5$，所以无横截距。$x=0$ 时 $y=-1/2-5=-11/2$，纵截距为 $(0,-11/2)$。"
+          }
+        ],
+        "answer": "(a) $D=\\mathbb R,R=(0,\\infty)$，渐近线 $y=0$，纵截距 $2/81$；(b) $D=\\mathbb R,R=(-\\infty,-5)$，渐近线 $y=-5$，纵截距 $-11/2$。两者均无横截距。",
+        "printedPage": 349,
+        "pdfPage": 358,
+        "en": {
+          "prompt": "Consider the base function $y=3^x$. For (a) $y=2(3)^{x-4}$ and (b) $y=-\\frac12(3)^{x/5}-5$: (i) state the parameters and corresponding transformations; (ii) make a table showing the given points under each transformation; (iii) sketch the base and transformed graphs; (iv) describe the effects on domain, range, horizontal asymptote, and intercepts. The given base points are $(-1,1/3),(0,1),(1,3),(2,9),(3,27)$.",
+          "steps": [
+            {
+              "title": "a(i): Parameters and transformations",
+              "body": "$a=2,b=1,h=4,k=0$. Stretch vertically by 2, then translate right 4; no reflection, horizontal scale, or vertical translation. The map is $(u,v)\\mapsto(u+4,2v)$."
+            },
+            {
+              "title": "a(ii): Table columns",
+              "body": "After the vertical stretch: $(-1,2/3),(0,2),(1,6),(2,18),(3,54)$. After translating right 4: $(3,2/3),(4,2),(5,6),(6,18),(7,54)$."
+            },
+            {
+              "title": "a(iii): Sketch",
+              "body": "Plot the given base points and the five transformed points on the same axes. Both curves increase and approach $y=0$ from above; the transformed curve passes through $(4,2)$. The solution image plots both exponential curves."
+            },
+            {
+              "title": "a(iv): Features and intercepts",
+              "body": "The domain remains $\\mathbb R$, range $(0,\\infty)$, and asymptote $y=0$; there is still no horizontal intercept. At $x=0$, $y=2(3)^{-4}=2/81\\approx0.02469$, so the vertical intercept changes from 1 to $2/81$."
+            },
+            {
+              "title": "b(i): Parameters and transformations",
+              "body": "$a=-1/2,b=1/5,h=0,k=-5$. Stretch horizontally by 5, compress vertically by $1/2$ and reflect in the $x$-axis, then translate down 5. The map is $(u,v)\\mapsto(5u,-v/2-5)$."
+            },
+            {
+              "title": "b(ii): All intermediate columns",
+              "body": "After the horizontal stretch: $(-5,1/3),(0,1),(5,3),(10,9),(15,27)$. After multiplying ordinates by $-1/2$: $(-5,-1/6),(0,-1/2),(5,-3/2),(10,-9/2),(15,-27/2)$. After translating down 5: $(-5,-31/6),(0,-11/2),(5,-13/2),(10,-19/2),(15,-37/2)$."
+            },
+            {
+              "title": "b(iii): Sketch",
+              "body": "Plot the five final points and draw a decreasing curve. As $x\\to-\\infty$, it approaches $y=-5$ from below. The base curve still approaches $y=0$; both appear in the solution plot."
+            },
+            {
+              "title": "b(iv): Features and intercepts",
+              "body": "The domain remains $\\mathbb R$; the range becomes $(-\\infty,-5)$ and asymptote $y=-5$. All values are below $-5$, so no horizontal intercept exists. At $x=0$, $y=-1/2-5=-11/2$, giving vertical intercept $(0,-11/2)$."
+            }
+          ],
+          "answer": "(a) $D=\\mathbb R,R=(0,\\infty)$, asymptote $y=0$, vertical intercept $2/81$; (b) $D=\\mathbb R,R=(-\\infty,-5)$, asymptote $y=-5$, vertical intercept $-11/2$. Neither has a horizontal intercept.",
+          "label": "Textbook Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "教材例题 1",
+        "subpartIds": [
+          "ai",
+          "aii",
+          "aiii",
+          "aiv",
+          "bi",
+          "bii",
+          "biii",
+          "biv"
+        ],
+        "solutionImage": "assets/72-example1.png"
+      },
+      {
+        "prompt": "一杯水加热到 $100^\\circ\\mathrm C$，然后在室温 $20^\\circ\\mathrm C$ 的房间冷却。每分钟记录温度 $T$ 随时间 $m$（分钟）的变化；题述水温每5分钟按指数规律减少25%，所得图像如下。(a) 写出形如 $y=a(c)^{b(x-h)}+k$ 的模型。(b) 解释每个参数与已知信息的关系。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "a：确定衰减量与基数",
+            "body": "图像趋近室温20而不是0，因此25%衰减应理解为温差 $T-20$ 每5分钟减少25%。每段剩余因子为 $1-0.25=3/4$；经过 $m$ 分钟有 $m/5$ 段。"
+          },
+          {
+            "title": "a：代入初始条件",
+            "body": "设 $T(m)=a(3/4)^{m/5}+20$。代入 $(0,100)$：$100=a(3/4)^0+20=a+20$，得 $a=80$。因此 $T(m)=80(3/4)^{m/5}+20$。"
+          },
+          {
+            "title": "a：核对实际时间点",
+            "body": "$T(20)=80(3/4)^4+20=80(81/256)+20=45.3125^\\circ\\mathrm C$，与图上约45一致。实际 $m\\ge0$，故 $20<T\\le100$。"
+          },
+          {
+            "title": "b：解释全部参数",
+            "body": "以 $c=3/4$ 为底：$a=80$ 是初始温差；$b=1/5$ 把分钟换成5分钟段数，水平拉伸5倍；$h=0$ 是冷却起始时刻；$k=20$ 为室温，对应上移20与渐近线 $T=20$。"
+          }
+        ],
+        "answer": "$T(m)=80(3/4)^{m/5}+20$，$m\\ge0$。$a=80,b=1/5,h=0,k=20$。",
+        "printedPage": 352,
+        "pdfPage": 361,
+        "en": {
+          "prompt": "A cup of water is heated to $100^\\circ\\mathrm C$ and allowed to cool in a room at $20^\\circ\\mathrm C$. Temperature $T$ is measured every minute against time $m$ in minutes; the stated exponential decrease is 25% every 5 min, giving the graph shown. (a) Find the transformed function in the form $y=a(c)^{b(x-h)}+k$. (b) Relate each parameter to the information provided.",
+          "steps": [
+            {
+              "title": "a: Identify the decaying quantity and base",
+              "body": "The graph approaches room temperature 20 rather than 0, so the 25% decay applies to the excess temperature $T-20$ every 5 min. The remaining factor is $1-0.25=3/4$, and $m$ minutes contain $m/5$ intervals."
+            },
+            {
+              "title": "a: Use the initial condition",
+              "body": "Write $T(m)=a(3/4)^{m/5}+20$. Substitute $(0,100)$: $100=a(3/4)^0+20=a+20$, so $a=80$. Thus $T(m)=80(3/4)^{m/5}+20$."
+            },
+            {
+              "title": "a: Check an actual time",
+              "body": "$T(20)=80(3/4)^4+20=80(81/256)+20=45.3125^\\circ\\mathrm C$, agreeing with the plotted value near 45. Physically $m\\ge0$, so $20<T\\le100$."
+            },
+            {
+              "title": "b: Interpret every parameter",
+              "body": "With base $c=3/4$: $a=80$ is the initial temperature excess; $b=1/5$ converts minutes to 5-minute intervals, a horizontal stretch by 5; $h=0$ is the start of cooling; $k=20$ is room temperature, corresponding to an upward translation by 20 and asymptote $T=20$."
+            }
+          ],
+          "answer": "$T(m)=80(3/4)^{m/5}+20$, $m\\ge0$. $a=80,b=1/5,h=0,k=20$.",
+          "label": "Textbook Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "教材例题 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/72-example2-given.png",
+        "solutionImage": "assets/72-example2.png"
+      },
+      {
+        "prompt": "(a) 在各自同一坐标系画图：A组 (i) $f(x)=3^x$，(ii) $f(x)=3^x+2$，(iii) $f(x)=3^x-4$；B组 (i) $f(x)=2^x$，(ii) $f(x)=2^{x-3}$，(iii) $f(x)=2^{x+1}$。(b) 比较A组，对任意常数 $k$ 描述 $3^x$ 与 $3^x+k$ 的关系。(c) 比较B组，对任意常数 $h$ 描述 $2^x$ 与 $2^{x-h}$ 的关系。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "a：A组点表",
+            "body": "取 $x=-1,0,1$。A(i) 的纵坐标为 $1/3,1,3$；A(ii) 为 $7/3,3,5$；A(iii) 为 $-11/3,-3,-1$。依次连成指数曲线；渐近线分别为 $y=0,2,-4$。"
+          },
+          {
+            "title": "a：B组点表",
+            "body": "由 $2^x$ 的 $(-1,1/2),(0,1),(1,2)$，B(ii) 的对应点为 $(2,1/2),(3,1),(4,2)$；B(iii) 为 $(-2,1/2),(-1,1),(0,2)$。三条曲线的渐近线均为 $y=0$。"
+          },
+          {
+            "title": "b：竖直比较",
+            "body": "加 $k$ 将每个纵坐标增加 $k$，所以向上平移 $k$ 个单位；$k<0$ 时向下 $|k|$。"
+          },
+          {
+            "title": "c：水平比较",
+            "body": "令新指数 $x-h=u$ 得 $x=u+h$，所以向右平移 $h$ 个单位；$h<0$ 时向左 $|h|$。"
+          }
+        ],
+        "answer": "A组为竖直平移，B组为水平平移；具体曲线见解析图。",
+        "printedPage": 346,
+        "pdfPage": 355,
+        "en": {
+          "prompt": "(a) Graph each set on one set of axes: Set A (i) $f(x)=3^x$, (ii) $f(x)=3^x+2$, (iii) $f(x)=3^x-4$; Set B (i) $f(x)=2^x$, (ii) $f(x)=2^{x-3}$, (iii) $f(x)=2^{x+1}$. (b) Compare Set A and describe the relationship between $3^x$ and $3^x+k$ for any constant $k$. (c) Compare Set B and describe the relationship between $2^x$ and $2^{x-h}$ for any constant $h$.",
+          "steps": [
+            {
+              "title": "a: Set A point tables",
+              "body": "At $x=-1,0,1$, the ordinates are $1/3,1,3$ for A(i), $7/3,3,5$ for A(ii), and $-11/3,-3,-1$ for A(iii). Draw smooth exponential curves; the asymptotes are $y=0,2,-4$, respectively."
+            },
+            {
+              "title": "a: Set B point tables",
+              "body": "From the points $(-1,1/2),(0,1),(1,2)$ on $2^x$, the corresponding points of B(ii) are $(2,1/2),(3,1),(4,2)$; those of B(iii) are $(-2,1/2),(-1,1),(0,2)$. All three asymptotes are $y=0$."
+            },
+            {
+              "title": "b: Vertical comparison",
+              "body": "Adding $k$ adds $k$ to each ordinate: translate up $k$ units, or down $|k|$ when $k<0$."
+            },
+            {
+              "title": "c: Horizontal comparison",
+              "body": "Setting the new exponent $x-h=u$ gives $x=u+h$: translate right $h$ units, or left $|h|$ when $h<0$."
+            }
+          ],
+          "answer": "Set A uses vertical translations and Set B horizontal translations; the solution plot shows all six curves.",
+          "label": "Investigate 1"
+        },
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1",
+        "subpartIds": [
+          "aai",
+          "aaii",
+          "aaiii",
+          "abi",
+          "abii",
+          "abiii",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/72-investigate1.png"
+      },
+      {
+        "prompt": "描述 $f(x)=a(c)^{b(x-h)}+k$ 中参数 $h,k$ 的作用。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "水平位置",
+            "body": "在伸缩和反射之后，$h$ 把点 $(u,v)$ 的横坐标加 $h$：$h>0$ 向右，$h<0$ 向左。"
+          },
+          {
+            "title": "竖直位置",
+            "body": "$k$ 把纵坐标加 $k$，所以 $k>0$ 向上、$k<0$ 向下；非退化图像的渐近线变为 $y=k$。"
+          }
+        ],
+        "answer": "$h$ 控制水平平移，$k$ 控制竖直平移。",
+        "printedPage": 347,
+        "pdfPage": 356,
+        "en": {
+          "prompt": "Describe the roles of $h$ and $k$ in $f(x)=a(c)^{b(x-h)}+k$.",
+          "steps": [
+            {
+              "title": "Horizontal location",
+              "body": "After scales and reflections, $h$ adds $h$ to the horizontal coordinate: right when $h>0$, left when $h<0$."
+            },
+            {
+              "title": "Vertical location",
+              "body": "$k$ adds $k$ to the ordinate: up when $k>0$, down when $k<0$; the nonconstant graph has asymptote $y=k$."
+            }
+          ],
+          "answer": "$h$ controls horizontal translation; $k$ controls vertical translation.",
+          "label": "Reflect and Respond 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "反思与回应 2"
+      },
+      {
+        "prompt": "(a) 各组在同一坐标系画图。C组：(i) $(1/2)^x$，(ii) $3(1/2)^x$，(iii) $(3/4)(1/2)^x$，(iv) $-4(1/2)^x$，(v) $-(1/3)(1/2)^x$。D组：(i) $2^x$，(ii) $2^{3x}$，(iii) $2^{x/3}$，(iv) $2^{-2x}$，(v) $2^{-2x/3}$。(b) 对任意实数 $a$，比较 $(1/2)^x$ 与 $a(1/2)^x$。(c) 对任意实数 $b$，比较 $2^x$ 与 $2^{bx}$。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "a：C组具体点",
+            "body": "取横坐标 $-1,0,1$。五条曲线的纵坐标依次为 (i) $2,1,1/2$；(ii) $6,3,3/2$；(iii) $3/2,3/4,3/8$；(iv) $-8,-4,-2$；(v) $-2/3,-1/3,-1/6$。均趋近 $y=0$。"
+          },
+          {
+            "title": "a：D组具体点",
+            "body": "从 $(-1,1/2),(0,1),(1,2)$ 出发，五条曲线横坐标依次变为 (i) $-1,0,1$；(ii) $-1/3,0,1/3$；(iii) $-3,0,3$；(iv) $1/2,0,-1/2$；(v) $3/2,0,-3/2$，纵坐标不变。"
+          },
+          {
+            "title": "b：一般竖直因子",
+            "body": "$a$ 将纵坐标乘 $a$：$|a|>1$ 拉伸，$0<|a|<1$ 压缩，$a<0$ 还关于 $x$ 轴反射。$a=0$ 时成为直线 $y=0$。"
+          },
+          {
+            "title": "c：一般水平因子",
+            "body": "$b\\ne0$ 时横坐标除以 $b$，水平因子为 $1/|b|$，$b<0$ 时再关于 $y$ 轴反射。$b=0$ 时 $2^{0x}=1$，成为常值函数。"
+          }
+        ],
+        "answer": "C组改变高度及上下方向；D组改变水平尺度及左右方向。零参数产生常值函数。",
+        "printedPage": 347,
+        "pdfPage": 356,
+        "en": {
+          "prompt": "(a) Graph each set on one set of axes. Set C: (i) $(1/2)^x$, (ii) $3(1/2)^x$, (iii) $(3/4)(1/2)^x$, (iv) $-4(1/2)^x$, (v) $-(1/3)(1/2)^x$. Set D: (i) $2^x$, (ii) $2^{3x}$, (iii) $2^{x/3}$, (iv) $2^{-2x}$, (v) $2^{-2x/3}$. (b) For any real $a$, compare $(1/2)^x$ and $a(1/2)^x$. (c) For any real $b$, compare $2^x$ and $2^{bx}$.",
+          "steps": [
+            {
+              "title": "a: Specific Set C points",
+              "body": "At abscissas $-1,0,1$, the five ordinate triples are (i) $2,1,1/2$; (ii) $6,3,3/2$; (iii) $3/2,3/4,3/8$; (iv) $-8,-4,-2$; (v) $-2/3,-1/3,-1/6$. Each approaches $y=0$."
+            },
+            {
+              "title": "a: Specific Set D points",
+              "body": "From $(-1,1/2),(0,1),(1,2)$, the five abscissa triples become (i) $-1,0,1$; (ii) $-1/3,0,1/3$; (iii) $-3,0,3$; (iv) $1/2,0,-1/2$; (v) $3/2,0,-3/2$, with ordinates unchanged."
+            },
+            {
+              "title": "b: General vertical factor",
+              "body": "$a$ multiplies ordinates by $a$: stretch when $|a|>1$, compress when $0<|a|<1$, and additionally reflect in the $x$-axis when $a<0$. If $a=0$, the graph is the line $y=0$."
+            },
+            {
+              "title": "c: General horizontal factor",
+              "body": "For $b\\ne0$, divide abscissas by $b$: the horizontal factor is $1/|b|$, with a reflection in the $y$-axis when $b<0$. If $b=0$, $2^{0x}=1$ is constant."
+            }
+          ],
+          "answer": "Set C changes height and vertical orientation; Set D changes horizontal scale and orientation. A zero parameter gives a constant function.",
+          "label": "Investigate 3"
+        },
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 3",
+        "subpartIds": [
+          "aci",
+          "acii",
+          "aciii",
+          "aciv",
+          "acv",
+          "adi",
+          "adii",
+          "adiii",
+          "adiv",
+          "adv",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/72-investigate3.png"
+      },
+      {
+        "prompt": "负号对图像有什么影响？（参照探究D组的负指数系数。）",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "比较对应点",
+            "body": "$2^{bx}$ 中 $b<0$ 把 $x=u$ 变为 $x=u/b$；符号改变横坐标方向。例如 $2^{-2x}$ 把 $(1,2)$ 映为 $(-1/2,2)$。这是关于 $y$ 轴反射，同时水平压缩到 $1/2$。"
+          }
+        ],
+        "answer": "指数内的负系数产生关于y轴的反射。",
+        "printedPage": 347,
+        "pdfPage": 356,
+        "en": {
+          "prompt": "What effect does the negative sign have on the graph? (Refer to the negative exponent coefficients in Set D.)",
+          "steps": [
+            {
+              "title": "Compare corresponding points",
+              "body": "When $b<0$ in $2^{bx}$, $x=u$ becomes $x=u/b$, reversing horizontal direction. For example, $2^{-2x}$ maps $(1,2)$ to $(-1/2,2)$: reflect in the $y$-axis and compress horizontally by $1/2$."
+            }
+          ],
+          "answer": "A negative coefficient inside the exponent produces a reflection in the y-axis.",
+          "label": "Sidebar: The negative sign"
+        },
+        "id": "sidebar-negative",
+        "type": "practice",
+        "label": "旁注：负号的影响"
+      },
+      {
+        "prompt": "描述 $f(x)=a(c)^{b(x-h)}+k$ 中参数 $a,b$ 的作用。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "参数a",
+            "body": "$a$ 使相对平移前 $x$ 轴的纵坐标乘 $a$；竖直尺度为 $|a|$，$a<0$ 时关于 $x$ 轴反射，随后再加 $k$。"
+          },
+          {
+            "title": "参数b与例外",
+            "body": "$b\\ne0$ 时水平尺度为 $1/|b|$，$b<0$ 时关于 $y$ 轴反射，随后再加 $h$。$a=0$ 给出 $y=k$；$b=0$ 给出 $y=a+k$。"
+          }
+        ],
+        "answer": "点的完整映射为 $(u,v)\\mapsto(u/b+h,av+k)$（$b\\ne0$）。",
+        "printedPage": 347,
+        "pdfPage": 356,
+        "en": {
+          "prompt": "Describe the roles of $a,b$ in $f(x)=a(c)^{b(x-h)}+k$.",
+          "steps": [
+            {
+              "title": "Parameter a",
+              "body": "$a$ multiplies ordinates relative to the pre-translation $x$-axis by $a$: vertical factor $|a|$, with reflection in the $x$-axis if $a<0$, followed by adding $k$."
+            },
+            {
+              "title": "Parameter b and exceptions",
+              "body": "For $b\\ne0$, the horizontal scale is $1/|b|$, with reflection in the $y$-axis if $b<0$, followed by adding $h$. If $a=0$, $y=k$; if $b=0$, $y=a+k$."
+            }
+          ],
+          "answer": "The full point mapping is $(u,v)\\mapsto(u/b+h,av+k)$ for $b\\ne0$.",
+          "label": "Reflect and Respond 4"
+        },
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "反思与回应 4"
+      },
+      {
+        "prompt": "这与以前学习的函数变换顺序有什么相同之处？",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "核对顺序",
+            "body": "与其他函数相同：先完成伸缩/反射，再平移。若 $b=-2,h=-5$，正确横坐标是 $-u/2-5$；先左移5再反射压缩则变为 $-(u-5)/2=-u/2+5/2$，不相同。"
+          }
+        ],
+        "answer": "先伸缩和反射，再平移；a与b的变换可交换。",
+        "printedPage": 349,
+        "pdfPage": 358,
+        "en": {
+          "prompt": "How does this compare to your past experience with transformations?",
+          "steps": [
+            {
+              "title": "Check the order",
+              "body": "As with other functions, complete scales/reflections before translations. For $b=-2,h=-5$, the correct abscissa is $-u/2-5$. Translating left 5 first and then reflecting/compressing instead gives $-(u-5)/2=-u/2+5/2$, which differs."
+            }
+          ],
+          "answer": "Scale and reflect before translating; the a and b transformations may be interchanged.",
+          "label": "Sidebar: Transformation order"
+        },
+        "id": "sidebar-order",
+        "type": "practice",
+        "label": "旁注：变换顺序"
+      },
+      {
+        "prompt": "为什么这两条指数曲线有不同的水平渐近线？（例题1b）",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "计算极限高度",
+            "body": "当 $x\\to-\\infty$，$3^x\\to0$；而 $-\\frac12 3^{x/5}-5\\to-5$。最后的下移5把原渐近线 $y=0$ 移到了 $y=-5$。伸缩与反射本身不改变原来零渐近线的高度。"
+          }
+        ],
+        "answer": "因为竖直平移 $k=-5$，渐近线从 $y=0$ 变为 $y=-5$。",
+        "printedPage": 351,
+        "pdfPage": 360,
+        "en": {
+          "prompt": "Why do the exponential curves have different horizontal asymptotes? (Example 1b)",
+          "steps": [
+            {
+              "title": "Find the limiting height",
+              "body": "As $x\\to-\\infty$, $3^x\\to0$, whereas $-\\frac12 3^{x/5}-5\\to-5$. The final downward translation by 5 moves the original asymptote $y=0$ to $y=-5$. Scaling and reflection alone do not change a zero asymptote."
+            }
+          ],
+          "answer": "The vertical translation $k=-5$ changes the asymptote from $y=0$ to $y=-5$.",
+          "label": "Sidebar: Different asymptotes"
+        },
+        "id": "sidebar-asymptotes",
+        "type": "practice",
+        "label": "旁注：不同的渐近线"
+      },
+      {
+        "prompt": "变换 $y=4^x$ 的图像，画出 $y=4^{-2(x+5)}-3$。描述定义域、值域、水平渐近线方程和截距的变化。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "确定映射",
+            "body": "$a=1,b=-2,h=-5,k=-3$。先关于 $y$ 轴反射并水平压缩到 $1/2$，再左移5、下移3；$(u,v)\\mapsto(-u/2-5,v-3)$。"
+          },
+          {
+            "title": "具体点与曲线",
+            "body": "基图点 $(-1,1/4),(0,1),(1,4),(2,16)$ 变为 $(-9/2,-11/4),(-5,-2),(-11/2,1),(-6,13)$。画递减曲线，从上方趋近右端渐近线 $y=-3$。"
+          },
+          {
+            "title": "定义域值域与截距",
+            "body": "$D=\\mathbb R$，$R=(-3,\\infty)$。纵截距为 $4^{-10}-3=-3+1/1048576\\approx-2.99999905$。横截距满足 $4^{-2(x+5)}=3$；图解或数值求交点为 $x\\approx-5.39624$（位于 $-5.5$ 与 $-5$ 之间）。"
+          }
+        ],
+        "answer": "$D=\\mathbb R,R=(-3,\\infty)$；渐近线 $y=-3$；截距约为 $(-5.39624,0)$、$(0,-2.99999905)$。",
+        "printedPage": 351,
+        "pdfPage": 360,
+        "en": {
+          "prompt": "Transform the graph of $y=4^x$ to sketch $y=4^{-2(x+5)}-3$. Describe the effects on domain, range, horizontal asymptote, and intercepts.",
+          "steps": [
+            {
+              "title": "Find the mapping",
+              "body": "$a=1,b=-2,h=-5,k=-3$. Reflect in the $y$-axis and compress horizontally by $1/2$, then translate left 5 and down 3: $(u,v)\\mapsto(-u/2-5,v-3)$."
+            },
+            {
+              "title": "Specific points and curve",
+              "body": "The base points $(-1,1/4),(0,1),(1,4),(2,16)$ become $(-9/2,-11/4),(-5,-2),(-11/2,1),(-6,13)$. Draw a decreasing curve approaching the right-hand asymptote $y=-3$ from above."
+            },
+            {
+              "title": "Domain, range and intercepts",
+              "body": "$D=\\mathbb R$, $R=(-3,\\infty)$. The vertical intercept is $4^{-10}-3=-3+1/1048576\\approx-2.99999905$. The horizontal intercept satisfies $4^{-2(x+5)}=3$; a graphical or numerical intersection gives $x\\approx-5.39624$ (between $-5.5$ and $-5$)."
+            }
+          ],
+          "answer": "$D=\\mathbb R,R=(-3,\\infty)$; asymptote $y=-3$; intercepts approximately $(-5.39624,0)$ and $(0,-2.99999905)$.",
+          "label": "Your Turn 1"
+        },
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "试一试 1",
+        "solutionImage": "assets/72-turn1.png"
+      },
+      {
+        "prompt": "水温减少25%时，为什么指数函数的底数为 $3/4$？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算剩余比例",
+            "body": "减少25%后剩余75%，$75/100=3/4$。按例题图像，这指高于20度的温差：$T(m+5)-20=(3/4)[T(m)-20]$，不是每次把绝对摄氏温度乘 $3/4$。"
+          }
+        ],
+        "answer": "温差每5分钟保留 $3/4$。",
+        "printedPage": 352,
+        "pdfPage": 361,
+        "en": {
+          "prompt": "Why is the exponential base $3/4$ when the temperature is reduced by 25%?",
+          "steps": [
+            {
+              "title": "Calculate the remaining fraction",
+              "body": "A 25% reduction leaves 75%, and $75/100=3/4$. In the example graph this applies to the excess above 20 degrees: $T(m+5)-20=(3/4)[T(m)-20]$, rather than repeatedly multiplying the absolute Celsius temperature by $3/4$."
+            }
+          ],
+          "answer": "The temperature excess retains a factor of $3/4$ every 5 min.",
+          "label": "Sidebar: Why is the base 3/4?"
+        },
+        "id": "sidebar-base",
+        "type": "practice",
+        "label": "旁注：为什么底数为3/4？"
+      },
+      {
+        "prompt": "$m=5$ 时，指数 $m/5$ 的值是什么？它与最初函数中的指数 $t$ 有什么关系？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "换算时间段",
+            "body": "$m/5=5/5=1$；5分钟恰为一个5分钟时间段，因此原来的段数变量 $t=1$。一般有 $t=m/5$。"
+          }
+        ],
+        "answer": "指数为1，对应一个衰减周期。",
+        "printedPage": 352,
+        "pdfPage": 361,
+        "en": {
+          "prompt": "What is $m/5$ when $m=5$? How does this relate to the exponent $t$ in the first version of the function?",
+          "steps": [
+            {
+              "title": "Convert the time interval",
+              "body": "$m/5=5/5=1$: five minutes is one 5-minute interval, so the original interval-count variable is $t=1$. In general, $t=m/5$."
+            }
+          ],
+          "answer": "The exponent is 1, corresponding to one decay interval.",
+          "label": "Sidebar: The time exponent"
+        },
+        "id": "sidebar-exponent",
+        "type": "practice",
+        "label": "旁注：时间指数"
+      },
+      {
+        "prompt": "烟雾报警器使用放射性镅Am-241，其半衰期约432年；一个普通报警器含 $200\\,\\mu\\mathrm g$。给定衰变图：(a) 写出表示 $200\\,\\mu\\mathrm g$ Am-241衰变的指数变换函数；(b) 解释每个参数与变换后图像的关系。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "a：以半衰期计时",
+            "body": "经过 $t$ 年共有 $t/432$ 个半衰期，每段剩余一半。故 $A(t)=200(1/2)^{t/432}$，$t\\ge0$。检查 $A(0)=200$、$A(432)=100$、$A(864)=50$，单位均为微克。"
+          },
+          {
+            "title": "b：图像与参数",
+            "body": "以 $c=1/2$ 为底，$a=200$ 是初始量，也是竖直拉伸因子；$b=1/432$ 水平拉伸432倍；$h=0$ 从初始时刻计时；$k=0$ 没有剩余背景量，渐近线 $A=0$。实际值域 $0<A\\le200$，图像递减。"
+          }
+        ],
+        "answer": "$A(t)=200(1/2)^{t/432}\\,\\mu\\mathrm g$，$t\\ge0$；$a=200,b=1/432,h=k=0$。",
+        "printedPage": 353,
+        "pdfPage": 362,
+        "en": {
+          "prompt": "Americium-241 is used in household smoke detectors and has a half-life of approximately 432 years. An average detector contains $200\\,\\mu\\mathrm g$ of Am-241. For the given decay graph: (a) find the transformed exponential model; (b) relate each parameter to the transformed graph.",
+          "steps": [
+            {
+              "title": "a: Count half-lives",
+              "body": "In $t$ years there are $t/432$ half-lives, with one half remaining each interval. Thus $A(t)=200(1/2)^{t/432}$ for $t\\ge0$. Check $A(0)=200$, $A(432)=100$, and $A(864)=50$, all in micrograms."
+            },
+            {
+              "title": "b: Graph and parameters",
+              "body": "With base $c=1/2$, $a=200$ is the initial amount and vertical scale factor; $b=1/432$ stretches horizontally by 432; $h=0$ sets the initial time; $k=0$ gives no background amount and asymptote $A=0$. The physical range is $0<A\\le200$, and the curve decreases."
+            }
+          ],
+          "answer": "$A(t)=200(1/2)^{t/432}\\,\\mu\\mathrm g$, $t\\ge0$; $a=200,b=1/432,h=k=0$.",
+          "label": "Your Turn 2"
+        },
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "试一试 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/72-turn2-given.png"
+      },
+      {
+        "prompt": "与同伴研究给定电影累计票房图。$x$ 为周数，$y$ 为累计票房（百万美元）。(1) Avatar与Dark Knight看似有水平渐近线，情境中表示什么？Titanic最终也会有吗？解释。(2) 对Titanic：(a) 若顶点为 $(22,573)$，求一个可能拟合此段的 $y=a(x-h)^2+k$；(b) 假设水平渐近线 $y=600$，求一个可能拟合图像的 $y=-35(0.65)^{0.3(x-h)}+k$；(c) 哪类函数拟合更好？解释。",
+        "concept": "fitting",
+        "steps": [
+          {
+            "title": "水平渐近线的含义",
+            "body": "累计票房趋于某个总收入：随着放映结束，每周新增收入趋近0。Titanic也预期会趋于有限总额。这是对给定历史图的模型解释，不是当前票房数据调查。"
+          },
+          {
+            "title": "二次模型：一个可复现的示例",
+            "body": "顶点给出 $h=22,k=573$。从图近似取Titanic点 $(2,100)$：$100=a(2-22)^2+573$，故 $400a=-473$、$a\\approx-473/400=-1.1825$。一个可能模型为 $y\\approx-1.1825(x-22)^2+573$，用于图中约2至22周这一段。图上读点可略有不同，因此不是唯一精确模型。"
+          },
+          {
+            "title": "指数模型：由渐近线与图点定参数",
+            "body": "渐近线确定 $k=600$。从图近似取 $(20,565)$，代入 $565=-35(0.65)^{0.3(20-h)}+600$。得 $(0.65)^{0.3(20-h)}=1$，因此 $0.3(20-h)=0$、$h\\approx20$。模型为 $y\\approx-35(0.65)^{0.3(x-20)}+600$。它在22周给出 $572.97$，与图上的573相符。"
+          },
+          {
+            "title": "比较与适用区间",
+            "body": "两模型都能在有限后期区间拟合。对长期累计收入，指数模型更合理：递增且趋近600。二次模型在22周后下降，会表示累计票房减少；其早期区间外甚至可能为负。指数拟合也只应在数据支持区间使用，不能把外推当作真实收入。"
+          }
+        ],
+        "answer": "渐近线表示最终累计收入。可选模型为 $y\\approx-1.1825(x-22)^2+573$ 与 $y\\approx-35(0.65)^{0.3(x-20)}+600$；后者更符合长期趋于总额的情境。图上读数造成合理的模型差异。",
+        "printedPage": 357,
+        "pdfPage": 366,
+        "en": {
+          "prompt": "Work with a partner on the given movie box-office graph. Let $x$ be weeks and $y$ cumulative revenue in millions of dollars. (1) Avatar and Dark Knight appear to have horizontal asymptotes. Interpret this and decide whether Titanic will eventually show the same feature. (2) For Titanic: (a) with vertex $(22,573)$, find a possible quadratic $y=a(x-h)^2+k$ for this part of the curve; (b) assuming asymptote $y=600$, find a possible exponential $y=-35(0.65)^{0.3(x-h)}+k$; (c) decide which type better models the curve and explain.",
+          "steps": [
+            {
+              "title": "Meaning of the horizontal asymptote",
+              "body": "Cumulative revenue approaches a final total as weekly new receipts approach zero near the end of the run. Titanic is also expected to approach a finite total. This interprets the supplied historical graph rather than conducting a current revenue survey."
+            },
+            {
+              "title": "Quadratic: one reproducible example",
+              "body": "The vertex gives $h=22,k=573$. Read the approximate Titanic point $(2,100)$: $100=a(2-22)^2+573$, so $400a=-473$ and $a\\approx-473/400=-1.1825$. One possible model is $y\\approx-1.1825(x-22)^2+573$, for the plotted portion from roughly week 2 to week 22. Different reasonable graph readings give slightly different models; this is not a unique exact fit."
+            },
+            {
+              "title": "Exponential: use the asymptote and a plotted point",
+              "body": "The asymptote gives $k=600$. Read the approximate point $(20,565)$ and substitute: $565=-35(0.65)^{0.3(20-h)}+600$. Thus $(0.65)^{0.3(20-h)}=1$, so $0.3(20-h)=0$ and $h\\approx20$. The model is $y\\approx-35(0.65)^{0.3(x-20)}+600$. It predicts $572.97$ at week 22, agreeing with the plotted 573."
+            },
+            {
+              "title": "Comparison and applicable interval",
+              "body": "Both can fit a limited late-time interval. The exponential is more reasonable for long-term cumulative revenue because it increases toward 600. The quadratic decreases after week 22, implying falling cumulative receipts, and can even be negative outside its early fitted interval. The exponential fit should also be used only where the data support it, not treated as observed revenue outside that interval."
+            }
+          ],
+          "answer": "An asymptote represents final cumulative revenue. Possible models are $y\\approx-1.1825(x-22)^2+573$ and $y\\approx-35(0.65)^{0.3(x-20)}+600$; the latter better represents a long-term limiting total. Reasonable graph-reading differences give different fits.",
+          "label": "Project Corner: Modelling a Curve"
+        },
+        "id": "project-corner",
+        "type": "practice",
+        "label": "项目角：曲线建模",
+        "subpartIds": [
+          "asymptote",
+          "quadratic",
+          "exponential",
+          "compare"
+        ],
+        "sourceImage": "assets/72-project-given.png",
+        "solutionImage": "assets/72-project-models.png"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "把每个函数与 $y=3^x$ 的相应变换配对：(a) $y=2(3)^x$；(b) $y=3^{x-2}$；(c) $y=3^x+4$；(d) $y=3^{x/5}$。选项A：上移；B：水平拉伸；C：竖直拉伸；D：右移。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "a：指数外倍数",
+            "body": "$2(3)^x$ 把纵坐标乘2，竖直拉伸2倍，选C。"
+          },
+          {
+            "title": "b：指数内减法",
+            "body": "$3^{x-2}$ 把基图点 $(u,v)$ 变为 $(u+2,v)$，向右2，选D。"
+          },
+          {
+            "title": "c：指数外加法",
+            "body": "$3^x+4$ 把纵坐标加4，向上4，选A。"
+          },
+          {
+            "title": "d：指数系数",
+            "body": "$3^{x/5}$ 中 $b=1/5$，横坐标乘5，水平拉伸5倍，选B。"
+          }
+        ],
+        "answer": "(a) C；(b) D；(c) A；(d) B。",
+        "printedPage": 354,
+        "pdfPage": 363,
+        "en": {
+          "prompt": "Match each function with the corresponding transformation of $y=3^x$: (a) $y=2(3)^x$; (b) $y=3^{x-2}$; (c) $y=3^x+4$; (d) $y=3^{x/5}$. A: translation up; B: horizontal stretch; C: vertical stretch; D: translation right.",
+          "steps": [
+            {
+              "title": "a: An outside multiplier",
+              "body": "$2(3)^x$ multiplies ordinates by 2: vertical stretch by 2, choice C."
+            },
+            {
+              "title": "b: Subtraction in the exponent",
+              "body": "$3^{x-2}$ maps $(u,v)$ to $(u+2,v)$: right 2, choice D."
+            },
+            {
+              "title": "c: Outside addition",
+              "body": "$3^x+4$ adds 4 to ordinates: up 4, choice A."
+            },
+            {
+              "title": "d: Exponent coefficient",
+              "body": "In $3^{x/5}$, $b=1/5$, so abscissas multiply by 5: horizontal stretch by 5, choice B."
+            }
+          ],
+          "answer": "(a) C; (b) D; (c) A; (d) B."
+        },
+        "number": 1,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "把每个函数与 $y=(3/5)^x$ 的相应变换配对：(a) $y=(3/5)^{x+1}$；(b) $y=-(3/5)^x$；(c) $y=(3/5)^{-x}$；(d) $y=(3/5)^x-2$。选项A：关于 $x$ 轴反射；B：关于 $y$ 轴反射；C：下移；D：左移。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "a：水平平移",
+            "body": "$x+1=x-(-1)$，所以 $h=-1$，左移1，选D。"
+          },
+          {
+            "title": "b：竖直反射",
+            "body": "指数外负号把 $(u,v)$ 变为 $(u,-v)$，关于 $x$ 轴反射，选A。"
+          },
+          {
+            "title": "c：水平反射",
+            "body": "指数内负号把 $(u,v)$ 变为 $(-u,v)$，关于 $y$ 轴反射，选B。"
+          },
+          {
+            "title": "d：竖直平移",
+            "body": "指数外减2把纵坐标减2，向下2，选C。"
+          }
+        ],
+        "answer": "(a) D；(b) A；(c) B；(d) C。",
+        "printedPage": 354,
+        "pdfPage": 363,
+        "en": {
+          "prompt": "Match each function with the corresponding transformation of $y=(3/5)^x$: (a) $y=(3/5)^{x+1}$; (b) $y=-(3/5)^x$; (c) $y=(3/5)^{-x}$; (d) $y=(3/5)^x-2$. A: reflection in the $x$-axis; B: reflection in the $y$-axis; C: translation down; D: translation left.",
+          "steps": [
+            {
+              "title": "a: Horizontal translation",
+              "body": "$x+1=x-(-1)$, so $h=-1$: left 1, choice D."
+            },
+            {
+              "title": "b: Vertical reflection",
+              "body": "The outside minus maps $(u,v)$ to $(u,-v)$: reflection in the $x$-axis, choice A."
+            },
+            {
+              "title": "c: Horizontal reflection",
+              "body": "The minus in the exponent maps $(u,v)$ to $(-u,v)$: reflection in the $y$-axis, choice B."
+            },
+            {
+              "title": "d: Vertical translation",
+              "body": "Subtracting 2 outside the power decreases each ordinate by 2: down 2, choice C."
+            }
+          ],
+          "answer": "(a) D; (b) A; (c) B; (d) C."
+        },
+        "number": 2,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "对各函数确定参数 $a,b,h,k$，并说明每个参数对应的变换：(a) $f(x)=2(3)^x-4$；(b) $g(x)=6^{x-2}+3$；(c) $m(x)=-4(3)^{x+5}$；(d) $y=(1/2)^{3(x-1)}$；(e) $n(x)=-\\frac12(5)^{2(x-4)}+3$；(f) $y=-(2/3)^{2x-2}$；(g) $y=1.5(0.75)^{(x-4)/2}-\\frac52$。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "a：底数3",
+            "body": "$(a,b,h,k)=(2,1,0,-4)$：竖直拉伸2倍；水平不变；水平无平移；下移4。"
+          },
+          {
+            "title": "b：底数6",
+            "body": "$(a,b,h,k)=(1,1,2,3)$：没有伸缩或反射，右移2、上移3。"
+          },
+          {
+            "title": "c：负竖直因子",
+            "body": "$x+5=x-(-5)$，故 $(a,b,h,k)=(-4,1,-5,0)$：竖直拉伸4倍并关于 $x$ 轴反射，左移5，无水平伸缩或竖直平移。"
+          },
+          {
+            "title": "d：水平压缩",
+            "body": "$(a,b,h,k)=(1,3,1,0)$：竖直不变，水平压缩到 $1/3$，右移1，不竖直平移。"
+          },
+          {
+            "title": "e：多重变换",
+            "body": "$(a,b,h,k)=(-1/2,2,4,3)$：竖直压缩到 $1/2$ 并关于 $x$ 轴反射，水平压缩到 $1/2$，最后右移4、上移3。"
+          },
+          {
+            "title": "f：先因式分解指数",
+            "body": "$2x-2=2(x-1)$，所以 $(a,b,h,k)=(-1,2,1,0)$：关于 $x$ 轴反射，水平压缩到 $1/2$，右移1，无竖直平移。"
+          },
+          {
+            "title": "g：分数指数",
+            "body": "$(x-4)/2=\\frac12(x-4)$，所以 $(a,b,h,k)=(3/2,1/2,4,-5/2)$：竖直拉伸 $3/2$ 倍，水平拉伸2倍，右移4、下移 $5/2$。"
+          }
+        ],
+        "answer": "参数 $(a,b,h,k)$ 依次为：(a) $(2,1,0,-4)$；(b) $(1,1,2,3)$；(c) $(-4,1,-5,0)$；(d) $(1,3,1,0)$；(e) $(-1/2,2,4,3)$；(f) $(-1,2,1,0)$；(g) $(3/2,1/2,4,-5/2)$。",
+        "printedPage": 354,
+        "pdfPage": 363,
+        "en": {
+          "prompt": "For each function identify $a,b,h,k$ and the transformation corresponding to each: (a) $f(x)=2(3)^x-4$; (b) $g(x)=6^{x-2}+3$; (c) $m(x)=-4(3)^{x+5}$; (d) $y=(1/2)^{3(x-1)}$; (e) $n(x)=-\\frac12(5)^{2(x-4)}+3$; (f) $y=-(2/3)^{2x-2}$; (g) $y=1.5(0.75)^{(x-4)/2}-\\frac52$.",
+          "steps": [
+            {
+              "title": "a: Base 3",
+              "body": "$(a,b,h,k)=(2,1,0,-4)$: vertical stretch by 2; no horizontal scale; no horizontal translation; down 4."
+            },
+            {
+              "title": "b: Base 6",
+              "body": "$(a,b,h,k)=(1,1,2,3)$: no scale or reflection; right 2 and up 3."
+            },
+            {
+              "title": "c: Negative vertical factor",
+              "body": "$x+5=x-(-5)$, so $(a,b,h,k)=(-4,1,-5,0)$: stretch vertically by 4 and reflect in the $x$-axis, then left 5; no horizontal scale or vertical translation."
+            },
+            {
+              "title": "d: Horizontal compression",
+              "body": "$(a,b,h,k)=(1,3,1,0)$: no vertical change, horizontal compression by $1/3$, right 1, no vertical translation."
+            },
+            {
+              "title": "e: Combined transformations",
+              "body": "$(a,b,h,k)=(-1/2,2,4,3)$: compress vertically by $1/2$ and reflect in the $x$-axis, compress horizontally by $1/2$, then right 4 and up 3."
+            },
+            {
+              "title": "f: Factor the exponent first",
+              "body": "$2x-2=2(x-1)$, so $(a,b,h,k)=(-1,2,1,0)$: reflect in the $x$-axis, compress horizontally by $1/2$, right 1, no vertical translation."
+            },
+            {
+              "title": "g: Fractional exponent",
+              "body": "$(x-4)/2=\\frac12(x-4)$, so $(a,b,h,k)=(3/2,1/2,4,-5/2)$: stretch vertically by $3/2$ and horizontally by 2, then right 4 and down $5/2$."
+            }
+          ],
+          "answer": "The parameter tuples $(a,b,h,k)$ are (a) $(2,1,0,-4)$; (b) $(1,1,2,3)$; (c) $(-4,1,-5,0)$; (d) $(1,3,1,0)$; (e) $(-1/2,2,4,3)$; (f) $(-1,2,1,0)$; (g) $(3/2,1/2,4,-5/2)$."
+        },
+        "number": 3,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g"
+        ]
+      },
+      {
+        "prompt": "不用技术工具，将给定图(a)–(d)与函数配对并说明理由。A：$y=3^{2(x-1)}-2$；B：$y=2^{x-2}+1$；C：$y=-(1/2)^{x/2}+2$；D：$y=-\\frac12(4)^{(x+1)/2}+2$。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "a：趋近2的递增曲线",
+            "body": "图(a)递增且在 $y=2$ 下方，符合C。C在 $x=0$ 时为1，且 $x\\to\\infty$ 时 $(1/2)^{x/2}\\to0$，从下方趋近2。"
+          },
+          {
+            "title": "b：渐近线为负2",
+            "body": "图(b)递增，左侧渐近线为 $y=-2$，只有A符合。A纵截距为 $3^{-2}-2=-17/9$，接近图中的 $-2$。"
+          },
+          {
+            "title": "c：递减且有横截距",
+            "body": "D可化为 $-2^x+2$，其渐近线为2、纵截距为1、横截距为1，且递减，正是图(c)。"
+          },
+          {
+            "title": "d：渐近线为1",
+            "body": "图(d)递增且左侧趋近 $y=1$，符合B；$x=0$ 时 $2^{-2}+1=5/4$，$x=2$ 时为2，也与图一致。"
+          }
+        ],
+        "answer": "(a) C；(b) A；(c) D；(d) B。",
+        "printedPage": 355,
+        "pdfPage": 364,
+        "en": {
+          "prompt": "Without using technology, match each given graph (a)–(d) with its function and justify your choice. A: $y=3^{2(x-1)}-2$; B: $y=2^{x-2}+1$; C: $y=-(1/2)^{x/2}+2$; D: $y=-\\frac12(4)^{(x+1)/2}+2$.",
+          "steps": [
+            {
+              "title": "a: An increasing curve approaching 2",
+              "body": "Graph (a) increases below $y=2$, matching C. C has value 1 at $x=0$ and approaches 2 from below as $(1/2)^{x/2}\\to0$ when $x\\to\\infty$."
+            },
+            {
+              "title": "b: Asymptote at negative 2",
+              "body": "Graph (b) increases with left-hand asymptote $y=-2$, uniquely matching A. Its vertical intercept is $3^{-2}-2=-17/9$, near the plotted $-2$."
+            },
+            {
+              "title": "c: Decreasing with a horizontal intercept",
+              "body": "D simplifies to $-2^x+2$, with asymptote 2, vertical intercept 1, horizontal intercept 1, and a decreasing curve: graph (c)."
+            },
+            {
+              "title": "d: Asymptote at 1",
+              "body": "Graph (d) increases and approaches $y=1$ on the left, matching B; at $x=0$ the value is $2^{-2}+1=5/4$, and at $x=2$ it is 2, agreeing with the plot."
+            }
+          ],
+          "answer": "(a) C; (b) A; (c) D; (d) B."
+        },
+        "number": 4,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/72-ex4-given.png"
+      },
+      {
+        "prompt": "把 $y=4^x$ 变换为 $y=\\frac12(4)^{-(x-3)}+2$。(a) 写出参数和变换；(b) 完成表格，列依次是 $y=4^x$、$y=4^{-x}$、$y=\\frac12(4)^{-x}$、$y=\\frac12(4)^{-(x-3)}+2$，基图点为 $(-2,1/16),(-1,1/4),(0,1),(1,4),(2,16)$；(c) 画变换图；(d) 确定定义域、值域、水平渐近线和所有截距。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "a：参数与顺序",
+            "body": "$a=1/2,b=-1,h=3,k=2$：关于 $y$ 轴反射，竖直压缩到 $1/2$，再右移3、上移2。映射 $(u,v)\\mapsto(3-u,v/2+2)$。"
+          },
+          {
+            "title": "b：反射与竖直压缩列",
+            "body": "第二列：$(2,1/16),(1,1/4),(0,1),(-1,4),(-2,16)$。第三列：$(2,1/32),(1,1/8),(0,1/2),(-1,2),(-2,8)$。"
+          },
+          {
+            "title": "b：最终列",
+            "body": "第三列每点右移3、上移2，得 $(5,65/32),(4,17/8),(3,5/2),(2,4),(1,10)$。"
+          },
+          {
+            "title": "c：画递减曲线",
+            "body": "按上述最终点画平滑递减指数曲线，在右侧从上方趋近 $y=2$。图中也标出纵截距 $(0,34)$。"
+          },
+          {
+            "title": "d：定义域值域及截距",
+            "body": "$D=\\mathbb R$，$R=(2,\\infty)$，渐近线 $y=2$。$y(0)=\\frac12 4^3+2=34$。由于 $y>2$，没有横截距。"
+          }
+        ],
+        "answer": "$(a,b,h,k)=(1/2,-1,3,2)$；$D=\\mathbb R,R=(2,\\infty)$；渐近线 $y=2$；纵截距34，无横截距。",
+        "printedPage": 355,
+        "pdfPage": 364,
+        "en": {
+          "prompt": "The graph of $y=4^x$ is transformed into $y=\\frac12(4)^{-(x-3)}+2$. (a) State parameters and transformations. (b) Complete the table with columns $y=4^x$, $y=4^{-x}$, $y=\\frac12(4)^{-x}$, $y=\\frac12(4)^{-(x-3)}+2$ and base points $(-2,1/16),(-1,1/4),(0,1),(1,4),(2,16)$. (c) Sketch the transformed graph. (d) Identify its domain, range, horizontal asymptote, and all intercepts.",
+          "steps": [
+            {
+              "title": "a: Parameters and order",
+              "body": "$a=1/2,b=-1,h=3,k=2$: reflect in the $y$-axis, compress vertically by $1/2$, then right 3 and up 2. The map is $(u,v)\\mapsto(3-u,v/2+2)$."
+            },
+            {
+              "title": "b: Reflection and vertical-scale columns",
+              "body": "Second column: $(2,1/16),(1,1/4),(0,1),(-1,4),(-2,16)$. Third column: $(2,1/32),(1,1/8),(0,1/2),(-1,2),(-2,8)$."
+            },
+            {
+              "title": "b: Final column",
+              "body": "Translate each third-column point right 3 and up 2: $(5,65/32),(4,17/8),(3,5/2),(2,4),(1,10)$."
+            },
+            {
+              "title": "c: Draw the decreasing curve",
+              "body": "Draw a smooth decreasing exponential through the final points, approaching $y=2$ from above on the right. The plot also marks vertical intercept $(0,34)$."
+            },
+            {
+              "title": "d: Domain, range and intercepts",
+              "body": "$D=\\mathbb R$, $R=(2,\\infty)$, asymptote $y=2$. $y(0)=\\frac12 4^3+2=34$. Since $y>2$, there is no horizontal intercept."
+            }
+          ],
+          "answer": "$(a,b,h,k)=(1/2,-1,3,2)$; $D=\\mathbb R,R=(2,\\infty)$; asymptote $y=2$; vertical intercept 34, no horizontal intercept."
+        },
+        "number": 5,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/72-ex5.png"
+      },
+      {
+        "prompt": "对每个函数：(i) 写参数 $a,b,h,k$；(ii) 说明各参数的变换；(iii) 画图；(iv) 确定定义域、值域、水平渐近线和所有截距。(a) $y=2(3)^x+4$；(b) $m(r)=-(2)^{r-3}+2$；(c) $y=\\frac13(4)^{x+1}+1$；(d) $n(s)=-\\frac12(1/3)^{s/4}-3$。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "a(i)：参数",
+            "body": "以 $y=3^x$ 为基图，$(a,b,h,k)=(2,1,0,4)$。"
+          },
+          {
+            "title": "a(ii)：变换",
+            "body": "竖直拉伸2倍，再上移4；$b=1$ 无水平伸缩或反射，$h=0$ 无水平平移。"
+          },
+          {
+            "title": "a(iii)：点与图像",
+            "body": "$(u,v)\\mapsto(u,2v+4)$，所以 $(-1,1/3),(0,1),(1,3)$ 变为 $(-1,14/3),(0,6),(1,10)$。曲线递增并在左端从上方趋近4。"
+          },
+          {
+            "title": "a(iv)：特征",
+            "body": "$D=\\mathbb R,R=(4,\\infty)$；渐近线 $y=4$。纵截距 $y(0)=2+4=6$；由于 $y>4$ 无横截距。"
+          },
+          {
+            "title": "b(i)：参数",
+            "body": "以 $m=2^r$ 为基图，$(a,b,h,k)=(-1,1,3,2)$。"
+          },
+          {
+            "title": "b(ii)：变换",
+            "body": "关于水平轴反射，右移3、上移2；竖直尺度为1，水平尺度为1，没有伸缩。"
+          },
+          {
+            "title": "b(iii)：点与图像",
+            "body": "$(u,v)\\mapsto(u+3,-v+2)$，基图点 $(-1,1/2),(0,1),(1,2),(2,4)$ 变为 $(2,3/2),(3,1),(4,0),(5,-2)$。画递减曲线，左端从下方趋近2。"
+          },
+          {
+            "title": "b(iv)：特征与截距",
+            "body": "$D=\\mathbb R,R=(-\\infty,2)$；渐近线 $m=2$。$m(0)=-2^{-3}+2=15/8$。令 $m=0$ 得 $2^{r-3}=2$，故 $r=4$；截距为 $(0,15/8),(4,0)$。"
+          },
+          {
+            "title": "c(i)：参数",
+            "body": "以 $y=4^x$ 为基图，$(a,b,h,k)=(1/3,1,-1,1)$。"
+          },
+          {
+            "title": "c(ii)：变换",
+            "body": "竖直压缩到 $1/3$，左移1、上移1；$b=1$ 不作水平伸缩或反射。"
+          },
+          {
+            "title": "c(iii)：点与图像",
+            "body": "$(u,v)\\mapsto(u-1,v/3+1)$，所以 $(-1,1/4),(0,1),(1,4),(2,16)$ 变为 $(-2,13/12),(-1,4/3),(0,7/3),(1,19/3)$。画递增曲线，左端从上方趋近1。"
+          },
+          {
+            "title": "c(iv)：特征与截距",
+            "body": "$D=\\mathbb R,R=(1,\\infty)$；渐近线 $y=1$；纵截距 $4/3+1=7/3$。由于 $y>1$，无横截距。"
+          },
+          {
+            "title": "d(i)：参数",
+            "body": "以 $n=(1/3)^s$ 为基图，$(a,b,h,k)=(-1/2,1/4,0,-3)$。"
+          },
+          {
+            "title": "d(ii)：变换",
+            "body": "竖直压缩到 $1/2$ 并关于水平轴反射，水平拉伸4倍，最后下移3，无水平平移。"
+          },
+          {
+            "title": "d(iii)：点与图像",
+            "body": "$(u,v)\\mapsto(4u,-v/2-3)$，$(-1,3),(0,1),(1,1/3),(2,1/9)$ 变为 $(-4,-9/2),(0,-7/2),(4,-19/6),(8,-55/18)$。画递增曲线，右端从下方趋近 $-3$。"
+          },
+          {
+            "title": "d(iv)：特征与截距",
+            "body": "$D=\\mathbb R,R=(-\\infty,-3)$；渐近线 $n=-3$；纵截距 $-1/2-3=-7/2$。由于 $n<-3$，没有横截距。"
+          }
+        ],
+        "answer": "四图见解析图。(a) $R=(4,\\infty)$、纵截距6；(b) $R=(-\\infty,2)$、截距 $(0,15/8),(4,0)$；(c) $R=(1,\\infty)$、纵截距 $7/3$；(d) $R=(-\\infty,-3)$、纵截距 $-7/2$。各定义域均为 $\\mathbb R$，渐近线分别为4、2、1、$-3$；除(b)外均无横截距。",
+        "printedPage": 355,
+        "pdfPage": 364,
+        "en": {
+          "prompt": "For each function: (i) state $a,b,h,k$; (ii) describe the transformation for each parameter; (iii) sketch the graph; (iv) identify domain, range, horizontal asymptote, and all intercepts. (a) $y=2(3)^x+4$; (b) $m(r)=-(2)^{r-3}+2$; (c) $y=\\frac13(4)^{x+1}+1$; (d) $n(s)=-\\frac12(1/3)^{s/4}-3$.",
+          "steps": [
+            {
+              "title": "a(i): Parameters",
+              "body": "Relative to $y=3^x$, $(a,b,h,k)=(2,1,0,4)$."
+            },
+            {
+              "title": "a(ii): Transformations",
+              "body": "Stretch vertically by 2, then up 4; $b=1$ gives no horizontal scale/reflection and $h=0$ no horizontal translation."
+            },
+            {
+              "title": "a(iii): Points and sketch",
+              "body": "$(u,v)\\mapsto(u,2v+4)$, so $(-1,1/3),(0,1),(1,3)$ become $(-1,14/3),(0,6),(1,10)$. The curve increases and approaches 4 from above on the left."
+            },
+            {
+              "title": "a(iv): Features",
+              "body": "$D=\\mathbb R,R=(4,\\infty)$; asymptote $y=4$. The vertical intercept is $y(0)=2+4=6$; $y>4$ excludes a horizontal intercept."
+            },
+            {
+              "title": "b(i): Parameters",
+              "body": "Relative to $m=2^r$, $(a,b,h,k)=(-1,1,3,2)$."
+            },
+            {
+              "title": "b(ii): Transformations",
+              "body": "Reflect in the horizontal axis, then right 3 and up 2; both scale magnitudes are 1, so no stretch/compression occurs."
+            },
+            {
+              "title": "b(iii): Points and sketch",
+              "body": "$(u,v)\\mapsto(u+3,-v+2)$ maps $(-1,1/2),(0,1),(1,2),(2,4)$ to $(2,3/2),(3,1),(4,0),(5,-2)$. Draw a decreasing curve approaching 2 from below on the left."
+            },
+            {
+              "title": "b(iv): Features and intercepts",
+              "body": "$D=\\mathbb R,R=(-\\infty,2)$; asymptote $m=2$. $m(0)=-2^{-3}+2=15/8$. Setting $m=0$ gives $2^{r-3}=2$, hence $r=4$; the intercepts are $(0,15/8),(4,0)$."
+            },
+            {
+              "title": "c(i): Parameters",
+              "body": "Relative to $y=4^x$, $(a,b,h,k)=(1/3,1,-1,1)$."
+            },
+            {
+              "title": "c(ii): Transformations",
+              "body": "Compress vertically by $1/3$, then left 1 and up 1; $b=1$ gives no horizontal scale or reflection."
+            },
+            {
+              "title": "c(iii): Points and sketch",
+              "body": "$(u,v)\\mapsto(u-1,v/3+1)$ maps $(-1,1/4),(0,1),(1,4),(2,16)$ to $(-2,13/12),(-1,4/3),(0,7/3),(1,19/3)$. Draw an increasing curve approaching 1 from above on the left."
+            },
+            {
+              "title": "c(iv): Features and intercepts",
+              "body": "$D=\\mathbb R,R=(1,\\infty)$; asymptote $y=1$; vertical intercept $4/3+1=7/3$. There is no horizontal intercept since $y>1$."
+            },
+            {
+              "title": "d(i): Parameters",
+              "body": "Relative to $n=(1/3)^s$, $(a,b,h,k)=(-1/2,1/4,0,-3)$."
+            },
+            {
+              "title": "d(ii): Transformations",
+              "body": "Compress vertically by $1/2$ and reflect in the horizontal axis, stretch horizontally by 4, then down 3; no horizontal translation."
+            },
+            {
+              "title": "d(iii): Points and sketch",
+              "body": "$(u,v)\\mapsto(4u,-v/2-3)$ maps $(-1,3),(0,1),(1,1/3),(2,1/9)$ to $(-4,-9/2),(0,-7/2),(4,-19/6),(8,-55/18)$. Draw an increasing curve approaching $-3$ from below on the right."
+            },
+            {
+              "title": "d(iv): Features and intercepts",
+              "body": "$D=\\mathbb R,R=(-\\infty,-3)$; asymptote $n=-3$; vertical intercept $-1/2-3=-7/2$. There is no horizontal intercept since $n<-3$."
+            }
+          ],
+          "answer": "See all four sketches. (a) $R=(4,\\infty)$, vertical intercept 6; (b) $R=(-\\infty,2)$, intercepts $(0,15/8),(4,0)$; (c) $R=(1,\\infty)$, vertical intercept $7/3$; (d) $R=(-\\infty,-3)$, vertical intercept $-7/2$. All domains are $\\mathbb R$; asymptotes are 4, 2, 1, $-3$, respectively. Only (b) has a horizontal intercept."
+        },
+        "number": 6,
+        "subpartIds": [
+          "ai",
+          "aii",
+          "aiii",
+          "aiv",
+          "bi",
+          "bii",
+          "biii",
+          "biv",
+          "ci",
+          "cii",
+          "ciii",
+          "civ",
+          "di",
+          "dii",
+          "diii",
+          "div"
+        ],
+        "solutionImage": "assets/72-ex6.png"
+      },
+      {
+        "prompt": "描述把各基函数 $f(x)$ 变成所给函数的变换，并写成 $y=a(c)^{b(x-h)}+k$。(a) $f(x)=(1/2)^x$，$y=f(x-2)+1$；(b) $f(x)=5^x$，$y=-0.5f(x-3)$；(c) $f(x)=(1/4)^x$，$y=-f(3x)+1$；(d) $f(x)=4^x$，$y=2f(-\\frac13(x-1))-5$。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "a：代入自变量",
+            "body": "$y=(1/2)^{x-2}+1$。$(a,b,h,k)=(1,1,2,1)$，右移2、上移1，无伸缩或反射。"
+          },
+          {
+            "title": "b：外因子与平移",
+            "body": "$y=-0.5(5)^{x-3}$。$(a,b,h,k)=(-1/2,1,3,0)$：竖直压缩到 $1/2$ 并关于 $x$ 轴反射，再右移3；无水平伸缩或竖直平移。"
+          },
+          {
+            "title": "c：水平压缩与反射",
+            "body": "$y=-(1/4)^{3x}+1$。$(a,b,h,k)=(-1,3,0,1)$：水平压缩到 $1/3$，关于 $x$ 轴反射，再上移1；无水平平移。"
+          },
+          {
+            "title": "d：负分数的水平系数",
+            "body": "$y=2(4)^{-(x-1)/3}-5$。$(a,b,h,k)=(2,-1/3,1,-5)$：竖直拉伸2倍，水平拉伸3倍并关于 $y$ 轴反射，再右移1、下移5。"
+          }
+        ],
+        "answer": "(a) $(1/2)^{x-2}+1$；(b) $-0.5(5)^{x-3}$；(c) $-(1/4)^{3x}+1$；(d) $2(4)^{-(x-1)/3}-5$。",
+        "printedPage": 355,
+        "pdfPage": 364,
+        "en": {
+          "prompt": "Describe the transformations of each base function $f(x)$ and write the result as $y=a(c)^{b(x-h)}+k$. (a) $f(x)=(1/2)^x$, $y=f(x-2)+1$; (b) $f(x)=5^x$, $y=-0.5f(x-3)$; (c) $f(x)=(1/4)^x$, $y=-f(3x)+1$; (d) $f(x)=4^x$, $y=2f(-\\frac13(x-1))-5$.",
+          "steps": [
+            {
+              "title": "a: Substitute the input",
+              "body": "$y=(1/2)^{x-2}+1$. $(a,b,h,k)=(1,1,2,1)$: right 2 and up 1, with no scale or reflection."
+            },
+            {
+              "title": "b: Outside factor and translation",
+              "body": "$y=-0.5(5)^{x-3}$. $(a,b,h,k)=(-1/2,1,3,0)$: compress vertically by $1/2$ and reflect in the $x$-axis, then right 3; no horizontal scale or vertical translation."
+            },
+            {
+              "title": "c: Horizontal compression and reflection",
+              "body": "$y=-(1/4)^{3x}+1$. $(a,b,h,k)=(-1,3,0,1)$: compress horizontally by $1/3$, reflect in the $x$-axis, then up 1; no horizontal translation."
+            },
+            {
+              "title": "d: Negative fractional input factor",
+              "body": "$y=2(4)^{-(x-1)/3}-5$. $(a,b,h,k)=(2,-1/3,1,-5)$: stretch vertically by 2 and horizontally by 3, reflect in the $y$-axis, then right 1 and down 5."
+            }
+          ],
+          "answer": "(a) $(1/2)^{x-2}+1$; (b) $-0.5(5)^{x-3}$; (c) $-(1/4)^{3x}+1$; (d) $2(4)^{-(x-1)/3}-5$."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "对第7题(a)–(d)的每对指数函数，在同一坐标系画原函数与变换函数，并解释作图过程。即(a) $(1/2)^x$ 与 $(1/2)^{x-2}+1$；(b) $5^x$ 与 $-0.5(5)^{x-3}$；(c) $(1/4)^x$ 与 $-(1/4)^{3x}+1$；(d) $4^x$ 与 $2(4)^{-(x-1)/3}-5$。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "a：右移并上移",
+            "body": "原图点 $(-1,2),(0,1),(1,1/2)$ 经 $(u,v)\\mapsto(u+2,v+1)$ 变为 $(1,3),(2,2),(3,3/2)$。分别连成递减曲线；渐近线从 $y=0$ 变为 $y=1$。"
+          },
+          {
+            "title": "b：压缩、反射、右移",
+            "body": "$(-1,1/5),(0,1),(1,5)$ 经 $(u,v)\\mapsto(u+3,-v/2)$ 变为 $(2,-1/10),(3,-1/2),(4,-5/2)$。原图递增，变换图递减并在 $x$ 轴下方；二者渐近线均为 $y=0$。"
+          },
+          {
+            "title": "c：水平压缩、反射、上移",
+            "body": "$(-1,4),(0,1),(1,1/4)$ 经 $(u,v)\\mapsto(u/3,-v+1)$ 变为 $(-1/3,-3),(0,0),(1/3,3/4)$。原图递减，变换图递增；渐近线从0变为1。"
+          },
+          {
+            "title": "d：变换对应点",
+            "body": "$(-1,1/4),(0,1),(1,4)$ 经 $(u,v)\\mapsto(-3u+1,2v-5)$ 变为 $(4,-9/2),(1,-3),(-2,3)$。原图递增，变换图递减；后者右端从上方趋近 $y=-5$。所有图均按实际指数函数绘制。"
+          }
+        ],
+        "answer": "四组原函数和变换函数见解析图；每组对应点、映射与渐近线如上。",
+        "printedPage": 356,
+        "pdfPage": 365,
+        "en": {
+          "prompt": "For each pair in Exercise 7(a)–(d), sketch the original and transformed functions on the same axes and explain your procedure: (a) $(1/2)^x$ and $(1/2)^{x-2}+1$; (b) $5^x$ and $-0.5(5)^{x-3}$; (c) $(1/4)^x$ and $-(1/4)^{3x}+1$; (d) $4^x$ and $2(4)^{-(x-1)/3}-5$.",
+          "steps": [
+            {
+              "title": "a: Translate right and up",
+              "body": "The base points $(-1,2),(0,1),(1,1/2)$ map by $(u,v)\\mapsto(u+2,v+1)$ to $(1,3),(2,2),(3,3/2)$. Draw both decreasing curves; the asymptote changes from $y=0$ to $y=1$."
+            },
+            {
+              "title": "b: Compress, reflect and translate right",
+              "body": "$(-1,1/5),(0,1),(1,5)$ map by $(u,v)\\mapsto(u+3,-v/2)$ to $(2,-1/10),(3,-1/2),(4,-5/2)$. The base curve increases; the transformed curve decreases below the $x$-axis. Both have asymptote $y=0$."
+            },
+            {
+              "title": "c: Compress horizontally, reflect and translate up",
+              "body": "$(-1,4),(0,1),(1,1/4)$ map by $(u,v)\\mapsto(u/3,-v+1)$ to $(-1/3,-3),(0,0),(1/3,3/4)$. The base curve decreases; the transformed curve increases. Its asymptote changes from 0 to 1."
+            },
+            {
+              "title": "d: Transform corresponding points",
+              "body": "$(-1,1/4),(0,1),(1,4)$ map by $(u,v)\\mapsto(-3u+1,2v-5)$ to $(4,-9/2),(1,-3),(-2,3)$. The base curve increases; the transformed curve decreases and approaches $y=-5$ from above on the right. All plots use the actual exponential functions."
+            }
+          ],
+          "answer": "The solution image shows all four pairs with their mapped points and asymptotes described above."
+        },
+        "number": 8,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/72-ex8.png"
+      },
+      {
+        "prompt": "药物在人体内的残留量用 $M(h)=M_0(0.79)^{h/3}$ 表示，其中 $M$ 为体内药物质量（毫克），$M_0$ 为服用剂量（毫克），$h$ 为服药后经过的小时数。(a) 解释0.79与 $1/3$ 的作用；(b) 标准剂量为100毫克，画前48小时的残留量图；(c) $M$ 轴截距在此情境表示什么？(d) 求函数的定义域和值域。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "a：剩余比例与时间",
+            "body": "$0.79$ 表示每3小时保留79%，即减少21%；指数系数 $1/3$ 将小时换成3小时周期数，水平拉伸因子为3。"
+          },
+          {
+            "title": "b：计算具体图点",
+            "body": "$M(h)=100(0.79)^{h/3}$。点为 $(0,100),(6,62.41),(12,38.950081),(24,15.1710881),(48,2.30161914)$。连接为递减曲线，趋近 $M=0$；在前48小时只画 $0\\le h\\le48$。"
+          },
+          {
+            "title": "c：初始剂量",
+            "body": "$M(0)=100(0.79)^0=100$，所以截距 $(0,100)$ 表示刚服药时体内的100毫克初始剂量。"
+          },
+          {
+            "title": "d：区分模型与作图区间",
+            "body": "情境中的完整模型：$h\\ge0$，$0<M\\le100$；若仅限(b)的前48小时，则 $0\\le h\\le48$、$100(0.79)^{16}\\le M\\le100$，即约 $2.30162\\le M\\le100$。若完全忽略情境，代数函数的定义域为 $\\mathbb R$、值域 $(0,\\infty)$。"
+          }
+        ],
+        "answer": "(a) 每3小时剩79%；(b) 见图，48小时约2.30毫克；(c) 初始剂量100毫克；(d) 情境 $[0,\\infty)$、$(0,100]$，前48小时的限制另见步骤。",
+        "printedPage": 356,
+        "pdfPage": 365,
+        "en": {
+          "prompt": "The persistence of a drug is modelled by $M(h)=M_0(0.79)^{h/3}$, where $M$ is the mass remaining in the body in milligrams, $M_0$ the dose in milligrams, and $h$ the hours since the dose was taken. (a) Explain the roles of 0.79 and $1/3$. (b) For a standard dose of 100 mg, sketch the mass remaining over the first 48 h. (c) Interpret the $M$-intercept. (d) State the domain and range of this function.",
+          "steps": [
+            {
+              "title": "a: Remaining factor and time",
+              "body": "$0.79$ means 79% remains every 3 h, a 21% decrease. The coefficient $1/3$ converts hours to the number of 3-hour intervals, a horizontal stretch by 3."
+            },
+            {
+              "title": "b: Calculate plotting points",
+              "body": "$M(h)=100(0.79)^{h/3}$. Points are $(0,100),(6,62.41),(12,38.950081),(24,15.1710881),(48,2.30161914)$. Join with a decreasing curve approaching $M=0$; for the requested sketch restrict to $0\\le h\\le48$."
+            },
+            {
+              "title": "c: Initial dose",
+              "body": "$M(0)=100(0.79)^0=100$, so $(0,100)$ represents the initial 100 mg dose at the time it is taken."
+            },
+            {
+              "title": "d: Model domain versus sketch interval",
+              "body": "For the full contextual model, $h\\ge0$ and $0<M\\le100$. Restricted to the first 48 h in (b), $0\\le h\\le48$ and $100(0.79)^{16}\\le M\\le100$, approximately $2.30162\\le M\\le100$. Without contextual restrictions, the algebraic function has domain $\\mathbb R$ and range $(0,\\infty)$."
+            }
+          ],
+          "answer": "(a) 79% remains every 3 h; (b) see the graph, about 2.30 mg at 48 h; (c) the initial 100 mg dose; (d) contextual domain $[0,\\infty)$ and range $(0,100]$, with the first-48-h restriction stated in the steps."
+        },
+        "number": 9,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/72-ex9.png"
+      },
+      {
+        "prompt": "液体冷却可近似用牛顿冷却模型 $T(t)=(T_i-T_f)(0.9)^{t/5}+T_f$，其中 $T_f$ 为最终温度、$T_i$ 为初始温度（摄氏度），$t$ 为分钟数。咖啡初温95°C，冷却到20°C。(a) 写出 $a,b,h,k$ 并解释变换；(b) 画200分钟内的温度图；(c) 求100分钟后近似温度；(d) 水平渐近线表示什么？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "a：代入温差",
+            "body": "$T_i-T_f=95-20=75$，所以 $T(t)=75(0.9)^{t/5}+20$。相对于 $(0.9)^t$，$a=75$ 竖直拉伸75倍，$b=1/5$ 水平拉伸5倍，$h=0$ 不水平平移，$k=20$ 上移20。"
+          },
+          {
+            "title": "b：作图点与实际范围",
+            "body": "取 $(0,95),(25,64.28675),(50,46.15088),(100,29.11825),(150,23.17934),(200,21.10857)$。在 $0\\le t\\le200$ 连成平滑递减曲线；始终高于20。"
+          },
+          {
+            "title": "c：计算100分钟温度",
+            "body": "$T(100)=75(0.9)^{100/5}+20=75(0.9)^{20}+20\\approx29.11825^\\circ\\mathrm C\\approx29.1^\\circ\\mathrm C$。"
+          },
+          {
+            "title": "d：解释渐近线",
+            "body": "随着 $t$ 增大，$(0.9)^{t/5}\\to0$，所以 $T\\to20$。渐近线 $T=20$ 表示环境的最终平衡温度；该模型在有限时刻不恰好达到20度。"
+          }
+        ],
+        "answer": "$T(t)=75(0.9)^{t/5}+20$；参数 $(75,1/5,0,20)$；$T(100)\\approx29.1^\\circ\\mathrm C$；渐近线表示20°C室温。",
+        "printedPage": 356,
+        "pdfPage": 365,
+        "en": {
+          "prompt": "An approximation to Newton\\'s law of cooling is $T(t)=(T_i-T_f)(0.9)^{t/5}+T_f$, where $T_f$ is the final temperature, $T_i$ the initial temperature in degrees Celsius, and $t$ elapsed minutes. Coffee starts at 95°C and cools toward 20°C. (a) State $a,b,h,k$ and their transformations. (b) Sketch temperature over 200 min. (c) Find the approximate temperature after 100 min. (d) Interpret the horizontal asymptote.",
+          "steps": [
+            {
+              "title": "a: Substitute the temperature difference",
+              "body": "$T_i-T_f=95-20=75$, so $T(t)=75(0.9)^{t/5}+20$. Relative to $(0.9)^t$, $a=75$ stretches vertically by 75, $b=1/5$ stretches horizontally by 5, $h=0$ gives no horizontal translation, and $k=20$ translates up 20."
+            },
+            {
+              "title": "b: Plotting points and physical interval",
+              "body": "Use $(0,95),(25,64.28675),(50,46.15088),(100,29.11825),(150,23.17934),(200,21.10857)$. Join a smooth decreasing curve for $0\\le t\\le200$, always above 20."
+            },
+            {
+              "title": "c: Calculate the 100-minute temperature",
+              "body": "$T(100)=75(0.9)^{100/5}+20=75(0.9)^{20}+20\\approx29.11825^\\circ\\mathrm C\\approx29.1^\\circ\\mathrm C$."
+            },
+            {
+              "title": "d: Interpret the asymptote",
+              "body": "As $t$ grows, $(0.9)^{t/5}\\to0$, so $T\\to20$. The asymptote $T=20$ represents the final ambient equilibrium temperature; the model does not reach it exactly at a finite time."
+            }
+          ],
+          "answer": "$T(t)=75(0.9)^{t/5}+20$; parameters $(75,1/5,0,20)$; $T(100)\\approx29.1^\\circ\\mathrm C$; the asymptote represents ambient temperature 20°C."
+        },
+        "number": 10,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/72-ex10.png"
+      },
+      {
+        "prompt": "生物学家在培养皿的琼脂上培养细菌，用生长环估算数量；发现细菌每2天按指数规律增加20%。(a) 初始5000个，写成 $P=a(c)^{bx}$ 的种群模型，其中 $x$ 为天数；(b) 解释参数；(c) 画图并预测9天后的细菌数量。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "a：建立模型",
+            "body": "每2天乘 $1+0.20=1.2$，经过 $x$ 天共有 $x/2$ 段。初值5000，故 $P(x)=5000(1.2)^{x/2}$，$x\\ge0$。"
+          },
+          {
+            "title": "b：说明参数",
+            "body": "$a=5000$ 为初始种群和竖直伸缩因子；$c=1.2$ 为每2天增长因子；$b=1/2$ 把天换成两天周期，对应水平拉伸2倍。没有平移，$h=k=0$。"
+          },
+          {
+            "title": "c：图点与9天预测",
+            "body": "图点包括 $(0,5000),(2,6000),(4,7200),(6,8640),(8,10368)$。延伸平滑递增曲线到9天：$P(9)=5000(1.2)^{9/2}\\approx11357.57495$，约11358个细菌。连续模型不是每2天才跳跃一次。"
+          }
+        ],
+        "answer": "$P(x)=5000(1.2)^{x/2}$，9天后约11358个。",
+        "printedPage": 356,
+        "pdfPage": 365,
+        "en": {
+          "prompt": "A biologist infects agar in a Petri dish with bacteria and estimates population from the growth ring. The population increases exponentially by 20% every 2 days. (a) Starting with 5000 bacteria, find a model $P=a(c)^{bx}$ with $x$ in days. (b) Describe the parameters. (c) Graph the function and predict the population after 9 days.",
+          "steps": [
+            {
+              "title": "a: Construct the model",
+              "body": "Every 2 days the factor is $1+0.20=1.2$, and $x$ days contain $x/2$ intervals. With initial population 5000, $P(x)=5000(1.2)^{x/2}$ for $x\\ge0$."
+            },
+            {
+              "title": "b: Describe the parameters",
+              "body": "$a=5000$ is the initial population and vertical scale factor; $c=1.2$ is the growth factor every 2 days; $b=1/2$ converts days to 2-day intervals, stretching horizontally by 2. There are no translations: $h=k=0$."
+            },
+            {
+              "title": "c: Plotting points and 9-day prediction",
+              "body": "Plot $(0,5000),(2,6000),(4,7200),(6,8640),(8,10368)$ and extend the smooth increasing curve to day 9: $P(9)=5000(1.2)^{9/2}\\approx11357.57495$, about 11358 bacteria. The continuous model does not jump only at 2-day intervals."
+            }
+          ],
+          "answer": "$P(x)=5000(1.2)^{x/2}$; about 11358 bacteria after 9 days."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/72-ex11.png"
+      },
+      {
+        "prompt": "生物含不衰变的C-12和会衰变的C-14。生物死亡后，其组织中C-14按指数规律衰减，半衰期约5730年。(a) 写出 $t$ 年后C-14剩余百分比 $P$ 的函数；(b) 画图，用图确定只剩原量20%的死去生物的近似年龄。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "a：百分比模型",
+            "body": "死亡时为100%，每5730年剩一半，故 $P(t)=100(1/2)^{t/5730}$，$t\\ge0$。检查 $P(5730)=50$、$P(11460)=25$。"
+          },
+          {
+            "title": "b：求20%交点",
+            "body": "画上述衰减曲线与水平线 $P=20$。交点满足 $(1/2)^{t/5730}=0.20$。用图形计算器求交或逐步数值缩小区间：$P(13300)\\approx20.0112$，$P(13310)\\approx19.9871$，故交点约为 $t=13304.65$ 年，按图的精度约13300年。"
+          }
+        ],
+        "answer": "$P(t)=100(1/2)^{t/5730}$；年龄约13300年。",
+        "printedPage": 356,
+        "pdfPage": 365,
+        "en": {
+          "prompt": "Living organisms contain stable C-12 and decaying C-14. After death, C-14 decreases exponentially with a half-life of about 5730 years. (a) Find the remaining percent $P$ after $t$ years. (b) Graph the function and use it to estimate the age of an organism with 20% of its original C-14 remaining.",
+          "steps": [
+            {
+              "title": "a: Percent model",
+              "body": "At death the amount is 100%; half remains every 5730 years. Thus $P(t)=100(1/2)^{t/5730}$ for $t\\ge0$. Check $P(5730)=50$ and $P(11460)=25$."
+            },
+            {
+              "title": "b: Locate the 20% intersection",
+              "body": "Graph the decay curve and the horizontal line $P=20$. Their intersection satisfies $(1/2)^{t/5730}=0.20$. A graphing-calculator intersection or numerical interval refinement gives $P(13300)\\approx20.0112$ and $P(13310)\\approx19.9871$, so $t\\approx13304.65$ years, or about 13300 years at graphical precision."
+            }
+          ],
+          "answer": "$P(t)=100(1/2)^{t/5730}$; the age is approximately 13300 years."
+        },
+        "number": 12,
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/72-ex12.png"
+      },
+      {
+        "prompt": "星期一早晨，Julia发现细菌菌落在琼脂上覆盖 $100\\,\\mathrm{cm}^2$；10小时后面积为 $200\\,\\mathrm{cm}^2$。假定指数增长。(a) 星期二早晨（24小时后）覆盖多大面积？(b) 把地球看成半径6378千米的球，这些细菌要多久才会覆盖地球表面？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "a：求倍增模型",
+            "body": "每10小时翻倍，从星期一早晨计 $t$ 小时，$A(t)=100(2)^{t/10}$。$A(24)=100(2)^{2.4}\\approx527.80316\\,\\mathrm{cm}^2$，约528平方厘米。"
+          },
+          {
+            "title": "b：统一面积单位",
+            "body": "地球面积 $4\\pi r^2=4\\pi(6378)^2\\approx5.11185933\\times10^8\\,\\mathrm{km}^2$。因 $1\\,\\mathrm{km}^2=10^{10}\\,\\mathrm{cm}^2$，目标为 $5.11185933\\times10^{18}\\,\\mathrm{cm}^2$。"
+          },
+          {
+            "title": "b：数值求交并解释",
+            "body": "解 $100(2)^{t/10}=5.11185933\\times10^{18}$，即 $2^{t/10}=5.11185933\\times10^{16}$。用图解或数值求交，得 $t\\approx555.04698$ 小时，除以24得约23.127天。此为从星期一早晨开始的总时间，且仅是题设无限资源指数假设的外推。"
+          }
+        ],
+        "answer": "(a) 约 $528\\,\\mathrm{cm}^2$；(b) 从星期一早晨起约555小时，即23.1天。",
+        "printedPage": 357,
+        "pdfPage": 366,
+        "en": {
+          "prompt": "On Monday morning Julia finds a bacteria colony covering $100\\,\\mathrm{cm}^2$ of agar; after 10 h it covers $200\\,\\mathrm{cm}^2$. Assume exponential growth. (a) What area is covered by Tuesday morning, 24 h later? (b) Treat Earth as a sphere of radius 6378 km. How long would the bacteria take to cover its surface?",
+          "steps": [
+            {
+              "title": "a: Find the doubling model",
+              "body": "The area doubles every 10 h. With $t$ hours since Monday morning, $A(t)=100(2)^{t/10}$. Then $A(24)=100(2)^{2.4}\\approx527.80316\\,\\mathrm{cm}^2$, about 528 square centimetres."
+            },
+            {
+              "title": "b: Use consistent area units",
+              "body": "Earth has area $4\\pi r^2=4\\pi(6378)^2\\approx5.11185933\\times10^8\\,\\mathrm{km}^2$. Since $1\\,\\mathrm{km}^2=10^{10}\\,\\mathrm{cm}^2$, the target is $5.11185933\\times10^{18}\\,\\mathrm{cm}^2$."
+            },
+            {
+              "title": "b: Find the numerical intersection and interpret",
+              "body": "Solve $100(2)^{t/10}=5.11185933\\times10^{18}$, or $2^{t/10}=5.11185933\\times10^{16}$. A graphical or numerical intersection gives $t\\approx555.04698$ h; dividing by 24 gives about 23.127 days. This is total time since Monday morning, under the question\\'s unlimited-resource exponential extrapolation."
+            }
+          ],
+          "answer": "(a) About $528\\,\\mathrm{cm}^2$; (b) about 555 h, or 23.1 days, since Monday morning."
+        },
+        "number": 13,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "15年前，国家公园有325只狐狸；现在有650只。假定经历指数增长。(a) 预测20年后的数量；(b) 举出一种使增长低于指数速度的因素。指数增长对种群是否健康？说明理由。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "a：从今天开始计时",
+            "body": "15年从325变650，故15年翻倍。令 $t=0$ 为今天，$F(t)=650(2)^{t/15}$；检查 $F(-15)=325$。20年后 $F(20)=650(2)^{4/3}\\approx1637.89736$，约1638只狐狸。"
+          },
+          {
+            "title": "b：资源与健康",
+            "body": "示例：猎物和栖息地有限，数量增加后每只狐狸能获得的食物减少，出生率可能下降或死亡率上升。短期增长可反映恢复，但长期无止境的指数增长不可持续，可能导致资源耗尽、疾病和种群骤减；因此不能仅由指数增长判断健康。"
+          }
+        ],
+        "answer": "(a) 约1638只；(b) 食物/栖息地限制是一个合理因素，长期无限指数增长不可持续。",
+        "printedPage": 357,
+        "pdfPage": 366,
+        "en": {
+          "prompt": "Fifteen years ago a national park had 325 foxes; today it has 650. Assume exponential growth. (a) Project the population in 20 years. (b) Give one factor that could slow growth to less than exponential. Is exponential growth healthy for a population? Explain.",
+          "steps": [
+            {
+              "title": "a: Measure time from today",
+              "body": "The population doubles from 325 to 650 in 15 years. With $t=0$ today, $F(t)=650(2)^{t/15}$; check $F(-15)=325$. In 20 years, $F(20)=650(2)^{4/3}\\approx1637.89736$, about 1638 foxes."
+            },
+            {
+              "title": "b: Resources and population health",
+              "body": "One example is limited prey and habitat: as numbers rise, food per fox decreases, possibly reducing births or increasing mortality. Short-term growth may indicate recovery, but indefinite exponential growth is unsustainable and may cause resource depletion, disease, and a population crash. Exponential growth alone therefore does not establish population health."
+            }
+          ],
+          "answer": "(a) About 1638 foxes; (b) limited food or habitat is a possible limiting factor, and indefinite exponential growth is unsustainable."
+        },
+        "number": 14,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "形如 $y=c^x$ 的指数函数图像没有 $x$ 轴截距。用自己的例子解释原因。",
+        "concept": "intercepts",
+        "steps": [
+          {
+            "title": "指数值严格为正",
+            "body": "对于合法底数 $c>0$ 和任意实数 $x$，$c^x>0$，所以不能等于0。例取 $y=2^x$，在 $x=-2,-1,0,1$ 时值为 $1/4,1/2,1,2$；向左虽趋近0，但任何有限实数处都不等于0。"
+          },
+          {
+            "title": "非恒定条件与底数1例外",
+            "body": "若 $c>0,c\\ne1$，$c^x$ 在一端趋近0，所以 $y=0$ 是水平渐近线。若 $c=1$，则 $y=1^x=1$ 是常函数，仍无 $x$ 轴截距，但不趋近0，$y=0$ 不是其渐近线。"
+          }
+        ],
+        "answer": "对所有 $c>0$，$c^x>0$，所以没有 $x$ 轴截距。仅当 $c\\ne1$ 时，$y=0$ 是水平渐近线；$c=1$ 时图像是直线 $y=1$。",
+        "printedPage": 357,
+        "pdfPage": 366,
+        "en": {
+          "prompt": "The graph of an exponential function $y=c^x$ has no $x$-intercept. Explain why using an example of your own.",
+          "steps": [
+            {
+              "title": "Exponential values are strictly positive",
+              "body": "For a valid base $c>0$ and any real $x$, $c^x>0$, so it cannot equal 0. For example, $y=2^x$ has values $1/4,1/2,1,2$ at $x=-2,-1,0,1$. It approaches 0 to the left but is never 0 at a finite real input."
+            },
+            {
+              "title": "Nonconstant condition and the base-1 exception",
+              "body": "For $c>0,c\\ne1$, $c^x$ approaches 0 at one end, so $y=0$ is a horizontal asymptote. If $c=1$, then $y=1^x=1$ is constant: it still has no $x$-intercept, but does not approach 0, so $y=0$ is not an asymptote."
+            }
+          ],
+          "answer": "For every $c>0$, $c^x>0$, so there is no $x$-intercept. The line $y=0$ is a horizontal asymptote only when $c\\ne1$; for $c=1$, the graph is the line $y=1$."
+        },
+        "number": "C1"
+      },
+      {
+        "prompt": "(a) 指数函数的哪些参数影响图像的 $x$ 轴截距？解释。(b) 哪些参数影响 $y$ 轴截距？解释。",
+        "concept": "intercepts",
+        "steps": [
+          {
+            "title": "a：横截距的存在",
+            "body": "固定 $c>0,c\\ne1$，先考虑 $a,b\\ne0$。令 $0=a c^{b(x-h)}+k$，得 $c^{b(x-h)}=-k/a$。右边必须正，即 $a,k$ 异号；若 $k=0$ 或二者同号，就没有横截距。因此 $a,k$ 决定截距是否存在。"
+          },
+          {
+            "title": "a：横截距的位置",
+            "body": "若截距存在，令 $c^u=-k/a$，则 $b(x-h)=u$、$x=h+u/b$。所以 $a,b,h,k$ 一般都能影响位置。例如 $2^x-2$ 的截距为1；改 $a=2$ 得 $2(2)^x-2$ 的截距0；改 $b=2$ 得 $2^{2x}-2$ 的截距 $1/2$；右移1得2；改 $k=-4$ 也得2。特殊情况 $-k/a=1$ 时 $u=0$，截距恰为 $h$，不随非零 $b$ 改变。"
+          },
+          {
+            "title": "b：纵截距公式与例外",
+            "body": "代入 $x=0$，纵截距为 $a c^{-bh}+k$，所以四个参数一般都能影响它。若 $h=0$，则纵截距为 $a+k$，与 $b$ 无关；$h$ 的影响也需要 $b\\ne0$。例如固定 $a=1,c=2,k=0$，当 $(b,h)=(1,1),(2,1),(1,2)$ 时纵截距分别为 $1/2,1/4,1/4$。"
+          },
+          {
+            "title": "退化常值情况",
+            "body": "若允许 $a=0$，函数为 $y=k$；若允许 $b=0$，函数为 $y=a+k$。常值为0时每个实数 $x$ 都是零点；否则无横截距。上述非退化指数图的唯一横截距结论不适用于这些常值情况。"
+          }
+        ],
+        "answer": "一般四个参数 $a,b,h,k$ 均可影响两类截距；横截距需 $-k/a>0$，纵截距为 $a c^{-bh}+k$，并须考虑上述特殊情况。",
+        "printedPage": 357,
+        "pdfPage": 366,
+        "en": {
+          "prompt": "(a) Which parameters of an exponential function affect the $x$-intercept? Explain. (b) Which parameters affect the $y$-intercept? Explain.",
+          "steps": [
+            {
+              "title": "a: Existence of a horizontal intercept",
+              "body": "Fix $c>0,c\\ne1$ and first assume $a,b\\ne0$. Setting $0=a c^{b(x-h)}+k$ gives $c^{b(x-h)}=-k/a$. The right side must be positive, so $a,k$ must have opposite signs; if $k=0$ or their signs agree, no horizontal intercept exists. Thus $a,k$ control its existence."
+            },
+            {
+              "title": "a: Location of the horizontal intercept",
+              "body": "When an intercept exists, let $c^u=-k/a$. Then $b(x-h)=u$ and $x=h+u/b$, so $a,b,h,k$ can generally all affect its location. For example, $2^x-2$ has intercept 1; setting $a=2$ gives intercept 0 for $2(2)^x-2$; setting $b=2$ gives $1/2$ for $2^{2x}-2$; translating right 1 gives 2; setting $k=-4$ also gives 2. In the special case $-k/a=1$, $u=0$ and the intercept is $h$, independent of nonzero $b$."
+            },
+            {
+              "title": "b: Vertical-intercept formula and special cases",
+              "body": "At $x=0$ the vertical intercept is $a c^{-bh}+k$, so all four parameters can generally affect it. If $h=0$, the intercept is $a+k$, independent of $b$; dependence on $h$ also requires $b\\ne0$. For example, with $a=1,c=2,k=0$, the choices $(b,h)=(1,1),(2,1),(1,2)$ give vertical intercepts $1/2,1/4,1/4$."
+            },
+            {
+              "title": "Degenerate constant cases",
+              "body": "If $a=0$ is allowed, the function is $y=k$; if $b=0$, it is $y=a+k$. When the constant is 0, every real input is a zero; otherwise there is no horizontal intercept. The unique-intercept conclusion for nonconstant exponentials does not apply to these cases."
+            }
+          ],
+          "answer": "In general all four parameters $a,b,h,k$ can affect either intercept. A horizontal intercept requires $-k/a>0$; the vertical intercept is $a c^{-bh}+k$, with the special cases stated above."
+        },
+        "number": "C2",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "sidebar-negative",
+      "investigate-4",
+      "sidebar-order",
+      "sidebar-asymptotes",
+      "your-turn-1",
+      "sidebar-base",
+      "sidebar-exponent",
+      "your-turn-2",
+      "project-corner"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      "C1",
+      "C2"
+    ],
+    "expectedSubparts": {
+      "investigate-1": [
+        "aai",
+        "aaii",
+        "aaiii",
+        "abi",
+        "abii",
+        "abiii",
+        "b",
+        "c"
+      ],
+      "investigate-3": [
+        "aci",
+        "acii",
+        "aciii",
+        "aciv",
+        "acv",
+        "adi",
+        "adii",
+        "adiii",
+        "adiv",
+        "adv",
+        "b",
+        "c"
+      ],
+      "example-1": [
+        "ai",
+        "aii",
+        "aiii",
+        "aiv",
+        "bi",
+        "bii",
+        "biii",
+        "biv"
+      ],
+      "example-2": [
+        "a",
+        "b"
+      ],
+      "your-turn-2": [
+        "a",
+        "b"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-6": [
+        "ai",
+        "aii",
+        "aiii",
+        "aiv",
+        "bi",
+        "bii",
+        "biii",
+        "biv",
+        "ci",
+        "cii",
+        "ciii",
+        "civ",
+        "di",
+        "dii",
+        "diii",
+        "div"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-10": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ],
+      "exercise-13": [
+        "a",
+        "b"
+      ],
+      "exercise-14": [
+        "a",
+        "b"
+      ],
+      "exercise-C2": [
+        "a",
+        "b"
+      ],
+      "project-corner": [
+        "asymptote",
+        "quadratic",
+        "exponential",
+        "compare"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independent source and mathematical review passed. Controller revision 1 was independently checked against the original pages: canonical parameters, base-1 exception, bilingual steps, and corrected Review7a figure label. See the section independent audit and controller-revision-1-independent.json."
+  }
+}

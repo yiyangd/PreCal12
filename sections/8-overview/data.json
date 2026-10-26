@@ -1,0 +1,168 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "8-overview",
+    "section": "8",
+    "title": "对数函数",
+    "en": {
+      "title": "Logarithmic Functions"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        370,
+        371
+      ],
+      "pdfPages": [
+        379,
+        380
+      ]
+    },
+    "concepts": [
+      {
+        "id": "meaning",
+        "title": "对数与指数互逆",
+        "summary": "对数是指数：$\\log_bx=y\\Leftrightarrow b^y=x$，$b>0,b\\ne1,x>0$。本章学习定义、图像、法则及方程。",
+        "method": [
+          {
+            "title": "学习路线",
+            "body": "先理解互逆，再研究变换、法则和应用方程。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Logarithms invert exponentiation",
+          "summary": "A logarithm is an exponent: $\\log_bx=y\\Leftrightarrow b^y=x$, with $b>0,b\\ne1,x>0$. This chapter develops definitions, graphs, laws and equations.",
+          "method": [
+            {
+              "title": "Learning route",
+              "body": "Understand inverses, then study transformations, laws and application equations."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "scales",
+        "title": "尺度与自然界",
+        "summary": "教材以地震、pH及自然螺线说明对数的用途。对数尺度将相差许多数量级的正量压缩为易比较的数值。",
+        "method": [
+          {
+            "title": "联系情境",
+            "body": "留意“倍数”与“对数差”：比值转为差值。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Scales and patterns in nature",
+          "summary": "The opener uses earthquakes, pH and natural spirals to motivate logarithms. A logarithmic scale compresses positive quantities spanning many orders of magnitude.",
+          "method": [
+            {
+              "title": "Connect the context",
+              "body": "Look for multiplicative comparisons: logarithms turn ratios into differences."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "terms-history",
+        "title": "术语与历史",
+        "summary": "关键术语：对数函数、对数、常用对数、对数方程。教材叙述Napier与Bürgi独立发展对数，后来人们认识到对数就是指数。",
+        "method": [
+          {
+            "title": "辨别术语",
+            "body": "常用对数以10为底；对数方程包含变量的对数。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Key terms and history",
+          "summary": "Key terms: logarithmic function, logarithm, common logarithm, logarithmic equation. The textbook describes Napier and Bürgi’s independent development of logarithms and the later recognition that logarithms are exponents.",
+          "method": [
+            {
+              "title": "Distinguish the terms",
+              "body": "A common logarithm has base 10; a logarithmic equation contains the logarithm of a variable."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "career",
+        "title": "职业联系：放射科医生",
+        "summary": "原书职业介绍连接医学成像与放射性同位素：X光、CT、MRI、PET、融合成像和超声。部分技术涉及放射性同位素，所以需学习辐射物理与防护。",
+        "method": [
+          {
+            "title": "联系本章",
+            "body": "半衰期模型将剩余比例与时间联系；第8.4节练习会计算同位素衰减。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Career Link: radiologist",
+          "summary": "The textbook career feature links medical imaging and radioactive isotopes: X-rays, CT, MRI, PET, fusion imaging and ultrasound. Some techniques involve radioactive isotopes, connecting the work to radiation physics and protection.",
+          "method": [
+            {
+              "title": "Connect to the chapter",
+              "body": "Half-life models connect a remaining fraction to elapsed time; Section 8.4 applies them to isotope decay."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "kind": "overview"
+  },
+  "textbook": {
+    "exercises": []
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [],
+    "expectedSubparts": {},
+    "source": "Independent visual inventory from original PDF pages before solutions",
+    "pages": [
+      {
+        "pdfPage": 379,
+        "printedPage": 370,
+        "items": [
+          "Chapter introduction: logarithms and scientific scales",
+          "Key Terms: logarithmic function, logarithm, common logarithm, logarithmic equation",
+          "Did You Know: Napier and Bürgi; logarithms as exponents"
+        ],
+        "figures": [
+          "decorative logarithmic spiral montage; no mathematical labels"
+        ]
+      },
+      {
+        "pdfPage": 380,
+        "printedPage": 371,
+        "items": [
+          "Career Link: radiologist and medical imaging; isotope/radiation context",
+          "Historical textbook web link, no assigned question"
+        ],
+        "figures": [
+          "decorative animal and radiology photograph"
+        ]
+      }
+    ],
+    "notes": [
+      "No source questions on opener; do not invent exercises."
+    ]
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independently compared with all original source pages and all question/subpart solutions, including logarithm domains, all candidates, graph readings, negative-base exceptions, and discrete financial timing. Review and direct corrections are documented in audit/root-sections-independent.md; browser/build validation is a separate integration task."
+  }
+}

@@ -1,0 +1,1498 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "6-4",
+    "section": "6.4",
+    "title": "用恒等式解三角方程",
+    "en": {
+      "title": "Solving Trigonometric Equations Using Identities",
+      "description": "Complete source questions and worked solutions. In solutions, s = sin u, c = cos u and t = tan u, where u is the current part's angle (such as x, A, B or θ), unless the question explicitly defines a different variable."
+    },
+    "source": {
+      "kind": "pdf",
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "printedPages": [
+        316,
+        321
+      ],
+      "pdfPages": [
+        325,
+        330
+      ]
+    },
+    "concepts": [
+      {
+        "id": "substitute",
+        "title": "恒等式代换与因式分解",
+        "summary": "先化为一个三角函数的代数方程。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用 $\\sin2x=2\\sin x\\cos x$、$\\cos2x=1-2\\sin^2x=2\\cos^2x-1$ 代换，再因式分解或用求根公式。"
+          }
+        ],
+        "pitfalls": [
+          "不要除以可能为零的三角因子；先保留每个零因子分支。"
+        ],
+        "en": {
+          "title": "Substitution and factoring",
+          "summary": "Rewrite as an algebraic equation in one trigonometric function.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Substitute $\\sin2x=2\\sin x\\cos x$ or $\\cos2x=1-2\\sin^2x=2\\cos^2x-1$, then factor or use the quadratic formula."
+            }
+          ],
+          "pitfalls": [
+            "Keep every zero-factor branch before dividing by a trigonometric factor."
+          ]
+        }
+      },
+      {
+        "id": "domain",
+        "title": "原式禁值与候选解",
+        "summary": "约分或清分母不能改变原式定义域。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先列 $\\sin x\\ne0$ 或 $\\cos x\\ne0$ 等限制，再解方程并代回原式；舍去绝对值超过1的正弦或余弦值。"
+          }
+        ],
+        "pitfalls": [
+          "图像可能掩盖孤立的空点。"
+        ],
+        "en": {
+          "title": "Original restrictions and candidates",
+          "summary": "Cancellation and clearing denominators retain the original domain.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Record restrictions such as $\\sin x\\ne0$ or $\\cos x\\ne0$, solve, and check the original equation. Reject sine/cosine values outside $[-1,1]$."
+            }
+          ],
+          "pitfalls": [
+            "A graph can hide isolated holes."
+          ]
+        }
+      },
+      {
+        "id": "complete",
+        "title": "区间解与一般解",
+        "summary": "列出全部象限及周期，再核对端点。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "弧度的一般解写 $n\\in\\mathbb Z$；对 $\\sin2x=a$ 先解完整的 $2x$ 区间，再除以2。"
+          }
+        ],
+        "pitfalls": [
+          "角度和弧度不混用，开闭端点按题目保留。"
+        ],
+        "en": {
+          "title": "Interval and general solutions",
+          "summary": "List every quadrant and period, then check endpoints.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $n\\in\\mathbb Z$ for general solutions. For $\\sin2x=a$, solve over the full interval for $2x$ before dividing by 2."
+            }
+          ],
+          "pitfalls": [
+            "Keep degrees and radians distinct and respect open/closed endpoints."
+          ]
+        }
+      },
+      {
+        "id": "verify",
+        "title": "图像核验与错误分析",
+        "summary": "代数确定精确解，图像核对交点与漏解。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "同时画原等式两边或画“左边减右边”，核对零点与原式禁值。"
+          }
+        ],
+        "pitfalls": [
+          "数值图像不能代替完整的一般解证明。"
+        ],
+        "en": {
+          "title": "Graph checks and error analysis",
+          "summary": "Algebra gives exact solutions; graphs check intersections and omissions.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Plot both original sides, or their difference, and compare zeros while retaining excluded inputs."
+            }
+          ],
+          "pitfalls": [
+            "A numerical graph does not prove a complete general solution."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "代数解 $0\\le x<2\\pi$ 上的方程：(a) $\\cos2x+1-\\cos x=0$；(b) $1-\\cos^2x=3\\sin x-2$。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$2\\cos^2x-1+1-\\cos x=\\cos x(2\\cos x-1)=0.$ cos x=0给π/2、3π/2；cos x=1/2给π/3、5π/3；原式无禁值。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\sin^2x-3\\sin x+2=(\\sin x-1)(\\sin x-2)=0.$ sin x=2超出值域；sin x=1在指定区间仅给π/2。"
+          }
+        ],
+        "answer": "(a) $x=\\pi/3,\\pi/2,3\\pi/2,5\\pi/3$； (b) $x=\\pi/2$",
+        "printedPage": 317,
+        "pdfPage": 326,
+        "en": {
+          "prompt": "Solve algebraically for $0\\le x<2\\pi$: (a) $\\cos2x+1-\\cos x=0$; (b) $1-\\cos^2x=3\\sin x-2$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$2\\cos^2x-1+1-\\cos x=\\cos x(2\\cos x-1)=0.$ cos x=0 gives π/2 and 3π/2; cos x=1/2 gives π/3 and 5π/3. The original equation has no exclusions."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\sin^2x-3\\sin x+2=(\\sin x-1)(\\sin x-2)=0.$ Reject sin x=2 as outside the range; sin x=1 gives only π/2 in the interval."
+            }
+          ],
+          "answer": "(a) $x=\\pi/3,\\pi/2,3\\pi/2,5\\pi/3$; (b) $x=\\pi/2$",
+          "label": "Example 1"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1"
+      },
+      {
+        "prompt": "(a) 在 $0^\\circ\\le x<360^\\circ$ 代数解 $\\cos^2x=\\cot x\\sin x$；(b) 用图像核验。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\sin x\\ne0;\\quad \\cos^2x=\\cos x\\Rightarrow\\cos x(\\cos x-1)=0.$ 候选0°、90°、270°；0°使cot未定义，舍去。不可除以cos x，否则漏掉90°、270°。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$y_1=\\cos^2x,\\quad y_2=\\cot x\\sin x$ 在y2的原定义域作图，仅交于(90°,0)和(270°,0)；0°的表面交点是空点。"
+          }
+        ],
+        "answer": "(a) $x=90^\\circ,270^\\circ$； (b) 交点横坐标 / intersection inputs: $90^\\circ,270^\\circ$",
+        "printedPage": 318,
+        "pdfPage": 327,
+        "en": {
+          "prompt": "(a) Solve $\\cos^2x=\\cot x\\sin x$ algebraically for $0^\\circ\\le x<360^\\circ$. (b) Verify graphically.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\sin x\\ne0;\\quad \\cos^2x=\\cos x\\Rightarrow\\cos x(\\cos x-1)=0.$ Candidates are 0°, 90°, 270°. Reject 0°, where cot is undefined. Dividing by cos x would lose 90° and 270°."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$y_1=\\cos^2x,\\quad y_2=\\cot x\\sin x$ Plot y2 on its original domain. The intersections are (90°,0) and (270°,0); the apparent intersection at 0° is a hole."
+            }
+          ],
+          "answer": "(a) $x=90^\\circ,270^\\circ$; (b) Intersection inputs: $90^\\circ,270^\\circ$",
+          "label": "Example 2"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2",
+        "solutionImage": "assets/6-4-example-2.png"
+      },
+      {
+        "prompt": "代数解 $\\sin2x=\\sqrt2\\cos x$，给出弧度制一般解。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$2\\sin x\\cos x-\\sqrt2\\cos x=\\cos x(2\\sin x-\\sqrt2)=0.$ cos x=0给π/2+πn；sin x=√2/2给π/4+2πn和3π/4+2πn；所有分支均满足原式。"
+          }
+        ],
+        "answer": "$x=\\pi/2+\\pi n,\\ \\pi/4+2\\pi n,\\ 3\\pi/4+2\\pi n;\\ n\\in\\mathbb Z$",
+        "printedPage": 319,
+        "pdfPage": 328,
+        "en": {
+          "prompt": "Solve $\\sin2x=\\sqrt2\\cos x$ algebraically. Give the general solution in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$2\\sin x\\cos x-\\sqrt2\\cos x=\\cos x(2\\sin x-\\sqrt2)=0.$ cos x=0 gives π/2+πn; sin x=√2/2 gives π/4+2πn and 3π/4+2πn. Every branch satisfies the original equation."
+            }
+          ],
+          "answer": "$x=\\pi/2+\\pi n,\\ \\pi/4+2\\pi n,\\ 3\\pi/4+2\\pi n;\\ n\\in\\mathbb Z$",
+          "label": "Example 3"
+        },
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3"
+      },
+      {
+        "prompt": "代数解 $2\\sin x=7-3\\csc x$，给出弧度制一般解。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\sin x\\ne0;\\quad2s=7-3/s\\Rightarrow2s^2-7s+3=(2s-1)(s-3)=0.$ s=3超出正弦值域，s=1/2给π/6及5π/6加上整周期；均符合sin x≠0。"
+          }
+        ],
+        "answer": "$x=\\pi/6+2\\pi n,\\ 5\\pi/6+2\\pi n;\\ n\\in\\mathbb Z$",
+        "printedPage": 319,
+        "pdfPage": 328,
+        "en": {
+          "prompt": "Solve $2\\sin x=7-3\\csc x$ algebraically. Give general solutions in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\sin x\\ne0;\\quad2s=7-3/s\\Rightarrow2s^2-7s+3=(2s-1)(s-3)=0.$ Reject s=3 as outside the sine range. The value s=1/2 gives π/6 and 5π/6 plus full periods; both satisfy sin x≠0."
+            }
+          ],
+          "answer": "$x=\\pi/6+2\\pi n,\\ 5\\pi/6+2\\pi n;\\ n\\in\\mathbb Z$",
+          "label": "Example 4"
+        },
+        "id": "example-4",
+        "type": "example",
+        "label": "例题 4"
+      },
+      {
+        "prompt": "在 $-720^\\circ<x\\le720^\\circ$ 画 $y=\\sin2x-\\sin x$，作草图并用文字描述。",
+        "concept": "verify",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$f(-x)=-f(x),\\quad f(x+360^\\circ)=f(x).$ 图像关于原点对称，周期为360°；每周期有四个不同零点，小波峰与大波峰交替。见解析图，左端不含、右端包含。"
+          }
+        ],
+        "answer": "周期 $360^\\circ$；奇函数 / odd function",
+        "printedPage": 316,
+        "pdfPage": 325,
+        "en": {
+          "prompt": "Graph $y=\\sin2x-\\sin x$ for $-720^\\circ<x\\le720^\\circ$. Sketch and describe it.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$f(-x)=-f(x),\\quad f(x+360^\\circ)=f(x).$ The graph has origin symmetry and period 360°. Four distinct zeros occur per period; smaller and larger lobes alternate. The left endpoint is excluded and the right included."
+            }
+          ],
+          "answer": "Period $360^\\circ$; odd function",
+          "label": "Investigate 1"
+        },
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1",
+        "solutionImage": "assets/6-4-investigate.png"
+      },
+      {
+        "prompt": "由图确定 $y=\\sin2x-\\sin x$ 在所有实数上的零点表达式。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$x=0^\\circ,60^\\circ,180^\\circ,300^\\circ$ 一个周期内读出这些零点，分别加上360°的整数倍；0°与180°合并为180°n。"
+          }
+        ],
+        "answer": "$x=180^\\circ n,\\ 60^\\circ+360^\\circ n,\\ 300^\\circ+360^\\circ n,\\quad n\\in\\mathbb Z$",
+        "printedPage": 316,
+        "pdfPage": 325,
+        "en": {
+          "prompt": "Use the graph to give an expression for all real zeros of $y=\\sin2x-\\sin x$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$x=0^\\circ,60^\\circ,180^\\circ,300^\\circ$ Read these zeros in one period and add integer multiples of 360°; combine 0° and 180° into 180°n."
+            }
+          ],
+          "answer": "$x=180^\\circ n,\\ 60^\\circ+360^\\circ n,\\ 300^\\circ+360^\\circ n,\\quad n\\in\\mathbb Z$",
+          "label": "Investigate 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 2"
+      },
+      {
+        "prompt": "代数解所有实数上的 $\\sin2x-\\sin x=0$，并与同学比较答案和方法。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$2\\sin x\\cos x-\\sin x=\\sin x(2\\cos x-1)=0.$ 所以sin x=0或cos x=1/2，得到下列完整解；可与同学比较分支是否齐全，本页不虚构同学反馈。"
+          }
+        ],
+        "answer": "$x=180^\\circ n,\\ 60^\\circ+360^\\circ n,\\ 300^\\circ+360^\\circ n,\\ n\\in\\mathbb Z$",
+        "printedPage": 316,
+        "pdfPage": 325,
+        "en": {
+          "prompt": "Solve $\\sin2x-\\sin x=0$ algebraically for all real numbers. Compare your answer and method with a classmate.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$2\\sin x\\cos x-\\sin x=\\sin x(2\\cos x-1)=0.$ Thus sin x=0 or cos x=1/2, giving the complete set below. Compare whether both branches are retained; no classmate response is invented."
+            }
+          ],
+          "answer": "$x=180^\\circ n,\\ 60^\\circ+360^\\circ n,\\ 300^\\circ+360^\\circ n,\\ n\\in\\mathbb Z$",
+          "label": "Investigate 3"
+        },
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 3"
+      },
+      {
+        "prompt": "反思：图像法与代数法，你更喜欢用哪种方法解 $\\sin2x-\\sin x=0$？解释。",
+        "concept": "verify",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\sin x(2\\cos x-1)=0$ 示例选择代数法，因为可给出精确的一般解并保证无漏分支；图像可直观核对每周期四个零点。个人偏好可不同。"
+          }
+        ],
+        "answer": "示例：代数精确，图像辅助 / Sample: exact algebra with a graph check",
+        "printedPage": 316,
+        "pdfPage": 325,
+        "en": {
+          "prompt": "Reflect: do you prefer a graphical or algebraic method to solve $\\sin2x-\\sin x=0$? Explain.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\sin x(2\\cos x-1)=0$ A sample preference is algebra: it gives exact general solutions and accounts for every factor. The graph usefully checks four zeros per period. Personal preferences may differ."
+            }
+          ],
+          "answer": "Sample: exact algebra with a graph check",
+          "label": "Reflect and Respond 4"
+        },
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "反思 4"
+      },
+      {
+        "prompt": "例题1旁注：(a) 为什么选用这种cos2x公式？(b) 为什么sin x=2无解？",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\cos2x=2\\cos^2x-1$ 原式已含cos x，这样全部用cos x表示并得到二次式。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$-1\\le\\sin x\\le1$ 实数角的正弦不可能等于2。"
+          }
+        ],
+        "answer": "(a) $2\\cos^2x-1$； (b) 无实数解 / no real solution",
+        "printedPage": 317,
+        "pdfPage": 326,
+        "en": {
+          "prompt": "Example 1 margin questions: (a) Why choose this form of the cos2x identity? (b) Why has sin x=2 no solution?",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\cos2x=2\\cos^2x-1$ The original equation already contains cos x, so this produces a quadratic in one function."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$-1\\le\\sin x\\le1$ The sine of a real angle cannot equal 2."
+            }
+          ],
+          "answer": "(a) $2\\cos^2x-1$; (b) No real solution",
+          "label": "Example 1 margin questions"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "note-1",
+        "type": "practice",
+        "label": "例题1旁注"
+      },
+      {
+        "prompt": "代数解 $0\\le x<2\\pi$ 上的方程：(a) $\\sin2x-\\cos x=0$；(b) $2\\cos x+1-\\sin^2x=3$。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\cos x(2\\sin x-1)=0.$ cos x=0给π/2、3π/2，sin x=1/2给π/6、5π/6；原式无禁值。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$2c+1-(1-c^2)=3\\Rightarrow c^2+2c-3=(c+3)(c-1)=0.$ c=cos x；舍去c=-3，c=1给x=0。"
+          }
+        ],
+        "answer": "(a) $x=\\pi/6,\\pi/2,5\\pi/6,3\\pi/2$； (b) $x=0$",
+        "printedPage": 317,
+        "pdfPage": 326,
+        "en": {
+          "prompt": "Solve algebraically for $0\\le x<2\\pi$: (a) $\\sin2x-\\cos x=0$; (b) $2\\cos x+1-\\sin^2x=3$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\cos x(2\\sin x-1)=0.$ cos x=0 gives π/2 and 3π/2; sin x=1/2 gives π/6 and 5π/6. There are no exclusions."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$2c+1-(1-c^2)=3\\Rightarrow c^2+2c-3=(c+3)(c-1)=0.$ Here c=cos x. Reject c=-3; c=1 gives x=0."
+            }
+          ],
+          "answer": "(a) $x=\\pi/6,\\pi/2,5\\pi/6,3\\pi/2$; (b) $x=0$",
+          "label": "Your Turn 1"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "试一试 1"
+      },
+      {
+        "prompt": "例题2旁注：(a) cot x的商恒等式是什么？(b) 为什么不能除以cos x？(c) 图像确认哪些解？",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\cot x=\\cos x/\\sin x,\\quad\\sin x\\ne0.$ 分母限制必须保留。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\cos x=0$ 这正是90°、270°两个有效解的分支，除以cos会丢失它们。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$(90^\\circ,0),(270^\\circ,0)$ 原式在0°未定义，图像的表面交点不能算解。"
+          }
+        ],
+        "answer": "(a) $\\cot x=\\cos x/\\sin x$； (b) 可能除以零并漏解 / division by zero loses solutions； (c) $90^\\circ,270^\\circ$",
+        "printedPage": 318,
+        "pdfPage": 327,
+        "en": {
+          "prompt": "Example 2 margin questions: (a) What is the quotient identity for cot x? (b) Why not divide by cos x? (c) Which solutions does the graph confirm?",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\cot x=\\cos x/\\sin x,\\quad\\sin x\\ne0.$ Retain the denominator restriction."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\cos x=0$ This is the valid branch x=90°,270°; division would remove it."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$(90^\\circ,0),(270^\\circ,0)$ The original equation is undefined at 0°, so the apparent graphical intersection there is invalid."
+            }
+          ],
+          "answer": "(a) $\\cot x=\\cos x/\\sin x$; (b) Division by zero loses solutions; (c) $90^\\circ,270^\\circ$",
+          "label": "Example 2 margin questions"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "id": "note-2",
+        "type": "practice",
+        "label": "例题2旁注"
+      },
+      {
+        "prompt": "(a) 在 $0^\\circ\\le x<360^\\circ$ 代数解 $\\sin^2x=\\frac12\\tan x\\cos x$；(b) 用图像核验。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\cos x\\ne0;\\quad\\sin^2x=\\tfrac12\\sin x\\Rightarrow\\sin x(\\sin x-\\tfrac12)=0.$ sin x=0给0°、180°；sin x=1/2给30°、150°。四个角的cos均非零。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$y_1=\\sin^2x,\\ y_2=\\tfrac12\\tan x\\cos x$ 图像交点为(0°,0)、(30°,1/4)、(150°,1/4)、(180°,0)；90°、270°是y2空点而非解。"
+          }
+        ],
+        "answer": "(a) $x=0^\\circ,30^\\circ,150^\\circ,180^\\circ$； (b) $0^\\circ,30^\\circ,150^\\circ,180^\\circ$",
+        "printedPage": 318,
+        "pdfPage": 327,
+        "en": {
+          "prompt": "(a) Solve $\\sin^2x=\\frac12\\tan x\\cos x$ algebraically for $0^\\circ\\le x<360^\\circ$. (b) Verify graphically.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\cos x\\ne0;\\quad\\sin^2x=\\tfrac12\\sin x\\Rightarrow\\sin x(\\sin x-\\tfrac12)=0.$ sin x=0 gives 0° and 180°; sin x=1/2 gives 30° and 150°. All four have nonzero cosine."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$y_1=\\sin^2x,\\ y_2=\\tfrac12\\tan x\\cos x$ Intersections are (0°,0), (30°,1/4), (150°,1/4), and (180°,0). The holes at 90° and 270° are not solutions."
+            }
+          ],
+          "answer": "(a) $x=0^\\circ,30^\\circ,150^\\circ,180^\\circ$; (b) $0^\\circ,30^\\circ,150^\\circ,180^\\circ$",
+          "label": "Your Turn 2"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "试一试 2",
+        "solutionImage": "assets/6-4-your-turn-2.png"
+      },
+      {
+        "prompt": "例题3旁注：为什么不能在这里除以cos x？",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "保留零因子分支",
+            "body": "$x=\\pi/2+\\pi n\\Rightarrow\\cos x=0$。这些角度使原等式两边都为0，是有效解；除以cos x会漏掉它们。"
+          }
+        ],
+        "answer": "不能丢失cos x=0分支。",
+        "printedPage": 319,
+        "pdfPage": 328,
+        "en": {
+          "prompt": "Example 3 margin question: Why is it incorrect to divide by cos x here?",
+          "steps": [
+            {
+              "title": "Retain the zero-factor branch",
+              "body": "$x=\\pi/2+\\pi n\\Rightarrow\\cos x=0$. Both original sides are zero at these valid solutions. Dividing by cos x would lose them."
+            }
+          ],
+          "answer": "Keep the cos x=0 branch.",
+          "label": "Example 3 margin questions"
+        },
+        "id": "note-3",
+        "type": "practice",
+        "label": "例题3旁注"
+      },
+      {
+        "prompt": "代数解 $\\cos2x=\\cos x$，给出弧度制一般解。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$2c^2-c-1=(2c+1)(c-1)=0.$ c=1给2πn；c=-1/2给2π/3+2πn、4π/3+2πn。"
+          }
+        ],
+        "answer": "$x=2\\pi n,\\ 2\\pi/3+2\\pi n,\\ 4\\pi/3+2\\pi n;\\ n\\in\\mathbb Z$",
+        "printedPage": 319,
+        "pdfPage": 328,
+        "en": {
+          "prompt": "Solve $\\cos2x=\\cos x$ algebraically. Give general solutions in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$2c^2-c-1=(2c+1)(c-1)=0.$ c=1 gives 2πn; c=-1/2 gives 2π/3+2πn and 4π/3+2πn."
+            }
+          ],
+          "answer": "$x=2\\pi n,\\ 2\\pi/3+2\\pi n,\\ 4\\pi/3+2\\pi n;\\ n\\in\\mathbb Z$",
+          "label": "Your Turn 3"
+        },
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "试一试 3"
+      },
+      {
+        "prompt": "例题4旁注：(a) 为什么两边乘sin x？(b) 为什么sin x=3无解？",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$2s=7-3/s\\Rightarrow2s^2=7s-3$ 在s≠0的原定义域中乘s可清除分母，变为二次式。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$|\\sin x|\\le1<3$ 所以该分支没有实数角解。"
+          }
+        ],
+        "answer": "(a) 清分母，保留 $s\\ne0$ / clear denominator with $s\\ne0$； (b) 无实数解 / no real solution",
+        "printedPage": 319,
+        "pdfPage": 328,
+        "en": {
+          "prompt": "Example 4 margin questions: (a) Why multiply by sin x? (b) Why has sin x=3 no solution?",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$2s=7-3/s\\Rightarrow2s^2=7s-3$ On the original domain s≠0, multiplying by s clears the denominator and produces a quadratic."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$|\\sin x|\\le1<3$ Thus that branch has no real-angle solution."
+            }
+          ],
+          "answer": "(a) Clear denominator with $s\\ne0$; (b) No real solution",
+          "label": "Example 4 margin questions"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "note-4",
+        "type": "practice",
+        "label": "例题4旁注"
+      },
+      {
+        "prompt": "代数解 $3\\cos x+2=5\\sec x$，给出弧度制一般解。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$c\\ne0;\\quad3c^2+2c-5=(3c+5)(c-1)=0.$ c=-5/3不在[-1,1]，c=1给x=2πn，原式两边均为5。"
+          }
+        ],
+        "answer": "$x=2\\pi n,\\ n\\in\\mathbb Z$",
+        "printedPage": 320,
+        "pdfPage": 329,
+        "en": {
+          "prompt": "Solve $3\\cos x+2=5\\sec x$ algebraically. Give general solutions in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$c\\ne0;\\quad3c^2+2c-5=(3c+5)(c-1)=0.$ Reject c=-5/3 as outside [-1,1]. For c=1, x=2πn and both original sides equal 5."
+            }
+          ],
+          "answer": "$x=2\\pi n,\\ n\\in\\mathbb Z$",
+          "label": "Your Turn 4"
+        },
+        "id": "your-turn-4",
+        "type": "practice",
+        "label": "试一试 4"
+      }
+    ],
+    "description": "完整原题与逐步解析。解答中以 s = sin u、c = cos u、t = tan u 作代换，u 为当前小问的角（如 x、A、B、θ）；另有明确约定时依该题。"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "在 $0\\le x<2\\pi$ 代数解：(a) $\\tan^2x-\\tan x=0$；(b) $\\sin2x-\\sin x=0$；(c) $\\sin^2x-4\\sin x=5$；(d) $\\cos2x=\\sin x$。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\tan x(\\tan x-1)=0;\\ \\cos x\\ne0.$ tan x=0给0、π；tan x=1给π/4、5π/4，全部符合定义域。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\sin x(2\\cos x-1)=0.$ sin x=0给0、π；cos x=1/2给π/3、5π/3。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$s^2-4s-5=(s-5)(s+1)=0.$ 舍去s=5；s=-1给3π/2。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$1-2s^2=s\\Rightarrow(2s-1)(s+1)=0.$ s=1/2给π/6、5π/6，s=-1给3π/2。"
+          }
+        ],
+        "answer": "(a) $x=0,\\pi/4,\\pi,5\\pi/4$； (b) $x=0,\\pi/3,\\pi,5\\pi/3$； (c) $x=3\\pi/2$； (d) $x=\\pi/6,5\\pi/6,3\\pi/2$",
+        "printedPage": 320,
+        "pdfPage": 329,
+        "en": {
+          "prompt": "Solve algebraically for $0\\le x<2\\pi$: (a) $\\tan^2x-\\tan x=0$; (b) $\\sin2x-\\sin x=0$; (c) $\\sin^2x-4\\sin x=5$; (d) $\\cos2x=\\sin x$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\tan x(\\tan x-1)=0;\\ \\cos x\\ne0.$ tan x=0 gives 0,π; tan x=1 gives π/4,5π/4. All are permitted."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\sin x(2\\cos x-1)=0.$ sin x=0 gives 0,π; cos x=1/2 gives π/3,5π/3."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$s^2-4s-5=(s-5)(s+1)=0.$ Reject s=5; s=-1 gives 3π/2."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$1-2s^2=s\\Rightarrow(2s-1)(s+1)=0.$ s=1/2 gives π/6,5π/6; s=-1 gives 3π/2."
+            }
+          ],
+          "answer": "(a) $x=0,\\pi/4,\\pi,5\\pi/4$; (b) $x=0,\\pi/3,\\pi,5\\pi/3$; (c) $x=3\\pi/2$; (d) $x=\\pi/6,5\\pi/6,3\\pi/2$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 1
+      },
+      {
+        "prompt": "在 $0^\\circ\\le x<360^\\circ$ 代数解并用图像核验：(a) $\\cos x-\\cos2x=0$；(b) $\\sin^2x-3\\sin x=4$；(c) $\\tan x\\cos x\\sin x-1=0$；(d) $\\tan^2x+\\sqrt3\\tan x=0$。",
+        "concept": "verify",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$c-(2c^2-1)=0\\Rightarrow(2c+1)(c-1)=0.$ c=1或-1/2；差函数图像的零点为0°、120°、240°。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$s^2-3s-4=(s-4)(s+1)=0.$ 舍去s=4；s=-1给270°；差函数仅在270°触及横轴。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$\\cos x\\ne0;\\quad\\tan x\\cos x\\sin x-1=\\sin^2x-1=0.$ 候选90°、270°均使原式tan未定义，舍去；图上这两个零点为空点。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$\\tan x(\\tan x+\\sqrt3)=0;\\quad\\cos x\\ne0.$ tan x=0给0°、180°；tan x=-√3给120°、300°；图像零点一致。"
+          }
+        ],
+        "answer": "(a) $x=0^\\circ,120^\\circ,240^\\circ$； (b) $x=270^\\circ$； (c) 无解 / no solution； (d) $x=0^\\circ,120^\\circ,180^\\circ,300^\\circ$",
+        "printedPage": 320,
+        "pdfPage": 329,
+        "en": {
+          "prompt": "Solve algebraically for $0^\\circ\\le x<360^\\circ$ and verify graphically: (a) $\\cos x-\\cos2x=0$; (b) $\\sin^2x-3\\sin x=4$; (c) $\\tan x\\cos x\\sin x-1=0$; (d) $\\tan^2x+\\sqrt3\\tan x=0$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$c-(2c^2-1)=0\\Rightarrow(2c+1)(c-1)=0.$ c=1 or -1/2; the difference graph has zeros at 0°,120°,240°."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$s^2-3s-4=(s-4)(s+1)=0.$ Reject s=4; s=-1 gives 270°. The difference graph touches the axis only at 270°."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$\\cos x\\ne0;\\quad\\tan x\\cos x\\sin x-1=\\sin^2x-1=0.$ Candidates 90°,270° make the original tangent undefined. Both graphical zeros are holes."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$\\tan x(\\tan x+\\sqrt3)=0;\\quad\\cos x\\ne0.$ tan x=0 gives 0°,180°; tan x=-√3 gives 120°,300°. These match the graph zeros."
+            }
+          ],
+          "answer": "(a) $x=0^\\circ,120^\\circ,240^\\circ$; (b) $x=270^\\circ$; (c) No solution; (d) $x=0^\\circ,120^\\circ,180^\\circ,300^\\circ$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 2,
+        "solutionImage": "assets/6-4-exercise-2.png"
+      },
+      {
+        "prompt": "先改写为只含正弦，再在 $0\\le x<2\\pi$ 代数解：(a) $\\cos2x-3\\sin x=2$；(b) $2\\cos^2x-3\\sin x-3=0$；(c) $3\\csc x-\\sin x=2$；(d) $\\tan^2x+2=0$。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$1-2s^2-3s=2\\Rightarrow(2s+1)(s+1)=0.$ s=-1/2给7π/6、11π/6；s=-1给3π/2。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$2(1-s^2)-3s-3=0\\Rightarrow(2s+1)(s+1)=0.$ 两分支分别为s=-1/2和s=-1，得到下列三个解。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$s\\ne0;\\quad3/s-s=2\\Rightarrow s^2+2s-3=(s-1)(s+3)=0.$ 舍去s=-3；s=1符合定义域，给π/2。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$\\frac{s^2}{1-s^2}+2=0,\\quad s\\ne\\pm1\\Rightarrow s^2=2.$ 这不在正弦值域；亦可见tan²x≥0，左边至少为2。"
+          }
+        ],
+        "answer": "(a) $x=7\\pi/6,3\\pi/2,11\\pi/6$； (b) $x=7\\pi/6,3\\pi/2,11\\pi/6$； (c) $x=\\pi/2$； (d) 无解 / no solution",
+        "printedPage": 320,
+        "pdfPage": 329,
+        "en": {
+          "prompt": "Rewrite using sine only, then solve for $0\\le x<2\\pi$: (a) $\\cos2x-3\\sin x=2$; (b) $2\\cos^2x-3\\sin x-3=0$; (c) $3\\csc x-\\sin x=2$; (d) $\\tan^2x+2=0$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$1-2s^2-3s=2\\Rightarrow(2s+1)(s+1)=0.$ s=-1/2 gives 7π/6,11π/6; s=-1 gives 3π/2."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$2(1-s^2)-3s-3=0\\Rightarrow(2s+1)(s+1)=0.$ The branches s=-1/2 and s=-1 give the three solutions below."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$s\\ne0;\\quad3/s-s=2\\Rightarrow s^2+2s-3=(s-1)(s+3)=0.$ Reject s=-3; s=1 is permitted and gives π/2."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$\\frac{s^2}{1-s^2}+2=0,\\quad s\\ne\\pm1\\Rightarrow s^2=2.$ This is outside the sine range; equivalently tan²x≥0 makes the original left side at least 2."
+            }
+          ],
+          "answer": "(a) $x=7\\pi/6,3\\pi/2,11\\pi/6$; (b) $x=7\\pi/6,3\\pi/2,11\\pi/6$; (c) $x=\\pi/2$; (d) No solution"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 3
+      },
+      {
+        "prompt": "在 $-180^\\circ\\le x<180^\\circ$ 代数解 $4\\sin^2x=1$。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\sin x=\\pm1/2.$ 正负两分支在指定区间给-150°、-30°、30°、150°，端点均不满足。"
+          }
+        ],
+        "answer": "$x=-150^\\circ,-30^\\circ,30^\\circ,150^\\circ$",
+        "printedPage": 320,
+        "pdfPage": 329,
+        "en": {
+          "prompt": "Solve $4\\sin^2x=1$ algebraically for $-180^\\circ\\le x<180^\\circ$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\sin x=\\pm1/2.$ Both signs give -150°,-30°,30°,150° in the interval; neither endpoint satisfies the equation."
+            }
+          ],
+          "answer": "$x=-150^\\circ,-30^\\circ,30^\\circ,150^\\circ$"
+        },
+        "number": 4
+      },
+      {
+        "prompt": "在 $0\\le x<2\\pi$ 代数解 $2\\tan^2x+3\\tan x-2=0$。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$(2t-1)(t+2)=0,\\quad t=\\tan x,\\ \\cos x\\ne0.$ t=1/2给arctan(1/2)及其加π；t=-2给π-arctan2及2π-arctan2。"
+          }
+        ],
+        "answer": "$x=\\arctan(1/2),\\ \\pi-\\arctan2,\\ \\pi+\\arctan(1/2),\\ 2\\pi-\\arctan2$",
+        "printedPage": 320,
+        "pdfPage": 329,
+        "en": {
+          "prompt": "Solve $2\\tan^2x+3\\tan x-2=0$ algebraically for $0\\le x<2\\pi$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$(2t-1)(t+2)=0,\\quad t=\\tan x,\\ \\cos x\\ne0.$ t=1/2 gives arctan(1/2) and that value plus π; t=-2 gives π-arctan2 and 2π-arctan2."
+            }
+          ],
+          "answer": "$x=\\arctan(1/2),\\ \\pi-\\arctan2,\\ \\pi+\\arctan(1/2),\\ 2\\pi-\\arctan2$"
+        },
+        "number": 5
+      },
+      {
+        "prompt": "找出Sanesh的错误并完成正确解（角度制）：解 $2\\cos^2x=\\sqrt3\\cos x$。他两边乘 $1/\\cos x$ 得 $2\\cos x=\\sqrt3$，继而 $x=30^\\circ+360^\\circ n,330^\\circ+360^\\circ n$。",
+        "concept": "verify",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cos x(2\\cos x-\\sqrt3)=0.$ Sanesh除以cos x，漏掉cos x=0分支。其余分支cos x=√3/2给30°与330°加整周期。"
+          }
+        ],
+        "answer": "$x=90^\\circ+180^\\circ n,\\ 30^\\circ+360^\\circ n,\\ 330^\\circ+360^\\circ n;\\ n\\in\\mathbb Z$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Find Sanesh’s error and complete a correct solution in degrees. Solve $2\\cos^2x=\\sqrt3\\cos x$. He multiplies both sides by $1/\\cos x$, obtains $2\\cos x=\\sqrt3$, then gives $x=30^\\circ+360^\\circ n,330^\\circ+360^\\circ n$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cos x(2\\cos x-\\sqrt3)=0.$ Dividing by cos x lost the cos x=0 branch. The other branch cos x=√3/2 gives 30° and 330° plus full periods."
+            }
+          ],
+          "answer": "$x=90^\\circ+180^\\circ n,\\ 30^\\circ+360^\\circ n,\\ 330^\\circ+360^\\circ n;\\ n\\in\\mathbb Z$"
+        },
+        "number": 6
+      },
+      {
+        "prompt": "(a) 在 $0\\le x<2\\pi$ 代数解 $\\sin2x=0.5$；(b) 用另一方法解同一方程。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$0\\le2x<4\\pi;\\quad2x=\\pi/6,5\\pi/6,13\\pi/6,17\\pi/6.$ 将四个角分别除以2，保留两圈的解。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$2\\sin x\\cos x=1/2\\Rightarrow(\\sin x+\\cos x)^2=3/2.$ 令sin x+cos x=√2 sin(x+π/4)，得sin(x+π/4)=±√3/2；在π/4≤x+π/4<9π/4取解，减π/4得同样四个角。"
+          }
+        ],
+        "answer": "(a) $x=\\pi/12,5\\pi/12,13\\pi/12,17\\pi/12$； (b) $x=\\pi/12,5\\pi/12,13\\pi/12,17\\pi/12$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "(a) Solve $\\sin2x=0.5$ algebraically for $0\\le x<2\\pi$. (b) Solve using a different method.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$0\\le2x<4\\pi;\\quad2x=\\pi/6,5\\pi/6,13\\pi/6,17\\pi/6.$ Divide all four angles by 2, retaining solutions from both turns."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$2\\sin x\\cos x=1/2\\Rightarrow(\\sin x+\\cos x)^2=3/2.$ Use sin x+cos x=√2 sin(x+π/4). Then sin(x+π/4)=±√3/2. Solve on π/4≤x+π/4<9π/4 and subtract π/4, obtaining the same four angles."
+            }
+          ],
+          "answer": "(a) $x=\\pi/12,5\\pi/12,13\\pi/12,17\\pi/12$; (b) $x=\\pi/12,5\\pi/12,13\\pi/12,17\\pi/12$"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": 7
+      },
+      {
+        "prompt": "对所有实数代数解 $\\sin^2x=\\cos^2x+1$，答案用弧度表示。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$1-\\cos^2x=\\cos^2x+1\\Rightarrow2\\cos^2x=0.$ 所以cos x=0，所有解为π/2加π的整数倍。"
+          }
+        ],
+        "answer": "$x=\\pi/2+\\pi n,\\ n\\in\\mathbb Z$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Solve $\\sin^2x=\\cos^2x+1$ algebraically for all real x. Give answers in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$1-\\cos^2x=\\cos^2x+1\\Rightarrow2\\cos^2x=0.$ Thus cos x=0, giving π/2 plus integer multiples of π."
+            }
+          ],
+          "answer": "$x=\\pi/2+\\pi n,\\ n\\in\\mathbb Z$"
+        },
+        "number": 8
+      },
+      {
+        "prompt": "在实数域代数解 $\\cos x\\sin2x-2\\sin x=-2$，答案用弧度表示。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$2\\sin x\\cos^2x-2\\sin x=2\\sin x(\\cos^2x-1)=-2\\sin^3x=-2.$ 得sin³x=1，因此sin x=1，无其他实数分支。"
+          }
+        ],
+        "answer": "$x=\\pi/2+2\\pi n,\\ n\\in\\mathbb Z$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Solve $\\cos x\\sin2x-2\\sin x=-2$ algebraically over the reals. Give answers in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$2\\sin x\\cos^2x-2\\sin x=2\\sin x(\\cos^2x-1)=-2\\sin^3x=-2.$ Hence sin³x=1, so sin x=1 with no other real branch."
+            }
+          ],
+          "answer": "$x=\\pi/2+2\\pi n,\\ n\\in\\mathbb Z$"
+        },
+        "number": 9
+      },
+      {
+        "prompt": "方程 $(7\\sin x+2)(3\\cos x+3)(\\tan^2x-2)=0$ 在 $0^\\circ<x\\le360^\\circ$ 有多少个解？解释。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cos x\\ne0;\\quad\\sin x=-2/7\\ (2),\\quad\\cos x=-1\\ (1),\\quad\\tan x=\\pm\\sqrt2\\ (4).$ 三组分别有2、1、4个解，互不重叠（tan²=2时sin²=2/3，非4/49；cos=-1时sin=tan=0）。0°、360°均不是零因子。"
+          }
+        ],
+        "answer": "$7$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "How many solutions does $(7\\sin x+2)(3\\cos x+3)(\\tan^2x-2)=0$ have for $0^\\circ<x\\le360^\\circ$? Explain.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cos x\\ne0;\\quad\\sin x=-2/7\\ (2),\\quad\\cos x=-1\\ (1),\\quad\\tan x=\\pm\\sqrt2\\ (4).$ The branches have 2,1,4 solutions, with no overlap: tan²=2 implies sin²=2/3≠4/49, while cos=-1 implies sin=tan=0. Neither 0° nor 360° is a zero-factor solution."
+            }
+          ],
+          "answer": "$7$"
+        },
+        "number": 10
+      },
+      {
+        "prompt": "在 $0\\le x<2\\pi$ 解 $\\sqrt3\\cos x\\csc x=-2\\cos x$。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\sin x\\ne0;\\quad\\cos x(\\sqrt3+2\\sin x)=0.$ cos x=0给π/2、3π/2；sin x=-√3/2给4π/3、5π/3；四个角均符合原分母限制。"
+          }
+        ],
+        "answer": "$x=\\pi/2,4\\pi/3,3\\pi/2,5\\pi/3$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Solve $\\sqrt3\\cos x\\csc x=-2\\cos x$ for $0\\le x<2\\pi$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\sin x\\ne0;\\quad\\cos x(\\sqrt3+2\\sin x)=0.$ cos x=0 gives π/2,3π/2; sin x=-√3/2 gives 4π/3,5π/3. All four respect the original restriction."
+            }
+          ],
+          "answer": "$x=\\pi/2,4\\pi/3,3\\pi/2,5\\pi/3$"
+        },
+        "number": 11
+      },
+      {
+        "prompt": "某三角方程的解满足 $\\cos x=2/3$ 或 $\\cos x=-1/3$。若形式为 $9\\cos^2x+B\\cos x+C=0$，求B、C。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$9(c-2/3)(c+1/3)=9c^2-3c-2.$ 比较系数得到B=-3、C=-2。"
+          }
+        ],
+        "answer": "$B=-3,\\ C=-2$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "A trigonometric equation has solutions cos x=2/3 and cos x=-1/3. Find B and C if it has the form $9\\cos^2x+B\\cos x+C=0$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$9(c-2/3)(c+1/3)=9c^2-3c-2.$ Comparing coefficients gives B=-3,C=-2."
+            }
+          ],
+          "answer": "$B=-3,\\ C=-2$"
+        },
+        "number": 12
+      },
+      {
+        "prompt": "构造包含sin2x、可用因式分解求解的三角方程，并解之。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\sin2x=\\sin x\\Rightarrow\\sin x(2\\cos x-1)=0.$ 这是一个示例。sin x=0或cos x=1/2，逐分支列一般解；无分母禁值。"
+          }
+        ],
+        "answer": "示例 / Example: $\\sin2x=\\sin x;\\quad x=\\pi n,\\ \\pm\\pi/3+2\\pi n,\\ n\\in\\mathbb Z$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Create a trigonometric equation containing sin2x that can be solved by factoring. Then solve it.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\sin2x=\\sin x\\Rightarrow\\sin x(2\\cos x-1)=0.$ This is one example. Solve sin x=0 or cos x=1/2 by branches; there are no denominator restrictions."
+            }
+          ],
+          "answer": "Example: $\\sin2x=\\sin x;\\quad x=\\pi n,\\ \\pm\\pi/3+2\\pi n,\\ n\\in\\mathbb Z$"
+        },
+        "number": 13
+      },
+      {
+        "prompt": "代数解 $\\sin2x=2\\cos x\\cos2x$，给出弧度制一般解。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$2\\cos x(\\sin x-\\cos2x)=0\\Rightarrow\\cos x=0\\ \\text{or}\\ 2s^2+s-1=(2s-1)(s+1)=0.$ cos x=0给π/2+πn；s=1/2给π/6、5π/6加整周期；s=-1已包含在cos x=0分支中。"
+          }
+        ],
+        "answer": "$x=\\pi/2+\\pi n,\\ \\pi/6+2\\pi n,\\ 5\\pi/6+2\\pi n;\\ n\\in\\mathbb Z$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Solve $\\sin2x=2\\cos x\\cos2x$ algebraically. Give the general solution in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$2\\cos x(\\sin x-\\cos2x)=0\\Rightarrow\\cos x=0\\ \\text{or}\\ 2s^2+s-1=(2s-1)(s+1)=0.$ cos x=0 gives π/2+πn. The branch s=1/2 gives π/6 and 5π/6 plus full periods. The branch s=-1 is already included in cos x=0."
+            }
+          ],
+          "answer": "$x=\\pi/2+\\pi n,\\ \\pi/6+2\\pi n,\\ 5\\pi/6+2\\pi n;\\ n\\in\\mathbb Z$"
+        },
+        "number": 14
+      },
+      {
+        "prompt": "代数确定 $\\cos2x\\cos x-\\sin2x\\sin x=0$ 在 $-360^\\circ<x\\le360^\\circ$ 的解的个数。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cos3x=0\\Rightarrow3x=90^\\circ+180^\\circ n\\Rightarrow x=30^\\circ+60^\\circ n.$ -360<30+60n≤360给整数n=-6,-5,…,5，共12个解；端点都不是解。"
+          }
+        ],
+        "answer": "$12$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Determine algebraically how many solutions $\\cos2x\\cos x-\\sin2x\\sin x=0$ has for $-360^\\circ<x\\le360^\\circ$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cos3x=0\\Rightarrow3x=90^\\circ+180^\\circ n\\Rightarrow x=30^\\circ+60^\\circ n.$ The inequality -360<30+60n≤360 gives n=-6,-5,…,5: twelve solutions. Neither endpoint is a solution."
+            }
+          ],
+          "answer": "$12$"
+        },
+        "number": 15
+      },
+      {
+        "prompt": "代数解 $\\sec x+\\tan^2x-3\\cos x=2$，给出弧度制一般解。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$c\\ne0;\\quad1/c+1/c^2-1-3c=2\\Rightarrow3c^3+3c^2-c-1=(c+1)(3c^2-1)=0.$ 所以c=-1或c=±1/√3，均非零；令α=arccos(1/√3)，正负余弦分支可合并为±α+πn，另加π+2πn。"
+          }
+        ],
+        "answer": "$x=\\pi+2\\pi n\\ \\text{or}\\ x=\\pm\\arccos(1/\\sqrt3)+\\pi n;\\ n\\in\\mathbb Z$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Solve $\\sec x+\\tan^2x-3\\cos x=2$ algebraically. Give the general solution in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$c\\ne0;\\quad1/c+1/c^2-1-3c=2\\Rightarrow3c^3+3c^2-c-1=(c+1)(3c^2-1)=0.$ Thus c=-1 or c=±1/√3, all nonzero. Let α=arccos(1/√3). Combine the positive/negative cosine branches as ±α+πn, together with π+2πn."
+            }
+          ],
+          "answer": "$x=\\pi+2\\pi n\\ \\text{or}\\ x=\\pm\\arccos(1/\\sqrt3)+\\pi n;\\ n\\in\\mathbb Z$"
+        },
+        "number": 16
+      },
+      {
+        "prompt": "代数解 $4\\sin^2x=3\\tan^2x-1$，给出弧度制一般解。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cos x\\ne0;\\quad4s^2(1-s^2)=3s^2-(1-s^2)\\Rightarrow4s^4=1\\Rightarrow s^2=1/2.$ 所有四个象限的|sin x|=√2/2均符合cos≠0；原式两边均为2。"
+          }
+        ],
+        "answer": "$x=\\pi/4+(\\pi/2)n,\\ n\\in\\mathbb Z$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Solve $4\\sin^2x=3\\tan^2x-1$ algebraically. Give the general solution in radians.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cos x\\ne0;\\quad4s^2(1-s^2)=3s^2-(1-s^2)\\Rightarrow4s^4=1\\Rightarrow s^2=1/2.$ All four quadrants with |sin x|=√2/2 have cos≠0. Both original sides equal 2."
+            }
+          ],
+          "answer": "$x=\\pi/4+(\\pi/2)n,\\ n\\in\\mathbb Z$"
+        },
+        "number": 17
+      },
+      {
+        "prompt": "在 $-\\pi\\le x\\le\\pi$ 代数解 $\\frac{1-\\sin^2x-2\\cos x}{\\cos^2x-\\cos x-2}=-\\frac13$。",
+        "concept": "domain",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$c^2-c-2=(c-2)(c+1)\\ne0;\\quad\\frac{c(c-2)}{(c-2)(c+1)}=-1/3\\Rightarrow4c=-1.$ 实数角不可能c=2，但c=-1必须排除（±π）。c=-1/4满足原式定义域，在区间给正负arccos(-1/4)。"
+          }
+        ],
+        "answer": "$x=\\pm\\arccos(-1/4)$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Solve $\\frac{1-\\sin^2x-2\\cos x}{\\cos^2x-\\cos x-2}=-\\frac13$ algebraically for $-\\pi\\le x\\le\\pi$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$c^2-c-2=(c-2)(c+1)\\ne0;\\quad\\frac{c(c-2)}{(c-2)(c+1)}=-1/3\\Rightarrow4c=-1.$ The value c=2 is impossible for a real angle, but c=-1 excludes ±π. The value c=-1/4 is permitted and yields the two angles ±arccos(-1/4)."
+            }
+          ],
+          "answer": "$x=\\pm\\arccos(-1/4)$"
+        },
+        "number": 18
+      },
+      {
+        "prompt": "求 $4(16^{\\cos^2x})=2^{6\\cos x}$ 的弧度制一般解。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$2^{2+4c^2}=2^{6c}\\Rightarrow4c^2-6c+2=2(2c-1)(c-1)=0.$ 底数2>0且不等于1，可令指数相等；c=1/2或1均在值域。"
+          }
+        ],
+        "answer": "$x=2\\pi n,\\ \\pm\\pi/3+2\\pi n;\\ n\\in\\mathbb Z$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Find the general solution in radians of $4(16^{\\cos^2x})=2^{6\\cos x}$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$2^{2+4c^2}=2^{6c}\\Rightarrow4c^2-6c+2=2(2c-1)(c-1)=0.$ Since base 2 is positive and unequal to 1, equate exponents. Both c=1/2 and c=1 are in range."
+            }
+          ],
+          "answer": "$x=2\\pi n,\\ \\pm\\pi/3+2\\pi n;\\ n\\in\\mathbb Z$"
+        },
+        "number": 19
+      },
+      {
+        "prompt": "对某些角α、β，有 $\\sin^2\\alpha+\\cos^2\\beta=m^2$、$\\cos^2\\alpha+\\sin^2\\beta=m$。求m的可能值。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$m^2+m=2\\Rightarrow(m+2)(m-1)=0.$ 平方和非负，第二式使m≥0，排除-2。m=1确实可取，例如α=β=0，两式均成立。"
+          }
+        ],
+        "answer": "$m=1$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "For some angles α and β, $\\sin^2\\alpha+\\cos^2\\beta=m^2$ and $\\cos^2\\alpha+\\sin^2\\beta=m$. Find the possible values of m.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$m^2+m=2\\Rightarrow(m+2)(m-1)=0.$ The second sum of squares gives m≥0, excluding -2. The value m=1 is attainable, for example α=β=0 satisfies both equations."
+            }
+          ],
+          "answer": "$m=1$"
+        },
+        "number": 20
+      },
+      {
+        "prompt": "对于 $\\sin x-\\cos2x=0$：(a) 选哪个恒等式化为单一三角函数？(b) 如何因式分解求解？(c) 求 $0^\\circ\\le x<360^\\circ$ 的解；(d) 图像核验。",
+        "concept": "verify",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\cos2x=1-2\\sin^2x$ 使方程只含sin x。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$2s^2+s-1=(2s-1)(s+1)=0.$ 所以s=1/2或-1。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$\\sin x=1/2\\Rightarrow x=30^\\circ,150^\\circ;\\quad\\sin x=-1\\Rightarrow x=270^\\circ.$ 原式没有禁值，三个角均保留。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$y=\\sin x-\\cos2x$ 差函数在30°、150°穿过横轴，在270°接触横轴；全部符合代数结果。"
+          }
+        ],
+        "answer": "(a) $\\cos2x=1-2\\sin^2x$； (b) $\\sin x=1/2,-1$； (c) $x=30^\\circ,150^\\circ,270^\\circ$； (d) $30^\\circ,150^\\circ,270^\\circ$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "For $\\sin x-\\cos2x=0$: (a) Which identity gives one trigonometric function? (b) How can factoring solve it? (c) Solve for $0^\\circ\\le x<360^\\circ$. (d) Verify graphically.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\cos2x=1-2\\sin^2x$ This leaves only sin x."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$2s^2+s-1=(2s-1)(s+1)=0.$ Thus s=1/2 or -1."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$\\sin x=1/2\\Rightarrow x=30^\\circ,150^\\circ;\\quad\\sin x=-1\\Rightarrow x=270^\\circ.$ There are no original restrictions, so retain all three."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$y=\\sin x-\\cos2x$ The difference crosses the axis at 30°,150° and touches it at 270°, matching all algebraic solutions."
+            }
+          ],
+          "answer": "(a) $\\cos2x=1-2\\sin^2x$; (b) $\\sin x=1/2,-1$; (c) $x=30^\\circ,150^\\circ,270^\\circ$; (d) $30^\\circ,150^\\circ,270^\\circ$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": "C1",
+        "solutionImage": "assets/6-4-c1.png"
+      },
+      {
+        "prompt": "对于 $3\\cos^2x+\\cos x-1=0$：(a) 为什么左边不能因式分解？(b) 用求根公式解；(c) 求 $0^\\circ\\le x<720^\\circ$ 的解。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\Delta=1^2-4(3)(-1)=13.$ 判别式13不是有理数平方，因此不能用有理系数分成一次因子；实数系数下仍能分解。教材“不能分解”应按有理系数理解。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\cos x=c_\\pm=\\frac{-1\\pm\\sqrt{13}}6.$ 两个根约为0.434259和-0.767592，均在[-1,1]；令a=arccos(c+)与b=arccos(c-)，用角度制。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$a=\\arccos(c_+),\\ b=\\arccos(c_-).$ 第一圈先取a、b、360°−b、360°−a，再给这四个角各加360°得到第二圈，共8解。"
+          }
+        ],
+        "answer": "(a) 无有理一次因式 / no rational linear factors； (b) $x=\\pm\\arccos(c_+)+360^\\circ n,\\ \\pm\\arccos(c_-)+360^\\circ n$； (c) $a,b,360^\\circ-b,360^\\circ-a,360^\\circ+a,360^\\circ+b,720^\\circ-b,720^\\circ-a$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "For $3\\cos^2x+\\cos x-1=0$: (a) Why is the left side not factorable? (b) Solve using the quadratic formula. (c) Solve for $0^\\circ\\le x<720^\\circ$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\Delta=1^2-4(3)(-1)=13.$ The discriminant 13 is not a rational square, so rational linear factoring is unavailable. Real linear factors do exist; interpret the textbook wording as rational factoring."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\cos x=c_\\pm=\\frac{-1\\pm\\sqrt{13}}6.$ The two roots are about 0.434259 and -0.767592, both in [-1,1]. Let a=arccos(c+) and b=arccos(c-), measured in degrees."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$a=\\arccos(c_+),\\ b=\\arccos(c_-).$ Take a,b,360°-b,360°-a in the first turn, and add 360° to each for the second turn: eight solutions."
+            }
+          ],
+          "answer": "(a) No rational linear factors; (b) $x=\\pm\\arccos(c_+)+360^\\circ n,\\ \\pm\\arccos(c_-)+360^\\circ n$; (c) $a,b,360^\\circ-b,360^\\circ-a,360^\\circ+a,360^\\circ+b,720^\\circ-b,720^\\circ-a$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": "C2"
+      },
+      {
+        "prompt": "用正弦倍角恒等式构造一个非恒等式方程，解方程并解释为什么不是恒等式。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\sin2x=0\\Rightarrow2\\sin x\\cos x=0\\Rightarrow x=(\\pi/2)n.$ 这是一个有效示例。在x=π/4时左边为1而右边为0，所以并非所有角度都成立。"
+          }
+        ],
+        "answer": "示例 / Example: $\\sin2x=0,\\ x=(\\pi/2)n,\\ n\\in\\mathbb Z$",
+        "printedPage": 321,
+        "pdfPage": 330,
+        "en": {
+          "prompt": "Use the sine double-angle identity to create an equation that is not an identity. Solve it and explain why it is not an identity.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\sin2x=0\\Rightarrow2\\sin x\\cos x=0\\Rightarrow x=(\\pi/2)n.$ This is a valid example. At x=π/4, the left side is 1 and the right side 0, so it does not hold for every angle."
+            }
+          ],
+          "answer": "Example: $\\sin2x=0,\\ x=(\\pi/2)n,\\ n\\in\\mathbb Z$"
+        },
+        "number": "C3"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "note-1",
+      "your-turn-1",
+      "note-2",
+      "your-turn-2",
+      "note-3",
+      "your-turn-3",
+      "note-4",
+      "your-turn-4"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "expectedSubparts": {
+      "example-1": [
+        "a",
+        "b"
+      ],
+      "example-2": [
+        "a",
+        "b"
+      ],
+      "your-turn-1": [
+        "a",
+        "b"
+      ],
+      "your-turn-2": [
+        "a",
+        "b"
+      ],
+      "note-1": [
+        "a",
+        "b"
+      ],
+      "note-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "note-4": [
+        "a",
+        "b"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-7": [
+        "a",
+        "b"
+      ],
+      "exercise-C1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-C2": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original-page and mathematics review completed by a reviewer independent of the author. Review record: audit/root-independent-review.json. Final file hashes recorded separately."
+  }
+}

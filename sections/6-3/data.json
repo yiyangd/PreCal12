@@ -1,0 +1,1917 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "6-3",
+    "section": "6.3",
+    "title": "证明恒等式",
+    "en": {
+      "title": "Proving Identities",
+      "description": "Verify, prove, and disprove trigonometric identities while preserving the common domain."
+    },
+    "description": "区分验证、证明与反例，并在三角恒等式的每次变形中保留共同定义域。",
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315
+      ],
+      "pdfPages": [
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324
+      ]
+    },
+    "concepts": [
+      {
+        "id": "verify-prove",
+        "title": "验证、证明与共同定义域",
+        "summary": "恒等式必须对两个原式都有定义的所有值成立。图形或数值可以提供证据，单个反例可以否定恒等式；证明必须给出对任意允许值有效的论证。",
+        "method": [
+          {
+            "title": "确定允许值",
+            "body": "先检查原式中的分母、$\\tan,\\cot,\\sec,\\csc$ 和根式，求共同定义域。约分后仍保留原限制。"
+          },
+          {
+            "title": "证明任意值",
+            "body": "分别化简左、右两边，直到得到相同表达式；也可只把一边变为另一边。不要把待证等式当成已知方程跨等号运算。"
+          }
+        ],
+        "pitfalls": [
+          "未定义的角不是一个可用反例；反例必须使原式两边都有定义。",
+          "图像像素可能掩盖孤立的小孔。"
+        ],
+        "en": {
+          "title": "Verification, proof, and the common domain",
+          "summary": "An identity holds for every value where both original expressions are defined. Graphs and values provide evidence; one counterexample disproves an identity. A proof must work for an arbitrary permissible input.",
+          "method": [
+            {
+              "title": "Identify permissible values",
+              "body": "Inspect original denominators, $\\tan,\\cot,\\sec,\\csc$, and radicals to find the common domain. Keep original restrictions after cancellation."
+            },
+            {
+              "title": "Prove for an arbitrary value",
+              "body": "Simplify the sides independently to a common expression, or transform one side into the other. Do not assume the proposed equality and perform operations across its equal sign."
+            }
+          ],
+          "pitfalls": [
+            "An undefined input is not a valid counterexample; both original sides must be defined.",
+            "Graph pixels may conceal isolated holes."
+          ]
+        }
+      },
+      {
+        "id": "sine-cosine",
+        "title": "转为正弦余弦与通分",
+        "summary": "$\\tan x=\\sin x/\\cos x$、$\\cot x=\\cos x/\\sin x$、$\\sec x=1/\\cos x$、$\\csc x=1/\\sin x$。结合 $\\sin^2x+\\cos^2x=1$ 常可把复杂式化为一个基本函数。",
+        "method": [
+          {
+            "title": "转换",
+            "body": "把倒数、商函数写成正弦余弦，并为每个原分母保留非零条件。"
+          },
+          {
+            "title": "通分与化简",
+            "body": "求共同分母合并分式，使用勾股恒等式，再因式分解和约去允许约去的因子。"
+          }
+        ],
+        "pitfalls": [
+          "只能约去乘法因子，不能约去和式中的一项。"
+        ],
+        "en": {
+          "title": "Rewrite in sine and cosine; combine fractions",
+          "summary": "Use $\\tan x=\\sin x/\\cos x$, $\\cot x=\\cos x/\\sin x$, $\\sec x=1/\\cos x$, and $\\csc x=1/\\sin x$. Together with $\\sin^2x+\\cos^2x=1$, these often reduce complicated expressions to a primary function.",
+          "method": [
+            {
+              "title": "Rewrite",
+              "body": "Rewrite reciprocal and quotient functions using sine and cosine, retaining every original nonzero-denominator condition."
+            },
+            {
+              "title": "Combine and simplify",
+              "body": "Combine fractions over a common denominator, apply the Pythagorean identity, then factor and cancel only nonzero factors."
+            }
+          ],
+          "pitfalls": [
+            "Cancel multiplicative factors, not terms within a sum."
+          ]
+        }
+      },
+      {
+        "id": "double-angle",
+        "title": "选择和角、差角与倍角形式",
+        "summary": "$\\sin2x=2\\sin x\\cos x$；$\\cos2x=1-2\\sin^2x=2\\cos^2x-1=\\cos^2x-\\sin^2x$。选择能与其余项统一变量或产生因子的形式。和差角公式也可证明余函数与乘积恒等式。",
+        "method": [
+          {
+            "title": "选择形式",
+            "body": "看其余项含 $\\sin x$ 还是 $\\cos x$，选择相同变量的倍角式。"
+          },
+          {
+            "title": "保留限制",
+            "body": "代入、因式分解，并检查倍角分母的全部零点，不能只看最终的 $\\tan x$ 或 $\\cot x$ 的定义域。"
+          }
+        ],
+        "pitfalls": [
+          "角度制的 $90^\\circ$ 与弧度制的 $\\pi/2$ 不可混用。"
+        ],
+        "en": {
+          "title": "Choose sum, difference, and double-angle forms",
+          "summary": "$\\sin2x=2\\sin x\\cos x$ and $\\cos2x=1-2\\sin^2x=2\\cos^2x-1=\\cos^2x-\\sin^2x$. Choose the form that matches the remaining terms or reveals factors. Sum and difference formulas also prove cofunction and product identities.",
+          "method": [
+            {
+              "title": "Choose a form",
+              "body": "Inspect whether the other terms use $\\sin x$ or $\\cos x$, and choose a matching double-angle form."
+            },
+            {
+              "title": "Retain restrictions",
+              "body": "Substitute and factor; check all zeros of the original double-angle denominator, not only the domain of the final $\\tan x$ or $\\cot x$."
+            }
+          ],
+          "pitfalls": [
+            "Do not mix $90^\\circ$ in degrees with $\\pi/2$ in radians."
+          ]
+        }
+      },
+      {
+        "id": "factor-conjugate",
+        "title": "因式分解与共轭式",
+        "summary": "把 $\\sin x$ 或 $\\cos x$ 暂当代数变量，可使用提公因子、平方差和二次式分解。乘以共轭式可利用 $(1-\\cos x)(1+\\cos x)=\\sin^2x$。",
+        "method": [
+          {
+            "title": "分解",
+            "body": "先分解原分母得到全部限制，再分解分子，寻找真正的共同乘法因子。"
+          },
+          {
+            "title": "共轭与约分",
+            "body": "需要时分子分母同乘共轭式；确认所乘比值的分母非零。约分后写出共同定义域。"
+          }
+        ],
+        "pitfalls": [
+          "消失的因子仍可能对应原式不允许值。"
+        ],
+        "en": {
+          "title": "Factoring and conjugates",
+          "summary": "Treat $\\sin x$ or $\\cos x$ as an algebraic variable to factor common factors, differences of squares, and quadratics. Conjugates use relations such as $(1-\\cos x)(1+\\cos x)=\\sin^2x$.",
+          "method": [
+            {
+              "title": "Factor",
+              "body": "Factor original denominators to identify all restrictions, then factor numerators and locate common multiplicative factors."
+            },
+            {
+              "title": "Conjugate and cancel",
+              "body": "When useful, multiply numerator and denominator by a conjugate, checking that the added denominator is nonzero. State the common domain after cancellation."
+            }
+          ],
+          "pitfalls": [
+            "A cancelled factor can still correspond to excluded inputs of the original expression."
+          ]
+        }
+      },
+      {
+        "id": "applications",
+        "title": "应用中的单位、物理范围与平方根",
+        "summary": "代数恒等式的应用还要满足情境条件。飞行距离须保持速度、重力和角度单位；透镜题中 $\\sqrt{1-\\sin^2\\theta}=|\\cos\\theta|$，须由物理角度保证余弦非负。",
+        "method": [
+          {
+            "title": "建立条件",
+            "body": "先列变量意义、单位和物理区间，再代入或替换。折射题还需实根式与非零分母。"
+          },
+          {
+            "title": "核对结果",
+            "body": "用恒等式改写后核对条件和单位；近似计算写 $\\approx$，保留足够中间精度。"
+          }
+        ],
+        "pitfalls": [
+          "$\\sqrt{u^2}=|u|$，不能无条件写成 $u$。"
+        ],
+        "en": {
+          "title": "Units, physical ranges, and square roots in applications",
+          "summary": "Applications must satisfy contextual conditions as well as algebraic identities. Preserve velocity, gravity, and angle units in flight models. For lenses, $\\sqrt{1-\\sin^2\\theta}=|\\cos\\theta|$; the physical angle range must justify a nonnegative cosine.",
+          "method": [
+            {
+              "title": "State conditions",
+              "body": "State variable meanings, units, and physical ranges before substituting. Refraction also requires real radicals and nonzero denominators."
+            },
+            {
+              "title": "Check the result",
+              "body": "After applying identities, recheck conditions and units. Use $\\approx$ for numerical approximations and retain sufficient intermediate precision."
+            }
+          ],
+          "pitfalls": [
+            "$\\sqrt{u^2}=|u|$, not unconditionally $u$."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "模型火箭以仰角 $\\theta$ 发射。Katie 得到 $d=\\frac{(v_0)^2\\sin2\\theta}{g}$，Sergey 得到 $d=\\frac{2(v_0)^2}{g}(\\tan\\theta-\\tan\\theta\\sin^2\\theta)$。两式是否等价？用图形和数值方法说明。先代入 $v_0=14\\text{ m/s}$、$g=9.8\\text{ m/s}^2$ 并化简。",
+        "concept": "verify-prove",
+        "printedPage": 309,
+        "pdfPage": 318,
+        "steps": [
+          {
+            "title": "代入",
+            "body": "$14^2/9.8=20$，故两式分别为 $d_1=20\\sin2\\theta$ 与 $d_2=40(\\tan\\theta-\\tan\\theta\\sin^2\\theta)$。"
+          },
+          {
+            "title": "数值比较",
+            "body": "角度制取 $\\theta=0^\\circ,30^\\circ,45^\\circ,60^\\circ$，两式均依次给出 $0,10\\sqrt3,20,10\\sqrt3$ 米。第一式在 $90^\\circ$ 有定义，第二式的 $\\tan90^\\circ$ 无定义。"
+          },
+          {
+            "title": "图形证据",
+            "body": "在 $0^\\circ\\leq\\theta<90^\\circ$ 作两图，曲线重合且在 $45^\\circ$ 达 $20$ 米。图形与数值支持两式在共同定义域 $\\cos\\theta\\ne0$ 上等价；一般性证明见调查 3。"
+          }
+        ],
+        "answer": "在 $\\cos\\theta\\ne0$ 上等价；物理发射角通常取 $0^\\circ\\leq\\theta<90^\\circ$。",
+        "en": {
+          "prompt": "A model rocket is launched at angle of elevation $\\theta$. Katie models its horizontal distance by $d=\\frac{(v_0)^2\\sin2\\theta}{g}$; Sergey uses $d=\\frac{2(v_0)^2}{g}(\\tan\\theta-\\tan\\theta\\sin^2\\theta)$. Are these expressions equivalent? Use graphical and numerical methods. First substitute $v_0=14\\text{ m/s}$ and $g=9.8\\text{ m/s}^2$ and simplify.",
+          "steps": [
+            {
+              "title": "Substitute",
+              "body": "$14^2/9.8=20$, giving $d_1=20\\sin2\\theta$ and $d_2=40(\\tan\\theta-\\tan\\theta\\sin^2\\theta)$."
+            },
+            {
+              "title": "Compare values",
+              "body": "In degrees, at $\\theta=0^\\circ,30^\\circ,45^\\circ,60^\\circ$, both give $0,10\\sqrt3,20,10\\sqrt3$ metres, respectively. The first is defined at $90^\\circ$, but the second contains undefined $\\tan90^\\circ$."
+            },
+            {
+              "title": "Graphical evidence",
+              "body": "Plotting for $0^\\circ\\leq\\theta<90^\\circ$ gives overlapping curves with maximum $20$ metres at $45^\\circ$. These checks support equivalence on the common domain $\\cos\\theta\\ne0$; Investigate 3 provides a proof."
+            }
+          ],
+          "answer": "Equivalent on $\\cos\\theta\\ne0$; the usual physical launch interval is $0^\\circ\\leq\\theta<90^\\circ$.",
+          "label": "Investigate 1"
+        },
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "调查 1",
+        "solutionImage": "assets/6-3-investigate1-graph.png"
+      },
+      {
+        "prompt": "两个火箭距离公式中哪些部分相同？",
+        "concept": "verify-prove",
+        "printedPage": 309,
+        "pdfPage": 318,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "两式都给出水平距离 $d$，且共有因子 $\\frac{(v_0)^2}{g}$。把它提出，得到 $d=\\frac{(v_0)^2}{g}\\,[\\sin2\\theta]$ 与 $d=\\frac{(v_0)^2}{g}\\,[2(\\tan\\theta-\\tan\\theta\\sin^2\\theta)]$。"
+          }
+        ],
+        "answer": "共有因子 $\\frac{(v_0)^2}{g}$。",
+        "en": {
+          "prompt": "Which parts are common to both rocket-distance formulas?",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "Both model the horizontal distance $d$ and contain $\\frac{(v_0)^2}{g}$. Factoring this out gives $d=\\frac{(v_0)^2}{g}\\,[\\sin2\\theta]$ and $d=\\frac{(v_0)^2}{g}\\,[2(\\tan\\theta-\\tan\\theta\\sin^2\\theta)]$."
+            }
+          ],
+          "answer": "The common factor is $\\frac{(v_0)^2}{g}$.",
+          "label": "Investigate 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "调查 2"
+      },
+      {
+        "prompt": "用两个火箭公式不相同的部分写一个恒等式，并用已学恒等式证明两边等价。",
+        "concept": "double-angle",
+        "printedPage": 309,
+        "pdfPage": 318,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "要证 $\\sin2\\theta=2(\\tan\\theta-\\tan\\theta\\sin^2\\theta)$；原式要求 $\\cos\\theta\\ne0$。左边 $\\sin2\\theta=2\\sin\\theta\\cos\\theta$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $=2\\tan\\theta(1-\\sin^2\\theta)=2\\frac{\\sin\\theta}{\\cos\\theta}\\cos^2\\theta=2\\sin\\theta\\cos\\theta$。两边分别得到同一式，证明成立。"
+          }
+        ],
+        "answer": "$\\sin2\\theta=2(\\tan\\theta-\\tan\\theta\\sin^2\\theta)$，$\\cos\\theta\\ne0$。",
+        "en": {
+          "prompt": "Write an identity using the parts of the rocket formulas that are not common. Rewrite each side using known identities to show equivalence.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The proposed identity is $\\sin2\\theta=2(\\tan\\theta-\\tan\\theta\\sin^2\\theta)$, with $\\cos\\theta\\ne0$. The left side is $2\\sin\\theta\\cos\\theta$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $2\\tan\\theta(1-\\sin^2\\theta)=2\\frac{\\sin\\theta}{\\cos\\theta}\\cos^2\\theta=2\\sin\\theta\\cos\\theta$. Both sides independently reduce to the same expression."
+            }
+          ],
+          "answer": "$\\sin2\\theta=2(\\tan\\theta-\\tan\\theta\\sin^2\\theta)$，$\\cos\\theta\\ne0$。",
+          "label": "Investigate 3"
+        },
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "调查 3"
+      },
+      {
+        "prompt": "与同学比较你的推理。",
+        "concept": "verify-prove",
+        "printedPage": 309,
+        "pdfPage": 318,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "可核对的讨论示例：一位先把右边因式分解成 $2\\tan\\theta(1-\\sin^2\\theta)$；另一位先写成 $2\\frac{\\sin\\theta}{\\cos\\theta}-2\\frac{\\sin^3\\theta}{\\cos\\theta}$。第二条路径通分后也是 $2\\sin\\theta(1-\\sin^2\\theta)/\\cos\\theta=2\\sin\\theta\\cos\\theta$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "比较每一步所用恒等式与 $\\cos\\theta\\ne0$ 限制。这是供真实讨论使用的示例，不代表已收集同学的回答。"
+          }
+        ],
+        "answer": "两种合法变形都得到 $2\\sin\\theta\\cos\\theta$；讨论时保留共同定义域。",
+        "en": {
+          "prompt": "Compare your reasoning with that of a classmate.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "A checkable discussion example: one student factors the right side as $2\\tan\\theta(1-\\sin^2\\theta)$; another first writes $2\\frac{\\sin\\theta}{\\cos\\theta}-2\\frac{\\sin^3\\theta}{\\cos\\theta}$. Combining the latter gives $2\\sin\\theta(1-\\sin^2\\theta)/\\cos\\theta=2\\sin\\theta\\cos\\theta$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "Compare the identity used at each step and the restriction $\\cos\\theta\\ne0$. This is a model for an actual discussion, not a report of collected classmate responses."
+            }
+          ],
+          "answer": "Both valid routes give $2\\sin\\theta\\cos\\theta$; retain the common domain in the discussion.",
+          "label": "Investigate 4"
+        },
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "调查 4"
+      },
+      {
+        "prompt": "代数方法与图形或数值验证相比如何？为什么数值和图形验证不能证明一个恒等式？",
+        "concept": "verify-prove",
+        "printedPage": 309,
+        "pdfPage": 318,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "数值检验只检验有限个输入；绘图只有有限分辨率，还可能隐藏未定义点。因此“检验过的值都相等”不能推出“所有允许值都相等”。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "合法的代数变形把任意共同定义域内的 $x$ 化成同一表达式，因而覆盖所有允许值。一个反例足以否定恒等式，但任意有限次成功检验都不能替代一般证明。"
+          }
+        ],
+        "answer": "代数证明覆盖所有允许值；有限数值或像素图只提供证据。",
+        "en": {
+          "prompt": "How does the algebraic method compare with graphical or numerical verification? Why do numerical and graphical checks fail to prove an identity?",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "A numerical check covers finitely many inputs. A plotted graph has finite resolution and may hide undefined points. Agreement at checked inputs does not establish agreement at every permissible input."
+            },
+            {
+              "title": "Transform and check",
+              "body": "Valid algebraic transformations reduce both sides to the same expression for an arbitrary input in the common domain, covering every permissible input. One counterexample disproves an identity, whereas finitely many successful checks do not replace a general proof."
+            }
+          ],
+          "answer": "An algebraic proof covers all permissible values; finite tables or pixel plots provide evidence only.",
+          "label": "Reflect and Respond 5"
+        },
+        "id": "reflect-5",
+        "type": "practice",
+        "label": "反思与回应 5"
+      },
+      {
+        "prompt": "(a) 用若干 $x$ 值验证 $1-\\sin^2x=\\sin x\\cos x\\cot x$，求不允许值，使用角度制。(b) 证明该式对所有允许值成立。",
+        "concept": "verify-prove",
+        "printedPage": 310,
+        "pdfPage": 319,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) $\\cot x=\\cos x/\\sin x$ 要求 $\\sin x\\ne0$，即 $x\\ne180^\\circ n$，$n\\in\\mathbb Z$。取 $30^\\circ$，左边 $1-(1/2)^2=3/4$；右边 $(1/2)(\\sqrt3/2)(\\sqrt3)=3/4$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "在 $-360^\\circ\\leq x\\leq360^\\circ$ 作图，两条曲线在共同定义域重合。右边在每个 $180^\\circ n$ 处缺点，绘图像素可能看不出这些小孔。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 左边由 $\\sin^2x+\\cos^2x=1$ 得 $1-\\sin^2x=\\cos^2x$。右边 $\\sin x\\cos x\\cot x=\\sin x\\cos x(\\cos x/\\sin x)=\\cos^2x$，约去的 $\\sin x$ 在共同定义域内非零。"
+          }
+        ],
+        "answer": "恒等式成立，$x\\ne180^\\circ n$，$n\\in\\mathbb Z$。",
+        "en": {
+          "prompt": "(a) Verify $1-\\sin^2x=\\sin x\\cos x\\cot x$ for some values of $x$. Determine the non-permissible values; work in degrees. (b) Prove the identity for all permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) Since $\\cot x=\\cos x/\\sin x$, require $\\sin x\\ne0$, so $x\\ne180^\\circ n$, $n\\in\\mathbb Z$. At $30^\\circ$, the left side is $1-(1/2)^2=3/4$, and the right side is $(1/2)(\\sqrt3/2)(\\sqrt3)=3/4$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "On $-360^\\circ\\leq x\\leq360^\\circ$, the curves coincide on their common domain. The right side has holes at $180^\\circ n$, which graph pixels may conceal."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) By $\\sin^2x+\\cos^2x=1$, the left side is $\\cos^2x$. The right side is $\\sin x\\cos x(\\cos x/\\sin x)=\\cos^2x$; the cancelled $\\sin x$ is nonzero on the common domain."
+            }
+          ],
+          "answer": "The identity holds for $x\\ne180^\\circ n$, $n\\in\\mathbb Z$.",
+          "label": "Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/6-3-example1-graph.png"
+      },
+      {
+        "prompt": "为什么图中看不出不允许值？",
+        "concept": "verify-prove",
+        "printedPage": 310,
+        "pdfPage": 319,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "$\\sin x\\cos x\\cot x$ 在 $\\sin x\\ne0$ 时等于 $\\cos^2x$，但在 $x=180^\\circ n$ 无定义。这些只是孤立的小孔；计算器连线与有限像素可将它们遮住，因此图像相似不能说明定义域相同。"
+          }
+        ],
+        "answer": "孤立的小孔可能被像素与连线隐藏。",
+        "en": {
+          "prompt": "Why are the non-permissible values not apparent from these graphs?",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "$\\sin x\\cos x\\cot x$ equals $\\cos^2x$ when $\\sin x\\ne0$, but is undefined at $x=180^\\circ n$. These are isolated holes; connecting segments and finite pixels can conceal them. Similar-looking plots do not imply identical domains."
+            }
+          ],
+          "answer": "Isolated holes may be hidden by pixels and connecting lines.",
+          "label": "Example 1 sidebar: undefined points"
+        },
+        "id": "sidebar-graph-holes",
+        "type": "practice",
+        "label": "例题 1 旁注：未定义点"
+      },
+      {
+        "prompt": "为什么 $30^\\circ$ 是一个好的检验角？",
+        "concept": "verify-prove",
+        "printedPage": 311,
+        "pdfPage": 320,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "$30^\\circ$ 在共同定义域内，且 $\\sin30^\\circ=1/2$、$\\cos30^\\circ=\\sqrt3/2$、$\\cot30^\\circ=\\sqrt3$ 都有容易计算的精确值；两边均为 $3/4$，无需舍入。"
+          }
+        ],
+        "answer": "它是允许角，而且有简单的精确三角比值。",
+        "en": {
+          "prompt": "Why is $30^\\circ$ a good choice?",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "$30^\\circ$ lies in the common domain and has easy exact values: $\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$, and $\\cot30^\\circ=\\sqrt3$. Both sides are exactly $3/4$, with no rounding."
+            }
+          ],
+          "answer": "It is permissible and has simple exact trigonometric ratios.",
+          "label": "Example 1 sidebar: 30°"
+        },
+        "id": "sidebar-thirty-degrees",
+        "type": "practice",
+        "label": "例题 1 旁注：30°"
+      },
+      {
+        "prompt": "为什么 $1-\\sin^2x=\\cos^2x$？",
+        "concept": "sine-cosine",
+        "printedPage": 311,
+        "pdfPage": 320,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "单位圆坐标为 $(\\cos x,\\sin x)$，故 $\\cos^2x+\\sin^2x=1$。把 $\\sin^2x$ 移项就得 $\\cos^2x=1-\\sin^2x$；这是已知恒等式的等价写法。"
+          }
+        ],
+        "answer": "由 $\\sin^2x+\\cos^2x=1$ 得出。",
+        "en": {
+          "prompt": "Why is $1-\\sin^2x=\\cos^2x$ true?",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The unit-circle coordinates $(\\cos x,\\sin x)$ give $\\cos^2x+\\sin^2x=1$. Rearranging this known identity gives $\\cos^2x=1-\\sin^2x$."
+            }
+          ],
+          "answer": "It follows from $\\sin^2x+\\cos^2x=1$.",
+          "label": "Example 1 sidebar: Pythagorean identity"
+        },
+        "id": "sidebar-pythagorean",
+        "type": "practice",
+        "label": "例题 1 旁注：勾股恒等式"
+      },
+      {
+        "prompt": "(a) 求 $\\frac{\\tan x\\cos x}{\\csc x}=1-\\cos^2x$ 中 $x$ 的不允许值。(b) 用图形或选一个值验证它可能是恒等式。(c) 证明对所有允许值成立。",
+        "concept": "sine-cosine",
+        "printedPage": 311,
+        "pdfPage": 320,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) $\\tan x$ 要求 $\\cos x\\ne0$，$\\csc x$ 要求 $\\sin x\\ne0$；$\\csc x$ 有定义时本身不为零。因此角度制排除 $x=90^\\circ n$，$n\\in\\mathbb Z$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 取 $x=30^\\circ$，左边 $[(1/\\sqrt3)(\\sqrt3/2)]/2=1/4$，右边 $1-(\\sqrt3/2)^2=1/4$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(c) 左边 $=\\frac{(\\sin x/\\cos x)\\cos x}{1/\\sin x}=\\sin^2x$；右边 $1-\\cos^2x=\\sin^2x$。两个被约去的三角因子在共同定义域内都非零。"
+          }
+        ],
+        "answer": "成立，$\\sin x\\cos x\\ne0$（角度制 $x\\ne90^\\circ n$）。",
+        "en": {
+          "prompt": "(a) Determine the non-permissible values in $\\frac{\\tan x\\cos x}{\\csc x}=1-\\cos^2x$. (b) Verify that it may be an identity graphically or by choosing one value of $x$. (c) Prove it for all permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) $\\tan x$ requires $\\cos x\\ne0$; $\\csc x$ requires $\\sin x\\ne0$ and is never zero when defined. Thus in degrees exclude $x=90^\\circ n$, $n\\in\\mathbb Z$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) At $x=30^\\circ$, the left side is $[(1/\\sqrt3)(\\sqrt3/2)]/2=1/4$, and the right side is $1-(\\sqrt3/2)^2=1/4$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(c) The left side is $\\frac{(\\sin x/\\cos x)\\cos x}{1/\\sin x}=\\sin^2x$; the right side is $1-\\cos^2x=\\sin^2x$. The cancelled trigonometric factors are nonzero on the common domain."
+            }
+          ],
+          "answer": "True on $\\sin x\\cos x\\ne0$ (in degrees $x\\ne90^\\circ n$).",
+          "label": "Example 1 · Your Turn"
+        },
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "例题 1 · Your Turn",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "证明 $\\tan x=\\frac{1-\\cos2x}{\\sin2x}$ 对所有允许值成立。",
+        "concept": "double-angle",
+        "printedPage": 311,
+        "pdfPage": 320,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "共同定义域由 $\\cos x\\ne0$、$\\sin2x\\ne0$ 给出，即 $\\sin x\\cos x\\ne0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $=\\frac{1-(1-2\\sin^2x)}{2\\sin x\\cos x}=\\frac{2\\sin^2x}{2\\sin x\\cos x}=\\frac{\\sin x}{\\cos x}=\\tan x$，等于左边；约去的 $2\\sin x$ 非零。"
+          }
+        ],
+        "answer": "恒等式成立于 $\\sin x\\cos x\\ne0$。",
+        "en": {
+          "prompt": "Prove that $\\tan x=\\frac{1-\\cos2x}{\\sin2x}$ for all permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The common domain requires $\\cos x\\ne0$ and $\\sin2x\\ne0$, equivalently $\\sin x\\cos x\\ne0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $\\frac{1-(1-2\\sin^2x)}{2\\sin x\\cos x}=\\frac{2\\sin^2x}{2\\sin x\\cos x}=\\frac{\\sin x}{\\cos x}=\\tan x$, matching the left side; the cancelled $2\\sin x$ is nonzero."
+            }
+          ],
+          "answer": "The identity holds on $\\sin x\\cos x\\ne0$.",
+          "label": "Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2"
+      },
+      {
+        "prompt": "证明 $\\frac{\\sin2x}{\\cos2x+1}=\\tan x$ 对所有允许值成立。",
+        "concept": "double-angle",
+        "printedPage": 311,
+        "pdfPage": 320,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "$\\cos2x+1=2\\cos^2x$，所以共同定义域为 $\\cos x\\ne0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "左边 $=\\frac{2\\sin x\\cos x}{2\\cos^2x}=\\frac{\\sin x}{\\cos x}=\\tan x$。只约去共同定义域上非零的 $2\\cos x$。"
+          }
+        ],
+        "answer": "成立于 $\\cos x\\ne0$。",
+        "en": {
+          "prompt": "Prove that $\\frac{\\sin2x}{\\cos2x+1}=\\tan x$ for all permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "Since $\\cos2x+1=2\\cos^2x$, the common domain is $\\cos x\\ne0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The left side is $\\frac{2\\sin x\\cos x}{2\\cos^2x}=\\frac{\\sin x}{\\cos x}=\\tan x$. Only the nonzero factor $2\\cos x$ is cancelled."
+            }
+          ],
+          "answer": "True on $\\cos x\\ne0$.",
+          "label": "Example 2 · Your Turn"
+        },
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "例题 2 · Your Turn"
+      },
+      {
+        "prompt": "证明 $\\frac{1-\\cos x}{\\sin x}=\\frac{\\sin x}{1+\\cos x}$ 对所有允许值成立。",
+        "concept": "factor-conjugate",
+        "printedPage": 312,
+        "pdfPage": 321,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "共同定义域要求 $\\sin x\\ne0$ 及 $1+\\cos x\\ne0$；$\\sin x\\ne0$ 已使 $\\cos x\\ne\\pm1$，所以也有 $1-\\cos x\\ne0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "从右边开始，乘非零的共轭比：$\\frac{\\sin x}{1+\\cos x}\\frac{1-\\cos x}{1-\\cos x}=\\frac{\\sin x(1-\\cos x)}{1-\\cos^2x}=\\frac{\\sin x(1-\\cos x)}{\\sin^2x}=\\frac{1-\\cos x}{\\sin x}$，与左边相同。"
+          }
+        ],
+        "answer": "恒等式成立于 $\\sin x\\ne0$。",
+        "en": {
+          "prompt": "Prove that $\\frac{1-\\cos x}{\\sin x}=\\frac{\\sin x}{1+\\cos x}$ for all permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The common domain requires $\\sin x\\ne0$ and $1+\\cos x\\ne0$. The first condition implies $\\cos x\\ne\\pm1$, so also $1-\\cos x\\ne0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "Start with the right side and multiply by the nonzero conjugate ratio: $\\frac{\\sin x}{1+\\cos x}\\frac{1-\\cos x}{1-\\cos x}=\\frac{\\sin x(1-\\cos x)}{1-\\cos^2x}=\\frac{\\sin x(1-\\cos x)}{\\sin^2x}=\\frac{1-\\cos x}{\\sin x}$, the left side."
+            }
+          ],
+          "answer": "The identity holds on $\\sin x\\ne0$.",
+          "label": "Example 3"
+        },
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3"
+      },
+      {
+        "prompt": "乘以 $1+\\cos x$ 的共轭式 $1-\\cos x$，如何把分母写成 $\\sin x$ 的式子？",
+        "concept": "factor-conjugate",
+        "printedPage": 312,
+        "pdfPage": 321,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "平方差公式给出 $(1+\\cos x)(1-\\cos x)=1-\\cos^2x=\\sin^2x$。这把和式分母变为可与分子中的 $\\sin x$ 约去一个因子的乘积。必须先确认所乘比值的分母 $1-\\cos x$ 非零。"
+          }
+        ],
+        "answer": "$(1+\\cos x)(1-\\cos x)=\\sin^2x$。",
+        "en": {
+          "prompt": "How does multiplying by $1-\\cos x$, the conjugate of $1+\\cos x$, express the denominator in terms of $\\sin x$?",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The difference of squares gives $(1+\\cos x)(1-\\cos x)=1-\\cos^2x=\\sin^2x$. This turns the denominator into a product from which one $\\sin x$ factor cancels with the numerator. First confirm that the conjugate ratio has nonzero denominator $1-\\cos x$."
+            }
+          ],
+          "answer": "$(1+\\cos x)(1-\\cos x)=\\sin^2x$。",
+          "label": "Example 3 sidebar: conjugate"
+        },
+        "id": "sidebar-conjugate",
+        "type": "practice",
+        "label": "例题 3 旁注：共轭式"
+      },
+      {
+        "prompt": "证明 $\\frac1{1+\\sin x}=\\frac{\\sec x-\\sin x\\sec x}{\\cos x}$ 对所有允许值成立。",
+        "concept": "factor-conjugate",
+        "printedPage": 312,
+        "pdfPage": 321,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "右边要求 $\\cos x\\ne0$，这也排除 $\\sin x=-1$，所以共同定义域就是 $\\cos x\\ne0$。在此域内 $1-\\sin x\\ne0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $=\\frac{\\sec x(1-\\sin x)}{\\cos x}=\\frac{1-\\sin x}{\\cos^2x}=\\frac{1-\\sin x}{(1-\\sin x)(1+\\sin x)}=\\frac1{1+\\sin x}$，等于左边。"
+          }
+        ],
+        "answer": "成立于 $\\cos x\\ne0$。",
+        "en": {
+          "prompt": "Prove that $\\frac1{1+\\sin x}=\\frac{\\sec x-\\sin x\\sec x}{\\cos x}$ for all permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The right side requires $\\cos x\\ne0$, which also excludes $\\sin x=-1$. Thus the common domain is $\\cos x\\ne0$; here $1-\\sin x\\ne0$ as well."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $\\frac{\\sec x(1-\\sin x)}{\\cos x}=\\frac{1-\\sin x}{\\cos^2x}=\\frac{1-\\sin x}{(1-\\sin x)(1+\\sin x)}=\\frac1{1+\\sin x}$, matching the left side."
+            }
+          ],
+          "answer": "True on $\\cos x\\ne0$.",
+          "label": "Example 3 · Your Turn"
+        },
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "例题 3 · Your Turn"
+      },
+      {
+        "prompt": "证明 $\\cot x-\\csc x=\\frac{\\cos2x-\\cos x}{\\sin2x+\\sin x}$ 对所有允许值成立。",
+        "concept": "factor-conjugate",
+        "printedPage": 313,
+        "pdfPage": 322,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "原分母 $\\sin2x+\\sin x=\\sin x(2\\cos x+1)$，所以共同定义域为 $\\sin x\\ne0$、$2\\cos x+1\\ne0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "左边 $=\\frac{\\cos x}{\\sin x}-\\frac1{\\sin x}=\\frac{\\cos x-1}{\\sin x}$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $=\\frac{2\\cos^2x-1-\\cos x}{2\\sin x\\cos x+\\sin x}=\\frac{(2\\cos x+1)(\\cos x-1)}{\\sin x(2\\cos x+1)}=\\frac{\\cos x-1}{\\sin x}$。约去因子后仍保留 $2\\cos x+1\\ne0$。"
+          }
+        ],
+        "answer": "成立于 $\\sin x\\ne0$ 且 $\\cos x\\ne-1/2$。",
+        "en": {
+          "prompt": "Prove $\\cot x-\\csc x=\\frac{\\cos2x-\\cos x}{\\sin2x+\\sin x}$ for all permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The original denominator is $\\sin2x+\\sin x=\\sin x(2\\cos x+1)$, so the common domain requires $\\sin x\\ne0$ and $2\\cos x+1\\ne0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The left side is $\\frac{\\cos x}{\\sin x}-\\frac1{\\sin x}=\\frac{\\cos x-1}{\\sin x}$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $\\frac{2\\cos^2x-1-\\cos x}{2\\sin x\\cos x+\\sin x}=\\frac{(2\\cos x+1)(\\cos x-1)}{\\sin x(2\\cos x+1)}=\\frac{\\cos x-1}{\\sin x}$. The restriction $2\\cos x+1\\ne0$ remains after cancellation."
+            }
+          ],
+          "answer": "True when $\\sin x\\ne0$ and $\\cos x\\ne-1/2$.",
+          "label": "Example 4"
+        },
+        "id": "example-4",
+        "type": "example",
+        "label": "例题 4"
+      },
+      {
+        "prompt": "为什么用 $2\\cos^2x-1$ 代替 $\\cos2x$？",
+        "concept": "double-angle",
+        "printedPage": 313,
+        "pdfPage": 322,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "分子另有 $-\\cos x$，所以用同一变量 $u=\\cos x$ 得到二次式 $2u^2-u-1=(2u+1)(u-1)$。分母又有 $\\sin x(2\\cos x+1)$，于是出现可约去的共同因子。"
+          }
+        ],
+        "answer": "它把分子变为可因式分解的余弦二次式。",
+        "en": {
+          "prompt": "Why is $2\\cos^2x-1$ substituted for $\\cos2x$?",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The numerator already contains $-\\cos x$, so the substitution produces a quadratic in $u=\\cos x$: $2u^2-u-1=(2u+1)(u-1)$. The denominator contains $\\sin x(2\\cos x+1)$, revealing a common cancellable factor."
+            }
+          ],
+          "answer": "It makes the numerator a factorable quadratic in cosine.",
+          "label": "Example 4 sidebar: choosing a double-angle form"
+        },
+        "id": "sidebar-double-angle",
+        "type": "practice",
+        "label": "例题 4 旁注：选择倍角式"
+      },
+      {
+        "prompt": "证明 $\\frac{\\sin2x-\\cos x}{4\\sin^2x-1}=\\frac{\\sin^2x\\cos x+\\cos^3x}{2\\sin x+1}$ 对所有允许值成立。",
+        "concept": "factor-conjugate",
+        "printedPage": 313,
+        "pdfPage": 322,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "共同定义域要求 $4\\sin^2x-1\\ne0$ 和 $2\\sin x+1\\ne0$，合为 $\\sin x\\ne\\pm1/2$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "左边 $=\\frac{2\\sin x\\cos x-\\cos x}{(2\\sin x-1)(2\\sin x+1)}=\\frac{\\cos x(2\\sin x-1)}{(2\\sin x-1)(2\\sin x+1)}=\\frac{\\cos x}{2\\sin x+1}$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $=\\frac{\\cos x(\\sin^2x+\\cos^2x)}{2\\sin x+1}=\\frac{\\cos x}{2\\sin x+1}$，两边相同；$\\sin x=1/2$ 虽从简式消失，仍被原式排除。"
+          }
+        ],
+        "answer": "成立于 $\\sin x\\ne\\pm1/2$。",
+        "en": {
+          "prompt": "Prove $\\frac{\\sin2x-\\cos x}{4\\sin^2x-1}=\\frac{\\sin^2x\\cos x+\\cos^3x}{2\\sin x+1}$ for all permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The common domain requires $4\\sin^2x-1\\ne0$ and $2\\sin x+1\\ne0$, equivalently $\\sin x\\ne\\pm1/2$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The left side is $\\frac{2\\sin x\\cos x-\\cos x}{(2\\sin x-1)(2\\sin x+1)}=\\frac{\\cos x(2\\sin x-1)}{(2\\sin x-1)(2\\sin x+1)}=\\frac{\\cos x}{2\\sin x+1}$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $\\frac{\\cos x(\\sin^2x+\\cos^2x)}{2\\sin x+1}=\\frac{\\cos x}{2\\sin x+1}$. The sides agree; $\\sin x=1/2$ remains excluded even though it disappears from the simplified expression."
+            }
+          ],
+          "answer": "True on $\\sin x\\ne\\pm1/2$.",
+          "label": "Example 4 · Your Turn"
+        },
+        "id": "your-turn-4",
+        "type": "practice",
+        "label": "例题 4 · Your Turn"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "将各有理三角式因式分解并化简：(a) $\\frac{\\sin x-\\sin x\\cos^2x}{\\sin^2x}$；(b) $\\frac{\\cos^2x-\\cos x-2}{6\\cos x-12}$；(c) $\\frac{\\sin x\\cos x-\\sin x}{\\cos^2x-1}$；(d) $\\frac{\\tan^2x-3\\tan x-4}{\\sin x\\tan x+\\sin x}$。",
+        "concept": "factor-conjugate",
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) $\\frac{\\sin x(1-\\cos^2x)}{\\sin^2x}=\\frac{\\sin x\\sin^2x}{\\sin^2x}=\\sin x$。原限制 $\\sin x\\ne0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) $\\frac{(\\cos x-2)(\\cos x+1)}{6(\\cos x-2)}=\\frac{\\cos x+1}{6}$。因 $-1\\leq\\cos x\\leq1$，$\\cos x-2$ 从不为零，所有实角都允许。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(c) $\\frac{\\sin x(\\cos x-1)}{(\\cos x-1)(\\cos x+1)}=\\frac{\\sin x}{1+\\cos x}$。原分母要求 $\\cos x\\ne\\pm1$，等价于 $\\sin x\\ne0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(d) $\\frac{(\\tan x-4)(\\tan x+1)}{\\sin x(\\tan x+1)}=\\frac{\\tan x-4}{\\sin x}$。保留 $\\cos x\\ne0$、$\\sin x\\ne0$、$\\tan x\\ne-1$；三个条件均来自原式。"
+          }
+        ],
+        "answer": "(a) $\\sin x$, $\\sin x\\ne0$；(b) $(\\cos x+1)/6$，所有实角；(c) $\\sin x/(1+\\cos x)$，$\\sin x\\ne0$；(d) $(\\tan x-4)/\\sin x$，$\\sin x\\cos x\\ne0$、$\\tan x\\ne-1$。",
+        "en": {
+          "prompt": "Factor and simplify each rational trigonometric expression: (a) $\\frac{\\sin x-\\sin x\\cos^2x}{\\sin^2x}$; (b) $\\frac{\\cos^2x-\\cos x-2}{6\\cos x-12}$; (c) $\\frac{\\sin x\\cos x-\\sin x}{\\cos^2x-1}$; (d) $\\frac{\\tan^2x-3\\tan x-4}{\\sin x\\tan x+\\sin x}$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) $\\frac{\\sin x(1-\\cos^2x)}{\\sin^2x}=\\frac{\\sin x\\sin^2x}{\\sin^2x}=\\sin x$. Retain $\\sin x\\ne0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) $\\frac{(\\cos x-2)(\\cos x+1)}{6(\\cos x-2)}=\\frac{\\cos x+1}{6}$. Since $-1\\leq\\cos x\\leq1$, $\\cos x-2$ never vanishes; all real angles are permissible."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(c) $\\frac{\\sin x(\\cos x-1)}{(\\cos x-1)(\\cos x+1)}=\\frac{\\sin x}{1+\\cos x}$. The original denominator requires $\\cos x\\ne\\pm1$, equivalently $\\sin x\\ne0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(d) $\\frac{(\\tan x-4)(\\tan x+1)}{\\sin x(\\tan x+1)}=\\frac{\\tan x-4}{\\sin x}$. Retain $\\cos x\\ne0$, $\\sin x\\ne0$, and $\\tan x\\ne-1$, all required by the original expression."
+            }
+          ],
+          "answer": "(a) $\\sin x$, $\\sin x\\ne0$; (b) $(\\cos x+1)/6$, all real angles; (c) $\\sin x/(1+\\cos x)$, $\\sin x\\ne0$; (d) $(\\tan x-4)/\\sin x$, $\\sin x\\cos x\\ne0$ and $\\tan x\\ne-1$."
+        },
+        "number": 1,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "用因式分解帮助证明各恒等式对所有允许值成立：(a) $\\cos x+\\cos x\\tan^2x=\\sec x$；(b) $\\frac{\\sin^2x-\\cos^2x}{\\sin x+\\cos x}=\\sin x-\\cos x$；(c) $\\frac{\\sin x\\cos x-\\sin x}{\\cos^2x-1}=\\frac{1-\\cos x}{\\sin x}$；(d) $\\frac{1-\\sin^2x}{1+2\\sin x-3\\sin^2x}=\\frac{1+\\sin x}{1+3\\sin x}$。",
+        "concept": "factor-conjugate",
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) 在 $\\cos x\\ne0$ 时，左边 $=\\cos x(1+\\tan^2x)=\\cos x\\sec^2x=1/\\cos x=\\sec x$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 在 $\\sin x+\\cos x\\ne0$ 时，左边 $=\\frac{(\\sin x-\\cos x)(\\sin x+\\cos x)}{\\sin x+\\cos x}=\\sin x-\\cos x$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(c) 共同定义域为 $\\sin x\\ne0$。左边 $=\\frac{\\sin x(\\cos x-1)}{(\\cos x-1)(\\cos x+1)}=\\frac{\\sin x}{1+\\cos x}$。再乘 $\\frac{1-\\cos x}{1-\\cos x}$ 得 $\\frac{\\sin x(1-\\cos x)}{\\sin^2x}=\\frac{1-\\cos x}{\\sin x}$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(d) $1+2\\sin x-3\\sin^2x=(1-\\sin x)(1+3\\sin x)$。原式要求 $\\sin x\\ne1,-1/3$。左边 $=\\frac{(1-\\sin x)(1+\\sin x)}{(1-\\sin x)(1+3\\sin x)}=\\frac{1+\\sin x}{1+3\\sin x}$。"
+          }
+        ],
+        "answer": "四式均在共同定义域成立：(a) $\\cos x\\ne0$；(b) $\\sin x+\\cos x\\ne0$；(c) $\\sin x\\ne0$；(d) $\\sin x\\ne1,-1/3$。",
+        "en": {
+          "prompt": "Use factoring to prove each identity for all permissible values: (a) $\\cos x+\\cos x\\tan^2x=\\sec x$; (b) $\\frac{\\sin^2x-\\cos^2x}{\\sin x+\\cos x}=\\sin x-\\cos x$; (c) $\\frac{\\sin x\\cos x-\\sin x}{\\cos^2x-1}=\\frac{1-\\cos x}{\\sin x}$; (d) $\\frac{1-\\sin^2x}{1+2\\sin x-3\\sin^2x}=\\frac{1+\\sin x}{1+3\\sin x}$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) On $\\cos x\\ne0$, the left side is $\\cos x(1+\\tan^2x)=\\cos x\\sec^2x=1/\\cos x=\\sec x$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) On $\\sin x+\\cos x\\ne0$, the left side is $\\frac{(\\sin x-\\cos x)(\\sin x+\\cos x)}{\\sin x+\\cos x}=\\sin x-\\cos x$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(c) The common domain is $\\sin x\\ne0$. The left side is $\\frac{\\sin x(\\cos x-1)}{(\\cos x-1)(\\cos x+1)}=\\frac{\\sin x}{1+\\cos x}$. Multiplying by $\\frac{1-\\cos x}{1-\\cos x}$ then gives $\\frac{\\sin x(1-\\cos x)}{\\sin^2x}=\\frac{1-\\cos x}{\\sin x}$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(d) $1+2\\sin x-3\\sin^2x=(1-\\sin x)(1+3\\sin x)$. The original domain excludes $\\sin x=1,-1/3$. The left side is $\\frac{(1-\\sin x)(1+\\sin x)}{(1-\\sin x)(1+3\\sin x)}=\\frac{1+\\sin x}{1+3\\sin x}$."
+            }
+          ],
+          "answer": "All hold on their common domains: (a) $\\cos x\\ne0$; (b) $\\sin x+\\cos x\\ne0$; (c) $\\sin x\\ne0$; (d) $\\sin x\\ne1,-1/3$."
+        },
+        "number": 2,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "通分，把各有理式写成单个分式：(a) $\\frac{\\sin x}{\\cos x}+\\sec x$；(b) $\\frac1{\\sin x-1}+\\frac1{\\sin x+1}$；(c) $\\frac{\\sin x}{1+\\cos x}+\\frac{\\cos x}{\\sin x}$；(d) $\\frac{\\cos x}{\\sec x-1}+\\frac{\\cos x}{\\sec x+1}$。",
+        "concept": "sine-cosine",
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) $\\frac{\\sin x}{\\cos x}+\\frac1{\\cos x}=\\frac{1+\\sin x}{\\cos x}$，$\\cos x\\ne0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) $\\frac{(\\sin x+1)+(\\sin x-1)}{(\\sin x-1)(\\sin x+1)}=\\frac{2\\sin x}{\\sin^2x-1}=-\\frac{2\\sin x}{\\cos^2x}$，$\\sin x\\ne\\pm1$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(c) $\\frac{\\sin^2x+\\cos x(1+\\cos x)}{\\sin x(1+\\cos x)}=\\frac{1+\\cos x}{\\sin x(1+\\cos x)}=\\frac1{\\sin x}$。保留 $\\sin x\\ne0$（这也保证 $1+\\cos x\\ne0$）。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(d) 原式要求 $\\cos x\\ne0$ 且 $\\sec x\\ne\\pm1$，即 $\\sin x\\cos x\\ne0$。通分得 $\\frac{\\cos x[(\\sec x+1)+(\\sec x-1)]}{\\sec^2x-1}=\\frac{2\\cos x\\sec x}{\\tan^2x}=\\frac2{\\tan^2x}=\\frac{2\\cos^2x}{\\sin^2x}$。"
+          }
+        ],
+        "answer": "(a) $(1+\\sin x)/\\cos x$；(b) $-2\\sin x/\\cos^2x$；(c) $1/\\sin x$；(d) $2\\cos^2x/\\sin^2x$；各自保留上述原定义域。",
+        "en": {
+          "prompt": "Use a common denominator to express each as a single term: (a) $\\frac{\\sin x}{\\cos x}+\\sec x$; (b) $\\frac1{\\sin x-1}+\\frac1{\\sin x+1}$; (c) $\\frac{\\sin x}{1+\\cos x}+\\frac{\\cos x}{\\sin x}$; (d) $\\frac{\\cos x}{\\sec x-1}+\\frac{\\cos x}{\\sec x+1}$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) $\\frac{\\sin x}{\\cos x}+\\frac1{\\cos x}=\\frac{1+\\sin x}{\\cos x}$, with $\\cos x\\ne0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) $\\frac{(\\sin x+1)+(\\sin x-1)}{(\\sin x-1)(\\sin x+1)}=\\frac{2\\sin x}{\\sin^2x-1}=-\\frac{2\\sin x}{\\cos^2x}$, with $\\sin x\\ne\\pm1$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(c) $\\frac{\\sin^2x+\\cos x(1+\\cos x)}{\\sin x(1+\\cos x)}=\\frac{1+\\cos x}{\\sin x(1+\\cos x)}=\\frac1{\\sin x}$. Retain $\\sin x\\ne0$, which also ensures $1+\\cos x\\ne0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(d) Require $\\cos x\\ne0$ and $\\sec x\\ne\\pm1$, equivalently $\\sin x\\cos x\\ne0$. A common denominator gives $\\frac{\\cos x[(\\sec x+1)+(\\sec x-1)]}{\\sec^2x-1}=\\frac{2\\cos x\\sec x}{\\tan^2x}=\\frac2{\\tan^2x}=\\frac{2\\cos^2x}{\\sin^2x}$."
+            }
+          ],
+          "answer": "(a) $(1+\\sin x)/\\cos x$; (b) $-2\\sin x/\\cos^2x$; (c) $1/\\sin x$; (d) $2\\cos^2x/\\sin^2x$, retaining the original domains stated above."
+        },
+        "number": 3,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "(a) 将 $\\frac{\\sec x-\\cos x}{\\tan x}$ 只用正弦、余弦表示。(b) 化简为一个基本三角函数。",
+        "concept": "sine-cosine",
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) 原式要求 $\\cos x\\ne0$ 且 $\\tan x\\ne0$，即 $\\sin x\\cos x\\ne0$。代入倒数和商恒等式得 $\\frac{1/\\cos x-\\cos x}{\\sin x/\\cos x}$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) $\\frac{(1-\\cos^2x)/\\cos x}{\\sin x/\\cos x}=\\frac{\\sin^2x}{\\sin x}=\\sin x$。结果仍受原域限制。"
+          }
+        ],
+        "answer": "(a) $\\frac{1/\\cos x-\\cos x}{\\sin x/\\cos x}$；(b) $\\sin x$，$\\sin x\\cos x\\ne0$。",
+        "en": {
+          "prompt": "(a) Rewrite $\\frac{\\sec x-\\cos x}{\\tan x}$ using sine and cosine only. (b) Simplify to a primary trigonometric function.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) Require $\\cos x\\ne0$ and $\\tan x\\ne0$, or $\\sin x\\cos x\\ne0$. Reciprocal and quotient identities give $\\frac{1/\\cos x-\\cos x}{\\sin x/\\cos x}$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) $\\frac{(1-\\cos^2x)/\\cos x}{\\sin x/\\cos x}=\\frac{\\sin^2x}{\\sin x}=\\sin x$. Retain the original restrictions."
+            }
+          ],
+          "answer": "(a) $\\frac{1/\\cos x-\\cos x}{\\sin x/\\cos x}$; (b) $\\sin x$, with $\\sin x\\cos x\\ne0$."
+        },
+        "number": 4,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "用图形验证 $\\cos x=\\frac{\\sin2x}{2\\sin x}$ 可能是恒等式，然后证明，并确定不允许值。",
+        "concept": "double-angle",
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "在 $-2\\pi\\leq x\\leq2\\pi$ 比较两图，它们在 $\\sin x\\ne0$ 时重合。右边在 $x=n\\pi$ 处有小孔；左边在那里有定义。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $\\frac{\\sin2x}{2\\sin x}=\\frac{2\\sin x\\cos x}{2\\sin x}=\\cos x$。约分要求 $\\sin x\\ne0$，所以所有不允许值是 $x=n\\pi$，$n\\in\\mathbb Z$（角度制为 $180^\\circ n$）。"
+          }
+        ],
+        "answer": "恒等式成立于 $x\\ne n\\pi$，$n\\in\\mathbb Z$。",
+        "en": {
+          "prompt": "Verify graphically that $\\cos x=\\frac{\\sin2x}{2\\sin x}$ could be an identity. Then prove it and determine the non-permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "On $-2\\pi\\leq x\\leq2\\pi$, the graphs overlap wherever $\\sin x\\ne0$. The right side has holes at $x=n\\pi$; the left side is defined there."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $\\frac{\\sin2x}{2\\sin x}=\\frac{2\\sin x\\cos x}{2\\sin x}=\\cos x$. Cancellation requires $\\sin x\\ne0$, so exclude $x=n\\pi$, $n\\in\\mathbb Z$ (or $180^\\circ n$ in degrees)."
+            }
+          ],
+          "answer": "The identity holds for $x\\ne n\\pi$, $n\\in\\mathbb Z$."
+        },
+        "number": 5,
+        "solutionImage": "assets/6-3-ex5-graph.png"
+      },
+      {
+        "prompt": "展开并将 $(\\sec x-\\tan x)(\\sin x+1)$ 化简为一个基本三角函数。",
+        "concept": "sine-cosine",
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "原式要求 $\\cos x\\ne0$。展开得 $\\sec x\\sin x+\\sec x-\\tan x\\sin x-\\tan x$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "$\\sec x\\sin x=\\tan x$，相消后得 $\\sec x-\\tan x\\sin x=\\frac1{\\cos x}-\\frac{\\sin^2x}{\\cos x}=\\frac{1-\\sin^2x}{\\cos x}=\\cos x$。"
+          }
+        ],
+        "answer": "$\\cos x$，$\\cos x\\ne0$。",
+        "en": {
+          "prompt": "Expand and simplify $(\\sec x-\\tan x)(\\sin x+1)$ to a primary trigonometric function.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The original domain is $\\cos x\\ne0$. Expansion gives $\\sec x\\sin x+\\sec x-\\tan x\\sin x-\\tan x$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "Since $\\sec x\\sin x=\\tan x$, cancellation leaves $\\sec x-\\tan x\\sin x=\\frac1{\\cos x}-\\frac{\\sin^2x}{\\cos x}=\\frac{1-\\sin^2x}{\\cos x}=\\cos x$."
+            }
+          ],
+          "answer": "$\\cos x$, with $\\cos x\\ne0$."
+        },
+        "number": 6
+      },
+      {
+        "prompt": "证明各恒等式：(a) $\\frac{\\csc x}{2\\cos x}=\\csc2x$；(b) $\\sin x+\\cos x\\cot x=\\csc x$。",
+        "concept": [
+          "double-angle",
+          "sine-cosine"
+        ],
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) 共同定义域 $\\sin x\\cos x\\ne0$。左边 $=\\frac{1/\\sin x}{2\\cos x}=\\frac1{2\\sin x\\cos x}=\\frac1{\\sin2x}=\\csc2x$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 共同定义域 $\\sin x\\ne0$。左边 $=\\sin x+\\frac{\\cos^2x}{\\sin x}=\\frac{\\sin^2x+\\cos^2x}{\\sin x}=\\frac1{\\sin x}=\\csc x$。"
+          }
+        ],
+        "answer": "(a) 在 $\\sin x\\cos x\\ne0$ 成立；(b) 在 $\\sin x\\ne0$ 成立。",
+        "en": {
+          "prompt": "Prove each identity: (a) $\\frac{\\csc x}{2\\cos x}=\\csc2x$; (b) $\\sin x+\\cos x\\cot x=\\csc x$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) The common domain is $\\sin x\\cos x\\ne0$. The left side is $\\frac{1/\\sin x}{2\\cos x}=\\frac1{2\\sin x\\cos x}=\\frac1{\\sin2x}=\\csc2x$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) The common domain is $\\sin x\\ne0$. The left side is $\\sin x+\\frac{\\cos^2x}{\\sin x}=\\frac{\\sin^2x+\\cos^2x}{\\sin x}=\\frac1{\\sin x}=\\csc x$."
+            }
+          ],
+          "answer": "(a) True on $\\sin x\\cos x\\ne0$; (b) true on $\\sin x\\ne0$."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "证明 $\\frac{\\cos2x-1}{\\sin2x}=-\\tan x$ 时，Hanna 首先代入 $\\cos2x=1-2\\sin^2x$，Chloe 代入 $\\cos2x=2\\cos^2x-1$。哪个选择的证明更短？说明并证明恒等式。",
+        "concept": "double-angle",
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "Hanna 的选择使分子立即成为 $(1-2\\sin^2x)-1=-2\\sin^2x$。Chloe 得 $2\\cos^2x-2=2(\\cos^2x-1)$，还需再用勾股恒等式，因此 Hanna 较短。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "共同定义域 $\\sin2x\\ne0$，即 $\\sin x\\cos x\\ne0$。左边 $=\\frac{-2\\sin^2x}{2\\sin x\\cos x}=-\\frac{\\sin x}{\\cos x}=-\\tan x$。"
+          }
+        ],
+        "answer": "Hanna 较短；恒等式成立于 $\\sin x\\cos x\\ne0$。",
+        "en": {
+          "prompt": "To prove $\\frac{\\cos2x-1}{\\sin2x}=-\\tan x$, Hanna first substitutes $\\cos2x=1-2\\sin^2x$, whereas Chloe uses $\\cos2x=2\\cos^2x-1$. Which gives a shorter proof? Explain and prove the identity.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "Hanna immediately obtains $(1-2\\sin^2x)-1=-2\\sin^2x$. Chloe obtains $2\\cos^2x-2=2(\\cos^2x-1)$ and needs another Pythagorean substitution, so Hanna has the shorter route."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The common domain is $\\sin2x\\ne0$, equivalently $\\sin x\\cos x\\ne0$. The left side is $\\frac{-2\\sin^2x}{2\\sin x\\cos x}=-\\frac{\\sin x}{\\cos x}=-\\tan x$."
+            }
+          ],
+          "answer": "Hanna gives the shorter proof; the identity holds on $\\sin x\\cos x\\ne0$."
+        },
+        "number": 8
+      },
+      {
+        "prompt": "高尔夫球的水平距离 $d$（米）满足 $d=\\frac{(v_0)^2\\sin2\\theta}{g}$，其中 $v_0$ 是初速度，$\\theta$ 是地面与初始飞行路径的夹角，$g=9.8\\text{ m/s}^2$。(a) 若 $v_0=21\\text{ m/s}$、$\\theta=55^\\circ$，球飞多远？(b) 证明 $\\frac{(v_0)^2\\sin2\\theta}{g}=\\frac{2(v_0)^2(1-\\cos^2\\theta)}{g\\tan\\theta}$。",
+        "concept": [
+          "applications",
+          "double-angle"
+        ],
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) $d=\\frac{21^2\\sin110^\\circ}{9.8}=45\\sin110^\\circ\\approx42.2862\\text{ m}$，约为 $42.3$ 米。角度模式必须是度。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) $g\\ne0$，共同定义域还要求 $\\cos\\theta\\ne0$ 且 $\\tan\\theta\\ne0$，即 $\\sin\\theta\\cos\\theta\\ne0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $=\\frac{2(v_0)^2\\sin^2\\theta}{g(\\sin\\theta/\\cos\\theta)}=\\frac{2(v_0)^2\\sin\\theta\\cos\\theta}{g}=\\frac{(v_0)^2\\sin2\\theta}{g}$，等于左边。"
+          }
+        ],
+        "answer": "(a) 约 $42.3$ 米；(b) 在 $g\\ne0$、$\\sin\\theta\\cos\\theta\\ne0$ 时成立。",
+        "en": {
+          "prompt": "The horizontal distance $d$, in metres, travelled by a golf ball is $d=\\frac{(v_0)^2\\sin2\\theta}{g}$, where $v_0$ is its initial velocity, $\\theta$ is the angle between the ground and initial path, and $g=9.8\\text{ m/s}^2$. (a) Find the distance for $v_0=21\\text{ m/s}$ and $\\theta=55^\\circ$. (b) Prove $\\frac{(v_0)^2\\sin2\\theta}{g}=\\frac{2(v_0)^2(1-\\cos^2\\theta)}{g\\tan\\theta}$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) $d=\\frac{21^2\\sin110^\\circ}{9.8}=45\\sin110^\\circ\\approx42.2862\\text{ m}$, or about $42.3$ metres. Use degree mode."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) Require $g\\ne0$; the common domain also requires $\\cos\\theta\\ne0$ and $\\tan\\theta\\ne0$, or $\\sin\\theta\\cos\\theta\\ne0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $\\frac{2(v_0)^2\\sin^2\\theta}{g(\\sin\\theta/\\cos\\theta)}=\\frac{2(v_0)^2\\sin\\theta\\cos\\theta}{g}=\\frac{(v_0)^2\\sin2\\theta}{g}$, the left side."
+            }
+          ],
+          "answer": "(a) About $42.3$ m; (b) true for $g\\ne0$ and $\\sin\\theta\\cos\\theta\\ne0$."
+        },
+        "number": 9,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "用图形验证各式，再证明：(a) $\\frac{\\csc x}{2\\cos x}=\\csc2x$；(b) $\\frac{\\sin x\\cos x}{1+\\cos x}=\\frac{1-\\cos x}{\\tan x}$；(c) $\\frac{\\sin x+\\tan x}{1+\\cos x}=\\frac{\\sin2x}{2\\cos^2x}$。",
+        "concept": [
+          "double-angle",
+          "factor-conjugate"
+        ],
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "分别在 $-2\\pi\\leq x\\leq2\\pi$ 作两边图像，三组曲线在各自共同定义域内都重合。图中在原式的分母为零处断开；图形只是证据，以下分别证明。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(a) $\\sin x\\cos x\\ne0$。左边 $=1/(2\\sin x\\cos x)=1/\\sin2x=\\csc2x$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 共同定义域 $\\sin x\\cos x\\ne0$。左边乘共轭比 $\\frac{1-\\cos x}{1-\\cos x}$ 得 $\\frac{\\sin x\\cos x(1-\\cos x)}{\\sin^2x}=\\frac{\\cos x(1-\\cos x)}{\\sin x}$。右边 $\\frac{1-\\cos x}{\\sin x/\\cos x}$ 也是此式。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(c) 共同定义域 $\\cos x\\ne0,-1$。左边 $=\\frac{\\sin x+\\sin x/\\cos x}{1+\\cos x}=\\frac{\\sin x(1+\\cos x)}{\\cos x(1+\\cos x)}=\\tan x$；右边 $=\\frac{2\\sin x\\cos x}{2\\cos^2x}=\\tan x$。"
+          }
+        ],
+        "answer": "(a)、(b) 在 $\\sin x\\cos x\\ne0$ 成立；(c) 在 $\\cos x\\ne0,-1$ 成立。",
+        "en": {
+          "prompt": "Verify each potential identity by graphing, and then prove it: (a) $\\frac{\\csc x}{2\\cos x}=\\csc2x$; (b) $\\frac{\\sin x\\cos x}{1+\\cos x}=\\frac{1-\\cos x}{\\tan x}$; (c) $\\frac{\\sin x+\\tan x}{1+\\cos x}=\\frac{\\sin2x}{2\\cos^2x}$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "Plot each pair on $-2\\pi\\leq x\\leq2\\pi$. All three pairs overlap on their respective common domains; plots break where original denominators vanish. Graphs give evidence; the proofs follow."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(a) Require $\\sin x\\cos x\\ne0$. The left side is $1/(2\\sin x\\cos x)=1/\\sin2x=\\csc2x$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) The common domain is $\\sin x\\cos x\\ne0$. Multiplying the left side by $\\frac{1-\\cos x}{1-\\cos x}$ gives $\\frac{\\sin x\\cos x(1-\\cos x)}{\\sin^2x}=\\frac{\\cos x(1-\\cos x)}{\\sin x}$. The right side, $\\frac{1-\\cos x}{\\sin x/\\cos x}$, gives the same expression."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(c) The common domain excludes $\\cos x=0,-1$. The left side is $\\frac{\\sin x+\\sin x/\\cos x}{1+\\cos x}=\\frac{\\sin x(1+\\cos x)}{\\cos x(1+\\cos x)}=\\tan x$; the right side is $\\frac{2\\sin x\\cos x}{2\\cos^2x}=\\tan x$."
+            }
+          ],
+          "answer": "(a), (b) hold on $\\sin x\\cos x\\ne0$; (c) holds for $\\cos x\\ne0,-1$."
+        },
+        "number": 10,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/6-3-ex10-graph.png"
+      },
+      {
+        "prompt": "证明各恒等式：(a) $\\frac{\\sin2x}{\\cos x}+\\frac{\\cos2x}{\\sin x}=\\csc x$；(b) $\\csc^2x+\\sec^2x=\\csc^2x\\sec^2x$；(c) $\\frac{\\cot x-1}{1-\\tan x}=\\frac{\\csc x}{\\sec x}$。",
+        "concept": [
+          "sine-cosine",
+          "double-angle"
+        ],
+        "printedPage": 314,
+        "pdfPage": 323,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) 共同定义域 $\\sin x\\cos x\\ne0$。左边 $=2\\sin x+\\frac{1-2\\sin^2x}{\\sin x}=\\frac{2\\sin^2x+1-2\\sin^2x}{\\sin x}=\\csc x$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 共同定义域 $\\sin x\\cos x\\ne0$。左边 $=\\frac1{\\sin^2x}+\\frac1{\\cos^2x}=\\frac{\\cos^2x+\\sin^2x}{\\sin^2x\\cos^2x}=\\frac1{\\sin^2x\\cos^2x}=\\csc^2x\\sec^2x$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(c) 原式要求 $\\sin x\\cos x\\ne0$ 且 $\\tan x\\ne1$（即 $\\cos x-\\sin x\\ne0$）。左边 $=\\frac{(\\cos x-\\sin x)/\\sin x}{(\\cos x-\\sin x)/\\cos x}=\\frac{\\cos x}{\\sin x}$；右边 $=(1/\\sin x)/(1/\\cos x)=\\cos x/\\sin x$。"
+          }
+        ],
+        "answer": "(a)、(b) 在 $\\sin x\\cos x\\ne0$ 成立；(c) 还要 $\\tan x\\ne1$。",
+        "en": {
+          "prompt": "Prove each identity: (a) $\\frac{\\sin2x}{\\cos x}+\\frac{\\cos2x}{\\sin x}=\\csc x$; (b) $\\csc^2x+\\sec^2x=\\csc^2x\\sec^2x$; (c) $\\frac{\\cot x-1}{1-\\tan x}=\\frac{\\csc x}{\\sec x}$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) The common domain is $\\sin x\\cos x\\ne0$. The left side is $2\\sin x+\\frac{1-2\\sin^2x}{\\sin x}=\\frac{2\\sin^2x+1-2\\sin^2x}{\\sin x}=\\csc x$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) The common domain is $\\sin x\\cos x\\ne0$. The left side is $\\frac1{\\sin^2x}+\\frac1{\\cos^2x}=\\frac{\\cos^2x+\\sin^2x}{\\sin^2x\\cos^2x}=\\frac1{\\sin^2x\\cos^2x}=\\csc^2x\\sec^2x$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(c) Require $\\sin x\\cos x\\ne0$ and $\\tan x\\ne1$, or $\\cos x-\\sin x\\ne0$. The left side is $\\frac{(\\cos x-\\sin x)/\\sin x}{(\\cos x-\\sin x)/\\cos x}=\\frac{\\cos x}{\\sin x}$; the right side is $(1/\\sin x)/(1/\\cos x)=\\cos x/\\sin x$."
+            }
+          ],
+          "answer": "(a), (b) hold on $\\sin x\\cos x\\ne0$; (c) additionally requires $\\tan x\\ne1$."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "证明各恒等式：(a) $\\sin(90^\\circ+\\theta)=\\sin(90^\\circ-\\theta)$；(b) $\\sin(2\\pi-\\theta)=-\\sin\\theta$。",
+        "concept": "double-angle",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) 使用角度制。左边 $=\\sin90^\\circ\\cos\\theta+\\cos90^\\circ\\sin\\theta=\\cos\\theta$；右边 $=\\sin90^\\circ\\cos\\theta-\\cos90^\\circ\\sin\\theta=\\cos\\theta$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 使用弧度制。左边 $=\\sin2\\pi\\cos\\theta-\\cos2\\pi\\sin\\theta=0\\cos\\theta-1\\sin\\theta=-\\sin\\theta$。两式都没有分母或根式限制。"
+          }
+        ],
+        "answer": "(a) 两边均为 $\\cos\\theta$；(b) 两边均为 $-\\sin\\theta$。各自角度单位下，所有实角都成立。",
+        "en": {
+          "prompt": "Prove each identity: (a) $\\sin(90^\\circ+\\theta)=\\sin(90^\\circ-\\theta)$; (b) $\\sin(2\\pi-\\theta)=-\\sin\\theta$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) Work in degrees. The left side is $\\sin90^\\circ\\cos\\theta+\\cos90^\\circ\\sin\\theta=\\cos\\theta$; the right side is $\\sin90^\\circ\\cos\\theta-\\cos90^\\circ\\sin\\theta=\\cos\\theta$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) Work in radians. The left side is $\\sin2\\pi\\cos\\theta-\\cos2\\pi\\sin\\theta=0\\cos\\theta-1\\sin\\theta=-\\sin\\theta$. Neither identity has denominator or radical restrictions."
+            }
+          ],
+          "answer": "(a) Both sides equal $\\cos\\theta$; (b) both equal $-\\sin\\theta$. Each holds for every real angle in its stated unit."
+        },
+        "number": 12,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "证明 $2\\cos x\\cos y=\\cos(x+y)+\\cos(x-y)$。",
+        "concept": "double-angle",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "从右边展开：$\\cos(x+y)=\\cos x\\cos y-\\sin x\\sin y$，$\\cos(x-y)=\\cos x\\cos y+\\sin x\\sin y$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "相加后 $-\\sin x\\sin y$ 与 $+\\sin x\\sin y$ 相消，剩下 $2\\cos x\\cos y$，正是左边。全程无除法，所有实角 $x,y$ 都允许，且单位应一致。"
+          }
+        ],
+        "answer": "恒等式对所有实角 $x,y$ 成立。",
+        "en": {
+          "prompt": "Prove that $2\\cos x\\cos y=\\cos(x+y)+\\cos(x-y)$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "Expand the right side: $\\cos(x+y)=\\cos x\\cos y-\\sin x\\sin y$ and $\\cos(x-y)=\\cos x\\cos y+\\sin x\\sin y$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "Adding cancels $-\\sin x\\sin y$ with $+\\sin x\\sin y$, leaving $2\\cos x\\cos y$, the left side. No division occurs; all real $x,y$ are permissible, with consistent angle units."
+            }
+          ],
+          "answer": "The identity holds for all real angles $x,y$."
+        },
+        "number": 13
+      },
+      {
+        "prompt": "考虑方程 $\\cos2x=2\\sin x\\cos x$。(a) 将两边作图，它可能是恒等式吗？(b) 证明它是恒等式，或找反例说明它不是。",
+        "concept": "verify-prove",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) 右边是 $\\sin2x$。在 $-\\pi\\leq x\\leq\\pi$ 作 $y=\\cos2x$ 与 $y=\\sin2x$，两图的峰值和零点位置不同，因此不可能恒相等。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 取允许值 $x=0$，左边 $\\cos0=1$，右边 $2\\sin0\\cos0=0$，$1\\ne0$。一个反例就足以否定恒等式。"
+          }
+        ],
+        "answer": "(a) 不可能；(b) $x=0$ 给出 $1\\ne0$，故不是恒等式。",
+        "en": {
+          "prompt": "Consider $\\cos2x=2\\sin x\\cos x$. (a) Graph each side. Could it be an identity? (b) Prove that it is an identity or find a counterexample showing that it is not.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) The right side is $\\sin2x$. Plotting $y=\\cos2x$ and $y=\\sin2x$ on $-\\pi\\leq x\\leq\\pi$ gives different maxima and zero locations, so they cannot agree identically."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) At the permissible value $x=0$, the left side is $\\cos0=1$, but the right side is $2\\sin0\\cos0=0$. Since $1\\ne0$, this counterexample disproves the identity."
+            }
+          ],
+          "answer": "(a) No; (b) at $x=0$, $1\\ne0$, so it is not an identity."
+        },
+        "number": 14,
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/6-3-ex14-graph.png"
+      },
+      {
+        "prompt": "考虑方程 $\\frac{\\sin2x}{1-\\cos2x}=\\cot x$。(a) 求不允许值。(b) 证明它对所有允许值是恒等式。",
+        "concept": "double-angle",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) $1-\\cos2x=2\\sin^2x$，而 $\\cot x$ 的分母也是 $\\sin x$。因此不允许值为 $\\sin x=0$，即 $x=n\\pi$，$n\\in\\mathbb Z$（角度制 $180^\\circ n$）。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 左边 $=\\frac{2\\sin x\\cos x}{2\\sin^2x}=\\frac{\\cos x}{\\sin x}=\\cot x$，其中约去的 $2\\sin x$ 在共同定义域非零。"
+          }
+        ],
+        "answer": "(a) $x=n\\pi$；(b) 恒等式成立于 $x\\ne n\\pi$，$n\\in\\mathbb Z$。",
+        "en": {
+          "prompt": "Consider $\\frac{\\sin2x}{1-\\cos2x}=\\cot x$. (a) Determine the non-permissible values. (b) Prove it is an identity for all permissible values.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) $1-\\cos2x=2\\sin^2x$, and $\\cot x$ also has denominator $\\sin x$. Thus exclude $\\sin x=0$, or $x=n\\pi$, $n\\in\\mathbb Z$ ($180^\\circ n$ in degrees)."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) The left side is $\\frac{2\\sin x\\cos x}{2\\sin^2x}=\\frac{\\cos x}{\\sin x}=\\cot x$. The cancelled $2\\sin x$ is nonzero on the common domain."
+            }
+          ],
+          "answer": "(a) Exclude $x=n\\pi$; (b) the identity holds for $x\\ne n\\pi$, $n\\in\\mathbb Z$."
+        },
+        "number": 15,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "用倍角恒等式证明 $\\tan x=\\frac{\\sin4x-\\sin2x}{\\cos4x+\\cos2x}$。",
+        "concept": "double-angle",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "令 $u=\\cos2x$。原分母 $\\cos4x+\\cos2x=2u^2-1+u=(2u-1)(u+1)$，所以共同定义域为 $\\cos x\\ne0$ 且 $\\cos2x\\ne1/2$；$u=-1$ 等价于 $\\cos x=0$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "分子 $\\sin4x-\\sin2x=2\\sin2x\\cos2x-\\sin2x=\\sin2x(2\\cos2x-1)$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $=\\frac{\\sin2x(2\\cos2x-1)}{(2\\cos2x-1)(\\cos2x+1)}=\\frac{\\sin2x}{\\cos2x+1}=\\frac{2\\sin x\\cos x}{2\\cos^2x}=\\tan x$。约去的两因子都在共同定义域非零。"
+          }
+        ],
+        "answer": "成立于 $\\cos x\\ne0$ 且 $\\cos2x\\ne1/2$；弧度制排除 $x=\\pi/2+n\\pi$ 与 $x=n\\pi\\pm\\pi/6$。",
+        "en": {
+          "prompt": "Use double-angle identities to prove $\\tan x=\\frac{\\sin4x-\\sin2x}{\\cos4x+\\cos2x}$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "Let $u=\\cos2x$. The original denominator is $\\cos4x+\\cos2x=2u^2-1+u=(2u-1)(u+1)$. Thus the common domain is $\\cos x\\ne0$ and $\\cos2x\\ne1/2$; $u=-1$ is equivalent to $\\cos x=0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The numerator is $\\sin4x-\\sin2x=2\\sin2x\\cos2x-\\sin2x=\\sin2x(2\\cos2x-1)$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $\\frac{\\sin2x(2\\cos2x-1)}{(2\\cos2x-1)(\\cos2x+1)}=\\frac{\\sin2x}{\\cos2x+1}=\\frac{2\\sin x\\cos x}{2\\cos^2x}=\\tan x$. Both cancelled factors are nonzero on the common domain."
+            }
+          ],
+          "answer": "True for $\\cos x\\ne0$ and $\\cos2x\\ne1/2$; in radians exclude $x=\\pi/2+n\\pi$ and $x=n\\pi\\pm\\pi/6$, $n\\in\\mathbb Z$."
+        },
+        "number": 16
+      },
+      {
+        "prompt": "先用图形验证，再证明 $\\frac{\\sin2x}{1-\\cos2x}=2\\csc2x-\\tan x$。",
+        "concept": [
+          "double-angle",
+          "sine-cosine"
+        ],
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "左边要求 $\\sin x\\ne0$；右边要求 $\\sin2x\\ne0$ 且 $\\cos x\\ne0$。共同定义域为 $\\sin x\\cos x\\ne0$。作图可见两曲线在此域重合，但 $x=\\pi/2+n\\pi$ 处右边无定义，即使简式有值也必须排除。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "左边 $=\\frac{2\\sin x\\cos x}{2\\sin^2x}=\\frac{\\cos x}{\\sin x}$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $=\\frac2{2\\sin x\\cos x}-\\frac{\\sin x}{\\cos x}=\\frac{1-\\sin^2x}{\\sin x\\cos x}=\\frac{\\cos^2x}{\\sin x\\cos x}=\\frac{\\cos x}{\\sin x}$，两边相同。"
+          }
+        ],
+        "answer": "两边在 $\\sin x\\cos x\\ne0$ 时均为 $\\cot x$。",
+        "en": {
+          "prompt": "Verify graphically and then prove $\\frac{\\sin2x}{1-\\cos2x}=2\\csc2x-\\tan x$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The left side requires $\\sin x\\ne0$; the right side requires $\\sin2x\\ne0$ and $\\cos x\\ne0$. The common domain is $\\sin x\\cos x\\ne0$. The plots overlap there, but the right side is undefined at $x=\\pi/2+n\\pi$, even though its simplified expression has a value."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The left side is $\\frac{2\\sin x\\cos x}{2\\sin^2x}=\\frac{\\cos x}{\\sin x}$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $\\frac2{2\\sin x\\cos x}-\\frac{\\sin x}{\\cos x}=\\frac{1-\\sin^2x}{\\sin x\\cos x}=\\frac{\\cos^2x}{\\sin x\\cos x}=\\frac{\\cos x}{\\sin x}$, matching the left side."
+            }
+          ],
+          "answer": "Both sides equal $\\cot x$ on $\\sin x\\cos x\\ne0$."
+        },
+        "number": 17,
+        "solutionImage": "assets/6-3-ex17-graph.png"
+      },
+      {
+        "prompt": "证明 $\\frac{1-\\sin^2x-2\\cos x}{\\cos^2x-\\cos x-2}=\\frac1{1+\\sec x}$。",
+        "concept": "factor-conjugate",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "原分母 $\\cos^2x-\\cos x-2=(\\cos x-2)(\\cos x+1)$；实角不可能 $\\cos x=2$。右边还要求 $\\cos x\\ne0$ 且 $\\sec x\\ne-1$。共同定义域为 $\\cos x\\ne0,-1$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "左边 $=\\frac{\\cos^2x-2\\cos x}{(\\cos x-2)(\\cos x+1)}=\\frac{\\cos x(\\cos x-2)}{(\\cos x-2)(\\cos x+1)}=\\frac{\\cos x}{1+\\cos x}$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "右边 $=\\frac1{1+1/\\cos x}=\\frac{\\cos x}{1+\\cos x}$，两边相同。尽管左边在 $\\cos x=0$ 时有定义，原式右边没有，因此不能加入此值。"
+          }
+        ],
+        "answer": "成立于 $\\cos x\\ne0,-1$。",
+        "en": {
+          "prompt": "Prove $\\frac{1-\\sin^2x-2\\cos x}{\\cos^2x-\\cos x-2}=\\frac1{1+\\sec x}$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The original denominator is $(\\cos x-2)(\\cos x+1)$; no real angle has $\\cos x=2$. The right side also requires $\\cos x\\ne0$ and $\\sec x\\ne-1$. Thus the common domain excludes $\\cos x=0,-1$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The left side is $\\frac{\\cos^2x-2\\cos x}{(\\cos x-2)(\\cos x+1)}=\\frac{\\cos x(\\cos x-2)}{(\\cos x-2)(\\cos x+1)}=\\frac{\\cos x}{1+\\cos x}$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "The right side is $\\frac1{1+1/\\cos x}=\\frac{\\cos x}{1+\\cos x}$, the same expression. Although the original left side is defined at $\\cos x=0$, the original right side is not, so those inputs remain excluded."
+            }
+          ],
+          "answer": "True for $\\cos x\\ne0,-1$."
+        },
+        "number": 18
+      },
+      {
+        "prompt": "光以入射角 $\\theta_i$ 照到透镜时，一部分折射、一部分反射。图中 $\\theta_r$ 为反射角，$\\theta_t$ 为折射角。Fresnel 方程描述此现象。(a) Snell 定律为 $n_1\\sin\\theta_i=n_2\\sin\\theta_t$，$n_1,n_2$ 是介质折射率，解出 $\\sin\\theta_t$。(b) 在一定条件下，反射光比例为 $R=\\left(\\frac{n_1\\cos\\theta_i-n_2\\cos\\theta_t}{n_1\\cos\\theta_i+n_2\\cos\\theta_t}\\right)^2$。证明它可写成 $R=\\left(\\frac{n_1\\cos\\theta_i-n_2\\sqrt{1-\\sin^2\\theta_t}}{n_1\\cos\\theta_i+n_2\\sqrt{1-\\sin^2\\theta_t}}\\right)^2$。(c) 用 (a) 证明 $\\left(\\frac{n_1\\cos\\theta_i-n_2\\sqrt{1-\\sin^2\\theta_t}}{n_1\\cos\\theta_i+n_2\\sqrt{1-\\sin^2\\theta_t}}\\right)^2=\\left(\\frac{n_1\\cos\\theta_i-n_2\\sqrt{1-(n_1/n_2)^2\\sin^2\\theta_i}}{n_1\\cos\\theta_i+n_2\\sqrt{1-(n_1/n_2)^2\\sin^2\\theta_i}}\\right)^2$。",
+        "concept": "applications",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) 折射率 $n_2>0$，两边除以 $n_2$ 得 $\\sin\\theta_t=\\frac{n_1}{n_2}\\sin\\theta_i$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 勾股恒等式只给 $\\sqrt{1-\\sin^2\\theta_t}=\\sqrt{\\cos^2\\theta_t}=|\\cos\\theta_t|$。图中折射角相对于法线，取物理范围 $0\\leq\\theta_t\\leq\\pi/2$，故 $\\cos\\theta_t\\geq0$，才可写 $\\cos\\theta_t=\\sqrt{1-\\sin^2\\theta_t}$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "把该式分别代入原 Fresnel 分式的分子和分母，再平方，就得到 (b) 的式子。要求原分母 $n_1\\cos\\theta_i+n_2\\cos\\theta_t\\ne0$；在 $n_1,n_2>0$、$0\\leq\\theta_i,\\theta_t\\leq\\pi/2$ 时，只需排除两余弦同时为零的端点情形。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(c) 由 (a) 平方得 $\\sin^2\\theta_t=(n_1/n_2)^2\\sin^2\\theta_i$，故 $1-\\sin^2\\theta_t=1-(n_1/n_2)^2\\sin^2\\theta_i$。把相等的被开方数代入 (b) 分子、分母中两个根式，即得所求式。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "实折射角还要求 $|(n_1/n_2)\\sin\\theta_i|\\leq1$，以保证被开方数非负。结论是在上述物理条件下成立的改写，不能把 $\\sqrt{\\cos^2\\theta_t}$ 对所有实角都直接写成 $\\cos\\theta_t$。"
+          }
+        ],
+        "answer": "(a) $\\sin\\theta_t=(n_1/n_2)\\sin\\theta_i$；(b)、(c) 的公式在非负余弦、实根式和非零分母的物理条件下成立。",
+        "en": {
+          "prompt": "When light hits a lens at incidence angle $\\theta_i$, some is refracted and some reflected. In the diagram $\\theta_r$ is the reflection angle and $\\theta_t$ the refraction angle; Fresnel equations describe the behaviour. (a) Snell’s law is $n_1\\sin\\theta_i=n_2\\sin\\theta_t$, where $n_1,n_2$ are refractive indices. Isolate $\\sin\\theta_t$. (b) Under certain conditions, the reflected fraction is $R=\\left(\\frac{n_1\\cos\\theta_i-n_2\\cos\\theta_t}{n_1\\cos\\theta_i+n_2\\cos\\theta_t}\\right)^2$. Prove this can be written as $R=\\left(\\frac{n_1\\cos\\theta_i-n_2\\sqrt{1-\\sin^2\\theta_t}}{n_1\\cos\\theta_i+n_2\\sqrt{1-\\sin^2\\theta_t}}\\right)^2$. (c) Use (a) to prove $\\left(\\frac{n_1\\cos\\theta_i-n_2\\sqrt{1-\\sin^2\\theta_t}}{n_1\\cos\\theta_i+n_2\\sqrt{1-\\sin^2\\theta_t}}\\right)^2=\\left(\\frac{n_1\\cos\\theta_i-n_2\\sqrt{1-(n_1/n_2)^2\\sin^2\\theta_i}}{n_1\\cos\\theta_i+n_2\\sqrt{1-(n_1/n_2)^2\\sin^2\\theta_i}}\\right)^2$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) A refractive index satisfies $n_2>0$. Divide by $n_2$ to obtain $\\sin\\theta_t=\\frac{n_1}{n_2}\\sin\\theta_i$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) The Pythagorean identity gives $\\sqrt{1-\\sin^2\\theta_t}=\\sqrt{\\cos^2\\theta_t}=|\\cos\\theta_t|$. The diagram measures the refraction angle from the normal; in the physical range $0\\leq\\theta_t\\leq\\pi/2$, $\\cos\\theta_t\\geq0$, so $\\cos\\theta_t=\\sqrt{1-\\sin^2\\theta_t}$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "Substitute that equality in both the numerator and denominator of the original Fresnel ratio, then square, giving (b). Require $n_1\\cos\\theta_i+n_2\\cos\\theta_t\\ne0$; for positive indices and $0\\leq\\theta_i,\\theta_t\\leq\\pi/2$, exclude the endpoint case where both cosines vanish."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(c) Squaring (a) gives $\\sin^2\\theta_t=(n_1/n_2)^2\\sin^2\\theta_i$, so $1-\\sin^2\\theta_t=1-(n_1/n_2)^2\\sin^2\\theta_i$. Substitute these equal radicands in both radicals in (b), obtaining the required expression."
+            },
+            {
+              "title": "Transform and check",
+              "body": "A real refraction angle also requires $|(n_1/n_2)\\sin\\theta_i|\\leq1$, ensuring a nonnegative radicand. This is a reformulation under the physical conditions above; $\\sqrt{\\cos^2\\theta_t}$ cannot be replaced by $\\cos\\theta_t$ for arbitrary real angles."
+            }
+          ],
+          "answer": "(a) $\\sin\\theta_t=(n_1/n_2)\\sin\\theta_i$; (b), (c) hold under the physical conditions of nonnegative cosines, real radicals, and a nonzero denominator."
+        },
+        "number": 19,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/6-3-ex19-lens.png"
+      },
+      {
+        "prompt": "为什么仅用数值或图形验证两边看似相等，不足以证明方程是恒等式？",
+        "concept": "verify-prove",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "恒等式要求所有共同允许值都成立。有限表格无法覆盖无限多个实数；有限图窗和分辨率也可能漏掉例外或未定义点。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "例如 $\\cos x=\\sqrt{1-\\sin^2x}$ 在 $x=0$、$\\pi/6$ 成立，但 $x=\\pi$ 时 $-1\\ne1$。成功检验只是证据；任意共同定义域内的代数论证才能构成证明。"
+          }
+        ],
+        "answer": "有限检验不能推出所有允许值成立；需要一般证明。",
+        "en": {
+          "prompt": "Why is verifying numerically or graphically that both sides seem equal insufficient to prove an identity?",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "An identity must hold for every commonly permissible value. A finite table cannot cover infinitely many real inputs, and a finite graph window and resolution may miss exceptions or undefined points."
+            },
+            {
+              "title": "Transform and check",
+              "body": "For example, $\\cos x=\\sqrt{1-\\sin^2x}$ works at $x=0$ and $\\pi/6$, but at $x=\\pi$ it gives $-1\\ne1$. Successful checks are evidence; an algebraic argument valid for every input in the common domain proves an identity."
+            }
+          ],
+          "answer": "Finite checks cannot establish the statement for all permissible values; a general proof is required."
+        },
+        "number": "C1"
+      },
+      {
+        "prompt": "用余弦差角恒等式证明 $\\cos(\\pi/2-x)=\\sin x$。",
+        "concept": "double-angle",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "余弦差角公式给 $\\cos(\\pi/2-x)=\\cos(\\pi/2)\\cos x+\\sin(\\pi/2)\\sin x$。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "在弧度制中 $\\cos(\\pi/2)=0$，$\\sin(\\pi/2)=1$，所以左边 $=0\\cos x+1\\sin x=\\sin x$。所有实数 $x$ 都允许。"
+          }
+        ],
+        "answer": "恒等式对所有实数 $x$ 成立（弧度制）。",
+        "en": {
+          "prompt": "Use the cosine difference identity to prove $\\cos(\\pi/2-x)=\\sin x$.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "The cosine difference formula gives $\\cos(\\pi/2-x)=\\cos(\\pi/2)\\cos x+\\sin(\\pi/2)\\sin x$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "In radians, $\\cos(\\pi/2)=0$ and $\\sin(\\pi/2)=1$, so the left side is $0\\cos x+1\\sin x=\\sin x$. Every real $x$ is permissible."
+            }
+          ],
+          "answer": "The identity holds for every real $x$ in radians."
+        },
+        "number": "C2"
+      },
+      {
+        "prompt": "考虑 $\\cos x=\\sqrt{1-\\sin^2x}$。(a) 有哪些不允许值？(b) 给出一个使方程成立的 $x$。(c) 给出一个不成立的 $x$，说明它不是恒等式。(d) 解释恒等式与方程的区别。",
+        "concept": "verify-prove",
+        "printedPage": 315,
+        "pdfPage": 324,
+        "steps": [
+          {
+            "title": "变形与核对",
+            "body": "(a) 因 $1-\\sin^2x=\\cos^2x\\geq0$，两边对所有实角都有定义，没有不允许值。注意“无定义”和“等式不成立”是不同情况。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(b) 取 $x=0$，左边 $1$，右边 $\\sqrt{1-0}=1$，成立。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(c) 取 $x=\\pi$（$180^\\circ$），左边 $-1$，右边 $\\sqrt1=1$，不成立。实质上右边等于 $|\\cos x|$，因此原方程仅在 $\\cos x\\geq0$ 时成立。"
+          },
+          {
+            "title": "变形与核对",
+            "body": "(d) 方程是两个表达式相等的陈述，解集可只是定义域的一部分；恒等式是对共同定义域所有输入都成立的方程。本式有真值也有反例，故是条件方程而非恒等式。"
+          }
+        ],
+        "answer": "(a) 无；(b) $x=0$；(c) $x=\\pi$；(d) 恒等式在共同定义域处处成立，一般方程不必如此。",
+        "en": {
+          "prompt": "Consider $\\cos x=\\sqrt{1-\\sin^2x}$. (a) What are the non-permissible values? (b) Give a value making the equation true. (c) Give a value that does not work and shows it is not an identity. (d) Explain the difference between an identity and an equation.",
+          "steps": [
+            {
+              "title": "Transform and check",
+              "body": "(a) Since $1-\\sin^2x=\\cos^2x\\geq0$, both sides are defined for all real angles. There are no non-permissible values. Being undefined differs from failing to satisfy the equation."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(b) At $x=0$, the left side is $1$ and the right side is $\\sqrt{1-0}=1$, so it is true."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(c) At $x=\\pi$ ($180^\\circ$), the left side is $-1$ but the right side is $\\sqrt1=1$, so it is false. The right side actually equals $|\\cos x|$, so the equation holds exactly when $\\cos x\\geq0$."
+            },
+            {
+              "title": "Transform and check",
+              "body": "(d) An equation states that two expressions are equal; its solution set may be only part of its domain. An identity is an equation true for every input in the common domain. This equation has both satisfying values and counterexamples, so it is conditional, not an identity."
+            }
+          ],
+          "answer": "(a) None; (b) $x=0$; (c) $x=\\pi$; (d) an identity holds everywhere in its common domain, whereas a general equation need not."
+        },
+        "number": "C3",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "reflect-5",
+      "sidebar-graph-holes",
+      "sidebar-thirty-degrees",
+      "sidebar-pythagorean",
+      "your-turn-1",
+      "your-turn-2",
+      "sidebar-conjugate",
+      "your-turn-3",
+      "sidebar-double-angle",
+      "your-turn-4"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "expectedSubparts": {
+      "example-1": [
+        "a",
+        "b"
+      ],
+      "your-turn-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b"
+      ],
+      "exercise-7": [
+        "a",
+        "b"
+      ],
+      "exercise-9": [
+        "a",
+        "b"
+      ],
+      "exercise-10": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ],
+      "exercise-14": [
+        "a",
+        "b"
+      ],
+      "exercise-15": [
+        "a",
+        "b"
+      ],
+      "exercise-19": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-C3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original-page and mathematics review completed by a reviewer independent of the author. Review record: audit/6-3-independent-review.json. Final file hashes recorded separately."
+  }
+}

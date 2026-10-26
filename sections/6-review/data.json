@@ -1,0 +1,1214 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "6-review",
+    "section": "6 Review",
+    "title": "第 6 章复习",
+    "en": {
+      "title": "Chapter 6 Review",
+      "description": "Complete source questions and worked solutions. In solutions, s = sin u, c = cos u and t = tan u, where u is the current part's angle (such as x, A, B or θ), unless the question explicitly defines a different variable."
+    },
+    "source": {
+      "kind": "pdf",
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "printedPages": [
+        322,
+        323
+      ],
+      "pdfPages": [
+        331,
+        332
+      ]
+    },
+    "concepts": [
+      {
+        "id": "identities",
+        "title": "基础恒等式与定义域",
+        "summary": "倒数、商与勾股公式用于等价化简。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用 $\\tan x=\\sin x/\\cos x$、$\\cot x=\\cos x/\\sin x$ 和 $\\sin^2x+\\cos^2x=1$，始终保留原分母限制。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Basic identities and domain",
+          "summary": "Reciprocal, quotient and Pythagorean identities simplify equivalent expressions.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $\\tan x=\\sin x/\\cos x$, $\\cot x=\\cos x/\\sin x$ and $\\sin^2x+\\cos^2x=1$, retaining original denominator restrictions."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "angle",
+        "title": "和差角、倍角与精确值",
+        "summary": "从已知特殊角的值计算新的角。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "展开 $\\sin(A\\pm B)$、$\\cos(A\\pm B)$，或用倍角公式；根据象限选择符号。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Angle formulas and exact values",
+          "summary": "Compute new angles from known special-angle values.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Expand $\\sin(A\\pm B)$ or $\\cos(A\\pm B)$, or use double-angle formulas. Choose signs from the quadrant."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "proof",
+        "title": "证明与反例",
+        "summary": "恒等式须在共同定义域每一点成立。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "从一边用已知恒等式推到另一边；反例只需一个合法输入。$\\sqrt{u^2}=|u|$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Proofs and counterexamples",
+          "summary": "An identity must hold throughout its common domain.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Transform one side into the other with established identities. One legal counterexample disproves a claim. $\\sqrt{u^2}=|u|$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "substitute",
+        "title": "恒等式代换与因式分解",
+        "summary": "先化为一个三角函数的代数方程。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用 $\\sin2x=2\\sin x\\cos x$、$\\cos2x=1-2\\sin^2x=2\\cos^2x-1$ 代换，再因式分解或用求根公式。"
+          }
+        ],
+        "pitfalls": [
+          "不要除以可能为零的三角因子；先保留每个零因子分支。"
+        ],
+        "en": {
+          "title": "Substitution and factoring",
+          "summary": "Rewrite as an algebraic equation in one trigonometric function.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Substitute $\\sin2x=2\\sin x\\cos x$ or $\\cos2x=1-2\\sin^2x=2\\cos^2x-1$, then factor or use the quadratic formula."
+            }
+          ],
+          "pitfalls": [
+            "Keep every zero-factor branch before dividing by a trigonometric factor."
+          ]
+        }
+      },
+      {
+        "id": "domain",
+        "title": "原式禁值与候选解",
+        "summary": "约分或清分母不能改变原式定义域。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先列 $\\sin x\\ne0$ 或 $\\cos x\\ne0$ 等限制，再解方程并代回原式；舍去绝对值超过1的正弦或余弦值。"
+          }
+        ],
+        "pitfalls": [
+          "图像可能掩盖孤立的空点。"
+        ],
+        "en": {
+          "title": "Original restrictions and candidates",
+          "summary": "Cancellation and clearing denominators retain the original domain.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Record restrictions such as $\\sin x\\ne0$ or $\\cos x\\ne0$, solve, and check the original equation. Reject sine/cosine values outside $[-1,1]$."
+            }
+          ],
+          "pitfalls": [
+            "A graph can hide isolated holes."
+          ]
+        }
+      },
+      {
+        "id": "complete",
+        "title": "区间解与一般解",
+        "summary": "列出全部象限及周期，再核对端点。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "弧度的一般解写 $n\\in\\mathbb Z$；对 $\\sin2x=a$ 先解完整的 $2x$ 区间，再除以2。"
+          }
+        ],
+        "pitfalls": [
+          "角度和弧度不混用，开闭端点按题目保留。"
+        ],
+        "en": {
+          "title": "Interval and general solutions",
+          "summary": "List every quadrant and period, then check endpoints.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $n\\in\\mathbb Z$ for general solutions. For $\\sin2x=a$, solve over the full interval for $2x$ before dividing by 2."
+            }
+          ],
+          "pitfalls": [
+            "Keep degrees and radians distinct and respect open/closed endpoints."
+          ]
+        }
+      },
+      {
+        "id": "verify",
+        "title": "图像核验与错误分析",
+        "summary": "代数确定精确解，图像核对交点与漏解。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "同时画原等式两边或画“左边减右边”，核对零点与原式禁值。"
+          }
+        ],
+        "pitfalls": [
+          "数值图像不能代替完整的一般解证明。"
+        ],
+        "en": {
+          "title": "Graph checks and error analysis",
+          "summary": "Algebra gives exact solutions; graphs check intersections and omissions.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Plot both original sides, or their difference, and compare zeros while retaining excluded inputs."
+            }
+          ],
+          "pitfalls": [
+            "A numerical graph does not prove a complete general solution."
+          ]
+        }
+      }
+    ],
+    "questions": [],
+    "kind": "review",
+    "description": "完整原题与逐步解析。解答中以 s = sin u、c = cos u、t = tan u 作代换，u 为当前小问的角（如 x、A、B、θ）；另有明确约定时依该题。"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "求各式的非允许值（弧度）：(a) $\\frac{3\\sin x}{\\cos x}$；(b) $\\frac{\\cos x}{\\tan x}$；(c) $\\frac{\\sin x}{1-2\\cos x}$；(d) $\\frac{\\cos x}{\\sin^2x-1}$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\cos x=0$ 分母为零时原式未定义。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\tan x\\ne0,\\quad\\cos x\\ne0.$ tan自身要求cos≠0，作为分母又要求sin≠0，合并每个π/2的整数倍。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$1-2\\cos x=0\\Rightarrow\\cos x=1/2.$ 在第一、第四象限加整周期。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$\\sin^2x-1=-\\cos^2x=0.$ 因此排除cos x=0。所有答案n均为整数。"
+          }
+        ],
+        "answer": "(a) $x=\\pi/2+\\pi n$； (b) $x=(\\pi/2)n$； (c) $x=\\pm\\pi/3+2\\pi n$； (d) $x=\\pi/2+\\pi n,\\ n\\in\\mathbb Z$",
+        "printedPage": 322,
+        "pdfPage": 331,
+        "en": {
+          "prompt": "Determine the non-permissible values in radians: (a) $\\frac{3\\sin x}{\\cos x}$; (b) $\\frac{\\cos x}{\\tan x}$; (c) $\\frac{\\sin x}{1-2\\cos x}$; (d) $\\frac{\\cos x}{\\sin^2x-1}$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\cos x=0$ The original expression is undefined when its denominator is zero."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\tan x\\ne0,\\quad\\cos x\\ne0.$ Tangent requires cos≠0 and, as denominator, requires sin≠0. Combine them as multiples of π/2."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$1-2\\cos x=0\\Rightarrow\\cos x=1/2.$ Use quadrants I and IV plus full periods."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$\\sin^2x-1=-\\cos^2x=0.$ Thus exclude cos x=0. In all answers n is an integer."
+            }
+          ],
+          "answer": "(a) $x=\\pi/2+\\pi n$; (b) $x=(\\pi/2)n$; (c) $x=\\pm\\pi/3+2\\pi n$; (d) $x=\\pi/2+\\pi n,\\ n\\in\\mathbb Z$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 1
+      },
+      {
+        "prompt": "化简为一个基本三角函数：(a) $\\frac{\\sin x}{\\tan x}$；(b) $\\frac{\\sec x}{\\csc x}$；(c) $\\frac{\\sin x+\\tan x}{1+\\cos x}$；(d) $\\frac{\\csc x-\\sin x}{\\cot x}$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\frac{s}{s/c}=c.$ 原式要求s≠0、c≠0，化简后仍保留。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\frac{1/c}{1/s}=s/c.$ 原sec及csc要求c≠0、s≠0。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$\\frac{s+s/c}{1+c}=\\frac{s(c+1)}{c(c+1)}=s/c.$ 原式要求c≠0和c≠-1，约去c+1后也保留。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$\\frac{1/s-s}{c/s}=\\frac{1-s^2}{c}=c.$ csc要求s≠0，作为分母的cot还要求c≠0。"
+          }
+        ],
+        "answer": "(a) $\\cos x;\\ \\sin x\\cos x\\ne0$； (b) $\\tan x;\\ \\sin x\\cos x\\ne0$； (c) $\\tan x;\\ \\cos x\\ne0,-1$； (d) $\\cos x;\\ \\sin x\\cos x\\ne0$",
+        "printedPage": 322,
+        "pdfPage": 331,
+        "en": {
+          "prompt": "Simplify to one primary trigonometric function: (a) $\\frac{\\sin x}{\\tan x}$; (b) $\\frac{\\sec x}{\\csc x}$; (c) $\\frac{\\sin x+\\tan x}{1+\\cos x}$; (d) $\\frac{\\csc x-\\sin x}{\\cot x}$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\frac{s}{s/c}=c.$ Retain the original restrictions s≠0 and c≠0."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\frac{1/c}{1/s}=s/c.$ The original sec and csc require c≠0 and s≠0."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$\\frac{s+s/c}{1+c}=\\frac{s(c+1)}{c(c+1)}=s/c.$ The original restrictions c≠0 and c≠-1 remain after cancelling c+1."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$\\frac{1/s-s}{c/s}=\\frac{1-s^2}{c}=c.$ Cosecant requires s≠0; cotangent in the denominator also requires c≠0."
+            }
+          ],
+          "answer": "(a) $\\cos x;\\ \\sin x\\cos x\\ne0$; (b) $\\tan x;\\ \\sin x\\cos x\\ne0$; (c) $\\tan x;\\ \\cos x\\ne0,-1$; (d) $\\cos x;\\ \\sin x\\cos x\\ne0$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 2
+      },
+      {
+        "prompt": "先写为正弦、余弦，再化简：(a) $\\tan x\\cot x$；(b) $\\frac1{\\csc^2x}+\\frac1{\\sec^2x}$；(c) $\\sec^2x-\\tan^2x$。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$(s/c)(c/s)=1.$ 两原函数要求s和c均非零。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$1/(1/s^2)+1/(1/c^2)=s^2+c^2=1.$ 原csc、sec均必须有定义。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$1/c^2-s^2/c^2=(1-s^2)/c^2=1.$ 原式要求c≠0。"
+          }
+        ],
+        "answer": "(a) $1;\\ \\sin x\\cos x\\ne0$； (b) $1;\\ \\sin x\\cos x\\ne0$； (c) $1;\\ \\cos x\\ne0$",
+        "printedPage": 322,
+        "pdfPage": 331,
+        "en": {
+          "prompt": "Rewrite using sine and/or cosine, then simplify: (a) $\\tan x\\cot x$; (b) $\\frac1{\\csc^2x}+\\frac1{\\sec^2x}$; (c) $\\sec^2x-\\tan^2x$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$(s/c)(c/s)=1.$ Both original functions require s,c nonzero."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$1/(1/s^2)+1/(1/c^2)=s^2+c^2=1.$ Both original csc and sec must be defined."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$1/c^2-s^2/c^2=(1-s^2)/c^2=1.$ The original domain requires c≠0."
+            }
+          ],
+          "answer": "(a) $1;\\ \\sin x\\cos x\\ne0$; (b) $1;\\ \\sin x\\cos x\\ne0$; (c) $1;\\ \\cos x\\ne0$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 3
+      },
+      {
+        "prompt": "(a) 在 $x=30^\\circ$ 及 $x=\\pi/4$ 验证 $\\frac{\\cos x}{1-\\sin x}=\\frac{1+\\sin x}{\\cos x}$；(b) 求 $0^\\circ\\le x<360^\\circ$ 内的非允许值。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$x=30^\\circ:\\ L=(\\sqrt3/2)/(1/2)=\\sqrt3,\\ R=(3/2)/(\\sqrt3/2)=\\sqrt3.\\quad x=\\pi/4:\\ L=(\\sqrt2/2)/(1-\\sqrt2/2)=1+\\sqrt2,\\ R=(1+\\sqrt2/2)/(\\sqrt2/2)=1+\\sqrt2.$ 两种角下两边分别相等，但有限次代入本身不构成恒等式证明。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$1-\\sin x\\ne0,\\quad\\cos x\\ne0.$ 第一条件排90°，第二排90°、270°；合并后为90°、270°。"
+          }
+        ],
+        "answer": "(a) $\\sqrt3;\\ 1+\\sqrt2$； (b) $90^\\circ,270^\\circ$",
+        "printedPage": 322,
+        "pdfPage": 331,
+        "en": {
+          "prompt": "(a) Verify $\\frac{\\cos x}{1-\\sin x}=\\frac{1+\\sin x}{\\cos x}$ at $x=30^\\circ$ and $x=\\pi/4$. (b) Find the non-permissible values for $0^\\circ\\le x<360^\\circ$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$x=30^\\circ:\\ L=(\\sqrt3/2)/(1/2)=\\sqrt3,\\ R=(3/2)/(\\sqrt3/2)=\\sqrt3.\\quad x=\\pi/4:\\ L=(\\sqrt2/2)/(1-\\sqrt2/2)=1+\\sqrt2,\\ R=(1+\\sqrt2/2)/(\\sqrt2/2)=1+\\sqrt2.$ The sides agree at both angles, but finitely many substitutions alone do not prove an identity."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$1-\\sin x\\ne0,\\quad\\cos x\\ne0.$ The first excludes 90°; the second excludes 90°,270°. Their union is 90°,270°."
+            }
+          ],
+          "answer": "(a) $\\sqrt3;\\ 1+\\sqrt2$; (b) $90^\\circ,270^\\circ$"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": 4
+      },
+      {
+        "prompt": "(a) 找两个满足 $\\sqrt{\\tan^2x+1}=\\sec x$ 的x值；(b) 在 $-\\pi/2\\le x<3\\pi/2$ 画两边并比较；(c) 用图解释为什么不是恒等式。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\sqrt{\\tan^2x+1}=\\sqrt{\\sec^2x}=|\\sec x|.$ 只要cos x>0便成立，例如x=0和π/3，两边分别为1和2。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$-\\pi/2<x<\\pi/2:\\ |\\sec x|=\\sec x;\\quad\\pi/2<x<3\\pi/2:\\ |\\sec x|=-\\sec x.$ 在第一段两图重合，第二段关于横轴对称；-π/2、π/2都是未定义点，右端3π/2也未定义且不包含。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$x=\\pi:\\ \\sqrt{\\tan^2\\pi+1}=1\\ne-1=\\sec\\pi.$ 这是原定义域内的反例，说明并非恒等式。"
+          }
+        ],
+        "answer": "(a) $x=0,\\pi/3$； (b) 仅在 $\\cos x>0$ 重合 / coincide only when $\\cos x>0$； (c) 不是恒等式 / not an identity",
+        "printedPage": 322,
+        "pdfPage": 331,
+        "en": {
+          "prompt": "(a) Give two values satisfying $\\sqrt{\\tan^2x+1}=\\sec x$. (b) Graph both sides for $-\\pi/2\\le x<3\\pi/2$ and compare. (c) Explain graphically why this is not an identity.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\sqrt{\\tan^2x+1}=\\sqrt{\\sec^2x}=|\\sec x|.$ It holds when cos x>0, for example at x=0 and π/3, where both sides are 1 and 2 respectively."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$-\\pi/2<x<\\pi/2:\\ |\\sec x|=\\sec x;\\quad\\pi/2<x<3\\pi/2:\\ |\\sec x|=-\\sec x.$ The graphs coincide on the first interval and reflect across the x-axis on the second. Inputs -π/2,π/2 are undefined; 3π/2 is also undefined and excluded."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$x=\\pi:\\ \\sqrt{\\tan^2\\pi+1}=1\\ne-1=\\sec\\pi.$ This legal counterexample proves the equation is not an identity."
+            }
+          ],
+          "answer": "(a) $x=0,\\pi/3$; (b) Coincide only when $\\cos x>0$; (c) Not an identity"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 5,
+        "solutionImage": "assets/6-review-5.png"
+      },
+      {
+        "prompt": "傅里叶级数由正弦和余弦项构成，有限项可近似波。教材给出所谓锯齿波前四项 $f(x)=\\sin x+\\cos x+\\sin2x+\\cos2x$（见原图）。(a) 求f(0)、f(π/6)；(b) 证明 $f(x)=\\sin x+\\cos x+2\\sin x\\cos x-2\\sin^2x+1$；(c) 能否只用正弦或只用余弦重写？解释；(d) 按前四项规律增加项，在[-4π,4π]作图，多少项能较好近似锯齿波？",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$f(0)=0+1+0+1=2;\\quad f(\\pi/6)=1/2+\\sqrt3/2+\\sqrt3/2+1/2=1+\\sqrt3.$ 逐项代入特殊角。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\sin2x=2\\sin x\\cos x,\\quad\\cos2x=1-2\\sin^2x.$ 分别代入最后两项，得到题给表达式，对所有实数x成立。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$\\cos x=\\sin(x+\\pi/2),\\quad\\sin x=\\cos(x-\\pi/2).$ 允许相移时可只用正弦：sin x+sin(x+π/2)+sin2x+sin(2x+π/2)；同样可只用余弦。若要求只有sin x的单值代数式，则不可能，因f(0)=2而f(π)=0，但两点sin值相同；只依赖cos x也不行，如f(π/2)=0、f(-π/2)=-2。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$S_N(x)=\\sum_{k=1}^{N}(\\sin kx+\\cos kx),\\quad S_N(0)=N.$ 按字面等系数规律延伸，x=0的值随N无界增长，因此没有使它收敛到有限锯齿波的项数。教材没有指定正确系数或误差标准，不能给唯一“足够项数”。解析图实际画N=2、5、10。标准锯齿波可用g_N(x)=2∑[(-1)^(k+1) sin(kx)/k]逼近x（-π<x<π），跳点仍有Gibbs振铃；这是说明性修正，不冒充原题的系数。"
+          }
+        ],
+        "answer": "(a) $f(0)=2,\\ f(\\pi/6)=1+\\sqrt3$； (b) $f=\\sin x+\\cos x+2\\sin x\\cos x-2\\sin^2x+1$； (c) 允许相移则可以 / yes with phase shifts； (d) 题面等系数延伸不能收敛 / equal-coefficient extension does not converge to a sawtooth",
+        "printedPage": 322,
+        "pdfPage": 331,
+        "en": {
+          "prompt": "A Fourier series consists of sine and cosine terms; finitely many terms can approximate waves. The book gives the purported first four terms for a sawtooth approximation, $f(x)=\\sin x+\\cos x+\\sin2x+\\cos2x$ (original graph shown). (a) Find f(0) and f(π/6). (b) Prove $f(x)=\\sin x+\\cos x+2\\sin x\\cos x-2\\sin^2x+1$. (c) Can it be rewritten using only sine or only cosine? Justify. (d) Extend the pattern, graph on [-4π,4π], and decide how many terms give a good sawtooth approximation.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$f(0)=0+1+0+1=2;\\quad f(\\pi/6)=1/2+\\sqrt3/2+\\sqrt3/2+1/2=1+\\sqrt3.$ Substitute each special-angle value."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\sin2x=2\\sin x\\cos x,\\quad\\cos2x=1-2\\sin^2x.$ Substitute into the last two terms to obtain the stated expression for every real x."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$\\cos x=\\sin(x+\\pi/2),\\quad\\sin x=\\cos(x-\\pi/2).$ With phase shifts, use only sine: sin x+sin(x+π/2)+sin2x+sin(2x+π/2); an all-cosine form works similarly. A single-valued expression in sin x alone is impossible: f(0)=2 and f(π)=0 have equal sine inputs. An expression only in cos x likewise fails since f(π/2)=0 and f(-π/2)=-2."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$S_N(x)=\\sum_{k=1}^{N}(\\sin kx+\\cos kx),\\quad S_N(0)=N.$ The literal equal-coefficient extension grows without bound at x=0; no term count makes it converge to a finite sawtooth. The book gives neither correct coefficients nor an error criterion, so no unique sufficient count follows. The solution graph plots N=2,5,10. For comparison, a standard sawtooth uses g_N(x)=2∑[(-1)^(k+1) sin(kx)/k] to approximate x on -π<x<π, with Gibbs ringing at jumps. This is an explanatory correction, not invented source coefficients."
+            }
+          ],
+          "answer": "(a) $f(0)=2,\\ f(\\pi/6)=1+\\sqrt3$; (b) $f=\\sin x+\\cos x+2\\sin x\\cos x-2\\sin^2x+1$; (c) Yes with phase shifts; (d) The equal-coefficient extension does not converge to a sawtooth"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 6,
+        "solutionImage": "assets/6-review-6.png",
+        "sourceImage": "assets/6-review-6-source.png"
+      },
+      {
+        "prompt": "化为单一三角函数再求值：(a) $\\sin25^\\circ\\cos65^\\circ+\\cos25^\\circ\\sin65^\\circ$；(b) $\\sin54^\\circ\\cos24^\\circ-\\cos54^\\circ\\sin24^\\circ$；(c) $\\cos(\\pi/4)\\cos(\\pi/12)+\\sin(\\pi/4)\\sin(\\pi/12)$；(d) $\\cos(\\pi/6)\\cos(\\pi/12)-\\sin(\\pi/6)\\sin(\\pi/12)$。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\sin(25^\\circ+65^\\circ)=\\sin90^\\circ=1.$ 用正弦和角公式逆向合并。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\sin(54^\\circ-24^\\circ)=\\sin30^\\circ=1/2.$ 用正弦差角公式逆向合并。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$\\cos(\\pi/4-\\pi/12)=\\cos(\\pi/6)=\\sqrt3/2.$ 余弦乘积加正弦乘积对应差角。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$\\cos(\\pi/6+\\pi/12)=\\cos(\\pi/4)=\\sqrt2/2.$ 余弦乘积减正弦乘积对应和角。"
+          }
+        ],
+        "answer": "(a) $1$； (b) $1/2$； (c) $\\sqrt3/2$； (d) $\\sqrt2/2$",
+        "printedPage": 322,
+        "pdfPage": 331,
+        "en": {
+          "prompt": "Write as one trigonometric function, then evaluate: (a) $\\sin25^\\circ\\cos65^\\circ+\\cos25^\\circ\\sin65^\\circ$; (b) $\\sin54^\\circ\\cos24^\\circ-\\cos54^\\circ\\sin24^\\circ$; (c) $\\cos(\\pi/4)\\cos(\\pi/12)+\\sin(\\pi/4)\\sin(\\pi/12)$; (d) $\\cos(\\pi/6)\\cos(\\pi/12)-\\sin(\\pi/6)\\sin(\\pi/12)$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\sin(25^\\circ+65^\\circ)=\\sin90^\\circ=1.$ Apply the sine sum identity in reverse."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\sin(54^\\circ-24^\\circ)=\\sin30^\\circ=1/2.$ Apply the sine difference identity in reverse."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$\\cos(\\pi/4-\\pi/12)=\\cos(\\pi/6)=\\sqrt3/2.$ The sum of these products is the cosine of the difference."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$\\cos(\\pi/6+\\pi/12)=\\cos(\\pi/4)=\\sqrt2/2.$ The difference of these products is the cosine of the sum."
+            }
+          ],
+          "answer": "(a) $1$; (b) $1/2$; (c) $\\sqrt3/2$; (d) $\\sqrt2/2$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 7
+      },
+      {
+        "prompt": "用和差角公式求精确值：(a) sin15°；(b) cos(-π/12)；(c) tan165°；(d) sin(5π/12)。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\sin(45^\\circ-30^\\circ)=\\frac{\\sqrt2}{2}\\frac{\\sqrt3}{2}-\\frac{\\sqrt2}{2}\\frac12.$ 相减得(√6-√2)/4。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\cos(-\\pi/12)=\\cos(\\pi/4-\\pi/6)=\\frac{\\sqrt2}{2}\\frac{\\sqrt3}{2}+\\frac{\\sqrt2}{2}\\frac12.$ 余弦为偶函数，再用差角公式。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$\\tan165^\\circ=-\\tan15^\\circ=-\\frac{1-1/\\sqrt3}{1+1/\\sqrt3}=\\sqrt3-2.$ 165°在第二象限，正切为负。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$\\sin(\\pi/4+\\pi/6)=\\frac{\\sqrt2}{2}\\frac{\\sqrt3}{2}+\\frac{\\sqrt2}{2}\\frac12.$ 用正弦和角公式相加。"
+          }
+        ],
+        "answer": "(a) $(\\sqrt6-\\sqrt2)/4$； (b) $(\\sqrt6+\\sqrt2)/4$； (c) $\\sqrt3-2$； (d) $(\\sqrt6+\\sqrt2)/4$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Use sum/difference identities for exact values: (a) sin15°; (b) cos(-π/12); (c) tan165°; (d) sin(5π/12).",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\sin(45^\\circ-30^\\circ)=\\frac{\\sqrt2}{2}\\frac{\\sqrt3}{2}-\\frac{\\sqrt2}{2}\\frac12.$ Subtract to obtain (√6-√2)/4."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\cos(-\\pi/12)=\\cos(\\pi/4-\\pi/6)=\\frac{\\sqrt2}{2}\\frac{\\sqrt3}{2}+\\frac{\\sqrt2}{2}\\frac12.$ Use evenness of cosine, then the difference formula."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$\\tan165^\\circ=-\\tan15^\\circ=-\\frac{1-1/\\sqrt3}{1+1/\\sqrt3}=\\sqrt3-2.$ Tangent is negative in quadrant II."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$\\sin(\\pi/4+\\pi/6)=\\frac{\\sqrt2}{2}\\frac{\\sqrt3}{2}+\\frac{\\sqrt2}{2}\\frac12.$ Add using the sine sum formula."
+            }
+          ],
+          "answer": "(a) $(\\sqrt6-\\sqrt2)/4$; (b) $(\\sqrt6+\\sqrt2)/4$; (c) $\\sqrt3-2$; (d) $(\\sqrt6+\\sqrt2)/4$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 8
+      },
+      {
+        "prompt": "若 $\\cos A=-5/13$、$\\pi/2\\le A<\\pi$，求：(a) cos(A-π/4)；(b) sin(A+π/3)；(c) sin2A。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\sin A=\\sqrt{1-25/169}=12/13;\\quad\\cos(A-\\pi/4)=(-5/13)(\\sqrt2/2)+(12/13)(\\sqrt2/2).$ 第二象限使sin A为正。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\sin(A+\\pi/3)=(12/13)(1/2)+(-5/13)(\\sqrt3/2).$ 由同一象限条件确定sin A=12/13。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$\\sin2A=2(12/13)(-5/13)=-120/169.$ 符号由一正一负相乘确定。"
+          }
+        ],
+        "answer": "(a) $7\\sqrt2/26$； (b) $(12-5\\sqrt3)/26$； (c) $-120/169$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "If $\\cos A=-5/13$ and $\\pi/2\\le A<\\pi$, evaluate: (a) cos(A-π/4); (b) sin(A+π/3); (c) sin2A.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\sin A=\\sqrt{1-25/169}=12/13;\\quad\\cos(A-\\pi/4)=(-5/13)(\\sqrt2/2)+(12/13)(\\sqrt2/2).$ Quadrant II makes sin A positive."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\sin(A+\\pi/3)=(12/13)(1/2)+(-5/13)(\\sqrt3/2).$ The same quadrant gives sin A=12/13."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$\\sin2A=2(12/13)(-5/13)=-120/169.$ The product has one positive and one negative factor."
+            }
+          ],
+          "answer": "(a) $7\\sqrt2/26$; (b) $(12-5\\sqrt3)/26$; (c) $-120/169$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 9
+      },
+      {
+        "prompt": "求 $(\\sin(\\pi/8)+\\cos(\\pi/8))^2$ 的精确值。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$s^2+2sc+c^2=1+\\sin(\\pi/4)=1+\\sqrt2/2.$ 先展开平方，再用倍角公式。"
+          }
+        ],
+        "answer": "$1+\\sqrt2/2$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Find the exact value of $(\\sin(\\pi/8)+\\cos(\\pi/8))^2$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$s^2+2sc+c^2=1+\\sin(\\pi/4)=1+\\sqrt2/2.$ Expand the square and use the double-angle identity."
+            }
+          ],
+          "answer": "$1+\\sqrt2/2$"
+        },
+        "number": 10
+      },
+      {
+        "prompt": "将 $\\frac{\\cos^2x-\\cos2x}{0.5\\sin2x}$ 化为一个基本三角比。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\frac{c^2-(c^2-s^2)}{sc}=\\frac{s^2}{sc}=s/c.$ 原分母要求sin2x≠0，即s、c均非零；保留此限制。"
+          }
+        ],
+        "answer": "$\\tan x,\\quad x\\ne n\\pi/2\\ (n\\in\\mathbb Z)$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Simplify $\\frac{\\cos^2x-\\cos2x}{0.5\\sin2x}$ to one primary trigonometric ratio.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\frac{c^2-(c^2-s^2)}{sc}=\\frac{s^2}{sc}=s/c.$ The original denominator requires sin2x≠0, so s,c are both nonzero; retain this restriction."
+            }
+          ],
+          "answer": "$\\tan x,\\quad x\\ne n\\pi/2\\ (n\\in\\mathbb Z)$"
+        },
+        "number": 11
+      },
+      {
+        "prompt": "因式分解并化简：(a) $\\frac{1-\\sin^2x}{\\cos x\\sin x-\\cos x}$；(b) $\\tan^2x-\\cos^2x\\tan^2x$。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\frac{(1-s)(1+s)}{c(s-1)}=-\\frac{1+s}{c}=-\\sec x-\\tan x.$ 原分母要求c≠0且s≠1；c≠0已排除s=1。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\tan^2x(1-c^2)=\\tan^2x\\sin^2x=\\sin^4x/\\cos^2x.$ 原tan要求cos x≠0。"
+          }
+        ],
+        "answer": "(a) $-(1+\\sin x)/\\cos x;\\ \\cos x\\ne0$； (b) $\\sin^4x/\\cos^2x;\\ \\cos x\\ne0$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Factor and simplify: (a) $\\frac{1-\\sin^2x}{\\cos x\\sin x-\\cos x}$; (b) $\\tan^2x-\\cos^2x\\tan^2x$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\frac{(1-s)(1+s)}{c(s-1)}=-\\frac{1+s}{c}=-\\sec x-\\tan x.$ The original denominator requires c≠0 and s≠1; c≠0 already excludes s=1."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\tan^2x(1-c^2)=\\tan^2x\\sin^2x=\\sin^4x/\\cos^2x.$ The original tangent requires cos x≠0."
+            }
+          ],
+          "answer": "(a) $-(1+\\sin x)/\\cos x;\\ \\cos x\\ne0$; (b) $\\sin^4x/\\cos^2x;\\ \\cos x\\ne0$"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": 12
+      },
+      {
+        "prompt": "对所有允许值证明：(a) $1+\\cot^2x=\\csc^2x$；(b) $\\tan x=\\csc2x-\\cot2x$；(c) $\\sec x+\\tan x=\\frac{\\cos x}{1-\\sin x}$；(d) $\\frac1{1+\\cos x}+\\frac1{1-\\cos x}=2\\csc^2x$。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$1+c^2/s^2=(s^2+c^2)/s^2=1/s^2.$ 在s≠0的共同定义域，等于csc²x。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\csc2x-\\cot2x=\\frac{1-\\cos2x}{\\sin2x}=\\frac{2s^2}{2sc}=s/c=\\tan x.$ 共同定义域要求sin2x≠0，即s、c均非零。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$\\frac{c}{1-s}=\\frac{c(1+s)}{1-s^2}=\\frac{1+s}{c}=\\sec x+\\tan x.$ 共同定义域c≠0，故s≠1，所有约分合法。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$\\frac{(1-c)+(1+c)}{(1+c)(1-c)}=\\frac2{1-c^2}=2/s^2.$ 共同定义域s≠0，等价于c≠±1。"
+          }
+        ],
+        "answer": "(a) 成立 / proved; $\\sin x\\ne0$； (b) 成立 / proved; $\\sin x\\cos x\\ne0$； (c) 成立 / proved; $\\cos x\\ne0$； (d) 成立 / proved; $\\sin x\\ne0$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Prove for every permissible x: (a) $1+\\cot^2x=\\csc^2x$; (b) $\\tan x=\\csc2x-\\cot2x$; (c) $\\sec x+\\tan x=\\frac{\\cos x}{1-\\sin x}$; (d) $\\frac1{1+\\cos x}+\\frac1{1-\\cos x}=2\\csc^2x$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$1+c^2/s^2=(s^2+c^2)/s^2=1/s^2.$ On the common domain s≠0, this is csc²x."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\csc2x-\\cot2x=\\frac{1-\\cos2x}{\\sin2x}=\\frac{2s^2}{2sc}=s/c=\\tan x.$ The common domain requires sin2x≠0, hence s,c nonzero."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$\\frac{c}{1-s}=\\frac{c(1+s)}{1-s^2}=\\frac{1+s}{c}=\\sec x+\\tan x.$ On the common domain c≠0, s≠1 and every cancellation is valid."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$\\frac{(1-c)+(1+c)}{(1+c)(1-c)}=\\frac2{1-c^2}=2/s^2.$ The common domain is s≠0, equivalently c≠±1."
+            }
+          ],
+          "answer": "(a) Proved; $\\sin x\\ne0$; (b) Proved; $\\sin x\\cos x\\ne0$; (c) Proved; $\\cos x\\ne0$; (d) Proved; $\\sin x\\ne0$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 13
+      },
+      {
+        "prompt": "对于 $\\sin2x=\\frac{2\\tan x}{1+\\tan^2x}$：(a) 在x=π/4验证；这就能说明是恒等式吗？为什么？(b) 求禁值；(c) 对所有允许值证明。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\sin(\\pi/2)=1=2(1)/(1+1).$ 该角成立；一次验证不能说明所有角成立。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\cos x\\ne0;\\quad1+\\tan^2x>0.$ 除tan自身未定义点外没有额外零分母。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$\\frac{2s/c}{1+s^2/c^2}=\\frac{2sc}{c^2+s^2}=2sc=\\sin2x.$ 在c≠0的共同定义域，乘c²及所有变形均合法。"
+          }
+        ],
+        "answer": "(a) 两边均为1；不能单凭此证明 / both 1; not a proof alone； (b) 禁值 / excluded: $x=\\pi/2+\\pi n,\\ n\\in\\mathbb Z$； (c) 成立 / proved on $\\cos x\\ne0$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "For $\\sin2x=\\frac{2\\tan x}{1+\\tan^2x}$: (a) Verify at x=π/4. Does this prove an identity? Why? (b) Find excluded values. (c) Prove it for every permissible x.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\sin(\\pi/2)=1=2(1)/(1+1).$ It holds at this angle; one substitution cannot establish every angle."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\cos x\\ne0;\\quad1+\\tan^2x>0.$ There is no extra denominator zero beyond where tangent is undefined."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$\\frac{2s/c}{1+s^2/c^2}=\\frac{2sc}{c^2+s^2}=2sc=\\sin2x.$ On the common domain c≠0, multiplication by c² and every transformation are valid."
+            }
+          ],
+          "answer": "(a) Both sides equal 1; this alone is not a proof; (b) Excluded: $x=\\pi/2+\\pi n,\\ n\\in\\mathbb Z$; (c) Proved on $\\cos x\\ne0$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 14
+      },
+      {
+        "prompt": "证明：(a) $\\frac{\\cos x+\\cot x}{\\sec x+\\tan x}=\\cos x\\cot x$；(b) $\\sec x+\\tan x=\\frac{\\cos x}{1-\\sin x}$。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\frac{c+c/s}{1/c+s/c}=\\frac{c(s+1)}s\\frac c{1+s}=c^2/s=c\\cot x.$ 共同定义域s≠0、c≠0；于是s≠-1，分母sec+tan非零。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\sec x+\\tan x=(1+s)/c=\\frac{(1+s)(1-s)}{c(1-s)}=\\frac{c}{1-s}.$ 共同定义域c≠0使s≠1，变形合法。"
+          }
+        ],
+        "answer": "(a) 成立 / proved; $\\sin x\\cos x\\ne0$； (b) 成立 / proved; $\\cos x\\ne0$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Prove: (a) $\\frac{\\cos x+\\cot x}{\\sec x+\\tan x}=\\cos x\\cot x$; (b) $\\sec x+\\tan x=\\frac{\\cos x}{1-\\sin x}$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\frac{c+c/s}{1/c+s/c}=\\frac{c(s+1)}s\\frac c{1+s}=c^2/s=c\\cot x.$ The common domain has s≠0,c≠0; hence s≠-1 and sec+tan is nonzero."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\sec x+\\tan x=(1+s)/c=\\frac{(1+s)(1-s)}{c(1-s)}=\\frac{c}{1-s}.$ On the common domain c≠0, s≠1 and the transformations are valid."
+            }
+          ],
+          "answer": "(a) Proved; $\\sin x\\cos x\\ne0$; (b) Proved; $\\cos x\\ne0$"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": 15
+      },
+      {
+        "prompt": "考虑 $\\cos2x=2\\sin x\\sec x$：(a) 描述两种检验它是否可能为恒等式的方法；(b) 用其中一种说明它不是恒等式。",
+        "concept": "proof",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$L(x)=\\cos2x,\\quad R(x)=2\\sin x/\\cos x,\\quad\\cos x\\ne0.$ 方法一：在共同定义域数值代入寻找反例；方法二：画两边比较是否重合。有限次数值相等或视觉重合不能证明恒等式。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$x=0:\\quad L=\\cos0=1,\\quad R=2\\sin0\\sec0=0.$ 0属于共同定义域，1≠0即构成反例。"
+          }
+        ],
+        "answer": "(a) 数值反例；图像比较 / numerical counterexample; graphical comparison； (b) 不是恒等式 / not an identity",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Consider $\\cos2x=2\\sin x\\sec x$: (a) Describe two ways to test whether it could be an identity. (b) Use one to show it is not an identity.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$L(x)=\\cos2x,\\quad R(x)=2\\sin x/\\cos x,\\quad\\cos x\\ne0.$ Method 1: substitute legal inputs to seek a counterexample. Method 2: compare the two graphs. Finite agreement or visual overlap does not prove an identity."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$x=0:\\quad L=\\cos0=1,\\quad R=2\\sin0\\sec0=0.$ Zero is in the common domain and 1≠0 is a counterexample."
+            }
+          ],
+          "answer": "(a) Numerical counterexample; graphical comparison; (b) Not an identity"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": 16
+      },
+      {
+        "prompt": "在 $0\\le x<2\\pi$ 代数解：(a) $\\sin2x+\\sin x=0$；(b) $\\cot x+\\sqrt3=0$；(c) $2\\sin^2x-3\\sin x-2=0$；(d) $\\sin^2x=\\cos x-\\cos2x$。",
+        "concept": "substitute",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\sin x(2\\cos x+1)=0.$ sin x=0给0、π；cos x=-1/2给2π/3、4π/3。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$\\cot x=-\\sqrt3\\Rightarrow\\tan x=-1/\\sqrt3.$ 原cot要求sin≠0，两解5π/6、11π/6均合法。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$(2s+1)(s-2)=0.$ 舍去s=2；s=-1/2给7π/6、11π/6。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$1-c^2=c-(2c^2-1)\\Rightarrow c^2-c=c(c-1)=0.$ c=0给π/2、3π/2，c=1给0。"
+          }
+        ],
+        "answer": "(a) $x=0,2\\pi/3,\\pi,4\\pi/3$； (b) $x=5\\pi/6,11\\pi/6$； (c) $x=7\\pi/6,11\\pi/6$； (d) $x=0,\\pi/2,3\\pi/2$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Solve algebraically for $0\\le x<2\\pi$: (a) $\\sin2x+\\sin x=0$; (b) $\\cot x+\\sqrt3=0$; (c) $2\\sin^2x-3\\sin x-2=0$; (d) $\\sin^2x=\\cos x-\\cos2x$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\sin x(2\\cos x+1)=0.$ sin x=0 gives 0,π; cos x=-1/2 gives 2π/3,4π/3."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$\\cot x=-\\sqrt3\\Rightarrow\\tan x=-1/\\sqrt3.$ The original cotangent requires sin≠0; both 5π/6 and 11π/6 are permitted."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$(2s+1)(s-2)=0.$ Reject s=2; s=-1/2 gives 7π/6,11π/6."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$1-c^2=c-(2c^2-1)\\Rightarrow c^2-c=c(c-1)=0.$ c=0 gives π/2,3π/2; c=1 gives 0."
+            }
+          ],
+          "answer": "(a) $x=0,2\\pi/3,\\pi,4\\pi/3$; (b) $x=5\\pi/6,11\\pi/6$; (c) $x=7\\pi/6,11\\pi/6$; (d) $x=0,\\pi/2,3\\pi/2$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 17
+      },
+      {
+        "prompt": "在 $0^\\circ\\le x<360^\\circ$ 代数解并画图核验：(a) $2\\sin2x=1$；(b) $\\sin^2x=1+\\cos^2x$；(c) $2\\cos^2x=\\sin x+1$；(d) $\\cos x\\tan x-\\sin^2x=0$。",
+        "concept": "verify",
+        "steps": [
+          {
+            "title": "(a) 推导与核对",
+            "body": "$\\sin2x=1/2,\\quad0^\\circ\\le2x<720^\\circ;\\quad2x=30^\\circ,150^\\circ,390^\\circ,510^\\circ.$ 除以2得四解；差函数图像四个过零点一致。"
+          },
+          {
+            "title": "(b) 推导与核对",
+            "body": "$1-c^2=1+c^2\\Rightarrow c=0.$ 得90°、270°，差函数在两点接触横轴。"
+          },
+          {
+            "title": "(c) 推导与核对",
+            "body": "$2(1-s^2)=s+1\\Rightarrow(2s-1)(s+1)=0.$ s=1/2给30°、150°，s=-1给270°；图像对应三个零点。"
+          },
+          {
+            "title": "(d) 推导与核对",
+            "body": "$\\cos x\\ne0;\\quad s-s^2=s(1-s)=0.$ s=0给0°、180°；s=1给90°但原tan未定义，舍去。差图90°的空点不算解。"
+          }
+        ],
+        "answer": "(a) $x=15^\\circ,75^\\circ,195^\\circ,255^\\circ$； (b) $x=90^\\circ,270^\\circ$； (c) $x=30^\\circ,150^\\circ,270^\\circ$； (d) $x=0^\\circ,180^\\circ$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Solve algebraically for $0^\\circ\\le x<360^\\circ$ and verify graphically: (a) $2\\sin2x=1$; (b) $\\sin^2x=1+\\cos^2x$; (c) $2\\cos^2x=\\sin x+1$; (d) $\\cos x\\tan x-\\sin^2x=0$.",
+          "steps": [
+            {
+              "title": "(a) Derive and check",
+              "body": "$\\sin2x=1/2,\\quad0^\\circ\\le2x<720^\\circ;\\quad2x=30^\\circ,150^\\circ,390^\\circ,510^\\circ.$ Divide by 2 for four solutions, matching four crossings of the difference graph."
+            },
+            {
+              "title": "(b) Derive and check",
+              "body": "$1-c^2=1+c^2\\Rightarrow c=0.$ This gives 90°,270°, where the difference graph touches the axis."
+            },
+            {
+              "title": "(c) Derive and check",
+              "body": "$2(1-s^2)=s+1\\Rightarrow(2s-1)(s+1)=0.$ s=1/2 gives 30°,150°; s=-1 gives 270°. These match the three graph zeros."
+            },
+            {
+              "title": "(d) Derive and check",
+              "body": "$\\cos x\\ne0;\\quad s-s^2=s(1-s)=0.$ s=0 gives 0°,180°. The candidate s=1 at 90° makes the original tangent undefined, so reject that hole."
+            }
+          ],
+          "answer": "(a) $x=15^\\circ,75^\\circ,195^\\circ,255^\\circ$; (b) $x=90^\\circ,270^\\circ$; (c) $x=30^\\circ,150^\\circ,270^\\circ$; (d) $x=0^\\circ,180^\\circ$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 18,
+        "solutionImage": "assets/6-review-18.png"
+      },
+      {
+        "prompt": "代数求 $4\\cos^2x-1=0$ 的弧度制一般解。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\cos x=\\pm1/2.$ 第一圈的四个角π/3、2π/3、4π/3、5π/3可合并为±π/3+πn。"
+          }
+        ],
+        "answer": "$x=\\pm\\pi/3+\\pi n,\\ n\\in\\mathbb Z$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Find algebraically the general solution in radians of $4\\cos^2x-1=0$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\cos x=\\pm1/2.$ The four first-turn angles π/3,2π/3,4π/3,5π/3 combine as ±π/3+πn."
+            }
+          ],
+          "answer": "$x=\\pm\\pi/3+\\pi n,\\ n\\in\\mathbb Z$"
+        },
+        "number": 19
+      },
+      {
+        "prompt": "若 $0^\\circ\\le x<360^\\circ$，方程 $2\\cos^2x+\\sin^2x=41/25$ 中cos x的值是多少？",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$2c^2+(1-c^2)=41/25\\Rightarrow c^2=16/25.$ 区间未限定象限，正负两值均可取，不能只给正值。"
+          }
+        ],
+        "answer": "$\\cos x=\\pm4/5$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "For $0^\\circ\\le x<360^\\circ$, what is cos x in $2\\cos^2x+\\sin^2x=41/25$?",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$2c^2+(1-c^2)=41/25\\Rightarrow c^2=16/25.$ No quadrant is specified, so both signs are attainable."
+            }
+          ],
+          "answer": "$\\cos x=\\pm4/5$"
+        },
+        "number": 20
+      },
+      {
+        "prompt": "在 $-2\\pi\\le x\\le2\\pi$ 用代数法解 $2\\sin x\\cos x=3\\sin x$。",
+        "concept": "complete",
+        "steps": [
+          {
+            "title": "推导与核对",
+            "body": "$\\sin x(2\\cos x-3)=0.$ cos x=3/2不可能；sin x=0给x=nπ，区间内n=-2,-1,0,1,2；两个端点都包含。"
+          }
+        ],
+        "answer": "$x=-2\\pi,-\\pi,0,\\pi,2\\pi$",
+        "printedPage": 323,
+        "pdfPage": 332,
+        "en": {
+          "prompt": "Solve $2\\sin x\\cos x=3\\sin x$ algebraically for $-2\\pi\\le x\\le2\\pi$.",
+          "steps": [
+            {
+              "title": "Derive and check",
+              "body": "$\\sin x(2\\cos x-3)=0.$ cos x=3/2 is impossible. sin x=0 gives x=nπ, with n=-2,-1,0,1,2 in the interval, including both endpoints."
+            }
+          ],
+          "answer": "$x=-2\\pi,-\\pi,0,\\pi,2\\pi$"
+        },
+        "number": 21
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "expectedSubparts": {
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-17": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-18": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-14": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-4": [
+        "a",
+        "b"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ],
+      "exercise-15": [
+        "a",
+        "b"
+      ],
+      "exercise-16": [
+        "a",
+        "b"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original-page and mathematics review completed by a reviewer independent of the author. Review record: audit/root-independent-review.json. Final file hashes recorded separately."
+  }
+}

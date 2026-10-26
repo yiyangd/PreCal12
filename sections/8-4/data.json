@@ -1,0 +1,2180 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "8-4",
+    "section": "8.4",
+    "title": "对数与指数方程",
+    "en": {
+      "title": "Logarithmic and Exponential Equations"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415
+      ],
+      "pdfPages": [
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424
+      ]
+    },
+    "concepts": [
+      {
+        "id": "log-equations",
+        "title": "对数方程与真数限制",
+        "summary": "$\\log_b L=\\log_b R$ 仅在 $b>0,b\\ne1,L>0,R>0$ 时等价于 $L=R$。先列原式定义域，再运算法则，最后代回。",
+        "method": [
+          {
+            "title": "列限制",
+            "body": "原式每个对数真数均须严格为正。"
+          },
+          {
+            "title": "解并验根",
+            "body": "合并对数或化指数式，解代数式，再排除原式无定义的候选值。"
+          }
+        ],
+        "pitfalls": [
+          "不要把 $\\log(u^2)$ 写成 $2\\log u$ 后丢失 $u<0$ 的解。"
+        ],
+        "en": {
+          "title": "Logarithmic equations and restrictions",
+          "summary": "$\\log_b L=\\log_b R$ is equivalent to $L=R$ when $b>0,b\\ne1,L>0,R>0$. Record the original domain, apply laws, then substitute back.",
+          "method": [
+            {
+              "title": "State restrictions",
+              "body": "Every original logarithm must have a strictly positive argument."
+            },
+            {
+              "title": "Solve and check",
+              "body": "Combine logs or exponentiate, solve the algebraic equation and reject undefined candidates."
+            }
+          ],
+          "pitfalls": [
+            "Rewriting $\\log(u^2)$ as $2\\log u$ can lose solutions with $u<0$."
+          ]
+        }
+      },
+      {
+        "id": "exponential-equations",
+        "title": "用对数解指数方程",
+        "summary": "对正数两边取相同合法底数的对数；用 $\\log(a^t)=t\\log a$ 把未知指数变成一次式。",
+        "method": [
+          {
+            "title": "隔离指数项",
+            "body": "先除去指数项外的乘数，再取对数。"
+          },
+          {
+            "title": "保留精确式",
+            "body": "先求含对数的精确值，最后按要求舍入并核对。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Solve exponential equations using logarithms",
+          "summary": "Take logarithms with the same valid base on both positive sides. The power law $\\log(a^t)=t\\log a$ turns an unknown exponent into a linear expression.",
+          "method": [
+            {
+              "title": "Isolate the exponential",
+              "body": "Divide out any multiplier before taking logarithms."
+            },
+            {
+              "title": "Keep exact values",
+              "body": "Keep an exact logarithmic expression until final rounding and verification."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "models",
+        "title": "增长、衰减与科学模型",
+        "summary": "$Q=Q_0b^{t/d}$，$Q_0>0,b>0,b\\ne1$。倍增取 $b=2$，半衰取 $b=1/2$；时间单位必须一致。",
+        "method": [
+          {
+            "title": "建立比值",
+            "body": "除以初始量，取对数求时间或周期。"
+          },
+          {
+            "title": "解释",
+            "body": "检验正量、实际时间与单位，近似值注明精度。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Growth, decay and scientific models",
+          "summary": "$Q=Q_0b^{t/d}$, where $Q_0>0,b>0,b\\ne1$. Use $b=2$ for doubling and $b=1/2$ for half-life; time units must agree.",
+          "method": [
+            {
+              "title": "Form a ratio",
+              "body": "Divide by the initial quantity, then take logs to find time or period."
+            },
+            {
+              "title": "Interpret",
+              "body": "Check positivity, practical time and units; state approximation precision."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "finance",
+        "title": "复利与等额支付",
+        "summary": "$A=P(1+i)^n$；$PV=R[1-(1+i)^{-n}]/i$。$i$ 是每期利率，$n$ 是期数。",
+        "method": [
+          {
+            "title": "换算每期",
+            "body": "半年复利用年利率除以2；日复利用365天约定。"
+          },
+          {
+            "title": "求期数",
+            "body": "取对数求 $n$，再换成年；离散支付须检查完整付款次数。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Compound interest and equal payments",
+          "summary": "$A=P(1+i)^n$ and $PV=R[1-(1+i)^{-n}]/i$. Here $i$ is the rate per period and $n$ the number of periods.",
+          "method": [
+            {
+              "title": "Convert the rate",
+              "body": "Divide APR by 2 for semi-annual compounding; use a 365-day year for daily compounding."
+            },
+            {
+              "title": "Find periods",
+              "body": "Use logarithms to solve for $n$, then convert to years; check complete discrete payments."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "extensions",
+        "title": "结构、数列与三角联结",
+        "summary": "换底使同一未知量的不同底对数可合并；复合对数、数列和三角方程还须保留各自定义域。",
+        "method": [
+          {
+            "title": "选合适变量",
+            "body": "令 $u=\\log x$ 或 $s=\\sin x$，并记录限制。"
+          },
+          {
+            "title": "返回原变量",
+            "body": "解辅助方程后检查原式、区间及整数条件。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Structure, sequences and trigonometric connections",
+          "summary": "Change of base combines logs with different bases. Composite logarithms, sequences and trig equations retain their own domain restrictions.",
+          "method": [
+            {
+              "title": "Choose a variable",
+              "body": "Set $u=\\log x$ or $s=\\sin x$ and record restrictions."
+            },
+            {
+              "title": "Return to the original",
+              "body": "Check the original equation, interval and integer conditions after solving the auxiliary equation."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "(growth) 想一想生活中体现指数增长的情境。电脑有1 TB，即1 048 576 MB。第1天储存1 MB，此后每天新增数据为前一天的两倍。(prediction) 预测何日空间不足。(notice) 你会在哪一天意识到空间不足？(extra-storage) 若再买15 TB，能继续倍增多久？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "生活中的增长示例",
+            "body": "例如在固定正利率下不提款的复利储蓄，每期余额乘以相同的因子。若初始1000元、每年利率5%，则 $A(t)=1000(1.05)^t$；第0、1、2年为1000、1050、1102.50元。此为说明模型的示例，不是个人账户数据。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "第 $n$ 天新增 $2^{n-1}$ MB，累计 $S_n=2^n-1$ MB。$S_{20}=1\\,048\\,575$ 尚余1 MB；第21天需再存1 048 576 MB，放不下。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "意识到不足属开放判断；例如第19天已用约50%，第20天已用99.9999%，应在此之前安排扩容。总容量16 TB $=2^{24}$ MB，可容纳至第24天的 $2^{24}-1$ MB，第25天不足；比原来多4个完整日。"
+          }
+        ],
+        "answer": "指数增长示例：固定正利率下的复利储蓄。第21天不足；觉察日期为合理个人判断；加15 TB后第25天不足，多4天。",
+        "printedPage": 404,
+        "pdfPage": 413,
+        "en": {
+          "prompt": "(growth) Think of situations in your life that show exponential growth. A computer has 1 TB = 1 048 576 MB. Store 1 MB on day 1 and twice the previous day’s amount on each successive day. (prediction) Predict when space runs out. (notice) On what day will you realise you are running out? (extra-storage) With an additional 15 TB, how long can doubling continue?",
+          "steps": [
+            {
+              "title": "A growth example",
+              "body": "One example is compound-interest savings with a fixed positive rate and no withdrawals: each period multiplies the balance by the same factor. With an initial 1000 dollars at 5% yearly, $A(t)=1000(1.05)^t$, giving 1000, 1050, and 1102.50 dollars at years 0, 1, and 2. This illustrates a model, rather than personal account data."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Day $n$ adds $2^{n-1}$ MB; total use is $S_n=2^n-1$ MB. $S_{20}=1\\,048\\,575$ leaves 1 MB. The addition of 1 048 576 MB on day 21 does not fit."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Awareness is an open judgement: day 19 is about 50% full and day 20 is 99.9999% full, so expansion should be arranged before then. With 16 TB $=2^{24}$ MB total, $2^{24}-1$ MB fits through day 24, but day 25 fails: four additional complete days."
+            }
+          ],
+          "answer": "A growth example is compound-interest savings at a fixed positive rate. Space fails on day 21; awareness is an open judgement. Adding 15 TB delays failure to day 25, four extra days.",
+          "label": "Opening: computer disk space"
+        },
+        "id": "opening-disk",
+        "type": "practice",
+        "label": "开篇：电脑容量",
+        "subpartIds": [
+          "growth",
+          "prediction",
+          "notice",
+          "extrastorage"
+        ],
+        "sourceImage": "assets/8-4-disk-table.png"
+      },
+      {
+        "prompt": "对 $2\\log x=\\log36$：(a) 对左边用对数法则；(b) 描述如何解新方程；(c) 求新方程的两个 $x$ 值。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 原式要求 $x>0$。幂法则给 $\\log(x^2)=\\log36$。(b) 同底对数相等给 $x^2=36$。(c) 新方程有 $x=\\pm6$；其中负值需回原式检查。"
+          }
+        ],
+        "answer": "(a) $\\log(x^2)=\\log36$；(b) $x^2=36$；(c) $x=\\pm6$。",
+        "printedPage": 405,
+        "pdfPage": 414,
+        "en": {
+          "prompt": "For $2\\log x=\\log36$: (a) apply a logarithm law to the left side; (b) describe how to solve the resulting equation; (c) find two values satisfying that rewritten equation.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) The original requires $x>0$; the power law gives $\\log(x^2)=\\log36$. (b) Equate arguments to get $x^2=36$. (c) The rewritten equation has $x=\\pm6$; the negative candidate must be checked in the original."
+            }
+          ],
+          "answer": "(a) $\\log(x^2)=\\log36$; (b) $x^2=36$; (c) $x=\\pm6$.",
+          "label": "Investigate 1"
+        },
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "(a) 描述图解原方程 $2\\log x=\\log36$ 的方法。(b) 用此方法求解。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 绘 $y=2\\log x$（仅 $x>0$）和水平线 $y=\\log36\\approx1.5563$。(b) 交点为 $(6,1.5563\\ldots)$，横坐标给 $x=6$；没有负半轴上的原图。"
+          }
+        ],
+        "answer": "$x=6$。",
+        "printedPage": 405,
+        "pdfPage": 414,
+        "en": {
+          "prompt": "(a) Describe how to solve the original $2\\log x=\\log36$ graphically. (b) Use the method to solve it.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Plot $y=2\\log x$ for $x>0$ and the horizontal line $y=\\log36\\approx1.5563$. (b) Their intersection is $(6,1.5563\\ldots)$, so $x=6$; the original log curve has no negative-$x$ branch."
+            }
+          ],
+          "answer": "$x=6$.",
+          "label": "Investigate 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究2",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/8-4-investigate-2-solution.png"
+      },
+      {
+        "prompt": "哪些 $x$ 值满足原方程 $2\\log x=\\log36$？解释。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$x=6>0$ 且 $2\\log6=\\log36$。$x=-6$ 使 $\\log x$ 无实数值，故排除。"
+          }
+        ],
+        "answer": "只有 $x=6$。",
+        "printedPage": 405,
+        "pdfPage": 414,
+        "en": {
+          "prompt": "Which values satisfy the original $2\\log x=\\log36$? Explain.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$x=6>0$ and $2\\log6=\\log36$. At $x=-6$, $\\log x$ has no real value, so reject it."
+            }
+          ],
+          "answer": "Only $x=6$.",
+          "label": "Reflect and Respond 3"
+        },
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "反思3"
+      },
+      {
+        "prompt": "Adam与Sarah解 $2(25^{x+1})=250$。Adam：$25^{x+1}=125$；$(5^2)^{x+1}=5^3$；$5^{2(x+1)}=5^3$；$2(x+1)=3$，$x=0.5$。Sarah：$25^{x+1}=125$；$\\log25^{x+1}=\\log125$；$(x+1)\\log25=\\log125$；$x=(\\log125-\\log25)/\\log25=1/2$。解释各步。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "Adam依次除以2、把25和125改写为5的幂、用幂的乘方法则、同底指数函数单射性比较指数，解 $2x+2=3$ 得 $x=1/2$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "Sarah依次除以2、对正数两边取常用对数、用幂法则、展开并隔离 $x$。分子 $\\log125-\\log25=\\log5$，分母 $\\log25=2\\log5\\ne0$，所以 $x=1/2$。代回 $2(25^{3/2})=250$。"
+          }
+        ],
+        "answer": "两种方法均得 $x=1/2$。",
+        "printedPage": 405,
+        "pdfPage": 414,
+        "en": {
+          "prompt": "Adam and Sarah solve $2(25^{x+1})=250$. Adam writes $25^{x+1}=125$, $(5^2)^{x+1}=5^3$, $5^{2(x+1)}=5^3$, then $2(x+1)=3$, $x=0.5$. Sarah writes $25^{x+1}=125$, $\\log25^{x+1}=\\log125$, $(x+1)\\log25=\\log125$, then $x=(\\log125-\\log25)/\\log25=1/2$. Explain each step.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Adam divides by 2, rewrites 25 and 125 as powers of 5, applies power of a power, then equates exponents by injectivity. Solving $2x+2=3$ gives $x=1/2$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Sarah divides by 2, takes common logs of positive sides, applies the power law and isolates $x$. The numerator is $\\log5$ and denominator $2\\log5\\ne0$, giving $x=1/2$. Substitution gives $2(25^{3/2})=250$."
+            }
+          ],
+          "answer": "Both methods give $x=1/2$.",
+          "label": "Investigate 4"
+        },
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "探究4"
+      },
+      {
+        "prompt": "给出Adam第4步和Sarah第4步的另一个完成方法。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "Adam可对 $5^{2(x+1)}=5^3$ 取 $\\log_5$ 得 $2(x+1)=3$，再 $x=3/2-1=1/2$。Sarah可直接除以 $\\log25$：$x+1=\\log125/\\log25=3/2$，所以 $x=1/2$。"
+          }
+        ],
+        "answer": "均可用比值 $3/2$ 后减1。",
+        "printedPage": 405,
+        "pdfPage": 414,
+        "en": {
+          "prompt": "Give another way to complete step 4 of Adam’s work and step 4 of Sarah’s work.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Adam can take $\\log_5$ of $5^{2(x+1)}=5^3$ to obtain $2(x+1)=3$, hence $x=3/2-1=1/2$. Sarah can divide directly by $\\log25$: $x+1=\\log125/\\log25=3/2$, hence $x=1/2$."
+            }
+          ],
+          "answer": "Both alternatives obtain $3/2$ and then subtract 1.",
+          "label": "Investigate 5"
+        },
+        "id": "investigate-5",
+        "type": "practice",
+        "label": "探究5"
+      },
+      {
+        "prompt": "你更喜欢哪人的方法？解释。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "示例选择Adam法：25和125都是5的幂，$2(x+1)=3$ 很短且得精确值。也可合理选择Sarah法，因为它适用于更多底数组合。"
+          }
+        ],
+        "answer": "开放选择；理由需对应实际方法。",
+        "printedPage": 406,
+        "pdfPage": 415,
+        "en": {
+          "prompt": "Which person’s method do you prefer? Explain.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "A sample preference is Adam’s method: 25 and 125 are powers of 5, so $2(x+1)=3$ is short and exact. Sarah’s method is also a reasonable preference because it works for more base combinations."
+            }
+          ],
+          "answer": "Open choice with a reason tied to the methods.",
+          "label": "Reflect and Respond 6"
+        },
+        "id": "investigate-6",
+        "type": "practice",
+        "label": "反思6"
+      },
+      {
+        "prompt": "什么指数方程能用Adam法？什么方程需要Sarah法？解释。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "若各底数可方便表示为同一合法底数的幂，如 $4^x=8$，可得 $2x=3$。若不能方便写为共同底数，如 $2^x=7$，用对数得 $x=\\log7/\\log2$。这里“需要”指教材的代数方法选择，并非排除图解法。"
+          }
+        ],
+        "answer": "共同幂底数用Adam；一般正底指数方程可用Sarah。",
+        "printedPage": 406,
+        "pdfPage": 415,
+        "en": {
+          "prompt": "What exponential equations can be solved with Adam’s method, and what equations need Sarah’s method? Explain.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "When bases can conveniently be written as powers of one valid common base, such as $4^x=8$, equate exponents: $2x=3$. For $2^x=7$, no convenient common-power representation is available, so logs give $x=\\log7/\\log2$. This comparison concerns the textbook’s algebraic methods; graphing is another option."
+            }
+          ],
+          "answer": "Use Adam’s approach for common-power bases; Sarah’s applies to general positive-base exponential equations.",
+          "label": "Reflect and Respond 7"
+        },
+        "id": "investigate-7",
+        "type": "practice",
+        "label": "反思7"
+      },
+      {
+        "prompt": "Sarah第2步能改用别的底数的对数吗？说明。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "可以，任取 $b>0,b\\ne1$，有 $(x+1)\\log_b25=\\log_b125$。换底后 $\\log_b125/\\log_b25=\\log125/\\log25=3/2$，故仍得 $x=1/2$。"
+          }
+        ],
+        "answer": "任意合法底数均可。",
+        "printedPage": 406,
+        "pdfPage": 415,
+        "en": {
+          "prompt": "Could Sarah use logarithms to another base in step 2? Justify.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Yes. For any $b>0,b\\ne1$, $(x+1)\\log_b25=\\log_b125$. Change of base gives $\\log_b125/\\log_b25=\\log125/\\log25=3/2$, so $x=1/2$."
+            }
+          ],
+          "answer": "Any valid logarithm base works.",
+          "label": "Reflect and Respond 8"
+        },
+        "id": "investigate-8",
+        "type": "practice",
+        "label": "反思8"
+      },
+      {
+        "prompt": "解：(a) $\\log_6(2x-1)=\\log_6 11$；(b) $\\log(8x+4)=1+\\log(x+1)$；(c) $\\log_2((x+3)^2)=4$。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x>1/2$。$2x-1=11\\Rightarrow x=6$；原真数为11，与右边相同。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 原域 $x>-1/2$。合并为 $\\log[(8x+4)/(x+1)]=1$，即 $8x+4=10(x+1)$，候选 $x=-3$。它使两个原真数均为负，故无解。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 只需 $x\\ne-3$。$(x+3)^2=2^4=16\\Rightarrow x+3=\\pm4$，所以 $x=1,-7$；代回真数均为16，对数均为4。"
+          }
+        ],
+        "answer": "(a) $6$；(b) 无实数解；(c) $-7,1$。",
+        "printedPage": 406,
+        "pdfPage": 415,
+        "en": {
+          "prompt": "Solve: (a) $\\log_6(2x-1)=\\log_6 11$; (b) $\\log(8x+4)=1+\\log(x+1)$; (c) $\\log_2((x+3)^2)=4$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x>1/2$. Equate arguments: $2x-1=11\\Rightarrow x=6$. The original argument is 11, matching the right side."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) The original domain is $x>-1/2$. Combining gives $\\log[(8x+4)/(x+1)]=1$, so $8x+4=10(x+1)$ and candidate $x=-3$. Both original arguments are negative there; no solution."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Require only $x\\ne-3$. $(x+3)^2=16$ gives $x+3=\\pm4$, so $x=1,-7$. Both produce argument 16 and logarithm 4."
+            }
+          ],
+          "answer": "(a) $6$; (b) no real solution; (c) $-7,1$.",
+          "label": "Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "例题1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "(a) 如何用 $y=\\log_6(2x-1)-\\log_6 11$ 的图求解？(b) 为什么负数的实对数无定义？(c) 若在例题1(c)使用幂法则，会怎样影响解？",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 求差函数的 $x$ 截距；$2x-1=11$ 给 $(6,0)$。(b) 合法正底 $b$ 的任何实数幂 $b^t$ 都大于0，因此不可能等于负数。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 直接写 $2\\log_2(x+3)=4$ 会强加 $x>-3$ 而漏掉 $x=-7$。完整等价式应为 $2\\log_2|x+3|=4$，得 $|x+3|=4$，保留两解。"
+          }
+        ],
+        "answer": "(a) $x$截距6；(b) 正底实幂恒正；(c) 需绝对值以保留 $-7$。",
+        "printedPage": 407,
+        "pdfPage": 416,
+        "en": {
+          "prompt": "(a) How could the graph of $y=\\log_6(2x-1)-\\log_6 11$ solve the equation? (b) Why is a real logarithm of a negative number undefined? (c) What happens if the power law is used in Example 1(c)?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Find the $x$-intercept of the difference function: $2x-1=11$ gives $(6,0)$. (b) Every real power $b^t$ of a valid positive base is positive, so it cannot equal a negative number."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Writing $2\\log_2(x+3)=4$ adds $x>-3$ and loses $x=-7$. The full equivalent is $2\\log_2|x+3|=4$, giving $|x+3|=4$ and both solutions."
+            }
+          ],
+          "answer": "(a) $x$-intercept 6; (b) positive-base real powers are positive; (c) absolute values preserve $-7$.",
+          "label": "Example 1 margin questions"
+        },
+        "id": "margin-example-1",
+        "type": "practice",
+        "label": "例题1旁注",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "解：(a) $\\log_7x+\\log_7 4=\\log_7 12$；(b) $\\log_2(x-6)=3-\\log_2(x-4)$；(c) $\\log_3((x^2-8x)^5)=10$。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x>0$；$4x=12\\Rightarrow x=3$，原式 $\\log_7 12=\\log_7 12$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $x>6$；$(x-6)(x-4)=8\\Rightarrow x^2-10x+16=0\\Rightarrow x=2,8$。仅8合法；原式 $\\log_2 2=3-\\log_2 4=1$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 五次幂为正要求 $x^2-8x>0$，即 $x<0$ 或 $x>8$。$(x^2-8x)^5=3^{10}$ 给 $x^2-8x=9$，因而 $(x-9)(x+1)=0$。$x=-1,9$ 都令原真数 $9^5=3^{10}$。"
+          }
+        ],
+        "answer": "(a)3；(b)8；(c)$-1,9$。",
+        "printedPage": 408,
+        "pdfPage": 417,
+        "en": {
+          "prompt": "Solve: (a) $\\log_7x+\\log_7 4=\\log_7 12$; (b) $\\log_2(x-6)=3-\\log_2(x-4)$; (c) $\\log_3((x^2-8x)^5)=10$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x>0$; $4x=12$ gives $x=3$, and both sides equal $\\log_7 12$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $x>6$; $(x-6)(x-4)=8$ gives $x^2-10x+16=0$ and candidates 2,8. Only 8 is valid; $\\log_2 2=3-\\log_2 4=1$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Positivity of the fifth power requires $x^2-8x>0$, so $x<0$ or $x>8$. From $(x^2-8x)^5=3^{10}$ obtain $x^2-8x=9$, so $(x-9)(x+1)=0$. Both $-1,9$ produce original argument $9^5=3^{10}$."
+            }
+          ],
+          "answer": "(a)3; (b)8; (c)$-1,9$.",
+          "label": "Your Turn 1"
+        },
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "跟进练习1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "解并精确至小数点后两位：(a) $4^x=605$；(b) $8(3^{2x})=568$；(c) $4^{2x-1}=3^{x+2}$。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x\\log4=\\log605$，所以 $x=\\log605/\\log4\\approx4.62$。精确式代入给 $4^x=605$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $3^{2x}=71$，$2x\\log3=\\log71$，$x=\\log71/(2\\log3)\\approx1.94$。代回 $8\\cdot71=568$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $(2x-1)\\log4=(x+2)\\log3$，$x(2\\log4-\\log3)=\\log4+2\\log3$，故 $x=(\\log4+2\\log3)/(2\\log4-\\log3)\\approx2.14$。分母 $\\log(16/3)>0$，解唯一。"
+          }
+        ],
+        "answer": "(a)4.62；(b)1.94；(c)2.14（约）。",
+        "printedPage": 408,
+        "pdfPage": 417,
+        "en": {
+          "prompt": "Solve, rounding to two decimal places: (a) $4^x=605$; (b) $8(3^{2x})=568$; (c) $4^{2x-1}=3^{x+2}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x\\log4=\\log605$, so $x=\\log605/\\log4\\approx4.62$. The exact expression gives $4^x=605$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $3^{2x}=71$; $2x\\log3=\\log71$ gives $x=\\log71/(2\\log3)\\approx1.94$. Substitution yields $8\\cdot71=568$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $(2x-1)\\log4=(x+2)\\log3$, hence $x(2\\log4-\\log3)=\\log4+2\\log3$. Thus $x=(\\log4+2\\log3)/(2\\log4-\\log3)\\approx2.14$. The nonzero denominator $\\log(16/3)>0$ ensures uniqueness."
+            }
+          ],
+          "answer": "(a)4.62; (b)1.94; (c)2.14 (approximately).",
+          "label": "Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "例题2",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "(a) 对例题2(a)，你更喜欢取对数还是改写对数形式？(b) 为什么 $8(3^{2x})$ 不能写成 $24^{2x}$？(c) 解释例题2(b)步骤并给出另一种对数解法。(d) 还可怎样核验例题2(c)？",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 示例选择 $x=\\log_4 605$，直接表达未知指数；共同对数法也有效。(b) $24^{2x}=8^{2x}3^{2x}$，8也被乘方，原式的8未被乘方；如 $x=0$，两式分别为8与1。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 先除以8得 $3^{2x}=71$，取对数并除以 $2\\log3$。另一法为 $2x=\\log_3 71$，再除以2。(d) 绘两条正指数曲线 $y=4^{2x-1}$ 和 $y=3^{x+2}$，交点横坐标约2.14；也可代入未舍入的精确式比两边。"
+          }
+        ],
+        "answer": "偏好开放；不能对乘数错误使用幂法则；另用换底或图解核验。",
+        "printedPage": 409,
+        "pdfPage": 418,
+        "en": {
+          "prompt": "(a) For Example 2(a), which logarithm method do you prefer? (b) Why cannot $8(3^{2x})$ be written as $24^{2x}$? (c) Explain Example 2(b) and give another logarithm approach. (d) Give another way to verify Example 2(c).",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) A sample preference is $x=\\log_4 605$, which directly names the unknown exponent; common logs also work. (b) $24^{2x}=8^{2x}3^{2x}$ raises 8 to a power, unlike the original. At $x=0$, the expressions are 8 and 1."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Divide by 8 to obtain $3^{2x}=71$, take logs and divide by $2\\log3$. Alternatively, write $2x=\\log_3 71$ and divide by 2. (d) Graph $y=4^{2x-1}$ and $y=3^{x+2}$: their intersection has $x\\approx2.14$. Substituting the unrounded exact value is another check."
+            }
+          ],
+          "answer": "Preference is open; do not apply an exponent to an outside multiplier. Change of base or graphing gives alternative checks.",
+          "label": "Example 2 margin questions"
+        },
+        "id": "margin-example-2",
+        "type": "practice",
+        "label": "例题2旁注",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "解，保留两位小数：(a) $2^x=2500$；(b) $5^{x-3}=1700$；(c) $6^{3x+1}=8^{x+3}$。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x=\\log2500/\\log2\\approx11.29$。(b) $(x-3)\\log5=\\log1700$，$x=3+\\log1700/\\log5\\approx7.62$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $(3x+1)\\log6=(x+3)\\log8$，$x=(3\\log8-\\log6)/(3\\log6-\\log8)\\approx1.35$。各底数均合法，精确式令原指数对数相等，因此原正数相等。"
+          }
+        ],
+        "answer": "(a)11.29；(b)7.62；(c)1.35。",
+        "printedPage": 409,
+        "pdfPage": 418,
+        "en": {
+          "prompt": "Solve to two decimal places: (a) $2^x=2500$; (b) $5^{x-3}=1700$; (c) $6^{3x+1}=8^{x+3}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x=\\log2500/\\log2\\approx11.29$. (b) $(x-3)\\log5=\\log1700$, so $x=3+\\log1700/\\log5\\approx7.62$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $(3x+1)\\log6=(x+3)\\log8$ gives $x=(3\\log8-\\log6)/(3\\log6-\\log8)\\approx1.35$. The bases are valid; equality of logs at the exact values verifies equality of the positive original sides."
+            }
+          ],
+          "answer": "(a)11.29; (b)7.62; (c)1.35.",
+          "label": "Your Turn 2"
+        },
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "跟进练习2",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "肉食恐龙头骨长 $s$ 米与体重 $m$ 千克满足 $3.6022\\log s=\\log m-3.4444$。Albertosaurus头骨长0.78 m，求体重，精确至千克。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$s,m>0$。代入 $s=0.78$：$\\log m=3.6022\\log0.78+3.4444\\approx3.055703$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "$m=10^{3.6022\\log0.78+3.4444}\\approx1136.85$ kg，舍入得1137 kg。按精确式代回满足模型。"
+          }
+        ],
+        "answer": "约1137 kg。",
+        "printedPage": 410,
+        "pdfPage": 419,
+        "en": {
+          "prompt": "For a carnivorous dinosaur, skull length $s$ metres and mass $m$ kilograms satisfy $3.6022\\log s=\\log m-3.4444$. Find the mass of an Albertosaurus with skull length 0.78 m, to the nearest kilogram.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$s,m>0$. Substitute $s=0.78$: $\\log m=3.6022\\log0.78+3.4444\\approx3.055703$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "$m=10^{3.6022\\log0.78+3.4444}\\approx1136.85$ kg, rounding to 1137 kg. The exact expression satisfies the model."
+            }
+          ],
+          "answer": "Approximately 1137 kg.",
+          "label": "Example 3"
+        },
+        "id": "example-3",
+        "type": "example",
+        "label": "例题3"
+      },
+      {
+        "prompt": "用例题3的模型求体重5500 kg的Tyrannosaurus rex的头骨长，精确至0.01 m。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$\\log s=(\\log5500-3.4444)/3.6022$；所以 $s=10^{(\\log5500-3.4444)/3.6022}\\approx1.21$ m，所得值为正且符合模型。"
+          }
+        ],
+        "answer": "约1.21 m。",
+        "printedPage": 410,
+        "pdfPage": 419,
+        "en": {
+          "prompt": "Using $3.6022\\log s=\\log m-3.4444$ from Example 3, find the skull length of a Tyrannosaurus rex with estimated mass 5500 kg, to the nearest hundredth of a metre.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$\\log s=(\\log5500-3.4444)/3.6022$, hence $s=10^{(\\log5500-3.4444)/3.6022}\\approx1.21$ m. It is positive and satisfies the model."
+            }
+          ],
+          "answer": "Approximately 1.21 m.",
+          "label": "Your Turn 3"
+        },
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "跟进练习3"
+      },
+      {
+        "prompt": "碳14半衰期5730年。Head-Smashed-In Buffalo Jump最古老的骨头剩49.5%的碳14，发现时这些骨头多老？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "设年龄 $t\\ge0$ 年。$0.495m_0=m_0(1/2)^{t/5730}$，约去正的 $m_0$ 得 $0.495=(1/2)^{t/5730}$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "取对数：$t=5730\\log0.495/\\log0.5\\approx5813.08$ 年。比例略小于一半，年龄略大于5730年，合理。"
+          }
+        ],
+        "answer": "约5813年。",
+        "printedPage": 411,
+        "pdfPage": 420,
+        "en": {
+          "prompt": "Carbon-14 has half-life 5730 years. The oldest bones at Head-Smashed-In Buffalo Jump retained 49.5% of their carbon-14. How old were they when found?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Let age $t\\ge0$ years. $0.495m_0=m_0(1/2)^{t/5730}$; cancelling positive $m_0$ gives $0.495=(1/2)^{t/5730}$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Taking logs gives $t=5730\\log0.495/\\log0.5\\approx5813.08$ years. The fraction is slightly below one half, so an age slightly above 5730 years is reasonable."
+            }
+          ],
+          "answer": "Approximately 5813 years.",
+          "label": "Example 4"
+        },
+        "id": "example-4",
+        "type": "example",
+        "label": "例题4"
+      },
+      {
+        "prompt": "将例题4的指数式转为对数式求解。你偏好哪种方法？为什么？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$0.495=(0.5)^{t/5730}$ 等价于 $\\log_{0.5}0.495=t/5730$，所以 $t=5730\\log_{0.5}0.495\\approx5813$ 年。可偏好此法，因为一步隔离指数；常用对数法便于普通计算器。"
+          }
+        ],
+        "answer": "年龄仍约5813年；偏好开放。",
+        "printedPage": 411,
+        "pdfPage": 420,
+        "en": {
+          "prompt": "Convert the exponential equation in Example 4 to logarithmic form. Which approach do you prefer, and why?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$0.495=(0.5)^{t/5730}$ is equivalent to $\\log_{0.5}0.495=t/5730$, so $t=5730\\log_{0.5}0.495\\approx5813$ years. This approach directly isolates the exponent; common logs may be preferred for a basic calculator."
+            }
+          ],
+          "answer": "Age is still about 5813 years; preference is open.",
+          "label": "Example 4 margin question"
+        },
+        "id": "margin-example-4",
+        "type": "practice",
+        "label": "例题4旁注"
+      },
+      {
+        "prompt": "倍增模型 $N(t)=N_0 2^{t/d}$。某培养物最初1000个E. coli，90 min后19 500个。求倍增周期 $d$，精确至分钟。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$19\\,500=1000\\cdot2^{90/d}$，故 $19.5=2^{90/d}$。$\\log19.5=(90/d)\\log2$，$d=90\\log2/\\log19.5\\approx21.00$ min。$d>0$，代入未舍入值正好给19 500。"
+          }
+        ],
+        "answer": "约21 min。",
+        "printedPage": 411,
+        "pdfPage": 420,
+        "en": {
+          "prompt": "The doubling model is $N(t)=N_0 2^{t/d}$. A culture initially has 1000 E. coli and has 19 500 after 90 min. Find its doubling period $d$, to the nearest minute.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$19\\,500=1000\\cdot2^{90/d}$, so $19.5=2^{90/d}$. Then $\\log19.5=(90/d)\\log2$, giving $d=90\\log2/\\log19.5\\approx21.00$ min. The positive unrounded period reproduces 19 500."
+            }
+          ],
+          "answer": "Approximately 21 min.",
+          "label": "Your Turn 4"
+        },
+        "id": "your-turn-4",
+        "type": "practice",
+        "label": "跟进练习4"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "解，给精确值：(a) $15=12+\\log x$；(b) $\\log_5(2x-3)=2$；(c) $4\\log_3x=\\log_3 81$；(d) $2=\\log(x-8)$。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x>0$；$\\log x=3\\Rightarrow x=10^3=1000$。(b) $x>3/2$；$2x-3=25\\Rightarrow x=14$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $x>0$；$4\\log_3x=4$，$x=3$。(d) $x>8$；$x-8=100\\Rightarrow x=108$。分别代入真数为1000、25、3、100，均满足原式。"
+          }
+        ],
+        "answer": "(a)1000；(b)14；(c)3；(d)108。",
+        "printedPage": 412,
+        "pdfPage": 421,
+        "en": {
+          "prompt": "Solve exactly: (a) $15=12+\\log x$; (b) $\\log_5(2x-3)=2$; (c) $4\\log_3x=\\log_3 81$; (d) $2=\\log(x-8)$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x>0$; $\\log x=3$ gives $x=1000$. (b) $x>3/2$; $2x-3=25$ gives $x=14$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $x>0$; $4\\log_3x=4$ gives $x=3$. (d) $x>8$; $x-8=100$ gives $x=108$. Arguments 1000,25,3,100 verify the original equations."
+            }
+          ],
+          "answer": "(a)1000; (b)14; (c)3; (d)108."
+        },
+        "number": 1,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "解至两位小数：(a) $4(7^x)=92$；(b) $2^{x/3}=11$；(c) $6^{x-1}=271$；(d) $4^{2x+1}=54$。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $7^x=23$，$x=\\log23/\\log7\\approx1.61$。(b) $(x/3)\\log2=\\log11$，$x=3\\log11/\\log2\\approx10.38$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $x=1+\\log271/\\log6\\approx4.13$。(d) $2x+1=\\log54/\\log4$，$x=(\\log54/\\log4-1)/2\\approx0.94$。将各精确式放回指数即得到右边正数。"
+          }
+        ],
+        "answer": "(a)1.61；(b)10.38；(c)4.13；(d)0.94。",
+        "printedPage": 412,
+        "pdfPage": 421,
+        "en": {
+          "prompt": "Solve to two decimal places: (a) $4(7^x)=92$; (b) $2^{x/3}=11$; (c) $6^{x-1}=271$; (d) $4^{2x+1}=54$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $7^x=23$, so $x=\\log23/\\log7\\approx1.61$. (b) $(x/3)\\log2=\\log11$, so $x=3\\log11/\\log2\\approx10.38$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $x=1+\\log271/\\log6\\approx4.13$. (d) $2x+1=\\log54/\\log4$ gives $x=(\\log54/\\log4-1)/2\\approx0.94$. The exact expressions reproduce the positive right sides."
+            }
+          ],
+          "answer": "(a)1.61; (b)10.38; (c)4.13; (d)0.94."
+        },
+        "number": 2,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "Hamdi解 $\\log_3(x-8)-\\log_3(x-6)=1$ 得候选 $x=5$，并检查 $\\log_3[(5-8)/(5-6)]=\\log_3 3=1$。你同意此检查吗？解释。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "原式要求 $x>8$。$x=5$ 时 $x-8=-3$、$x-6=-1$，两个原对数均无定义。商为正不能使原式成立；合并对数法则要求两个原真数各自为正。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "代数候选由 $(x-8)/(x-6)=3$ 得 $x-8=3x-18$，$x=5$，被排除；因此原方程无解。"
+          }
+        ],
+        "answer": "不同意；$5$ 是增根，原方程无解。",
+        "printedPage": 412,
+        "pdfPage": 421,
+        "en": {
+          "prompt": "Hamdi solves $\\log_3(x-8)-\\log_3(x-6)=1$, finds candidate $x=5$, and checks $\\log_3[(5-8)/(5-6)]=\\log_3 3=1$. Do you agree with the check? Explain.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "The original requires $x>8$. At $x=5$, the arguments are $-3,-1$, so both original logs are undefined. A positive quotient does not validate the original; the quotient law requires each original argument to be positive."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "The algebraic candidate comes from $(x-8)/(x-6)=3$: $x-8=3x-18$, so $x=5$. Rejecting it leaves no real solution."
+            }
+          ],
+          "answer": "Disagree; 5 is extraneous and the original has no real solution."
+        },
+        "number": 3
+      },
+      {
+        "prompt": "判断所列候选根是否为增根：(a) $\\log_7x+\\log_7(x-1)=\\log_7(4x)$，$0,5$；(b) $\\log_6(x^2-24)-\\log_6x=\\log_6 5$，$3,-8$；(c) $\\log_3(x+3)+\\log_3(x+5)=1$，$-2,-6$；(d) $\\log_2(x-2)=2-\\log_2(x-5)$，$1,6$。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x>1$，0无定义；5给 $5(4)=20=4(5)$，合法。(b) $x>\\sqrt{24}$；3使 $x^2-24=-15$，$-8$ 使 $\\log_6x$ 无定义，两者均为增根。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $x>-3$；$-2$ 的真数1、3乘积3，合法；$-6$无定义。(d) $x>5$；1无定义；6给 $\\log_2 4=2-\\log_2 1=2$，合法。"
+          }
+        ],
+        "answer": "增根：(a)0；(b)3、−8；(c)−6；(d)1。",
+        "printedPage": 413,
+        "pdfPage": 422,
+        "en": {
+          "prompt": "Identify extraneous candidates: (a) $\\log_7x+\\log_7(x-1)=\\log_7(4x)$, candidates 0,5; (b) $\\log_6(x^2-24)-\\log_6x=\\log_6 5$, candidates 3,−8; (c) $\\log_3(x+3)+\\log_3(x+5)=1$, candidates −2,−6; (d) $\\log_2(x-2)=2-\\log_2(x-5)$, candidates 1,6.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x>1$: 0 is undefined; 5 gives $5(4)=20=4(5)$ and is valid. (b) $x>\\sqrt{24}$: 3 gives argument −15 and −8 makes $\\log_6x$ undefined, so both are extraneous."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $x>-3$: −2 has arguments 1 and 3 with product 3 and is valid; −6 is undefined. (d) $x>5$: 1 is undefined; 6 gives $\\log_2 4=2-\\log_2 1=2$ and is valid."
+            }
+          ],
+          "answer": "Extraneous: (a)0; (b)3,−8; (c)−6; (d)1."
+        },
+        "number": 4,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "解：(a) $2\\log_3x=\\log_3 32+\\log_3 2$；(b) $\\frac32\\log_7x=\\log_7 125$；(c) $\\log_2x-\\log_2 3=5$；(d) $\\log_6x=2-\\log_6 4$。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "各题均要求 $x>0$。(a) $x^2=64$，只取 $x=8$。(b) $x^{3/2}=125$，$x=125^{2/3}=25$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $\\log_2(x/3)=5$，$x=3\\cdot32=96$。(d) $\\log_6(4x)=2$，$4x=36$，$x=9$。各正值代回均成立。"
+          }
+        ],
+        "answer": "(a)8；(b)25；(c)96；(d)9。",
+        "printedPage": 413,
+        "pdfPage": 422,
+        "en": {
+          "prompt": "Solve: (a) $2\\log_3x=\\log_3 32+\\log_3 2$; (b) $\\frac32\\log_7x=\\log_7 125$; (c) $\\log_2x-\\log_2 3=5$; (d) $\\log_6x=2-\\log_6 4$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Each requires $x>0$. (a) $x^2=64$ gives only $x=8$. (b) $x^{3/2}=125$ gives $x=125^{2/3}=25$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $\\log_2(x/3)=5$, so $x=96$. (d) $\\log_6(4x)=2$ gives $4x=36$, hence $x=9$. Each positive value verifies the original."
+            }
+          ],
+          "answer": "(a)8; (b)25; (c)96; (d)9."
+        },
+        "number": 5,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "指出错误并正确解题。(a) Rubina把 $\\log_6(2x+1)-\\log_6(x-1)=\\log_6 5$ 写成 $\\log_6(x+2)=\\log_6 5$，得 $x=3$。(b) Ahmed由 $2\\log_5(x+3)=\\log_5 9$ 得 $(x+3)^2=9$、$x=0,-6$，却说无解。(c) Jennifer把 $\\log_2x+\\log_2(x+2)=3$ 写成 $\\log_2[x(x+2)]=3$，再写 $x(x+2)=3$，得 $x=-3,1$，只取1。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 差的法则是除法而非真数相减。域 $x>1$，$(2x+1)/(x-1)=5$，$2x+1=5x-5$，$x=2$；原商5，合法。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 域 $x>-3$，候选0合法，$-6$不合法。$x=0$ 给 $2\\log_5 3=\\log_5 9$，所以错误在排除了0。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 指数式应为 $x(x+2)=2^3=8$，不是3。$x^2+2x-8=(x+4)(x-2)=0$；域 $x>0$ 只取2。$2(4)=8$ 验证原式。"
+          }
+        ],
+        "answer": "(a)2；(b)0；(c)2。",
+        "printedPage": 413,
+        "pdfPage": 422,
+        "en": {
+          "prompt": "Identify the error and solve correctly. (a) Rubina changes $\\log_6(2x+1)-\\log_6(x-1)=\\log_6 5$ into $\\log_6(x+2)=\\log_6 5$, obtaining $x=3$. (b) Ahmed obtains $(x+3)^2=9$ and $x=0,-6$ from $2\\log_5(x+3)=\\log_5 9$, but says there is no solution. (c) Jennifer rewrites $\\log_2x+\\log_2(x+2)=3$ as $\\log_2[x(x+2)]=3$, then $x(x+2)=3$, obtaining $x=-3,1$ and retaining 1.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) A difference of logs is the log of a quotient, not a difference. With $x>1$, $(2x+1)/(x-1)=5$ gives $2x+1=5x-5$, so $x=2$, a valid solution."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) The domain is $x>-3$. Candidate 0 is valid and −6 is not. At 0, $2\\log_5 3=\\log_5 9$; the error is rejecting 0."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Exponential form is $x(x+2)=2^3=8$, not 3. Factor $x^2+2x-8=(x+4)(x-2)=0$. The domain $x>0$ retains only 2, whose argument product is 8."
+            }
+          ],
+          "answer": "(a)2; (b)0; (c)2."
+        },
+        "number": 6,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "求 $x$，保留两位小数：(a) $7^{2x}=2^{x+3}$；(b) $1.6^{x-4}=5^{3x}$；(c) $9^{2x-1}=71^{x+2}$；(d) $4(7^{x+2})=9^{2x-3}$。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x(2\\log7-\\log2)=3\\log2$，$x\\approx0.65$。(b) $x(\\log1.6-3\\log5)=4\\log1.6$，$x\\approx-0.43$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $x(2\\log9-\\log71)=\\log9+2\\log71$，$x\\approx81.37$。(d) $\\log4+(x+2)\\log7=(2x-3)\\log9$，$x=(\\log4+2\\log7+3\\log9)/(2\\log9-\\log7)\\approx4.85$。各分母不为0，精确对数式确保等式成立。"
+          }
+        ],
+        "answer": "(a)0.65；(b)−0.43；(c)81.37；(d)4.85。",
+        "printedPage": 413,
+        "pdfPage": 422,
+        "en": {
+          "prompt": "Find $x$ to two decimal places: (a) $7^{2x}=2^{x+3}$; (b) $1.6^{x-4}=5^{3x}$; (c) $9^{2x-1}=71^{x+2}$; (d) $4(7^{x+2})=9^{2x-3}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x(2\\log7-\\log2)=3\\log2$, so $x\\approx0.65$. (b) $x(\\log1.6-3\\log5)=4\\log1.6$, so $x\\approx-0.43$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $x(2\\log9-\\log71)=\\log9+2\\log71$, giving $x\\approx81.37$. (d) $\\log4+(x+2)\\log7=(2x-3)\\log9$, so $x=(\\log4+2\\log7+3\\log9)/(2\\log9-\\log7)\\approx4.85$. Each denominator is nonzero, and the exact logarithmic expressions verify the equations."
+            }
+          ],
+          "answer": "(a)0.65; (b)−0.43; (c)81.37; (d)4.85."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "解：(a) $\\log_5(x-18)-\\log_5x=\\log_5 7$；(b) $\\log_2(x-6)+\\log_2(x-8)=3$；(c) $2\\log_4(x+4)-\\log_4(x+12)=1$；(d) $\\log_3(2x-1)=2-\\log_3(x+1)$；(e) $\\log_2\\sqrt{x^2+4x}=5/2$。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 域 $x>18$；$(x-18)/x=7$ 得 $x=-3$，不合法，无解。(b) 域 $x>8$；$(x-6)(x-8)=8$，$x^2-14x+40=(x-10)(x-4)=0$，只取10；真数4、2的积8。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 域 $x>-4$；$(x+4)^2=4(x+12)$，$x^2+4x-32=(x+8)(x-4)=0$，只取4；商 $64/16=4$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) 域 $x>1/2$；$(2x-1)(x+1)=9$，$2x^2+x-10=(2x+5)(x-2)=0$，只取2；真数3、3积9。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(e) 域 $x^2+4x>0$ 即 $x<-4$ 或 $x>0$。$\\sqrt{x^2+4x}=2^{5/2}$，平方得 $x^2+4x=32$，$(x+8)(x-4)=0$。$-8,4$ 均令根号为 $\\sqrt{32}>0$，均合法。"
+          }
+        ],
+        "answer": "(a)无解；(b)10；(c)4；(d)2；(e)−8,4。",
+        "printedPage": 413,
+        "pdfPage": 422,
+        "en": {
+          "prompt": "Solve: (a) $\\log_5(x-18)-\\log_5x=\\log_5 7$; (b) $\\log_2(x-6)+\\log_2(x-8)=3$; (c) $2\\log_4(x+4)-\\log_4(x+12)=1$; (d) $\\log_3(2x-1)=2-\\log_3(x+1)$; (e) $\\log_2\\sqrt{x^2+4x}=5/2$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Domain $x>18$: $(x-18)/x=7$ gives −3, which is invalid; no solution. (b) Domain $x>8$: $(x-6)(x-8)=8$ gives $(x-10)(x-4)=0$; retain 10, with argument product $4\\cdot2=8$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Domain $x>-4$: $(x+4)^2=4(x+12)$ gives $(x+8)(x-4)=0$; retain 4, with quotient $64/16=4$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) Domain $x>1/2$: $(2x-1)(x+1)=9$ gives $(2x+5)(x-2)=0$; retain 2, whose argument product is 9."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(e) Domain $x^2+4x>0$ means $x<-4$ or $x>0$. Squaring $\\sqrt{x^2+4x}=2^{5/2}$ gives $x^2+4x=32$, so $(x+8)(x-4)=0$. Both −8 and 4 give $\\sqrt{32}>0$ and are valid."
+            }
+          ],
+          "answer": "(a)no solution; (b)10; (c)4; (d)2; (e)−8,4."
+        },
+        "number": 8,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      {
+        "prompt": "视星等 $m$、绝对星等 $M$ 与距离 $d$ pc 满足 $m-M=5\\log d-5$。Sirius有 $m=-1.44,M=1.45$。(a) 距离多少pc？(b) 若1 pc约3.26光年，距离多少光年？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $-1.44-1.45=5\\log d-5$，$\\log d=2.11/5=0.422$，$d=10^{0.422}\\approx2.64$ pc，满足 $d>0$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 用未舍入距离：$3.26\\cdot10^{0.422}\\approx8.61$ 光年。"
+          }
+        ],
+        "answer": "(a)约2.64 pc；(b)约8.61光年。",
+        "printedPage": 413,
+        "pdfPage": 422,
+        "en": {
+          "prompt": "Apparent magnitude $m$, absolute magnitude $M$ and distance $d$ parsecs satisfy $m-M=5\\log d-5$. Sirius has $m=-1.44,M=1.45$. (a) Find its distance in parsecs. (b) Convert using 1 pc ≈ 3.26 light years.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $-1.44-1.45=5\\log d-5$, so $\\log d=2.11/5=0.422$ and $d=10^{0.422}\\approx2.64$ pc, which is positive."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Use the unrounded distance: $3.26\\cdot10^{0.422}\\approx8.61$ light years."
+            }
+          ],
+          "answer": "(a)About 2.64 pc; (b)about 8.61 light years."
+        },
+        "number": 9,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "眼轴长 $E$ mm与体重 $m$ kg满足 $\\log E=\\log10.61+0.1964\\log m$。山羊眼轴长24 mm，预测体重至千克。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$m>0$。$\\log m=(\\log24-\\log10.61)/0.1964$，所以 $m=(24/10.61)^{1/0.1964}\\approx63.82$ kg，舍入64 kg。"
+          }
+        ],
+        "answer": "约64 kg。",
+        "printedPage": 413,
+        "pdfPage": 422,
+        "en": {
+          "prompt": "Eye axial length $E$ millimetres and body mass $m$ kilograms satisfy $\\log E=\\log10.61+0.1964\\log m$. Predict the mass of a mountain goat with eye axial length 24 mm, to the nearest kilogram.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$m>0$. $\\log m=(\\log24-\\log10.61)/0.1964$, so $m=(24/10.61)^{1/0.1964}\\approx63.82$ kg, rounding to 64 kg."
+            }
+          ],
+          "answer": "Approximately 64 kg."
+        },
+        "number": 10
+      },
+      {
+        "prompt": "原无北方狗鱼的湖被投放鱼苗，$t$ 年后数量 $P=10\\,000(1.035)^t$。(a) 初投多少条？(b) 年增长率多少？(c) 倍增需多久？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $P(0)=10\\,000$ 条。(b) $1.035=1+0.035$，即3.5%。(c) $20\\,000=10\\,000(1.035)^t$，$t=\\log2/\\log1.035\\approx20.15$ 年。此模型为连续时间估计。"
+          }
+        ],
+        "answer": "(a)10 000；(b)3.5%；(c)约20.15年。",
+        "printedPage": 414,
+        "pdfPage": 423,
+        "en": {
+          "prompt": "A previously pike-free lake is stocked. After $t$ years its northern pike population is $P=10\\,000(1.035)^t$. (a) How many were stocked? (b) What is the annual percentage growth rate? (c) How long until the population doubles?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $P(0)=10\\,000$ fish. (b) $1.035=1+0.035$, so growth is 3.5% yearly. (c) $20\\,000=10\\,000(1.035)^t$ gives $t=\\log2/\\log1.035\\approx20.15$ years, a continuous-time model estimate."
+            }
+          ],
+          "answer": "(a)10 000; (b)3.5%; (c)about 20.15 years."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "Kepler第三定律写为 $\\log T=\\frac32\\log d-3.263$，$T$ 为地球年，$d$ 为百万千米。(a) Pluto平均距日5906百万千米，周期至整数年？(b) Mars周期1.88年，平均距离至百万千米？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $T=10^{1.5\\log5906-3.263}\\approx247.71$，故约248地球年。(b) $\\log d=(\\log1.88+3.263)/1.5$，$d\\approx228.09$ 百万千米，约228百万千米。$T,d$ 都为正。"
+          }
+        ],
+        "answer": "(a)248年；(b)228百万千米。",
+        "printedPage": 414,
+        "pdfPage": 423,
+        "en": {
+          "prompt": "Kepler’s third law is $\\log T=\\frac32\\log d-3.263$, where $T$ is in Earth years and $d$ in millions of kilometres. (a) Pluto averages 5906 million km from the Sun: find its period to the nearest year. (b) Mars has period 1.88 Earth years: find its distance to the nearest million kilometres.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $T=10^{1.5\\log5906-3.263}\\approx247.71$, hence 248 Earth years. (b) $\\log d=(\\log1.88+3.263)/1.5$ gives $d\\approx228.09$ million km, rounding to 228 million km. Both quantities are positive."
+            }
+          ],
+          "answer": "(a)248 years; (b)228 million kilometres."
+        },
+        "number": 12,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "用 $A=P(1+i)^n$（$i$每期利率、$n$期数；给定利率均为APR）。(a) David的10 000元以6%半年复利，多久值11 000元？(b) Linda信用卡欠1200元，28%日复利；账单为1241.18元时逾期多少天？(c) 5.5%半年复利，多久变3倍？",
+        "concept": "finance",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $i=0.06/2=0.03$；$n=\\log1.1/\\log1.03\\approx3.2244$ 半年，即约1.6122年；若仅在半年入息日检查，首次达到为4期即2年。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 取每年365天，$i=0.28/365$。$n=\\log(1241.18/1200)/\\log(1+0.28/365)\\approx44.00$ 天；第44天金额舍入为1241.18元。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $i=0.055/2=0.0275$；$n=\\log3/\\log1.0275\\approx40.4964$ 期，约20.2482年；在实际半年入息日首次达到3倍为41期，即20.5年。"
+          }
+        ],
+        "answer": "(a)模型约1.61年，首次半年期末为2年；(b)44天；(c)模型约20.25年，首次半年期末为20.5年。",
+        "printedPage": 414,
+        "pdfPage": 423,
+        "en": {
+          "prompt": "Use $A=P(1+i)^n$, with rate $i$ per period and $n$ periods; all stated rates are APR. (a) David invests 10 000 dollars at 6% compounded semi-annually. How long to reach 11 000 dollars? (b) Linda owes 1200 dollars on a credit card at 28% compounded daily. How many days overdue produces 1241.18 dollars? (c) How long to triple money at 5.5%, compounded semi-annually?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $i=0.03$; $n=\\log1.1/\\log1.03\\approx3.2244$ half-years, or 1.6122 years by exponential interpolation. At semi-annual credit dates, the first balance at least 11 000 dollars occurs after 4 periods, 2 years."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Using a 365-day year, $i=0.28/365$. $n=\\log(1241.18/1200)/\\log(1+0.28/365)\\approx44.00$ days; the day-44 balance rounds to 1241.18 dollars."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $i=0.0275$; $n=\\log3/\\log1.0275\\approx40.4964$ periods, or 20.2482 years by interpolation. The first semi-annual credit date reaching triple is period 41, or 20.5 years."
+            }
+          ],
+          "answer": "(a)Model 1.61 years; first credit date 2 years. (b)44 days. (c)Model 20.25 years; first credit date 20.5 years."
+        },
+        "number": 13,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "抵押贷款现值250 000元，APR7.4%，每半年末付10 429.01元。用 $PV=R[1-(1+i)^{-n}]/i$，$n$为付款期数、$i$每期利率。多少年还清？",
+        "concept": "finance",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$i=0.074/2=0.037$，$R=10429.01$。$(1.037)^{-n}=1-(250000)(0.037)/10429.01\\approx0.113052$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "$n=-\\log[1-250000(0.037)/10429.01]/\\log1.037\\approx60.00001$。付款额已舍入至分，故按60次半年付款解释，约30年；最后付款可作分钱调整，而非机械增加整期。"
+          }
+        ],
+        "answer": "约30年（60次半年付款）。",
+        "printedPage": 414,
+        "pdfPage": 423,
+        "en": {
+          "prompt": "A mortgage has present value 250 000 dollars, APR 7.4%, and semi-annual end-of-period payments of 10 429.01 dollars. Use $PV=R[1-(1+i)^{-n}]/i$, where $n$ is the number of payments and $i$ the periodic rate. After how many years is it paid off?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$i=0.037$ and $R=10429.01$. Rearranging gives $(1.037)^{-n}=1-(250000)(0.037)/10429.01\\approx0.113052$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "$n=-\\log[1-250000(0.037)/10429.01]/\\log1.037\\approx60.00001$. The payment is rounded to cents, so this represents 60 semi-annual payments, about 30 years; the final payment may need a cents adjustment rather than an extra full period."
+            }
+          ],
+          "answer": "About 30 years, or 60 semi-annual payments."
+        },
+        "number": 14
+      },
+      {
+        "prompt": "瑞典云杉根剩31.5%的碳14，半衰期5730年。发现时树龄是多少？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$0.315=(1/2)^{t/5730}$，故 $t=5730\\log0.315/\\log0.5\\approx9549.48$ 年；$t>0$，比例介于1/4与1/2之间，对应1至2个半衰期。"
+          }
+        ],
+        "answer": "约9550年。",
+        "printedPage": 414,
+        "pdfPage": 423,
+        "en": {
+          "prompt": "A Swedish spruce’s roots retain 31.5% of their carbon-14. With half-life 5730 years, how old was the tree when discovered?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$0.315=(1/2)^{t/5730}$ gives $t=5730\\log0.315/\\log0.5\\approx9549.48$ years. This positive time lies between one and two half-lives, consistent with the fraction lying between 1/4 and 1/2."
+            }
+          ],
+          "answer": "Approximately 9550 years."
+        },
+        "number": 15
+      },
+      {
+        "prompt": "最初280 MBq的I-131，若体内无流失，6 h后剩274 MBq。求半衰期至整数天。（1 MBq为 $10^6$ Bq。）",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "设半衰期 $h$ 小时，$274/280=(1/2)^{6/h}$。$h=6\\log0.5/\\log(274/280)\\approx191.9943$ h。除以24约8.00天，舍入8天。"
+          }
+        ],
+        "answer": "约8天。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "An I-131 dose initially has activity 280 MBq. With no bodily loss, it has 274 MBq after 6 h. Find its half-life to the nearest day. (1 MBq is $10^6$ Bq.)",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Let half-life be $h$ hours. $274/280=(1/2)^{6/h}$ gives $h=6\\log0.5/\\log(274/280)\\approx191.9943$ h. Dividing by 24 gives about 8.00 days, rounding to 8 days."
+            }
+          ],
+          "answer": "Approximately 8 days."
+        },
+        "number": 16
+      },
+      {
+        "prompt": "Great Bear Lake水中光强每深入1 m减少4%。何深度光强为表面25%？精确至0.1 m。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "每米保留因子0.96。$0.25I_0=I_0(0.96)^d$，$d=\\log0.25/\\log0.96\\approx33.9595$ m，舍入34.0 m。深度正且 $0.96^d=0.25$。"
+          }
+        ],
+        "answer": "34.0 m。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "In Great Bear Lake, light intensity decreases 4% for every metre below the surface. At what depth is intensity 25% of surface intensity? Round to the nearest tenth of a metre.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Each metre retains factor 0.96. $0.25I_0=I_0(0.96)^d$ gives $d=\\log0.25/\\log0.96\\approx33.9595$ m, hence 34.0 m. The depth is positive and satisfies $0.96^d=0.25$."
+            }
+          ],
+          "answer": "34.0 m."
+        },
+        "number": 17
+      },
+      {
+        "prompt": "若 $\\log_3 81=x-y$ 且 $\\log_2 32=x+y$，求 $x,y$。",
+        "concept": "extensions",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$\\log_3 81=4$，$\\log_2 32=5$。两式相加 $2x=9$，$x=9/2$；相减 $2y=1$，$y=1/2$。代回差4、和5。"
+          }
+        ],
+        "answer": "$x=9/2,y=1/2$。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "If $\\log_3 81=x-y$ and $\\log_2 32=x+y$, find $x,y$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$\\log_3 81=4$ and $\\log_2 32=5$. Adding gives $2x=9$, so $x=9/2$; subtracting gives $2y=1$, so $y=1/2$. Their difference is 4 and sum 5."
+            }
+          ],
+          "answer": "$x=9/2,y=1/2$."
+        },
+        "number": 18
+      },
+      {
+        "prompt": "找错：(a) 从 $\\log0.1<3\\log0.1$ 得 $\\log0.1<\\log0.001$，所以 $0.1<0.001$。(b) 从 $1/5>1/25$ 得 $\\log(1/5)>2\\log(1/5)$，所以 $1>2$。",
+        "concept": "log-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 起始不等式已错误：$\\log0.1=-1$，$3\\log0.1=-3$，而 $-1>-3$。正确结论为 $0.1>0.001$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $\\log(1/5)<0$，除以它时不等号必须反向，应得 $1<2$。此前取常用对数和幂法则均正确。"
+          }
+        ],
+        "answer": "(a)错误起始符号；(b)除以负数漏反向。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "Find the error: (a) Starting with $\\log0.1<3\\log0.1$, conclude $\\log0.1<\\log0.001$ and hence $0.1<0.001$. (b) From $1/5>1/25$, obtain $\\log(1/5)>2\\log(1/5)$ and conclude $1>2$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) The initial inequality is false: $\\log0.1=-1$ and $3\\log0.1=-3$, but $-1>-3$. The correct conclusion is $0.1>0.001$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $\\log(1/5)<0$, so division by it reverses the inequality, giving $1<2$. Taking common logs and using the power law were valid."
+            }
+          ],
+          "answer": "(a)False starting inequality; (b)failure to reverse on division by a negative number."
+        },
+        "number": 19,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "解：(a) $x^{2/\\log x}=x$；(b) $\\log(x^{\\log x})=4$；(c) $(\\log x)^2=\\log(x^2)$。",
+        "concept": "extensions",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x>0,x\\ne1$；取对数得 $(2/\\log x)\\log x=\\log x$，所以 $\\log x=2$，$x=100$。代回指数为1。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $x>0$；$\\log(x^{\\log x})=(\\log x)^2=4$，所以 $\\log x=\\pm2$，$x=100,0.01$；各自的 $x^{\\log x}=10^4$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 原式须 $x>0$。令 $u=\\log x$，$u^2=2u$，$u(u-2)=0$，所以 $x=1,100$。代入两边分别0、4。"
+          }
+        ],
+        "answer": "(a)100；(b)0.01,100；(c)1,100。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "Solve: (a) $x^{2/\\log x}=x$; (b) $\\log(x^{\\log x})=4$; (c) $(\\log x)^2=\\log(x^2)$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x>0,x\\ne1$. Taking logs gives $(2/\\log x)\\log x=\\log x$, so $\\log x=2$ and $x=100$. The exponent becomes 1, verifying it."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $x>0$. The power law gives $(\\log x)^2=4$, so $\\log x=\\pm2$ and $x=100,0.01$. Each gives $x^{\\log x}=10^4$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) The original requires $x>0$. Set $u=\\log x$: $u^2=2u$ gives $u(u-2)=0$, hence $x=1,100$. Original sides are respectively 0 and 4."
+            }
+          ],
+          "answer": "(a)100; (b)0.01,100; (c)1,100."
+        },
+        "number": 20,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "解：(a) $\\log_4x+\\log_2x=6$；(b) $\\log_3x-\\log_{27}x=4/3$。",
+        "concept": "extensions",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $x>0$。令 $u=\\log_2x$，则 $\\log_4x=u/2$；$u/2+u=6$ 得 $u=4$，$x=16$。检查 $2+4=6$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 令 $v=\\log_3x$，$\\log_{27}x=v/3$；$v-v/3=4/3$ 得 $v=2$，$x=9$。检查 $2-2/3=4/3$。"
+          }
+        ],
+        "answer": "(a)16；(b)9。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "Solve: (a) $\\log_4x+\\log_2x=6$; (b) $\\log_3x-\\log_{27}x=4/3$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $x>0$. Set $u=\\log_2x$, so $\\log_4x=u/2$. Then $u/2+u=6$ gives $u=4$, hence $x=16$. Check $2+4=6$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Set $v=\\log_3x$, so $\\log_{27}x=v/3$. Then $v-v/3=4/3$ gives $v=2$ and $x=9$. Check $2-2/3=4/3$."
+            }
+          ],
+          "answer": "(a)16; (b)9."
+        },
+        "number": 21,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "求满足 $(x^2+3x-9)^{2x-8}=1$ 的 $x$。",
+        "concept": "extensions",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "先取正底 $B=x^2+3x-9>0$。若 $B=1$，$x^2+3x-10=(x+5)(x-2)=0$，得 $x=-5,2$。若 $B\\ne1$，取对数得 $(2x-8)\\log B=0$，所以 $x=4$，其底数为19。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "零底不能产生1。若考虑个别可定义的负底实数幂，要使值为1，必须底数为−1且指数为合适的偶整数或最简分数中偶分子、奇分母的有理数。$B=-1$ 得 $x=(-3\\pm\\sqrt{41})/2$，指数 $2x-8=-11\\pm\\sqrt{41}$ 为无理数，负底实幂无定义。因此没有额外实解。"
+          }
+        ],
+        "answer": "$x=-5,2,4$。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "Find all values satisfying $(x^2+3x-9)^{2x-8}=1$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "First consider positive base $B=x^2+3x-9>0$. If $B=1$, $(x+5)(x-2)=0$ gives $x=-5,2$. If $B\\ne1$, logs give $(2x-8)\\log B=0$, hence $x=4$, whose base is 19."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Zero base cannot produce 1. For individually defined negative-base real powers to equal 1, the base must be −1 and the exponent a suitable even integer or rational in lowest terms with even numerator and odd denominator. $B=-1$ gives $x=(-3\\pm\\sqrt{41})/2$, with irrational exponents $-11\\pm\\sqrt{41}$, so these negative-base powers are not real. There are no additional real solutions."
+            }
+          ],
+          "answer": "$x=-5,2,4$."
+        },
+        "number": 22
+      },
+      {
+        "prompt": "Fatima从 $8(2^x)=512$ 开始，写 $\\log[8(2^x)]=\\log512$，$\\log8+\\log2^x=\\log512$。(a) 完成她的解法。(b) 提另一方法并比较。(c) 你偏好哪种方法？解释。",
+        "concept": "exponential-equations",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $\\log8+x\\log2=\\log512$，$x=\\log(512/8)/\\log2=\\log64/\\log2=6$。代回 $8\\cdot64=512$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 除以8得 $2^x=64=2^6$，故 $x=6$。(c) 示例偏好同底法，步骤短且精确；对数法更通用。"
+          }
+        ],
+        "answer": "$x=6$；两法均有效，偏好开放。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "Fatima starts with $8(2^x)=512$, then $\\log[8(2^x)]=\\log512$ and $\\log8+\\log2^x=\\log512$. (a) Complete her solution. (b) Suggest and compare another approach. (c) State and explain a preference.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $\\log8+x\\log2=\\log512$, so $x=\\log64/\\log2=6$. Check $8\\cdot64=512$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Divide by 8: $2^x=64=2^6$, hence $x=6$. (c) A sample preference is the shorter exact common-base method; the log method is more general."
+            }
+          ],
+          "answer": "$x=6$; both methods work and preference is open."
+        },
+        "number": "C1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "等比数列通项 $t_n=t_1r^{n-1}$。数列 $4,12,36,\\ldots,708\\,588$ 有几项？",
+        "concept": "extensions",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$t_1=4,r=3$。$708588=4\\cdot3^{n-1}$，$3^{n-1}=177147=3^{11}$，所以 $n-1=11,n=12$。第12项 $4\\cdot3^{11}=708588$。"
+          }
+        ],
+        "answer": "12项。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "The geometric general term is $t_n=t_1r^{n-1}$. How many terms are in $4,12,36,\\ldots,708\\,588$?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$t_1=4,r=3$. From $708588=4\\cdot3^{n-1}$ obtain $3^{n-1}=177147=3^{11}$, so $n=12$. The twelfth term checks as $4\\cdot3^{11}=708588$."
+            }
+          ],
+          "answer": "12 terms."
+        },
+        "number": "C2"
+      },
+      {
+        "prompt": "等比级数 $8192+4096+2048+\\cdots$ 的前 $n$ 项和为16 383。用 $S_n=t_1(r^n-1)/(r-1)$（$r\\ne1$）求 $n$。",
+        "concept": "extensions",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$t_1=8192,r=1/2$。$16383=16384[1-(1/2)^n]$，故 $(1/2)^n=1/16384=2^{-14}$，$n=14$。最后一项为1，和为 $2^{14}-1=16383$。"
+          }
+        ],
+        "answer": "$n=14$。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "The first $n$ terms of $8192+4096+2048+\\cdots$ sum to 16 383. Use $S_n=t_1(r^n-1)/(r-1)$, $r\\ne1$, to find $n$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$t_1=8192,r=1/2$. $16383=16384[1-(1/2)^n]$ gives $(1/2)^n=1/16384=2^{-14}$, so $n=14$. The last term is 1, and the sum checks as $2^{14}-1=16383$."
+            }
+          ],
+          "answer": "$n=14$."
+        },
+        "number": "C3"
+      },
+      {
+        "prompt": "解，$0\\le x\\le2\\pi$：(a) $2\\log_2(\\cos x)+1=0$；(b) $\\log(\\sin x)+\\log(2\\sin x-1)=0$。",
+        "concept": [
+          "log-equations",
+          "extensions"
+        ],
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 原域 $\\cos x>0$。$\\log_2\\cos x=-1/2$，$\\cos x=2^{-1/2}=\\sqrt2/2$，区间内 $x=\\pi/4,7\\pi/4$。代回得 $2(-1/2)+1=0$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 域 $\\sin x>1/2$。令 $s=\\sin x$，则 $s(2s-1)=1$，$(2s+1)(s-1)=0$。$s=-1/2$ 不合法，只取 $s=1$，区间内 $x=\\pi/2$。两个真数均为1。"
+          }
+        ],
+        "answer": "(a)$\\pi/4,7\\pi/4$；(b)$\\pi/2$。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "Solve for $0\\le x\\le2\\pi$: (a) $2\\log_2(\\cos x)+1=0$; (b) $\\log(\\sin x)+\\log(2\\sin x-1)=0$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Require $\\cos x>0$. $\\log_2\\cos x=-1/2$ gives $\\cos x=\\sqrt2/2$, so $x=\\pi/4,7\\pi/4$. Each yields $2(-1/2)+1=0$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Require $\\sin x>1/2$. Let $s=\\sin x$. Then $s(2s-1)=1$ gives $(2s+1)(s-1)=0$. Reject −1/2; $s=1$ gives $x=\\pi/2$. Both original arguments are 1."
+            }
+          ],
+          "answer": "(a)$\\pi/4,7\\pi/4$; (b)$\\pi/2$."
+        },
+        "number": "C4",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "抄写概念图，并在末行给出完整例子：指数方程→底数互为幂／底数不互为幂；对数方程→两边有对数／仅一边有对数。",
+        "concept": [
+          "exponential-equations",
+          "log-equations"
+        ],
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(common-base) $4^x=8\\Rightarrow2^{2x}=2^3\\Rightarrow x=3/2$，代回8。(different-bases) $2^x=7\\Rightarrow x=\\log7/\\log2\\approx2.8074$，精确值代回7。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(logs-both-sides) $\\log_3(x+1)=\\log_3 5$，域 $x>-1$，解 $x+1=5$ 得4。(log-one-side) $\\log_2(x-1)=3$，域 $x>1$，解 $x-1=8$ 得9；真数分别5、8，均验证。"
+          }
+        ],
+        "answer": "四类示例分别得 $3/2,\\log7/\\log2,4,9$（开放构造）。",
+        "printedPage": 415,
+        "pdfPage": 424,
+        "en": {
+          "prompt": "Copy the concept chart and provide worked examples in its last row: exponential equations with common-power bases / without common-power bases; logarithmic equations with logs on both sides / on only one side.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(common-base) $4^x=8\\Rightarrow2^{2x}=2^3\\Rightarrow x=3/2$, which gives 8. (different-bases) $2^x=7\\Rightarrow x=\\log7/\\log2\\approx2.8074$; the exact value gives 7."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(logs-both-sides) $\\log_3(x+1)=\\log_3 5$ requires $x>-1$; $x+1=5$ gives 4. (log-one-side) $\\log_2(x-1)=3$ requires $x>1$; $x-1=8$ gives 9. Arguments 5 and 8 verify the originals."
+            }
+          ],
+          "answer": "The four sample solutions are $3/2,\\log7/\\log2,4,9$ (open construction)."
+        },
+        "number": "C5",
+        "subpartIds": [
+          "commonbase",
+          "differentbases",
+          "logsbothsides",
+          "logoneside"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4"
+    ],
+    "expectedPractice": [
+      "opening-disk",
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "investigate-5",
+      "investigate-6",
+      "investigate-7",
+      "investigate-8",
+      "margin-example-1",
+      "your-turn-1",
+      "margin-example-2",
+      "your-turn-2",
+      "your-turn-3",
+      "margin-example-4",
+      "your-turn-4"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "expectedSubparts": {
+      "opening-disk": [
+        "growth",
+        "prediction",
+        "notice",
+        "extrastorage"
+      ],
+      "investigate-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "investigate-2": [
+        "a",
+        "b"
+      ],
+      "example-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "margin-example-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "margin-example-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-9": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-19": [
+        "a",
+        "b"
+      ],
+      "exercise-20": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-21": [
+        "a",
+        "b"
+      ],
+      "exercise-C1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-C4": [
+        "a",
+        "b"
+      ],
+      "exercise-C5": [
+        "commonbase",
+        "differentbases",
+        "logsbothsides",
+        "logoneside"
+      ]
+    },
+    "source": "Independent visual inventory from original PDF pages before solutions",
+    "pages": [
+      {
+        "pdfPage": 413,
+        "printedPage": 404,
+        "items": [
+          "Opening: everyday exponential-growth examples",
+          "Opening disk-space prediction",
+          "Margin: when notice shortage?",
+          "Margin: additional 15 TB storage"
+        ],
+        "figures": [
+          "20-row data/used/unused table; full numerical conditions retained"
+        ]
+      },
+      {
+        "pdfPage": 414,
+        "printedPage": 405,
+        "items": [
+          "Investigate 1a–c,2a–b,3,4,5"
+        ],
+        "figures": [
+          "Adam/Sarah worked methods; equations transcribed in prompts"
+        ]
+      },
+      {
+        "pdfPage": 415,
+        "printedPage": 406,
+        "items": [
+          "Investigate 6,7,8",
+          "Link the Ideas equality properties",
+          "Example1a–c starts"
+        ],
+        "figures": []
+      },
+      {
+        "pdfPage": 416,
+        "printedPage": 407,
+        "items": [
+          "Example1a,b continues",
+          "Margin: difference graph method",
+          "Margin: why negative logarithm undefined"
+        ],
+        "figures": [
+          "Example1 answer graph, excluded from given sourceImage"
+        ]
+      },
+      {
+        "pdfPage": 417,
+        "printedPage": 408,
+        "items": [
+          "Example1c continues",
+          "Margin: power law effect",
+          "YourTurn1a–c",
+          "Example2a–c starts"
+        ],
+        "figures": []
+      },
+      {
+        "pdfPage": 418,
+        "printedPage": 409,
+        "items": [
+          "Example2 continues",
+          "Margin: preferred method",
+          "Margin: why product not 24^(2x)",
+          "Margin: alternate log solution",
+          "Margin: alternate verification",
+          "YourTurn2a–c"
+        ],
+        "figures": [
+          "calculator answer screen, not required given"
+        ]
+      },
+      {
+        "pdfPage": 419,
+        "printedPage": 410,
+        "items": [
+          "Example3",
+          "YourTurn3"
+        ],
+        "figures": [
+          "decorative dinosaur photograph"
+        ]
+      },
+      {
+        "pdfPage": 420,
+        "printedPage": 411,
+        "items": [
+          "Example4",
+          "Margin: logarithmic conversion and preference",
+          "YourTurn4"
+        ],
+        "figures": [
+          "decorative skull photograph"
+        ]
+      },
+      {
+        "pdfPage": 421,
+        "printedPage": 412,
+        "items": [
+          "Key Ideas",
+          "Exercises1a–d,2a–d,3"
+        ],
+        "figures": [
+          "Hamdi given incorrect check; transcribed"
+        ]
+      },
+      {
+        "pdfPage": 422,
+        "printedPage": 413,
+        "items": [
+          "Exercises4a–d,5a–d,6a–c,7a–d,8a–e,9a–b,10"
+        ],
+        "figures": [
+          "Exercise6 given incorrect work; transcribed fully"
+        ]
+      },
+      {
+        "pdfPage": 423,
+        "printedPage": 414,
+        "items": [
+          "Exercises11a–c,12a–b,13a–c (13b,c right column),14,15"
+        ],
+        "figures": [
+          "decorative fish/tree photographs"
+        ]
+      },
+      {
+        "pdfPage": 424,
+        "printedPage": 415,
+        "items": [
+          "Exercises16,17,18,19a–b,20a–c,21a–b,22",
+          "C1a–c,C2,C3,C4a–b,C5"
+        ],
+        "figures": [
+          "C5 four-case concept chart, text transcribed"
+        ]
+      }
+    ],
+    "notes": [
+      "All 12 pages viewed full size; cross-column 13b,c explicitly included. Source p415 Extend20b is log(x^(log x))=4. Extend22 variable base requires positive-base discussion plus real exceptional cases."
+    ]
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independently compared with all original source pages and all question/subpart solutions, including logarithm domains, all candidates, graph readings, negative-base exceptions, and discrete financial timing. Review and direct corrections are documented in audit/root-sections-independent.md; browser/build validation is a separate integration task."
+  }
+}

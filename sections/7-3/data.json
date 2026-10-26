@@ -1,0 +1,1891 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "7-3",
+    "section": "7.3",
+    "title": "解指数方程",
+    "description": "统一底数、系统试值与图解，以及复利、增长、半衰期和指数不等式；保留本节全部原题和旁注问答。",
+    "en": {
+      "title": "Solving Exponential Equations",
+      "description": "Common bases, systematic trial, graphs, compound interest, growth, half-life, and exponential inequalities, with every section problem and margin question."
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365
+      ],
+      "pdfPages": [
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374
+      ]
+    },
+    "concepts": [
+      {
+        "id": "rewrite-base",
+        "title": "用指数法则统一底数",
+        "summary": "当底数互为幂时，用 $a^{mn}=(a^m)^n$、$a^pa^q=a^{p+q}$ 和 $a^{-p}=1/a^p$ 将各项改写为同底数幂。",
+        "method": [
+          {
+            "title": "识别底数",
+            "body": "先把 4、8、16 写成 2 的幂，或把 9、27、81 写成 3 的幂。"
+          },
+          {
+            "title": "处理根式",
+            "body": "对正数 $a$，用 $\\sqrt[n]{a}=a^{1/n}$，再乘外面的指数。"
+          }
+        ],
+        "pitfalls": [
+          "乘幂时乘指数；同底数相乘时才加指数。"
+        ],
+        "en": {
+          "title": "Rewrite powers with a common base",
+          "summary": "When bases are powers of one another, use $(a^m)^n=a^{mn}$, $a^pa^q=a^{p+q}$, and $a^{-p}=1/a^p$ to rewrite them with a common base.",
+          "method": [
+            {
+              "title": "Recognize bases",
+              "body": "Write 4, 8, 16 as powers of 2, or 9, 27, 81 as powers of 3."
+            },
+            {
+              "title": "Handle radicals",
+              "body": "For positive $a$, use $\\sqrt[n]{a}=a^{1/n}$, then multiply by the outer exponent."
+            }
+          ],
+          "pitfalls": [
+            "Multiply exponents for a power of a power; add exponents only for multiplication of powers with the same base."
+          ]
+        }
+      },
+      {
+        "id": "equal-powers",
+        "title": "同底数指数方程",
+        "summary": "对实指数函数，若 $c>0$ 且 $c\\ne1$，则 $c^u=c^v$ 当且仅当 $u=v$。先统一底数，再解指数中的方程并代回核对。",
+        "method": [
+          {
+            "title": "统一底数",
+            "body": "例如 $4^{x+2}=64^x$ 改写为 $4^{x+2}=4^{3x}$。"
+          },
+          {
+            "title": "比较并核对",
+            "body": "解 $x+2=3x$ 得 $x=1$；原式两边都为 64。"
+          }
+        ],
+        "pitfalls": [
+          "不能在底数不同的式子中直接令指数相等；负底数不定义整个实数域上的实指数函数。"
+        ],
+        "en": {
+          "title": "Equate exponents with the same base",
+          "summary": "For a real exponential function with $c>0$ and $c\\ne1$, $c^u=c^v$ if and only if $u=v$. Rewrite both sides with the same base, solve the exponent equation, and check by substitution.",
+          "method": [
+            {
+              "title": "Use one base",
+              "body": "For example, rewrite $4^{x+2}=64^x$ as $4^{x+2}=4^{3x}$."
+            },
+            {
+              "title": "Equate and check",
+              "body": "Solve $x+2=3x$ to get $x=1$; both original sides equal 64."
+            }
+          ],
+          "pitfalls": [
+            "Do not equate exponents while bases differ. A negative base does not define a real exponential function on all real exponents."
+          ]
+        }
+      },
+      {
+        "id": "approximate",
+        "title": "系统试值与图解近似",
+        "summary": "不能用本节的幂法则统一底数时，可反复试值，或画 $y=L(x)$ 和 $y=R(x)$ 求交点；也可画 $y=L(x)-R(x)$ 求零点。",
+        "method": [
+          {
+            "title": "夹住目标",
+            "body": "选择两个试值，使函数值分居目标两侧；逐渐缩小区间。"
+          },
+          {
+            "title": "读图并舍入",
+            "body": "调整窗口看清交点或零点；最后一步才按要求舍入，并标明近似号。"
+          }
+        ],
+        "pitfalls": [
+          "交点的横坐标才是方程的解；负时间在纯代数题中允许，在实际情境中须检查。"
+        ],
+        "en": {
+          "title": "Systematic trial and graphical solutions",
+          "summary": "When the bases cannot be rewritten by the power laws used in this section, refine trial values, graph $y=L(x)$ and $y=R(x)$ for an intersection, or graph $y=L(x)-R(x)$ for a zero.",
+          "method": [
+            {
+              "title": "Bracket the target",
+              "body": "Choose two trial values whose function values straddle the target, then narrow the interval."
+            },
+            {
+              "title": "Read and round",
+              "body": "Adjust the window to show the intersection or zero. Round only at the end and mark an approximation."
+            }
+          ],
+          "pitfalls": [
+            "The solution is the horizontal coordinate of the intersection. Negative time may be valid algebraically but must be checked against a context."
+          ]
+        }
+      },
+      {
+        "id": "growth-decay",
+        "title": "增长、衰减和计息期",
+        "summary": "增长/衰减可用 $A=A_0b^{t/h}$。复利 $A=P(1+r/m)^{mt}$ 中，$r$ 是年利率的小数，$m$ 是每年计息次数，$t$ 以年计。",
+        "method": [
+          {
+            "title": "定义变量与起点",
+            "body": "$t=0$ 为初始投资或初始样本；明确增长因子、时间单位和 $t\\ge0$。"
+          },
+          {
+            "title": "区分模型与到账",
+            "body": "连续延伸模型可给小数时间；若只在完整计息期入账，达到至少目标时将期数向上取整。"
+          }
+        ],
+        "pitfalls": [
+          "年利率须除以每年计息次数；计算完期数后再换成年。"
+        ],
+        "en": {
+          "title": "Growth, decay, and compounding periods",
+          "summary": "Growth and decay can be modelled by $A=A_0b^{t/h}$. In compound interest $A=P(1+r/m)^{mt}$, $r$ is the decimal annual rate, $m$ is compounding periods per year, and $t$ is in years.",
+          "method": [
+            {
+              "title": "Define variables and origin",
+              "body": "Take $t=0$ at the initial investment or sample. State the multiplier, time units, and $t\\ge0$."
+            },
+            {
+              "title": "Distinguish model time from crediting",
+              "body": "A continuous extension gives a fractional time. If interest is credited only at complete periods, round the number of periods upward to meet at least the target."
+            }
+          ],
+          "pitfalls": [
+            "Divide the annual rate by periods per year, then convert the solved number of periods back to years."
+          ]
+        }
+      },
+      {
+        "id": "extensions",
+        "title": "指数不等式与换元",
+        "summary": "本节拓展：底数 $c>1$ 时 $c^u>c^v\\Leftrightarrow u>v$；$0<c<1$ 时不等号反向。出现 $4^{2x}$ 与 $4^x$ 可令 $u=4^x>0$。",
+        "method": [
+          {
+            "title": "先辨单调性",
+            "body": "底数大于 1 时保持不等号；底数在 0 与 1 之间时反向。"
+          },
+          {
+            "title": "保留换元限制",
+            "body": "解出代数候选 $u$ 后只保留 $u>0$，再求 $x$ 并代回。"
+          }
+        ],
+        "pitfalls": [
+          "严格不等式不包括交点；指数值永远为正。"
+        ],
+        "en": {
+          "title": "Exponential inequalities and substitution",
+          "summary": "From the extension exercises: for $c>1$, $c^u>c^v\\Leftrightarrow u>v$; for $0<c<1$, reverse the inequality. When $4^{2x}$ and $4^x$ occur together, set $u=4^x>0$.",
+          "method": [
+            {
+              "title": "Check monotonicity",
+              "body": "Keep inequality direction for a base above 1; reverse it for a base between 0 and 1."
+            },
+            {
+              "title": "Retain substitution restrictions",
+              "body": "After solving the algebraic equation, keep only $u>0$, solve for $x$, and substitute back."
+            }
+          ],
+          "pitfalls": [
+            "Strict inequalities exclude intersection points; real exponential values with positive base are always positive."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "(a) 补完表格：对 $n=-2,-1,0,1,2$，分别求 $(\\frac12)^n$、$2^n$、$4^n$ 的值，并用指数法则把每项改写为底数 2 的幂。(b) 这些等价表达式有什么规律？与同伴讨论。",
+        "concept": "rewrite-base",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 因为 $\\frac12=2^{-1}$、$4=2^2$，三列分别为 $2^{-n},2^n,2^{2n}$。$n=-2$ 时为 $2^2=4,2^{-2}=\\frac14,2^{-4}=\\frac1{16}$；$n=-1$ 时为 $2^1=2,2^{-1}=\\frac12,2^{-2}=\\frac14$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(a) $n=0$：$2^0=1,2^0=1,2^0=1$；$n=1$：$2^{-1}=\\frac12,2^1=2,2^2=4$；$n=2$：$2^{-2}=\\frac14,2^2=4,2^4=16$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 将底数从 $\\frac12,2,4$ 改成 2 时，指数分别变为原指数的负数、原指数和两倍。对每行，前两列互为倒数，第三列是中间列的平方。这些代数关系可作为同伴讨论的核对依据。"
+          }
+        ],
+        "answer": "(a) 依次为 $(4,\\frac14,\\frac1{16}),(2,\\frac12,\\frac14),(1,1,1),(\\frac12,2,4),(\\frac14,4,16)$。(b) 三列为 $2^{-n},2^n,2^{2n}$。",
+        "printedPage": 358,
+        "pdfPage": 367,
+        "en": {
+          "prompt": "(a) Complete the table for $n=-2,-1,0,1,2$: substitute into $(\\frac12)^n$, $2^n$, and $4^n$, and rewrite each expression as an equivalent power with base 2. (b) What patterns do you observe in the equivalent expressions? Discuss with a partner.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Since $\\frac12=2^{-1}$ and $4=2^2$, the columns are $2^{-n},2^n,2^{2n}$. For $n=-2$, they are $2^2=4,2^{-2}=\\frac14,2^{-4}=\\frac1{16}$. For $n=-1$, they are $2^1=2,2^{-1}=\\frac12,2^{-2}=\\frac14$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(a) For $n=0$: $2^0=1,2^0=1,2^0=1$. For $n=1$: $2^{-1}=\\frac12,2^1=2,2^2=4$. For $n=2$: $2^{-2}=\\frac14,2^2=4,2^4=16$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Rewriting bases $\\frac12,2,4$ using base 2 negates, retains, or doubles the exponent. In each row the first two entries are reciprocals, and the third is the square of the middle entry. These identities provide a check for the partner discussion."
+            }
+          ],
+          "answer": "(a) Rows: $(4,\\frac14,\\frac1{16}),(2,\\frac12,\\frac14),(1,1,1),(\\frac12,2,4),(\\frac14,4,16)$. (b) The columns are $2^{-n},2^n,2^{2n}$.",
+          "label": "Investigate 1"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1",
+        "sourceImage": "assets/73-investigate-table.png"
+      },
+      {
+        "prompt": "对探究 1 表中 $2^n$ 一列的每个式子，找出其他两列中与它等值、但底数不同的指数式。",
+        "concept": "rewrite-base",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$2^{-2}=(\\frac12)^2=4^{-1}$；$2^{-1}=(\\frac12)^1$；$2^0=(\\frac12)^0=4^0$；$2^1=(\\frac12)^{-1}$；$2^2=(\\frac12)^{-2}=4^1$。这些式子的指数都在表的 $-2,-1,0,1,2$ 范围内。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "一般地，$2^n=(\\frac12)^{-n}=4^{n/2}$；当 $n=-1$ 或 1 时，对应的底数 4 指数为 $-\\frac12$ 或 $\\frac12$，不在原表中，因此原表的底数 4 一列没有这两个匹配项。"
+          }
+        ],
+        "answer": "$2^n=(\\frac12)^{-n}=4^{n/2}$；在原表中，底数 4 仅能匹配 $n=-2,0,2$。",
+        "printedPage": 359,
+        "pdfPage": 368,
+        "en": {
+          "prompt": "For each expression in the $2^n$ column of the table in Investigate 1, identify equivalent expressions with different bases in the other columns.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$2^{-2}=(\\frac12)^2=4^{-1}$; $2^{-1}=(\\frac12)^1$; $2^0=(\\frac12)^0=4^0$; $2^1=(\\frac12)^{-1}$; $2^2=(\\frac12)^{-2}=4^1$. All displayed exponents belong to the table values $-2,-1,0,1,2$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "In general $2^n=(\\frac12)^{-n}=4^{n/2}$. For $n=-1$ or 1, the base-4 exponents are $-\\frac12$ or $\\frac12$, which are absent from the original table; those two entries have no base-4 match within the table."
+            }
+          ],
+          "answer": "$2^n=(\\frac12)^{-n}=4^{n/2}$; within the table the base-4 column matches only $n=-2,0,2$.",
+          "label": "Investigate 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 2"
+      },
+      {
+        "prompt": "考虑 $2^x=8^{x-1}$。(a) 说明怎样把等式改写成同底数。(b) 说明如何利用这一点求 $x$ 并求解。(c) 在同一坐标系中画出 (a) 等式两边的指数函数，说明交点与 (b) 所求解的关系。",
+        "concept": "equal-powers",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $8=2^3$，所以 $8^{x-1}=(2^3)^{x-1}=2^{3x-3}$，原方程成为 $2^x=2^{3x-3}$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 底数 2 合法且不等于 1，故 $x=3x-3$，$2x=3$，得 $x=\\frac32$。代回：$2^{3/2}=8^{1/2}=2\\sqrt2$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $y=2^x$ 过 $(0,1),(1,2)$；$y=8^{x-1}$ 过 $(0,\\frac18),(1,1)$。独立绘图显示交点 $(\\frac32,2\\sqrt2)$。交点的横坐标就是两函数值相等的 $x$，与 (b) 一致。"
+          }
+        ],
+        "answer": "(a) $2^x=2^{3x-3}$；(b) $x=\\frac32$；(c) 交点 $(\\frac32,2\\sqrt2)$ 的横坐标为解。",
+        "printedPage": 359,
+        "pdfPage": 368,
+        "en": {
+          "prompt": "Consider $2^x=8^{x-1}$. (a) Explain how to rewrite the equation with the same bases. (b) Describe how this helps you solve for $x$, then solve. (c) Graph the exponential functions on both sides on the same axes and explain how their intersection relates to your solution.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Since $8=2^3$, $8^{x-1}=(2^3)^{x-1}=2^{3x-3}$, so the equation becomes $2^x=2^{3x-3}$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Base 2 is valid and is not 1, so $x=3x-3$, giving $2x=3$ and $x=\\frac32$. Substitution gives $2^{3/2}=8^{1/2}=2\\sqrt2$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) The curve $y=2^x$ passes through $(0,1),(1,2)$; $y=8^{x-1}$ passes through $(0,\\frac18),(1,1)$. The independent plot shows intersection $(\\frac32,2\\sqrt2)$. Its horizontal coordinate makes the function values equal, agreeing with (b)."
+            }
+          ],
+          "answer": "(a) $2^x=2^{3x-3}$; (b) $x=\\frac32$; (c) the intersection is $(\\frac32,2\\sqrt2)$, whose horizontal coordinate is the solution.",
+          "label": "Reflect and Respond 3"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/73-reflect-3.png",
+        "id": "reflect-3",
+        "type": "practice",
+        "label": "反思与回应 3"
+      },
+      {
+        "prompt": "(a) 考虑 $3^x=4^{2x-1}$，能否用步骤 3(a) 的同样方法求解？说明。(b) 当指数方程的项具有不同底数时，这种解法有什么限制？",
+        "concept": "approximate",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 本节所用的整数/有理数幂方法不能把 3 和 4 改写为同一底数的有理次幂：若存在 $3^p=4^q$ 且非零整数 $p,q$，两边的质因数分别只含 3 和 2，不可能相等。因此不能直接比较原指数。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 同底数法要求能先将两边改写成同一合法底数的单个幂；底数不同本身并不保证可这样改写。可改用试值或图解；例如两曲线在 $x\\approx0.8281$ 相交。后续的对数方法能处理更一般底数。"
+          }
+        ],
+        "answer": "(a) 不能用本节的有理幂换底法直接求解。(b) 需要可统一底数；否则可用试值或图解近似。",
+        "printedPage": 359,
+        "pdfPage": 368,
+        "en": {
+          "prompt": "(a) Consider $3^x=4^{2x-1}$. Can it be solved in the same way as step 3(a)? Explain. (b) What are the limitations when solving exponential equations with terms having different bases?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) The integer/rational-power method used here cannot rewrite 3 and 4 with a common base using rational exponents: nonzero integer powers $3^p=4^q$ would have incompatible prime factors 3 and 2. Thus the original exponents cannot be equated."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Equating exponents requires first expressing each side as a single power of the same valid base. Different bases need not permit this rewrite by elementary power laws. Use trial or graphs instead; here the curves intersect at $x\\approx0.8281$. Later logarithmic methods handle more general bases."
+            }
+          ],
+          "answer": "(a) The rational-power common-base method does not apply directly. (b) A common-base rewrite is required; otherwise trial or graphical approximation can be used.",
+          "label": "Reflect and Respond 4"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "reflect-4",
+        "type": "practice",
+        "label": "反思与回应 4"
+      },
+      {
+        "prompt": "教材把 $4^{2x}=8^{x+1}$ 改写为 $2^{4x}=2^{3x+3}$，再令 $4x=3x+3$。旁注问：“两边为同底数幂，所以指数相等”对所有底数都正确吗？说明。",
+        "concept": "equal-powers",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "对 $c>0$ 且 $c\\ne1$，函数 $c^x$ 严格单调，因此 $c^u=c^v$ 必有 $u=v$。教材示例用底数 2，得 $x=3$；代回两边均为 $2^{12}=4096$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "并非所有底数都适用：$1^2=1^3$ 但 $2\\ne3$；$0^2=0^3$ 也不能推出指数相等，而且零底数不允许所有实指数。负底数不能给出整个实数域上的实指数函数；如 $(-1)^2=(-1)^4$。本节实指数函数应采用 $c>0,c\\ne1$ 的完整条件。"
+          }
+        ],
+        "answer": "不是。实指数函数的充分且标准条件为 $c>0,c\\ne1$；教材所列 $c\\ne-1,0,1$ 仍须补上正底数条件。",
+        "printedPage": 359,
+        "pdfPage": 368,
+        "en": {
+          "prompt": "The text rewrites $4^{2x}=8^{x+1}$ as $2^{4x}=2^{3x+3}$ and then sets $4x=3x+3$. The margin asks: Is the statement that equal powers with the same base have equal exponents true for all bases? Explain.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "For $c>0$ and $c\\ne1$, $c^x$ is strictly monotonic, so $c^u=c^v$ implies $u=v$. The displayed base-2 example gives $x=3$; both original sides equal $2^{12}=4096$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "It is not true for all bases: $1^2=1^3$ but $2\\ne3$; $0^2=0^3$ also fails, and base zero does not allow all real exponents. Negative bases do not give real exponential functions on all real exponents; for example $(-1)^2=(-1)^4$. The full condition for this real-exponential context is $c>0,c\\ne1$."
+            }
+          ],
+          "answer": "No. The standard condition in the real-exponential setting is $c>0,c\\ne1$; the printed exclusion $c\\ne-1,0,1$ still needs the positive-base qualification.",
+          "label": "Link the Ideas: base restrictions"
+        },
+        "id": "side-all-bases",
+        "type": "practice",
+        "label": "联系概念：底数限制"
+      },
+      {
+        "prompt": "把各式改写为底数 3 的幂：(a) $27$；(b) $9^2$；(c) $27^{1/3}(\\sqrt[3]{81})^2$。",
+        "concept": "rewrite-base",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $27=3\\times3\\times3=3^3$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $9^2=(3^2)^2=3^{2\\cdot2}=3^4$，值为 81。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $27^{1/3}(\\sqrt[3]{81})^2=(3^3)^{1/3}((3^4)^{1/3})^2=3^1\\cdot3^{8/3}=3^{1+8/3}=3^{11/3}$。两底数都为正，因此这些根式和分数指数合法。"
+          }
+        ],
+        "answer": "(a) $3^3$；(b) $3^4$；(c) $3^{11/3}$。",
+        "printedPage": 360,
+        "pdfPage": 369,
+        "en": {
+          "prompt": "Rewrite each expression as a power with a base of 3: (a) $27$; (b) $9^2$; (c) $27^{1/3}(\\sqrt[3]{81})^2$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $27=3\\times3\\times3=3^3$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $9^2=(3^2)^2=3^{2\\cdot2}=3^4$, whose value is 81."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $27^{1/3}(\\sqrt[3]{81})^2=(3^3)^{1/3}((3^4)^{1/3})^2=3^1\\cdot3^{8/3}=3^{1+8/3}=3^{11/3}$. Both bases are positive, so the radicals and rational powers are defined."
+            }
+          ],
+          "answer": "(a) $3^3$; (b) $3^4$; (c) $3^{11/3}$.",
+          "label": "Example 1: Change the Base of Powers"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1：改变幂的底数"
+      },
+      {
+        "prompt": "把各式写成底数 2 的幂：(a) $4^3$；(b) $\\frac18$；(c) $8^{2/3}(\\sqrt{16})^3$。",
+        "concept": "rewrite-base",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $4^3=(2^2)^3=2^6$，原值为 64。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $\\frac18=\\frac1{2^3}=2^{-3}$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $8^{2/3}(\\sqrt{16})^3=(2^3)^{2/3}((2^4)^{1/2})^3=2^2\\cdot2^6=2^8=256$。"
+          }
+        ],
+        "answer": "(a) $2^6$；(b) $2^{-3}$；(c) $2^8$。",
+        "printedPage": 360,
+        "pdfPage": 369,
+        "en": {
+          "prompt": "Write each expression as a power with base 2: (a) $4^3$; (b) $\\frac18$; (c) $8^{2/3}(\\sqrt{16})^3$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $4^3=(2^2)^3=2^6$, equal to 64."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $\\frac18=\\frac1{2^3}=2^{-3}$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $8^{2/3}(\\sqrt{16})^3=(2^3)^{2/3}((2^4)^{1/2})^3=2^2\\cdot2^6=2^8=256$."
+            }
+          ],
+          "answer": "(a) $2^6$; (b) $2^{-3}$; (c) $2^8$.",
+          "label": "Your Turn 1"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "配套练习 1"
+      },
+      {
+        "prompt": "解各方程：(a) $4^{x+2}=64^x$；(b) $4^{2x}=8^{2x-3}$。",
+        "concept": "equal-powers",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $64=4^3$，故 $4^{x+2}=4^{3x}$。比较指数：$x+2=3x$，$2=2x$，得 $x=1$。代回：$4^3=64^1=64$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(a) 也可画 $y=4^{x+2}$ 与 $y=64^x$；在独立解析图中，交点为 $(1,64)$，横坐标同样为 1。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 改为底数 2：$(2^2)^{2x}=(2^3)^{2x-3}$，即 $2^{4x}=2^{6x-9}$。故 $4x=6x-9$，$2x=9$，$x=\\frac92$。代回：$4^9=8^6=2^{18}=262144$。"
+          }
+        ],
+        "answer": "(a) $x=1$；(b) $x=\\frac92$。",
+        "printedPage": 360,
+        "pdfPage": 369,
+        "en": {
+          "prompt": "Solve each equation: (a) $4^{x+2}=64^x$; (b) $4^{2x}=8^{2x-3}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Since $64=4^3$, $4^{x+2}=4^{3x}$. Equate exponents: $x+2=3x$, so $2=2x$ and $x=1$. Check: $4^3=64^1=64$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(a) Alternatively graph $y=4^{x+2}$ and $y=64^x$. Their intersection in the independent solution plot is $(1,64)$, again giving horizontal coordinate 1."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Rewrite with base 2: $(2^2)^{2x}=(2^3)^{2x-3}$, so $2^{4x}=2^{6x-9}$. Thus $4x=6x-9$, $2x=9$, and $x=\\frac92$. Check: $4^9=8^6=2^{18}=262144$."
+            }
+          ],
+          "answer": "(a) $x=1$; (b) $x=\\frac92$.",
+          "label": "Example 2: Solve an Equation by Changing the Base"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/73-example-2.png",
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2：通过换底解方程"
+      },
+      {
+        "prompt": "求解，并用绘图技术核对：(a) $2^{4x}=4^{x+3}$；(b) $9^{4x}=27^{x-1}$。",
+        "concept": "equal-powers",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $2^{4x}=2^{2x+6}$，故 $4x=2x+6$，$x=3$。原式两边均为 $2^{12}=4096$；两函数图像交于 $(3,4096)$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $(3^2)^{4x}=(3^3)^{x-1}$，即 $3^{8x}=3^{3x-3}$。$8x=3x-3$ 给 $5x=-3$，所以 $x=-\\frac35=-0.6$。原式两边为 $3^{-24/5}\\approx0.005126$；独立解析图交点横坐标为 $-0.6$。"
+          }
+        ],
+        "answer": "(a) $x=3$；(b) $x=-\\frac35$。",
+        "printedPage": 361,
+        "pdfPage": 370,
+        "en": {
+          "prompt": "Solve. Check your answers using graphing technology: (a) $2^{4x}=4^{x+3}$; (b) $9^{4x}=27^{x-1}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $2^{4x}=2^{2x+6}$, so $4x=2x+6$ and $x=3$. Both original sides equal $2^{12}=4096$, and the two graphs meet at $(3,4096)$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $(3^2)^{4x}=(3^3)^{x-1}$ gives $3^{8x}=3^{3x-3}$. From $8x=3x-3$, $5x=-3$, hence $x=-\\frac35=-0.6$. Both original sides equal $3^{-24/5}\\approx0.005126$; the independent graph has intersection coordinate $x=-0.6$."
+            }
+          ],
+          "answer": "(a) $x=3$; (b) $x=-\\frac35$.",
+          "label": "Your Turn 2"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/73-your-turn-2.png",
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "配套练习 2"
+      },
+      {
+        "prompt": "Christina 想买一辆 5900 元的汽车，已存有 5000 元。若把钱存入年利率 6.12%、按季度复利的定期存款，她需要存多久才有足够的钱买车？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "设 $n$ 为从存款日起经过的计息季度数。每季度利率为 $i=0.0612/4=0.0153$。由 $A=P(1+i)^n$，目标方程为 $5900=5000(1.0153)^n$，即 $1.18=1.0153^n$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "系统试值：$1.0153^{10}\\approx1.1639756<1.18$，$1.0153^{11}\\approx1.1817844>1.18$。继续缩小区间或读 $y=1.0153^n-1.18$ 的零点，得连续延伸模型的交点 $n\\approx10.9005$，相当于约 $2.7251$ 年。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "因为利息按季度入账，检查完整期数：10 季度余额约为 $5819.88$ 元，不足；11 季度约为 $5908.92$ 元，足够。所以最早完整计息期为第 11 季度，即 $11/4=2.75$ 年。"
+          }
+        ],
+        "answer": "最早在 11 个季度后，即 2.75 年（2 年 9 个月）；连续延伸模型达到精确 5900 元的时间约为 2.7251 年。",
+        "printedPage": 362,
+        "pdfPage": 371,
+        "en": {
+          "prompt": "Christina plans to buy a car costing 5900 dollars. She has saved 5000 dollars. How long must she invest in a term deposit paying 6.12% per year, compounded quarterly, before she has enough to buy the car?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Let $n$ be the number of compounding quarters since deposit. The quarterly rate is $i=0.0612/4=0.0153$. Using $A=P(1+i)^n$, the target equation is $5900=5000(1.0153)^n$, or $1.18=1.0153^n$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Systematic trial gives $1.0153^{10}\\approx1.1639756<1.18$ and $1.0153^{11}\\approx1.1817844>1.18$. Refining the bracket, or reading the zero of $y=1.0153^n-1.18$, gives $n\\approx10.9005$ for the continuous extension, about $2.7251$ years."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Because interest is credited quarterly, check complete periods: after 10 quarters the balance is about 5819.88 dollars, insufficient; after 11 it is about 5908.92 dollars, sufficient. The earliest complete compounding period is therefore quarter 11, or $11/4=2.75$ years."
+            }
+          ],
+          "answer": "The earliest complete crediting period is 11 quarters, or 2.75 years (2 years 9 months). The continuous extension reaches exactly 5900 dollars at about 2.7251 years.",
+          "label": "Example 3: Solve Problems Involving Exponential Equations With Different Bases"
+        },
+        "solutionImage": "assets/73-example-3.png",
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3：不同底数的指数应用"
+      },
+      {
+        "prompt": "例题 3 使用 $1.18=1.0153^n$ 试值时，为什么选择整数作为 $n$？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$n$ 表示已完成的计息季度数；季度利息在各季末入账，实际账户的完整期余额用 $n=0,1,2,\\ldots$ 表示。因此为判断何时足够买车，应优先比较整数期。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "$n=10$ 时约为 $5819.88$ 元，$n=11$ 时约为 $5908.92$ 元；虽然连续插值的根约为 $10.9005$，第一次完整计息后达到目标仍为 11 季度。"
+          }
+        ],
+        "answer": "因为 $n$ 是完整计息季度数，实际达到至少目标余额时须取向上的整数期数。",
+        "printedPage": 362,
+        "pdfPage": 371,
+        "en": {
+          "prompt": "In Example 3, why choose whole numbers for $n$ when trying values in $1.18=1.0153^n$?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$n$ counts completed compounding quarters. Quarterly interest is credited at each quarter end, so complete-period balances use $n=0,1,2,\\ldots$. Integer periods therefore determine when the credited balance is enough."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "At $n=10$ the balance is about 5819.88 dollars; at $n=11$ it is about 5908.92 dollars. Although the continuously interpolated root is about $10.9005$, the first complete crediting period reaching the target is still quarter 11."
+            }
+          ],
+          "answer": "Because $n$ counts complete compounding quarters, meeting at least the target requires rounding the period count upward.",
+          "label": "Example 3 margin: Why whole periods?"
+        },
+        "id": "side-whole-periods",
+        "type": "practice",
+        "label": "例题 3 旁注：为何取整数期数？"
+      },
+      {
+        "prompt": "画 $y=1.0153^x-1.18$ 并找 $x$ 截距，为什么与分别画等式两边并找交点相似？",
+        "concept": "approximate",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$1.0153^x=1.18$ 当且仅当 $1.0153^x-1.18=0$。因此曲线 $y=1.0153^x$ 与水平线 $y=1.18$ 交点的横坐标，也就是差函数的零点横坐标。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "两种图解均给 $x\\approx10.9005$。原交点约为 $(10.9005,1.18)$，差函数的截距约为 $(10.9005,0)$；纵坐标不同，但所求横坐标相同。"
+          }
+        ],
+        "answer": "把一边移到另一边，将“两个函数相等”转为“差为 0”；两种图解有相同的解。",
+        "printedPage": 363,
+        "pdfPage": 372,
+        "en": {
+          "prompt": "How is graphing $y=1.0153^x-1.18$ and finding its $x$-intercept similar to graphing the two sides of the equation and finding their intersection?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$1.0153^x=1.18$ if and only if $1.0153^x-1.18=0$. The horizontal coordinate where $y=1.0153^x$ meets $y=1.18$ is therefore also the zero of the difference function."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Both graphical methods give $x\\approx10.9005$. The original intersection is approximately $(10.9005,1.18)$, whereas the difference-function intercept is approximately $(10.9005,0)$. Their ordinates differ, but the required abscissa is the same."
+            }
+          ],
+          "answer": "Moving one side to the other converts equal function values into a zero difference, so both graphing methods give the same solution.",
+          "label": "Example 3 margin: Zeros and intersections"
+        },
+        "id": "side-zero-intersection",
+        "type": "practice",
+        "label": "例题 3 旁注：零点和交点"
+      },
+      {
+        "prompt": "把 1000 元存入年利率 8.3%、半年复利的账户，多久后能增长到 1490 元？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "每半年利率为 $i=0.083/2=0.0415$。设 $n$ 为半年期数：$1490=1000(1.0415)^n$，故 $1.49=1.0415^n$；年数为 $t=n/2$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "试值 $1.0415^9\\approx1.4418944<1.49$、$1.0415^{10}\\approx1.5017331>1.49$。图解或细化试值得连续期数 $n\\approx9.8071$，所以连续延伸时间约 $4.90355$ 年。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "实际半年末余额在第 9 期约为 $1441.89$ 元、第 10 期约为 $1501.73$ 元。若仅在计息日入账，最早需 10 个半年，即 5 年。"
+          }
+        ],
+        "answer": "最早完整计息期为 5 年；连续延伸模型给约 4.90 年。",
+        "printedPage": 363,
+        "pdfPage": 372,
+        "en": {
+          "prompt": "Determine how long 1000 dollars must be invested in an account earning 8.3% per year, compounded semi-annually, before it increases to 1490 dollars.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "The half-year rate is $i=0.083/2=0.0415$. Let $n$ count half-year periods: $1490=1000(1.0415)^n$, so $1.49=1.0415^n$, and years are $t=n/2$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Trial gives $1.0415^9\\approx1.4418944<1.49$ and $1.0415^{10}\\approx1.5017331>1.49$. A graph or finer trial gives continuous period count $n\\approx9.8071$, or about $4.90355$ years."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "At complete half-year ends, the balance is about 1441.89 dollars at period 9 and 1501.73 dollars at period 10. If credit occurs only on those dates, the earliest sufficient balance is after 10 half-years, or 5 years."
+            }
+          ],
+          "answer": "Five years at complete crediting dates; the continuous extension gives approximately 4.90 years.",
+          "label": "Your Turn 3"
+        },
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "配套练习 3"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "把各式写成底数 2 的幂：(a) $4^6$；(b) $8^3$；(c) $(\\frac18)^2$；(d) $16$。",
+        "concept": "rewrite-base",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $4^6=(2^2)^6=2^{12}$；指数 $2\\cdot6=12$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $8^3=(2^3)^3=2^9$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $(\\frac18)^2=(2^{-3})^2=2^{-6}$；也等于 $1/64$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) $16=2\\cdot2\\cdot2\\cdot2=2^4$。"
+          }
+        ],
+        "answer": "(a) $2^{12}$；(b) $2^9$；(c) $2^{-6}$；(d) $2^4$。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "Write each expression with base 2: (a) $4^6$; (b) $8^3$; (c) $(\\frac18)^2$; (d) $16$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $4^6=(2^2)^6=2^{12}$, since $2\\cdot6=12$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $8^3=(2^3)^3=2^9$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $(\\frac18)^2=(2^{-3})^2=2^{-6}$, also $1/64$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) $16=2\\cdot2\\cdot2\\cdot2=2^4$."
+            }
+          ],
+          "answer": "(a) $2^{12}$; (b) $2^9$; (c) $2^{-6}$; (d) $2^4$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 1
+      },
+      {
+        "prompt": "把每对式子改写成同底数：(a) $2^3$ 与 $4^2$；(b) $9^x$ 与 $27$；(c) $(\\frac12)^{2x}$ 与 $(\\frac14)^{x-1}$；(d) $(\\frac18)^{x-2}$ 与 $16^x$。",
+        "concept": "rewrite-base",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 用底数 2：$2^3$ 不变，$4^2=(2^2)^2=2^4$。这里只改写，并不把两个值设为相等。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 用底数 3：$9^x=(3^2)^x=3^{2x}$，$27=3^3$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 用底数 2：$(\\frac12)^{2x}=(2^{-1})^{2x}=2^{-2x}$；$(\\frac14)^{x-1}=(2^{-2})^{x-1}=2^{-2x+2}$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) 用底数 2：$(\\frac18)^{x-2}=(2^{-3})^{x-2}=2^{-3x+6}$，$16^x=(2^4)^x=2^{4x}$。"
+          }
+        ],
+        "answer": "(a) $2^3,2^4$；(b) $3^{2x},3^3$；(c) $2^{-2x},2^{-2x+2}$；(d) $2^{-3x+6},2^{4x}$。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "Rewrite each pair with the same base: (a) $2^3$ and $4^2$; (b) $9^x$ and $27$; (c) $(\\frac12)^{2x}$ and $(\\frac14)^{x-1}$; (d) $(\\frac18)^{x-2}$ and $16^x$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Use base 2: retain $2^3$ and write $4^2=(2^2)^2=2^4$. This is a rewrite, not a claim that the two values are equal."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Use base 3: $9^x=(3^2)^x=3^{2x}$ and $27=3^3$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Use base 2: $(\\frac12)^{2x}=(2^{-1})^{2x}=2^{-2x}$; $(\\frac14)^{x-1}=(2^{-2})^{x-1}=2^{-2x+2}$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) Use base 2: $(\\frac18)^{x-2}=(2^{-3})^{x-2}=2^{-3x+6}$ and $16^x=(2^4)^x=2^{4x}$."
+            }
+          ],
+          "answer": "(a) $2^3,2^4$; (b) $3^{2x},3^3$; (c) $2^{-2x},2^{-2x+2}$; (d) $2^{-3x+6},2^{4x}$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 2
+      },
+      {
+        "prompt": "把各式写成底数 4 的单个幂：(a) $(\\sqrt{16})^2$；(b) $\\sqrt[3]{16}$；(c) $\\sqrt{16}(\\sqrt[3]{64})^2$；(d) $(\\sqrt2)^8(\\sqrt[4]{4})^4$。",
+        "concept": "rewrite-base",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $\\sqrt{16}=4$ 为主平方根，故 $(\\sqrt{16})^2=4^2$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $\\sqrt[3]{16}=16^{1/3}=(4^2)^{1/3}=4^{2/3}$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $\\sqrt{16}=4$，$\\sqrt[3]{64}=4$，所以 $4\\cdot4^2=4^{1+2}=4^3$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) $(\\sqrt2)^8=(2^{1/2})^8=2^4=4^2$；$(\\sqrt[4]{4})^4=(4^{1/4})^4=4$。相乘得 $4^2\\cdot4=4^3$。"
+          }
+        ],
+        "answer": "(a) $4^2$；(b) $4^{2/3}$；(c) $4^3$；(d) $4^3$。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "Write each expression as a single power of 4: (a) $(\\sqrt{16})^2$; (b) $\\sqrt[3]{16}$; (c) $\\sqrt{16}(\\sqrt[3]{64})^2$; (d) $(\\sqrt2)^8(\\sqrt[4]{4})^4$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) The principal square root is $\\sqrt{16}=4$, so $(\\sqrt{16})^2=4^2$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $\\sqrt[3]{16}=16^{1/3}=(4^2)^{1/3}=4^{2/3}$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Since $\\sqrt{16}=4$ and $\\sqrt[3]{64}=4$, the product is $4\\cdot4^2=4^{1+2}=4^3$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) $(\\sqrt2)^8=(2^{1/2})^8=2^4=4^2$, and $(\\sqrt[4]{4})^4=(4^{1/4})^4=4$. Their product is $4^2\\cdot4=4^3$."
+            }
+          ],
+          "answer": "(a) $4^2$; (b) $4^{2/3}$; (c) $4^3$; (d) $4^3$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 3
+      },
+      {
+        "prompt": "求解，并代入核对：(a) $2^{4x}=4^{x+3}$；(b) $25^{x-1}=5^{3x}$；(c) $3^{w+1}=9^{w-1}$；(d) $36^{3m-1}=6^{2m+5}$。",
+        "concept": "equal-powers",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $2^{4x}=2^{2x+6}$，故 $4x=2x+6$、$x=3$。代回 $2^{12}=4^6=4096$，成立。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $5^{2x-2}=5^{3x}$，故 $2x-2=3x$、$x=-2$。代回 $25^{-3}=5^{-6}=1/15625$，成立。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $3^{w+1}=3^{2w-2}$，故 $w+1=2w-2$、$w=3$。代回 $3^4=9^2=81$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) $(6^2)^{3m-1}=6^{2m+5}$，所以 $6m-2=2m+5$、$4m=7$、$m=\\frac74$。代回左边为 $36^{17/4}=6^{17/2}$，右边为 $6^{7/2+5}=6^{17/2}$。"
+          }
+        ],
+        "answer": "(a) $x=3$；(b) $x=-2$；(c) $w=3$；(d) $m=\\frac74$。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "Solve. Check by substitution: (a) $2^{4x}=4^{x+3}$; (b) $25^{x-1}=5^{3x}$; (c) $3^{w+1}=9^{w-1}$; (d) $36^{3m-1}=6^{2m+5}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $2^{4x}=2^{2x+6}$ gives $4x=2x+6$, hence $x=3$. Substitution gives $2^{12}=4^6=4096$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $5^{2x-2}=5^{3x}$ gives $2x-2=3x$, hence $x=-2$. Check: $25^{-3}=5^{-6}=1/15625$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) $3^{w+1}=3^{2w-2}$ gives $w+1=2w-2$, hence $w=3$. Check: $3^4=9^2=81$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) $(6^2)^{3m-1}=6^{2m+5}$ gives $6m-2=2m+5$, $4m=7$, and $m=\\frac74$. The original left side is $36^{17/4}=6^{17/2}$, and the right side is $6^{7/2+5}=6^{17/2}$."
+            }
+          ],
+          "answer": "(a) $x=3$; (b) $x=-2$; (c) $w=3$; (d) $m=\\frac74$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 4
+      },
+      {
+        "prompt": "求解，并用绘图技术核对：(a) $4^{3x}=8^{x-3}$；(b) $27^x=9^{x-2}$；(c) $125^{2y-1}=25^{y+4}$；(d) $16^{2k-3}=32^{k+3}$。",
+        "concept": "equal-powers",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 改为底数 2：$2^{6x}=2^{3x-9}$，故 $6x=3x-9$、$x=-3$。代入得 $2^{-18}$；两图交点 $(-3,2^{-18})$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 改为底数 3：$3^{3x}=3^{2x-4}$，故 $3x=2x-4$、$x=-4$。两边均为 $3^{-12}$；交点 $(-4,3^{-12})$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 改为底数 5：$5^{6y-3}=5^{2y+8}$，故 $4y=11$、$y=\\frac{11}4=2.75$。代入后共同值为 $5^{27/2}$；解析图以 $y$ 为横向自变量，两曲线交于该横坐标。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) 改为底数 2：$2^{8k-12}=2^{5k+15}$，故 $3k=27$、$k=9$。代入后共同值为 $2^{60}$；图中两曲线在横坐标 9 相交。"
+          }
+        ],
+        "answer": "(a) $x=-3$；(b) $x=-4$；(c) $y=\\frac{11}4$；(d) $k=9$。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "Solve. Check using graphing technology: (a) $4^{3x}=8^{x-3}$; (b) $27^x=9^{x-2}$; (c) $125^{2y-1}=25^{y+4}$; (d) $16^{2k-3}=32^{k+3}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Base 2 gives $2^{6x}=2^{3x-9}$, so $6x=3x-9$ and $x=-3$. Both values are $2^{-18}$; the graphs intersect at $(-3,2^{-18})$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Base 3 gives $3^{3x}=3^{2x-4}$, so $3x=2x-4$ and $x=-4$. Both sides equal $3^{-12}$; the intersection is $(-4,3^{-12})$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Base 5 gives $5^{6y-3}=5^{2y+8}$, so $4y=11$ and $y=\\frac{11}4=2.75$. The common value is $5^{27/2}$. In the solution plot, the horizontal variable represents $y$ and the curves meet at this coordinate."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) Base 2 gives $2^{8k-12}=2^{5k+15}$, so $3k=27$ and $k=9$. The common value is $2^{60}$; the graph confirms intersection at horizontal coordinate 9."
+            }
+          ],
+          "answer": "(a) $x=-3$; (b) $x=-4$; (c) $y=\\frac{11}4$; (d) $k=9$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/73-exercise-5.png",
+        "number": 5
+      },
+      {
+        "prompt": "用系统试值求 $x$，并用绘图技术核对。答案保留一位小数：(a) $2=1.07^x$；(b) $3=1.1^x$；(c) $0.5=1.2^{x-1}$；(d) $5=1.08^{x+2}$。",
+        "concept": "approximate",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) $1.07^{10.2}\\approx1.99395<2$，$1.07^{10.3}\\approx2.00749>2$。继续试得 $1.07^{10.2447}<2<1.07^{10.2448}$，图上差函数 $1.07^x-2$ 在 $x\\approx10.24477$ 过零。故一位小数为 $x\\approx10.2$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $1.1^{11.5}\\approx2.99237<3$，$1.1^{11.6}\\approx3.02103>3$。细化得 $1.1^{11.5267}<3<1.1^{11.5268}$，差函数的图像零点约为 $11.52670$。故 $x\\approx11.5$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $x=-2.9$ 时 $1.2^{x-1}\\approx0.49113<0.5$，$x=-2.8$ 时约为 $0.50016>0.5$。细化到 $x=-2.8018$ 和 $-2.8017$ 可夹住根，图上零点 $x\\approx-2.80178$，故 $x\\approx-2.8$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) $x=18.9$ 时 $1.08^{x+2}\\approx4.99524<5$，$x=19.0$ 时约为 $5.03383>5$。细化到 $18.9123$ 与 $18.9124$ 夹住根，图上零点 $x\\approx18.91237$，故 $x\\approx18.9$。"
+          }
+        ],
+        "answer": "(a) $x\\approx10.2$；(b) $x\\approx11.5$；(c) $x\\approx-2.8$；(d) $x\\approx18.9$。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "Solve for $x$ using systematic trial and check using graphing technology. Round to one decimal place: (a) $2=1.07^x$; (b) $3=1.1^x$; (c) $0.5=1.2^{x-1}$; (d) $5=1.08^{x+2}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) $1.07^{10.2}\\approx1.99395<2$ and $1.07^{10.3}\\approx2.00749>2$. Refine to $1.07^{10.2447}<2<1.07^{10.2448}$. The graph of $1.07^x-2$ crosses zero at $x\\approx10.24477$, so $x\\approx10.2$ to one decimal place."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) $1.1^{11.5}\\approx2.99237<3$ and $1.1^{11.6}\\approx3.02103>3$. Refining gives $1.1^{11.5267}<3<1.1^{11.5268}$. The difference graph has zero near $11.52670$, so $x\\approx11.5$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) At $x=-2.9$, $1.2^{x-1}\\approx0.49113<0.5$; at $x=-2.8$, it is about $0.50016>0.5$. Trials at $-2.8018$ and $-2.8017$ bracket the root. The difference graph gives $x\\approx-2.80178$, hence $x\\approx-2.8$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) At $x=18.9$, $1.08^{x+2}\\approx4.99524<5$; at $x=19.0$, it is about $5.03383>5$. Trials at $18.9123$ and $18.9124$ bracket the root. The difference graph gives $x\\approx18.91237$, hence $x\\approx18.9$."
+            }
+          ],
+          "answer": "(a) $x\\approx10.2$; (b) $x\\approx11.5$; (c) $x\\approx-2.8$; (d) $x\\approx18.9$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/73-exercise-6.png",
+        "number": 6
+      },
+      {
+        "prompt": "用图解求 $t$，必要时保留两位小数：(a) $100=10(1.04)^t$；(b) $10=(\\frac12)^{2t}$；(c) $12=(\\frac14)^{t/3}$；(d) $100=25(\\frac12)^{t/4}$；(e) $2^t=3^{t-1}$；(f) $5^{t-2}=4^t$；(g) $8^{t+1}=3^{t-1}$；(h) $7^{2t+1}=4^{t-2}$。",
+        "concept": "approximate",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 画差函数 $F(t)=10(1.04)^t-100$。在 $t=58.7083$ 与 $58.7085$ 时符号由负变正，零点横坐标约为 $58.70839$，所以 $t\\approx58.71$。代入未舍入值时原两边约为 100。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 画 $F(t)=(\\frac12)^{2t}-10$，零点约为 $-1.660964$（在 $-1.6610,-1.6609$ 之间），故 $t\\approx-1.66$。底数小于 1 而函数值 10 大于 1，所以负的 $t$ 合理。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 画 $F(t)=(\\frac14)^{t/3}-12$。图上零点约为 $-5.377444$，在 $-5.3775,-5.3774$ 之间，故 $t\\approx-5.38$。此时 $t/3\\approx-1.792481$，函数值约为 12。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) 画 $F(t)=25(\\frac12)^{t/4}-100$，零点为 $t=-8$。代回 $25(\\frac12)^{-2}=25\\cdot4=100$，因此这里为精确解。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(e) 画 $F(t)=2^t-3^{t-1}$；在 $2.7095$ 与 $2.7096$ 之间过零，读得 $t\\approx2.709511$，故 $t\\approx2.71$。也可把方程写为 $(\\frac23)^t=\\frac13$，左边严格递减，说明只有一个解。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(f) 画 $F(t)=5^{t-2}-4^t$，调整窗口到 $13.5\\le t\\le15$；零点在 $14.4251,14.4252$ 之间，读得 $t\\approx14.425135$，故 $t\\approx14.43$。等价式 $(\\frac54)^t=25$ 也说明解唯一。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(g) 画 $F(t)=8^{t+1}-3^{t-1}$，可在 $-4\\le t\\le-2$ 看清交叉；零点在 $-3.2402,-3.2401$ 之间，约为 $-3.240170$，故 $t\\approx-3.24$。等价式 $(\\frac83)^t=\\frac1{24}$ 左边严格递增，所以仅一个根。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(h) 画 $F(t)=7^{2t+1}-4^{t-2}$，零点在 $-1.8833,-1.8832$ 之间，约为 $-1.883237$，故 $t\\approx-1.88$。等价式 $(\\frac{49}4)^t=\\frac1{112}$ 的底数大于 1，保证解唯一。"
+          }
+        ],
+        "answer": "(a) $58.71$；(b) $-1.66$；(c) $-5.38$；(d) $-8$；(e) $2.71$；(f) $14.43$；(g) $-3.24$；(h) $-1.88$。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "Solve for $t$ graphically. Round to two decimal places if necessary: (a) $100=10(1.04)^t$; (b) $10=(\\frac12)^{2t}$; (c) $12=(\\frac14)^{t/3}$; (d) $100=25(\\frac12)^{t/4}$; (e) $2^t=3^{t-1}$; (f) $5^{t-2}=4^t$; (g) $8^{t+1}=3^{t-1}$; (h) $7^{2t+1}=4^{t-2}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Graph $F(t)=10(1.04)^t-100$. Its sign changes from negative to positive between $58.7083$ and $58.7085$, with zero at about $58.70839$. Thus $t\\approx58.71$; substitution of the unrounded value makes both sides about 100."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Graph $F(t)=(\\frac12)^{2t}-10$. Its zero is about $-1.660964$, between $-1.6610$ and $-1.6609$, so $t\\approx-1.66$. A negative $t$ is reasonable because the base is below 1 while the value 10 exceeds 1."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Graph $F(t)=(\\frac14)^{t/3}-12$. Its zero is about $-5.377444$, between $-5.3775$ and $-5.3774$, hence $t\\approx-5.38$. Then $t/3\\approx-1.792481$ and the exponential value is about 12."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) Graph $F(t)=25(\\frac12)^{t/4}-100$. The zero is $t=-8$. Substitution gives $25(\\frac12)^{-2}=25\\cdot4=100$, so this solution is exact."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(e) Graph $F(t)=2^t-3^{t-1}$. It crosses zero between $2.7095$ and $2.7096$, at about $2.709511$, so $t\\approx2.71$. Equivalently $(\\frac23)^t=\\frac13$ has a strictly decreasing left side, confirming uniqueness."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(f) Graph $F(t)=5^{t-2}-4^t$ with window $13.5\\le t\\le15$. Its zero lies between $14.4251$ and $14.4252$, at about $14.425135$, so $t\\approx14.43$. The equivalent equation $(\\frac54)^t=25$ confirms a unique solution."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(g) Graph $F(t)=8^{t+1}-3^{t-1}$ on $-4\\le t\\le-2$ to reveal the crossing. Its zero is between $-3.2402$ and $-3.2401$, about $-3.240170$, giving $t\\approx-3.24$. The equivalent equation $(\\frac83)^t=\\frac1{24}$ has a strictly increasing left side, so there is one root."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(h) Graph $F(t)=7^{2t+1}-4^{t-2}$. The zero is between $-1.8833$ and $-1.8832$, about $-1.883237$, so $t\\approx-1.88$. The equivalent equation $(\\frac{49}4)^t=\\frac1{112}$ has base above 1, confirming uniqueness."
+            }
+          ],
+          "answer": "(a) $58.71$; (b) $-1.66$; (c) $-5.38$; (d) $-8$; (e) $2.71$; (f) $14.43$; (g) $-3.24$; (h) $-1.88$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h"
+        ],
+        "solutionImage": "assets/73-exercise-7.png",
+        "number": 7
+      },
+      {
+        "prompt": "海鲜若没有保持冷冻（低于 $0^\\circ\\mathrm C$），会因细菌生长而变质。相对变质速率满足 $R=100(2.7)^{T/8}$，其中 $T$ 为摄氏温度。(a) 画 $0^\\circ\\mathrm C$ 到 $25^\\circ\\mathrm C$ 的 $R$ 对 $T$ 图像。(b) 用图预测 $R$ 加倍到 200 时的温度。(c) $15^\\circ\\mathrm C$ 时 $R$ 是多少？(d) 若最大可接受 $R$ 为 500，最高储藏温度是多少？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 在给定区间 $0\\le T\\le25$，指数底数 2.7 大于 1，图像递增、向上弯曲。点为 $(0,100),(8,270),(16,729),(24,1968.3),(25,2228.5)$（末点为近似值）；以这些点画平滑指数曲线，横轴标温度，纵轴标速率指标 $R$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 画水平线 $R=200$，与曲线交点横坐标约为 $T=5.58$。用试值核对：$R(5.58)\\approx199.93$，$R(5.59)\\approx200.18$，所以图解预测约 $5.6^\\circ\\mathrm C$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 代入 $T=15$：$R=100(2.7)^{15/8}\\approx643.8831$，因此相对变质速率指标约为 643.9（以 $0^\\circ\\mathrm C$ 时的 100 为基准）。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(d) 要求 $100(2.7)^{T/8}\\le500$。在图上找 $R=500$ 的交点：$T\\approx12.96298$。由于 $R$ 递增，允许温度满足 $T\\le12.96298\\ldots^\\circ\\mathrm C$；在题给绘图区间内为 $0\\le T\\le12.96298\\ldots$。最高约 $12.96^\\circ\\mathrm C$；若只能设一位小数且不得超过阈值，可选 $12.9^\\circ\\mathrm C$。"
+          }
+        ],
+        "answer": "(a) 递增指数曲线；(b) 约 $5.6^\\circ\\mathrm C$；(c) $R\\approx643.9$；(d) 数学阈值约 $12.963^\\circ\\mathrm C$。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "If seafood is not kept frozen (below $0^\\circ\\mathrm C$), bacterial growth causes spoilage. The relative spoilage rate is modelled by $R=100(2.7)^{T/8}$, where $T$ is temperature in degrees Celsius. (a) Sketch $R$ versus $T$ from $0^\\circ\\mathrm C$ to $25^\\circ\\mathrm C$. (b) Use the graph to predict the temperature at which the rate doubles to 200. (c) Find the relative rate at $15^\\circ\\mathrm C$. (d) If the maximum acceptable relative rate is 500, what is the maximum storage temperature?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) On $0\\le T\\le25$, base 2.7 exceeds 1, so the graph increases and curves upward. Points are $(0,100),(8,270),(16,729),(24,1968.3),(25,2228.5)$. The final ordinate is approximate. Draw a smooth exponential curve with temperature on the horizontal axis and the relative-rate index $R$ vertically."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) The horizontal line $R=200$ meets the curve at about $T=5.58$. Trial checks give $R(5.58)\\approx199.93$ and $R(5.59)\\approx200.18$, so the graph predicts about $5.6^\\circ\\mathrm C$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Substitute $T=15$: $R=100(2.7)^{15/8}\\approx643.8831$. The relative-rate index is therefore about 643.9, using 100 at $0^\\circ\\mathrm C$ as the baseline."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(d) Require $100(2.7)^{T/8}\\le500$. The graph meets $R=500$ at $T\\approx12.96298$. Since $R$ increases, acceptable temperatures satisfy $T\\le12.96298\\ldots^\\circ\\mathrm C$; within the plotted interval, $0\\le T\\le12.96298\\ldots$. The maximum is about $12.96^\\circ\\mathrm C$. A one-decimal setting that must stay below the limit is $12.9^\\circ\\mathrm C$."
+            }
+          ],
+          "answer": "(a) Increasing exponential curve; (b) about $5.6^\\circ\\mathrm C$; (c) $R\\approx643.9$; (d) mathematical threshold about $12.963^\\circ\\mathrm C$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/73-exercise-8.png",
+        "number": 8
+      },
+      {
+        "prompt": "某细菌培养物最初有 2000 个细菌，每 0.75 小时数量加倍。多少小时后细菌数量为 32000？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "设 $t$ 为从开始培养起的小时数，$t\\ge0$。经过的加倍次数为 $t/0.75$，所以 $N(t)=2000\\cdot2^{t/0.75}$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "$32000=2000\\cdot2^{t/0.75}$，除以 2000 得 $16=2^{t/0.75}$。因为 $16=2^4$，$t/0.75=4$，所以 $t=4(0.75)=3$ 小时。核对 $2000\\cdot16=32000$。"
+          }
+        ],
+        "answer": "3 小时。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "A bacterial culture starts with 2000 bacteria and doubles every 0.75 h. After how many hours will the bacteria count be 32000?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Let $t\\ge0$ be hours since the culture starts. The number of doubling intervals is $t/0.75$, so $N(t)=2000\\cdot2^{t/0.75}$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "$32000=2000\\cdot2^{t/0.75}$ gives $16=2^{t/0.75}$. Since $16=2^4$, $t/0.75=4$, so $t=4(0.75)=3$ h. Check: $2000\\cdot16=32000$."
+            }
+          ],
+          "answer": "3 h."
+        },
+        "number": 9
+      },
+      {
+        "prompt": "Simionie 需要 7000 元买雪地摩托，但只有 6000 元。银行定期投资证书（GIC）年利率为 3.93%，每年复利。他需投资多久才有足够的钱？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "以投资日起为 $t=0$，完整年末余额为 $A_n=6000(1.0393)^n$，$n$ 为非负整数。目标 $A_n\\ge7000$，即 $1.0393^n\\ge\\frac76$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "试值：3 年后 $6000(1.0393)^3\\approx6735.57$ 元；4 年后 $6000(1.0393)^4\\approx7000.27$ 元。因此第一次年末达到目标是在第 4 年。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "若把模型连续延伸，画 $6000(1.0393)^t-7000$ 可得零点 $t\\approx3.99899$ 年，与完整年度结论 4 年吻合。"
+          }
+        ],
+        "answer": "4 年。",
+        "printedPage": 364,
+        "pdfPage": 373,
+        "en": {
+          "prompt": "Simionie needs 7000 dollars to buy a snowmobile but has only 6000 dollars. His bank offers a GIC paying 3.93% per year, compounded annually. How long must he invest to have enough money?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Take the investment date as $t=0$. Complete-year balances are $A_n=6000(1.0393)^n$, with nonnegative integer $n$. The target is $A_n\\ge7000$, or $1.0393^n\\ge\\frac76$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Trial gives $6000(1.0393)^3\\approx6735.57$ dollars after 3 years and $6000(1.0393)^4\\approx7000.27$ dollars after 4 years. The first year-end reaching the target is year 4."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "For the continuous extension, the zero of $6000(1.0393)^t-7000$ is $t\\approx3.99899$ years, consistent with the complete-year answer of 4 years."
+            }
+          ],
+          "answer": "4 years."
+        },
+        "number": 10
+      },
+      {
+        "prompt": "1000 元投资按年利率 8%、季度复利。(a) 写出投资价值关于时间（年）的方程。(b) 求 4 年后的价值。(c) 价值翻倍需要多久？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 每季度利率为 $0.08/4=0.02$，$t$ 年有 $4t$ 个季度，初值为 1000。故 $A(t)=1000(1.02)^{4t}$，$t\\ge0$；按实际入账看，时间点为 $t=n/4$（$n=0,1,2,\\ldots$）。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $t=4$ 时有 16 期，$A(4)=1000(1.02)^{16}\\approx1372.785705$，所以余额约为 $1372.79$ 元。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 翻倍方程为 $2=1.02^{4t}$。图解/试值给连续模型 $4t\\approx35.00279$，即 $t\\approx8.75070$ 年。不能把未舍入期数直接变成 35 个完整季度：$1.02^{35}\\approx1.99988955<2$，$1.02^{36}\\approx2.03988734>2$。因此若利息只在季度末入账，最早为 36 季度，即 9 年。"
+          }
+        ],
+        "answer": "(a) $A(t)=1000(1.02)^{4t}$；(b) 约 1372.79 元；(c) 连续模型约 8.75070 年，完整季度到账最早为 9 年。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "A 1000-dollar investment earns 8% per year, compounded quarterly. (a) Write an equation for its value as a function of time in years. (b) Determine the value after 4 years. (c) How long does it take to double in value?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) The quarterly rate is $0.08/4=0.02$, and $t$ years contains $4t$ quarters. Thus $A(t)=1000(1.02)^{4t}$, $t\\ge0$, with initial value 1000. Actual crediting dates are $t=n/4$, $n=0,1,2,\\ldots$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Four years contains 16 periods: $A(4)=1000(1.02)^{16}\\approx1372.785705$, so the value is about 1372.79 dollars."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) The doubling equation is $2=1.02^{4t}$. Graphing or trial gives continuous period count $4t\\approx35.00279$, hence $t\\approx8.75070$ years. Do not round this to 35 completed quarters: $1.02^{35}\\approx1.99988955<2$, while $1.02^{36}\\approx2.03988734>2$. With quarter-end crediting only, the first sufficient date is quarter 36, or 9 years."
+            }
+          ],
+          "answer": "(a) $A(t)=1000(1.02)^{4t}$; (b) about 1372.79 dollars; (c) about 8.75070 years in the continuous model, or 9 years at complete quarterly crediting dates."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 11
+      },
+      {
+        "prompt": "钴-60（Co-60）的半衰期约为 5.3 年。(a) 写出指数模型。(b) 26.5 年后样本剩原来的几分之几？(c) 衰减到原质量的 $\\frac1{512}$ 需要多久？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 设初始质量为 $M_0>0$，$t$ 为初始测量后的年数。每经过 5.3 年乘 $\\frac12$，因此 $M(t)=M_0(\\frac12)^{t/5.3}$，$t\\ge0$；剩余比例为 $f(t)=(\\frac12)^{t/5.3}$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) $26.5/5.3=5$ 个半衰期，所以 $M(26.5)/M_0=(\\frac12)^5=\\frac1{32}$，约 3.125%。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) $\\frac1{512}=(\\frac12)^9$，比较同底数指数得 $t/5.3=9$，所以 $t=47.7$ 年。半衰期本身为近似量，实际预测也约为 47.7 年。"
+          }
+        ],
+        "answer": "(a) $M(t)=M_0(\\frac12)^{t/5.3}$；(b) $\\frac1{32}$；(c) 约 47.7 年。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "Cobalt-60 (Co-60) has a half-life of approximately 5.3 years. (a) Write an exponential function to model this situation. (b) What fraction remains after 26.5 years? (c) How long does it take to decay to $\\frac1{512}$ of its original mass?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Let $M_0>0$ be the initial mass and $t$ years since the initial measurement. Each 5.3-year interval multiplies mass by $\\frac12$, so $M(t)=M_0(\\frac12)^{t/5.3}$, $t\\ge0$, or remaining fraction $f(t)=(\\frac12)^{t/5.3}$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Since $26.5/5.3=5$ half-lives, $M(26.5)/M_0=(\\frac12)^5=\\frac1{32}$, or 3.125%."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) Since $\\frac1{512}=(\\frac12)^9$, equating exponents gives $t/5.3=9$, hence $t=47.7$ years. The half-life itself is approximate, so the physical prediction is approximately 47.7 years."
+            }
+          ],
+          "answer": "(a) $M(t)=M_0(\\frac12)^{t/5.3}$; (b) $\\frac1{32}$; (c) approximately 47.7 years."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 12
+      },
+      {
+        "prompt": "一张 500 元储蓄债券按年利率 6.6%、半年复利。(a) 写出价值关于时间（年）的方程。(b) 求 5 年后价值。(c) 价值增长到 3 倍需要多久？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 半年利率为 $0.066/2=0.033$，$t$ 年经过 $2t$ 期。故 $A(t)=500(1.033)^{2t}$，$t\\ge0$；完整入账日期为 $t=n/2$，$n=0,1,2,\\ldots$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 5 年对应 10 期，$A(5)=500(1.033)^{10}\\approx691.788311$，所以约为 691.79 元。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 三倍方程 $1500=500(1.033)^{2t}$ 化为 $3=1.033^{2t}$。图解/试值给连续模型 $2t\\approx33.837615$，即约 $16.91881$ 年。检查完整期：$1.033^{33}\\approx2.919514<3$，$1.033^{34}\\approx3.015858>3$。因此实际半年末最早为 34 期，即 17 年。"
+          }
+        ],
+        "answer": "(a) $A(t)=500(1.033)^{2t}$；(b) 约 691.79 元；(c) 连续模型约 16.91881 年，完整半年期最早为 17 年。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "A savings bond pays 6.6% per year, compounded semi-annually. Suppose you buy a 500-dollar bond. (a) Write its value as a function of time in years. (b) Determine its value after 5 years. (c) How long does it take to triple in value?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) The half-year rate is $0.066/2=0.033$, and $t$ years contains $2t$ periods. Thus $A(t)=500(1.033)^{2t}$, $t\\ge0$, with complete crediting dates $t=n/2$, $n=0,1,2,\\ldots$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Five years gives 10 periods: $A(5)=500(1.033)^{10}\\approx691.788311$, or about 691.79 dollars."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) The tripling equation $1500=500(1.033)^{2t}$ becomes $3=1.033^{2t}$. Graphing or trial gives continuous count $2t\\approx33.837615$, or about $16.91881$ years. Complete-period checks give $1.033^{33}\\approx2.919514<3$ and $1.033^{34}\\approx3.015858>3$. Thus the earliest half-year crediting date is period 34, or 17 years."
+            }
+          ],
+          "answer": "(a) $A(t)=500(1.033)^{2t}$; (b) about 691.79 dollars; (c) about 16.91881 years in the continuous model, or 17 years at complete half-year crediting dates."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 13
+      },
+      {
+        "prompt": "Glenn 和 Arlene 为新生孙子投资，计划在他 18 岁生日时有 20000 元教育金。若年增长率为 7%、半年复利，今天需要投资多少？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "设今天投入本金 $P$。每半年增长因子为 $1+0.07/2=1.035$，18 年共 $2\\cdot18=36$ 期，因此 $20000=P(1.035)^{36}$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "两边除以 $1.035^{36}$：$P=20000(1.035)^{-36}\\approx5796.65433156$。按通常四舍五入，现值约为 5796.65 元；以分为单位且需保证届时不少于目标时，应向上存入 5796.66 元。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "核对未舍入本金：$[20000(1.035)^{-36}](1.035)^{36}=20000$。今天对应 $t=0$，18 岁生日对应 $t=18$，不多算初始期。"
+          }
+        ],
+        "answer": "现值约 5796.65 元；若按分存款且要保证至少 20000 元，存 5796.66 元。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "Glenn and Arlene plan to invest for their newborn grandson so that 20000 dollars is available for his education on his 18th birthday. At 7% per year, compounded semi-annually, how much must they invest today?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Let $P$ be the amount invested today. The half-year growth factor is $1+0.07/2=1.035$ and 18 years gives $2\\cdot18=36$ periods. Thus $20000=P(1.035)^{36}$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Divide by $1.035^{36}$: $P=20000(1.035)^{-36}\\approx5796.65433156$. Conventional rounding gives a present value of about 5796.65 dollars. If deposits are in cents and must guarantee at least the target, round upward to 5796.66 dollars."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Check the unrounded principal: $[20000(1.035)^{-36}](1.035)^{36}=20000$. Today is $t=0$ and the 18th birthday is $t=18$; no extra initial period is counted."
+            }
+          ],
+          "answer": "Present value is about 5796.65 dollars; deposit 5796.66 dollars if whole cents must guarantee at least 20000 dollars."
+        },
+        "number": 14
+      },
+      {
+        "prompt": "(a) 解不等式：(i) $2^{3x}>4^{x+1}$；(ii) $81^x<27^{2x+1}$。(b) 用草图说明怎样借助绘图技术核对答案。(c) 自编一个含指数式的不等式，并用图解求解。",
+        "concept": "extensions",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a)(i) $2^{3x}>2^{2x+2}$。因 $2>1$，不等号保持，得 $3x>2x+2$，即 $x>2$。在 $x=2$ 两边均为 64，严格不等式不包括该点。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(a)(ii) $3^{4x}<3^{6x+3}$，因 $3>1$，$4x<6x+3$，$-3<2x$，所以 $x>-\\frac32$。在边界 $x=-\\frac32$ 两边均为 $3^{-6}=\\frac1{729}$，不包括边界。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 在同一坐标系画每条不等式的左、右两函数。第一幅交于 $x=2$，右侧左函数在右函数上方；第二幅交于 $x=-1.5$，右侧左函数在右函数下方。解析草图显示这些区域；用交点功能定位边界，再用上下位置选区间，不能把交点算进严格不等式。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(c) 示例（答案不唯一）：自编 $2^x>4$。画 $y=2^x$ 与 $y=4$，交点 $(2,4)$；在 $x>2$ 时曲线在水平线上方，在 $x<2$ 时在下方。因此此示例的图解解集为 $(2,\\infty)$。"
+          }
+        ],
+        "answer": "(a)(i) $x>2$；(ii) $x>-\\frac32$。(b) 根据交点和曲线上下位置核对。(c) 示例 $2^x>4$ 的解为 $x>2$。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "(a) Solve each inequality: (i) $2^{3x}>4^{x+1}$; (ii) $81^x<27^{2x+1}$. (b) Use a sketch to explain how graphing technology can check your answers. (c) Create an inequality involving an exponential expression and solve it graphically.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a)(i) $2^{3x}>2^{2x+2}$. Since $2>1$, retain the inequality: $3x>2x+2$, so $x>2$. At $x=2$ both sides are 64, so the strict inequality excludes that point."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(a)(ii) $3^{4x}<3^{6x+3}$. Since $3>1$, $4x<6x+3$, giving $-3<2x$ and $x>-\\frac32$. At the boundary both sides are $3^{-6}=\\frac1{729}$, which is excluded."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Graph the left and right functions of each inequality together. In the first plot they intersect at $x=2$ and the left function lies above the right to its right. In the second they intersect at $x=-1.5$ and the left function lies below the right to its right. The solution sketches show these regions. Locate the boundary with the intersection feature, then select intervals by vertical order; strict inequalities exclude intersections."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(c) One example, among many possible: choose $2^x>4$. Graph $y=2^x$ and $y=4$, which intersect at $(2,4)$. The curve is above the line for $x>2$ and below it for $x<2$. Thus the graphical solution of this example is $(2,\\infty)$."
+            }
+          ],
+          "answer": "(a)(i) $x>2$; (ii) $x>-\\frac32$. (b) Check using intersections and vertical order. (c) Example: $2^x>4$ has solution $x>2$."
+        },
+        "subpartIds": [
+          "ai",
+          "aii",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/73-exercise-15.png",
+        "number": 15
+      },
+      {
+        "prompt": "方程 $4^{2x}+2(4^x)-3=0$ 有实数解吗？说明理由。",
+        "concept": "extensions",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "令 $u=4^x$，则 $u>0$ 且 $4^{2x}=u^2$。原方程化为 $u^2+2u-3=0$，因式分解为 $(u+3)(u-1)=0$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "候选 $u=-3$ 不符合 $u>0$，舍去；$u=1$ 给 $4^x=1=4^0$，故 $x=0$。代回：$4^0+2(4^0)-3=1+2-3=0$。由严格单调性，此为唯一实数解。"
+          }
+        ],
+        "answer": "有，唯一实数解为 $x=0$。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "Does $4^{2x}+2(4^x)-3=0$ have any real solutions? Explain.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Let $u=4^x$, so $u>0$ and $4^{2x}=u^2$. The equation becomes $u^2+2u-3=0$, or $(u+3)(u-1)=0$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Reject $u=-3$ because $u>0$. The remaining value $u=1$ gives $4^x=1=4^0$, so $x=0$. Substitution gives $1+2-3=0$. Strict monotonicity confirms this is the only real solution."
+            }
+          ],
+          "answer": "Yes. The only real solution is $x=0$."
+        },
+        "number": 16
+      },
+      {
+        "prompt": "若 $4^x-4^{x-1}=24$，求 $(2^x)^x$ 的值。",
+        "concept": "equal-powers",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "提取 $4^{x-1}$：$4^{x-1}(4-1)=24$，故 $4^{x-1}=8$。写成底数 2 得 $2^{2x-2}=2^3$，于是 $2x-2=3$、$x=\\frac52$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "按原括号，$(2^x)^x=2^{x\\cdot x}=2^{25/4}$，约为 76.1093。核对原条件：$4^{5/2}-4^{3/2}=32-8=24$。"
+          }
+        ],
+        "answer": "$(2^x)^x=2^{25/4}$（约 76.1093）。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "If $4^x-4^{x-1}=24$, what is the value of $(2^x)^x$?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Factor $4^{x-1}$: $4^{x-1}(4-1)=24$, so $4^{x-1}=8$. With base 2, $2^{2x-2}=2^3$, hence $2x-2=3$ and $x=\\frac52$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Preserving the given parentheses, $(2^x)^x=2^{x\\cdot x}=2^{25/4}\\approx76.1093$. Check the condition: $4^{5/2}-4^{3/2}=32-8=24$."
+            }
+          ],
+          "answer": "$(2^x)^x=2^{25/4}$ (approximately 76.1093)."
+        },
+        "number": 17
+      },
+      {
+        "prompt": "每月按揭付款公式为 $PMT=PV[\\frac{i}{1-(1+i)^{-n}}]$，其中 $PV$ 是按揭现值，$i$ 是每期利率的小数，$n$ 是付款期数。Tyseer 购房贷款 150000 元，等价月利率 0.25%，每月可支付 831.90 元。若利率和月供保持不变，还清贷款需要多久？",
+        "concept": "growth-decay",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "每期为一个月，$i=0.0025$，因此 $831.90=150000[\\frac{0.0025}{1-(1.0025)^{-n}}]=\\frac{375}{1-(1.0025)^{-n}}$。这里已给月利率，不能再除以 12。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "整理得 $1-(1.0025)^{-n}=\\frac{375}{831.90}$，所以 $(1.0025)^{-n}=1-\\frac{375}{831.90}\\approx0.5492246664$。右边在 0 与 1 之间，与正的还款期数相容。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "画 $y=(1.0025)^{-n}$ 与水平线 $y=1-375/831.90$，或用试值，交点给 $n\\approx239.9986$ 个月。付款按月进行，需第 240 次付款，$240/12=20$ 年；最后一次付款可作很小的尾数调整。"
+          }
+        ],
+        "answer": "约 240 个月，即 20 年。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "The monthly mortgage payment formula is $PMT=PV[\\frac{i}{1-(1+i)^{-n}}]$, where $PV$ is the present value, $i$ is the decimal interest rate per period, and $n$ is the number of payment periods. Tyseer borrows 150000 dollars at an equivalent monthly interest rate of 0.25% and can make monthly payments of 831.90 dollars. Assuming the rate and monthly payments stay the same, how long will it take to pay off the mortgage?",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "One period is one month and $i=0.0025$. Thus $831.90=150000[\\frac{0.0025}{1-(1.0025)^{-n}}]=\\frac{375}{1-(1.0025)^{-n}}$. The given rate is already monthly; do not divide it by 12."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Rearrange to $1-(1.0025)^{-n}=\\frac{375}{831.90}$, hence $(1.0025)^{-n}=1-\\frac{375}{831.90}\\approx0.5492246664$. This lies between 0 and 1, consistent with a positive repayment period count."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Graph $y=(1.0025)^{-n}$ against the horizontal line $y=1-375/831.90$, or use trial. The intersection gives $n\\approx239.9986$ months. Payments occur monthly, so payoff is at payment 240, and $240/12=20$ years, with a small final-payment adjustment if needed."
+            }
+          ],
+          "answer": "About 240 months, or 20 years."
+        },
+        "number": 18
+      },
+      {
+        "prompt": "(a) 说明怎样把 $16^2$ 写成底数 4 的幂。(b) 说明怎样把 $16^2$ 写成另外两种不同底数的幂。",
+        "concept": "rewrite-base",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 因 $16=4^2$，$16^2=(4^2)^2=4^4$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 示例：用底数 2，$16^2=(2^4)^2=2^8$；用底数 256，$16^2=256=256^1$。两种底数互不相同且均不为 4，值都为 256。也可选其他合法等价幂。"
+          }
+        ],
+        "answer": "(a) $4^4$；(b) 例如 $2^8$ 与 $256^1$。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "(a) Explain how to write $16^2$ with base 4. (b) Explain how to write $16^2$ with two other, different bases.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Since $16=4^2$, $16^2=(4^2)^2=4^4$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) For example, with base 2, $16^2=(2^4)^2=2^8$; with base 256, $16^2=256=256^1$. The bases differ from one another and from 4, and both powers equal 256. Other valid equivalent powers are possible."
+            }
+          ],
+          "answer": "(a) $4^4$; (b) for example $2^8$ and $256^1$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": "C1"
+      },
+      {
+        "prompt": "方程 $16^{2x}=8^{x-3}$ 的求解步骤被打乱：$2^{8x}=2^{3x-9}$；$16^{2x}=8^{x-3}$；$x=-\\frac95$；$8x=3x-9$；$(2^4)^{2x}=(2^3)^{x-3}$；$5x=-9$。(a) 按正确顺序重排。(b) 在每步旁写简要说明。",
+        "concept": "equal-powers",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "(a) 正确顺序为：$16^{2x}=8^{x-3}$；$(2^4)^{2x}=(2^3)^{x-3}$；$2^{8x}=2^{3x-9}$；$8x=3x-9$；$5x=-9$；$x=-\\frac95$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "(b) 第 1 步写原方程；第 2 步用 $16=2^4$、$8=2^3$ 统一底数；第 3 步用幂的乘方法则，$4(2x)=8x$、$3(x-3)=3x-9$；第 4 步因底数 2 严格递增，令指数相等；第 5 步两边减 $3x$；第 6 步两边除以 5。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "核对：$x=-\\frac95$ 时，左边 $16^{-18/5}=2^{-72/5}$，右边 $8^{-24/5}=2^{-72/5}$，相等。"
+          }
+        ],
+        "answer": "顺序为原方程→统一底数→乘指数→比较指数→移项→除以 5；$x=-\\frac95$。",
+        "printedPage": 365,
+        "pdfPage": 374,
+        "en": {
+          "prompt": "The steps for solving $16^{2x}=8^{x-3}$ are jumbled: $2^{8x}=2^{3x-9}$; $16^{2x}=8^{x-3}$; $x=-\\frac95$; $8x=3x-9$; $(2^4)^{2x}=(2^3)^{x-3}$; $5x=-9$. (a) Rearrange them in the correct order. (b) Write a brief explanation beside each step.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "(a) Correct order: $16^{2x}=8^{x-3}$; $(2^4)^{2x}=(2^3)^{x-3}$; $2^{8x}=2^{3x-9}$; $8x=3x-9$; $5x=-9$; $x=-\\frac95$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "(b) Step 1 states the equation. Step 2 uses $16=2^4$ and $8=2^3$ for a common base. Step 3 applies the power law: $4(2x)=8x$ and $3(x-3)=3x-9$. Step 4 equates exponents because base 2 is strictly increasing. Step 5 subtracts $3x$ from both sides. Step 6 divides both sides by 5."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "Check: when $x=-\\frac95$, the left side is $16^{-18/5}=2^{-72/5}$ and the right side is $8^{-24/5}=2^{-72/5}$."
+            }
+          ],
+          "answer": "Original equation → common base → multiply exponents → equate exponents → subtract → divide by 5; $x=-\\frac95$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": "C2"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "reflect-3",
+      "reflect-4",
+      "side-all-bases",
+      "your-turn-1",
+      "your-turn-2",
+      "side-whole-periods",
+      "side-zero-intersection",
+      "your-turn-3"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      "C1",
+      "C2"
+    ],
+    "expectedSubparts": {
+      "investigate-1": [
+        "a",
+        "b"
+      ],
+      "reflect-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "reflect-4": [
+        "a",
+        "b"
+      ],
+      "example-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-2": [
+        "a",
+        "b"
+      ],
+      "your-turn-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-2": [
+        "a",
+        "b"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-15": [
+        "ai",
+        "aii",
+        "b",
+        "c"
+      ],
+      "exercise-C1": [
+        "a",
+        "b"
+      ],
+      "exercise-C2": [
+        "a",
+        "b"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independent reviewer viewed every source page and all figures, checked every bilingual prompt and subpart, rederived exact algebra and application models, and independently verified numerical roots and completed-period thresholds. Full review recorded in the chapter audit."
+  }
+}
