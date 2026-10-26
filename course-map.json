@@ -52,7 +52,8 @@
               },
               "printedPage": 6,
               "pdfPage": 15,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "1.2",
@@ -63,7 +64,8 @@
               },
               "printedPage": 16,
               "pdfPage": 25,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "1.3",
@@ -74,7 +76,8 @@
               },
               "printedPage": 32,
               "pdfPage": 41,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "1.4",
@@ -85,7 +88,8 @@
               },
               "printedPage": 44,
               "pdfPage": 53,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             }
           ],
           "extras": [
@@ -97,7 +101,8 @@
               },
               "printedPage": 56,
               "pdfPage": 65,
-              "status": "planned"
+              "status": "planned",
+              "slug": "1-review"
             },
             {
               "kind": "practice-test",
@@ -107,7 +112,8 @@
               },
               "printedPage": 58,
               "pdfPage": 67,
-              "status": "planned"
+              "status": "planned",
+              "slug": "1-test"
             }
           ]
         },
@@ -129,7 +135,8 @@
               },
               "printedPage": 62,
               "pdfPage": 71,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "2.2",
@@ -140,7 +147,8 @@
               },
               "printedPage": 78,
               "pdfPage": 87,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "2.3",
@@ -151,7 +159,8 @@
               },
               "printedPage": 90,
               "pdfPage": 99,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             }
           ],
           "extras": [
@@ -163,7 +172,8 @@
               },
               "printedPage": 99,
               "pdfPage": 108,
-              "status": "planned"
+              "status": "planned",
+              "slug": "2-review"
             },
             {
               "kind": "practice-test",
@@ -173,7 +183,8 @@
               },
               "printedPage": 102,
               "pdfPage": 111,
-              "status": "planned"
+              "status": "planned",
+              "slug": "2-test"
             }
           ]
         },
@@ -191,43 +202,82 @@
               "slug": "3-1",
               "title": "多项式函数的特征",
               "en": {
-                "title": "Characteristics of Polynomial Functions"
+                "title": "Characteristics of Polynomial Functions",
+                "description": "Chapter 3 · Identify and analyse polynomial functions: definitions, degree, tails, intercepts, domain and range. Includes every Investigate/Reflect prompt, Example, Your Turn, Exercises 1–13 and C1–C4, and Project Corner."
               },
               "printedPage": 106,
               "pdfPage": 115,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/3-1/",
+              "counts": {
+                "concepts": 7,
+                "examples": 3,
+                "practice": 14,
+                "investigations": 8,
+                "yourTurn": 3,
+                "otherPractice": 3,
+                "exercises": 17
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+                "kind": "pdf",
+                "printedPages": [
+                  106,
+                  107,
+                  108,
+                  109,
+                  110,
+                  111,
+                  112,
+                  113,
+                  114,
+                  115,
+                  116,
+                  117
+                ],
+                "pdfPages": [
+                  115,
+                  116,
+                  117,
+                  118,
+                  119,
+                  120,
+                  121,
+                  122,
+                  123,
+                  124,
+                  125,
+                  126
+                ]
+              },
+              "description": "第三章 · 辨认并分析多项式函数：定义、次数、端行为、截距、定义域与值域；包含全部探究、例题、Your Turn、1–13、C1–C4和Project Corner。"
             },
             {
               "section": "3.2",
               "slug": "3-2",
               "title": "余式定理",
               "en": {
-                "title": "The Remainder Theorem"
+                "title": "The Remainder Theorem",
+                "description": "Unit 1 · Chapter 3 Polynomial Functions. Study long division, synthetic division and the remainder theorem, with every investigation, textbook example, Your Turn and section exercise, including C1–C3."
               },
               "printedPage": 118,
               "pdfPage": 127,
               "status": "ready",
+              "kind": "section",
               "href": "sections/3-2/",
               "counts": {
                 "concepts": 7,
                 "examples": 4,
+                "practice": 12,
                 "investigations": 8,
                 "yourTurn": 4,
+                "otherPractice": 0,
                 "exercises": 20
               },
               "source": {
                 "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
                 "kind": "pdf",
-                "pdfPages": [
-                  127,
-                  128,
-                  129,
-                  130,
-                  131,
-                  132,
-                  133,
-                  134
-                ],
                 "printedPages": [
                   118,
                   119,
@@ -237,33 +287,174 @@
                   123,
                   124,
                   125
+                ],
+                "pdfPages": [
+                  127,
+                  128,
+                  129,
+                  130,
+                  131,
+                  132,
+                  133,
+                  134
                 ]
-              }
+              },
+              "description": "Unit 1 · 第 3 章 多项式函数。学习长除法、合成除法与余式定理；包括全部探究题、教材例题、Your Turn 与节后习题（含 C1–C3）。"
             },
             {
               "section": "3.3",
               "slug": "3-3",
               "title": "因式定理",
               "en": {
-                "title": "The Factor Theorem"
+                "title": "The Factor Theorem",
+                "description": "Chapter 3 Polynomial Functions. Includes the investigation, all textbook examples, Your Turns, Key Ideas and every section exercise, including C1–C3."
               },
               "printedPage": 126,
               "pdfPage": 135,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/3-3/",
+              "counts": {
+                "concepts": 6,
+                "examples": 6,
+                "practice": 10,
+                "investigations": 6,
+                "yourTurn": 4,
+                "otherPractice": 0,
+                "exercises": 19
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+                "kind": "pdf",
+                "printedPages": [
+                  126,
+                  127,
+                  128,
+                  129,
+                  130,
+                  131,
+                  132,
+                  133,
+                  134,
+                  135
+                ],
+                "pdfPages": [
+                  135,
+                  136,
+                  137,
+                  138,
+                  139,
+                  140,
+                  141,
+                  142,
+                  143,
+                  144
+                ]
+              },
+              "description": "第3章：多项式函数。包含探究、全部教材例题、Your Turn、Key Ideas与全部节后习题（含C1–C3）。"
             },
             {
               "section": "3.4",
               "slug": "3-4",
               "title": "多项式函数的方程与图像",
               "en": {
-                "title": "Equations and Graphs of Polynomial Functions"
+                "title": "Equations and Graphs of Polynomial Functions",
+                "description": "Chapter 3: zeros, roots and intercepts, multiplicity, sign intervals, hand sketches, transformations, modelling, and every section exercise."
               },
               "printedPage": 136,
               "pdfPage": 145,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/3-4/",
+              "counts": {
+                "concepts": 5,
+                "examples": 4,
+                "practice": 13,
+                "investigations": 8,
+                "yourTurn": 4,
+                "otherPractice": 1,
+                "exercises": 27
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+                "kind": "pdf",
+                "printedPages": [
+                  136,
+                  137,
+                  138,
+                  139,
+                  140,
+                  141,
+                  142,
+                  143,
+                  144,
+                  145,
+                  146,
+                  147,
+                  148,
+                  149,
+                  150,
+                  151,
+                  152
+                ],
+                "pdfPages": [
+                  145,
+                  146,
+                  147,
+                  148,
+                  149,
+                  150,
+                  151,
+                  152,
+                  153,
+                  154,
+                  155,
+                  156,
+                  157,
+                  158,
+                  159,
+                  160,
+                  161
+                ]
+              },
+              "description": "第3章：零点、根与截距，重数、符号区间、手绘图与变换，以及完整实际模型与节后练习。"
             }
           ],
           "extras": [
+            {
+              "kind": "overview",
+              "slug": "3-overview",
+              "title": "第三章导读与术语",
+              "en": {
+                "title": "Chapter 3 Opening and Key Terms"
+              },
+              "status": "ready",
+              "section": "3 overview",
+              "href": "sections/3-overview/",
+              "counts": {
+                "concepts": 4,
+                "examples": 0,
+                "practice": 1,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 1,
+                "exercises": 0
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+                "kind": "pdf",
+                "printedPages": [
+                  104,
+                  105
+                ],
+                "pdfPages": [
+                  113,
+                  114
+                ]
+              },
+              "printedPage": 104,
+              "pdfPage": 113
+            },
             {
               "kind": "review",
               "title": "第 3 章复习",
@@ -272,7 +463,31 @@
               },
               "printedPage": 153,
               "pdfPage": 162,
-              "status": "planned"
+              "status": "ready",
+              "slug": "3-review",
+              "section": "3 review",
+              "href": "sections/3-review/",
+              "counts": {
+                "concepts": 5,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 15
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+                "kind": "pdf",
+                "printedPages": [
+                  153,
+                  154
+                ],
+                "pdfPages": [
+                  162,
+                  163
+                ]
+              }
             },
             {
               "kind": "practice-test",
@@ -282,7 +497,31 @@
               },
               "printedPage": 155,
               "pdfPage": 164,
-              "status": "planned"
+              "status": "ready",
+              "slug": "3-test",
+              "section": "3 test",
+              "href": "sections/3-test/",
+              "counts": {
+                "concepts": 5,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 10
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+                "kind": "pdf",
+                "printedPages": [
+                  155,
+                  156
+                ],
+                "pdfPages": [
+                  164,
+                  165
+                ]
+              }
             }
           ]
         }
@@ -343,33 +582,152 @@
               "slug": "4-1",
               "title": "角与角的度量",
               "en": {
-                "title": "Angles and Angle Measure"
+                "title": "Angles and Angle Measure",
+                "description": "Focus: sketch standard-position angles in degrees and radians, convert between the units, determine coterminal angles, and solve problems involving arc lengths, central angles, and radii. Terms: radian, coterminal angles, general form. The opening invites inspection of calculator angle units and angles in a racing car; the latter is an observation discussion with no unique numerical count. Key Ideas are incorporated into the concepts below."
               },
               "printedPage": 166,
               "pdfPage": 175,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/4-1/",
+              "counts": {
+                "concepts": 7,
+                "examples": 4,
+                "practice": 17,
+                "investigations": 7,
+                "yourTurn": 4,
+                "otherPractice": 6,
+                "exercises": 32
+              },
+              "source": {
+                "title": "Pre-Calculus 12, McGraw-Hill Ryerson",
+                "kind": "pdf",
+                "printedPages": [
+                  166,
+                  179
+                ],
+                "pdfPages": [
+                  175,
+                  188
+                ]
+              },
+              "description": "学习目标：用度与弧度画标准位置角，互换度与弧度，求同终边角，解决圆弧、圆心角与半径问题。术语：弧度、同终边角、通式。教材开篇提醒检查计算器的角单位；赛车结构中角的数量为观察讨论，没有唯一数值。关键思想已归入以下知识点。"
             },
             {
               "section": "4.2",
               "slug": "4-2",
               "title": "单位圆",
               "en": {
-                "title": "The Unit Circle"
+                "title": "The Unit Circle",
+                "description": "Develop circle equations, exact unit-circle coordinates, arc lengths, rotation patterns and polar-coordinate connections."
               },
               "printedPage": 180,
               "pdfPage": 189,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/4-2/",
+              "counts": {
+                "concepts": 6,
+                "examples": 3,
+                "practice": 18,
+                "investigations": 10,
+                "yourTurn": 3,
+                "otherPractice": 5,
+                "exercises": 24
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  180,
+                  181,
+                  182,
+                  183,
+                  184,
+                  185,
+                  186,
+                  187,
+                  188,
+                  189,
+                  190
+                ],
+                "pdfPages": [
+                  189,
+                  190,
+                  191,
+                  192,
+                  193,
+                  194,
+                  195,
+                  196,
+                  197,
+                  198,
+                  199
+                ]
+              },
+              "description": "建立圆方程，学习单位圆精确坐标、弧长、旋转规律与极坐标联系。"
             },
             {
               "section": "4.3",
               "slug": "4-3",
               "title": "三角比",
               "en": {
-                "title": "Trigonometric Ratios"
+                "title": "Trigonometric Ratios",
+                "description": "Relate trigonometric ratios to unit-circle coordinates; determine exact and approximate ratios; identify every angle in a stated domain; solve geometric applications."
               },
               "printedPage": 191,
               "pdfPage": 200,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/4-3/",
+              "counts": {
+                "concepts": 7,
+                "examples": 5,
+                "practice": 23,
+                "investigations": 8,
+                "yourTurn": 5,
+                "otherPractice": 10,
+                "exercises": 27
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12, Section 4.3",
+                "kind": "pdf",
+                "printedPages": [
+                  191,
+                  192,
+                  193,
+                  194,
+                  195,
+                  196,
+                  197,
+                  198,
+                  199,
+                  200,
+                  201,
+                  202,
+                  203,
+                  204,
+                  205
+                ],
+                "pdfPages": [
+                  200,
+                  201,
+                  202,
+                  203,
+                  204,
+                  205,
+                  206,
+                  207,
+                  208,
+                  209,
+                  210,
+                  211,
+                  212,
+                  213,
+                  214
+                ]
+              },
+              "description": "把三角比与单位圆坐标联系；求精确值和近似值；找出指定区间内全部角；解决几何应用。"
             },
             {
               "section": "4.4",
@@ -380,10 +738,81 @@
               },
               "printedPage": 206,
               "pdfPage": 215,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/4-4/",
+              "counts": {
+                "concepts": 5,
+                "examples": 3,
+                "practice": 14,
+                "investigations": 4,
+                "yourTurn": 3,
+                "otherPractice": 7,
+                "exercises": 27
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  206,
+                  207,
+                  208,
+                  209,
+                  210,
+                  211,
+                  212,
+                  213,
+                  214
+                ],
+                "pdfPages": [
+                  215,
+                  216,
+                  217,
+                  218,
+                  219,
+                  220,
+                  221,
+                  222,
+                  223
+                ]
+              }
             }
           ],
           "extras": [
+            {
+              "kind": "overview",
+              "slug": "4-overview",
+              "title": "三角学与单位圆——章开篇",
+              "en": {
+                "title": "Trigonometry and the Unit Circle — Chapter Opening"
+              },
+              "status": "ready",
+              "section": "4 Overview",
+              "href": "sections/4-overview/",
+              "counts": {
+                "concepts": 3,
+                "examples": 0,
+                "practice": 1,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 1,
+                "exercises": 0
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  164,
+                  165
+                ],
+                "pdfPages": [
+                  173,
+                  174
+                ]
+              },
+              "printedPage": 164,
+              "pdfPage": 173
+            },
             {
               "kind": "review",
               "title": "第 4 章复习",
@@ -392,7 +821,33 @@
               },
               "printedPage": 215,
               "pdfPage": 224,
-              "status": "planned"
+              "status": "ready",
+              "slug": "4-review",
+              "section": "4 Review",
+              "href": "sections/4-review/",
+              "counts": {
+                "concepts": 4,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 23
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  215,
+                  216,
+                  217
+                ],
+                "pdfPages": [
+                  224,
+                  225,
+                  226
+                ]
+              }
             },
             {
               "kind": "practice-test",
@@ -402,7 +857,31 @@
               },
               "printedPage": 218,
               "pdfPage": 227,
-              "status": "planned"
+              "status": "ready",
+              "slug": "4-test",
+              "section": "4 Practice Test",
+              "href": "sections/4-test/",
+              "counts": {
+                "concepts": 4,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 16
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  218,
+                  219
+                ],
+                "pdfPages": [
+                  227,
+                  228
+                ]
+              }
             }
           ]
         },
@@ -420,33 +899,184 @@
               "slug": "5-1",
               "title": "正弦与余弦函数的图像",
               "en": {
-                "title": "Graphing Sine and Cosine Functions"
+                "title": "Graphing Sine and Cosine Functions",
+                "description": "From the unit circle to sinusoidal curves: key points, amplitude, period, scaling, and every investigation, example, Your Turn, and section exercise."
               },
               "printedPage": 222,
               "pdfPage": 231,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/5-1/",
+              "counts": {
+                "concepts": 6,
+                "examples": 4,
+                "practice": 11,
+                "investigations": 3,
+                "yourTurn": 4,
+                "otherPractice": 4,
+                "exercises": 29
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  222,
+                  223,
+                  224,
+                  225,
+                  226,
+                  227,
+                  228,
+                  229,
+                  230,
+                  231,
+                  232,
+                  233,
+                  234,
+                  235,
+                  236,
+                  237
+                ],
+                "pdfPages": [
+                  231,
+                  232,
+                  233,
+                  234,
+                  235,
+                  236,
+                  237,
+                  238,
+                  239,
+                  240,
+                  241,
+                  242,
+                  243,
+                  244,
+                  245,
+                  246
+                ]
+              },
+              "description": "从单位圆到正弦型曲线：关键点、振幅、周期、伸缩，以及全部探究、例题、配套练习和教材习题。"
             },
             {
               "section": "5.2",
               "slug": "5-2",
               "title": "正弦型函数的变换",
               "en": {
-                "title": "Transformations of Sinusoidal Functions"
+                "title": "Transformations of Sinusoidal Functions",
+                "description": "Graph and transform sinusoidal functions; identify amplitude, period, phase shift, vertical displacement, domain and range; fit equations in degrees and radians; solve graphical models; recognize equivalent equations."
               },
               "printedPage": 238,
               "pdfPage": 247,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/5-2/",
+              "counts": {
+                "concepts": 6,
+                "examples": 5,
+                "practice": 15,
+                "investigations": 10,
+                "yourTurn": 5,
+                "otherPractice": 0,
+                "exercises": 32
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12, Section 5.2",
+                "kind": "pdf",
+                "printedPages": [
+                  238,
+                  239,
+                  240,
+                  241,
+                  242,
+                  243,
+                  244,
+                  245,
+                  246,
+                  247,
+                  248,
+                  249,
+                  250,
+                  251,
+                  252,
+                  253,
+                  254,
+                  255
+                ],
+                "pdfPages": [
+                  247,
+                  248,
+                  249,
+                  250,
+                  251,
+                  252,
+                  253,
+                  254,
+                  255,
+                  256,
+                  257,
+                  258,
+                  259,
+                  260,
+                  261,
+                  262,
+                  263,
+                  264
+                ]
+              },
+              "description": "作图与变换正弦型函数；识别振幅、周期、相移、竖直位移、定义域和值域；由角度或弧度图像与条件建模，并识别等价方程。"
             },
             {
               "section": "5.3",
               "slug": "5-3",
               "title": "正切函数",
               "en": {
-                "title": "The Tangent Function"
+                "title": "The Tangent Function",
+                "description": "Unit-circle slope, tangent graphs and distance models. Includes every investigation, reflection, example, Your Turn, margin question and section exercise, including C1–C3."
               },
               "printedPage": 256,
               "pdfPage": 265,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/5-3/",
+              "counts": {
+                "concepts": 4,
+                "examples": 2,
+                "practice": 22,
+                "investigations": 14,
+                "yourTurn": 2,
+                "otherPractice": 6,
+                "exercises": 17
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+                "kind": "pdf",
+                "printedPages": [
+                  256,
+                  257,
+                  258,
+                  259,
+                  260,
+                  261,
+                  262,
+                  263,
+                  264,
+                  265
+                ],
+                "pdfPages": [
+                  265,
+                  266,
+                  267,
+                  268,
+                  269,
+                  270,
+                  271,
+                  272,
+                  273,
+                  274
+                ]
+              },
+              "description": "单位圆与斜率、正切图像、实际距离模型。包含全部探究、反思、例题、Your Turn、页边问题及教材习题（含 C1–C3）。"
             },
             {
               "section": "5.4",
@@ -457,10 +1087,67 @@
               },
               "printedPage": 266,
               "pdfPage": 275,
-              "status": "planned"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/5-4/",
+              "counts": {
+                "concepts": 4,
+                "examples": 4,
+                "practice": 21,
+                "investigations": 9,
+                "yourTurn": 4,
+                "otherPractice": 8,
+                "exercises": 26
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  266,
+                  281
+                ],
+                "pdfPages": [
+                  275,
+                  290
+                ]
+              }
             }
           ],
           "extras": [
+            {
+              "kind": "overview",
+              "slug": "5-overview",
+              "title": "三角函数与图像：章开篇",
+              "en": {
+                "title": "Trigonometric Functions and Graphs: Chapter Opening"
+              },
+              "status": "ready",
+              "section": "5 Overview",
+              "href": "sections/5-overview/",
+              "counts": {
+                "concepts": 6,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 0
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  220,
+                  221
+                ],
+                "pdfPages": [
+                  229,
+                  230
+                ]
+              },
+              "printedPage": 220,
+              "pdfPage": 229
+            },
             {
               "kind": "review",
               "title": "第 5 章复习",
@@ -469,7 +1156,31 @@
               },
               "printedPage": 282,
               "pdfPage": 291,
-              "status": "planned"
+              "status": "ready",
+              "slug": "5-review",
+              "section": "5 Review",
+              "href": "sections/5-review/",
+              "counts": {
+                "concepts": 4,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 24
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  282,
+                  285
+                ],
+                "pdfPages": [
+                  291,
+                  294
+                ]
+              }
             },
             {
               "kind": "practice-test",
@@ -479,7 +1190,31 @@
               },
               "printedPage": 286,
               "pdfPage": 295,
-              "status": "planned"
+              "status": "ready",
+              "slug": "5-test",
+              "section": "5 Practice Test",
+              "href": "sections/5-test/",
+              "counts": {
+                "concepts": 3,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 17
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  286,
+                  287
+                ],
+                "pdfPages": [
+                  295,
+                  296
+                ]
+              }
             }
           ]
         },
@@ -501,7 +1236,8 @@
               },
               "printedPage": 290,
               "pdfPage": 299,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "6.2",
@@ -512,7 +1248,8 @@
               },
               "printedPage": 299,
               "pdfPage": 308,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "6.3",
@@ -523,7 +1260,8 @@
               },
               "printedPage": 309,
               "pdfPage": 318,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "6.4",
@@ -534,7 +1272,8 @@
               },
               "printedPage": 316,
               "pdfPage": 325,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             }
           ],
           "extras": [
@@ -546,7 +1285,8 @@
               },
               "printedPage": 322,
               "pdfPage": 331,
-              "status": "planned"
+              "status": "planned",
+              "slug": "6-review"
             },
             {
               "kind": "practice-test",
@@ -556,7 +1296,8 @@
               },
               "printedPage": 324,
               "pdfPage": 333,
-              "status": "planned"
+              "status": "planned",
+              "slug": "6-test"
             }
           ]
         }
@@ -621,7 +1362,8 @@
               },
               "printedPage": 334,
               "pdfPage": 343,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "7.2",
@@ -632,7 +1374,8 @@
               },
               "printedPage": 346,
               "pdfPage": 355,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "7.3",
@@ -643,7 +1386,8 @@
               },
               "printedPage": 358,
               "pdfPage": 367,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             }
           ],
           "extras": [
@@ -655,7 +1399,8 @@
               },
               "printedPage": 366,
               "pdfPage": 375,
-              "status": "planned"
+              "status": "planned",
+              "slug": "7-review"
             },
             {
               "kind": "practice-test",
@@ -665,7 +1410,8 @@
               },
               "printedPage": 368,
               "pdfPage": 377,
-              "status": "planned"
+              "status": "planned",
+              "slug": "7-test"
             }
           ]
         },
@@ -687,7 +1433,8 @@
               },
               "printedPage": 372,
               "pdfPage": 381,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "8.2",
@@ -698,7 +1445,8 @@
               },
               "printedPage": 383,
               "pdfPage": 392,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "8.3",
@@ -709,7 +1457,8 @@
               },
               "printedPage": 392,
               "pdfPage": 401,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "8.4",
@@ -720,7 +1469,8 @@
               },
               "printedPage": 404,
               "pdfPage": 413,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             }
           ],
           "extras": [
@@ -732,7 +1482,8 @@
               },
               "printedPage": 416,
               "pdfPage": 425,
-              "status": "planned"
+              "status": "planned",
+              "slug": "8-review"
             },
             {
               "kind": "practice-test",
@@ -742,7 +1493,8 @@
               },
               "printedPage": 419,
               "pdfPage": 428,
-              "status": "planned"
+              "status": "planned",
+              "slug": "8-test"
             }
           ]
         }
@@ -807,7 +1559,8 @@
               },
               "printedPage": 430,
               "pdfPage": 439,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "9.2",
@@ -818,7 +1571,8 @@
               },
               "printedPage": 446,
               "pdfPage": 455,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "9.3",
@@ -829,7 +1583,8 @@
               },
               "printedPage": 457,
               "pdfPage": 466,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             }
           ],
           "extras": [
@@ -841,7 +1596,8 @@
               },
               "printedPage": 468,
               "pdfPage": 477,
-              "status": "planned"
+              "status": "planned",
+              "slug": "9-review"
             },
             {
               "kind": "practice-test",
@@ -851,7 +1607,8 @@
               },
               "printedPage": 470,
               "pdfPage": 479,
-              "status": "planned"
+              "status": "planned",
+              "slug": "9-test"
             }
           ]
         },
@@ -873,7 +1630,8 @@
               },
               "printedPage": 474,
               "pdfPage": 483,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "10.2",
@@ -884,7 +1642,8 @@
               },
               "printedPage": 488,
               "pdfPage": 497,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "10.3",
@@ -895,7 +1654,8 @@
               },
               "printedPage": 499,
               "pdfPage": 508,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             }
           ],
           "extras": [
@@ -907,7 +1667,8 @@
               },
               "printedPage": 510,
               "pdfPage": 519,
-              "status": "planned"
+              "status": "planned",
+              "slug": "10-review"
             },
             {
               "kind": "practice-test",
@@ -917,7 +1678,8 @@
               },
               "printedPage": 512,
               "pdfPage": 521,
-              "status": "planned"
+              "status": "planned",
+              "slug": "10-test"
             }
           ]
         },
@@ -939,7 +1701,8 @@
               },
               "printedPage": 516,
               "pdfPage": 525,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "11.2",
@@ -950,7 +1713,8 @@
               },
               "printedPage": 528,
               "pdfPage": 537,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             },
             {
               "section": "11.3",
@@ -961,7 +1725,8 @@
               },
               "printedPage": 537,
               "pdfPage": 546,
-              "status": "planned"
+              "status": "planned",
+              "kind": "section"
             }
           ],
           "extras": [
@@ -973,7 +1738,8 @@
               },
               "printedPage": 546,
               "pdfPage": 555,
-              "status": "planned"
+              "status": "planned",
+              "slug": "11-review"
             },
             {
               "kind": "practice-test",
@@ -983,7 +1749,8 @@
               },
               "printedPage": 548,
               "pdfPage": 557,
-              "status": "planned"
+              "status": "planned",
+              "slug": "11-test"
             }
           ]
         }
@@ -1060,7 +1827,24 @@
     "units": 4,
     "chapters": 11,
     "sections": 39,
-    "readySections": 1,
-    "plannedSections": 38
+    "readySections": 12,
+    "plannedSections": 27,
+    "readyExtras": 9,
+    "readyPages": 21,
+    "plannedExtras": 28
+  },
+  "readyContentCounts": {
+    "concepts": 108,
+    "examples": 47,
+    "practice": 192,
+    "investigations": 95,
+    "yourTurn": 45,
+    "otherPractice": 52,
+    "exercises": 402
+  },
+  "availability": {
+    "manifestEntries": 21,
+    "pending": [],
+    "warnings": []
   }
 }

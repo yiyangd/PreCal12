@@ -1,0 +1,184 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "5-overview",
+    "section": "5 Overview",
+    "title": "三角函数与图像：章开篇",
+    "en": {
+      "title": "Trigonometric Functions and Graphs: Chapter Opening"
+    },
+    "source": {
+      "kind": "pdf",
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "printedPages": [
+        220,
+        221
+      ],
+      "pdfPages": [
+        229,
+        230
+      ]
+    },
+    "concepts": [
+      {
+        "id": "periodic",
+        "title": "周期函数与周期",
+        "summary": "周期函数满足 $f(x+T)=f(x)$；最小正T称基本周期。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先找曲线完整重复的最小水平距离，核对变量单位。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Periodic functions and period",
+          "summary": "A periodic function satisfies $f(x+T)=f(x)$; the least positive T is its fundamental period.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Find the smallest complete horizontal repetition and check the variable’s unit."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "sinusoidal",
+        "title": "正弦曲线",
+        "summary": "正弦与余弦及其伸缩平移形成正弦曲线，可近似描述自然周期模式。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "本章依次学习基本图像(5.1)、变换(5.2)、正切(5.3)、方程与建模(5.4)。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Sinusoidal curve",
+          "summary": "Sine/cosine and their scalings/translations form sinusoidal curves that can approximate natural periodic patterns.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Study basic graphs(5.1), transformations(5.2), tangent(5.3), then equations and models(5.4)."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "amplitude",
+        "title": "振幅",
+        "summary": "正弦曲线中线到极值的竖直距离，等于最大最小差的一半。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$A=(M-m)/2=|a|$；振幅非负。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Amplitude",
+          "summary": "The vertical distance from midline to an extremum, half the maximum–minimum difference.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$A=(M-m)/2=|a|$; amplitude is nonnegative."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "vertical",
+        "title": "竖直平移",
+        "summary": "中线相对x轴的竖直位移。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "$d=(M+m)/2$，正值上移、负值下移。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Vertical displacement",
+          "summary": "The vertical position of the sinusoidal axis relative to the x-axis.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "$d=(M+m)/2$; positive moves up, negative down."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "phase",
+        "title": "相移",
+        "summary": "曲线相对基本正弦或余弦的水平平移。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "角先写成 $b(x-c)$，有向相移c；不要把未提出b的常数直接当c。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Phase shift",
+          "summary": "Horizontal translation relative to a basic sine or cosine.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Factor the argument as $b(x-c)$; signed shift is c, not the unfactored argument constant."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "context",
+        "title": "本章目标与职业联系",
+        "summary": "本章学习按固定间隔重复取值的三角函数，描述自然中的波与周期模式，包括岩层褶皱、运动和季节。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "地质学家综合物理、化学、生物与数学研究地球的结构历史；地质工程将知识用于坝、隧道和建筑。原开篇无准备题，职业网站属于外部延伸，未作为已核实题目。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Chapter aims and career context",
+          "summary": "This chapter studies trigonometric functions with values that repeat at regular intervals and models waves/periodic patterns, including rock folds, motion, and seasons.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Geologists combine physics, chemistry, biology, and mathematics to study Earth’s structure/history; geological engineering applies this to dams, tunnels, and buildings. The opening has no preparation questions; its career website is external enrichment rather than a verified textbook exercise."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": []
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [],
+    "expectedSubparts": {}
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independent source and mathematical review passed; exact final hashes and unchanged reviewed payload are recorded in the chapter audit."
+  }
+}

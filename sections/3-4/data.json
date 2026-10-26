@@ -1,0 +1,4761 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "3-4",
+    "section": "3.4",
+    "title": "多项式函数的方程与图像",
+    "description": "第3章：零点、根与截距，重数、符号区间、手绘图与变换，以及完整实际模型与节后练习。",
+    "en": {
+      "title": "Equations and Graphs of Polynomial Functions",
+      "description": "Chapter 3: zeros, roots and intercepts, multiplicity, sign intervals, hand sketches, transformations, modelling, and every section exercise."
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+      "pdfPages": [
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161
+      ],
+      "printedPages": [
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152
+      ],
+      "kind": "pdf"
+    },
+    "concepts": [
+      {
+        "id": "zeros-roots",
+        "title": "零点、根与截距",
+        "summary": "目标：联系零点、方程的根与横截距；不用技术勾画多项式；建立并求解实际模型。$f(a)=0$ 当且仅当 $a$ 是方程 $f(x)=0$ 的根，图像上有点 $(a,0)$。",
+        "method": [
+          {
+            "title": "分解并令因子为零",
+            "body": "使用因式定理和整数零点定理分解，然后分别解各因子等于零。"
+          },
+          {
+            "title": "标记截距",
+            "body": "横截距写成 $(a,0)$；纵截距是 $(0,f(0))$。"
+          }
+        ],
+        "pitfalls": [
+          "零点和根是数；横截距是图像上的点。本节方程求实数解。"
+        ],
+        "en": {
+          "title": "Zeros, roots and intercepts",
+          "summary": "Focus: relate zeros, equation roots and x-intercepts; sketch without technology; model and solve problems. $f(a)=0$ exactly when $a$ is a root of $f(x)=0$, giving the point $(a,0)$ on the graph.",
+          "method": [
+            {
+              "title": "Factor and set factors equal to zero",
+              "body": "Use the factor theorem and integral zero theorem to factor, then solve each factor equal to zero."
+            },
+            {
+              "title": "Mark intercepts",
+              "body": "Write x-intercepts as $(a,0)$ and the y-intercept as $(0,f(0))$."
+            }
+          ],
+          "pitfalls": [
+            "A zero or root is a number; an x-intercept is a point. Equations in this section are solved over the real numbers."
+          ]
+        }
+      },
+      {
+        "id": "multiplicity",
+        "title": "零点重数与局部形状",
+        "summary": "若 $(x-a)^n$ 是重复因子且其余因子在 $a$ 不为零，则零点 $a$ 的重数为 $n$（也称 order）。奇重数处穿过横轴并变号；偶重数处接触横轴且不变号。",
+        "method": [
+          {
+            "title": "数重复因子",
+            "body": "把所有 $(x-a)$ 因子合并，指数就是重数。所有实根的重数和不超过次数。"
+          },
+          {
+            "title": "判断穿越或相切",
+            "body": "重数1通常斜穿；奇重数大于1时平坦穿越；偶重数时折返。靠近 $a$ 的形状类似 $c(x-a)^n$，其中 $c\\ne0$。"
+          },
+          {
+            "title": "正文示例：重复因子",
+            "body": "$f(x)=(x-1)(x-1)(x+2)=(x-1)^2(x+2)$ 的零点1为二重、$-2$ 为一重。图像在1接触横轴但不变号，在 $-2$ 穿越并变号。"
+          }
+        ],
+        "pitfalls": [
+          "一张草图一般只能确定最低可能重数，不能单凭穿越断言重数恰为1。"
+        ],
+        "en": {
+          "title": "Multiplicity and local shape",
+          "summary": "If $(x-a)^n$ is the repeated factor and the remaining factor is nonzero at $a$, the zero has multiplicity (order) $n$. Odd multiplicities cross and change sign; even multiplicities touch without changing sign.",
+          "method": [
+            {
+              "title": "Count repeated factors",
+              "body": "Combine all factors $(x-a)$; the exponent is the multiplicity. The sum of real-root multiplicities cannot exceed the degree."
+            },
+            {
+              "title": "Predict crossing or touching",
+              "body": "Multiplicity 1 normally crosses with nonzero slope; odd multiplicity greater than 1 crosses with flattening; even multiplicity turns back. Near $a$, the shape resembles $c(x-a)^n$, with $c\\ne0$."
+            },
+            {
+              "title": "Text example: repeated factors",
+              "body": "$f(x)=(x-1)(x-1)(x+2)=(x-1)^2(x+2)$ has zero 1 of multiplicity 2 and zero $-2$ of multiplicity 1. It touches without a sign change at 1 and crosses with a sign change at $-2$."
+            }
+          ],
+          "pitfalls": [
+            "A sketch usually determines only the least possible multiplicity; crossing alone does not establish multiplicity exactly 1."
+          ]
+        }
+      },
+      {
+        "id": "sketch-sign",
+        "title": "符号区间与手绘图",
+        "summary": "次数的奇偶与首项系数决定端点方向；截距、重数和区间测试共同确定草图。零点处函数既不为正也不为负。",
+        "method": [
+          {
+            "title": "整理整体特征",
+            "body": "求次数、首项系数、横截距和纵截距。奇次两端反向，偶次两端同向；正首项右端向上，负首项右端向下。"
+          },
+          {
+            "title": "分区间测符号",
+            "body": "按零点分区间，在每段取内部测试值；奇重数处变号，偶重数处不变。"
+          },
+          {
+            "title": "平滑连接",
+            "body": "标出截距，按端点方向和穿越/相切行为平滑连接，必要时算额外点。"
+          }
+        ],
+        "pitfalls": [
+          "零点和符号未必唯一确定纵向比例。图题若无额外标注，只写最低次数的一族。"
+        ],
+        "en": {
+          "title": "Sign intervals and sketches",
+          "summary": "Degree parity and the leading coefficient determine end behaviour. Combine intercepts, multiplicity and interval tests to sketch. At a zero the function is neither positive nor negative.",
+          "method": [
+            {
+              "title": "Find global features",
+              "body": "Find degree, leading coefficient and both intercept types. Odd-degree ends oppose, even-degree ends agree; a positive leading coefficient rises on the right and a negative one falls."
+            },
+            {
+              "title": "Test signs between zeros",
+              "body": "Split the real line at its zeros and test an interior point in each interval. Sign changes at odd multiplicities and stays at even multiplicities."
+            },
+            {
+              "title": "Join smoothly",
+              "body": "Plot the intercepts, respect end behaviour and crossing/touching, and add evaluated points when helpful."
+            }
+          ],
+          "pitfalls": [
+            "Zeros and signs may not uniquely fix vertical scale. Without another labelled value, give a least-degree family."
+          ]
+        }
+      },
+      {
+        "id": "transformations",
+        "title": "幂函数的变换",
+        "summary": "$y=a[b(x-h)]^n+k$ 来自 $y=x^n$。当 $b\\ne0$，点映射为 $(x,y)\\mapsto(x/b+h,ay+k)$。先处理伸缩与反射，再平移。",
+        "method": [
+          {
+            "title": "辨认参数",
+            "body": "$|a|$ 是竖直伸缩因子，$a<0$ 关于横轴反射；$1/|b|$ 是水平伸缩因子，$b<0$ 关于纵轴反射。"
+          },
+          {
+            "title": "平移并描点",
+            "body": "向右 $h$、向上 $k$（负值反向）。把已知点逐个映射并用平滑曲线连接。"
+          }
+        ],
+        "pitfalls": [
+          "水平伸缩是 $1/|b|$，不是 $|b|$；$x+2=x-(-2)$ 表示左移2。"
+        ],
+        "en": {
+          "title": "Transformations of power functions",
+          "summary": "$y=a[b(x-h)]^n+k$ comes from $y=x^n$. For $b\\ne0$, the point map is $(x,y)\\mapsto(x/b+h,ay+k)$. Apply stretches and reflections before translations.",
+          "method": [
+            {
+              "title": "Identify parameters",
+              "body": "$|a|$ is the vertical scale, with reflection in the x-axis for $a<0$. $1/|b|$ is the horizontal scale, with reflection in the y-axis for $b<0$."
+            },
+            {
+              "title": "Translate and plot",
+              "body": "Translate right $h$ and up $k$ (negative values reverse direction). Map known points and join them smoothly."
+            }
+          ],
+          "pitfalls": [
+            "The horizontal scale is $1/|b|$, not $|b|$. $x+2=x-(-2)$ means left 2."
+          ]
+        }
+      },
+      {
+        "id": "models",
+        "title": "实际模型与有效解",
+        "summary": "把体积、面积或整数关系写成多项式方程，再把代数解与实际限制取交集。",
+        "method": [
+          {
+            "title": "定义变量与范围",
+            "body": "写出各尺寸及其单位，要求长度为正；连续整数要说明间距和整数条件。"
+          },
+          {
+            "title": "建立方程并求解",
+            "body": "使用 $V=lwh$、面积差或乘积关系，分解或用技术求根，给近似值加约等号。"
+          },
+          {
+            "title": "代回检验",
+            "body": "检验全部条件、单位与有效范围，舍去不合理根。"
+          }
+        ],
+        "pitfalls": [
+          "不能因体积等式成立就保留负尺寸。开放式图形可以有多个等价答案。"
+        ],
+        "en": {
+          "title": "Models and admissible solutions",
+          "summary": "Write the volume, area or integer relationship as a polynomial equation, then intersect its algebraic solutions with the physical constraints.",
+          "method": [
+            {
+              "title": "Define variables and restrictions",
+              "body": "Express each dimension with units and require positive lengths. For consecutive integers state the spacing and integer restriction."
+            },
+            {
+              "title": "Build and solve the equation",
+              "body": "Use $V=lwh$, an area difference or a product relationship; factor or find roots numerically, and mark approximations."
+            },
+            {
+              "title": "Check in context",
+              "body": "Substitute back, verify units and all conditions, and reject inadmissible roots."
+            }
+          ],
+          "pitfalls": [
+            "A volume equality does not justify negative dimensions. Open graph constructions may have several equivalent answers."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "飞机手提行李的宽比高少17 cm，长最多比高多15 cm。最大体积可表示为 $V(h)=h^3-2h^2-255h$（cm³），$h$ 为高（cm）。若行李舱最大容量为50 600 cm³，如何确定手提行李的最大尺寸？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "建立最大体积方程",
+            "body": "最大长度为 $h+15$，宽为 $h-17$；需 $h>17$。因此 $h(h-17)(h+15)=50600$。"
+          },
+          {
+            "title": "分解并检验",
+            "body": "$h^3-2h^2-255h-50600=(h-40)(h^2+38h+1265)$。二次项判别式为 $38^2-4(1265)=-3616<0$，唯一实根为 $40$。"
+          },
+          {
+            "title": "还原尺寸",
+            "body": "高40 cm，宽23 cm，长55 cm；$40(23)(55)=50600$ cm³。"
+          }
+        ],
+        "answer": "高40 cm、宽23 cm、长55 cm。",
+        "pdfPage": 145,
+        "printedPage": 136,
+        "en": {
+          "prompt": "On an airplane, carry-on baggage has width 17 cm less than its height and length no more than 15 cm greater than its height. Its maximum volume is $V(h)=h^3-2h^2-255h$, where $h$ is the height in centimetres. If the overhead compartment has a maximum volume of 50 600 cm³, how could you determine the maximum dimensions of the carry-on bags?",
+          "steps": [
+            {
+              "title": "Set up the maximum-volume equation",
+              "body": "The maximum length is $h+15$ and width is $h-17$, requiring $h>17$. Thus $h(h-17)(h+15)=50600$."
+            },
+            {
+              "title": "Factor and check",
+              "body": "$h^3-2h^2-255h-50600=(h-40)(h^2+38h+1265)$. The quadratic discriminant is $38^2-4(1265)=-3616<0$, so the only real root is $40$."
+            },
+            {
+              "title": "Recover dimensions",
+              "body": "Height 40 cm, width 23 cm and length 55 cm give $40(23)(55)=50600$ cm³."
+            }
+          ],
+          "answer": "Height 40 cm, width 23 cm, length 55 cm.",
+          "label": "Opening problem"
+        },
+        "id": "opening-baggage",
+        "type": "practice",
+        "label": "开篇问题"
+      },
+      {
+        "prompt": "(a) 用图像技术画出 $f(x)=x^4+x^3-10x^2-4x+24$。(b) 从图读出横截距。(c) 分解 $f(x)$，再由因式求零点。 边栏：这个多项式有哪些可能的整数因子（用于试整数零点）？",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "(a) 描点并画图",
+            "body": "$f(-4)=72,f(-3)=0,f(-2)=0,f(0)=24,f(2)=0,f(3)=30$；图像两端向上，$x=2$ 处接触横轴。"
+          },
+          {
+            "title": "(b)(c) 因式与截距",
+            "body": "检验 $-3,-2,2$，得到 $f(x)=(x+3)(x+2)(x-2)^2$。乘开 $(x^2+5x+6)(x^2-4x+4)$ 复得原式。横截距为 $(-3,0),(-2,0),(2,0)$；零点为 $-3,-2,2$，其中2为二重零点。"
+          },
+          {
+            "title": "整数零点候选",
+            "body": "首项系数为1，常数24，因此整数零点候选是24的整数因子 $\\pm1,\\pm2,\\pm3,\\pm4,\\pm6,\\pm8,\\pm12,\\pm24$。测试得到 $-3,-2,2$；候选不代表全都是零点。"
+          }
+        ],
+        "answer": "横截距 $(-3,0),(-2,0),(2,0)$；$f(x)=(x+3)(x+2)(x-2)^2$。",
+        "pdfPage": 145,
+        "printedPage": 136,
+        "en": {
+          "prompt": "(a) Graph $f(x)=x^4+x^3-10x^2-4x+24$ using graphing technology. (b) Determine the x-intercepts from the graph. (c) Factor $f(x)$, then use the factors to determine its zeros. Sidebar: What are the possible integral factors of this polynomial?",
+          "steps": [
+            {
+              "title": "(a) Plot the function",
+              "body": "$f(-4)=72,f(-3)=0,f(-2)=0,f(0)=24,f(2)=0,f(3)=30$. Both ends rise and the curve touches the x-axis at $x=2$."
+            },
+            {
+              "title": "(b)(c) Factors and intercepts",
+              "body": "Testing $-3,-2,2$ gives $f(x)=(x+3)(x+2)(x-2)^2$. Expanding $(x^2+5x+6)(x^2-4x+4)$ recovers the original. The intercepts are $(-3,0),(-2,0),(2,0)$; zeros are $-3,-2,2$, with 2 repeated twice."
+            },
+            {
+              "title": "Candidates for integral zeros",
+              "body": "The leading coefficient is 1 and constant is 24, so candidate integral zeros are the integral factors of 24: $\\pm1,\\pm2,\\pm3,\\pm4,\\pm6,\\pm8,\\pm12,\\pm24$. Testing gives $-3,-2,2$; not every candidate is a zero."
+            }
+          ],
+          "answer": "Intercepts $(-3,0),(-2,0),(2,0)$; $f(x)=(x+3)(x+2)(x-2)^2$.",
+          "label": "Investigate / Reflect 1"
+        },
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 / 反思 1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              1,
+              -10,
+              -4,
+              24
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 4,
+              "yMin": -12,
+              "yMax": 80
+            },
+            "label": "f(x)=x^4+x^3-10x^2-4x+24",
+            "expressionLatex": "f(x)=x^4+x^3-10x^2-4x+24",
+            "points": [
+              {
+                "x": -3,
+                "y": 0
+              },
+              {
+                "x": -2,
+                "y": 0
+              },
+              {
+                "x": 2,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 24
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "(a) 令 $f(x)=x^4+x^3-10x^2-4x+24$ 等于0，解 $x^4+x^3-10x^2-4x+24=0$ 求根。(b) 方程的根与函数图像的横截距有什么关系？",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "(a) 使用零乘积性质",
+            "body": "$(x+3)(x+2)(x-2)^2=0$ 给出 $x=-3,-2,2$；$2$ 的重数为2。"
+          },
+          {
+            "title": "(b) 比较坐标",
+            "body": "每个根都是横截距的横坐标：$f(a)=0$ 对应点 $(a,0)$。"
+          }
+        ],
+        "answer": "(a) $-3,-2,2$（2为二重根）；(b) 根是横截距的横坐标。",
+        "pdfPage": 145,
+        "printedPage": 136,
+        "en": {
+          "prompt": "(a) Set $f(x)=x^4+x^3-10x^2-4x+24$ equal to 0 and solve $x^4+x^3-10x^2-4x+24=0$ for its roots. (b) What do you notice about the roots of the equation and the x-intercepts of the graph?",
+          "steps": [
+            {
+              "title": "(a) Apply the zero-product property",
+              "body": "$(x+3)(x+2)(x-2)^2=0$ gives $x=-3,-2,2$, with 2 of multiplicity 2."
+            },
+            {
+              "title": "(b) Compare coordinates",
+              "body": "Each root is the x-coordinate of an x-intercept: $f(a)=0$ corresponds to $(a,0)$."
+            }
+          ],
+          "answer": "(a) $-3,-2,2$ (2 is double); (b) roots are the x-coordinates of the intercepts.",
+          "label": "Investigate / Reflect 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 / 反思 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "函数的零点、相应图像的横截距及相应多项式方程的根之间有什么关系？",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "从函数值为零解释",
+            "body": "若 $f(a)=0$，则 $a$ 是函数的零点，也满足方程 $f(x)=0$，因此是其根；图像包含点 $(a,0)$，故该点为横截距。反之，横截距纵坐标为0，所以也给出零点与根。"
+          }
+        ],
+        "answer": "零点 = 根 = 横截距的横坐标。",
+        "pdfPage": 146,
+        "printedPage": 137,
+        "en": {
+          "prompt": "What is the relationship between the zeros of a function, the x-intercepts of the corresponding graph, and the roots of the polynomial equation?",
+          "steps": [
+            {
+              "title": "Use the zero function value",
+              "body": "If $f(a)=0$, then $a$ is a zero and satisfies $f(x)=0$, so it is a root. The graph contains $(a,0)$, an x-intercept. Conversely, an x-intercept has y-coordinate 0 and therefore yields a zero and a root."
+            }
+          ],
+          "answer": "Zero = root = x-coordinate of an x-intercept.",
+          "label": "Investigate / Reflect 3"
+        },
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 / 反思 3"
+      },
+      {
+        "prompt": "参照探究1的图。横截距把横轴分成四段，抄写并完成表格：写出各区间并判断 $f(x)$ 为正（横轴上方）或负（横轴下方）。表中首段为 $x<-3$，符号为正。",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "测试四段",
+            "body": "对 $(x+3)(x+2)(x-2)^2$ 分别代入 $-4,-2.5,0,3$，得 $72,-81/16,24,30$，符号依次为 $+,-,+,+$。"
+          },
+          {
+            "title": "填表并排除零点",
+            "body": "正：$(-\\infty,-3),(-2,2),(2,\\infty)$；负：$(-3,-2)$。在 $-3,-2,2$ 处值为0。"
+          }
+        ],
+        "answer": "$x<-3:+$；$-3<x<-2:-$；$-2<x<2:+$；$x>2:+$。",
+        "pdfPage": 146,
+        "printedPage": 137,
+        "en": {
+          "prompt": "Refer to the graph from step 1. The x-intercepts divide the x-axis into four intervals. Copy and complete the table with each interval and whether $f(x)$ is positive (above the x-axis) or negative (below it). The first column is $x<-3$, positive.",
+          "steps": [
+            {
+              "title": "Test four intervals",
+              "body": "For $(x+3)(x+2)(x-2)^2$, substitute $-4,-2.5,0,3$ to obtain $72,-81/16,24,30$: signs $+,-,+,+$."
+            },
+            {
+              "title": "Complete the table and exclude zeros",
+              "body": "Positive: $(-\\infty,-3),(-2,2),(2,\\infty)$; negative: $(-3,-2)$. At $-3,-2,2$ the value is 0."
+            }
+          ],
+          "answer": "$x<-3:+$; $-3<x<-2:-$; $-2<x<2:+$; $x>2:+$.",
+          "label": "Investigate / Reflect 4"
+        },
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "探究 / 反思 4"
+      },
+      {
+        "prompt": "(a) 图像从横轴一侧穿到另一侧时，$f(x)$ 的符号怎样变化？(b) 有两个相同零点时，图像怎样表现？",
+        "concept": "multiplicity",
+        "steps": [
+          {
+            "title": "(a) 符号改变",
+            "body": "横轴上方 $f(x)>0$，下方 $f(x)<0$，所以穿越时符号改变。"
+          },
+          {
+            "title": "(b) 二重根处相切",
+            "body": "两个相同零点产生 $(x-a)^2$；在 $a$ 两侧该因子均为正，故图像接触横轴后返回同侧（假定恰为二重根、其余因子非零）。"
+          }
+        ],
+        "answer": "(a) 变号；(b) 二重零点处相切、不变号。",
+        "pdfPage": 146,
+        "printedPage": 137,
+        "en": {
+          "prompt": "(a) What happens to the sign of $f(x)$ if the graph crosses from one side of the x-axis to the other? (b) How does the graph behave if there are two identical zeros?",
+          "steps": [
+            {
+              "title": "(a) The sign changes",
+              "body": "Above the x-axis $f(x)>0$ and below it $f(x)<0$, so crossing changes sign."
+            },
+            {
+              "title": "(b) A double zero touches",
+              "body": "Two identical zeros produce $(x-a)^2$. This factor is positive on both sides of $a$, so the graph touches and returns to the same side (for multiplicity exactly 2 and a nonzero remaining factor)."
+            }
+          ],
+          "answer": "(a) It changes sign; (b) it touches without changing sign at a double zero.",
+          "label": "Investigate / Reflect 5"
+        },
+        "id": "investigate-5",
+        "type": "practice",
+        "label": "探究 / 反思 5",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "不用图形计算器，求 $f(x)=-x^3-5x^2-3x+9$ 的次数、首项系数的符号、零点、纵截距、正值区间和负值区间。",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "分解",
+            "body": "$f(1)=-1-5-3+9=0$。除以 $x-1$ 得 $-x^2-6x-9=-(x+3)^2$，故 $f(x)=-(x-1)(x+3)^2$。"
+          },
+          {
+            "title": "读特征",
+            "body": "次数3；首项系数 $-1<0$；零点 $-3$（重数2）、$1$（重数1）；$f(0)=9$，纵截距 $(0,9)$。"
+          },
+          {
+            "title": "判定符号",
+            "body": "$-(x-1)$ 在 $x<1$ 为正，而平方项除 $-3$ 外为正；所以正区间为 $(-\\infty,-3)\\cup(-3,1)$，负区间为 $(1,\\infty)$。"
+          }
+        ],
+        "answer": "3次，负首项；零点 $-3$（二重）、1；纵截距 $(0,9)$；正 $x<1$ 且 $x\\ne-3$；负 $x>1$。",
+        "pdfPage": 146,
+        "printedPage": 137,
+        "en": {
+          "prompt": "Without using a graphing calculator, determine the degree, sign of the leading coefficient, zeros, y-intercept, positive intervals and negative intervals of $f(x)=-x^3-5x^2-3x+9$.",
+          "steps": [
+            {
+              "title": "Factor",
+              "body": "$f(1)=-1-5-3+9=0$. Dividing by $x-1$ gives $-x^2-6x-9=-(x+3)^2$, so $f(x)=-(x-1)(x+3)^2$."
+            },
+            {
+              "title": "Read the features",
+              "body": "Degree 3; leading coefficient $-1<0$; zeros $-3$ (multiplicity 2) and 1 (multiplicity 1); $f(0)=9$, giving $(0,9)$."
+            },
+            {
+              "title": "Determine signs",
+              "body": "$-(x-1)>0$ for $x<1$, while the square is positive except at $-3$. Thus positive on $(-\\infty,-3)\\cup(-3,1)$ and negative on $(1,\\infty)$."
+            }
+          ],
+          "answer": "Degree 3, negative leading coefficient; zeros $-3$ (double), 1; y-intercept $(0,9)$; positive for $x<1$, $x\\ne-3$; negative for $x>1$.",
+          "label": "Investigate / Reflect 6"
+        },
+        "id": "investigate-6",
+        "type": "practice",
+        "label": "探究 / 反思 6",
+        "subpartIds": [
+          "degree",
+          "leadingcoefficient",
+          "zeros",
+          "yintercept",
+          "positive",
+          "negative"
+        ]
+      },
+      {
+        "prompt": "利用探究6的特征勾画函数。再用技术画图，并与手绘结果比较。",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "标点与端点",
+            "body": "函数为 $-(x-1)(x+3)^2$，标出 $(-3,0),(1,0),(0,9)$。负首项三次函数左上、右下。"
+          },
+          {
+            "title": "连接并比较",
+            "body": "在 $-3$ 接触横轴后仍在上方，在1穿到下方。技术图应有相同截距、相切/穿越与端点方向；手绘不要求精确极值位置。"
+          }
+        ],
+        "answer": "左上、在 $-3$ 相切、经 $(0,9)$、在1穿越、右下。",
+        "pdfPage": 146,
+        "printedPage": 137,
+        "en": {
+          "prompt": "Use the characteristics from step 6 to sketch the graph. Graph using technology and compare with the hand sketch.",
+          "steps": [
+            {
+              "title": "Plot points and ends",
+              "body": "For $-(x-1)(x+3)^2$, plot $(-3,0),(1,0),(0,9)$. A negative cubic rises left and falls right."
+            },
+            {
+              "title": "Join and compare",
+              "body": "Touch at $-3$ while staying above the axis, then cross below at 1. The technology graph agrees in intercepts, touching/crossing and ends; the hand sketch need not locate extrema precisely."
+            }
+          ],
+          "answer": "Rise on the left, touch at $-3$, pass through $(0,9)$, cross at 1 and fall on the right.",
+          "label": "Investigate / Reflect 7"
+        },
+        "id": "investigate-7",
+        "type": "practice",
+        "label": "探究 / 反思 7",
+        "graphs": [
+          {
+            "numerator": [
+              -1,
+              -5,
+              -3,
+              9
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -6,
+              "xMax": 3,
+              "yMin": -15,
+              "yMax": 20
+            },
+            "label": "f(x)=-x^3-5x^2-3x+9",
+            "expressionLatex": "f(x)=-x^3-5x^2-3x+9",
+            "points": [
+              {
+                "x": -3,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "说明如何利用横截距、纵截距、首项系数的符号和次数勾画多项式图像。",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "确定两端",
+            "body": "先由次数奇偶及首项正负确定左右端方向。"
+          },
+          {
+            "title": "标点并决定穿越",
+            "body": "标出横截距与纵截距；从因式读重数，奇重数穿越，偶重数相切；测试零点间的符号。"
+          },
+          {
+            "title": "连接与检查",
+            "body": "平滑连接各段，需要时计算额外点；检查符号及端点均符合。"
+          }
+        ],
+        "answer": "端点 → 截距 → 重数与符号 → 平滑连接并核查。",
+        "pdfPage": 146,
+        "printedPage": 137,
+        "en": {
+          "prompt": "Describe how to sketch a polynomial using the x-intercepts, y-intercept, sign of the leading coefficient and degree.",
+          "steps": [
+            {
+              "title": "Determine the ends",
+              "body": "Use degree parity and the sign of the leading coefficient to determine the left and right ends."
+            },
+            {
+              "title": "Plot and decide crossings",
+              "body": "Plot both intercept types, read multiplicities from factors, cross at odd multiplicities and touch at even ones, and test signs between zeros."
+            },
+            {
+              "title": "Join and check",
+              "body": "Join the pieces smoothly, evaluate extra points if needed, and check every interval sign and both ends."
+            }
+          ],
+          "answer": "Ends → intercepts → multiplicity and signs → smooth connection and checking.",
+          "label": "Investigate / Reflect 8"
+        },
+        "id": "investigate-8",
+        "type": "practice",
+        "label": "探究 / 反思 8"
+      },
+      {
+        "prompt": "对原图 (a)、(b)，分别确定最低可能次数、首项系数符号、横截距与最低次数函数的因式，以及函数为正和为负的区间。 边栏：(a) 各横截距的重数能否不是1？(b) 各横截距的重数能否不是1或2？",
+        "concept": "multiplicity",
+        "steps": [
+          {
+            "title": "(a) 读穿越、次数与因式",
+            "body": "图在 $-4,-2,2$ 都穿越，最低重数各为1，最低次数 $1+1+1=3$。左下右上，首项系数正。最低次数的一族为 $A(x+4)(x+2)(x-2)$，$A>0$；因式为 $x+4,x+2,x-2$。"
+          },
+          {
+            "title": "(a) 判符号",
+            "body": "从最右侧正值起，每次穿越变号。正：$(-4,-2)\\cup(2,\\infty)$；负：$(-\\infty,-4)\\cup(-2,2)$。"
+          },
+          {
+            "title": "(b) 读穿越与相切",
+            "body": "在 $-5,-1$ 穿越，在4相切；最低重数为1、1、2，最低次数4。两端向下，首项系数负。最低次数的一族为 $-A(x+5)(x+1)(x-4)^2$，$A>0$。"
+          },
+          {
+            "title": "(b) 判符号",
+            "body": "正：$(-5,-1)$；负：$(-\\infty,-5)\\cup(-1,4)\\cup(4,\\infty)$。在4相切，不变号。"
+          },
+          {
+            "title": "最低可能值与更高重数",
+            "body": "穿越的零点必须为奇重数，因此一般形状可对应1、3、5等；相切零点为偶重数，可对应2、4、6等。最低次数解取最小允许值。图上若明确显示非零斜率，则该零点重数确为1；平坦穿越提示较高奇重数。"
+          }
+        ],
+        "answer": "(a) 最低3次，首项正，横截距 $(-4,0),(-2,0),(2,0)$。(b) 最低4次，首项负，横截距 $(-5,0),(-1,0),(4,0)$，4最低重数2；区间如步骤所示。",
+        "pdfPage": 147,
+        "printedPage": 138,
+        "en": {
+          "prompt": "For each graph (a) and (b), determine the least possible degree, the sign of the leading coefficient, the x-intercepts and factors of the function with least possible degree, and the positive and negative intervals. Sidebar: (a) Could the multiplicity of each x-intercept be something other than 1? (b) Could the multiplicities be something other than 1 or 2?",
+          "steps": [
+            {
+              "title": "(a) Read crossings, degree and factors",
+              "body": "The curve crosses at $-4,-2,2$, giving least multiplicity 1 at each and least degree $1+1+1=3$. It falls left and rises right, so the leading coefficient is positive. The least-degree family is $A(x+4)(x+2)(x-2)$, $A>0$, with factors $x+4,x+2,x-2$."
+            },
+            {
+              "title": "(a) Determine signs",
+              "body": "Start positive at the right; each crossing reverses sign. Positive: $(-4,-2)\\cup(2,\\infty)$; negative: $(-\\infty,-4)\\cup(-2,2)$."
+            },
+            {
+              "title": "(b) Read crossings and touching",
+              "body": "Cross at $-5,-1$ and touch at 4: least multiplicities 1,1,2 give degree 4. Both ends fall, so the leading coefficient is negative. A least-degree family is $-A(x+5)(x+1)(x-4)^2$, $A>0$."
+            },
+            {
+              "title": "(b) Determine signs",
+              "body": "Positive on $(-5,-1)$; negative on $(-\\infty,-5)\\cup(-1,4)\\cup(4,\\infty)$. Touching at 4 does not change sign."
+            },
+            {
+              "title": "Least possible and larger multiplicities",
+              "body": "A crossing zero has odd multiplicity, allowing 1,3,5 and so on when only crossing is known. A touching zero has even multiplicity, allowing 2,4,6 and so on. Least-degree models use the smallest allowed values. If nonzero slope is clear, the multiplicity is exactly 1; flattened crossing indicates a higher odd multiplicity."
+            }
+          ],
+          "answer": "(a) Least degree 3, positive leading coefficient, intercepts $(-4,0),(-2,0),(2,0)$. (b) Least degree 4, negative leading coefficient, intercepts $(-5,0),(-1,0),(4,0)$, least multiplicity 2 at 4. Sign intervals are shown in the steps.",
+          "label": "Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "教材例题 1",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/3-4-example-1.png"
+      },
+      {
+        "prompt": "对给定图，求最低可能次数、首项系数符号、横截距与最低次数函数的因式，以及正负区间。",
+        "concept": "multiplicity",
+        "steps": [
+          {
+            "title": "读重数与端点",
+            "body": "在 $-2$ 接触横轴、在3穿越；最低重数分别为2、1，所以最低次数3。左上右下，首项系数负。"
+          },
+          {
+            "title": "写因式并判符号",
+            "body": "最低次数的一族为 $-A(x+2)^2(x-3)$，$A>0$。横截距 $(-2,0),(3,0)$；正 $(-\\infty,-2)\\cup(-2,3)$，负 $(3,\\infty)$。"
+          }
+        ],
+        "answer": "最低3次，首项负；因式 $(x+2)^2,x-3$，零点 $-2$（最低二重）、3；符号如步骤。",
+        "pdfPage": 148,
+        "printedPage": 139,
+        "en": {
+          "prompt": "For the given graph, determine the least possible degree, sign of the leading coefficient, x-intercepts and factors of the function with least possible degree, and its positive and negative intervals.",
+          "steps": [
+            {
+              "title": "Read multiplicities and ends",
+              "body": "The curve touches at $-2$ and crosses at 3; least multiplicities 2 and 1 give least degree 3. It rises left and falls right, so the leading coefficient is negative."
+            },
+            {
+              "title": "Write factors and signs",
+              "body": "A least-degree family is $-A(x+2)^2(x-3)$, $A>0$. Intercepts: $(-2,0),(3,0)$; positive on $(-\\infty,-2)\\cup(-2,3)$ and negative on $(3,\\infty)$."
+            }
+          ],
+          "answer": "Least degree 3, negative leading coefficient; factors $(x+2)^2,x-3$, zeros $-2$ (at least double) and 3; signs as above.",
+          "label": "Your Turn 1"
+        },
+        "id": "practice-1",
+        "type": "practice",
+        "label": "Your Turn 1",
+        "sourceImage": "assets/3-4-practice-1.png"
+      },
+      {
+        "prompt": "勾画各多项式函数的图像：(a) $y=(x-1)(x+2)(x+3)$；(b) $f(x)=-(x+2)^3(x-4)$；(c) $y=-2x^3+6x-4$。 边栏：(b) 为何求 $x=2,3$ 的函数值有用？$-2$ 的重数与图形怎样联系？(c) 提出公因子有何帮助？为何有零系数？怎样乘回检验因式式与原式相等？",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "(a) 分解并找零点",
+            "body": "$(x-1)(x+2)(x+3)=(x-1)(x+2)(x+3)$。令每个因子为零，零点为 -3（重数1）；-2（重数1）；1（重数1）。"
+          },
+          {
+            "title": "(a) 次数、端点及截距",
+            "body": "次数 3，首项系数 $1$，左下、右上。零点与重数：-3（重数1）；-2（重数1）；1（重数1）；横截距的横坐标为 $-3,-2,1$；纵截距为 $(0,-6)$。"
+          },
+          {
+            "title": "(a) 符号与草图",
+            "body": "正值区间：$(-3,-2)\\cup(1,\\infty)$；负值区间：$(-\\infty,-3)\\cup(-2,1)$。在 $-3,-2,1$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(b) 分解并找零点",
+            "body": "$-(x+2)^3(x-4)=-(x+2)^3(x-4)$。令每个因子为零，零点为 -2（重数3）；4（重数1）。"
+          },
+          {
+            "title": "(b) 次数、端点及截距",
+            "body": "次数 4，首项系数 $-1$，两端向下。零点与重数：-2（重数3）；4（重数1）；横截距的横坐标为 $-2,4$；纵截距为 $(0,32)$。"
+          },
+          {
+            "title": "(b) 符号与草图",
+            "body": "正值区间：$(-2,4)$；负值区间：$(-\\infty,-2)\\cup(4,\\infty)$。在 $-2,4$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(c) 展示分解运算",
+            "body": "$-2x^3+6x-4=-2(x^3-3x+2)$；$1^3-3(1)+2=0$，除以 $x-1$ 得 $x^2+x-2=(x+2)(x-1)$，故分解式为 $-2(x-1)^2(x+2)$。"
+          },
+          {
+            "title": "(c) 分解并找零点",
+            "body": "$-2x^3+6x-4=-2(x-1)^2(x+2)$。令每个因子为零，零点为 -2（重数1）；1（重数2）。"
+          },
+          {
+            "title": "(c) 次数、端点及截距",
+            "body": "次数 3，首项系数 $-2$，左上、右下。零点与重数：-2（重数1）；1（重数2）；横截距的横坐标为 $-2,1$；纵截距为 $(0,-4)$。"
+          },
+          {
+            "title": "(c) 符号与草图",
+            "body": "正值区间：$(-\\infty,-2)$；负值区间：$(-2,1)\\cup(1,\\infty)$。在 $-2$ 穿越；在 $1$ 相切；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(b) 额外点与三重零点",
+            "body": "$f(2)=-(4)^3(-2)=128$，$f(3)=-(5)^3(-1)=125$，给出隆起部分的高度与位置参考。靠近 $-2$，$-(x-4)$ 约为6，因此 $f(x)$ 类似 $6(x+2)^3$：在 $-2$ 处平坦穿越并变号。"
+          },
+          {
+            "title": "(c) 公因子、补零与乘回",
+            "body": "先提 $-2$ 后得到首项系数为1的 $x^3-3x+2$，试根计算更简单。$x^2$ 项不存在，合成除法系数写成 $1,0,-3,2$。乘回：$(x-1)^2(x+2)=(x^2-2x+1)(x+2)=x^3+0x^2-3x+2$，再乘 $-2$ 得 $-2x^3+6x-4$。"
+          }
+        ],
+        "answer": "三幅草图及各自截距、符号和重数见步骤与图。",
+        "pdfPage": 149,
+        "printedPage": 140,
+        "en": {
+          "prompt": "Sketch each polynomial function: (a) $y=(x-1)(x+2)(x+3)$; (b) $f(x)=-(x+2)^3(x-4)$; (c) $y=-2x^3+6x-4$. Sidebar: (b) Why evaluate at $x=2,3$, and how is the multiplicity at $-2$ related to the shape? (c) How does factoring out the common factor help, why is one coefficient zero, and how can multiplication check the factorization?",
+          "steps": [
+            {
+              "title": "(a) Factor and find zeros",
+              "body": "$(x-1)(x+2)(x+3)=(x-1)(x+2)(x+3)$. Set each factor to zero: -3 (multiplicity 1); -2 (multiplicity 1); 1 (multiplicity 1)."
+            },
+            {
+              "title": "(a) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $1$: falls left and rises right. Zeros: -3 (multiplicity 1); -2 (multiplicity 1); 1 (multiplicity 1); x-intercepts have x-coordinates $-3,-2,1$; y-intercept $(0,-6)$."
+            },
+            {
+              "title": "(a) Signs and sketch",
+              "body": "Positive on $(-3,-2)\\cup(1,\\infty)$; negative on $(-\\infty,-3)\\cup(-2,1)$. Cross at $-3,-2,1$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(b) Factor and find zeros",
+              "body": "$-(x+2)^3(x-4)=-(x+2)^3(x-4)$. Set each factor to zero: -2 (multiplicity 3); 4 (multiplicity 1)."
+            },
+            {
+              "title": "(b) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $-1$: falls at both ends. Zeros: -2 (multiplicity 3); 4 (multiplicity 1); x-intercepts have x-coordinates $-2,4$; y-intercept $(0,32)$."
+            },
+            {
+              "title": "(b) Signs and sketch",
+              "body": "Positive on $(-2,4)$; negative on $(-\\infty,-2)\\cup(4,\\infty)$. Cross at $-2,4$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(c) Show the factorization",
+              "body": "$-2x^3+6x-4=-2(x^3-3x+2)$; $1^3-3(1)+2=0$. Division by $x-1$ gives $x^2+x-2=(x+2)(x-1)$, hence $-2(x-1)^2(x+2)$."
+            },
+            {
+              "title": "(c) Factor and find zeros",
+              "body": "$-2x^3+6x-4=-2(x-1)^2(x+2)$. Set each factor to zero: -2 (multiplicity 1); 1 (multiplicity 2)."
+            },
+            {
+              "title": "(c) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $-2$: rises left and falls right. Zeros: -2 (multiplicity 1); 1 (multiplicity 2); x-intercepts have x-coordinates $-2,1$; y-intercept $(0,-4)$."
+            },
+            {
+              "title": "(c) Signs and sketch",
+              "body": "Positive on $(-\\infty,-2)$; negative on $(-2,1)\\cup(1,\\infty)$. Cross at $-2$; touch at $1$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(b) Extra points and a triple zero",
+              "body": "$f(2)=-(4)^3(-2)=128$ and $f(3)=-(5)^3(-1)=125$ help locate the height and position of the hump. Near $-2$, $-(x-4)$ is about 6, so $f(x)$ resembles $6(x+2)^3$: a flattened crossing with a sign change."
+            },
+            {
+              "title": "(c) Common factor, missing term and multiplication",
+              "body": "Factoring out $-2$ leaves the monic $x^3-3x+2$, simplifying trial roots. Its missing $x^2$ term requires coefficients $1,0,-3,2$. Check: $(x-1)^2(x+2)=(x^2-2x+1)(x+2)=x^3+0x^2-3x+2$; multiplying by $-2$ gives $-2x^3+6x-4$."
+            }
+          ],
+          "answer": "The three sketches and their intercepts, signs and multiplicities are shown in the steps and graphs.",
+          "label": "Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "教材例题 2",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              4,
+              1,
+              -6
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 3,
+              "yMin": -15,
+              "yMax": 15
+            },
+            "label": "(x-1)(x+2)(x+3)",
+            "expressionLatex": "(x-1)(x+2)(x+3)",
+            "points": [
+              {
+                "x": -3,
+                "y": 0
+              },
+              {
+                "x": -2,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -6
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -1,
+              -2,
+              12,
+              40,
+              32
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 6,
+              "yMin": -40,
+              "yMax": 160
+            },
+            "label": "-(x+2)^3(x-4)",
+            "expressionLatex": "-(x+2)^3(x-4)",
+            "points": [
+              {
+                "x": -2,
+                "y": 0
+              },
+              {
+                "x": 4,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 32
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -2,
+              0,
+              6,
+              -4
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 3,
+              "yMin": -12,
+              "yMax": 12
+            },
+            "label": "-2x^3+6x-4",
+            "expressionLatex": "-2x^3+6x-4",
+            "points": [
+              {
+                "x": -2,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "手绘各函数，并说明用到的特征：(a) $g(x)=(x-2)^3(x+1)$；(b) $f(x)=-x^3+13x+12$。",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "(a) 分解并找零点",
+            "body": "$(x-2)^3(x+1)=(x-2)^3(x+1)$。令每个因子为零，零点为 -1（重数1）；2（重数3）。"
+          },
+          {
+            "title": "(a) 次数、端点及截距",
+            "body": "次数 4，首项系数 $1$，两端向上。零点与重数：-1（重数1）；2（重数3）；横截距的横坐标为 $-1,2$；纵截距为 $(0,-8)$。"
+          },
+          {
+            "title": "(a) 符号与草图",
+            "body": "正值区间：$(-\\infty,-1)\\cup(2,\\infty)$；负值区间：$(-1,2)$。在 $-1,2$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(b) 求因式",
+            "body": "$f(-1)=1-13+12=0$；除以 $x+1$ 得 $-x^2+x+12=-(x-4)(x+3)$。"
+          },
+          {
+            "title": "(b) 分解并找零点",
+            "body": "$-x^3+13x+12=-(x-4)(x+1)(x+3)$。令每个因子为零，零点为 -3（重数1）；-1（重数1）；4（重数1）。"
+          },
+          {
+            "title": "(b) 次数、端点及截距",
+            "body": "次数 3，首项系数 $-1$，左上、右下。零点与重数：-3（重数1）；-1（重数1）；4（重数1）；横截距的横坐标为 $-3,-1,4$；纵截距为 $(0,12)$。"
+          },
+          {
+            "title": "(b) 符号与草图",
+            "body": "正值区间：$(-\\infty,-3)\\cup(-1,4)$；负值区间：$(-3,-1)\\cup(4,\\infty)$。在 $-3,-1,4$ 穿越；结合纵截距与两端方向，平滑连接。"
+          }
+        ],
+        "answer": "草图与特征见逐小问步骤及图。",
+        "pdfPage": 151,
+        "printedPage": 142,
+        "en": {
+          "prompt": "Sketch each function by hand and state the characteristics used: (a) $g(x)=(x-2)^3(x+1)$; (b) $f(x)=-x^3+13x+12$.",
+          "steps": [
+            {
+              "title": "(a) Factor and find zeros",
+              "body": "$(x-2)^3(x+1)=(x-2)^3(x+1)$. Set each factor to zero: -1 (multiplicity 1); 2 (multiplicity 3)."
+            },
+            {
+              "title": "(a) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $1$: rises at both ends. Zeros: -1 (multiplicity 1); 2 (multiplicity 3); x-intercepts have x-coordinates $-1,2$; y-intercept $(0,-8)$."
+            },
+            {
+              "title": "(a) Signs and sketch",
+              "body": "Positive on $(-\\infty,-1)\\cup(2,\\infty)$; negative on $(-1,2)$. Cross at $-1,2$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(b) Find the factors",
+              "body": "$f(-1)=1-13+12=0$. Division by $x+1$ gives $-x^2+x+12=-(x-4)(x+3)$."
+            },
+            {
+              "title": "(b) Factor and find zeros",
+              "body": "$-x^3+13x+12=-(x-4)(x+1)(x+3)$. Set each factor to zero: -3 (multiplicity 1); -1 (multiplicity 1); 4 (multiplicity 1)."
+            },
+            {
+              "title": "(b) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $-1$: rises left and falls right. Zeros: -3 (multiplicity 1); -1 (multiplicity 1); 4 (multiplicity 1); x-intercepts have x-coordinates $-3,-1,4$; y-intercept $(0,12)$."
+            },
+            {
+              "title": "(b) Signs and sketch",
+              "body": "Positive on $(-\\infty,-3)\\cup(-1,4)$; negative on $(-3,-1)\\cup(4,\\infty)$. Cross at $-3,-1,4$; join smoothly through the y-intercept with the stated end behaviour."
+            }
+          ],
+          "answer": "Sketches and characteristics are given for each part above.",
+          "label": "Your Turn 2"
+        },
+        "id": "practice-2",
+        "type": "practice",
+        "label": "Your Turn 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              -5,
+              6,
+              4,
+              -8
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 4,
+              "yMin": -15,
+              "yMax": 20
+            },
+            "label": "(x-2)^3(x+1)",
+            "expressionLatex": "(x-2)^3(x+1)",
+            "points": [
+              {
+                "x": -1,
+                "y": 0
+              },
+              {
+                "x": 2,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -8
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -1,
+              0,
+              13,
+              12
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 6,
+              "yMin": -30,
+              "yMax": 40
+            },
+            "label": "-x^3+13x+12",
+            "expressionLatex": "-x^3+13x+12",
+            "points": [
+              {
+                "x": -3,
+                "y": 0
+              },
+              {
+                "x": -1,
+                "y": 0
+              },
+              {
+                "x": 4,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "把 $y=x^3$ 变换为 $y=-2(4(x-1))^3+3$。(a) 列出参数及相应变换。(b) 补全表：原点列为 $(-2,-8),(-1,-1),(0,0),(1,1),(2,8)$，其后列为 $y=(4x)^3$、$y=-2(4x)^3$、$y=-2(4(x-1))^3+3$。(c) 勾画最终图像。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "(a) 参数",
+            "body": "$a=-2,b=4,h=1,k=3$：水平缩至 $1/4$，竖直拉伸2并关于横轴反射，再右移1、上移3。"
+          },
+          {
+            "title": "(b) 第一与第二次映射",
+            "body": "先 $(x,y)\\mapsto(x/4,y)$，第二列为 $(-1/2,-8),(-1/4,-1),(0,0),(1/4,1),(1/2,8)$。再乘纵坐标 $-2$，第三列为 $(-1/2,16),(-1/4,2),(0,0),(1/4,-2),(1/2,-16)$。"
+          },
+          {
+            "title": "(b)(c) 平移并画图",
+            "body": "第三列各横坐标加1、纵坐标加3，最终为 $(1/2,19),(3/4,5),(1,3),(5/4,1),(3/2,-13)$。标出并平滑连接成递减三次曲线，平坦中心为 $(1,3)$。"
+          }
+        ],
+        "answer": "映射 $(x,y)\\mapsto(x/4+1,-2y+3)$；完整各列表与草图见解析。",
+        "pdfPage": 152,
+        "printedPage": 143,
+        "en": {
+          "prompt": "The graph of $y=x^3$ is transformed to $y=-2(4(x-1))^3+3$. (a) State the parameters and corresponding transformations. (b) Complete the table for starting points $(-2,-8),(-1,-1),(0,0),(1,1),(2,8)$, with columns $y=(4x)^3$, $y=-2(4x)^3$, $y=-2(4(x-1))^3+3$. (c) Sketch the final graph.",
+          "steps": [
+            {
+              "title": "(a) Parameters",
+              "body": "$a=-2,b=4,h=1,k=3$: horizontal scale $1/4$, vertical stretch 2 and reflection in the x-axis, then right 1 and up 3."
+            },
+            {
+              "title": "(b) First and second mappings",
+              "body": "First $(x,y)\\mapsto(x/4,y)$ gives column 2: $(-1/2,-8),(-1/4,-1),(0,0),(1/4,1),(1/2,8)$. Multiply y-coordinates by $-2$ for column 3: $(-1/2,16),(-1/4,2),(0,0),(1/4,-2),(1/2,-16)$."
+            },
+            {
+              "title": "(b)(c) Translate and graph",
+              "body": "Add 1 to each x-coordinate and 3 to each y-coordinate: $(1/2,19),(3/4,5),(1,3),(5/4,1),(3/2,-13)$. Plot and join with a decreasing cubic, flat at its centre $(1,3)$."
+            }
+          ],
+          "answer": "Point map $(x,y)\\mapsto(x/4+1,-2y+3)$; all table entries and the sketch are given above.",
+          "label": "Example 3"
+        },
+        "id": "example-3",
+        "type": "example",
+        "label": "教材例题 3",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/3-4-example-3-table.png",
+        "graphs": [
+          {
+            "numerator": [
+              -128,
+              384,
+              -384,
+              131
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -1,
+              "xMax": 3,
+              "yMin": -20,
+              "yMax": 24
+            },
+            "label": "y=-2(4(x-1))^3+3",
+            "expressionLatex": "y=-2(4(x-1))^3+3",
+            "points": [
+              {
+                "x": 0.5,
+                "y": 19
+              },
+              {
+                "x": 0.75,
+                "y": 5
+              },
+              {
+                "x": 1,
+                "y": 3
+              },
+              {
+                "x": 1.25,
+                "y": 1
+              },
+              {
+                "x": 1.5,
+                "y": -13
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "变换 $y=x^3$ 的图像，勾画 $y=-4(2(x+2))^3-5$。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "参数与映射",
+            "body": "$a=-4,b=2,h=-2,k=-5$：水平缩至 $1/2$，竖直伸长4且关于横轴反射，左移2、下移5。映射为 $(x,y)\\mapsto(x/2-2,-4y-5)$。"
+          },
+          {
+            "title": "映射五点并连接",
+            "body": "原五点 $(-2,-8),(-1,-1),(0,0),(1,1),(2,8)$ 变成 $(-3,27),(-5/2,-1),(-2,-5),(-3/2,-9),(-1,-37)$。递减曲线在 $(-2,-5)$ 处平坦，左上右下。"
+          }
+        ],
+        "answer": "$y=-32(x+2)^3-5$；关键点与草图见解析。",
+        "pdfPage": 153,
+        "printedPage": 144,
+        "en": {
+          "prompt": "Transform $y=x^3$ to sketch $y=-4(2(x+2))^3-5$.",
+          "steps": [
+            {
+              "title": "Parameters and mapping",
+              "body": "$a=-4,b=2,h=-2,k=-5$: horizontal scale $1/2$, vertical stretch 4 and reflection in the x-axis, left 2, down 5. The map is $(x,y)\\mapsto(x/2-2,-4y-5)$."
+            },
+            {
+              "title": "Map five points and join",
+              "body": "The five starting points $(-2,-8),(-1,-1),(0,0),(1,1),(2,8)$ become $(-3,27),(-5/2,-1),(-2,-5),(-3/2,-9),(-1,-37)$. The decreasing curve flattens at $(-2,-5)$, rising left and falling right."
+            }
+          ],
+          "answer": "$y=-32(x+2)^3-5$; key points and sketch appear above.",
+          "label": "Your Turn 3"
+        },
+        "id": "practice-3",
+        "type": "practice",
+        "label": "Your Turn 3",
+        "graphs": [
+          {
+            "numerator": [
+              -32,
+              -192,
+              -384,
+              -261
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 0,
+              "yMin": -45,
+              "yMax": 35
+            },
+            "label": "y=-4(2(x+2))^3-5",
+            "expressionLatex": "y=-4(2(x+2))^3-5",
+            "points": [
+              {
+                "x": -3,
+                "y": 27
+              },
+              {
+                "x": -2.5,
+                "y": -1
+              },
+              {
+                "x": -2,
+                "y": -5
+              },
+              {
+                "x": -1.5,
+                "y": -9
+              },
+              {
+                "x": -1,
+                "y": -37
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Bill 制作冰雕，冰块宽3 ft、高4 ft、长5 ft。他要把三个尺寸各减去同样的量，使体积减至24 ft³。(a) 写出多项式函数模型。(b) 各尺寸应减去多少？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a) 定义变量与模型",
+            "body": "设各尺寸减少 $x$ ft，需 $0\\le x<3$。新尺寸 $3-x,4-x,5-x$；$V(x)=(3-x)(4-x)(5-x)=-x^3+12x^2-47x+60$。"
+          },
+          {
+            "title": "(b) 令体积为24",
+            "body": "$V(x)=24$ 等价于 $x^3-12x^2+47x-36=0$。$1-12+47-36=0$，除以 $x-1$ 得 $x^2-11x+36$，因此 $(x-1)(x^2-11x+36)=0$。"
+          },
+          {
+            "title": "排除其他根并检验",
+            "body": "二次式判别式 $121-144=-23<0$，唯一实根 $x=1$ 满足范围；新尺寸 $2,3,4$ ft，$2(3)(4)=24$ ft³。图像 $V(x)$ 与直线 $y=24$ 交于 $(1,24)$。"
+          }
+        ],
+        "answer": "(a) $V(x)=(3-x)(4-x)(5-x)$，$0\\le x<3$。(b) 各减1 ft。",
+        "pdfPage": 154,
+        "printedPage": 145,
+        "en": {
+          "prompt": "Bill is preparing an ice sculpture from a block 3 ft wide, 4 ft high and 5 ft long. He removes the same amount from each of the three dimensions to reduce its volume to 24 ft³. (a) Write a polynomial function to model the situation. (b) How much should he remove from each dimension?",
+          "steps": [
+            {
+              "title": "(a) Define the model",
+              "body": "Let $x$ ft be removed from each dimension, with $0\\le x<3$. New dimensions are $3-x,4-x,5-x$; $V(x)=(3-x)(4-x)(5-x)=-x^3+12x^2-47x+60$."
+            },
+            {
+              "title": "(b) Set volume to 24",
+              "body": "$V(x)=24$ gives $x^3-12x^2+47x-36=0$. Since $1-12+47-36=0$, division by $x-1$ gives $x^2-11x+36$, so $(x-1)(x^2-11x+36)=0$."
+            },
+            {
+              "title": "Exclude other roots and check",
+              "body": "The quadratic discriminant is $121-144=-23<0$. The only real root $x=1$ is admissible; new dimensions $2,3,4$ ft give $2(3)(4)=24$ ft³. The graphs of $V(x)$ and $y=24$ intersect at $(1,24)$."
+            }
+          ],
+          "answer": "(a) $V(x)=(3-x)(4-x)(5-x)$, $0\\le x<3$. (b) Remove 1 ft from each dimension.",
+          "label": "Example 4"
+        },
+        "id": "example-4",
+        "type": "example",
+        "label": "教材例题 4",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": 0,
+              "xMax": 3,
+              "yMin": 0,
+              "yMax": 65
+            },
+            "label": "Comparison",
+            "points": [],
+            "traces": [
+              {
+                "numerator": [
+                  -1,
+                  12,
+                  -47,
+                  60
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "V(x)=(3-x)(4-x)(5-x)"
+              },
+              {
+                "numerator": [
+                  24
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=24"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "三个连续整数的积为 $-210$。(a) 写出多项式函数模型。(b) 求三个整数。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a) 建模",
+            "body": "设最小整数为 $n$。$P(n)=n(n+1)(n+2)=n^3+3n^2+2n$，求 $P(n)=-210$，其中 $n$ 是整数。"
+          },
+          {
+            "title": "(b) 分解求解",
+            "body": "$n^3+3n^2+2n+210=(n+7)(n^2-4n+30)$。二次式判别式 $16-120=-104<0$，故 $n=-7$。"
+          },
+          {
+            "title": "检验",
+            "body": "三个数为 $-7,-6,-5$，且 $(-7)(-6)(-5)=-210$。"
+          }
+        ],
+        "answer": "(a) $P(n)=n(n+1)(n+2)$，令 $P(n)=-210$；(b) $-7,-6,-5$。",
+        "pdfPage": 155,
+        "printedPage": 146,
+        "en": {
+          "prompt": "Three consecutive integers have a product of $-210$. (a) Write a polynomial function to model the situation. (b) What are the three integers?",
+          "steps": [
+            {
+              "title": "(a) Model",
+              "body": "Let the least integer be $n$. $P(n)=n(n+1)(n+2)=n^3+3n^2+2n$; solve $P(n)=-210$ for integer $n$."
+            },
+            {
+              "title": "(b) Factor and solve",
+              "body": "$n^3+3n^2+2n+210=(n+7)(n^2-4n+30)$. Its quadratic discriminant is $16-120=-104<0$, so $n=-7$."
+            },
+            {
+              "title": "Check",
+              "body": "The integers are $-7,-6,-5$, and $(-7)(-6)(-5)=-210$."
+            }
+          ],
+          "answer": "(a) $P(n)=n(n+1)(n+2)$, solve $P(n)=-210$; (b) $-7,-6,-5$.",
+          "label": "Your Turn 4"
+        },
+        "id": "practice-4",
+        "type": "practice",
+        "label": "Your Turn 4",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "求解：(a) $x(x+3)(x-4)=0$；(b) $(x-3)(x-5)(x+1)=0$；(c) $(2x+4)(x-3)=0$。",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "(a) 各因子为零",
+            "body": "$x=0$、$x+3=0$ 或 $x-4=0$，得 $x=0,-3,4$。代入时至少一个因子为0。"
+          },
+          {
+            "title": "(b) 各因子为零",
+            "body": "$x-3=0$、$x-5=0$ 或 $x+1=0$，得 $x=3,5,-1$。"
+          },
+          {
+            "title": "(c) 解一次因子",
+            "body": "$2x+4=0\\Rightarrow x=-2$；$x-3=0\\Rightarrow x=3$。"
+          }
+        ],
+        "answer": "(a) $-3,0,4$；(b) $-1,3,5$；(c) $-2,3$。",
+        "pdfPage": 156,
+        "printedPage": 147,
+        "en": {
+          "prompt": "Solve: (a) $x(x+3)(x-4)=0$; (b) $(x-3)(x-5)(x+1)=0$; (c) $(2x+4)(x-3)=0$.",
+          "steps": [
+            {
+              "title": "(a) Set factors to zero",
+              "body": "$x=0$, $x+3=0$, or $x-4=0$ gives $x=0,-3,4$. Each makes at least one factor zero."
+            },
+            {
+              "title": "(b) Set factors to zero",
+              "body": "$x-3=0$, $x-5=0$, or $x+1=0$ gives $x=3,5,-1$."
+            },
+            {
+              "title": "(c) Solve the linear factors",
+              "body": "$2x+4=0\\Rightarrow x=-2$; $x-3=0\\Rightarrow x=3$."
+            }
+          ],
+          "answer": "(a) $-3,0,4$; (b) $-1,3,5$; (c) $-2,3$."
+        },
+        "number": 1,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "求解：(a) $(x+1)^2(x+2)=0$；(b) $x^3-1=0$；(c) $(x+4)^3(x+2)^2=0$。",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "(a) 重复因子",
+            "body": "$(x+1)^2=0$ 或 $x+2=0$，得 $x=-1$（二重）或 $x=-2$（一重）。"
+          },
+          {
+            "title": "(b) 立方差",
+            "body": "$x^3-1=(x-1)(x^2+x+1)$；二次式判别式 $1-4=-3<0$，唯一实根 $x=1$，且 $1^3-1=0$。"
+          },
+          {
+            "title": "(c) 两种重数",
+            "body": "$x+4=0$ 或 $x+2=0$，得 $x=-4$（三重）、$x=-2$（二重）。"
+          }
+        ],
+        "answer": "(a) $-1$（二重）、$-2$；(b) $1$；(c) $-4$（三重）、$-2$（二重）。",
+        "pdfPage": 156,
+        "printedPage": 147,
+        "en": {
+          "prompt": "Solve: (a) $(x+1)^2(x+2)=0$; (b) $x^3-1=0$; (c) $(x+4)^3(x+2)^2=0$.",
+          "steps": [
+            {
+              "title": "(a) Repeated factors",
+              "body": "$(x+1)^2=0$ or $x+2=0$ gives $x=-1$ (double) or $x=-2$ (simple)."
+            },
+            {
+              "title": "(b) Difference of cubes",
+              "body": "$x^3-1=(x-1)(x^2+x+1)$. The quadratic discriminant $1-4=-3<0$, so the only real root is $x=1$, with $1^3-1=0$."
+            },
+            {
+              "title": "(c) Two multiplicities",
+              "body": "$x+4=0$ or $x+2=0$ gives $x=-4$ (triple) and $x=-2$ (double)."
+            }
+          ],
+          "answer": "(a) $-1$ (double), $-2$; (b) $1$; (c) $-4$ (triple), $-2$ (double)."
+        },
+        "number": 2,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "利用给定函数图像写出一个相应的可能多项式方程，并求方程的根。所有根均为整数。(a)、(b)、(c) 见原图。",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "(a) 读整数横截距",
+            "body": "图穿越 $-3,-2,1$，一个最低次数方程是 $(x+3)(x+2)(x-1)=0$，即 $x^3+4x^2+x-6=0$；根 $-3,-2,1$。"
+          },
+          {
+            "title": "(b) 读横截距及方向",
+            "body": "图穿越 $-4,1,3$，左上右下；可取 $-(x+4)(x-1)(x-3)=0$，即 $-x^3+13x-12=0$。根 $-4,1,3$。"
+          },
+          {
+            "title": "(c) 保留相切重数",
+            "body": "图在 $-4$ 相切，在1、3穿越，两端向下；可取 $-(x+4)^2(x-1)(x-3)=0$，即 $-x^4-4x^3+13x^2+40x-48=0$。根 $-4$（二重）、1、3。"
+          },
+          {
+            "title": "说明可能性",
+            "body": "以上采用与原图形状、截距一致的最低次数。方程乘非零常数不会改变根；草图未必唯一确定函数。"
+          }
+        ],
+        "answer": "(a) $(x+3)(x+2)(x-1)=0$，根 $-3,-2,1$；(b) $-(x+4)(x-1)(x-3)=0$，根 $-4,1,3$；(c) $-(x+4)^2(x-1)(x-3)=0$，根 $-4$（二重）、1、3。",
+        "pdfPage": 157,
+        "printedPage": 148,
+        "en": {
+          "prompt": "Use the graph of each given function to write a possible corresponding polynomial equation. State its roots; all roots are integral. See graphs (a), (b) and (c).",
+          "steps": [
+            {
+              "title": "(a) Read the integral intercepts",
+              "body": "The curve crosses at $-3,-2,1$. A least-degree equation is $(x+3)(x+2)(x-1)=0$, or $x^3+4x^2+x-6=0$; roots $-3,-2,1$."
+            },
+            {
+              "title": "(b) Read intercepts and orientation",
+              "body": "The curve crosses at $-4,1,3$ and rises left, falls right. One equation is $-(x+4)(x-1)(x-3)=0$, or $-x^3+13x-12=0$. Roots: $-4,1,3$."
+            },
+            {
+              "title": "(c) Retain the touching multiplicity",
+              "body": "The curve touches at $-4$, crosses at 1 and 3, and falls at both ends. Choose $-(x+4)^2(x-1)(x-3)=0$, or $-x^4-4x^3+13x^2+40x-48=0$. Roots: $-4$ (double), 1, 3."
+            },
+            {
+              "title": "Explain the choice",
+              "body": "These are least-degree choices consistent with the shapes and intercepts. Multiplying an equation by a nonzero constant preserves its roots; a sketch need not determine a unique function."
+            }
+          ],
+          "answer": "(a) $(x+3)(x+2)(x-1)=0$, roots $-3,-2,1$; (b) $-(x+4)(x-1)(x-3)=0$, roots $-4,1,3$; (c) $-(x+4)^2(x-1)(x-3)=0$, roots $-4$ (double), 1, 3."
+        },
+        "number": 3,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/3-4-exercise-3.png"
+      },
+      {
+        "prompt": "对每幅图 (a)–(d)：(i) 写出横截距；(ii) 写出函数为正、为负的区间；(iii) 说明图像为什么可能有重数为1、2或3的零点。",
+        "concept": "multiplicity",
+        "steps": [
+          {
+            "title": "(a) 三次穿越",
+            "body": "横截距 $(-4,0),(-1,0),(1,0)$。正：$(-4,-1)\\cup(1,\\infty)$；负：$(-\\infty,-4)\\cup(-1,1)$。三处均非平坦穿越，最低可能重数各为1。"
+          },
+          {
+            "title": "(b) 两处相切",
+            "body": "横截距 $(-1,0),(4,0)$。正区间为空；负：$(-\\infty,-1)\\cup(-1,4)\\cup(4,\\infty)$。两零点均相切折返，可为偶重数，最低为2。"
+          },
+          {
+            "title": "(c) 一般穿越和平坦穿越",
+            "body": "横截距 $(-3,0),(1,0)$。正：$(-\\infty,-3)\\cup(1,\\infty)$；负：$(-3,1)$。$-3$ 处一般穿越，可为重数1；1处平坦穿越，可为重数3。"
+          },
+          {
+            "title": "(d) 平坦穿越和相切",
+            "body": "横截距 $(-1,0),(3,0)$。正：$(-\\infty,-1)$；负：$(-1,3)\\cup(3,\\infty)$。$-1$ 处平坦穿越，可为重数3；3处相切，可为重数2。仅凭草图不排除更高的同奇偶重数。"
+          }
+        ],
+        "answer": "各图的截距、正负区间及最低可能重数见分步解析。",
+        "pdfPage": 157,
+        "printedPage": 148,
+        "en": {
+          "prompt": "For each graph (a)–(d): (i) state the x-intercepts; (ii) state the positive and negative intervals; (iii) explain why it might represent a polynomial with zeros of multiplicity 1, 2 or 3.",
+          "steps": [
+            {
+              "title": "(a) Three crossings",
+              "body": "Intercepts $(-4,0),(-1,0),(1,0)$. Positive on $(-4,-1)\\cup(1,\\infty)$; negative on $(-\\infty,-4)\\cup(-1,1)$. Each crosses without flattening, consistent with multiplicity 1."
+            },
+            {
+              "title": "(b) Two touches",
+              "body": "Intercepts $(-1,0),(4,0)$. No positive intervals; negative on $(-\\infty,-1)\\cup(-1,4)\\cup(4,\\infty)$. Both zeros touch and turn, consistent with even multiplicity, least 2."
+            },
+            {
+              "title": "(c) Ordinary and flattened crossings",
+              "body": "Intercepts $(-3,0),(1,0)$. Positive on $(-\\infty,-3)\\cup(1,\\infty)$; negative on $(-3,1)$. The ordinary crossing at $-3$ is consistent with multiplicity 1; the flattened crossing at 1 with multiplicity 3."
+            },
+            {
+              "title": "(d) Flattened crossing and touch",
+              "body": "Intercepts $(-1,0),(3,0)$. Positive on $(-\\infty,-1)$; negative on $(-1,3)\\cup(3,\\infty)$. The flattened crossing at $-1$ is consistent with multiplicity 3; touching at 3 with multiplicity 2. A sketch does not rule out larger multiplicities of the same parity."
+            }
+          ],
+          "answer": "Intercepts, sign intervals and least plausible multiplicities are listed for every graph above."
+        },
+        "number": 4,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/3-4-exercise-4.png"
+      },
+      {
+        "prompt": "不用技术，把各图 (a)–(d) 与函数配对并说明理由：A $y=(2(x-1))^4-2$；B $y=(x-2)^3-2$；C $y=0.5x^4+3$；D $y=(-x)^3+1$。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "(a) 找三次中心",
+            "body": "图为递增三次曲线，平坦中心 $(2,-2)$，由 $y=x^3$ 右移2、下移2，故为B。"
+          },
+          {
+            "title": "(b) 反射的三次函数",
+            "body": "图为递减三次，中心 $(0,1)$；$(-x)^3+1=-x^3+1$，故为D。"
+          },
+          {
+            "title": "(c) 中心上移的四次函数",
+            "body": "图关于纵轴对称、最低点 $(0,3)$，比 $y=x^4$ 竖直缩小到一半，故为C。"
+          },
+          {
+            "title": "(d) 平移且变窄的四次函数",
+            "body": "图最低点 $(1,-2)$，水平缩至一半，故为A。"
+          }
+        ],
+        "answer": "(a) B；(b) D；(c) C；(d) A。",
+        "pdfPage": 157,
+        "printedPage": 148,
+        "en": {
+          "prompt": "Without technology, match graphs (a)–(d) to the functions and justify your choices: A $y=(2(x-1))^4-2$; B $y=(x-2)^3-2$; C $y=0.5x^4+3$; D $y=(-x)^3+1$.",
+          "steps": [
+            {
+              "title": "(a) Find the cubic centre",
+              "body": "The increasing cubic flattens at $(2,-2)$, a translation right 2, down 2 of $y=x^3$: B."
+            },
+            {
+              "title": "(b) Reflected cubic",
+              "body": "The decreasing cubic has centre $(0,1)$. Since $(-x)^3+1=-x^3+1$, it is D."
+            },
+            {
+              "title": "(c) Raised quartic",
+              "body": "The even quartic is symmetric about the y-axis with minimum $(0,3)$ and vertical scale 0.5: C."
+            },
+            {
+              "title": "(d) Translated and narrowed quartic",
+              "body": "Its minimum is $(1,-2)$ and horizontal scale is $1/2$: A."
+            }
+          ],
+          "answer": "(a) B; (b) D; (c) C; (d) A."
+        },
+        "number": 5,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/3-4-exercise-5.png"
+      },
+      {
+        "prompt": "$y=x^3$ 变为 $y=0.5(-3(x-1))^3+4$。(a) 求参数和相应变换。(b) 补表：首列 $(-2,-8),(-1,-1),(0,0),(1,1),(2,8)$；后三列标题分别为 $y=(-3x)^3$、$y=0.5(-3x)^3$、$y=0.5(-3(x-1))^3+4$。(c) 勾画最终图像。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "(a) 参数与顺序",
+            "body": "$a=1/2,b=-3,h=1,k=4$。水平缩至 $1/3$ 并关于纵轴反射，竖直缩至 $1/2$，再右移1、上移4。"
+          },
+          {
+            "title": "(b) 第二列",
+            "body": "$(x,y)\\mapsto(-x/3,y)$ 给出 $(2/3,-8),(1/3,-1),(0,0),(-1/3,1),(-2/3,8)$。"
+          },
+          {
+            "title": "(b) 第三列",
+            "body": "纵坐标乘 $1/2$，得 $(2/3,-4),(1/3,-1/2),(0,0),(-1/3,1/2),(-2/3,4)$。"
+          },
+          {
+            "title": "(b)(c) 第四列与草图",
+            "body": "横坐标加1、纵坐标加4，得 $(5/3,0),(4/3,7/2),(1,4),(2/3,9/2),(1/3,8)$。平滑连接成递减三次曲线，中心 $(1,4)$；$y=-13.5(x-1)^3+4$。"
+          }
+        ],
+        "answer": "映射 $(x,y)\\mapsto(1-x/3,y/2+4)$；三列完整坐标见步骤。",
+        "pdfPage": 158,
+        "printedPage": 149,
+        "en": {
+          "prompt": "The graph of $y=x^3$ is transformed to $y=0.5(-3(x-1))^3+4$. (a) What are the parameters and transformations? (b) Complete the table starting with $(-2,-8),(-1,-1),(0,0),(1,1),(2,8)$; use headings $y=(-3x)^3$, $y=0.5(-3x)^3$, $y=0.5(-3(x-1))^3+4$ for columns two, three and four. (c) Sketch the final graph.",
+          "steps": [
+            {
+              "title": "(a) Parameters and order",
+              "body": "$a=1/2,b=-3,h=1,k=4$. Horizontal scale $1/3$ and reflection in the y-axis, vertical scale $1/2$, then right 1 and up 4."
+            },
+            {
+              "title": "(b) Column two",
+              "body": "$(x,y)\\mapsto(-x/3,y)$ gives $(2/3,-8),(1/3,-1),(0,0),(-1/3,1),(-2/3,8)$."
+            },
+            {
+              "title": "(b) Column three",
+              "body": "Multiply y-coordinates by $1/2$: $(2/3,-4),(1/3,-1/2),(0,0),(-1/3,1/2),(-2/3,4)$."
+            },
+            {
+              "title": "(b)(c) Column four and sketch",
+              "body": "Add 1 to x-coordinates and 4 to y-coordinates: $(5/3,0),(4/3,7/2),(1,4),(2/3,9/2),(1/3,8)$. Join as a decreasing cubic centred at $(1,4)$: $y=-13.5(x-1)^3+4$."
+            }
+          ],
+          "answer": "Map $(x,y)\\mapsto(1-x/3,y/2+4)$; all three completed columns are given above."
+        },
+        "number": 6,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/3-4-exercise-6-table.png",
+        "graphs": [
+          {
+            "numerator": [
+              -13.5,
+              40.5,
+              -40.5,
+              17.5
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -1,
+              "xMax": 3,
+              "yMin": -12,
+              "yMax": 18
+            },
+            "label": "y=0.5(-3(x-1))^3+4",
+            "expressionLatex": "y=0.5(-3(x-1))^3+4",
+            "points": [
+              {
+                "x": 1.6666666666666667,
+                "y": 0
+              },
+              {
+                "x": 1.3333333333333333,
+                "y": 3.5
+              },
+              {
+                "x": 1,
+                "y": 4
+              },
+              {
+                "x": 0.6666666666666666,
+                "y": 4.5
+              },
+              {
+                "x": 0.3333333333333333,
+                "y": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "对每个函数求：(i) 横截距；(ii) 次数与端点趋势；(iii) 零点与重数；(iv) 纵截距；(v) 正负区间。(a) $y=x^3-4x^2-45x$；(b) $f(x)=x^4-81x^2$；(c) $h(x)=x^3+3x^2-x-3$；(d) $k(x)=-x^4-2x^3+7x^2+8x-12$。",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "(a) 分解并找零点",
+            "body": "先提取 $x$：$x(x^2-4x-45)$。$-9\\cdot5=-45$ 且 $-9+5=-4$，所以 $x(x-9)(x+5)$。"
+          },
+          {
+            "title": "(a) 次数、端点及截距",
+            "body": "次数 3，首项系数 $1$，左下、右上。零点与重数：-5（重数1）；0（重数1）；9（重数1）；横截距的横坐标为 $-5,0,9$；纵截距为 $(0,0)$。"
+          },
+          {
+            "title": "(a) 符号与草图",
+            "body": "正值区间：$(-5,0)\\cup(9,\\infty)$；负值区间：$(-\\infty,-5)\\cup(0,9)$。在 $-5,0,9$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(b) 分解并找零点",
+            "body": "提取 $x^2$ 后使用平方差：$x^2(x^2-81)=x^2(x-9)(x+9)$。"
+          },
+          {
+            "title": "(b) 次数、端点及截距",
+            "body": "次数 4，首项系数 $1$，两端向上。零点与重数：-9（重数1）；0（重数2）；9（重数1）；横截距的横坐标为 $-9,0,9$；纵截距为 $(0,0)$。"
+          },
+          {
+            "title": "(b) 符号与草图",
+            "body": "正值区间：$(-\\infty,-9)\\cup(9,\\infty)$；负值区间：$(-9,0)\\cup(0,9)$。在 $-9,9$ 穿越；在 $0$ 相切；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(c) 分解并找零点",
+            "body": "分组：$x^2(x+3)-(x+3)=(x+3)(x^2-1)=(x+3)(x-1)(x+1)$。"
+          },
+          {
+            "title": "(c) 次数、端点及截距",
+            "body": "次数 3，首项系数 $1$，左下、右上。零点与重数：-3（重数1）；-1（重数1）；1（重数1）；横截距的横坐标为 $-3,-1,1$；纵截距为 $(0,-3)$。"
+          },
+          {
+            "title": "(c) 符号与草图",
+            "body": "正值区间：$(-3,-1)\\cup(1,\\infty)$；负值区间：$(-\\infty,-3)\\cup(-1,1)$。在 $-3,-1,1$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(d) 分解并找零点",
+            "body": "$P(1)=-1-2+7+8-12=0$。除以 $x-1$ 得 $-x^3-3x^2+4x+12=-(x+3)(x^2-4)$，所以 $P(x)=-(x-1)(x+3)(x-2)(x+2)$。"
+          },
+          {
+            "title": "(d) 次数、端点及截距",
+            "body": "次数 4，首项系数 $-1$，两端向下。零点与重数：-3（重数1）；-2（重数1）；1（重数1）；2（重数1）；横截距的横坐标为 $-3,-2,1,2$；纵截距为 $(0,-12)$。"
+          },
+          {
+            "title": "(d) 符号与草图",
+            "body": "正值区间：$(-3,-2)\\cup(1,2)$；负值区间：$(-\\infty,-3)\\cup(-2,1)\\cup(2,\\infty)$。在 $-3,-2,1,2$ 穿越；结合纵截距与两端方向，平滑连接。"
+          }
+        ],
+        "answer": "四个小问各五项特征均在分步解析中给出。",
+        "pdfPage": 158,
+        "printedPage": 149,
+        "en": {
+          "prompt": "For each function determine (i) x-intercepts, (ii) degree and end behaviour, (iii) zeros and multiplicities, (iv) y-intercept, (v) positive and negative intervals. (a) $y=x^3-4x^2-45x$; (b) $f(x)=x^4-81x^2$; (c) $h(x)=x^3+3x^2-x-3$; (d) $k(x)=-x^4-2x^3+7x^2+8x-12$.",
+          "steps": [
+            {
+              "title": "(a) Factor and find zeros",
+              "body": "Factor out $x$: $x(x^2-4x-45)$. Since $-9\\cdot5=-45$ and $-9+5=-4$, this is $x(x-9)(x+5)$."
+            },
+            {
+              "title": "(a) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $1$: falls left and rises right. Zeros: -5 (multiplicity 1); 0 (multiplicity 1); 9 (multiplicity 1); x-intercepts have x-coordinates $-5,0,9$; y-intercept $(0,0)$."
+            },
+            {
+              "title": "(a) Signs and sketch",
+              "body": "Positive on $(-5,0)\\cup(9,\\infty)$; negative on $(-\\infty,-5)\\cup(0,9)$. Cross at $-5,0,9$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(b) Factor and find zeros",
+              "body": "Factor out $x^2$ and use a difference of squares: $x^2(x^2-81)=x^2(x-9)(x+9)$."
+            },
+            {
+              "title": "(b) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $1$: rises at both ends. Zeros: -9 (multiplicity 1); 0 (multiplicity 2); 9 (multiplicity 1); x-intercepts have x-coordinates $-9,0,9$; y-intercept $(0,0)$."
+            },
+            {
+              "title": "(b) Signs and sketch",
+              "body": "Positive on $(-\\infty,-9)\\cup(9,\\infty)$; negative on $(-9,0)\\cup(0,9)$. Cross at $-9,9$; touch at $0$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(c) Factor and find zeros",
+              "body": "Group terms: $x^2(x+3)-(x+3)=(x+3)(x^2-1)=(x+3)(x-1)(x+1)$."
+            },
+            {
+              "title": "(c) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $1$: falls left and rises right. Zeros: -3 (multiplicity 1); -1 (multiplicity 1); 1 (multiplicity 1); x-intercepts have x-coordinates $-3,-1,1$; y-intercept $(0,-3)$."
+            },
+            {
+              "title": "(c) Signs and sketch",
+              "body": "Positive on $(-3,-1)\\cup(1,\\infty)$; negative on $(-\\infty,-3)\\cup(-1,1)$. Cross at $-3,-1,1$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(d) Factor and find zeros",
+              "body": "$P(1)=-1-2+7+8-12=0$. Division by $x-1$ gives $-x^3-3x^2+4x+12=-(x+3)(x^2-4)$, hence $P(x)=-(x-1)(x+3)(x-2)(x+2)$."
+            },
+            {
+              "title": "(d) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $-1$: falls at both ends. Zeros: -3 (multiplicity 1); -2 (multiplicity 1); 1 (multiplicity 1); 2 (multiplicity 1); x-intercepts have x-coordinates $-3,-2,1,2$; y-intercept $(0,-12)$."
+            },
+            {
+              "title": "(d) Signs and sketch",
+              "body": "Positive on $(-3,-2)\\cup(1,2)$; negative on $(-\\infty,-3)\\cup(-2,1)\\cup(2,\\infty)$. Cross at $-3,-2,1,2$; join smoothly through the y-intercept with the stated end behaviour."
+            }
+          ],
+          "answer": "All five requested characteristics are given for each of the four functions above."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "勾画第7题各函数：(a) $y=x^3-4x^2-45x$；(b) $f(x)=x^4-81x^2$；(c) $h(x)=x^3+3x^2-x-3$；(d) $k(x)=-x^4-2x^3+7x^2+8x-12$。",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "(a) 分解并找零点",
+            "body": "先提取 $x$：$x(x^2-4x-45)$。$-9\\cdot5=-45$ 且 $-9+5=-4$，所以 $x(x-9)(x+5)$。"
+          },
+          {
+            "title": "(a) 次数、端点及截距",
+            "body": "次数 3，首项系数 $1$，左下、右上。零点与重数：-5（重数1）；0（重数1）；9（重数1）；横截距的横坐标为 $-5,0,9$；纵截距为 $(0,0)$。"
+          },
+          {
+            "title": "(a) 符号与草图",
+            "body": "正值区间：$(-5,0)\\cup(9,\\infty)$；负值区间：$(-\\infty,-5)\\cup(0,9)$。在 $-5,0,9$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(b) 分解并找零点",
+            "body": "提取 $x^2$ 后使用平方差：$x^2(x^2-81)=x^2(x-9)(x+9)$。"
+          },
+          {
+            "title": "(b) 次数、端点及截距",
+            "body": "次数 4，首项系数 $1$，两端向上。零点与重数：-9（重数1）；0（重数2）；9（重数1）；横截距的横坐标为 $-9,0,9$；纵截距为 $(0,0)$。"
+          },
+          {
+            "title": "(b) 符号与草图",
+            "body": "正值区间：$(-\\infty,-9)\\cup(9,\\infty)$；负值区间：$(-9,0)\\cup(0,9)$。在 $-9,9$ 穿越；在 $0$ 相切；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(c) 分解并找零点",
+            "body": "分组：$x^2(x+3)-(x+3)=(x+3)(x^2-1)=(x+3)(x-1)(x+1)$。"
+          },
+          {
+            "title": "(c) 次数、端点及截距",
+            "body": "次数 3，首项系数 $1$，左下、右上。零点与重数：-3（重数1）；-1（重数1）；1（重数1）；横截距的横坐标为 $-3,-1,1$；纵截距为 $(0,-3)$。"
+          },
+          {
+            "title": "(c) 符号与草图",
+            "body": "正值区间：$(-3,-1)\\cup(1,\\infty)$；负值区间：$(-\\infty,-3)\\cup(-1,1)$。在 $-3,-1,1$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(d) 分解并找零点",
+            "body": "$P(1)=-1-2+7+8-12=0$。除以 $x-1$ 得 $-x^3-3x^2+4x+12=-(x+3)(x^2-4)$，所以 $P(x)=-(x-1)(x+3)(x-2)(x+2)$。"
+          },
+          {
+            "title": "(d) 次数、端点及截距",
+            "body": "次数 4，首项系数 $-1$，两端向下。零点与重数：-3（重数1）；-2（重数1）；1（重数1）；2（重数1）；横截距的横坐标为 $-3,-2,1,2$；纵截距为 $(0,-12)$。"
+          },
+          {
+            "title": "(d) 符号与草图",
+            "body": "正值区间：$(-3,-2)\\cup(1,2)$；负值区间：$(-\\infty,-3)\\cup(-2,1)\\cup(2,\\infty)$。在 $-3,-2,1,2$ 穿越；结合纵截距与两端方向，平滑连接。"
+          }
+        ],
+        "answer": "每幅草图以其独立因式分解、截距、符号与端点行为为依据，见下图。",
+        "pdfPage": 158,
+        "printedPage": 149,
+        "en": {
+          "prompt": "Sketch each function in #7: (a) $y=x^3-4x^2-45x$; (b) $f(x)=x^4-81x^2$; (c) $h(x)=x^3+3x^2-x-3$; (d) $k(x)=-x^4-2x^3+7x^2+8x-12$.",
+          "steps": [
+            {
+              "title": "(a) Factor and find zeros",
+              "body": "Factor out $x$: $x(x^2-4x-45)$. Since $-9\\cdot5=-45$ and $-9+5=-4$, this is $x(x-9)(x+5)$."
+            },
+            {
+              "title": "(a) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $1$: falls left and rises right. Zeros: -5 (multiplicity 1); 0 (multiplicity 1); 9 (multiplicity 1); x-intercepts have x-coordinates $-5,0,9$; y-intercept $(0,0)$."
+            },
+            {
+              "title": "(a) Signs and sketch",
+              "body": "Positive on $(-5,0)\\cup(9,\\infty)$; negative on $(-\\infty,-5)\\cup(0,9)$. Cross at $-5,0,9$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(b) Factor and find zeros",
+              "body": "Factor out $x^2$ and use a difference of squares: $x^2(x^2-81)=x^2(x-9)(x+9)$."
+            },
+            {
+              "title": "(b) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $1$: rises at both ends. Zeros: -9 (multiplicity 1); 0 (multiplicity 2); 9 (multiplicity 1); x-intercepts have x-coordinates $-9,0,9$; y-intercept $(0,0)$."
+            },
+            {
+              "title": "(b) Signs and sketch",
+              "body": "Positive on $(-\\infty,-9)\\cup(9,\\infty)$; negative on $(-9,0)\\cup(0,9)$. Cross at $-9,9$; touch at $0$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(c) Factor and find zeros",
+              "body": "Group terms: $x^2(x+3)-(x+3)=(x+3)(x^2-1)=(x+3)(x-1)(x+1)$."
+            },
+            {
+              "title": "(c) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $1$: falls left and rises right. Zeros: -3 (multiplicity 1); -1 (multiplicity 1); 1 (multiplicity 1); x-intercepts have x-coordinates $-3,-1,1$; y-intercept $(0,-3)$."
+            },
+            {
+              "title": "(c) Signs and sketch",
+              "body": "Positive on $(-3,-1)\\cup(1,\\infty)$; negative on $(-\\infty,-3)\\cup(-1,1)$. Cross at $-3,-1,1$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(d) Factor and find zeros",
+              "body": "$P(1)=-1-2+7+8-12=0$. Division by $x-1$ gives $-x^3-3x^2+4x+12=-(x+3)(x^2-4)$, hence $P(x)=-(x-1)(x+3)(x-2)(x+2)$."
+            },
+            {
+              "title": "(d) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $-1$: falls at both ends. Zeros: -3 (multiplicity 1); -2 (multiplicity 1); 1 (multiplicity 1); 2 (multiplicity 1); x-intercepts have x-coordinates $-3,-2,1,2$; y-intercept $(0,-12)$."
+            },
+            {
+              "title": "(d) Signs and sketch",
+              "body": "Positive on $(-3,-2)\\cup(1,2)$; negative on $(-\\infty,-3)\\cup(-2,1)\\cup(2,\\infty)$. Cross at $-3,-2,1,2$; join smoothly through the y-intercept with the stated end behaviour."
+            }
+          ],
+          "answer": "Each sketch follows its own factorization, intercepts, sign intervals and end behaviour, shown below."
+        },
+        "number": 8,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              -4,
+              -45,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -8,
+              "xMax": 12,
+              "yMin": -300,
+              "yMax": 300
+            },
+            "label": "x^3-4x^2-45x",
+            "expressionLatex": "x^3-4x^2-45x",
+            "points": [
+              {
+                "x": -5,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 9,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              -81,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -12,
+              "xMax": 12,
+              "yMin": -2000,
+              "yMax": 2000
+            },
+            "label": "x^4-81x^2",
+            "expressionLatex": "x^4-81x^2",
+            "points": [
+              {
+                "x": -9,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 9,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              3,
+              -1,
+              -3
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 3,
+              "yMin": -10,
+              "yMax": 15
+            },
+            "label": "x^3+3x^2-x-3",
+            "expressionLatex": "x^3+3x^2-x-3",
+            "points": [
+              {
+                "x": -3,
+                "y": 0
+              },
+              {
+                "x": -1,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -3
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -1,
+              -2,
+              7,
+              8,
+              -12
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 3,
+              "yMin": -25,
+              "yMax": 12
+            },
+            "label": "-x^4-2x^3+7x^2+8x-12",
+            "expressionLatex": "-x^4-2x^3+7x^2+8x-12",
+            "points": [
+              {
+                "x": -3,
+                "y": 0
+              },
+              {
+                "x": -2,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 2,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "不用技术勾画每个函数，并标出全部截距：(a) $f(x)=x^4-4x^3+x^2+6x$；(b) $y=x^3+3x^2-6x-8$；(c) $y=x^3-4x^2+x+6$；(d) $h(x)=-x^3+5x^2-7x+3$；(e) $g(x)=(x-1)(x+2)^2(x+3)^2$；(f) $f(x)=-x^4-2x^3+3x^2+4x-4$。",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "(a) 分解并找零点",
+            "body": "先提 $x$，余下 $H=x^3-4x^2+x+6$；$H(-1)=-1-4-1+6=0$。除以 $x+1$ 得 $x^2-5x+6=(x-2)(x-3)$，因此原式为 $x(x+1)(x-2)(x-3)$。"
+          },
+          {
+            "title": "(a) 次数、端点及截距",
+            "body": "次数 4，首项系数 $1$，两端向上。零点与重数：-1（重数1）；0（重数1）；2（重数1）；3（重数1）；横截距的横坐标为 $-1,0,2,3$；纵截距为 $(0,0)$。"
+          },
+          {
+            "title": "(a) 符号与草图",
+            "body": "正值区间：$(-\\infty,-1)\\cup(0,2)\\cup(3,\\infty)$；负值区间：$(-1,0)\\cup(2,3)$。在 $-1,0,2,3$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(b) 分解并找零点",
+            "body": "$P(-1)=-1+3+6-8=0$。除以 $x+1$ 得 $x^2+2x-8=(x+4)(x-2)$，故 $P(x)=(x+1)(x+4)(x-2)$。"
+          },
+          {
+            "title": "(b) 次数、端点及截距",
+            "body": "次数 3，首项系数 $1$，左下、右上。零点与重数：-4（重数1）；-1（重数1）；2（重数1）；横截距的横坐标为 $-4,-1,2$；纵截距为 $(0,-8)$。"
+          },
+          {
+            "title": "(b) 符号与草图",
+            "body": "正值区间：$(-4,-1)\\cup(2,\\infty)$；负值区间：$(-\\infty,-4)\\cup(-1,2)$。在 $-4,-1,2$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(c) 分解并找零点",
+            "body": "$P(-1)=-1-4-1+6=0$。除以 $x+1$ 得 $x^2-5x+6=(x-2)(x-3)$，所以 $P(x)=(x+1)(x-2)(x-3)$。"
+          },
+          {
+            "title": "(c) 次数、端点及截距",
+            "body": "次数 3，首项系数 $1$，左下、右上。零点与重数：-1（重数1）；2（重数1）；3（重数1）；横截距的横坐标为 $-1,2,3$；纵截距为 $(0,6)$。"
+          },
+          {
+            "title": "(c) 符号与草图",
+            "body": "正值区间：$(-1,2)\\cup(3,\\infty)$；负值区间：$(-\\infty,-1)\\cup(2,3)$。在 $-1,2,3$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(d) 分解并找零点",
+            "body": "$P(1)=-1+5-7+3=0$。除以 $x-1$ 得 $-x^2+4x-3=-(x-1)(x-3)$，所以 $P(x)=-(x-1)^2(x-3)$。"
+          },
+          {
+            "title": "(d) 次数、端点及截距",
+            "body": "次数 3，首项系数 $-1$，左上、右下。零点与重数：1（重数2）；3（重数1）；横截距的横坐标为 $1,3$；纵截距为 $(0,3)$。"
+          },
+          {
+            "title": "(d) 符号与草图",
+            "body": "正值区间：$(-\\infty,1)\\cup(1,3)$；负值区间：$(3,\\infty)$。在 $3$ 穿越；在 $1$ 相切；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(e) 分解并找零点",
+            "body": "$(x-1)(x+2)^2(x+3)^2=(x-1)(x+2)^2(x+3)^2$。令每个因子为零，零点为 -3（重数2）；-2（重数2）；1（重数1）。"
+          },
+          {
+            "title": "(e) 次数、端点及截距",
+            "body": "次数 5，首项系数 $1$，左下、右上。零点与重数：-3（重数2）；-2（重数2）；1（重数1）；横截距的横坐标为 $-3,-2,1$；纵截距为 $(0,-36)$。"
+          },
+          {
+            "title": "(e) 符号与草图",
+            "body": "正值区间：$(1,\\infty)$；负值区间：$(-\\infty,-3)\\cup(-3,-2)\\cup(-2,1)$。在 $1$ 穿越；在 $-3,-2$ 相切；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(f) 分解并找零点",
+            "body": "$P(1)=-1-2+3+4-4=0$；除以 $x-1$ 得 $-x^3-3x^2+4$。此商在1也为0，再除以 $x-1$ 得 $-x^2-4x-4=-(x+2)^2$，所以 $P(x)=-(x-1)^2(x+2)^2$。"
+          },
+          {
+            "title": "(f) 次数、端点及截距",
+            "body": "次数 4，首项系数 $-1$，两端向下。零点与重数：-2（重数2）；1（重数2）；横截距的横坐标为 $-2,1$；纵截距为 $(0,-4)$。"
+          },
+          {
+            "title": "(f) 符号与草图",
+            "body": "正值区间：$\\varnothing$；负值区间：$(-\\infty,-2)\\cup(-2,1)\\cup(1,\\infty)$。在 $-2,1$ 相切；结合纵截距与两端方向，平滑连接。"
+          }
+        ],
+        "answer": "全部六个函数的截距、重数、符号及草图见解析。",
+        "pdfPage": 158,
+        "printedPage": 149,
+        "en": {
+          "prompt": "Without technology, sketch each function and label all intercepts: (a) $f(x)=x^4-4x^3+x^2+6x$; (b) $y=x^3+3x^2-6x-8$; (c) $y=x^3-4x^2+x+6$; (d) $h(x)=-x^3+5x^2-7x+3$; (e) $g(x)=(x-1)(x+2)^2(x+3)^2$; (f) $f(x)=-x^4-2x^3+3x^2+4x-4$.",
+          "steps": [
+            {
+              "title": "(a) Factor and find zeros",
+              "body": "First factor out $x$, leaving $H=x^3-4x^2+x+6$. Since $H(-1)=-1-4-1+6=0$, divide by $x+1$ to get $x^2-5x+6=(x-2)(x-3)$. The original is $x(x+1)(x-2)(x-3)$."
+            },
+            {
+              "title": "(a) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $1$: rises at both ends. Zeros: -1 (multiplicity 1); 0 (multiplicity 1); 2 (multiplicity 1); 3 (multiplicity 1); x-intercepts have x-coordinates $-1,0,2,3$; y-intercept $(0,0)$."
+            },
+            {
+              "title": "(a) Signs and sketch",
+              "body": "Positive on $(-\\infty,-1)\\cup(0,2)\\cup(3,\\infty)$; negative on $(-1,0)\\cup(2,3)$. Cross at $-1,0,2,3$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(b) Factor and find zeros",
+              "body": "$P(-1)=-1+3+6-8=0$. Dividing by $x+1$ gives $x^2+2x-8=(x+4)(x-2)$, so $P(x)=(x+1)(x+4)(x-2)$."
+            },
+            {
+              "title": "(b) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $1$: falls left and rises right. Zeros: -4 (multiplicity 1); -1 (multiplicity 1); 2 (multiplicity 1); x-intercepts have x-coordinates $-4,-1,2$; y-intercept $(0,-8)$."
+            },
+            {
+              "title": "(b) Signs and sketch",
+              "body": "Positive on $(-4,-1)\\cup(2,\\infty)$; negative on $(-\\infty,-4)\\cup(-1,2)$. Cross at $-4,-1,2$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(c) Factor and find zeros",
+              "body": "$P(-1)=-1-4-1+6=0$. Division by $x+1$ gives $x^2-5x+6=(x-2)(x-3)$, so $P(x)=(x+1)(x-2)(x-3)$."
+            },
+            {
+              "title": "(c) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $1$: falls left and rises right. Zeros: -1 (multiplicity 1); 2 (multiplicity 1); 3 (multiplicity 1); x-intercepts have x-coordinates $-1,2,3$; y-intercept $(0,6)$."
+            },
+            {
+              "title": "(c) Signs and sketch",
+              "body": "Positive on $(-1,2)\\cup(3,\\infty)$; negative on $(-\\infty,-1)\\cup(2,3)$. Cross at $-1,2,3$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(d) Factor and find zeros",
+              "body": "$P(1)=-1+5-7+3=0$. Dividing by $x-1$ gives $-x^2+4x-3=-(x-1)(x-3)$, so $P(x)=-(x-1)^2(x-3)$."
+            },
+            {
+              "title": "(d) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $-1$: rises left and falls right. Zeros: 1 (multiplicity 2); 3 (multiplicity 1); x-intercepts have x-coordinates $1,3$; y-intercept $(0,3)$."
+            },
+            {
+              "title": "(d) Signs and sketch",
+              "body": "Positive on $(-\\infty,1)\\cup(1,3)$; negative on $(3,\\infty)$. Cross at $3$; touch at $1$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(e) Factor and find zeros",
+              "body": "$(x-1)(x+2)^2(x+3)^2=(x-1)(x+2)^2(x+3)^2$. Set each factor to zero: -3 (multiplicity 2); -2 (multiplicity 2); 1 (multiplicity 1)."
+            },
+            {
+              "title": "(e) Degree, ends and intercepts",
+              "body": "Degree 5, leading coefficient $1$: falls left and rises right. Zeros: -3 (multiplicity 2); -2 (multiplicity 2); 1 (multiplicity 1); x-intercepts have x-coordinates $-3,-2,1$; y-intercept $(0,-36)$."
+            },
+            {
+              "title": "(e) Signs and sketch",
+              "body": "Positive on $(1,\\infty)$; negative on $(-\\infty,-3)\\cup(-3,-2)\\cup(-2,1)$. Cross at $1$; touch at $-3,-2$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(f) Factor and find zeros",
+              "body": "$P(1)=-1-2+3+4-4=0$. Division by $x-1$ gives $-x^3-3x^2+4$, also zero at 1. Dividing again by $x-1$ gives $-x^2-4x-4=-(x+2)^2$, hence $P(x)=-(x-1)^2(x+2)^2$."
+            },
+            {
+              "title": "(f) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $-1$: falls at both ends. Zeros: -2 (multiplicity 2); 1 (multiplicity 2); x-intercepts have x-coordinates $-2,1$; y-intercept $(0,-4)$."
+            },
+            {
+              "title": "(f) Signs and sketch",
+              "body": "Positive on $\\varnothing$; negative on $(-\\infty,-2)\\cup(-2,1)\\cup(1,\\infty)$. touch at $-2,1$; join smoothly through the y-intercept with the stated end behaviour."
+            }
+          ],
+          "answer": "All six functions have their intercepts, multiplicities, signs and sketches above."
+        },
+        "number": 9,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              -4,
+              1,
+              6,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 5,
+              "yMin": -10,
+              "yMax": 20
+            },
+            "label": "x^4-4x^3+x^2+6x",
+            "expressionLatex": "x^4-4x^3+x^2+6x",
+            "points": [
+              {
+                "x": -1,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 2,
+                "y": 0
+              },
+              {
+                "x": 3,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              3,
+              -6,
+              -8
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -6,
+              "xMax": 4,
+              "yMin": -25,
+              "yMax": 25
+            },
+            "label": "x^3+3x^2-6x-8",
+            "expressionLatex": "x^3+3x^2-6x-8",
+            "points": [
+              {
+                "x": -4,
+                "y": 0
+              },
+              {
+                "x": -1,
+                "y": 0
+              },
+              {
+                "x": 2,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -8
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              -4,
+              1,
+              6
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 5,
+              "yMin": -12,
+              "yMax": 14
+            },
+            "label": "x^3-4x^2+x+6",
+            "expressionLatex": "x^3-4x^2+x+6",
+            "points": [
+              {
+                "x": -1,
+                "y": 0
+              },
+              {
+                "x": 2,
+                "y": 0
+              },
+              {
+                "x": 3,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 6
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -1,
+              5,
+              -7,
+              3
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -1,
+              "xMax": 5,
+              "yMin": -10,
+              "yMax": 10
+            },
+            "label": "-x^3+5x^2-7x+3",
+            "expressionLatex": "-x^3+5x^2-7x+3",
+            "points": [
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 3,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 3
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              9,
+              27,
+              23,
+              -24,
+              -36
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 3,
+              "yMin": -70,
+              "yMax": 100
+            },
+            "label": "(x-1)(x+2)^2(x+3)^2",
+            "expressionLatex": "(x-1)(x+2)^2(x+3)^2",
+            "points": [
+              {
+                "x": -3,
+                "y": 0
+              },
+              {
+                "x": -2,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -36
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -1,
+              -2,
+              3,
+              4,
+              -4
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 3,
+              "yMin": -20,
+              "yMax": 5
+            },
+            "label": "-x^4-2x^3+3x^2+4x-4",
+            "expressionLatex": "-x^4-2x^3+3x^2+4x-4",
+            "points": [
+              {
+                "x": -2,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "对给定各多项式函数图 (a)–(d)，求首项系数的符号、横截距、正值区间和负值区间，以及多项式函数的方程。",
+        "concept": "sketch-sign",
+        "steps": [
+          {
+            "title": "(a) 从图写最低次数模型",
+            "body": "原图横截距和穿越/相切给出因式 $(x+2)^3(x-3)^2$（允许再乘比例常数）。从纵轴读得 $f(0)=72$，代入 $x=0$ 得比例常数为1，因此可取 $f(x)=(x+2)^3(x-3)^2$。"
+          },
+          {
+            "title": "(a) 次数、端点及截距",
+            "body": "次数 5，首项系数 $1$，左下、右上。零点与重数：-2（重数3）；3（重数2）；横截距的横坐标为 $-2,3$；纵截距为 $(0,72)$。"
+          },
+          {
+            "title": "(a) 符号与草图",
+            "body": "正值区间：$(-2,3)\\cup(3,\\infty)$；负值区间：$(-\\infty,-2)$。在 $-2$ 穿越；在 $3$ 相切；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(b) 从图写最低次数模型",
+            "body": "原图横截距和穿越/相切给出因式 $-(x+4)(x+1)(x-3)$（允许再乘比例常数）。从纵轴读得 $f(0)=12$，代入 $x=0$ 得比例常数为1，因此可取 $f(x)=-(x+4)(x+1)(x-3)$。"
+          },
+          {
+            "title": "(b) 次数、端点及截距",
+            "body": "次数 3，首项系数 $-1$，左上、右下。零点与重数：-4（重数1）；-1（重数1）；3（重数1）；横截距的横坐标为 $-4,-1,3$；纵截距为 $(0,12)$。"
+          },
+          {
+            "title": "(b) 符号与草图",
+            "body": "正值区间：$(-\\infty,-4)\\cup(-1,3)$；负值区间：$(-4,-1)\\cup(3,\\infty)$。在 $-4,-1,3$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(c) 从图写最低次数模型",
+            "body": "原图横截距和穿越/相切给出因式 $-(x+2)(x+1)(x-2)(x-3)$（允许再乘比例常数）。从纵轴读得 $f(0)=-12$，代入 $x=0$ 得比例常数为1，因此可取 $f(x)=-(x+2)(x+1)(x-2)(x-3)$。"
+          },
+          {
+            "title": "(c) 次数、端点及截距",
+            "body": "次数 4，首项系数 $-1$，两端向下。零点与重数：-2（重数1）；-1（重数1）；2（重数1）；3（重数1）；横截距的横坐标为 $-2,-1,2,3$；纵截距为 $(0,-12)$。"
+          },
+          {
+            "title": "(c) 符号与草图",
+            "body": "正值区间：$(-2,-1)\\cup(2,3)$；负值区间：$(-\\infty,-2)\\cup(-1,2)\\cup(3,\\infty)$。在 $-2,-1,2,3$ 穿越；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(d) 从图写最低次数模型",
+            "body": "原图横截距和穿越/相切给出因式 $(x+1)(x-1)(x-3)^2$（允许再乘比例常数）。从纵轴读得 $f(0)=-9$，代入 $x=0$ 得比例常数为1，因此可取 $f(x)=(x+1)(x-1)(x-3)^2$。"
+          },
+          {
+            "title": "(d) 次数、端点及截距",
+            "body": "次数 4，首项系数 $1$，两端向上。零点与重数：-1（重数1）；1（重数1）；3（重数2）；横截距的横坐标为 $-1,1,3$；纵截距为 $(0,-9)$。"
+          },
+          {
+            "title": "(d) 符号与草图",
+            "body": "正值区间：$(-\\infty,-1)\\cup(1,3)\\cup(3,\\infty)$；负值区间：$(-1,1)$。在 $-1,1$ 穿越；在 $3$ 相切；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "解释图像精度",
+            "body": "这些是按原图整数截距、最低可见重数及纵轴刻度得到的标准模型；图像本身不会排除人为加入、在所示范围无实零点的额外因子。"
+          }
+        ],
+        "answer": "(a) 首项正；(b) 首项负；(c) 首项负；(d) 首项正。完整方程、截距、重数及符号区间见逐小问解析。",
+        "pdfPage": 158,
+        "printedPage": 149,
+        "en": {
+          "prompt": "For each polynomial graph (a)–(d), determine the sign of the leading coefficient, the x-intercepts, positive and negative intervals, and an equation for the polynomial function.",
+          "steps": [
+            {
+              "title": "(a) Build a least-degree model from the graph",
+              "body": "The intercepts and crossing/touching behaviour give factors $(x+2)^3(x-3)^2$ up to a scale. The y-axis value is $f(0)=72$; substitution at $x=0$ gives scale 1, so a model is $f(x)=(x+2)^3(x-3)^2$."
+            },
+            {
+              "title": "(a) Degree, ends and intercepts",
+              "body": "Degree 5, leading coefficient $1$: falls left and rises right. Zeros: -2 (multiplicity 3); 3 (multiplicity 2); x-intercepts have x-coordinates $-2,3$; y-intercept $(0,72)$."
+            },
+            {
+              "title": "(a) Signs and sketch",
+              "body": "Positive on $(-2,3)\\cup(3,\\infty)$; negative on $(-\\infty,-2)$. Cross at $-2$; touch at $3$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(b) Build a least-degree model from the graph",
+              "body": "The intercepts and crossing/touching behaviour give factors $-(x+4)(x+1)(x-3)$ up to a scale. The y-axis value is $f(0)=12$; substitution at $x=0$ gives scale 1, so a model is $f(x)=-(x+4)(x+1)(x-3)$."
+            },
+            {
+              "title": "(b) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $-1$: rises left and falls right. Zeros: -4 (multiplicity 1); -1 (multiplicity 1); 3 (multiplicity 1); x-intercepts have x-coordinates $-4,-1,3$; y-intercept $(0,12)$."
+            },
+            {
+              "title": "(b) Signs and sketch",
+              "body": "Positive on $(-\\infty,-4)\\cup(-1,3)$; negative on $(-4,-1)\\cup(3,\\infty)$. Cross at $-4,-1,3$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(c) Build a least-degree model from the graph",
+              "body": "The intercepts and crossing/touching behaviour give factors $-(x+2)(x+1)(x-2)(x-3)$ up to a scale. The y-axis value is $f(0)=-12$; substitution at $x=0$ gives scale 1, so a model is $f(x)=-(x+2)(x+1)(x-2)(x-3)$."
+            },
+            {
+              "title": "(c) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $-1$: falls at both ends. Zeros: -2 (multiplicity 1); -1 (multiplicity 1); 2 (multiplicity 1); 3 (multiplicity 1); x-intercepts have x-coordinates $-2,-1,2,3$; y-intercept $(0,-12)$."
+            },
+            {
+              "title": "(c) Signs and sketch",
+              "body": "Positive on $(-2,-1)\\cup(2,3)$; negative on $(-\\infty,-2)\\cup(-1,2)\\cup(3,\\infty)$. Cross at $-2,-1,2,3$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(d) Build a least-degree model from the graph",
+              "body": "The intercepts and crossing/touching behaviour give factors $(x+1)(x-1)(x-3)^2$ up to a scale. The y-axis value is $f(0)=-9$; substitution at $x=0$ gives scale 1, so a model is $f(x)=(x+1)(x-1)(x-3)^2$."
+            },
+            {
+              "title": "(d) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $1$: rises at both ends. Zeros: -1 (multiplicity 1); 1 (multiplicity 1); 3 (multiplicity 2); x-intercepts have x-coordinates $-1,1,3$; y-intercept $(0,-9)$."
+            },
+            {
+              "title": "(d) Signs and sketch",
+              "body": "Positive on $(-\\infty,-1)\\cup(1,3)\\cup(3,\\infty)$; negative on $(-1,1)$. Cross at $-1,1$; touch at $3$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "Interpret graphical precision",
+              "body": "These are the standard models using integral intercepts, the least visible multiplicities and the y-axis scale. A picture cannot rule out deliberately added factors having no real zeros in the displayed range."
+            }
+          ],
+          "answer": "(a) Positive leading coefficient; (b) negative; (c) negative; (d) positive. Equations, intercepts, multiplicities and all sign intervals are given part by part above."
+        },
+        "number": 10,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/3-4-exercise-10.png"
+      },
+      {
+        "prompt": "(a) 从 $y=x^3$ 出发，列出变换后函数 $y=(\\frac12(x-2))^3-3$ 的参数。(b) 描述各参数的变换。(c) 求变换后函数的定义域与值域。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "(a) 对照标准式",
+            "body": "与 $y=a[b(x-h)]^3+k$ 比较，$a=1,b=1/2,h=2,k=-3$。"
+          },
+          {
+            "title": "(b) 描述映射",
+            "body": "水平拉伸2倍，右移2，下移3；无竖直伸缩或反射。点映射 $(x,y)\\mapsto(2x+2,y-3)$，如 $(0,0)\\mapsto(2,-3)$。"
+          },
+          {
+            "title": "(c) 定义域与值域",
+            "body": "非零系数三次函数对任意实数 $x$ 有定义且向正、负无穷延伸，故定义域和值域均为 $\\mathbb R$。"
+          }
+        ],
+        "answer": "(a) $a=1,b=1/2,h=2,k=-3$；(b) 水平拉伸2、右移2、下移3；(c) $D=R=\\mathbb R$。",
+        "pdfPage": 159,
+        "printedPage": 150,
+        "en": {
+          "prompt": "(a) Given $y=x^3$, list the parameters of the transformed polynomial $y=(\\frac12(x-2))^3-3$. (b) Describe how each parameter transforms $y=x^3$. (c) Determine the domain and range of the transformed function.",
+          "steps": [
+            {
+              "title": "(a) Compare with standard form",
+              "body": "Comparing with $y=a[b(x-h)]^3+k$ gives $a=1,b=1/2,h=2,k=-3$."
+            },
+            {
+              "title": "(b) Describe the mapping",
+              "body": "Horizontal stretch by 2, right 2, down 3; no vertical stretch or reflection. Map $(x,y)\\mapsto(2x+2,y-3)$, for example $(0,0)\\mapsto(2,-3)$."
+            },
+            {
+              "title": "(c) Domain and range",
+              "body": "A nonzero cubic is defined for every real $x$ and extends to both positive and negative infinity. Both domain and range are $\\mathbb R$."
+            }
+          ],
+          "answer": "(a) $a=1,b=1/2,h=2,k=-3$; (b) horizontal stretch 2, right 2, down 3; (c) $D=R=\\mathbb R$."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "Saanich Commonwealth Place 的比赛泳池为长方体，体积2100 m³。深为 $x$ m、长为 $25x$ m、宽为 $10x+1$ m。求实际尺寸。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "建体积方程",
+            "body": "$x(25x)(10x+1)=2100$，且 $x>0$。除以25，得到 $10x^3+x^2-84=0$。"
+          },
+          {
+            "title": "分解并求实根",
+            "body": "代入2得 $80+4-84=0$。所以 $(x-2)(10x^2+21x+42)=0$；二次项判别式 $441-1680=-1239<0$。唯一实根 $x=2$。"
+          },
+          {
+            "title": "求尺寸并核查",
+            "body": "深2 m、长50 m、宽21 m；$2(50)(21)=2100$ m³，均为正。"
+          }
+        ],
+        "answer": "深2 m，长50 m，宽21 m。",
+        "pdfPage": 159,
+        "printedPage": 150,
+        "en": {
+          "prompt": "The competition swimming pool at Saanich Commonwealth Place is a rectangular prism with volume 2100 m³. Its dimensions are $x$ metres deep, $25x$ metres long and $10x+1$ metres wide. What are the actual dimensions?",
+          "steps": [
+            {
+              "title": "Build the volume equation",
+              "body": "$x(25x)(10x+1)=2100$, with $x>0$. Divide by 25 to get $10x^3+x^2-84=0$."
+            },
+            {
+              "title": "Factor and find the real root",
+              "body": "Substituting 2 gives $80+4-84=0$. Thus $(x-2)(10x^2+21x+42)=0$; the quadratic discriminant is $441-1680=-1239<0$. The only real root is $x=2$."
+            },
+            {
+              "title": "Recover and verify dimensions",
+              "body": "Depth 2 m, length 50 m, width 21 m; $2(50)(21)=2100$ m³, all positive."
+            }
+          ],
+          "answer": "Depth 2 m, length 50 m, width 21 m."
+        },
+        "number": 12
+      },
+      {
+        "prompt": "宽 $x$ ft 的木栈道围绕一个宽30 ft、长40 ft 的长方形池塘。池塘与栈道总面积2000 ft²，求栈道宽度。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "写外部尺寸",
+            "body": "两侧各加 $x$，总宽 $30+2x$、总长 $40+2x$；$(30+2x)(40+2x)=2000$，$x>0$。"
+          },
+          {
+            "title": "展开和分解",
+            "body": "$4x^2+140x+1200=2000$，除以4得 $x^2+35x-200=0=(x+40)(x-5)$。"
+          },
+          {
+            "title": "选有效根并检查",
+            "body": "$x=-40$ 不符合正宽度；$x=5$，外部为40 ft乘50 ft，面积2000 ft²。"
+          }
+        ],
+        "answer": "栈道宽5 ft。",
+        "pdfPage": 159,
+        "printedPage": 150,
+        "en": {
+          "prompt": "A boardwalk $x$ feet wide surrounds a rectangular pond 30 ft wide and 40 ft long. The combined area of pond and boardwalk is 2000 ft². Find the boardwalk width.",
+          "steps": [
+            {
+              "title": "Write the outside dimensions",
+              "body": "Each dimension gains $x$ on both sides: $(30+2x)(40+2x)=2000$, $x>0$."
+            },
+            {
+              "title": "Expand and factor",
+              "body": "$4x^2+140x+1200=2000$. Divide by 4: $x^2+35x-200=0=(x+40)(x-5)$."
+            },
+            {
+              "title": "Choose and check the admissible root",
+              "body": "$x=-40$ cannot be a positive width. For $x=5$, the outside is 40 ft by 50 ft, area 2000 ft²."
+            }
+          ],
+          "answer": "The boardwalk is 5 ft wide."
+        },
+        "number": 13
+      },
+      {
+        "prompt": "对每个多项式函数确定最低次数的方程，并勾图：(a) 三次函数，零点 $-3$（重数2）与2，纵截距 $-18$；(b) 五次函数，零点 $-1$（重数3）与2（重数2），纵截距4；(c) 四次函数，首项系数负，零点 $-2$（重数2）、3（重数2），常数项 $-6$。",
+        "concept": "multiplicity",
+        "steps": [
+          {
+            "title": "(a) 由纵截距求比例",
+            "body": "按指定重数写 $f(x)=A(x+3)^2(x-2)$；令 $x=0$ 得 $-18A=-18$，故 $A=1$。重数和正好为要求次数。"
+          },
+          {
+            "title": "(a) 分解并找零点",
+            "body": "$(x+3)^2(x-2)=(x+3)^2(x-2)$。令每个因子为零，零点为 -3（重数2）；2（重数1）。"
+          },
+          {
+            "title": "(a) 次数、端点及截距",
+            "body": "次数 3，首项系数 $1$，左下、右上。零点与重数：-3（重数2）；2（重数1）；横截距的横坐标为 $-3,2$；纵截距为 $(0,-18)$。"
+          },
+          {
+            "title": "(a) 符号与草图",
+            "body": "正值区间：$(2,\\infty)$；负值区间：$(-\\infty,-3)\\cup(-3,2)$。在 $2$ 穿越；在 $-3$ 相切；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(b) 由纵截距求比例",
+            "body": "按指定重数写 $f(x)=A(x+1)^3(x-2)^2$；令 $x=0$ 得 $4A=4$，故 $A=1$。重数和正好为要求次数。"
+          },
+          {
+            "title": "(b) 分解并找零点",
+            "body": "$(x+1)^3(x-2)^2=(x+1)^3(x-2)^2$。令每个因子为零，零点为 -1（重数3）；2（重数2）。"
+          },
+          {
+            "title": "(b) 次数、端点及截距",
+            "body": "次数 5，首项系数 $1$，左下、右上。零点与重数：-1（重数3）；2（重数2）；横截距的横坐标为 $-1,2$；纵截距为 $(0,4)$。"
+          },
+          {
+            "title": "(b) 符号与草图",
+            "body": "正值区间：$(-1,2)\\cup(2,\\infty)$；负值区间：$(-\\infty,-1)$。在 $-1$ 穿越；在 $2$ 相切；结合纵截距与两端方向，平滑连接。"
+          },
+          {
+            "title": "(c) 由纵截距求比例",
+            "body": "按指定重数写 $f(x)=A(x+2)^2(x-3)^2$；令 $x=0$ 得 $36A=-6$，故 $A=-1/6$。重数和正好为要求次数。"
+          },
+          {
+            "title": "(c) 分解并找零点",
+            "body": "$-\\frac16(x+2)^2(x-3)^2=-\\frac16(x+2)^2(x-3)^2$。令每个因子为零，零点为 -2（重数2）；3（重数2）。"
+          },
+          {
+            "title": "(c) 次数、端点及截距",
+            "body": "次数 4，首项系数 $-\\frac{1}{6}$，两端向下。零点与重数：-2（重数2）；3（重数2）；横截距的横坐标为 $-2,3$；纵截距为 $(0,-6)$。"
+          },
+          {
+            "title": "(c) 符号与草图",
+            "body": "正值区间：$\\varnothing$；负值区间：$(-\\infty,-2)\\cup(-2,3)\\cup(3,\\infty)$。在 $-2,3$ 相切；结合纵截距与两端方向，平滑连接。"
+          }
+        ],
+        "answer": "(a) $y=(x+3)^2(x-2)$；(b) $y=(x+1)^3(x-2)^2$；(c) $y=-\\frac16(x+2)^2(x-3)^2$。",
+        "pdfPage": 159,
+        "printedPage": 150,
+        "en": {
+          "prompt": "Determine the least-degree equation and sketch each polynomial function: (a) cubic with zeros $-3$ (multiplicity 2) and 2, y-intercept $-18$; (b) quintic with zeros $-1$ (multiplicity 3) and 2 (multiplicity 2), y-intercept 4; (c) quartic with negative leading coefficient, zeros $-2$ (multiplicity 2) and 3 (multiplicity 2), constant term $-6$.",
+          "steps": [
+            {
+              "title": "(a) Determine the scale",
+              "body": "Use the prescribed multiplicities: $f(x)=A(x+3)^2(x-2)$. At $x=0$, $-18A=-18$, giving $A=1$. The multiplicity sum equals the required degree."
+            },
+            {
+              "title": "(a) Factor and find zeros",
+              "body": "$(x+3)^2(x-2)=(x+3)^2(x-2)$. Set each factor to zero: -3 (multiplicity 2); 2 (multiplicity 1)."
+            },
+            {
+              "title": "(a) Degree, ends and intercepts",
+              "body": "Degree 3, leading coefficient $1$: falls left and rises right. Zeros: -3 (multiplicity 2); 2 (multiplicity 1); x-intercepts have x-coordinates $-3,2$; y-intercept $(0,-18)$."
+            },
+            {
+              "title": "(a) Signs and sketch",
+              "body": "Positive on $(2,\\infty)$; negative on $(-\\infty,-3)\\cup(-3,2)$. Cross at $2$; touch at $-3$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(b) Determine the scale",
+              "body": "Use the prescribed multiplicities: $f(x)=A(x+1)^3(x-2)^2$. At $x=0$, $4A=4$, giving $A=1$. The multiplicity sum equals the required degree."
+            },
+            {
+              "title": "(b) Factor and find zeros",
+              "body": "$(x+1)^3(x-2)^2=(x+1)^3(x-2)^2$. Set each factor to zero: -1 (multiplicity 3); 2 (multiplicity 2)."
+            },
+            {
+              "title": "(b) Degree, ends and intercepts",
+              "body": "Degree 5, leading coefficient $1$: falls left and rises right. Zeros: -1 (multiplicity 3); 2 (multiplicity 2); x-intercepts have x-coordinates $-1,2$; y-intercept $(0,4)$."
+            },
+            {
+              "title": "(b) Signs and sketch",
+              "body": "Positive on $(-1,2)\\cup(2,\\infty)$; negative on $(-\\infty,-1)$. Cross at $-1$; touch at $2$; join smoothly through the y-intercept with the stated end behaviour."
+            },
+            {
+              "title": "(c) Determine the scale",
+              "body": "Use the prescribed multiplicities: $f(x)=A(x+2)^2(x-3)^2$. At $x=0$, $36A=-6$, giving $A=-1/6$. The multiplicity sum equals the required degree."
+            },
+            {
+              "title": "(c) Factor and find zeros",
+              "body": "$-\\frac16(x+2)^2(x-3)^2=-\\frac16(x+2)^2(x-3)^2$. Set each factor to zero: -2 (multiplicity 2); 3 (multiplicity 2)."
+            },
+            {
+              "title": "(c) Degree, ends and intercepts",
+              "body": "Degree 4, leading coefficient $-\\frac{1}{6}$: falls at both ends. Zeros: -2 (multiplicity 2); 3 (multiplicity 2); x-intercepts have x-coordinates $-2,3$; y-intercept $(0,-6)$."
+            },
+            {
+              "title": "(c) Signs and sketch",
+              "body": "Positive on $\\varnothing$; negative on $(-\\infty,-2)\\cup(-2,3)\\cup(3,\\infty)$. touch at $-2,3$; join smoothly through the y-intercept with the stated end behaviour."
+            }
+          ],
+          "answer": "(a) $y=(x+3)^2(x-2)$; (b) $y=(x+1)^3(x-2)^2$; (c) $y=-\\frac16(x+2)^2(x-3)^2$."
+        },
+        "number": 14,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              4,
+              -3,
+              -18
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 4,
+              "yMin": -25,
+              "yMax": 25
+            },
+            "label": "(x+3)^2(x-2)",
+            "expressionLatex": "(x+3)^2(x-2)",
+            "points": [
+              {
+                "x": -3,
+                "y": 0
+              },
+              {
+                "x": 2,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -18
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              -1,
+              -5,
+              1,
+              8,
+              4
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 4,
+              "yMin": -15,
+              "yMax": 20
+            },
+            "label": "(x+1)^3(x-2)^2",
+            "expressionLatex": "(x+1)^3(x-2)^2",
+            "points": [
+              {
+                "x": -1,
+                "y": 0
+              },
+              {
+                "x": 2,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": 4
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -0.16666666666666666,
+              0.3333333333333333,
+              1.8333333333333333,
+              -2,
+              -6
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 5,
+              "yMin": -12,
+              "yMax": 3
+            },
+            "label": "-\\frac16(x+2)^2(x-3)^2",
+            "expressionLatex": "-\\frac16(x+2)^2(x-3)^2",
+            "points": [
+              {
+                "x": -2,
+                "y": 0
+              },
+              {
+                "x": 3,
+                "y": 0
+              },
+              {
+                "x": 0,
+                "y": -6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "长方体宽为 $w$ cm，高比宽少2 cm，长比宽多4 cm。若体积的数值等于长度数值的8倍，求长方体的尺寸。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "建模与范围",
+            "body": "高 $w-2$、长 $w+4$，必须 $w>2$。以题给单位的数值建立 $w(w-2)(w+4)=8(w+4)$。"
+          },
+          {
+            "title": "约去正长度并分解",
+            "body": "$w+4>0$，除去它得到 $w(w-2)=8$，即 $(w-4)(w+2)=0$。根4、$-2$ 中仅4满足范围。"
+          },
+          {
+            "title": "检验",
+            "body": "宽4 cm、高2 cm、长8 cm；体积64 cm³，其数值为长度8的8倍。"
+          }
+        ],
+        "answer": "宽4 cm，高2 cm，长8 cm。",
+        "pdfPage": 159,
+        "printedPage": 150,
+        "en": {
+          "prompt": "The width of a rectangular prism is $w$ cm. Its height is 2 cm less than its width and its length is 4 cm more than its width. If the magnitude of its volume is 8 times the measure of its length, find the dimensions.",
+          "steps": [
+            {
+              "title": "Model with restrictions",
+              "body": "Height is $w-2$ and length is $w+4$, requiring $w>2$. Using the numerical measurements in the stated units, $w(w-2)(w+4)=8(w+4)$."
+            },
+            {
+              "title": "Divide by the positive length and factor",
+              "body": "Since $w+4>0$, divide by it: $w(w-2)=8$, or $(w-4)(w+2)=0$. Only 4 of the roots 4 and $-2$ is admissible."
+            },
+            {
+              "title": "Check",
+              "body": "Width 4 cm, height 2 cm, length 8 cm; volume 64 cm³ has numerical value 8 times the length measurement 8."
+            }
+          ],
+          "answer": "Width 4 cm, height 2 cm, length 8 cm."
+        },
+        "number": 15
+      },
+      {
+        "prompt": "三个连续奇整数的积为 $-105$，求这三个整数。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "表示连续奇整数",
+            "body": "令最小奇整数为 $n$，三数为 $n,n+2,n+4$，所以 $n(n+2)(n+4)=-105$。"
+          },
+          {
+            "title": "分解求根",
+            "body": "$n^3+6n^2+8n+105=(n+7)(n^2-n+15)=0$；二次式判别式 $1-60=-59<0$，故 $n=-7$。"
+          },
+          {
+            "title": "检验",
+            "body": "$-7,-5,-3$ 均为相邻奇整数；$(-7)(-5)(-3)=-105$。"
+          }
+        ],
+        "answer": "$-7,-5,-3$。",
+        "pdfPage": 159,
+        "printedPage": 150,
+        "en": {
+          "prompt": "Three consecutive odd integers have a product of $-105$. What are they?",
+          "steps": [
+            {
+              "title": "Represent consecutive odd integers",
+              "body": "Let the least odd integer be $n$. Then $n,n+2,n+4$ give $n(n+2)(n+4)=-105$."
+            },
+            {
+              "title": "Factor and solve",
+              "body": "$n^3+6n^2+8n+105=(n+7)(n^2-n+15)=0$. The quadratic discriminant is $1-60=-59<0$, so $n=-7$."
+            },
+            {
+              "title": "Check",
+              "body": "The integers $-7,-5,-3$ are consecutive odd integers and $(-7)(-5)(-3)=-105$."
+            }
+          ],
+          "answer": "$-7,-5,-3$."
+        },
+        "number": 16
+      },
+      {
+        "prompt": "纪念碑由上下叠放的两个石灰岩正方体组成，小块放在大块上。总高5 m，露在外面的表面积为61 m²，求两块的尺寸。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "表示边长与露出面积",
+            "body": "设大块边长 $a$、小块边长 $b$，$a+b=5$ 且 $a\\ge b>0$。地面底面不露出：大块四侧加露出的顶面为 $5a^2-b^2$；小块四侧与顶面为 $5b^2$。总面积 $5a^2+4b^2=61$。"
+          },
+          {
+            "title": "代入并解二次方程",
+            "body": "$5a^2+4(5-a)^2=61$，整理成 $9a^2-40a+39=(a-3)(9a-13)=0$。得 $a=3$ 或 $13/9$。"
+          },
+          {
+            "title": "按大小选解并核查",
+            "body": "$a\\ge b$ 要求 $a\\ge2.5$，排除 $13/9$。所以 $a=3,b=2$；总高 $3+2=5$，露出面积 $5(9)+4(4)=61$ m²。"
+          }
+        ],
+        "answer": "大块3 m × 3 m × 3 m，小块2 m × 2 m × 2 m。",
+        "pdfPage": 159,
+        "printedPage": 150,
+        "en": {
+          "prompt": "A monument consists of two cubical limestone blocks, the smaller resting on the larger. Total height is 5 m and exposed surface area is 61 m². Determine the dimensions of both blocks.",
+          "steps": [
+            {
+              "title": "Express side lengths and exposed area",
+              "body": "Let the sides be $a$ (large) and $b$ (small), so $a+b=5$ and $a\\ge b>0$. The bottom on the ground is not exposed. The large block contributes $5a^2-b^2$ and the small one $5b^2$, giving $5a^2+4b^2=61$."
+            },
+            {
+              "title": "Substitute and solve",
+              "body": "$5a^2+4(5-a)^2=61$ simplifies to $9a^2-40a+39=(a-3)(9a-13)=0$. Thus $a=3$ or $13/9$."
+            },
+            {
+              "title": "Apply the size condition and check",
+              "body": "$a\\ge b$ requires $a\\ge2.5$, excluding $13/9$. Thus $a=3,b=2$; height $3+2=5$ and exposed area $5(9)+4(4)=61$ m²."
+            }
+          ],
+          "answer": "Large block 3 m × 3 m × 3 m; small block 2 m × 2 m × 2 m."
+        },
+        "number": 17
+      },
+      {
+        "prompt": "Olutie 跟祖母学习用 stroud 羊毛布和毛毡制作传统因纽特壁挂。她为正方形壁挂制作正方形外框。图中内侧边长为 $x$ in，带边框的外侧边长为 $x^2-12$ in；边框需要144 in²毛毡。(a) 写出边框面积的多项式模型。(b) 求壁挂尺寸。(c) 求边框尺寸。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a) 面积差",
+            "body": "边框面积 $A(x)=(x^2-12)^2-x^2=x^4-25x^2+144$ in²；需 $x>0$ 且 $x^2-12>x$。"
+          },
+          {
+            "title": "(b) 令面积为144",
+            "body": "$x^4-25x^2+144=144$，得 $x^2(x-5)(x+5)=0$。候选 $0,5,-5$，仅5使内外边长为正且外大于内。"
+          },
+          {
+            "title": "(b)(c) 还原尺寸",
+            "body": "内壁挂5 in × 5 in；外边长 $5^2-12=13$ in，因此边框宽 $(13-5)/2=4$ in。检验 $13^2-5^2=169-25=144$ in²。"
+          }
+        ],
+        "answer": "(a) $A=x^4-25x^2+144$；(b) 5 in × 5 in；(c) 外框13 in × 13 in，四周宽4 in，内开口5 in × 5 in。",
+        "pdfPage": 160,
+        "printedPage": 151,
+        "en": {
+          "prompt": "Olutie is learning from her grandmother to make traditional Inuit wall hangings from stroud and felt. She makes a square border for her square wall hanging. The diagram shows inner side $x$ in and outer side $x^2-12$ in. She needs 144 in² of felt for the border. (a) Write a polynomial expression for the border area. (b) Find the wall-hanging dimensions. (c) Find the border dimensions.",
+          "steps": [
+            {
+              "title": "(a) Difference of areas",
+              "body": "Border area $A(x)=(x^2-12)^2-x^2=x^4-25x^2+144$ in². Require $x>0$ and $x^2-12>x$."
+            },
+            {
+              "title": "(b) Set the area to 144",
+              "body": "$x^4-25x^2+144=144$ gives $x^2(x-5)(x+5)=0$. Among $0,5,-5$, only 5 gives positive sides with the outside larger than the inside."
+            },
+            {
+              "title": "(b)(c) Recover dimensions",
+              "body": "The inner hanging is 5 in × 5 in; the outer side is $5^2-12=13$ in. The border width is $(13-5)/2=4$ in. Check: $13^2-5^2=169-25=144$ in²."
+            }
+          ],
+          "answer": "(a) $A=x^4-25x^2+144$; (b) 5 in × 5 in; (c) outer border 13 in × 13 in, width 4 in all around, inner opening 5 in × 5 in."
+        },
+        "number": 18,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/3-4-exercise-18.png"
+      },
+      {
+        "prompt": "四个连续整数的积为840，求这四个整数。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "表示乘积并换元",
+            "body": "设最小整数 $n$，则 $n(n+1)(n+2)(n+3)=840$。把首尾、内侧配对：令 $t=n^2+3n$，则 $n(n+3)=t$，$(n+1)(n+2)=t+2$。"
+          },
+          {
+            "title": "求两层方程",
+            "body": "$t(t+2)=840$，$(t-28)(t+30)=0$。若 $t=28$，$n^2+3n-28=(n+7)(n-4)=0$，得 $n=-7,4$。若 $t=-30$，$n^2+3n+30$ 的判别式 $9-120=-111<0$。"
+          },
+          {
+            "title": "给出两组并检验",
+            "body": "$4,5,6,7$ 的积为840；$-7,-6,-5,-4$ 的积也为840。两组均为连续整数。"
+          }
+        ],
+        "answer": "$4,5,6,7$ 或 $-7,-6,-5,-4$。",
+        "pdfPage": 160,
+        "printedPage": 151,
+        "en": {
+          "prompt": "Four consecutive integers have a product of 840. What are the integers?",
+          "steps": [
+            {
+              "title": "Represent the product and substitute",
+              "body": "Let the least integer be $n$. Then $n(n+1)(n+2)(n+3)=840$. Set $t=n^2+3n$, so $n(n+3)=t$ and $(n+1)(n+2)=t+2$."
+            },
+            {
+              "title": "Solve both levels",
+              "body": "$t(t+2)=840$ gives $(t-28)(t+30)=0$. For $t=28$, $n^2+3n-28=(n+7)(n-4)=0$, so $n=-7,4$. For $t=-30$, the discriminant of $n^2+3n+30$ is $9-120=-111<0$."
+            },
+            {
+              "title": "Give and check both sets",
+              "body": "The product of $4,5,6,7$ is 840. So is that of $-7,-6,-5,-4$. Both sets are consecutive integers."
+            }
+          ],
+          "answer": "$4,5,6,7$ or $-7,-6,-5,-4$."
+        },
+        "number": 19
+      },
+      {
+        "prompt": "写出一个三次函数，横截距的横坐标为 $\\sqrt3,-\\sqrt3,1$，纵截距为 $-1$。",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "由零点写因式",
+            "body": "$f(x)=A(x-\\sqrt3)(x+\\sqrt3)(x-1)=A(x^2-3)(x-1)$。"
+          },
+          {
+            "title": "使用纵截距求系数",
+            "body": "$f(0)=A(-3)(-1)=3A=-1$，所以 $A=-1/3$。"
+          },
+          {
+            "title": "展开核查",
+            "body": "$f(x)=-\\frac13(x^2-3)(x-1)=-\\frac13x^3+\\frac13x^2+x-1$，常数项为 $-1$，三个指定数均使某因子为0。"
+          }
+        ],
+        "answer": "$y=-\\frac13(x^2-3)(x-1)$。",
+        "pdfPage": 160,
+        "printedPage": 151,
+        "en": {
+          "prompt": "Write a cubic function with x-intercepts $\\sqrt3,-\\sqrt3,1$ and y-intercept $-1$.",
+          "steps": [
+            {
+              "title": "Write factors from zeros",
+              "body": "$f(x)=A(x-\\sqrt3)(x+\\sqrt3)(x-1)=A(x^2-3)(x-1)$."
+            },
+            {
+              "title": "Use the y-intercept",
+              "body": "$f(0)=A(-3)(-1)=3A=-1$, so $A=-1/3$."
+            },
+            {
+              "title": "Expand and check",
+              "body": "$f(x)=-\\frac13(x^2-3)(x-1)=-\\frac13x^3+\\frac13x^2+x-1$. Its constant is $-1$, and all three specified values make a factor zero."
+            }
+          ],
+          "answer": "$y=-\\frac13(x^2-3)(x-1)$."
+        },
+        "number": 20
+      },
+      {
+        "prompt": "方程 $2x^3+3x^2-23x-12=0$ 的根按从小到大记为 $a,b,c$。求以 $a+b,\\frac ab,ab$ 为根的方程。",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "求原方程的根",
+            "body": "$P(3)=54+27-69-12=0$。除以 $x-3$ 得 $2x^2+9x+4=(2x+1)(x+4)$，所以 $a=-4,b=-1/2,c=3$。"
+          },
+          {
+            "title": "计算新根",
+            "body": "$a+b=-4-1/2=-9/2$；$a/b=(-4)/(-1/2)=8$；$ab=(-4)(-1/2)=2$。"
+          },
+          {
+            "title": "写方程并展开",
+            "body": "$(2x+9)(x-8)(x-2)=0$。先 $(x-8)(x-2)=x^2-10x+16$，再乘得 $2x^3-11x^2-58x+144=0$。"
+          }
+        ],
+        "answer": "$2x^3-11x^2-58x+144=0$。",
+        "pdfPage": 160,
+        "printedPage": 151,
+        "en": {
+          "prompt": "The roots of $2x^3+3x^2-23x-12=0$ are $a,b,c$, from least to greatest. Determine the equation with roots $a+b,\\frac ab,ab$.",
+          "steps": [
+            {
+              "title": "Find the original roots",
+              "body": "$P(3)=54+27-69-12=0$. Division by $x-3$ gives $2x^2+9x+4=(2x+1)(x+4)$, so $a=-4,b=-1/2,c=3$."
+            },
+            {
+              "title": "Calculate the new roots",
+              "body": "$a+b=-4-1/2=-9/2$; $a/b=(-4)/(-1/2)=8$; $ab=(-4)(-1/2)=2$."
+            },
+            {
+              "title": "Write and expand the equation",
+              "body": "$(2x+9)(x-8)(x-2)=0$. First $(x-8)(x-2)=x^2-10x+16$; multiplication gives $2x^3-11x^2-58x+144=0$."
+            }
+          ],
+          "answer": "$2x^3-11x^2-58x+144=0$."
+        },
+        "number": 21
+      },
+      {
+        "prompt": "(a) 预测 $y=x^3-x^2$ 与 $y=(x-2)^3-(x-2)^2$ 图像的关系。(b) 用技术画出两者以验证预测。(c) 分解两函数并求横截距。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "(a) 识别自变量替换",
+            "body": "令 $f(x)=x^3-x^2$，第二个函数为 $g(x)=f(x-2)$；图像整体右移2，无其他变换。"
+          },
+          {
+            "title": "(b) 比较对应点",
+            "body": "$f(0)=0,f(1)=0,f(2)=4$；$g(2)=0,g(3)=0,g(4)=4$。每点横坐标增2，图中两条曲线形状相同。"
+          },
+          {
+            "title": "(c) 分解并读截距",
+            "body": "$f(x)=x^2(x-1)$，横截距 $(0,0)$（二重零点）、$(1,0)$。$g(x)=(x-2)^2[(x-2)-1]=(x-2)^2(x-3)$，横截距 $(2,0)$（二重）、$(3,0)$。"
+          }
+        ],
+        "answer": "(a)(b) 右移2；(c) 原函数零点0（二重）、1，第二函数零点2（二重）、3。",
+        "pdfPage": 160,
+        "printedPage": 151,
+        "en": {
+          "prompt": "(a) Predict the relationship between $y=x^3-x^2$ and $y=(x-2)^3-(x-2)^2$. (b) Graph both with technology to verify. (c) Factor each to determine its x-intercepts.",
+          "steps": [
+            {
+              "title": "(a) Identify the input substitution",
+              "body": "Let $f(x)=x^3-x^2$. The second function is $g(x)=f(x-2)$, a translation right 2 with no other transformation."
+            },
+            {
+              "title": "(b) Compare corresponding points",
+              "body": "$f(0)=0,f(1)=0,f(2)=4$; $g(2)=0,g(3)=0,g(4)=4$. Every x-coordinate gains 2; the plotted curves have the same shape."
+            },
+            {
+              "title": "(c) Factor and read intercepts",
+              "body": "$f(x)=x^2(x-1)$ has intercepts $(0,0)$ (double zero) and $(1,0)$. $g(x)=(x-2)^2[(x-2)-1]=(x-2)^2(x-3)$ has $(2,0)$ (double) and $(3,0)$."
+            }
+          ],
+          "answer": "(a)(b) Translate right 2; (c) original zeros 0 (double), 1; second zeros 2 (double), 3."
+        },
+        "number": 22,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -2,
+              "xMax": 5,
+              "yMin": -5,
+              "yMax": 12
+            },
+            "label": "Comparison",
+            "points": [],
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  -1,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "f(x)=x^3-x^2"
+              },
+              {
+                "numerator": [
+                  1,
+                  -7,
+                  16,
+                  -12
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "g(x)=(x-2)^3-(x-2)^2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "球形漂浮浮标半径1 m，密度为海水的 $\\frac14$。已知球冠体积 $V_{cap}=\\frac{\\pi x}{6}(3a^2+x^2)$，求浮标下沉到海水中的深度（图中 $x$）。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "用浮力确定排水体积",
+            "body": "漂浮时排开的海水重量等于浮标重量。密度比为 $1/4$，故排水体积为球体积的 $1/4$：$V_{cap}=\\frac14\\cdot\\frac43\\pi(1)^3=\\pi/3$ m³。深度范围 $0<x<2$。"
+          },
+          {
+            "title": "由直角三角形消去 $a$",
+            "body": "图中 $a^2+(1-x)^2=1$，所以 $a^2=2x-x^2$。代入球冠式：$V_{cap}=\\frac{\\pi x}{6}[3(2x-x^2)+x^2]=\\frac\\pi3x^2(3-x)$。"
+          },
+          {
+            "title": "求有效数值根",
+            "body": "令其等于 $\\pi/3$，得 $x^2(3-x)=1$，即 $x^3-3x^2+1=0$。用图像或二分法，在 $0<x<2$ 得 $x\\approx0.6527036$ m。该区间球冠体积随深度严格增加，故有效根唯一；其他实根约为 $-0.5321,2.8794$，均在范围外。"
+          },
+          {
+            "title": "检验与单位",
+            "body": "$0.6527036^2(3-0.6527036)\\approx1$，排水体积约为 $\\pi/3$ m³。浮标下沉约0.653 m。"
+          }
+        ],
+        "answer": "下沉深度 $x\\approx0.653$ m。",
+        "pdfPage": 160,
+        "printedPage": 151,
+        "en": {
+          "prompt": "A spherical floating buoy has radius 1 m and density $\\frac14$ that of sea water. Given the spherical-cap volume $V_{cap}=\\frac{\\pi x}{6}(3a^2+x^2)$, to what depth does it sink in sea water (the labelled $x$)?",
+          "steps": [
+            {
+              "title": "Use buoyancy to find displaced volume",
+              "body": "A floating object displaces its own weight of water. Density ratio $1/4$ means submerged volume is $1/4$ of the sphere: $V_{cap}=\\frac14\\cdot\\frac43\\pi(1)^3=\\pi/3$ m³. The depth satisfies $0<x<2$."
+            },
+            {
+              "title": "Eliminate $a$ with the right triangle",
+              "body": "The diagram gives $a^2+(1-x)^2=1$, so $a^2=2x-x^2$. Thus $V_{cap}=\\frac{\\pi x}{6}[3(2x-x^2)+x^2]=\\frac\\pi3x^2(3-x)$."
+            },
+            {
+              "title": "Find the admissible numerical root",
+              "body": "Equate to $\\pi/3$: $x^2(3-x)=1$, or $x^3-3x^2+1=0$. Graphing or bisection gives $x\\approx0.6527036$ m in $0<x<2$. Cap volume increases strictly with depth in this interval, so the admissible root is unique; the other real roots, approximately $-0.5321,2.8794$, lie outside it."
+            },
+            {
+              "title": "Check and state units",
+              "body": "$0.6527036^2(3-0.6527036)\\approx1$, giving displaced volume approximately $\\pi/3$ m³. The buoy sinks about 0.653 m."
+            }
+          ],
+          "answer": "Submerged depth $x\\approx0.653$ m."
+        },
+        "number": 23,
+        "sourceImage": "assets/3-4-exercise-23.png",
+        "graphs": [
+          {
+            "numerator": [
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": 0,
+              "xMax": 2,
+              "yMin": -4,
+              "yMax": 2
+            },
+            "label": "Comparison",
+            "points": [],
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  -3,
+                  0,
+                  1
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "x^3-3x^2+1"
+              },
+              {
+                "numerator": [
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "为什么把多项式写成因式分解形式很有用？用例子解释。",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "容易读出零点和重数",
+            "body": "例如 $x^3-3x+2=(x-1)^2(x+2)$，因式形式立即给出零点1（二重）、$-2$（一重）；因此横截距 $(1,0),(-2,0)$，在1相切、在 $-2$ 穿越。"
+          },
+          {
+            "title": "方便解方程与判符号",
+            "body": "方程 $x^3-3x+2=0$ 化成零乘积；平方因子非负，所以除零点外，函数符号与 $x+2$ 相同。这些信息帮助勾图。"
+          }
+        ],
+        "answer": "因式形式可直接求零点、重数，解方程、判符号并帮助画图。",
+        "pdfPage": 161,
+        "printedPage": 152,
+        "en": {
+          "prompt": "Why is it useful to express a polynomial in factored form? Explain with examples.",
+          "steps": [
+            {
+              "title": "Read zeros and multiplicities",
+              "body": "For example, $x^3-3x+2=(x-1)^2(x+2)$ immediately gives zeros 1 (double) and $-2$ (simple). Thus intercepts are $(1,0),(-2,0)$, touching at 1 and crossing at $-2$."
+            },
+            {
+              "title": "Solve equations and determine signs",
+              "body": "The equation $x^3-3x+2=0$ becomes a zero product. The square factor is nonnegative, so away from the zeros the sign is that of $x+2$. These features guide a sketch."
+            }
+          ],
+          "answer": "Factored form reveals zeros and multiplicities, solves equations, determines signs and guides sketches."
+        },
+        "number": "C1"
+      },
+      {
+        "prompt": "说明根、零点与横截距分别是什么，以及它们之间的关系。",
+        "concept": "zeros-roots",
+        "steps": [
+          {
+            "title": "分别定义",
+            "body": "根是满足方程 $f(x)=0$ 的数；零点是令函数值为0的输入数；横截距是图像与横轴相交的点，形式为 $(a,0)$。"
+          },
+          {
+            "title": "举例联系",
+            "body": "若 $f(x)=(x-2)(x+1)$，根和零点为2、$-1$，横截距是 $(2,0),(-1,0)$。根与零点等于横截距的横坐标。"
+          }
+        ],
+        "answer": "根与零点是数；对应横截距是以该数为横坐标、纵坐标为0的点。",
+        "pdfPage": 161,
+        "printedPage": 152,
+        "en": {
+          "prompt": "Describe what is meant by a root, a zero and an x-intercept. How are they related?",
+          "steps": [
+            {
+              "title": "Define each term",
+              "body": "A root is a number satisfying the equation $f(x)=0$. A zero is an input giving function value 0. An x-intercept is a point where the graph meets the x-axis, written $(a,0)$."
+            },
+            {
+              "title": "Connect them with an example",
+              "body": "For $f(x)=(x-2)(x+1)$, roots and zeros are 2 and $-1$, while intercepts are $(2,0),(-1,0)$. Roots and zeros equal the x-coordinates of x-intercepts."
+            }
+          ],
+          "answer": "Roots and zeros are numbers; corresponding x-intercepts are points with those x-coordinates and y-coordinate 0."
+        },
+        "number": "C2"
+      },
+      {
+        "prompt": "怎样从图像判断零点的重数可能是1、偶数，还是大于1的奇数？",
+        "concept": "multiplicity",
+        "steps": [
+          {
+            "title": "重数1",
+            "body": "图像在零点处一般以非零斜率穿越横轴，局部像非水平直线。"
+          },
+          {
+            "title": "偶重数",
+            "body": "曲线在横轴处相切折返，不改变符号；重数2的局部形状像抛物线，较高偶重数更平坦。"
+          },
+          {
+            "title": "大于1的奇重数",
+            "body": "图像仍穿越横轴并变号，但在零点处平坦，类似 $y=x^3$；仅凭一般草图难以分辨3、5等具体次数。"
+          }
+        ],
+        "answer": "1：非平坦穿越；偶数：相切折返；大于1的奇数：平坦穿越。",
+        "pdfPage": 161,
+        "printedPage": 152,
+        "en": {
+          "prompt": "How can you tell from a graph whether a zero has multiplicity 1, an even number, or an odd number greater than 1?",
+          "steps": [
+            {
+              "title": "Multiplicity 1",
+              "body": "The curve crosses the axis with nonzero slope, locally resembling a nonhorizontal line."
+            },
+            {
+              "title": "Even multiplicity",
+              "body": "The curve touches the axis and turns back without changing sign. Multiplicity 2 locally resembles a parabola; higher even multiplicities are flatter."
+            },
+            {
+              "title": "Odd multiplicity greater than 1",
+              "body": "The curve crosses and changes sign but flattens at the zero, like $y=x^3$. A sketch alone may not distinguish multiplicities 3,5 and so on."
+            }
+          ],
+          "answer": "1: nonflat crossing; even: touch and turn; odd greater than 1: flattened crossing."
+        },
+        "number": "C3"
+      },
+      {
+        "prompt": "Mini Lab：用已有变换知识预测 $y=a(b(x-h))^n+k$ 的平移、伸缩和反射，并画图验证。 第1步：每组画在同一坐标系。A：$y=x^3,y=x^3+2,y=x^3-2$；B：$y=x^4,y=(x+2)^4,y=(x-2)^4$。(a) 比较A，对任意常数 $k$ 描述 $y=x^3$ 与 $y=x^3+k$ 的关系；(b) 比较B，对任意常数 $h$ 描述 $y=x^4$ 与 $y=(x-h)^4$ 的关系。 第2步：描述 $h,k$ 在一般式中的作用。 第3步：每组同轴画图。C：$y=x^3,y=3x^3,y=-3x^3$；D：$y=x^4,y=\\frac13x^4,y=-\\frac13x^4$。(a) 比较C，对任意整数 $a$ 描述 $y=x^3$ 与 $y=ax^3$；(b) 比较D，对 $-1<a<0$ 或 $0<a<1$ 的有理数 $a$ 描述 $y=x^4$ 与 $y=ax^4$。 第4步：每组同轴画图。E：$y=x^3,y=(3x)^3,y=(-3x)^3$；F：$y=x^4,y=(\\frac13x)^4,y=(-\\frac13x)^4$。(a) 比较E，对任意整数 $b$ 描述 $y=x^3$ 与 $y=(bx)^3$；(b) 比较F，对 $-1<b<0$ 或 $0<b<1$ 的有理数 $b$ 描述 $y=x^4$ 与 $y=(bx)^4$。 第5步：描述 $a,b$ 在一般式中的作用。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "1(a) A组：竖直平移",
+            "body": "取原点集 $(-1,-1),(0,0),(1,1)$。加2后为 $(-1,1),(0,2),(1,3)$；减2后为 $(-1,-3),(0,-2),(1,-1)$。一般 $y=x^3+k$ 的映射为 $(x,y)\\mapsto(x,y+k)$，向上 $k$（负值向下）。"
+          },
+          {
+            "title": "1(b) B组：水平平移",
+            "body": "$y=(x+2)^4$ 是 $y=x^4$ 左移2，最低点 $(-2,0)$；$y=(x-2)^4$ 右移2，最低点 $(2,0)$。一般 $(x,y)\\mapsto(x+h,y)$，即向右 $h$（负值向左）。"
+          },
+          {
+            "title": "2：总结 $h,k$",
+            "body": "在 $y=a[b(x-h)]^n+k$ 中，先伸缩反射，再水平移 $h$、竖直移 $k$。$h$ 在括号内采用相反符号，$k$ 在括号外采用同号。"
+          },
+          {
+            "title": "3(a) C组：竖直伸缩",
+            "body": "对 $y=x^3$ 的点 $(1,1)$，$3x^3$ 给 $(1,3)$，$-3x^3$ 给 $(1,-3)$。一般纵坐标乘 $a$，竖直因子 $|a|$；$a<0$ 再关于横轴反射。$a=1$ 不变，$a=-1$ 只反射，$a=0$ 退化为 $y=0$。"
+          },
+          {
+            "title": "3(b) D组：压缩与反射",
+            "body": "$x^4$、$\\frac13x^4$、$-\\frac13x^4$ 在 $x=1$ 的值分别为 $1,1/3,-1/3$。$0<|a|<1$ 时竖直缩至 $|a|$；$a<0$ 再关于横轴反射。"
+          },
+          {
+            "title": "4(a) E组：水平伸缩",
+            "body": "点 $(1,1)$ 在 $(3x)^3$ 上变为 $(1/3,1)$，在 $(-3x)^3$ 上变为 $(-1/3,1)$。当整数 $b\\ne0$ 时，水平因子 $1/|b|$，$b<0$ 再关于纵轴反射。$|b|>1$ 压缩；$b=1$ 不变；$b=-1$ 只反射；$b=0$ 时为 $y=0$，不可使用除以 $b$ 的映射。"
+          },
+          {
+            "title": "4(b) F组：水平拉伸",
+            "body": "$0<|b|<1$ 时水平因子 $1/|b|>1$。$b=1/3$ 或 $-1/3$ 都给 $y=x^4/81$；$(1,1)$ 分别映为 $(3,1)$ 和 $(-3,1)$。偶函数关于纵轴对称，所以两条变换曲线重合。"
+          },
+          {
+            "title": "5：总结 $a,b$ 并检验图",
+            "body": "$a$ 控制竖直尺度 $|a|$ 与横轴反射；非零 $b$ 控制水平尺度 $1/|b|$ 与纵轴反射。全部点映射 $(x,y)\\mapsto(x/b+h,ay+k)$；下方六组同轴图与上述对应点和方向相符。"
+          }
+        ],
+        "answer": "$k$：竖直平移；$h$：水平平移；$a$：竖直伸缩与横轴反射；$b\\ne0$：水平伸缩 $1/|b|$ 与纵轴反射。六组图、各比较和零参数例外见解析。",
+        "pdfPage": 161,
+        "printedPage": 152,
+        "en": {
+          "prompt": "Mini Lab: Apply prior knowledge to predict translations, stretches and reflections of $y=a(b(x-h))^n+k$ and its graphs. Step 1: Graph each set on one set of axes and sketch in your notebook. A: $y=x^3,y=x^3+2,y=x^3-2$. B: $y=x^4,y=(x+2)^4,y=(x-2)^4$. (a) Compare A: for any constant $k$, describe the relationship between $y=x^3$ and $y=x^3+k$. (b) Compare B: for any constant $h$, describe the relationship between $y=x^4$ and $y=(x-h)^4$. Step 2: Describe the roles of $h,k$ in the general form. Step 3: Graph each set on shared axes and sketch. C: $y=x^3,y=3x^3,y=-3x^3$. D: $y=x^4,y=\\frac13x^4,y=-\\frac13x^4$. (a) Compare C: for any integer $a$, describe $y=x^3$ versus $y=ax^3$. (b) Compare D: for rational $a$ with $-1<a<0$ or $0<a<1$, describe $y=x^4$ versus $y=ax^4$. Step 4: Graph each set on shared axes and sketch. E: $y=x^3,y=(3x)^3,y=(-3x)^3$. F: $y=x^4,y=(\\frac13x)^4,y=(-\\frac13x)^4$. (a) Compare E: for any integer $b$, describe $y=x^3$ versus $y=(bx)^3$. (b) Compare F: for rational $b$ with $-1<b<0$ or $0<b<1$, describe $y=x^4$ versus $y=(bx)^4$. Step 5: Describe the roles of $a,b$ in the general form.",
+          "steps": [
+            {
+              "title": "1(a) Set A: vertical translations",
+              "body": "Start with $(-1,-1),(0,0),(1,1)$. Adding 2 gives $(-1,1),(0,2),(1,3)$; subtracting 2 gives $(-1,-3),(0,-2),(1,-1)$. In general $y=x^3+k$ maps $(x,y)\\mapsto(x,y+k)$, up $k$ (down if negative)."
+            },
+            {
+              "title": "1(b) Set B: horizontal translations",
+              "body": "$y=(x+2)^4$ is left 2 with minimum $(-2,0)$; $y=(x-2)^4$ is right 2 with minimum $(2,0)$. Generally $(x,y)\\mapsto(x+h,y)$: right $h$ (left if negative)."
+            },
+            {
+              "title": "2: Summarize $h,k$",
+              "body": "In $y=a[b(x-h)]^n+k$, stretch and reflect, then translate horizontally by $h$ and vertically by $k$. The input uses the opposite sign for $h$; the output uses the same sign for $k$."
+            },
+            {
+              "title": "3(a) Set C: vertical scaling",
+              "body": "From $(1,1)$ on $y=x^3$, $3x^3$ gives $(1,3)$ and $-3x^3$ gives $(1,-3)$. Generally multiply outputs by $a$, a vertical scale $|a|$, with x-axis reflection for $a<0$. $a=1$ is unchanged, $a=-1$ reflects only, and $a=0$ degenerates to $y=0$."
+            },
+            {
+              "title": "3(b) Set D: compression and reflection",
+              "body": "At $x=1$, $x^4,\\frac13x^4,-\\frac13x^4$ have values $1,1/3,-1/3$. For $0<|a|<1$, the vertical scale is $|a|$; reflect in the x-axis when $a<0$."
+            },
+            {
+              "title": "4(a) Set E: horizontal scaling",
+              "body": "Point $(1,1)$ maps to $(1/3,1)$ for $(3x)^3$ and $(-1/3,1)$ for $(-3x)^3$. For integer $b\\ne0$, the horizontal scale is $1/|b|$, with y-axis reflection if $b<0$. $|b|>1$ compresses, $b=1$ is unchanged, $b=-1$ only reflects, and $b=0$ gives $y=0$ so the division-by-$b$ map cannot be used."
+            },
+            {
+              "title": "4(b) Set F: horizontal stretching",
+              "body": "For $0<|b|<1$, horizontal scale $1/|b|>1$. Both $b=1/3$ and $b=-1/3$ give $y=x^4/81$; $(1,1)$ maps to $(3,1)$ or $(-3,1)$. The even parent is symmetric about the y-axis, so the two transformed curves coincide."
+            },
+            {
+              "title": "5: Summarize $a,b$ and check graphs",
+              "body": "$a$ controls vertical scale $|a|$ and x-axis reflection. Nonzero $b$ controls horizontal scale $1/|b|$ and y-axis reflection. The full map is $(x,y)\\mapsto(x/b+h,ay+k)$. The six shared-axis plots below agree with the corresponding points and directions."
+            }
+          ],
+          "answer": "$k$: vertical translation; $h$: horizontal translation; $a$: vertical scaling and x-axis reflection; $b\\ne0$: horizontal scale $1/|b|$ and y-axis reflection. All six graph sets, comparisons and zero-parameter exceptions are given above."
+        },
+        "number": "C4",
+        "subpartIds": [
+          "1a",
+          "1b",
+          "2",
+          "3a",
+          "3b",
+          "4a",
+          "4b",
+          "5"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 3,
+              "yMin": -10,
+              "yMax": 10
+            },
+            "label": "Comparison",
+            "points": [],
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "A: y=x^3"
+              },
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  2
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^3+2"
+              },
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  -2
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^3-2"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -1,
+              "yMax": 18
+            },
+            "label": "Comparison",
+            "points": [],
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "B: y=x^4"
+              },
+              {
+                "numerator": [
+                  1,
+                  8,
+                  24,
+                  32,
+                  16
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=(x+2)^4"
+              },
+              {
+                "numerator": [
+                  1,
+                  -8,
+                  24,
+                  -32,
+                  16
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=(x-2)^4"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 3,
+              "yMin": -12,
+              "yMax": 12
+            },
+            "label": "Comparison",
+            "points": [],
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "C: y=x^3"
+              },
+              {
+                "numerator": [
+                  3,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=3x^3"
+              },
+              {
+                "numerator": [
+                  -3,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=-3x^3"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 3,
+              "yMin": -12,
+              "yMax": 12
+            },
+            "label": "Comparison",
+            "points": [],
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "D: y=x^4"
+              },
+              {
+                "numerator": [
+                  0.3333333333333333,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=(1/3)x^4"
+              },
+              {
+                "numerator": [
+                  -0.3333333333333333,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=-(1/3)x^4"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -2,
+              "xMax": 2,
+              "yMin": -12,
+              "yMax": 12
+            },
+            "label": "Comparison",
+            "points": [],
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "E: y=x^3"
+              },
+              {
+                "numerator": [
+                  27,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=(3x)^3"
+              },
+              {
+                "numerator": [
+                  -27,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=(-3x)^3"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -1,
+              "yMax": 12
+            },
+            "label": "Comparison",
+            "points": [],
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "F: y=x^4"
+              },
+              {
+                "numerator": [
+                  0.012345679012345678,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=((1/3)x)^4"
+              },
+              {
+                "numerator": [
+                  0.012345679012345678,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=(-(1/3)x)^4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4"
+    ],
+    "expectedPractice": [
+      "opening-baggage",
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "investigate-5",
+      "investigate-6",
+      "investigate-7",
+      "investigate-8",
+      "practice-1",
+      "practice-2",
+      "practice-3",
+      "practice-4"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "expectedSubparts": {
+      "investigate-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "investigate-2": [
+        "a",
+        "b"
+      ],
+      "investigate-5": [
+        "a",
+        "b"
+      ],
+      "investigate-6": [
+        "degree",
+        "leadingcoefficient",
+        "zeros",
+        "yintercept",
+        "positive",
+        "negative"
+      ],
+      "example-1": [
+        "a",
+        "b"
+      ],
+      "example-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-4": [
+        "a",
+        "b"
+      ],
+      "practice-2": [
+        "a",
+        "b"
+      ],
+      "practice-4": [
+        "a",
+        "b"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-10": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-14": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-18": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-22": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-C4": [
+        "1a",
+        "1b",
+        "2",
+        "3a",
+        "3b",
+        "4a",
+        "4b",
+        "5"
+      ]
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+      "pdfPages": [
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161
+      ],
+      "printedPages": [
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152
+      ]
+    },
+    "boundary": "Section 3.4 begins on printed 136/PDF145 and ends after C4 Mini Lab on printed152/PDF161. Chapter Review begins PDF162. All 17 source pages visually inspected before solutions.",
+    "sourceFigures": [
+      {
+        "file": "3-4-example-1.png",
+        "pdfPage": 147,
+        "printedPage": 138,
+        "cropAt807px": [
+          222,
+          790,
+          713,
+          947
+        ]
+      },
+      {
+        "file": "3-4-practice-1.png",
+        "pdfPage": 148,
+        "printedPage": 139,
+        "cropAt807px": [
+          108,
+          773,
+          335,
+          929
+        ]
+      },
+      {
+        "file": "3-4-example-3-table.png",
+        "pdfPage": 152,
+        "printedPage": 143,
+        "cropAt807px": [
+          130,
+          668,
+          553,
+          804
+        ]
+      },
+      {
+        "file": "3-4-exercise-3.png",
+        "pdfPage": 157,
+        "printedPage": 148,
+        "cropAt807px": [
+          64,
+          142,
+          281,
+          653
+        ]
+      },
+      {
+        "file": "3-4-exercise-4-bcd.png",
+        "pdfPage": 157,
+        "printedPage": 148,
+        "cropAt807px": [
+          420,
+          66,
+          621,
+          584
+        ]
+      },
+      {
+        "file": "3-4-exercise-4-a.png",
+        "pdfPage": 157,
+        "printedPage": 148,
+        "cropAt807px": [
+          61,
+          813,
+          280,
+          956
+        ]
+      },
+      {
+        "file": "3-4-exercise-5.png",
+        "pdfPage": 157,
+        "printedPage": 148,
+        "cropAt807px": [
+          404,
+          645,
+          705,
+          970
+        ]
+      },
+      {
+        "file": "3-4-exercise-6-table.png",
+        "pdfPage": 158,
+        "printedPage": 149,
+        "cropAt807px": [
+          140,
+          241,
+          377,
+          374
+        ]
+      },
+      {
+        "file": "3-4-exercise-10.png",
+        "pdfPage": 158,
+        "printedPage": 149,
+        "cropAt807px": [
+          429,
+          220,
+          665,
+          965
+        ]
+      },
+      {
+        "file": "3-4-exercise-18.png",
+        "pdfPage": 160,
+        "printedPage": 151,
+        "cropAt807px": [
+          119,
+          313,
+          280,
+          559
+        ]
+      },
+      {
+        "file": "3-4-exercise-23.png",
+        "pdfPage": 160,
+        "printedPage": 151,
+        "cropAt807px": [
+          466,
+          495,
+          684,
+          660
+        ]
+      },
+      {
+        "file": "3-4-exercise-4.png",
+        "pdfPage": 157,
+        "printedPage": 148,
+        "description": "Composite of the four original graph crops, labels a–d preserved; no answer content."
+      }
+    ],
+    "inventoryNotes": [
+      "Opening baggage prompt is a real unnumbered question and is retained.",
+      "Investigate 1–8 includes Reflect and Respond 3,5,8. Investigate 6 has six named bullet tasks.",
+      "Exercise4 has three requested tasks for each a–d; exercise7 has five requested tasks for each a–d. These inner tasks are written in each part.",
+      "C4 retains steps1–5, all six three-function sets A–F and all comparison prompts.",
+      "Focus statements and multiplicity terminology/Key Ideas are represented in concepts; decorative photographs and historical sidebars are not exercises.",
+      "No Project Corner occurs within 3.4."
+    ],
+    "pageInventory": [
+      {
+        "pdfPage": 145,
+        "printedPage": 136,
+        "visuallyInspected": true,
+        "contents": [
+          "Opening carry-on baggage question",
+          "Focus objectives",
+          "Investigate1(a,b,c), including possible integral factors sidebar",
+          "Investigate2(a,b)"
+        ]
+      },
+      {
+        "pdfPage": 146,
+        "printedPage": 137,
+        "visuallyInspected": true,
+        "contents": [
+          "Reflect3",
+          "Investigate4 four-column sign table",
+          "Reflect5(a,b)",
+          "Investigate6 six bullet characteristics",
+          "Investigate7 hand/technology sketch comparison",
+          "Reflect8"
+        ]
+      },
+      {
+        "pdfPage": 147,
+        "printedPage": 138,
+        "visuallyInspected": true,
+        "contents": [
+          "Link the Ideas: (x-1)^2(x+2), multiplicity definition",
+          "Example1(a,b), original graphs and four characteristic tasks"
+        ]
+      },
+      {
+        "pdfPage": 148,
+        "printedPage": 139,
+        "visuallyInspected": true,
+        "contents": [
+          "Example1 solutions and multiplicity sidebar questions",
+          "Your Turn1 original graph and same characteristic tasks"
+        ]
+      },
+      {
+        "pdfPage": 149,
+        "printedPage": 140,
+        "visuallyInspected": true,
+        "contents": [
+          "Example2(a,b,c) source prompt and solution(a)"
+        ]
+      },
+      {
+        "pdfPage": 150,
+        "printedPage": 141,
+        "visuallyInspected": true,
+        "contents": [
+          "Example2 solution(b)",
+          "Sidebar: values at x=2,3 and multiplicity near -2",
+          "Example2 solution(c) begins: factoring common factor sidebar"
+        ]
+      },
+      {
+        "pdfPage": 151,
+        "printedPage": 142,
+        "visuallyInspected": true,
+        "contents": [
+          "Example2(c) continuation: zero coefficient and multiplication-check sidebars",
+          "Your Turn2(a,b)"
+        ]
+      },
+      {
+        "pdfPage": 152,
+        "printedPage": 143,
+        "visuallyInspected": true,
+        "contents": [
+          "Transformation parameter table",
+          "Example3(a,b,c), five-row blank point table"
+        ]
+      },
+      {
+        "pdfPage": 153,
+        "printedPage": 144,
+        "visuallyInspected": true,
+        "contents": [
+          "Example3 solution table/graph",
+          "Your Turn3"
+        ]
+      },
+      {
+        "pdfPage": 154,
+        "printedPage": 145,
+        "visuallyInspected": true,
+        "contents": [
+          "Example4(a,b), ice dimensions and volume model"
+        ]
+      },
+      {
+        "pdfPage": 155,
+        "printedPage": 146,
+        "visuallyInspected": true,
+        "contents": [
+          "Example4(b) continuation",
+          "Your Turn4(a,b), consecutive integers"
+        ]
+      },
+      {
+        "pdfPage": 156,
+        "printedPage": 147,
+        "visuallyInspected": true,
+        "contents": [
+          "All eight Key Ideas",
+          "Exercises1(a,b,c),2(a,b,c)"
+        ]
+      },
+      {
+        "pdfPage": 157,
+        "printedPage": 148,
+        "visuallyInspected": true,
+        "contents": [
+          "Exercise3(a,b,c) given graphs",
+          "Exercise4(a,b,c,d), each tasks(i,ii,iii), four given graphs",
+          "Exercise5(a,b,c,d) graph matching and four supplied formulas A-D"
+        ]
+      },
+      {
+        "pdfPage": 158,
+        "printedPage": 149,
+        "visuallyInspected": true,
+        "contents": [
+          "Exercise6(a,b,c), five-point transformation table",
+          "Exercise7(a,b,c,d), each tasks(i,ii,iii,iv,v)",
+          "Exercise8: all four functions in7",
+          "Exercise9(a,b,c,d,e,f)",
+          "Exercise10(a,b,c,d) original graphs, each four requested characteristics"
+        ]
+      },
+      {
+        "pdfPage": 159,
+        "printedPage": 150,
+        "visuallyInspected": true,
+        "contents": [
+          "Exercise11(a,b,c)",
+          "Exercise12 pool",
+          "Exercise13 boardwalk",
+          "Exercise14(a,b,c)",
+          "Exercise15 prism",
+          "Exercise16 odd integers",
+          "Exercise17 stacked cubes"
+        ]
+      },
+      {
+        "pdfPage": 160,
+        "printedPage": 151,
+        "visuallyInspected": true,
+        "contents": [
+          "Exercise18(a,b,c), original wall hanging diagram",
+          "Exercise19 four integers",
+          "Exercise20 irrational zeros",
+          "Exercise21 roots a,b,c and derived roots",
+          "Exercise22(a,b,c)",
+          "Exercise23 spherical-cap diagram and buoyancy principle"
+        ]
+      },
+      {
+        "pdfPage": 161,
+        "printedPage": 152,
+        "visuallyInspected": true,
+        "contents": [
+          "Create Connections C1,C2,C3",
+          "C4 Mini Lab steps1-5, setsA-F each with three functions, comparison prompts1(a,b),3(a,b),4(a,b)"
+        ]
+      }
+    ],
+    "nestedTasks": {
+      "exercise-4": {
+        "a": [
+          "i",
+          "ii",
+          "iii"
+        ],
+        "b": [
+          "i",
+          "ii",
+          "iii"
+        ],
+        "c": [
+          "i",
+          "ii",
+          "iii"
+        ],
+        "d": [
+          "i",
+          "ii",
+          "iii"
+        ]
+      },
+      "exercise-7": {
+        "a": [
+          "i",
+          "ii",
+          "iii",
+          "iv",
+          "v"
+        ],
+        "b": [
+          "i",
+          "ii",
+          "iii",
+          "iv",
+          "v"
+        ],
+        "c": [
+          "i",
+          "ii",
+          "iii",
+          "iv",
+          "v"
+        ],
+        "d": [
+          "i",
+          "ii",
+          "iii",
+          "iv",
+          "v"
+        ]
+      },
+      "exercise-10": {
+        "a": [
+          "leading coefficient sign",
+          "x-intercepts",
+          "positive/negative intervals",
+          "equation"
+        ],
+        "b": [
+          "leading coefficient sign",
+          "x-intercepts",
+          "positive/negative intervals",
+          "equation"
+        ],
+        "c": [
+          "leading coefficient sign",
+          "x-intercepts",
+          "positive/negative intervals",
+          "equation"
+        ],
+        "d": [
+          "leading coefficient sign",
+          "x-intercepts",
+          "positive/negative intervals",
+          "equation"
+        ]
+      },
+      "example-1": {
+        "a": [
+          "least degree",
+          "leading coefficient sign",
+          "intercepts and least-degree factors",
+          "positive/negative intervals"
+        ],
+        "b": [
+          "least degree",
+          "leading coefficient sign",
+          "intercepts and least-degree factors",
+          "positive/negative intervals"
+        ]
+      },
+      "practice-1": [
+        "least degree",
+        "leading coefficient sign",
+        "intercepts and least-degree factors",
+        "positive/negative intervals"
+      ]
+    },
+    "mathematicalSidebars": [
+      {
+        "record": "investigate-1",
+        "pdfPage": 145,
+        "prompt": "Possible integral factors"
+      },
+      {
+        "record": "example-1",
+        "pdfPage": 148,
+        "prompt": "Could multiplicities exceed the least 1 or2?"
+      },
+      {
+        "record": "example-2",
+        "pdfPage": 150,
+        "prompt": "Evaluate x2,x3; local shape at triple zero -2; why common factor helps"
+      },
+      {
+        "record": "example-2",
+        "pdfPage": 151,
+        "prompt": "Zero coefficient; multiplication check"
+      }
+    ]
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "All17 source pages, complete bilingual solutions,96 independent exact checks and a separate source-figure/C4 review passed.",
+    "reviewFiles": [
+      "audit/3-4-math-verification.json",
+      "audit/3-4-independent-review.json",
+      "audit/3-4-figures-independent.json"
+    ]
+  }
+}

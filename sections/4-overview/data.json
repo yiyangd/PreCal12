@@ -1,0 +1,149 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "4-overview",
+    "section": "4 Overview",
+    "title": "三角学与单位圆——章开篇",
+    "en": {
+      "title": "Trigonometry and the Unit Circle — Chapter Opening"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        164,
+        165
+      ],
+      "pdfPages": [
+        173,
+        174
+      ]
+    },
+    "concepts": [
+      {
+        "id": "goals",
+        "title": "本章目标与应用",
+        "summary": "运用单位圆和弧度制圆函数建模、解决三角问题；声音、光、潮汐、时间和分子运动中都有重复模式。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "依次学习角度量（4.1）、单位圆坐标（4.2）、六个三角比（4.3）和三角方程（4.4）。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Chapter goals and applications",
+          "summary": "Model and solve trigonometric problems using the unit circle and circular functions of radian measures. Repeating patterns occur in sound, light, tides, time and molecular motion.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Learn angle measure (4.1), coordinates on the unit circle (4.2), six trigonometric ratios (4.3), and trigonometric equations (4.4)."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "terms",
+        "title": "核心术语",
+        "summary": "弧度：所对弧长等于半径的圆心角。 同终边角：始边与终边相同的角。 通式：描述一族角的表达式。 单位圆：以原点为圆心、半径为 1 的圆。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "余割 $\\csc\\theta=1/\\sin\\theta$；正割 $\\sec\\theta=1/\\cos\\theta$；余切在有定义处 $\\cot\\theta=1/\\tan\\theta$。三角方程为包含三角比的方程。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Key terms",
+          "summary": "Radian: angle subtending an arc equal to the radius. Coterminal angles: same initial and terminal arms. General form: an expression describing a family of angles. Unit circle: radius 1, centred at the origin.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Cosecant $\\csc\\theta=1/\\sin\\theta$; secant $\\sec\\theta=1/\\cos\\theta$; cotangent $\\cot\\theta=1/\\tan\\theta$ where defined. A trigonometric equation involves trigonometric ratios."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "career",
+        "title": "职业联系：碰撞重建",
+        "summary": "教材描述工程师、警方调查人员及法律专家分析车辆碰撞，为报告提供证据；相关培训可来自警校、工程院系与技术学院。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "原书历史网页链接为可选职业调查线索。印刷 164–165 页没有编号准备题；本页不把外部调查结果当作已核实内容。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Career Link: collision reconstruction",
+          "summary": "The source describes engineers, police investigators and legal experts analysing motor-vehicle collisions to provide evidence for reports. Training can involve police schools, engineering departments and technical institutes.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "The printed historical Web Link is an optional career-research lead. This chapter contains no numbered preparation exercise on pp.164–165; no external research result is claimed here."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "照片中的花名为 Trigonometry（水仙品种）。你认为为何选这个名称？",
+        "concept": "goals",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "这是开放的观察解释题。一种可能的观察是花瓣围绕中心重复排列，令人联想到旋转对称及圆周角度。照片支持这种几何比较，但不能证明育种者历史上命名该品种的真实原因。"
+          }
+        ],
+        "answer": "一种可能回答：花瓣的径向重复图案令人联想到角与旋转对称；原书未提供历史命名依据。",
+        "printedPage": 164,
+        "pdfPage": 173,
+        "en": {
+          "prompt": "The flower in the photograph is called the Trigonometry daffodil. Why do you think this name was chosen?",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "This is an open visual interpretation. One possible observation is the repeated arrangement of petals around the centre, which suggests rotational symmetry and angles around a circle. The photograph supports that geometric comparison, but it does not establish the breeder’s historical reason for the cultivar name."
+            }
+          ],
+          "answer": "Possible response: repeated radial petal patterns suggest angles and rotational symmetry; the historical naming reason is not supplied.",
+          "label": "Daffodil reflection"
+        },
+        "id": "daffodil-reflection",
+        "type": "practice",
+        "label": "水仙观察题",
+        "sourceImage": "assets/4-overview-daffodil.png"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": []
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [
+      "daffodil-reflection"
+    ],
+    "expectedExercises": [],
+    "expectedSubparts": {}
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original source pages, all bilingual conditions/subparts, solutions and referenced figures independently reviewed. Exact calculations and interval checks are saved in the chapter audit package. Open research/construction tasks retain their stated scope.",
+    "independentReview": "audit/4-overview-independent-review.json",
+    "reviewedDataSha256": "e79dbb56b1e8d1ba98f7b4c94340eb43c2844fab88105a8b8af4a47f50733b0c",
+    "reviewedPayloadSha256": "5a69a29764936c21a5eb96e740fe93afa6f39c1b482b911a3cdc0ae4a5a842b9"
+  }
+}

@@ -1,0 +1,3000 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "4-1",
+    "section": "4.1",
+    "title": "角与角的度量",
+    "description": "学习目标：用度与弧度画标准位置角，互换度与弧度，求同终边角，解决圆弧、圆心角与半径问题。术语：弧度、同终边角、通式。教材开篇提醒检查计算器的角单位；赛车结构中角的数量为观察讨论，没有唯一数值。关键思想已归入以下知识点。",
+    "en": {
+      "title": "Angles and Angle Measure",
+      "description": "Focus: sketch standard-position angles in degrees and radians, convert between the units, determine coterminal angles, and solve problems involving arc lengths, central angles, and radii. Terms: radian, coterminal angles, general form. The opening invites inspection of calculator angle units and angles in a racing car; the latter is an observation discussion with no unique numerical count. Key Ideas are incorporated into the concepts below."
+    },
+    "source": {
+      "title": "Pre-Calculus 12, McGraw-Hill Ryerson",
+      "kind": "pdf",
+      "printedPages": [
+        166,
+        179
+      ],
+      "pdfPages": [
+        175,
+        188
+      ]
+    },
+    "concepts": [
+      {
+        "id": "angle",
+        "title": "标准位置、方向与弧度",
+        "summary": "标准位置的顶点在原点，始边沿正 $x$ 轴。逆时针为正，顺时针为负；弧长等于半径时圆心角为 $1$ 弧度。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "从正 $x$ 轴按符号旋转；一周为 $360°=2\\pi$，半周为 $180°=\\pi$。先化到一周内，再判断象限或坐标轴。"
+          }
+        ],
+        "pitfalls": [
+          "无单位的角度数值通常表示弧度。"
+        ],
+        "en": {
+          "title": "Standard position, direction, and radians",
+          "summary": "In standard position the vertex is the origin and the initial arm lies on the positive x-axis. Counterclockwise is positive; clockwise is negative. One radian subtends an arc equal to the radius.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Rotate from the positive x-axis in the signed direction. One turn is $360°=2\\pi$, and half a turn is $180°=\\pi$. Reduce to one turn to locate the quadrant or axis."
+            }
+          ],
+          "pitfalls": [
+            "An angle with no unit is conventionally in radians."
+          ]
+        }
+      },
+      {
+        "id": "convert",
+        "title": "度与弧度换算",
+        "summary": "$180°=\\pi$ 弧度；转换单位不改变角的旋转方向。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "度数乘 $\\pi/180$；弧度数乘 $180°/\\pi$。保留精确式，到最后才取近似。"
+          }
+        ],
+        "pitfalls": [
+          "不要把弧度数再当成度数。"
+        ],
+        "en": {
+          "title": "Convert degrees and radians",
+          "summary": "$180°=\\pi$ radians; changing units does not change the direction of rotation.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Multiply degrees by $\\pi/180$; multiply radians by $180°/\\pi$. Keep exact expressions until the final rounding."
+            }
+          ],
+          "pitfalls": [
+            "Do not treat a radian value as a degree value."
+          ]
+        }
+      },
+      {
+        "id": "coterminal",
+        "title": "同终边角与指定范围",
+        "summary": "同终边角有相同的始边和终边，差为整周。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "写成 $\\alpha+360°k$ 或 $\\alpha+2\\pi k$，$k\\in\\mathbb Z$；解范围不等式求所有整数 $k$。教材常用 $\\alpha\\pm360°n$（$n=1,2,\\ldots$）表示原角以外的其他角。"
+          }
+        ],
+        "pitfalls": [
+          "严格上界不能包括；原角是否列入应说明所用约定。"
+        ],
+        "en": {
+          "title": "Coterminal angles and restricted domains",
+          "summary": "Coterminal angles have the same initial and terminal arms and differ by whole turns.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $\\alpha+360°k$ or $\\alpha+2\\pi k$, $k\\in\\mathbb Z$, and solve the domain inequalities for integer k. The textbook often writes $\\alpha\\pm360°n$, $n=1,2,\\ldots$, for other angles besides the original."
+            }
+          ],
+          "pitfalls": [
+            "Respect strict upper bounds and state whether the original angle is included."
+          ]
+        }
+      },
+      {
+        "id": "arc",
+        "title": "圆弧、半径与扇形",
+        "summary": "弧长 $a=r\\theta$，其中 $\\theta$ 用弧度，弧长与半径用相同长度单位。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先把角换为弧度，再用 $a=r\\theta$、$r=a/\\theta$ 或 $\\theta=a/r$；扇形面积为 $\\tfrac12r^2\\theta$。"
+          }
+        ],
+        "pitfalls": [
+          "弧长与扇形面积的单位分别为长度与面积。"
+        ],
+        "en": {
+          "title": "Arc length, radius, and sectors",
+          "summary": "Arc length is $a=r\\theta$, with theta in radians and arc length and radius in the same length units.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Convert the angle to radians, then use $a=r\\theta$, $r=a/\\theta$, or $\\theta=a/r$. Sector area is $\\tfrac12r^2\\theta$."
+            }
+          ],
+          "pitfalls": [
+            "Arc length has length units; sector area has square units."
+          ]
+        }
+      },
+      {
+        "id": "speed",
+        "title": "角速度与线速度",
+        "summary": "角速度是角的变化量除以时间；轮缘线速度满足 $v=r\\omega$，其中 $\\omega$ 用弧度每单位时间。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用 $1\\text{ rev}=2\\pi=360°$ 换算角度，再统一时间与长度单位。无滑动时一周行进距离为 $2\\pi r$。"
+          }
+        ],
+        "pitfalls": [
+          "直径应除以 2 才是半径。"
+        ],
+        "en": {
+          "title": "Angular and linear velocity",
+          "summary": "Angular velocity is change in angle per unit time. Rim speed satisfies $v=r\\omega$ when omega is in radians per unit time.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $1\\text{ rev}=2\\pi=360°$, then match time and length units. With no slipping the distance in one turn is $2\\pi r$."
+            }
+          ],
+          "pitfalls": [
+            "Halve a diameter to get the radius."
+          ]
+        }
+      },
+      {
+        "id": "units",
+        "title": "转数、百分度与度分秒",
+        "summary": "一周为 $1$ 转、$360°$、$2\\pi$ 弧度或 $400$ 百分度；$1°=60′$，$1′=60″$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "小数度逐次乘 60 得分、秒；反向用 $d+m/60+s/3600$。度数乘 $10/9$ 得百分度。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Revolutions, gradians, and DMS",
+          "summary": "One turn is 1 revolution, $360°$, $2\\pi$ radians, or 400 gradians; $1°=60′$ and $1′=60″$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Multiply successive fractional parts by 60 to obtain minutes and seconds. Reverse with $d+m/60+s/3600$. Multiply degrees by $10/9$ to obtain gradians."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "geometry",
+        "title": "几何连接与参照角",
+        "summary": "参照角是终边与 $x$ 轴之间的锐角；圆、钟表和直线倾斜角都可用角度建模。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先画图标出已知量。弓形面积为扇形面积减三角形面积；钟表的时针每分钟转 $0.5°$，分针每分钟转 $6°$。"
+          }
+        ],
+        "pitfalls": [
+          "竖直线没有有限斜率；无须强行使用正切。"
+        ],
+        "en": {
+          "title": "Geometric connections and reference angles",
+          "summary": "A reference angle is the acute angle between the terminal arm and the x-axis. Circle segments, clocks, and line inclinations can be modelled with angles.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Draw and label the known quantities first. A segment area is sector area minus triangle area; a clock hour hand turns $0.5°$ per minute and the minute hand $6°$ per minute."
+            }
+          ],
+          "pitfalls": [
+            "A vertical line has no finite slope; do not force a tangent calculation."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "小组活动：用粉笔在地面标出圆心，以长度大于 1 m 的绳为半径，用粉笔或胶带画圆。材料：胶带、粉笔、绳、卷尺。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "1",
+            "body": "固定绳的一端于圆心，绳拉紧，另一端绕圆心走一周；用卷尺记录所用半径 $r>1\\text{ m}$。"
+          }
+        ],
+        "answer": "实际圆的尺寸由小组所用绳长决定。",
+        "printedPage": 166,
+        "pdfPage": 175,
+        "en": {
+          "prompt": "Work in small groups. Mark a circle centre on the floor with sidewalk chalk. Using a string longer than 1 m as the radius, outline a circle with chalk or masking tape. Materials: masking tape, sidewalk chalk, string, measuring tape.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "Fix one end of the string at the centre, keep it taut, and move the other end through one turn. Measure and record the chosen radius $r>1\\text{ m}$."
+            }
+          ],
+          "answer": "The actual circle size depends on the group’s chosen string.",
+          "label": "Investigate / Reflect 1"
+        },
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 / 反思 1"
+      },
+      {
+        "prompt": "圆心标为 O，圆周上取 A。由同一组员沿 OA 脚跟接脚尖走并数步，再从 A 逆时针沿圆周走同样步数，终点标 B。用胶带作 AO、BO；另一位组员确认半径 AO 与弧 AB 长相等。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "1",
+            "body": "同一人的脚长作共同单位，所以两段长度近似相等；用卷尺复核 $a\\approx r$。"
+          },
+          {
+            "title": "2",
+            "body": "理想情况下 $\\angle AOB=a/r=1$ 弧度。实际误差来自步长及圆弧测量。"
+          }
+        ],
+        "answer": "理想圆心角为 1 弧度；记录实际观察。",
+        "printedPage": 166,
+        "pdfPage": 175,
+        "en": {
+          "prompt": "Label the centre O and choose A on the circumference. Have one person walk heel-to-toe along radius OA, counting foot lengths, then count the same number counterclockwise along the circumference from A to B. Tape radii AO and BO; have another person confirm that AO and arc AB have the same length.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The same foot length supplies a common unit, making the two lengths approximately equal. Verify with a tape measure that $a\\approx r$."
+            },
+            {
+              "title": "2",
+              "body": "Ideally $\\angle AOB=a/r=1$ radian. Actual differences come from pacing and arc-measurement error."
+            }
+          ],
+          "answer": "The ideal central angle is 1 radian; record the actual observations.",
+          "label": "Investigate / Reflect 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 / 反思 2"
+      },
+      {
+        "prompt": "从 B 起绕圆走，估计半径的长度在整个圆周上可排多少次。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "1",
+            "body": "将一个半径长的圆弧作为单位，绕完整个圆需要约 6.28 份。 $C/r=2\\pi r/r=2\\pi\\approx6.28$."
+          }
+        ],
+        "answer": "约 6.28 次（实测值可能略有偏差）。",
+        "printedPage": 167,
+        "pdfPage": 176,
+        "en": {
+          "prompt": "Starting from B, walk around the circle and estimate how many times the length of the radius fits onto the circumference.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "Using an arc one radius long as the unit, a full circle requires about 6.28 such arcs. $C/r=2\\pi r/r=2\\pi\\approx6.28$."
+            }
+          ],
+          "answer": "Approximately 6.28 times (measurements may vary slightly).",
+          "label": "Investigate / Reflect 3"
+        },
+        "sourceImage": "assets/4-1-investigate.png",
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 / 反思 3"
+      },
+      {
+        "prompt": "Reflect and Respond：用圆周长知识说明第 3 步的估计合理。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "1",
+            "body": "半径不论多大，圆周长与半径之比不变。 $C=2\\pi r\\Rightarrow C/r=2\\pi\\approx6.283$."
+          }
+        ],
+        "answer": "半径长在圆周上恰好排 $2\\pi$ 次。",
+        "printedPage": 167,
+        "pdfPage": 176,
+        "en": {
+          "prompt": "Reflect and Respond: Use your knowledge of circumference to show that your answer in step 3 is reasonable.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The circumference-to-radius ratio is constant for every radius. $C=2\\pi r\\Rightarrow C/r=2\\pi\\approx6.283$."
+            }
+          ],
+          "answer": "Exactly $2\\pi$ radius lengths fit around the circumference.",
+          "label": "Investigate / Reflect 4"
+        },
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "探究 / 反思 4"
+      },
+      {
+        "prompt": "第 3 步的 $\\angle AOB$ 大于、等于还是小于 $60°$？与小组讨论。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "1",
+            "body": "圆周约有 6.28 个半径长，所以每个角小于一周的六分之一。 $1\\text{ rad}=180°/\\pi\\approx57.30°<60°$."
+          }
+        ],
+        "answer": "小于 $60°$。",
+        "printedPage": 167,
+        "pdfPage": 176,
+        "en": {
+          "prompt": "Is angle AOB in step 3 greater than, equal to, or less than $60°$? Discuss with your group.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "About 6.28 radius lengths fit around the circle, so each angle is smaller than one-sixth of a turn. $1\\text{ rad}=180°/\\pi\\approx57.30°<60°$."
+            }
+          ],
+          "answer": "Less than $60°$.",
+          "label": "Investigate / Reflect 5"
+        },
+        "id": "investigate-5",
+        "type": "practice",
+        "label": "探究 / 反思 5"
+      },
+      {
+        "prompt": "求 $\\angle AOB$ 的度数，精确到 $0.1°$。",
+        "concept": "convert",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$\\theta=1\\cdot180°/\\pi=57.295779\\ldots°\\approx57.3°$."
+          }
+        ],
+        "answer": "$57.3°$。",
+        "printedPage": 167,
+        "pdfPage": 176,
+        "en": {
+          "prompt": "Determine the degree measure of angle AOB, to the nearest tenth of a degree.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$\\theta=1\\cdot180°/\\pi=57.295779\\ldots°\\approx57.3°$."
+            }
+          ],
+          "answer": "$57.3°$.",
+          "label": "Investigate / Reflect 6"
+        },
+        "id": "investigate-6",
+        "type": "practice",
+        "label": "探究 / 反思 6"
+      },
+      {
+        "prompt": "比较其他小组的结果。若使用较大或较小的圆，圆心角 AOB 的大小保持不变吗？",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "1",
+            "body": "圆变大时弧长与半径同比例放大；角由二者比值决定。 $a=r\\Rightarrow\\theta=a/r=r/r=1$."
+          }
+        ],
+        "answer": "保持不变：理想值总为 1 弧度；小组实测差异属于测量误差。",
+        "printedPage": 167,
+        "pdfPage": 176,
+        "en": {
+          "prompt": "Compare your results with those of other groups. Does the central angle AOB maintain its size if you use a larger or smaller circle?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The arc and radius scale by the same factor; their ratio determines the angle. $a=r\\Rightarrow\\theta=a/r=r/r=1$."
+            }
+          ],
+          "answer": "Yes: ideally it is always 1 radian. Differences in group measurements reflect experimental error.",
+          "label": "Investigate / Reflect 7"
+        },
+        "id": "investigate-7",
+        "type": "practice",
+        "label": "探究 / 反思 7"
+      },
+      {
+        "prompt": "画出各角的标准位置，将度数换为弧度、弧度换为度数。给精确值及必要时精确到百分位的近似值：(a) $30°$；(b) $-120°$；(c) $5\\pi/4$；(d) $2.57$。",
+        "concept": "convert",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "从正 x 轴逆时针转 30°，终边在第一象限。 $30°\\cdot\\pi/180°=\\pi/6\\approx0.52$."
+          },
+          {
+            "title": "(b)",
+            "body": "顺时针转 120°，终边在第三象限（正角 240° 的位置）。 $-120°\\cdot\\pi/180°=-2\\pi/3\\approx-2.09$."
+          },
+          {
+            "title": "(c)",
+            "body": "逆时针转半周再转45°，终边在第三象限。 $(5\\pi/4)(180°/\\pi)=225°$."
+          },
+          {
+            "title": "(d)",
+            "body": "终边在第二象限。 $2.57(180°/\\pi)=462.6°/\\pi\\approx147.25°$."
+          }
+        ],
+        "answer": "(a) $\\pi/6\\approx0.52$；(b) $-2\\pi/3\\approx-2.09$；(c) $225°$；(d) $462.6°/\\pi\\approx147.25°$。",
+        "printedPage": 168,
+        "pdfPage": 177,
+        "en": {
+          "prompt": "Draw each angle in standard position. Convert degrees to radians and radians to degrees. Give exact values and, if necessary, approximations to the nearest hundredth: (a) $30°$; (b) $-120°$; (c) $5\\pi/4$; (d) $2.57$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Rotate 30° counterclockwise from the positive x-axis; the terminal arm is in quadrant I. $30°\\cdot\\pi/180°=\\pi/6\\approx0.52$."
+            },
+            {
+              "title": "(b)",
+              "body": "Rotate 120° clockwise; the terminal arm is in quadrant III, at the position of 240°. $-120°\\cdot\\pi/180°=-2\\pi/3\\approx-2.09$."
+            },
+            {
+              "title": "(c)",
+              "body": "Rotate half a turn plus 45° counterclockwise; the terminal arm is in quadrant III. $(5\\pi/4)(180°/\\pi)=225°$."
+            },
+            {
+              "title": "(d)",
+              "body": "The terminal arm is in quadrant II. $2.57(180°/\\pi)=462.6°/\\pi\\approx147.25°$."
+            }
+          ],
+          "answer": "(a) $\\pi/6\\approx0.52$; (b) $-2\\pi/3\\approx-2.09$; (c) $225°$; (d) $462.6°/\\pi\\approx147.25°$.",
+          "label": "Example 1"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1",
+        "solutionImage": "assets/4-1-example-1-solution.png"
+      },
+      {
+        "prompt": "例题1边注：(a) 正角按哪个方向量？(b) 为什么图中的 $-120°$ 用顺时针旋转画出？",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "按约定，正角从正x轴逆时针量；例如30°逆时针转入第一象限。"
+          },
+          {
+            "title": "(b)",
+            "body": "$-120°$ 为负角，所以由正x轴顺时针转120°，终边在第三象限；若逆时针转120°则得到不同的正角。"
+          }
+        ],
+        "answer": "(a)逆时针；(b)负角按顺时针旋转。",
+        "printedPage": 168,
+        "pdfPage": 177,
+        "en": {
+          "prompt": "Example 1 marginal questions: (a) In which direction are positive angles measured? (b) Why is the angle $-120°$ drawn using a clockwise rotation?",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "By convention, positive angles are measured counterclockwise from the positive x-axis; for example30° turns into quadrant I."
+            },
+            {
+              "title": "(b)",
+              "body": "$-120°$ is negative, so rotate120° clockwise from the positive x-axis, ending in quadrant III. Rotating120° counterclockwise would give a different positive angle."
+            }
+          ],
+          "answer": "(a) Counterclockwise; (b) negative angles use clockwise rotation.",
+          "label": "Marginal questions 168"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "margin-168",
+        "type": "practice",
+        "label": "边注提问 168"
+      },
+      {
+        "prompt": "例题1(c)边注：为什么换算因子 $180°/\\pi$ 的值为1？",
+        "concept": "convert",
+        "steps": [
+          {
+            "title": "1",
+            "body": "完整写出单位时，该因子为 $\\frac{180°}{\\pi\\text{ rad}}$。分子与分母表示同一个半周角，所以比值为1；乘它只改变单位，不改变角。"
+          },
+          {
+            "title": "2",
+            "body": "例如 $\\frac{5\\pi}{4}\\text{ rad}\\cdot\\frac{180°}{\\pi\\text{ rad}}=225°$。若把单位全部去掉，纯数 $180/\\pi\\approx57.30$ 并不等于1。"
+          }
+        ],
+        "answer": "带单位的 $180°/(\\pi\\text{ rad})=1$，因为 $180°=\\pi\\text{ rad}$。",
+        "printedPage": 169,
+        "pdfPage": 178,
+        "en": {
+          "prompt": "Example 1(c) marginal question: Why does the conversion factor $180°/\\pi$ have value1?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "With units written fully the factor is $\\frac{180°}{\\pi\\text{ rad}}$. Numerator and denominator represent the same half-turn angle, so the ratio is1. Multiplying by it changes the unit, not the angle."
+            },
+            {
+              "title": "2",
+              "body": "For example $\\frac{5\\pi}{4}\\text{ rad}\\cdot\\frac{180°}{\\pi\\text{ rad}}=225°$. If units are removed, the bare number $180/\\pi\\approx57.30$ is not1."
+            }
+          ],
+          "answer": "The unit-bearing factor $180°/(\\pi\\text{ rad})=1$ because $180°=\\pi\\text{ rad}$.",
+          "label": "Marginal questions 169"
+        },
+        "id": "margin-169",
+        "type": "practice",
+        "label": "边注提问 169"
+      },
+      {
+        "prompt": "画出标准位置并换算单位，给精确值及必要时百分位近似值：(a) $-270°$；(b) $150°$；(c) $7\\pi/6$；(d) $-1.2$。",
+        "concept": "convert",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "顺时针转270°，终边为正 y 轴。 $-270\\pi/180=-3\\pi/2\\approx-4.71$."
+          },
+          {
+            "title": "(b)",
+            "body": "逆时针转150°，第二象限。 $150\\pi/180=5\\pi/6\\approx2.62$."
+          },
+          {
+            "title": "(c)",
+            "body": "逆时针转210°，第三象限。 $(7\\pi/6)(180°/\\pi)=210°$."
+          },
+          {
+            "title": "(d)",
+            "body": "顺时针转约68.75°，第四象限。 $-1.2(180°/\\pi)=-216°/\\pi\\approx-68.75°$."
+          }
+        ],
+        "answer": "(a) $-3\\pi/2\\approx-4.71$；(b) $5\\pi/6\\approx2.62$；(c) $210°$；(d) $-216°/\\pi\\approx-68.75°$。",
+        "printedPage": 169,
+        "pdfPage": 178,
+        "en": {
+          "prompt": "Draw each angle in standard position and convert degrees to radians or radians to degrees. Give exact values and, if necessary, approximations to the nearest hundredth: (a) $-270°$; (b) $150°$; (c) $7\\pi/6$; (d) $-1.2$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Rotate 270° clockwise; the terminal arm is the positive y-axis. $-270\\pi/180=-3\\pi/2\\approx-4.71$."
+            },
+            {
+              "title": "(b)",
+              "body": "Rotate 150° counterclockwise, into quadrant II. $150\\pi/180=5\\pi/6\\approx2.62$."
+            },
+            {
+              "title": "(c)",
+              "body": "Rotate 210° counterclockwise, into quadrant III. $(7\\pi/6)(180°/\\pi)=210°$."
+            },
+            {
+              "title": "(d)",
+              "body": "Rotate about 68.75° clockwise, into quadrant IV. $-1.2(180°/\\pi)=-216°/\\pi\\approx-68.75°$."
+            }
+          ],
+          "answer": "(a) $-3\\pi/2\\approx-4.71$; (b) $5\\pi/6\\approx2.62$; (c) $210°$; (d) $-216°/\\pi\\approx-68.75°$.",
+          "label": "Your Turn 1"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "配套练习 1",
+        "solutionImage": "assets/4-1-your-turn-1-solution.png"
+      },
+      {
+        "prompt": "各求一个正同终边角和一个负同终边角，并指出终边所在象限：(a) $40°$；(b) $-430°$；(c) $8\\pi/3$。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "约去整周后为40°，第一象限。 $40°+360°=400°;\\quad40°-360°=-320°$."
+          },
+          {
+            "title": "(b)",
+            "body": "终边在第四象限。 $-430°+720°=290°;\\quad-430°+360°=-70°$."
+          },
+          {
+            "title": "(c)",
+            "body": "终边为120°位置，第二象限。 $8\\pi/3-2\\pi=2\\pi/3;\\quad8\\pi/3-4\\pi=-4\\pi/3$."
+          }
+        ],
+        "answer": "(a) $400°,-320°$，I；(b) $290°,-70°$，IV；(c) $2\\pi/3,-4\\pi/3$，II。",
+        "printedPage": 170,
+        "pdfPage": 179,
+        "en": {
+          "prompt": "Determine one positive and one negative angle coterminal with each angle. In which quadrant does the terminal arm lie? (a) $40°$; (b) $-430°$; (c) $8\\pi/3$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Removing whole turns leaves 40°, in quadrant I. $40°+360°=400°;\\quad40°-360°=-320°$."
+            },
+            {
+              "title": "(b)",
+              "body": "The terminal arm lies in quadrant IV. $-430°+720°=290°;\\quad-430°+360°=-70°$."
+            },
+            {
+              "title": "(c)",
+              "body": "The terminal arm is at 120°, in quadrant II. $8\\pi/3-2\\pi=2\\pi/3;\\quad8\\pi/3-4\\pi=-4\\pi/3$."
+            }
+          ],
+          "answer": "(a) $400°,-320°$, I; (b) $290°,-70°$, IV; (c) $2\\pi/3,-4\\pi/3$, II.",
+          "label": "Example 2"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2"
+      },
+      {
+        "prompt": "例题2(a)边注：除400°与-320°外，还有哪些与40°同终边的答案？",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$40°+2(360°)=760°;\\quad40°-2(360°)=-680°$."
+          },
+          {
+            "title": "2",
+            "body": "每次加或减整周都不改变终边；通式 $40°+360°k$，k为整数。若只要原角以外者，取 $k\\ne0$。"
+          }
+        ],
+        "answer": "例如760°与-680°；有无限多个。",
+        "printedPage": 170,
+        "pdfPage": 179,
+        "en": {
+          "prompt": "Example2(a) marginal question: What other answers are possible for angles coterminal with40°, besides400° and-320°?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$40°+2(360°)=760°;\\quad40°-2(360°)=-680°$."
+            },
+            {
+              "title": "2",
+              "body": "Adding or subtracting whole turns keeps the same terminal arm. The general form is $40°+360°k$ for integer k; use $k\\ne0$ for other angles only."
+            }
+          ],
+          "answer": "For example760° and-680°; infinitely many answers are possible.",
+          "label": "Marginal questions 170"
+        },
+        "id": "margin-170",
+        "type": "practice",
+        "label": "边注提问 170"
+      },
+      {
+        "prompt": "各求一个正同终边角和一个负同终边角：(a) $270°$；(b) $-5\\pi/4$；(c) $740°$。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$270°+360°=630°;\\quad270°-360°=-90°$."
+          },
+          {
+            "title": "(b)",
+            "body": "$-5\\pi/4+2\\pi=3\\pi/4;\\quad-5\\pi/4-2\\pi=-13\\pi/4$."
+          },
+          {
+            "title": "(c)",
+            "body": "$740°-720°=20°;\\quad740°-1080°=-340°$."
+          }
+        ],
+        "answer": "(a) $630°,-90°$；(b) $3\\pi/4,-13\\pi/4$；(c) $20°,-340°$。",
+        "printedPage": 171,
+        "pdfPage": 180,
+        "en": {
+          "prompt": "For each angle in standard position, determine one positive and one negative coterminal angle: (a) $270°$; (b) $-5\\pi/4$; (c) $740°$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$270°+360°=630°;\\quad270°-360°=-90°$."
+            },
+            {
+              "title": "(b)",
+              "body": "$-5\\pi/4+2\\pi=3\\pi/4;\\quad-5\\pi/4-2\\pi=-13\\pi/4$."
+            },
+            {
+              "title": "(c)",
+              "body": "$740°-720°=20°;\\quad740°-1080°=-340°$."
+            }
+          ],
+          "answer": "(a) $630°,-90°$; (b) $3\\pi/4,-13\\pi/4$; (c) $20°,-340°$.",
+          "label": "Your Turn 2"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "配套练习 2"
+      },
+      {
+        "prompt": "(a) 写出 $110°$ 的同终边角通式，并找出范围 $-720°\\le\\theta<720°$ 内的同终边角。(b) 对 $8\\pi/3$ 作相同处理，范围为 $-4\\pi\\le\\theta<4\\pi$。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "通式为 $110°+360°k$，k为整数，得到 $-610°,-250°,110°,470°$。原书只列原角以外者，所以不列110°。 $-720\\le110+360k<720\\Rightarrow-830/360\\le k<610/360\\Rightarrow k=-2,-1,0,1$."
+          },
+          {
+            "title": "(b)",
+            "body": "得到 $-10\\pi/3,-4\\pi/3,2\\pi/3,8\\pi/3$；原书其他角列表省略原角 $8\\pi/3$。 $-4\\pi\\le8\\pi/3+2\\pi k<4\\pi\\Rightarrow-10/3\\le k<2/3\\Rightarrow k=-3,-2,-1,0$."
+          }
+        ],
+        "answer": "(a) $110°\\pm360°n$，$n=1,2,\\ldots$；其他角 $-610°,-250°,470°$。(b) $8\\pi/3\\pm2\\pi n$；其他角 $-10\\pi/3,-4\\pi/3,2\\pi/3$。若允许 $k=0$，各列表还包含原角。",
+        "printedPage": 172,
+        "pdfPage": 181,
+        "en": {
+          "prompt": "(a) Express the angles coterminal with $110°$ in general form and identify those satisfying $-720°\\le\\theta<720°$. (b) Do the same for $8\\pi/3$ in $-4\\pi\\le\\theta<4\\pi$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The form is $110°+360°k$ for integer k, giving $-610°,-250°,110°,470°$. The textbook lists other angles only, so omits 110°. $-720\\le110+360k<720\\Rightarrow-830/360\\le k<610/360\\Rightarrow k=-2,-1,0,1$."
+            },
+            {
+              "title": "(b)",
+              "body": "This gives $-10\\pi/3,-4\\pi/3,2\\pi/3,8\\pi/3$; the textbook list of other angles omits the original $8\\pi/3$. $-4\\pi\\le8\\pi/3+2\\pi k<4\\pi\\Rightarrow-10/3\\le k<2/3\\Rightarrow k=-3,-2,-1,0$."
+            }
+          ],
+          "answer": "(a) $110°\\pm360°n$, $n=1,2,\\ldots$; other angles: $-610°,-250°,470°$. (b) $8\\pi/3\\pm2\\pi n$; other angles: $-10\\pi/3,-4\\pi/3,2\\pi/3$. Including $k=0$ also includes the original in each list.",
+          "label": "Example 3"
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3"
+      },
+      {
+        "prompt": "例题3(b)边注：为什么 $-16\\pi/3$ 不是可接受的答案？",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "1",
+            "body": "它确实与原角同终边，但还要满足指定范围。 $8\\pi/3-4(2\\pi)=-16\\pi/3$."
+          },
+          {
+            "title": "2",
+            "body": "因此它低于范围 $-4\\pi\\le\\theta<4\\pi$ 的下界。 $-4\\pi=-12\\pi/3;\\quad-16\\pi/3<-12\\pi/3$."
+          }
+        ],
+        "answer": "同终边但超出区间，下界为 $-4\\pi$。",
+        "printedPage": 172,
+        "pdfPage": 181,
+        "en": {
+          "prompt": "Example3(b) marginal question: Why is $-16\\pi/3$ not an acceptable answer?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "It is coterminal with the original angle, but it must also satisfy the stated domain. $8\\pi/3-4(2\\pi)=-16\\pi/3$."
+            },
+            {
+              "title": "2",
+              "body": "It is below the lower bound of $-4\\pi\\le\\theta<4\\pi$. $-4\\pi=-12\\pi/3;\\quad-16\\pi/3<-12\\pi/3$."
+            }
+          ],
+          "answer": "It is coterminal but outside the domain, whose lower bound is $-4\\pi$.",
+          "label": "Marginal questions 172"
+        },
+        "id": "margin-172",
+        "type": "practice",
+        "label": "边注提问 172"
+      },
+      {
+        "prompt": "写出所有同终边角的通式，并找出满足 $-360°\\le\\theta<360°$ 或 $-2\\pi\\le\\theta<2\\pi$ 的同终边角：(a) $-500°$；(b) $650°$；(c) $9\\pi/4$。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "通式 $-500°+360°k$；代入得 $-140°,220°$。 $-360\\le-500+360k<360\\Rightarrow 140/360\\le k<860/360;\\quad k=1,2$."
+          },
+          {
+            "title": "(b)",
+            "body": "通式 $650°+360°k$；得 $-70°,290°$。 $-360\\le650+360k<360\\Rightarrow-1010/360\\le k<-290/360;\\quad k=-2,-1$."
+          },
+          {
+            "title": "(c)",
+            "body": "通式 $9\\pi/4+2\\pi k$；得 $-7\\pi/4,\\pi/4$。所有 k 都是整数。 $-2\\le9/4+2k<2\\Rightarrow-17/8\\le k<-1/8;\\quad k=-2,-1$."
+          }
+        ],
+        "answer": "(a) $-140°,220°$；(b) $-70°,290°$；(c) $-7\\pi/4,\\pi/4$。",
+        "printedPage": 172,
+        "pdfPage": 181,
+        "en": {
+          "prompt": "Write a general expression for all angles coterminal with each angle. Identify those satisfying $-360°\\le\\theta<360°$ or $-2\\pi\\le\\theta<2\\pi$: (a) $-500°$; (b) $650°$; (c) $9\\pi/4$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The form is $-500°+360°k$; substituting gives $-140°,220°$. $-360\\le-500+360k<360\\Rightarrow 140/360\\le k<860/360;\\quad k=1,2$."
+            },
+            {
+              "title": "(b)",
+              "body": "The form is $650°+360°k$; this gives $-70°,290°$. $-360\\le650+360k<360\\Rightarrow-1010/360\\le k<-290/360;\\quad k=-2,-1$."
+            },
+            {
+              "title": "(c)",
+              "body": "The form is $9\\pi/4+2\\pi k$; this gives $-7\\pi/4,\\pi/4$. In all forms k is an integer. $-2\\le9/4+2k<2\\Rightarrow-17/8\\le k<-1/8;\\quad k=-2,-1$."
+            }
+          ],
+          "answer": "(a) $-140°,220°$; (b) $-70°,290°$; (c) $-7\\pi/4,\\pi/4$.",
+          "label": "Your Turn 3"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "配套练习 3"
+      },
+      {
+        "prompt": "圆弧公式推导边注：为什么这里r=1？",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "1",
+            "body": "这一步特意使用半径为1的内圆（单位圆）来求小圆弧长x与角θ的关系；因此其圆周长为 $2\\pi(1)=2\\pi$。"
+          },
+          {
+            "title": "2",
+            "body": "外圆半径仍为任意r；相似比例给出外圆弧长 $a=rx=r\\theta$，没有假设所有圆半径都为1。 $\\frac{x}{2\\pi}=\\frac{\\theta}{2\\pi}\\Rightarrow x=\\theta$."
+          }
+        ],
+        "answer": "这里选择单位圆；一般圆仍用 $a=r\\theta$。",
+        "printedPage": 173,
+        "pdfPage": 182,
+        "en": {
+          "prompt": "Arc-length derivation marginal question: Why is r=1 here?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "This step deliberately uses the smaller circle of radius1, the unit circle, to relate its arc length x to theta. Its circumference is therefore $2\\pi(1)=2\\pi$."
+            },
+            {
+              "title": "2",
+              "body": "The larger circle still has arbitrary radius r; scaling gives its arc length $a=rx=r\\theta$. We have not assumed every circle has radius1. $\\frac{x}{2\\pi}=\\frac{\\theta}{2\\pi}\\Rightarrow x=\\theta$."
+            }
+          ],
+          "answer": "This particular step uses a unit circle; a general circle still uses $a=r\\theta$.",
+          "label": "Marginal questions 173"
+        },
+        "id": "margin-173",
+        "type": "practice",
+        "label": "边注提问 173"
+      },
+      {
+        "prompt": "Rosemarie 修读工业工程；她为作业设计 DVD 播放器的界面，在开关按钮下加入装饰圆弧。圆弧的圆心角为 $130°$，半径为 $6.7\\text{ mm}$。求弧长，精确到 $0.1\\text{ mm}$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$\\theta=130\\pi/180=13\\pi/18$."
+          },
+          {
+            "title": "2",
+            "body": "$a=r\\theta=6.7(13\\pi/18)=87.1\\pi/18=15.201\\ldots\\text{ mm}$."
+          },
+          {
+            "title": "3",
+            "body": "也可取圆周长的 $130/360$：$2\\pi(6.7)(130/360)$，结果相同。"
+          }
+        ],
+        "answer": "$15.2\\text{ mm}$。",
+        "printedPage": 173,
+        "pdfPage": 182,
+        "en": {
+          "prompt": "Rosemarie is taking industrial engineering. For an assignment she designs a DVD-player interface with a decorative arc below the on/off button. The arc has central angle $130°$ in a circle of radius $6.7\\text{ mm}$. Determine its length to the nearest tenth of a millimetre.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$\\theta=130\\pi/180=13\\pi/18$."
+            },
+            {
+              "title": "2",
+              "body": "$a=r\\theta=6.7(13\\pi/18)=87.1\\pi/18=15.201\\ldots\\text{ mm}$."
+            },
+            {
+              "title": "3",
+              "body": "Equivalently take $130/360$ of the circumference: $2\\pi(6.7)(130/360)$, giving the same result."
+            }
+          ],
+          "answer": "$15.2\\text{ mm}$.",
+          "label": "Example 4"
+        },
+        "sourceImage": "assets/4-1-example-4.png",
+        "id": "example-4",
+        "type": "example",
+        "label": "例题 4"
+      },
+      {
+        "prompt": "例题4边注：为什么计算全程保留精确值，到最后才换为小数近似很重要？",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "1",
+            "body": "角的精确值是 $13\\pi/18$，所以弧长精确值为 $6.7(13\\pi/18)=87.1\\pi/18$。若先把角或π舍入，误差会进入后续乘积，可能改变最终要求位数的舍入结果。"
+          },
+          {
+            "title": "2",
+            "body": "只在最后按十分之一毫米舍入。 $87.1\\pi/18=15.201\\ldots\\text{ mm}\\Rightarrow15.2\\text{ mm}$."
+          }
+        ],
+        "answer": "保留精确值可避免累计及过早舍入误差。",
+        "printedPage": 174,
+        "pdfPage": 183,
+        "en": {
+          "prompt": "Example4 marginal question: Why is it important to use exact values throughout the calculation and convert to decimal fractions at the end?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The angle is exactly $13\\pi/18$, giving exact arc length $6.7(13\\pi/18)=87.1\\pi/18$. Rounding the angle or pi first carries error into later products and can change the final required rounding."
+            },
+            {
+              "title": "2",
+              "body": "Round only at the end to the nearest tenth of a millimetre. $87.1\\pi/18=15.201\\ldots\\text{ mm}\\Rightarrow15.2\\text{ mm}$."
+            }
+          ],
+          "answer": "Keeping exact values avoids accumulated and premature-rounding error.",
+          "label": "Marginal questions 174"
+        },
+        "id": "margin-174",
+        "type": "practice",
+        "label": "边注提问 174"
+      },
+      {
+        "prompt": "圆弧长 a、半径 r、圆心角 $\\theta$ 满足下列条件。求缺失量，精确到十分位：(a) $r=8.7\\text{ cm},\\theta=75°,a=?\\text{ cm}$；(b) $r=?\\text{ mm},\\theta=1.8,a=4.7\\text{ mm}$；(c) $r=5\\text{ m},a=13\\text{ m},\\theta=?$。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$75°=5\\pi/12;\\quad a=8.7(5\\pi/12)=11.388\\ldots\\approx11.4\\text{ cm}$."
+          },
+          {
+            "title": "(b)",
+            "body": "$r=a/\\theta=4.7/1.8=2.611\\ldots\\approx2.6\\text{ mm}$."
+          },
+          {
+            "title": "(c)",
+            "body": "$\\theta=a/r=13/5=2.6\\text{ rad}$."
+          }
+        ],
+        "answer": "(a) $11.4\\text{ cm}$；(b) $2.6\\text{ mm}$；(c) $2.6$ 弧度。",
+        "printedPage": 174,
+        "pdfPage": 183,
+        "en": {
+          "prompt": "If a is arc length, r the radius, and theta the central angle, find the missing quantity to the nearest tenth: (a) $r=8.7\\text{ cm},\\theta=75°,a=?\\text{ cm}$; (b) $r=?\\text{ mm},\\theta=1.8,a=4.7\\text{ mm}$; (c) $r=5\\text{ m},a=13\\text{ m},\\theta=?$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$75°=5\\pi/12;\\quad a=8.7(5\\pi/12)=11.388\\ldots\\approx11.4\\text{ cm}$."
+            },
+            {
+              "title": "(b)",
+              "body": "$r=a/\\theta=4.7/1.8=2.611\\ldots\\approx2.6\\text{ mm}$."
+            },
+            {
+              "title": "(c)",
+              "body": "$\\theta=a/r=13/5=2.6\\text{ rad}$."
+            }
+          ],
+          "answer": "(a) $11.4\\text{ cm}$; (b) $2.6\\text{ mm}$; (c) $2.6$ radians.",
+          "label": "Your Turn 4"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "id": "your-turn-4",
+        "type": "practice",
+        "label": "配套练习 4"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "指出各角顺时针还是逆时针旋转：(a) $-4\\pi$；(b) $750°$；(c) $-38.7°$；(d) $1$。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "负数 $-4\\pi<0$，所以顺时针（两整周）。"
+          },
+          {
+            "title": "(b)",
+            "body": "正数 $750°>0$，所以逆时针。"
+          },
+          {
+            "title": "(c)",
+            "body": "负数 $-38.7°<0$，所以顺时针。"
+          },
+          {
+            "title": "(d)",
+            "body": "没有单位时 1 表示1弧度；$1>0$，逆时针。"
+          }
+        ],
+        "answer": "(a)(c)顺时针；(b)(d)逆时针。",
+        "printedPage": 175,
+        "pdfPage": 184,
+        "en": {
+          "prompt": "For each angle, indicate whether the direction of rotation is clockwise or counterclockwise: (a) $-4\\pi$; (b) $750°$; (c) $-38.7°$; (d) $1$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Since $-4\\pi<0$, rotate clockwise (two whole turns)."
+            },
+            {
+              "title": "(b)",
+              "body": "Since $750°>0$, rotate counterclockwise."
+            },
+            {
+              "title": "(c)",
+              "body": "Since $-38.7°<0$, rotate clockwise."
+            },
+            {
+              "title": "(d)",
+              "body": "Without a unit, 1 means 1 radian; since $1>0$, rotate counterclockwise."
+            }
+          ],
+          "answer": "(a), (c) clockwise; (b), (d) counterclockwise."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 1
+      },
+      {
+        "prompt": "把度数换成弧度，给精确值；画出角并同时标出度数和弧度：(a) $30°$；(b) $45°$；(c) $-330°$；(d) $520°$；(e) $90°$；(f) $21°$。",
+        "concept": "convert",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "作图：始边沿正x轴，逆时针30°，第一象限，标注原度数和所得弧度。 $30°(\\pi/180°)=\\pi/6$."
+          },
+          {
+            "title": "(b)",
+            "body": "作图：始边沿正x轴，逆时针45°，第一象限，标注原度数和所得弧度。 $45°(\\pi/180°)=\\pi/4$."
+          },
+          {
+            "title": "(c)",
+            "body": "作图：始边沿正x轴，顺时针330°，终边位于正30°的第一象限，标注原度数和所得弧度。 $-330°(\\pi/180°)=-11\\pi/6$."
+          },
+          {
+            "title": "(d)",
+            "body": "作图：始边沿正x轴，逆时针一周再160°，第二象限，标注原度数和所得弧度。 $520°(\\pi/180°)=26\\pi/9$."
+          },
+          {
+            "title": "(e)",
+            "body": "作图：始边沿正x轴，逆时针90°，终边为正y轴，标注原度数和所得弧度。 $90°(\\pi/180°)=\\pi/2$."
+          },
+          {
+            "title": "(f)",
+            "body": "作图：始边沿正x轴，逆时针21°，第一象限，标注原度数和所得弧度。 $21°(\\pi/180°)=7\\pi/60$."
+          }
+        ],
+        "answer": "(a) $\\pi/6$; (b) $\\pi/4$; (c) $-11\\pi/6$; (d) $26\\pi/9$; (e) $\\pi/2$; (f) $7\\pi/60$",
+        "printedPage": 175,
+        "pdfPage": 184,
+        "en": {
+          "prompt": "Convert each degree measure to radians, as an exact value. Sketch the angle and label it in degrees and radians: (a) $30°$; (b) $45°$; (c) $-330°$; (d) $520°$; (e) $90°$; (f) $21°$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Sketch with initial arm on positive x-axis: 30° counterclockwise, quadrant I. Label the original degrees and converted radians. $30°(\\pi/180°)=\\pi/6$."
+            },
+            {
+              "title": "(b)",
+              "body": "Sketch with initial arm on positive x-axis: 45° counterclockwise, quadrant I. Label the original degrees and converted radians. $45°(\\pi/180°)=\\pi/4$."
+            },
+            {
+              "title": "(c)",
+              "body": "Sketch with initial arm on positive x-axis: 330° clockwise, ending at the position of 30° in quadrant I. Label the original degrees and converted radians. $-330°(\\pi/180°)=-11\\pi/6$."
+            },
+            {
+              "title": "(d)",
+              "body": "Sketch with initial arm on positive x-axis: one full turn plus 160° counterclockwise, quadrant II. Label the original degrees and converted radians. $520°(\\pi/180°)=26\\pi/9$."
+            },
+            {
+              "title": "(e)",
+              "body": "Sketch with initial arm on positive x-axis: 90° counterclockwise, ending on the positive y-axis. Label the original degrees and converted radians. $90°(\\pi/180°)=\\pi/2$."
+            },
+            {
+              "title": "(f)",
+              "body": "Sketch with initial arm on positive x-axis: 21° counterclockwise, quadrant I. Label the original degrees and converted radians. $21°(\\pi/180°)=7\\pi/60$."
+            }
+          ],
+          "answer": "(a) $\\pi/6$; (b) $\\pi/4$; (c) $-11\\pi/6$; (d) $26\\pi/9$; (e) $\\pi/2$; (f) $7\\pi/60$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "number": 2,
+        "solutionImage": "assets/4-1-exercise-2-solution.png"
+      },
+      {
+        "prompt": "换为弧度，给精确值及百分位近似值：(a) $60°$；(b) $150°$；(c) $-270°$；(d) $72°$；(e) $-14.8°$；(f) $540°$。",
+        "concept": "convert",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$60°(\\pi/180°)=\\pi/3\\approx1.05$."
+          },
+          {
+            "title": "(b)",
+            "body": "$150°(\\pi/180°)=5\\pi/6\\approx2.62$."
+          },
+          {
+            "title": "(c)",
+            "body": "$-270°(\\pi/180°)=-3\\pi/2\\approx-4.71$."
+          },
+          {
+            "title": "(d)",
+            "body": "$72°(\\pi/180°)=2\\pi/5\\approx1.26$."
+          },
+          {
+            "title": "(e)",
+            "body": "$-14.8°(\\pi/180°)=-37\\pi/450\\approx-0.26$."
+          },
+          {
+            "title": "(f)",
+            "body": "$540°(\\pi/180°)=3\\pi\\approx9.42$."
+          }
+        ],
+        "answer": "(a) $\\pi/3\\approx1.05$; (b) $5\\pi/6\\approx2.62$; (c) $-3\\pi/2\\approx-4.71$; (d) $2\\pi/5\\approx1.26$; (e) $-37\\pi/450\\approx-0.26$; (f) $3\\pi\\approx9.42$",
+        "printedPage": 175,
+        "pdfPage": 184,
+        "en": {
+          "prompt": "Convert each degree measure to radians. Give exact values and approximations to the nearest hundredth: (a) $60°$; (b) $150°$; (c) $-270°$; (d) $72°$; (e) $-14.8°$; (f) $540°$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$60°(\\pi/180°)=\\pi/3\\approx1.05$."
+            },
+            {
+              "title": "(b)",
+              "body": "$150°(\\pi/180°)=5\\pi/6\\approx2.62$."
+            },
+            {
+              "title": "(c)",
+              "body": "$-270°(\\pi/180°)=-3\\pi/2\\approx-4.71$."
+            },
+            {
+              "title": "(d)",
+              "body": "$72°(\\pi/180°)=2\\pi/5\\approx1.26$."
+            },
+            {
+              "title": "(e)",
+              "body": "$-14.8°(\\pi/180°)=-37\\pi/450\\approx-0.26$."
+            },
+            {
+              "title": "(f)",
+              "body": "$540°(\\pi/180°)=3\\pi\\approx9.42$."
+            }
+          ],
+          "answer": "(a) $\\pi/3\\approx1.05$; (b) $5\\pi/6\\approx2.62$; (c) $-3\\pi/2\\approx-4.71$; (d) $2\\pi/5\\approx1.26$; (e) $-37\\pi/450\\approx-0.26$; (f) $3\\pi\\approx9.42$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "number": 3
+      },
+      {
+        "prompt": "换为度数，给精确值及必要时精确到 $0.1°$ 的近似值：(a) $\\pi/6$；(b) $2\\pi/3$；(c) $-3\\pi/8$；(d) $-5\\pi/2$；(e) $1$；(f) $2.75$。",
+        "concept": "convert",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$(\\pi/6)(180°/\\pi)=30°$."
+          },
+          {
+            "title": "(b)",
+            "body": "$(2\\pi/3)(180°/\\pi)=120°$."
+          },
+          {
+            "title": "(c)",
+            "body": "$(-3\\pi/8)(180°/\\pi)=-67.5°$."
+          },
+          {
+            "title": "(d)",
+            "body": "$(-5\\pi/2)(180°/\\pi)=-450°$."
+          },
+          {
+            "title": "(e)",
+            "body": "$(1)(180°/\\pi)=180°/\\pi\\approx57.3°$."
+          },
+          {
+            "title": "(f)",
+            "body": "$(2.75)(180°/\\pi)=495°/\\pi\\approx157.6°$."
+          }
+        ],
+        "answer": "(a) $30°$; (b) $120°$; (c) $-67.5°$; (d) $-450°$; (e) $180°/\\pi\\approx57.3°$; (f) $495°/\\pi\\approx157.6°$",
+        "printedPage": 175,
+        "pdfPage": 184,
+        "en": {
+          "prompt": "Convert each radian measure to degrees. Give exact values and, if necessary, approximations to the nearest tenth of a degree: (a) $\\pi/6$; (b) $2\\pi/3$; (c) $-3\\pi/8$; (d) $-5\\pi/2$; (e) $1$; (f) $2.75$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$(\\pi/6)(180°/\\pi)=30°$."
+            },
+            {
+              "title": "(b)",
+              "body": "$(2\\pi/3)(180°/\\pi)=120°$."
+            },
+            {
+              "title": "(c)",
+              "body": "$(-3\\pi/8)(180°/\\pi)=-67.5°$."
+            },
+            {
+              "title": "(d)",
+              "body": "$(-5\\pi/2)(180°/\\pi)=-450°$."
+            },
+            {
+              "title": "(e)",
+              "body": "$(1)(180°/\\pi)=180°/\\pi\\approx57.3°$."
+            },
+            {
+              "title": "(f)",
+              "body": "$(2.75)(180°/\\pi)=495°/\\pi\\approx157.6°$."
+            }
+          ],
+          "answer": "(a) $30°$; (b) $120°$; (c) $-67.5°$; (d) $-450°$; (e) $180°/\\pi\\approx57.3°$; (f) $495°/\\pi\\approx157.6°$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "number": 4
+      },
+      {
+        "prompt": "换为度数，给精确值及千分位近似值：(a) $2\\pi/7$；(b) $7\\pi/13$；(c) $2/3$；(d) $3.66$；(e) $-6.14$；(f) $-20$。",
+        "concept": "convert",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$(2\\pi/7)(180°/\\pi)=360°/7\\approx51.429°$."
+          },
+          {
+            "title": "(b)",
+            "body": "$(7\\pi/13)(180°/\\pi)=1260°/13\\approx96.923°$."
+          },
+          {
+            "title": "(c)",
+            "body": "$(2/3)(180°/\\pi)=120°/\\pi\\approx38.197°$."
+          },
+          {
+            "title": "(d)",
+            "body": "$(3.66)(180°/\\pi)=658.8°/\\pi\\approx209.703°$."
+          },
+          {
+            "title": "(e)",
+            "body": "$(-6.14)(180°/\\pi)=-1105.2°/\\pi\\approx-351.796°$."
+          },
+          {
+            "title": "(f)",
+            "body": "$(-20)(180°/\\pi)=-3600°/\\pi\\approx-1145.916°$."
+          }
+        ],
+        "answer": "(a) $360°/7\\approx51.429°$; (b) $1260°/13\\approx96.923°$; (c) $120°/\\pi\\approx38.197°$; (d) $658.8°/\\pi\\approx209.703°$; (e) $-1105.2°/\\pi\\approx-351.796°$; (f) $-3600°/\\pi\\approx-1145.916°$",
+        "printedPage": 175,
+        "pdfPage": 184,
+        "en": {
+          "prompt": "Convert each radian measure to degrees. Give exact values and approximations to the nearest thousandth: (a) $2\\pi/7$; (b) $7\\pi/13$; (c) $2/3$; (d) $3.66$; (e) $-6.14$; (f) $-20$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$(2\\pi/7)(180°/\\pi)=360°/7\\approx51.429°$."
+            },
+            {
+              "title": "(b)",
+              "body": "$(7\\pi/13)(180°/\\pi)=1260°/13\\approx96.923°$."
+            },
+            {
+              "title": "(c)",
+              "body": "$(2/3)(180°/\\pi)=120°/\\pi\\approx38.197°$."
+            },
+            {
+              "title": "(d)",
+              "body": "$(3.66)(180°/\\pi)=658.8°/\\pi\\approx209.703°$."
+            },
+            {
+              "title": "(e)",
+              "body": "$(-6.14)(180°/\\pi)=-1105.2°/\\pi\\approx-351.796°$."
+            },
+            {
+              "title": "(f)",
+              "body": "$(-20)(180°/\\pi)=-3600°/\\pi\\approx-1145.916°$."
+            }
+          ],
+          "answer": "(a) $360°/7\\approx51.429°$; (b) $1260°/13\\approx96.923°$; (c) $120°/\\pi\\approx38.197°$; (d) $658.8°/\\pi\\approx209.703°$; (e) $-1105.2°/\\pi\\approx-351.796°$; (f) $-3600°/\\pi\\approx-1145.916°$"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "number": 5
+      },
+      {
+        "prompt": "画出各角的标准位置并指出终边象限：(a) $1$；(b) $-225°$；(c) $17\\pi/6$；(d) $650°$；(e) $-2\\pi/3$；(f) $-42°$。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "从正x轴逆时针转，终边在第一象限。 $1(180°/\\pi)\\approx57.30°$."
+          },
+          {
+            "title": "(b)",
+            "body": "顺时针225°，终边在第二象限。 $-225°+360°=135°$."
+          },
+          {
+            "title": "(c)",
+            "body": "逆时针一周再150°，第二象限。 $17\\pi/6-2\\pi=5\\pi/6=150°$."
+          },
+          {
+            "title": "(d)",
+            "body": "逆时针650°，终边在第四象限。 $650°-360°=290°$."
+          },
+          {
+            "title": "(e)",
+            "body": "顺时针120°，第三象限。 $-2\\pi/3=-120°;\\quad-120°+360°=240°$."
+          },
+          {
+            "title": "(f)",
+            "body": "顺时针42°，第四象限。 $-42°+360°=318°$."
+          }
+        ],
+        "answer": "(a) I；(b) II；(c) II；(d) IV；(e) III；(f) IV。",
+        "printedPage": 175,
+        "pdfPage": 184,
+        "en": {
+          "prompt": "Sketch each angle in standard position. In which quadrant does it terminate? (a) $1$; (b) $-225°$; (c) $17\\pi/6$; (d) $650°$; (e) $-2\\pi/3$; (f) $-42°$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Rotate counterclockwise from the positive x-axis into quadrant I. $1(180°/\\pi)\\approx57.30°$."
+            },
+            {
+              "title": "(b)",
+              "body": "Rotate 225° clockwise; the terminal arm is in quadrant II. $-225°+360°=135°$."
+            },
+            {
+              "title": "(c)",
+              "body": "Rotate one turn plus 150° counterclockwise, into quadrant II. $17\\pi/6-2\\pi=5\\pi/6=150°$."
+            },
+            {
+              "title": "(d)",
+              "body": "Rotate 650° counterclockwise; the terminal arm is in quadrant IV. $650°-360°=290°$."
+            },
+            {
+              "title": "(e)",
+              "body": "Rotate 120° clockwise, into quadrant III. $-2\\pi/3=-120°;\\quad-120°+360°=240°$."
+            },
+            {
+              "title": "(f)",
+              "body": "Rotate 42° clockwise, into quadrant IV. $-42°+360°=318°$."
+            }
+          ],
+          "answer": "(a) I; (b) II; (c) II; (d) IV; (e) III; (f) IV."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "number": 6,
+        "solutionImage": "assets/4-1-exercise-6-solution.png"
+      },
+      {
+        "prompt": "各求一个正和一个负同终边角：(a) $72°$；(b) $3\\pi/4$；(c) $-120°$；(d) $11\\pi/2$；(e) $-205°$；(f) $7.8$。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$72°+360°=432°;\\quad72°-360°=-288°$."
+          },
+          {
+            "title": "(b)",
+            "body": "$3\\pi/4+2\\pi=11\\pi/4;\\quad3\\pi/4-2\\pi=-5\\pi/4$."
+          },
+          {
+            "title": "(c)",
+            "body": "$-120°+360°=240°;\\quad-120°-360°=-480°$."
+          },
+          {
+            "title": "(d)",
+            "body": "$11\\pi/2-4\\pi=3\\pi/2;\\quad11\\pi/2-6\\pi=-\\pi/2$."
+          },
+          {
+            "title": "(e)",
+            "body": "$-205°+360°=155°;\\quad-205°-360°=-565°$."
+          },
+          {
+            "title": "(f)",
+            "body": "精确答案保留π。 $7.8-2\\pi\\approx1.5168>0;\\quad7.8-4\\pi\\approx-4.7664<0$."
+          }
+        ],
+        "answer": "(a) $432°,-288°$；(b) $11\\pi/4,-5\\pi/4$；(c) $240°,-480°$；(d) $3\\pi/2,-\\pi/2$；(e) $155°,-565°$；(f) $7.8-2\\pi,7.8-4\\pi$。",
+        "printedPage": 176,
+        "pdfPage": 185,
+        "en": {
+          "prompt": "Determine one positive and one negative angle coterminal with each angle: (a) $72°$; (b) $3\\pi/4$; (c) $-120°$; (d) $11\\pi/2$; (e) $-205°$; (f) $7.8$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$72°+360°=432°;\\quad72°-360°=-288°$."
+            },
+            {
+              "title": "(b)",
+              "body": "$3\\pi/4+2\\pi=11\\pi/4;\\quad3\\pi/4-2\\pi=-5\\pi/4$."
+            },
+            {
+              "title": "(c)",
+              "body": "$-120°+360°=240°;\\quad-120°-360°=-480°$."
+            },
+            {
+              "title": "(d)",
+              "body": "$11\\pi/2-4\\pi=3\\pi/2;\\quad11\\pi/2-6\\pi=-\\pi/2$."
+            },
+            {
+              "title": "(e)",
+              "body": "$-205°+360°=155°;\\quad-205°-360°=-565°$."
+            },
+            {
+              "title": "(f)",
+              "body": "Keep pi for exact answers. $7.8-2\\pi\\approx1.5168>0;\\quad7.8-4\\pi\\approx-4.7664<0$."
+            }
+          ],
+          "answer": "(a) $432°,-288°$; (b) $11\\pi/4,-5\\pi/4$; (c) $240°,-480°$; (d) $3\\pi/2,-\\pi/2$; (e) $155°,-565°$; (f) $7.8-2\\pi,7.8-4\\pi$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "number": 7
+      },
+      {
+        "prompt": "判断每对角是否同终边，并选择其中一对解释理由：(a) $5\\pi/6,17\\pi/6$；(b) $5\\pi/2,-9\\pi/2$；(c) $410°,-410°$；(d) $227°,-493°$。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "是，正好差一整周，因此终边重合。 $17\\pi/6-5\\pi/6=2\\pi$."
+          },
+          {
+            "title": "(b)",
+            "body": "不是，差不是整周数。 $5\\pi/2-(-9\\pi/2)=7\\pi;\\quad7\\pi/(2\\pi)=3.5$."
+          },
+          {
+            "title": "(c)",
+            "body": "不是。 $410°-(-410°)=820°;\\quad820/360=41/18\\notin\\mathbb Z$."
+          },
+          {
+            "title": "(d)",
+            "body": "是，差两整周。 $227°-(-493°)=720°=2(360°)$."
+          }
+        ],
+        "answer": "(a)是；(b)否；(c)否；(d)是。",
+        "printedPage": 176,
+        "pdfPage": 185,
+        "en": {
+          "prompt": "Determine whether the angles in each pair are coterminal. Explain how you know for one pair: (a) $5\\pi/6,17\\pi/6$; (b) $5\\pi/2,-9\\pi/2$; (c) $410°,-410°$; (d) $227°,-493°$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Yes: the difference is one whole turn, so the terminal arms coincide. $17\\pi/6-5\\pi/6=2\\pi$."
+            },
+            {
+              "title": "(b)",
+              "body": "No: the difference is not an integer number of turns. $5\\pi/2-(-9\\pi/2)=7\\pi;\\quad7\\pi/(2\\pi)=3.5$."
+            },
+            {
+              "title": "(c)",
+              "body": "No. $410°-(-410°)=820°;\\quad820/360=41/18\\notin\\mathbb Z$."
+            },
+            {
+              "title": "(d)",
+              "body": "Yes: the difference is two whole turns. $227°-(-493°)=720°=2(360°)$."
+            }
+          ],
+          "answer": "(a) yes; (b) no; (c) no; (d) yes."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 8
+      },
+      {
+        "prompt": "写出各角的所有同终边角通式，说明变量意义：(a) $135°$；(b) $-\\pi/2$；(c) $-200°$；(d) $10$。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$\\theta=135°+360°k$."
+          },
+          {
+            "title": "(b)",
+            "body": "$\\theta=-\\pi/2+2\\pi k$."
+          },
+          {
+            "title": "(c)",
+            "body": "$\\theta=-200°+360°k$."
+          },
+          {
+            "title": "(d)",
+            "body": "每式中 $k\\in\\mathbb Z$ 是加入的带符号整周数；要排除原角时取 $k\\ne0$，等价于教材的±正整数形式。 $\\theta=10+2\\pi k$."
+          }
+        ],
+        "answer": "(a) $135°+360°k$；(b) $-\\pi/2+2\\pi k$；(c) $-200°+360°k$；(d) $10+2\\pi k$，$k\\in\\mathbb Z$。",
+        "printedPage": 176,
+        "pdfPage": 185,
+        "en": {
+          "prompt": "Write an expression for all angles coterminal with each angle, and indicate what the variable represents: (a) $135°$; (b) $-\\pi/2$; (c) $-200°$; (d) $10$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$\\theta=135°+360°k$."
+            },
+            {
+              "title": "(b)",
+              "body": "$\\theta=-\\pi/2+2\\pi k$."
+            },
+            {
+              "title": "(c)",
+              "body": "$\\theta=-200°+360°k$."
+            },
+            {
+              "title": "(d)",
+              "body": "In every expression, $k\\in\\mathbb Z$ counts signed full turns. To exclude the original use $k\\ne0$, equivalent to the textbook’s plus/minus positive-integer form. $\\theta=10+2\\pi k$."
+            }
+          ],
+          "answer": "(a) $135°+360°k$; (b) $-\\pi/2+2\\pi k$; (c) $-200°+360°k$; (d) $10+2\\pi k$, $k\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 9
+      },
+      {
+        "prompt": "画出并标注一个负的标准位置角，然后求一个正同终边角，说明如何使用同终边角通式求得第二个角。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "1",
+            "body": "一种作图：始边沿正x轴，顺时针转 $60°$，标为 $-60°$，终边在第四象限。"
+          },
+          {
+            "title": "2",
+            "body": "从同一始边逆时针转300°恰到同一终边。 $\\theta=-60°+360°k;\\quad k=1\\Rightarrow\\theta=300°>0$."
+          }
+        ],
+        "answer": "示例：$-60°$ 与 $300°$；合理的其他示例也可以。",
+        "printedPage": 176,
+        "pdfPage": 185,
+        "en": {
+          "prompt": "Draw and label an angle in standard position with negative measure. Determine a positive coterminal angle, and show how a general expression gives the second angle.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "One possible sketch starts on the positive x-axis, rotates $60°$ clockwise, and labels the angle $-60°$, ending in quadrant IV."
+            },
+            {
+              "title": "2",
+              "body": "A 300° counterclockwise rotation reaches the same terminal arm. $\\theta=-60°+360°k;\\quad k=1\\Rightarrow\\theta=300°>0$."
+            }
+          ],
+          "answer": "One example is $-60°$ and $300°$; other valid choices are possible."
+        },
+        "number": 10,
+        "solutionImage": "assets/4-1-exercise-10-solution.png"
+      },
+      {
+        "prompt": "求指定范围内各角的所有同终边角：(a) $65°,0°\\le\\theta<720°$；(b) $-40°,-180°\\le\\theta<360°$；(c) $-40°,-720°\\le\\theta<720°$；(d) $3\\pi/4,-2\\pi\\le\\theta<2\\pi$；(e) $-11\\pi/6,-4\\pi\\le\\theta<4\\pi$；(f) $7\\pi/3,-2\\pi\\le\\theta<4\\pi$；(g) $2.4,-2\\pi\\le\\theta<2\\pi$；(h) $-7.2,-4\\pi\\le\\theta<2\\pi$。",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "范围内为65°、425°；按原书其他角约定只列425°。 $0\\le65+360k<720\\Rightarrow-65/360\\le k<655/360\\Rightarrow k=0,1$."
+          },
+          {
+            "title": "(b)",
+            "body": "范围内为-40°、320°；其他角为320°。 $-180\\le-40+360k<360\\Rightarrow-140/360\\le k<400/360\\Rightarrow k=0,1$."
+          },
+          {
+            "title": "(c)",
+            "body": "范围内为-400°、-40°、320°、680°；其他角省略-40°。 $-720\\le-40+360k<720\\Rightarrow-680/360\\le k<760/360\\Rightarrow k=-1,0,1,2$."
+          },
+          {
+            "title": "(d)",
+            "body": "得到 $-5\\pi/4,3\\pi/4$；其他角仅 $-5\\pi/4$。 $-2\\le3/4+2k<2\\Rightarrow-11/8\\le k<5/8\\Rightarrow k=-1,0$."
+          },
+          {
+            "title": "(e)",
+            "body": "得到 $-23\\pi/6,-11\\pi/6,\\pi/6,13\\pi/6$；其他角省略原角。 $-4\\le-11/6+2k<4\\Rightarrow-13/12\\le k<35/12\\Rightarrow k=-1,0,1,2$."
+          },
+          {
+            "title": "(f)",
+            "body": "得到 $-5\\pi/3,\\pi/3,7\\pi/3$；其他角省略原角。 $-2\\le7/3+2k<4\\Rightarrow-13/6\\le k<5/6\\Rightarrow k=-2,-1,0$."
+          },
+          {
+            "title": "(g)",
+            "body": "得到 $2.4-2\\pi,2.4$；其他角仅 $2.4-2\\pi$。 $-2\\pi\\le2.4+2\\pi k<2\\pi\\Rightarrow-1-1.2/\\pi\\le k<1-1.2/\\pi\\Rightarrow k=-1,0$."
+          },
+          {
+            "title": "(h)",
+            "body": "得到 $-7.2,-7.2+2\\pi,-7.2+4\\pi$；其他角省略-7.2。 $-4\\pi\\le-7.2+2\\pi k<2\\pi\\Rightarrow-2+3.6/\\pi\\le k<1+3.6/\\pi\\Rightarrow k=0,1,2$."
+          }
+        ],
+        "answer": "按教材“其他角”约定：(a) $425°$；(b) $320°$；(c) $-400°,320°,680°$；(d) $-5\\pi/4$；(e) $-23\\pi/6,\\pi/6,13\\pi/6$；(f) $-5\\pi/3,\\pi/3$；(g) $2.4-2\\pi$；(h) $-7.2+2\\pi,-7.2+4\\pi$。若包含原角，把各原角加入相应列表。",
+        "printedPage": 176,
+        "pdfPage": 185,
+        "en": {
+          "prompt": "For each angle determine all coterminal angles in the given domain: (a) $65°,0°\\le\\theta<720°$; (b) $-40°,-180°\\le\\theta<360°$; (c) $-40°,-720°\\le\\theta<720°$; (d) $3\\pi/4,-2\\pi\\le\\theta<2\\pi$; (e) $-11\\pi/6,-4\\pi\\le\\theta<4\\pi$; (f) $7\\pi/3,-2\\pi\\le\\theta<4\\pi$; (g) $2.4,-2\\pi\\le\\theta<2\\pi$; (h) $-7.2,-4\\pi\\le\\theta<2\\pi$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The representatives are 65° and 425°; the textbook’s other-angle convention lists only 425°. $0\\le65+360k<720\\Rightarrow-65/360\\le k<655/360\\Rightarrow k=0,1$."
+            },
+            {
+              "title": "(b)",
+              "body": "The representatives are -40° and 320°; the other angle is 320°. $-180\\le-40+360k<360\\Rightarrow-140/360\\le k<400/360\\Rightarrow k=0,1$."
+            },
+            {
+              "title": "(c)",
+              "body": "The representatives are -400°, -40°, 320°, 680°; omit -40° for other angles. $-720\\le-40+360k<720\\Rightarrow-680/360\\le k<760/360\\Rightarrow k=-1,0,1,2$."
+            },
+            {
+              "title": "(d)",
+              "body": "This gives $-5\\pi/4,3\\pi/4$; the other angle is $-5\\pi/4$. $-2\\le3/4+2k<2\\Rightarrow-11/8\\le k<5/8\\Rightarrow k=-1,0$."
+            },
+            {
+              "title": "(e)",
+              "body": "This gives $-23\\pi/6,-11\\pi/6,\\pi/6,13\\pi/6$; omit the original for other angles. $-4\\le-11/6+2k<4\\Rightarrow-13/12\\le k<35/12\\Rightarrow k=-1,0,1,2$."
+            },
+            {
+              "title": "(f)",
+              "body": "This gives $-5\\pi/3,\\pi/3,7\\pi/3$; omit the original for other angles. $-2\\le7/3+2k<4\\Rightarrow-13/6\\le k<5/6\\Rightarrow k=-2,-1,0$."
+            },
+            {
+              "title": "(g)",
+              "body": "This gives $2.4-2\\pi,2.4$; the other angle is $2.4-2\\pi$. $-2\\pi\\le2.4+2\\pi k<2\\pi\\Rightarrow-1-1.2/\\pi\\le k<1-1.2/\\pi\\Rightarrow k=-1,0$."
+            },
+            {
+              "title": "(h)",
+              "body": "This gives $-7.2,-7.2+2\\pi,-7.2+4\\pi$; omit -7.2 for other angles. $-4\\pi\\le-7.2+2\\pi k<2\\pi\\Rightarrow-2+3.6/\\pi\\le k<1+3.6/\\pi\\Rightarrow k=0,1,2$."
+            }
+          ],
+          "answer": "Using the textbook’s other-angle convention: (a) $425°$; (b) $320°$; (c) $-400°,320°,680°$; (d) $-5\\pi/4$; (e) $-23\\pi/6,\\pi/6,13\\pi/6$; (f) $-5\\pi/3,\\pi/3$; (g) $2.4-2\\pi$; (h) $-7.2+2\\pi,-7.2+4\\pi$. If the original is included, add it to each corresponding list."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h"
+        ],
+        "number": 11
+      },
+      {
+        "prompt": "求各圆心角所对弧长，精确到百分位：(a) 半径9.5 cm，角1.4；(b) 半径1.37 m，角3.5；(c) 半径7 cm，角130°；(d) 半径6.25 in.，角282°。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$a=r\\theta=9.5(1.4)=13.30\\text{ cm}$."
+          },
+          {
+            "title": "(b)",
+            "body": "$a=1.37(3.5)=4.795\\text{ m}\\approx4.80\\text{ m}$."
+          },
+          {
+            "title": "(c)",
+            "body": "$\\theta=130\\pi/180=13\\pi/18;\\quad a=7(13\\pi/18)=91\\pi/18\\approx15.88\\text{ cm}$."
+          },
+          {
+            "title": "(d)",
+            "body": "$\\theta=282\\pi/180=47\\pi/30;\\quad a=6.25(47\\pi/30)=235\\pi/24\\approx30.76\\text{ in.}$."
+          }
+        ],
+        "answer": "(a)13.30 cm；(b)4.80 m；(c)15.88 cm；(d)30.76 in.。",
+        "printedPage": 176,
+        "pdfPage": 185,
+        "en": {
+          "prompt": "Determine the arc length subtended by each central angle, to the nearest hundredth of a unit: (a) radius 9.5 cm, angle 1.4; (b) radius 1.37 m, angle 3.5; (c) radius 7 cm, angle 130°; (d) radius 6.25 in., angle 282°.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$a=r\\theta=9.5(1.4)=13.30\\text{ cm}$."
+            },
+            {
+              "title": "(b)",
+              "body": "$a=1.37(3.5)=4.795\\text{ m}\\approx4.80\\text{ m}$."
+            },
+            {
+              "title": "(c)",
+              "body": "$\\theta=130\\pi/180=13\\pi/18;\\quad a=7(13\\pi/18)=91\\pi/18\\approx15.88\\text{ cm}$."
+            },
+            {
+              "title": "(d)",
+              "body": "$\\theta=282\\pi/180=47\\pi/30;\\quad a=6.25(47\\pi/30)=235\\pi/24\\approx30.76\\text{ in.}$."
+            }
+          ],
+          "answer": "(a) 13.30 cm; (b) 4.80 m; (c) 15.88 cm; (d) 30.76 in.."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "number": 12
+      },
+      {
+        "prompt": "根据原图求变量，精确到百分位：(a) 弧长9 cm、半径4 cm，求 $\\theta$；(b) 半径9 ft、圆心角1.22，求弧长 a；(c) 弧长15 cm、圆心角3.93，求半径 r；(d) 半径7 m、圆心角140°，求弧长 a。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$\\theta=a/r=9/4=2.25\\text{ rad}$."
+          },
+          {
+            "title": "(b)",
+            "body": "$a=r\\theta=9(1.22)=10.98\\text{ ft}$."
+          },
+          {
+            "title": "(c)",
+            "body": "$r=a/\\theta=15/3.93=3.81679\\ldots\\approx3.82\\text{ cm}$."
+          },
+          {
+            "title": "(d)",
+            "body": "$140°=7\\pi/9;\\quad a=7(7\\pi/9)=49\\pi/9\\approx17.10\\text{ m}$."
+          }
+        ],
+        "answer": "(a)2.25 rad；(b)10.98 ft；(c)3.82 cm；(d)17.10 m。",
+        "printedPage": 176,
+        "pdfPage": 185,
+        "en": {
+          "prompt": "Use each original diagram to determine the variable, to the nearest hundredth of a unit: (a) arc 9 cm, radius 4 cm, find theta; (b) radius 9 ft, angle 1.22, find arc a; (c) arc 15 cm, angle 3.93, find radius r; (d) radius 7 m, angle 140°, find arc a.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$\\theta=a/r=9/4=2.25\\text{ rad}$."
+            },
+            {
+              "title": "(b)",
+              "body": "$a=r\\theta=9(1.22)=10.98\\text{ ft}$."
+            },
+            {
+              "title": "(c)",
+              "body": "$r=a/\\theta=15/3.93=3.81679\\ldots\\approx3.82\\text{ cm}$."
+            },
+            {
+              "title": "(d)",
+              "body": "$140°=7\\pi/9;\\quad a=7(7\\pi/9)=49\\pi/9\\approx17.10\\text{ m}$."
+            }
+          ],
+          "answer": "(a) 2.25 rad; (b) 10.98 ft; (c) 3.82 cm; (d) 17.10 m."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/4-1-exercise-13.png",
+        "number": 13
+      },
+      {
+        "prompt": "旋转洒水器每15 s转一周，水可到达离洒水器5 m处。(a) 转过 $5\\pi/3$ 时浇水扇形的弧长是多少？给精确值及百分位近似值。(b) 说明如何求(a)扇形的面积。(c) 2 min内转过多大的角？用弧度和度数表示。",
+        "concept": [
+          "arc",
+          "speed"
+        ],
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$a=r\\theta=5(5\\pi/3)=25\\pi/3\\text{ m}\\approx26.18\\text{ m}$."
+          },
+          {
+            "title": "(b)",
+            "body": "按整圆面积的 $5/6$ 求得。 $A=\\frac{\\theta}{2\\pi}(\\pi r^2)=\\frac12r^2\\theta=\\frac12(25)(5\\pi/3)=125\\pi/6\\text{ m}^2\\approx65.45\\text{ m}^2$."
+          },
+          {
+            "title": "(c)",
+            "body": "$2\\text{ min}=120\\text{ s};\\quad N=120/15=8;\\quad\\theta=8(2\\pi)=16\\pi=8(360°)=2880°$."
+          }
+        ],
+        "answer": "(a) $25\\pi/3\\approx26.18\\text{ m}$；(b) $125\\pi/6\\approx65.45\\text{ m}^2$；(c) $16\\pi$ 弧度，$2880°$。",
+        "printedPage": 176,
+        "pdfPage": 185,
+        "en": {
+          "prompt": "A rotating water sprinkler makes one revolution every 15 s. Water reaches 5 m from the sprinkler. (a) Find the arc length of the watered sector when it rotates through $5\\pi/3$, exactly and to the nearest hundredth. (b) Show how to find the sector area in (a). (c) What angle does it rotate through in 2 min, in radians and degrees?",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$a=r\\theta=5(5\\pi/3)=25\\pi/3\\text{ m}\\approx26.18\\text{ m}$."
+            },
+            {
+              "title": "(b)",
+              "body": "This is five-sixths of the full circle area. $A=\\frac{\\theta}{2\\pi}(\\pi r^2)=\\frac12r^2\\theta=\\frac12(25)(5\\pi/3)=125\\pi/6\\text{ m}^2\\approx65.45\\text{ m}^2$."
+            },
+            {
+              "title": "(c)",
+              "body": "$2\\text{ min}=120\\text{ s};\\quad N=120/15=8;\\quad\\theta=8(2\\pi)=16\\pi=8(360°)=2880°$."
+            }
+          ],
+          "answer": "(a) $25\\pi/3\\approx26.18\\text{ m}$; (b) $125\\pi/6\\approx65.45\\text{ m}^2$; (c) $16\\pi$ radians, $2880°$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 14
+      },
+      {
+        "prompt": "角速度描述圆心角随时间的变化率，可用转每分、弧度每秒、度每小时等表示。(a) 地球每24 h自转一周，用其他三种方式表示角速度。(b) 电动机以1000 rpm旋转，换为弧度每秒。(c) 自行车车轮每4 s转10周，换为度每分。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "三个等价单位表示，同一转动速率。 $\\omega=360°/24\\text{ h}=15°/\\text{h};\\quad2\\pi/24=\\pi/12\\text{ rad/h};\\quad\\frac{1}{24\\cdot60}=\\frac1{1440}\\text{ rpm}$."
+          },
+          {
+            "title": "(b)",
+            "body": "$1000\\frac{\\text{rev}}{\\text{min}}\\cdot\\frac{2\\pi\\text{ rad}}{\\text{rev}}\\cdot\\frac{1\\text{ min}}{60\\text{ s}}=100\\pi/3\\text{ rad/s}\\approx104.72\\text{ rad/s}$."
+          },
+          {
+            "title": "(c)",
+            "body": "$\\frac{10\\text{ rev}}{4\\text{ s}}\\cdot360°/\\text{rev}\\cdot60\\text{ s/min}=54000°/\\text{min}$."
+          }
+        ],
+        "answer": "(a) $15°/\\text{h},\\pi/12\\text{ rad/h},1/1440\\text{ rpm}$；(b) $100\\pi/3\\text{ rad/s}$；(c) $54000°/\\text{min}$。",
+        "printedPage": 177,
+        "pdfPage": 186,
+        "en": {
+          "prompt": "Angular velocity is the rate of change of a central angle over time; it may be in rpm, radians per second, degrees per hour, and so on. (a) Earth makes one revolution every 24 h; express its angular velocity in three other ways. (b) A motor rotates at 1000 rpm; express this in radians per second. (c) A bicycle wheel completes 10 revolutions every 4 s; express this in degrees per minute.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "These are three equivalent representations of the same rotation rate. $\\omega=360°/24\\text{ h}=15°/\\text{h};\\quad2\\pi/24=\\pi/12\\text{ rad/h};\\quad\\frac{1}{24\\cdot60}=\\frac1{1440}\\text{ rpm}$."
+            },
+            {
+              "title": "(b)",
+              "body": "$1000\\frac{\\text{rev}}{\\text{min}}\\cdot\\frac{2\\pi\\text{ rad}}{\\text{rev}}\\cdot\\frac{1\\text{ min}}{60\\text{ s}}=100\\pi/3\\text{ rad/s}\\approx104.72\\text{ rad/s}$."
+            },
+            {
+              "title": "(c)",
+              "body": "$\\frac{10\\text{ rev}}{4\\text{ s}}\\cdot360°/\\text{rev}\\cdot60\\text{ s/min}=54000°/\\text{min}$."
+            }
+          ],
+          "answer": "(a) $15°/\\text{h},\\pi/12\\text{ rad/h},1/1440\\text{ rpm}$; (b) $100\\pi/3\\text{ rad/s}$; (c) $54000°/\\text{min}$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 15
+      },
+      {
+        "prompt": "BC省Revelstoke的Skytrek Adventure Park有高空秋千：一次170 ft的摆动，在某处离地不足10 ft、速度超过60 mph。(a) 缆长72 ft，一次摆动经过的圆弧长170 ft。求圆心角弧度数，精确到百分位。(b) 把(a)的圆心角换为度数，精确到0.1°。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$r=72\\text{ ft},a=170\\text{ ft};\\quad\\theta=a/r=170/72=85/36=2.36111\\ldots\\approx2.36\\text{ rad}$."
+          },
+          {
+            "title": "(b)",
+            "body": "使用未取近似的 $85/36$，避免过早舍入。 $\\theta=(85/36)(180°/\\pi)=425°/\\pi\\approx135.3°$."
+          }
+        ],
+        "answer": "(a)2.36 rad；(b)135.3°。",
+        "printedPage": 177,
+        "pdfPage": 186,
+        "en": {
+          "prompt": "Skytrek Adventure Park in Revelstoke, BC, has a sky swing: a 170-ft pendulum flight, at one point less than 10 ft above the ground and exceeding 60 mph. (a) The cable is 72 ft long and the arc travelled is 170 ft; find the central angle in radians to the nearest hundredth. (b) Find this angle to the nearest tenth of a degree.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$r=72\\text{ ft},a=170\\text{ ft};\\quad\\theta=a/r=170/72=85/36=2.36111\\ldots\\approx2.36\\text{ rad}$."
+            },
+            {
+              "title": "(b)",
+              "body": "Use the unrounded value $85/36$ to avoid early-rounding error. $\\theta=(85/36)(180°/\\pi)=425°/\\pi\\approx135.3°$."
+            }
+          ],
+          "answer": "(a) 2.36 rad; (b) 135.3°."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": 16
+      },
+      {
+        "prompt": "补全“转数—度数—弧度”表，必要时精确到十分位。各行已给：(a)1 rev；(b)270°；(c)$5\\pi/6$；(d)-1.7 rad；(e)-40°；(f)0.7 rev；(g)-3.25 rev；(h)460°；(i)$-3\\pi/8$。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "利用 $D=360N$、$R=2\\pi N$；若已知弧度则 $N=R/(2\\pi)$。 $N=1,D=360°,R=2\\pi$."
+          },
+          {
+            "title": "(b)",
+            "body": "利用 $D=360N$、$R=2\\pi N$；若已知弧度则 $N=R/(2\\pi)$。 $N=3/4,D=270°,R=3\\pi/2$."
+          },
+          {
+            "title": "(c)",
+            "body": "利用 $D=360N$、$R=2\\pi N$；若已知弧度则 $N=R/(2\\pi)$。 $N=5/12,D=150°,R=5\\pi/6$."
+          },
+          {
+            "title": "(d)",
+            "body": "利用 $D=360N$、$R=2\\pi N$；若已知弧度则 $N=R/(2\\pi)$。 $N=-1.7/(2\\pi),D=-306/\\pi°,R=-1.7$."
+          },
+          {
+            "title": "(e)",
+            "body": "利用 $D=360N$、$R=2\\pi N$；若已知弧度则 $N=R/(2\\pi)$。 $N=-1/9,D=-40°,R=-2\\pi/9$."
+          },
+          {
+            "title": "(f)",
+            "body": "利用 $D=360N$、$R=2\\pi N$；若已知弧度则 $N=R/(2\\pi)$。 $N=0.7,D=252°,R=1.4\\pi$."
+          },
+          {
+            "title": "(g)",
+            "body": "利用 $D=360N$、$R=2\\pi N$；若已知弧度则 $N=R/(2\\pi)$。 $N=-3.25,D=-1170°,R=-6.5\\pi$."
+          },
+          {
+            "title": "(h)",
+            "body": "利用 $D=360N$、$R=2\\pi N$；若已知弧度则 $N=R/(2\\pi)$。 $N=23/18,D=460°,R=23\\pi/9$."
+          },
+          {
+            "title": "(i)",
+            "body": "利用 $D=360N$、$R=2\\pi N$；若已知弧度则 $N=R/(2\\pi)$。 $N=-3/16,D=-67.5°,R=-3\\pi/8$."
+          }
+        ],
+        "answer": "(a) 1 转，360.0°，6.3 rad；(b) 0.8 转，270.0°，4.7 rad；(c) 0.4 转，150.0°，2.6 rad；(d) -0.3 转，-97.4°，-1.7 rad；(e) -0.1 转，-40.0°，-0.7 rad；(f) 0.7 转，252.0°，4.4 rad；(g) -3.25 转，-1170.0°，-20.4 rad；(h) 1.3 转，460.0°，8.0 rad；(i) -0.2 转，-67.5°，-1.2 rad。精确换算见各步；原题已给的精确值保留。",
+        "printedPage": 177,
+        "pdfPage": 186,
+        "en": {
+          "prompt": "Complete the table of revolutions, degrees, and radians. Round to the nearest tenth where necessary. Given rows: (a) 1 rev; (b) 270°; (c) $5\\pi/6$; (d) -1.7 rad; (e) -40°; (f) 0.7 rev; (g) -3.25 rev; (h) 460°; (i) $-3\\pi/8$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Use $D=360N$ and $R=2\\pi N$; when radians are given, $N=R/(2\\pi)$. $N=1,D=360°,R=2\\pi$."
+            },
+            {
+              "title": "(b)",
+              "body": "Use $D=360N$ and $R=2\\pi N$; when radians are given, $N=R/(2\\pi)$. $N=3/4,D=270°,R=3\\pi/2$."
+            },
+            {
+              "title": "(c)",
+              "body": "Use $D=360N$ and $R=2\\pi N$; when radians are given, $N=R/(2\\pi)$. $N=5/12,D=150°,R=5\\pi/6$."
+            },
+            {
+              "title": "(d)",
+              "body": "Use $D=360N$ and $R=2\\pi N$; when radians are given, $N=R/(2\\pi)$. $N=-1.7/(2\\pi),D=-306/\\pi°,R=-1.7$."
+            },
+            {
+              "title": "(e)",
+              "body": "Use $D=360N$ and $R=2\\pi N$; when radians are given, $N=R/(2\\pi)$. $N=-1/9,D=-40°,R=-2\\pi/9$."
+            },
+            {
+              "title": "(f)",
+              "body": "Use $D=360N$ and $R=2\\pi N$; when radians are given, $N=R/(2\\pi)$. $N=0.7,D=252°,R=1.4\\pi$."
+            },
+            {
+              "title": "(g)",
+              "body": "Use $D=360N$ and $R=2\\pi N$; when radians are given, $N=R/(2\\pi)$. $N=-3.25,D=-1170°,R=-6.5\\pi$."
+            },
+            {
+              "title": "(h)",
+              "body": "Use $D=360N$ and $R=2\\pi N$; when radians are given, $N=R/(2\\pi)$. $N=23/18,D=460°,R=23\\pi/9$."
+            },
+            {
+              "title": "(i)",
+              "body": "Use $D=360N$ and $R=2\\pi N$; when radians are given, $N=R/(2\\pi)$. $N=-3/16,D=-67.5°,R=-3\\pi/8$."
+            }
+          ],
+          "answer": "(a) 1 rev, 360.0°, 6.3 rad; (b) 0.8 rev, 270.0°, 4.7 rad; (c) 0.4 rev, 150.0°, 2.6 rad; (d) -0.3 rev, -97.4°, -1.7 rad; (e) -0.1 rev, -40.0°, -0.7 rad; (f) 0.7 rev, 252.0°, 4.4 rad; (g) -3.25 rev, -1170.0°, -20.4 rad; (h) 1.3 rev, 460.0°, 8.0 rad; (i) -0.2 rev, -67.5°, -1.2 rad. Exact conversions are shown in the steps; retain the exact values supplied in the question."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i"
+        ],
+        "number": 17
+      },
+      {
+        "prompt": "Joran与Jasmine讨论78°的同终边角通式。Joran认为必须写成 $78°+(360°)n,n\\in I$。Jasmine认为该式正确，但她更喜欢 $78°\\pm k(360°),k\\in N$，N为正整数。谁正确？为什么？",
+        "concept": "coterminal",
+        "steps": [
+          {
+            "title": "1",
+            "body": "Joran的 $n\\in I=\\mathbb Z$ 包含正、负整数和0，因而涵盖所有整周改变量，也包含原角78°。"
+          },
+          {
+            "title": "2",
+            "body": "Jasmine的±正整数涵盖所有非零整数改变量，得到原角以外的全部同终边角。两种写法对“其他角”等效；若要包含原角，Jasmine的集合应另加入78°（或容许 $k=0$）。"
+          },
+          {
+            "title": "3",
+            "body": "因此Joran“必须采用这一种写法”的说法不对；Jasmine指出有其他表达方式是对的，但应明确0的约定。"
+          }
+        ],
+        "answer": "两种写法均能正确表示其他同终边角；包含原角时需保留零整周项。",
+        "printedPage": 177,
+        "pdfPage": 186,
+        "en": {
+          "prompt": "Joran and Jasmine discuss the general form of coterminal angles of 78°. Joran says it must be $78°+(360°)n,n\\in I$. Jasmine agrees it is correct but prefers $78°\\pm k(360°),k\\in N$, where N denotes positive integers. Who is correct, and why?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "Joran’s $n\\in I=\\mathbb Z$ includes positive and negative integers and zero, so covers all whole-turn changes and includes 78° itself."
+            },
+            {
+              "title": "2",
+              "body": "Jasmine’s plus/minus positive integers cover every nonzero integer change, so give all other coterminal angles. For other angles the forms are equivalent; to include the original, add 78° to Jasmine’s set or allow $k=0$."
+            },
+            {
+              "title": "3",
+              "body": "Thus Joran is wrong that his notation is the only possible notation. Jasmine is right that another form is possible, with the zero convention made explicit."
+            }
+          ],
+          "answer": "Both notations can express the other coterminal angles; including the original requires the zero-turn term."
+        },
+        "number": 18
+      },
+      {
+        "prompt": "百分度(grad)定义为一周的1/400，一周为400 grad。(a) 50°等于多少grad？(b) 描述度数与百分度互换的方法。(c) 提出创立百分度的一个可能原因。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$50°(400/360)=500/9\\text{ grad}\\approx55.56\\text{ grad}$."
+          },
+          {
+            "title": "(b)",
+            "body": "把度数乘400/360得百分度；反向乘360/400。 $G=(10/9)D;\\quad D=(9/10)G$."
+          },
+          {
+            "title": "(c)",
+            "body": "一种合理解释：直角为100 grad，便于用十进制细分直角和计算。此为可能的数学动机，不据此声称完整历史原因。"
+          }
+        ],
+        "answer": "(a) $500/9\\approx55.56$ grad；(b) $G=10D/9,D=9G/10$；(c) 便于十进制细分。",
+        "printedPage": 177,
+        "pdfPage": 186,
+        "en": {
+          "prompt": "A gradian (grad) is 1/400 of a revolution, so one full rotation is 400 grads. (a) How many gradians are in 50°? (b) Describe conversions between degrees and gradians. (c) Give a possible reason for creating the gradian.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$50°(400/360)=500/9\\text{ grad}\\approx55.56\\text{ grad}$."
+            },
+            {
+              "title": "(b)",
+              "body": "Multiply degrees by 400/360 for gradians; reverse by multiplying by 360/400. $G=(10/9)D;\\quad D=(9/10)G$."
+            },
+            {
+              "title": "(c)",
+              "body": "One plausible reason is that a right angle becomes 100 grads, convenient for decimal subdivisions and calculations. This is a possible mathematical motivation, not a claim to establish the full history."
+            }
+          ],
+          "answer": "(a) $500/9\\approx55.56$ grad; (b) $G=10D/9,D=9G/10$; (c) convenient decimal subdivision."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 19
+      },
+      {
+        "prompt": "Yellowknife（西北地区）与Crowsnest Pass（Alberta）同在西经114°线上。两地纬度分别为北纬62.45°和北纬49.63°，地球视为半径6400 km的球。(a) 用圆画出信息，标地心、指向赤道的半径和两地位置。(b) 求两地距离，精确到0.01 km。(c) 选自己居住或附近的城镇，查询经纬度，再找同经度的另一城镇，求两地距离。",
+        "concept": "arc",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "在114°W经线平面内画半径6400 km的圆，地心标O；向右水平半径OE指向赤道。自OE向北分别转49.63°、62.45°，圆上终点标Crowsnest Pass、Yellowknife；两半径夹角12.82°。"
+          },
+          {
+            "title": "(b)",
+            "body": "距离沿共同经线的地表短弧测量。 $\\Delta\\phi=62.45°-49.63°=12.82°=641\\pi/9000;\\quad d=6400(641\\pi/9000)=20512\\pi/45\\approx1432.01\\text{ km}$."
+          },
+          {
+            "title": "(c)",
+            "body": "这是学习者自选公开地点与坐标的开放调查，无须提供家庭地址。记录所选两地及坐标来源；同经度下，用带符号纬度（北为正、南为负）$\\phi_1,\\phi_2$ 计算 $d=6400|\\phi_1-\\phi_2|\\pi/180$ km。教材 20(b) 已提供可核验的方法示范：Yellowknife 为 62.45°N、Crowsnest Pass 为 49.63°N，均在 114°W，故 $d=6400(62.45-49.63)\\pi/180\\approx1432.01$ km。学习者再把自选坐标代入同一方法即可；跨赤道须用带符号纬度，经度近似相同时注明经线模型近似。"
+          }
+        ],
+        "answer": "(a) 见作图步骤；(b) $1432.01\\text{ km}$；(c) 依学生选定地点与坐标而定，公式见步骤。",
+        "printedPage": 178,
+        "pdfPage": 187,
+        "en": {
+          "prompt": "Yellowknife, Northwest Territories, and Crowsnest Pass, Alberta, lie on longitude 114° W. Their latitudes are 62.45° N and 49.63° N respectively. Model Earth as a sphere of radius 6400 km. (a) Sketch a circle showing the centre of Earth, its radius to the equator, and both locations. (b) Determine the distance between them to the nearest hundredth of a kilometre. (c) Choose a town or city where you live or nearby, determine its latitude and longitude, find another town or city on the same longitude, and determine the distance between them.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Draw the 114° W meridian cross-section as a circle of radius 6400 km, centre O. A horizontal radius OE points to the equator. Rotate northward from OE by 49.63° and 62.45° to label Crowsnest Pass and Yellowknife. The included angle is 12.82°."
+            },
+            {
+              "title": "(b)",
+              "body": "Measure the shorter surface arc along their common meridian. $\\Delta\\phi=62.45°-49.63°=12.82°=641\\pi/9000;\\quad d=6400(641\\pi/9000)=20512\\pi/45\\approx1432.01\\text{ km}$."
+            },
+            {
+              "title": "(c)",
+              "body": "This is an open investigation in which the learner chooses public locations and coordinates; no home address is needed. Record the selected places and coordinate sources. With equal longitude and signed latitudes (north positive, south negative), use $d=6400|\\phi_1-\\phi_2|\\pi/180$ km. Textbook 20(b) supplies a verifiable worked method: Yellowknife is at 62.45° N and Crowsnest Pass at 49.63° N, both on 114° W, giving $d=6400(62.45-49.63)\\pi/180\\approx1432.01$ km. Substitute the learner-selected coordinates into the same method; use signed latitudes across the equator and state the meridian-model approximation if longitudes only approximately match."
+            }
+          ],
+          "answer": "(a) See the labelled-sketch instructions; (b) $1432.01\\text{ km}$; (c) depends on the learner’s selected places and coordinates; use the formula in the steps."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "number": 20,
+        "solutionImage": "assets/4-1-exercise-20-solution.png"
+      },
+      {
+        "prompt": "教材记载：BC省Quadra Island的Sam Whittingham保持五项2009年人力速度世界纪录；200 m行进间出发的卧式自行车速度为133.284 km/h。(a) 换为m/min。(b) 车轮直径60 cm，为达到此速度，车轮每分钟必须转多少弧度？",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$v=133.284\\cdot1000/60=2221.4\\text{ m/min}$."
+          },
+          {
+            "title": "(b)",
+            "body": "假设车轮无滑动，使用 $v=r\\omega$。 $r=60/2=30\\text{ cm}=0.30\\text{ m};\\quad\\omega=v/r=2221.4/0.30=22214/3\\text{ rad/min}\\approx7404.67\\text{ rad/min}$."
+          }
+        ],
+        "answer": "(a) $2221.4\\text{ m/min}$；(b) $22214/3\\approx7404.67\\text{ rad/min}$。",
+        "printedPage": 178,
+        "pdfPage": 187,
+        "en": {
+          "prompt": "The textbook reports that Sam Whittingham of Quadra Island, BC, holds five 2009 human-powered speed records, reaching 133.284 km/h on a recumbent bicycle in the 200-m flying start. (a) Express this speed in metres per minute. (b) With wheel diameter 60 cm, through how many radians per minute must the wheels turn to achieve that speed?",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$v=133.284\\cdot1000/60=2221.4\\text{ m/min}$."
+            },
+            {
+              "title": "(b)",
+              "body": "Assume rolling without slipping and use $v=r\\omega$. $r=60/2=30\\text{ cm}=0.30\\text{ m};\\quad\\omega=v/r=2221.4/0.30=22214/3\\text{ rad/min}\\approx7404.67\\text{ rad/min}$."
+            }
+          ],
+          "answer": "(a) $2221.4\\text{ m/min}$; (b) $22214/3\\approx7404.67\\text{ rad/min}$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": 21
+      },
+      {
+        "prompt": "直径3 m的水轮用于估计河水速度；水轮角速度为15 rpm。求河水速度，单位km/h。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$r=1.5\\text{ m};\\quad\\omega=15(2\\pi)=30\\pi\\text{ rad/min}$."
+          },
+          {
+            "title": "2",
+            "body": "假设水轮轮缘速度与水流速度相同。 $v=r\\omega=1.5(30\\pi)=45\\pi\\text{ m/min};\\quad v=45\\pi(60/1000)=2.7\\pi\\text{ km/h}\\approx8.48\\text{ km/h}$."
+          }
+        ],
+        "answer": "$2.7\\pi\\text{ km/h}\\approx8.48\\text{ km/h}$。",
+        "printedPage": 178,
+        "pdfPage": 187,
+        "en": {
+          "prompt": "A water wheel of diameter 3 m measures the approximate river speed. If its angular velocity is 15 rpm, find the river speed in kilometres per hour.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$r=1.5\\text{ m};\\quad\\omega=15(2\\pi)=30\\pi\\text{ rad/min}$."
+            },
+            {
+              "title": "2",
+              "body": "Assume rim speed equals water speed. $v=r\\omega=1.5(30\\pi)=45\\pi\\text{ m/min};\\quad v=45\\pi(60/1000)=2.7\\pi\\text{ km/h}\\approx8.48\\text{ km/h}$."
+            }
+          ],
+          "answer": "$2.7\\pi\\text{ km/h}\\approx8.48\\text{ km/h}$."
+        },
+        "number": 22
+      },
+      {
+        "prompt": "地球距太阳约93 000 000 mi，近似沿圆轨道以365天绕太阳一周。求地球公转的线速度（mi/h），精确到百分位。",
+        "concept": "speed",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$C=2\\pi r=186000000\\pi\\text{ mi};\\quad T=365(24)=8760\\text{ h}$."
+          },
+          {
+            "title": "2",
+            "body": "$v=C/T=186000000\\pi/8760=1550000\\pi/73\\approx66705.05\\text{ mi/h}$."
+          }
+        ],
+        "answer": "$66705.05\\text{ mi/h}$。",
+        "printedPage": 178,
+        "pdfPage": 187,
+        "en": {
+          "prompt": "Earth is approximately 93 000 000 mi from the sun and travels an almost circular orbit in about 365 days. Calculate its linear speed in miles per hour, to the nearest hundredth.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$C=2\\pi r=186000000\\pi\\text{ mi};\\quad T=365(24)=8760\\text{ h}$."
+            },
+            {
+              "title": "2",
+              "body": "$v=C/T=186000000\\pi/8760=1550000\\pi/73\\approx66705.05\\text{ mi/h}$."
+            }
+          ],
+          "answer": "$66705.05\\text{ mi/h}$."
+        },
+        "number": 23
+      },
+      {
+        "prompt": "参考教材说明：$1°=60′,1′=60″$。(a) 与同伴说明如何把69.375°换为69°22′30″。(b) 把以下角换为度分秒：(i)40.875°；(ii)100.126°；(iii)14.565°；(iv)80.385°。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "先取整数度，再依次转换小数部分。 $0.375(60)=22.5′;\\quad0.5(60)=30″;\\quad69.375°=69°22′30″$."
+          },
+          {
+            "title": "(b.i)",
+            "body": "$0.875(60)=52.5′;\\quad0.5(60)=30″\\Rightarrow40°52′30″$."
+          },
+          {
+            "title": "(b.ii)",
+            "body": "$0.126(60)=7.56′;\\quad0.56(60)=33.6″\\Rightarrow100°7′33.6″$."
+          },
+          {
+            "title": "(b.iii)",
+            "body": "$0.565(60)=33.9′;\\quad0.9(60)=54″\\Rightarrow14°33′54″$."
+          },
+          {
+            "title": "(b.iv)",
+            "body": "$0.385(60)=23.1′;\\quad0.1(60)=6″\\Rightarrow80°23′6″$."
+          }
+        ],
+        "answer": "(a)69°22′30″；(b.i)40°52′30″；(ii)100°7′33.6″；(iii)14°33′54″；(iv)80°23′6″。",
+        "printedPage": 178,
+        "pdfPage": 187,
+        "en": {
+          "prompt": "Use $1°=60′$ and $1′=60″$. (a) With a partner, show how to convert 69.375° to 69°22′30″. (b) Convert to degrees-minutes-seconds: (i) 40.875°; (ii) 100.126°; (iii) 14.565°; (iv) 80.385°.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Keep the whole degrees, then convert each remaining fractional part. $0.375(60)=22.5′;\\quad0.5(60)=30″;\\quad69.375°=69°22′30″$."
+            },
+            {
+              "title": "(b.i)",
+              "body": "$0.875(60)=52.5′;\\quad0.5(60)=30″\\Rightarrow40°52′30″$."
+            },
+            {
+              "title": "(b.ii)",
+              "body": "$0.126(60)=7.56′;\\quad0.56(60)=33.6″\\Rightarrow100°7′33.6″$."
+            },
+            {
+              "title": "(b.iii)",
+              "body": "$0.565(60)=33.9′;\\quad0.9(60)=54″\\Rightarrow14°33′54″$."
+            },
+            {
+              "title": "(b.iv)",
+              "body": "$0.385(60)=23.1′;\\quad0.1(60)=6″\\Rightarrow80°23′6″$."
+            }
+          ],
+          "answer": "(a) 69°22′30″; (b.i) 40°52′30″; (ii) 100°7′33.6″; (iii) 14°33′54″; (iv) 80°23′6″."
+        },
+        "subpartIds": [
+          "a",
+          "bi",
+          "bii",
+          "biii",
+          "biv"
+        ],
+        "number": 24
+      },
+      {
+        "prompt": "(a) 逆用第24题，把69°22′30″换为69.375°。提示：先将30″换为分的小数部分，再与22′合并，最后换成度。(b) 换为度数，精确到千分位：(i)45°30′30″；(ii)72°15′45″；(iii)105°40′15″；(iv)28°10′。",
+        "concept": "units",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$30″=30/60=0.5′;\\quad22.5′=22.5/60=0.375°;\\quad69°+0.375°=69.375°$."
+          },
+          {
+            "title": "(b.i)",
+            "body": "$45+30/60+30/3600=45.508333\\ldots\\approx45.508°$."
+          },
+          {
+            "title": "(b.ii)",
+            "body": "$72+15/60+45/3600=72.2625\\approx72.263°$."
+          },
+          {
+            "title": "(b.iii)",
+            "body": "$105+40/60+15/3600=105.670833\\ldots\\approx105.671°$."
+          },
+          {
+            "title": "(b.iv)",
+            "body": "$28+10/60=28.166666\\ldots\\approx28.167°$."
+          }
+        ],
+        "answer": "(a)69.375°；(b.i)45.508°；(ii)72.263°；(iii)105.671°；(iv)28.167°。",
+        "printedPage": 179,
+        "pdfPage": 188,
+        "en": {
+          "prompt": "(a) Reverse question 24 to convert 69°22′30″ to 69.375°. Hint: convert 30″ to a fraction of a minute, combine with 22′, then convert the minutes to a fraction of a degree. (b) Convert to degrees to the nearest thousandth: (i) 45°30′30″; (ii) 72°15′45″; (iii) 105°40′15″; (iv) 28°10′.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$30″=30/60=0.5′;\\quad22.5′=22.5/60=0.375°;\\quad69°+0.375°=69.375°$."
+            },
+            {
+              "title": "(b.i)",
+              "body": "$45+30/60+30/3600=45.508333\\ldots\\approx45.508°$."
+            },
+            {
+              "title": "(b.ii)",
+              "body": "$72+15/60+45/3600=72.2625\\approx72.263°$."
+            },
+            {
+              "title": "(b.iii)",
+              "body": "$105+40/60+15/3600=105.670833\\ldots\\approx105.671°$."
+            },
+            {
+              "title": "(b.iv)",
+              "body": "$28+10/60=28.166666\\ldots\\approx28.167°$."
+            }
+          ],
+          "answer": "(a) 69.375°; (b.i) 45.508°; (ii) 72.263°; (iii) 105.671°; (iv) 28.167°."
+        },
+        "subpartIds": [
+          "a",
+          "bi",
+          "bii",
+          "biii",
+          "biv"
+        ],
+        "number": 25
+      },
+      {
+        "prompt": "弓形是弦与该弦所对弧之间的区域。圆半径为 r，弦 AB 所对圆心角为 $\\theta$（见原图）。用 r 和 $\\theta$ 推导弓形面积公式。",
+        "concept": [
+          "arc",
+          "geometry"
+        ],
+        "steps": [
+          {
+            "title": "1",
+            "body": "原图为劣弓形，取 $0<\\theta<\\pi$ 且θ用弧度。扇形面积占整圆的 $\\theta/(2\\pi)$，所以 $A_s=\\tfrac12r^2\\theta$。"
+          },
+          {
+            "title": "2",
+            "body": "连接OA、OB。三角形两边均为r、夹角θ，面积为 $A_\\triangle=\\tfrac12r^2\\sin\\theta$（也可作高，底为 $2r\\sin(\\theta/2)$，高为 $r\\cos(\\theta/2)$）。"
+          },
+          {
+            "title": "3",
+            "body": "当θ趋近0时面积趋近0；θ=π时为半圆面积，符合几何。对优弓形 $\\pi<\\theta<2\\pi$，同式成立，可由整圆减去对应劣弓形推出。 $A=A_s-A_\\triangle=\\frac12r^2(\\theta-\\sin\\theta)$."
+          }
+        ],
+        "answer": "$A=\\tfrac12r^2(\\theta-\\sin\\theta)$，θ用弧度；面积单位为r单位的平方。",
+        "printedPage": 179,
+        "pdfPage": 188,
+        "en": {
+          "prompt": "A segment of a circle is the region between a chord and its subtended arc. In a circle of radius r, chord AB subtends central angle theta (see the original figure). Derive a formula in r and theta for the segment area.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "For the minor segment shown take $0<\\theta<\\pi$, in radians. The sector is $\\theta/(2\\pi)$ of the full circle, so $A_s=\\tfrac12r^2\\theta$."
+            },
+            {
+              "title": "2",
+              "body": "Join OA and OB. The triangle has two sides r with included angle theta, so $A_\\triangle=\\tfrac12r^2\\sin\\theta$. Equivalently its base is $2r\\sin(\\theta/2)$ and height $r\\cos(\\theta/2)$."
+            },
+            {
+              "title": "3",
+              "body": "As theta tends to zero the area tends to zero, and at theta=pi it is a semicircle. For a major segment with $\\pi<\\theta<2\\pi$, the same formula follows by subtracting the complementary minor segment from the full circle. $A=A_s-A_\\triangle=\\frac12r^2(\\theta-\\sin\\theta)$."
+            }
+          ],
+          "answer": "$A=\\tfrac12r^2(\\theta-\\sin\\theta)$, with theta in radians and area in squared radius units."
+        },
+        "sourceImage": "assets/4-1-exercise-26.png",
+        "number": 26
+      },
+      {
+        "prompt": "钟表时针随分针成比例移动；例如4:05时，时针已从4向5移动一小时路程的5/60。(a) 4:00两针的钝角是多少度？(b) 4:10两针的锐角是多少度？(c) 写出两针成直角的两个时刻。(d) 4:00至5:00之间有多少次两针夹角为90°？(e) 其中一次在4:05之前、恰在还是稍后？解释。",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "4:00分针指12，时针指4，较小夹角为120°。 $4(30°)=120°$."
+          },
+          {
+            "title": "(b)",
+            "body": "$H=120°+0.5°(10)=125°;\\quad M=6°(10)=60°;\\quad|H-M|=65°$."
+          },
+          {
+            "title": "(c)",
+            "body": "两个简单例子为3:00与9:00：时针水平、分针竖直。若要求本小时的两次，见(d)。"
+          },
+          {
+            "title": "(d)",
+            "body": "在 $0\\le t\\le60$ 内，差值从120°降至-210°，只能经过±90°，不经过±270°。故有2次：4:05:27.27…与4:38:10.91…。 $H-M=120-5.5t;\\quad120-5.5t=\\pm90\\Rightarrow t=60/11\\text{ or }420/11$."
+          },
+          {
+            "title": "(e)",
+            "body": "4:05夹角仍大于90°，第一次稍后，约27.27秒之后。 $t=5\\Rightarrow H-M=120-5.5(5)=92.5°;\\quad60/11=5.4545\\ldots>5$."
+          }
+        ],
+        "answer": "(a)120°；(b)65°；(c)如3:00、9:00；(d)2次；(e)稍后，约4:05:27.27。",
+        "printedPage": 179,
+        "pdfPage": 188,
+        "en": {
+          "prompt": "The hour hand moves proportionally with the minute hand; at 4:05 it has moved 5/60 of the distance from 4 to 5. (a) Find the obtuse angle at 4:00. (b) Find the acute angle at 4:10. (c) Give two times when the hands are at right angles. (d) How many such times occur between 4:00 and 5:00? (e) Is one before, at, or shortly after 4:05? Explain.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "At 4:00 the minute hand points to 12 and hour hand to 4, giving 120°. $4(30°)=120°$."
+            },
+            {
+              "title": "(b)",
+              "body": "$H=120°+0.5°(10)=125°;\\quad M=6°(10)=60°;\\quad|H-M|=65°$."
+            },
+            {
+              "title": "(c)",
+              "body": "Two simple examples are 3:00 and 9:00, when the hour hand is horizontal and the minute hand vertical. For the two times in the stated hour, see (d)."
+            },
+            {
+              "title": "(d)",
+              "body": "For $0\\le t\\le60$, the difference decreases from 120° to -210°, so it reaches ±90° but not ±270°. There are two times: 4:05:27.27… and 4:38:10.91…. $H-M=120-5.5t;\\quad120-5.5t=\\pm90\\Rightarrow t=60/11\\text{ or }420/11$."
+            },
+            {
+              "title": "(e)",
+              "body": "At 4:05 the angle is still greater than 90°, so the first right angle occurs shortly after, about 27.27 seconds later. $t=5\\Rightarrow H-M=120-5.5(5)=92.5°;\\quad60/11=5.4545\\ldots>5$."
+            }
+          ],
+          "answer": "(a) 120°; (b) 65°; (c) e.g. 3:00 and 9:00; (d) twice; (e) shortly after, about 4:05:27.27."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "number": 27
+      },
+      {
+        "prompt": "画图并说明6弧度大于、等于还是小于360°。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$360°=2\\pi\\text{ rad}\\approx6.28318\\text{ rad};\\quad6<2\\pi$."
+          },
+          {
+            "title": "2",
+            "body": "画标准位置角，逆时针转6弧度，终边在第四象限，比完整一周少约16.23°。 $6(180°/\\pi)\\approx343.77°;\\quad360°-343.77°\\approx16.23°$."
+          }
+        ],
+        "answer": "6弧度小于360°。",
+        "printedPage": 179,
+        "pdfPage": 188,
+        "en": {
+          "prompt": "Draw a diagram and use it to explain whether 6 radians is greater than, equal to, or less than 360°.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$360°=2\\pi\\text{ rad}\\approx6.28318\\text{ rad};\\quad6<2\\pi$."
+            },
+            {
+              "title": "2",
+              "body": "Sketch a 6-radian counterclockwise angle in standard position. Its terminal arm is in quadrant IV, about 16.23° short of a full turn. $6(180°/\\pi)\\approx343.77°;\\quad360°-343.77°\\approx16.23°$."
+            }
+          ],
+          "answer": "6 radians is less than 360°."
+        },
+        "number": "C1",
+        "solutionImage": "assets/4-1-exercise-C1-solution.png"
+      },
+      {
+        "prompt": "数学中角通常用度或弧度定义。说明1°与1弧度的差别，用图支持答案。",
+        "concept": "angle",
+        "steps": [
+          {
+            "title": "1",
+            "body": "度是把一整周分为360等份，每份为1°。画圆心O及相近两半径，所夹小扇形占整圆1/360。"
+          },
+          {
+            "title": "2",
+            "body": "另画同半径圆，取弧长等于半径r的弧AB，连接OA、OB，其圆心角为1弧度；明显大于1°。 $1\\text{ rad}=180°/\\pi\\approx57.30°;\\quad1°=\\pi/180\\text{ rad}\\approx0.01745\\text{ rad}$."
+          }
+        ],
+        "answer": "1°按整周的1/360定义；1弧度按弧长与半径相等定义，约为57.30°。",
+        "printedPage": 179,
+        "pdfPage": 188,
+        "en": {
+          "prompt": "In mathematics angles are commonly measured in degrees or radians. Describe the difference between 1° and 1 radian, using drawings to support your answer.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "A degree is one of 360 equal parts of a full turn. Draw a circle centred at O and two very close radii bounding 1/360 of the circle."
+            },
+            {
+              "title": "2",
+              "body": "Draw another circle of the same radius. Mark an arc AB of length r and join OA and OB; its central angle is 1 radian, much larger than 1°. $1\\text{ rad}=180°/\\pi\\approx57.30°;\\quad1°=\\pi/180\\text{ rad}\\approx0.01745\\text{ rad}$."
+            }
+          ],
+          "answer": "1° is 1/360 of a turn; 1 radian subtends an arc equal to the radius and is about 57.30°."
+        },
+        "number": "C2",
+        "solutionImage": "assets/4-1-exercise-C2-solution.png"
+      },
+      {
+        "prompt": "各角均在标准位置，求参照角并写出所有同终边角通式：(a)860°；(b)-7（参照角精确到百分位）。",
+        "concept": [
+          "geometry",
+          "coterminal"
+        ],
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "终边在第二象限。 $860°-720°=140°;\\quad\\alpha=180°-140°=40°;\\quad\\theta=860°+360°k$."
+          },
+          {
+            "title": "(b)",
+            "body": "终边在第四象限；k为任意整数，若只列其他角取k≠0。 $-7+4\\pi=5.56637\\ldots\\in(3\\pi/2,2\\pi);\\quad\\alpha=2\\pi-(-7+4\\pi)=7-2\\pi\\approx0.72;\\quad\\theta=-7+2\\pi k$."
+          }
+        ],
+        "answer": "(a)参照角40°，$860°+360°k$；(b)参照角 $7-2\\pi\\approx0.72$ 弧度，$-7+2\\pi k$；$k\\in\\mathbb Z$。",
+        "printedPage": 179,
+        "pdfPage": 188,
+        "en": {
+          "prompt": "The following angles are in standard position. Find each reference angle and write an expression for all coterminal angles: (a) 860°; (b) -7 (reference angle to the nearest hundredth).",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The terminal arm lies in quadrant II. $860°-720°=140°;\\quad\\alpha=180°-140°=40°;\\quad\\theta=860°+360°k$."
+            },
+            {
+              "title": "(b)",
+              "body": "The terminal arm lies in quadrant IV. In both forms k is any integer; use k≠0 for other angles only. $-7+4\\pi=5.56637\\ldots\\in(3\\pi/2,2\\pi);\\quad\\alpha=2\\pi-(-7+4\\pi)=7-2\\pi\\approx0.72;\\quad\\theta=-7+2\\pi k$."
+            }
+          ],
+          "answer": "(a) reference angle 40°, $860°+360°k$; (b) reference angle $7-2\\pi\\approx0.72$ rad, $-7+2\\pi k$; $k\\in\\mathbb Z$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": "C3"
+      },
+      {
+        "prompt": "(a) 仿照原图画圆，在圆外标出 $0°\\le\\theta<360°$ 内45°的所有倍数，在圆内标出精确弧度值。(b) 另画一圆，对同范围内30°的所有倍数作相同标注。",
+        "concept": [
+          "convert",
+          "geometry"
+        ],
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "从正x轴逆时针依次画8条射线，每次增加45°。用 $D\\pi/180$ 标内圈，外圈对应：$0°\\leftrightarrow0$，$45°\\leftrightarrow\\pi/4$，$90°\\leftrightarrow\\pi/2$，$135°\\leftrightarrow3\\pi/4$，$180°\\leftrightarrow\\pi$，$225°\\leftrightarrow5\\pi/4$，$270°\\leftrightarrow3\\pi/2$，$315°\\leftrightarrow7\\pi/4$。"
+          },
+          {
+            "title": "(b)",
+            "body": "从正x轴逆时针每隔30°画射线，共12条；外圈及内圈依次对应：$0°:0$，$30°:\\pi/6$，$60°:\\pi/3$，$90°:\\pi/2$，$120°:2\\pi/3$，$150°:5\\pi/6$，$180°:\\pi$，$210°:7\\pi/6$，$240°:4\\pi/3$，$270°:3\\pi/2$，$300°:5\\pi/3$，$330°:11\\pi/6$。360°被严格上界排除。"
+          }
+        ],
+        "answer": "(a)8组标签；(b)12组标签；完整对应与画图方法见步骤。",
+        "printedPage": 179,
+        "pdfPage": 188,
+        "en": {
+          "prompt": "(a) Make a circle like the given diagram, labelling all multiples of 45° in $0°\\le\\theta<360°$ outside and their exact radian equivalents inside. (b) Make another circle and do the same for all multiples of 30° in the same domain.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Draw 8 rays counterclockwise from the positive x-axis, increasing by 45°. Use $D\\pi/180$ for inner labels and these degree labels outside: $0°\\leftrightarrow0$, $45°\\leftrightarrow\\pi/4$, $90°\\leftrightarrow\\pi/2$, $135°\\leftrightarrow3\\pi/4$, $180°\\leftrightarrow\\pi$, $225°\\leftrightarrow5\\pi/4$, $270°\\leftrightarrow3\\pi/2$, $315°\\leftrightarrow7\\pi/4$."
+            },
+            {
+              "title": "(b)",
+              "body": "Draw 12 rays in 30° increments counterclockwise from the positive x-axis. The outer:inner labels are $0°:0$, $30°:\\pi/6$, $60°:\\pi/3$, $90°:\\pi/2$, $120°:2\\pi/3$, $150°:5\\pi/6$, $180°:\\pi$, $210°:7\\pi/6$, $240°:4\\pi/3$, $270°:3\\pi/2$, $300°:5\\pi/3$, $330°:11\\pi/6$. The strict upper bound excludes 360°."
+            }
+          ],
+          "answer": "(a) 8 label pairs; (b) 12 label pairs; the complete correspondences and drawing method are above."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/4-1-exercise-C4.png",
+        "number": "C4",
+        "solutionImage": "assets/4-1-exercise-C4-solution.png"
+      },
+      {
+        "prompt": "直线经过点(3,0)。若直线与正x轴形成的角为下列值，求方程：(a)$\\pi/2$；(b)45°。",
+        "concept": "geometry",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$\\pi/2=90°$，所以直线竖直；经过(3,0)的竖直线上每一点x坐标均为3。方程为 $x=3$。"
+          },
+          {
+            "title": "(b)",
+            "body": "代入(3,0)检验：0=3-3。 $m=\\tan45°=1;\\quad y-0=1(x-3)\\Rightarrow y=x-3$."
+          }
+        ],
+        "answer": "(a)$x=3$；(b)$y=x-3$。",
+        "printedPage": 179,
+        "pdfPage": 188,
+        "en": {
+          "prompt": "A line passes through (3, 0). Find its equation if the angle it forms with the positive x-axis is (a) $\\pi/2$; (b) 45°.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$\\pi/2=90°$, so the line is vertical. Every point of the vertical line through (3,0) has x-coordinate 3; its equation is $x=3$."
+            },
+            {
+              "title": "(b)",
+              "body": "Check (3,0): 0=3-3. $m=\\tan45°=1;\\quad y-0=1(x-3)\\Rightarrow y=x-3$."
+            }
+          ],
+          "answer": "(a) $x=3$; (b) $y=x-3$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "number": "C5"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "investigate-5",
+      "investigate-6",
+      "investigate-7",
+      "margin-168",
+      "margin-169",
+      "your-turn-1",
+      "margin-170",
+      "your-turn-2",
+      "margin-172",
+      "your-turn-3",
+      "margin-173",
+      "margin-174",
+      "your-turn-4"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "expectedSubparts": {
+      "example-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "example-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-3": [
+        "a",
+        "b"
+      ],
+      "your-turn-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "your-turn-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h"
+      ],
+      "exercise-12": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-14": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-15": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-16": [
+        "a",
+        "b"
+      ],
+      "exercise-17": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i"
+      ],
+      "exercise-19": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-20": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-21": [
+        "a",
+        "b"
+      ],
+      "exercise-24": [
+        "a",
+        "bi",
+        "bii",
+        "biii",
+        "biv"
+      ],
+      "exercise-25": [
+        "a",
+        "bi",
+        "bii",
+        "biii",
+        "biv"
+      ],
+      "exercise-27": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-C3": [
+        "a",
+        "b"
+      ],
+      "exercise-C4": [
+        "a",
+        "b"
+      ],
+      "exercise-C5": [
+        "a",
+        "b"
+      ],
+      "margin-168": [
+        "a",
+        "b"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original source pages, all bilingual conditions/subparts, solutions and referenced figures independently reviewed. Exact calculations and interval checks are saved in the chapter audit package. Open research/construction tasks retain their stated scope.",
+    "independentReview": "audit/4-1-independent-review.json",
+    "reviewedDataSha256": "7f9d68690980b97e9f35f69ada8ad3888ff2b33f95636bac2c9171843aa4373f",
+    "reviewedPayloadSha256": "72eeda78660141b92b2075a8c554a4e385f5badef3068fa3359e4b2d548943c2"
+  }
+}

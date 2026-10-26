@@ -1,0 +1,2748 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "5-2",
+    "section": "5.2",
+    "title": "正弦型函数的变换",
+    "en": {
+      "title": "Transformations of Sinusoidal Functions",
+      "description": "Graph and transform sinusoidal functions; identify amplitude, period, phase shift, vertical displacement, domain and range; fit equations in degrees and radians; solve graphical models; recognize equivalent equations."
+    },
+    "description": "作图与变换正弦型函数；识别振幅、周期、相移、竖直位移、定义域和值域；由角度或弧度图像与条件建模，并识别等价方程。",
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12, Section 5.2",
+      "kind": "pdf",
+      "printedPages": [
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255
+      ],
+      "pdfPages": [
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264
+      ]
+    },
+    "concepts": [
+      {
+        "id": "parameters",
+        "title": "参数、振幅与周期",
+        "summary": "标准式 $y=a\\sin b(x-c)+d$ 或 $y=a\\cos b(x-c)+d$。振幅 $|a|$，周期为 $2\\pi/|b|$（弧度）或 $360^\\circ/|b|$（角度）。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先将括号内提取 $b$。竖直伸缩为 $|a|$，水平伸缩为 $1/|b|$；$a<0$ 关于横轴反射，$b<0$ 关于纵轴反射。"
+          }
+        ],
+        "pitfalls": [
+          "相移是 $c$，不是展开式中直接出现的常数。",
+          "$a=0$ 或 $b=0$ 时函数为常数，不再有非零振幅的基本周期。"
+        ],
+        "en": {
+          "title": "Parameters, amplitude, and period",
+          "summary": "The standard forms are $y=a\\sin b(x-c)+d$ and $y=a\\cos b(x-c)+d$. Amplitude is $|a|$; period is $2\\pi/|b|$ in radians or $360^\\circ/|b|$ in degrees.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Factor out $b$ first. The vertical scale is $|a|$ and horizontal scale is $1/|b|$; $a<0$ reflects in the horizontal axis and $b<0$ reflects in the vertical axis."
+            }
+          ],
+          "pitfalls": [
+            "The phase shift is $c$, not the unfactored constant inside the argument.",
+            "If $a=0$ or $b=0$, the function is constant and has no fundamental period of a nonconstant wave."
+          ]
+        }
+      },
+      {
+        "id": "translations",
+        "title": "相移、中线与值域",
+        "summary": "$c>0$ 向右，$c<0$ 向左；中线为 $y=d$，值域为 $[d-|a|,d+|a|]$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "竖直位移在三角函数外加上 $d$；水平位移在自变量处以 $x-c$ 表示。正弦、余弦的定义域均为 $\\mathbb R$。"
+          }
+        ],
+        "pitfalls": [
+          "相移可相差整数个周期；题目未限定时答案不唯一。"
+        ],
+        "en": {
+          "title": "Phase shift, midline, and range",
+          "summary": "$c>0$ shifts right and $c<0$ shifts left. The midline is $y=d$ and range is $[d-|a|,d+|a|]$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Add $d$ outside the trigonometric function for vertical displacement; use $x-c$ for horizontal displacement. Sine and cosine both have domain $\\mathbb R$."
+            }
+          ],
+          "pitfalls": [
+            "Phase shifts differing by whole periods are equivalent; a representation need not be unique."
+          ]
+        }
+      },
+      {
+        "id": "sketch",
+        "title": "五个关键点作图",
+        "summary": "若 $b>0$，把一个周期分成四等份。正弦的纵坐标为 $d,d+a,d,d-a,d$，余弦为 $d+a,d,d-a,d,d+a$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "以下五点表取 $b>0$：横坐标 $c,c+T/4,c+T/2,c+3T/4,c+T$，平滑连接并按 $T$ 周期重复。若 $b<0$，先处理关于纵轴的反射（正弦可用 $\\sin(-u)=-\\sin u$ 改写）；不要直接照搬上升的正弦序列。"
+          }
+        ],
+        "pitfalls": [
+          "图中角度与弧度不能混用。"
+        ],
+        "en": {
+          "title": "Graph with five key points",
+          "summary": "For $b>0$, divide one period into four equal parts. Sine has ordinates $d,d+a,d,d-a,d$; cosine has $d+a,d,d-a,d,d+a$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "For $b>0$, use abscissas $c,c+T/4,c+T/2,c+3T/4,c+T$, connect smoothly, and repeat every $T$. If $b<0$, first account for the horizontal reflection (rewrite sine using $\\sin(-u)=-\\sin u$); do not copy the increasing sine sequence unchanged."
+            }
+          ],
+          "pitfalls": [
+            "Do not mix degrees and radians on the same horizontal axis."
+          ]
+        }
+      },
+      {
+        "id": "fit",
+        "title": "由图像或条件求方程",
+        "summary": "若最大值为 $M$、最小值为 $m$，则 $|a|=(M-m)/2$，$d=(M+m)/2$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "由相邻同类极值求 $T$，再求 $b$。正振幅正弦从中线上升处确定 $c$；正振幅余弦从最高点确定 $c$。代入原图关键点核验。"
+          }
+        ],
+        "pitfalls": [
+          "相邻最大值与最小值之间的距离是半个周期。"
+        ],
+        "en": {
+          "title": "Fit an equation from a graph or properties",
+          "summary": "For maximum $M$ and minimum $m$, $|a|=(M-m)/2$ and $d=(M+m)/2$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Find $T$ between consecutive extrema of the same type, then determine $b$. For positive amplitude, sine begins at a rising midline crossing and cosine begins at a maximum. Substitute given key points to verify."
+            }
+          ],
+          "pitfalls": [
+            "The distance from a minimum to the next maximum is half a period."
+          ]
+        }
+      },
+      {
+        "id": "models",
+        "title": "周期情境、单位与有效范围",
+        "summary": "模型中的振幅、周期、中线分别带有纵量、横量与纵量的单位。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先确定变量和单位，再由极值及周期求参数。求阈值时解不等式或找交点，并限制到题目规定的时间区间。"
+          }
+        ],
+        "pitfalls": [
+          "米与厘米要统一；每周期可用时长是若干区间长度之和。"
+        ],
+        "en": {
+          "title": "Periodic models, units, and valid ranges",
+          "summary": "A model’s amplitude, period, and midline carry vertical, horizontal, and vertical units respectively.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Define variables and units before fitting parameters. For thresholds, solve an inequality or locate intersections and restrict the result to the stated time interval."
+            }
+          ],
+          "pitfalls": [
+            "Convert centimetres to metres consistently; usable time per cycle is the sum of interval lengths."
+          ]
+        }
+      },
+      {
+        "id": "identities",
+        "title": "等价表示、奇偶性与叠加",
+        "summary": "$\\sin u=\\cos(u-\\pi/2)$，$\\sin(-u)=-\\sin u$，$\\cos(-u)=\\cos u$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "把两式化成相同的三角函数比较；反相波相加为零。两个不同频率相加通常不是单一正弦曲线。"
+          }
+        ],
+        "pitfalls": [
+          "相反的波必须相差半个自变量周期；不能把相位角 $\\pi$ 直接当成任何模型的横移量。"
+        ],
+        "en": {
+          "title": "Equivalent forms, parity, and superposition",
+          "summary": "$\\sin u=\\cos(u-\\pi/2)$, $\\sin(-u)=-\\sin u$, and $\\cos(-u)=\\cos u$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Convert expressions to the same trigonometric function to compare them. Opposite-phase waves cancel. A sum of unequal frequencies is generally not a single sinusoid."
+            }
+          ],
+          "pitfalls": [
+            "Cancellation requires half of the input period; a phase angle of $\\pi$ is not automatically a horizontal shift of $\\pi$."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "在同一坐标系内，对 $0^\\circ\\le\\theta\\le360^\\circ$ 作 $y=\\sin\\theta$、$y=\\sin\\theta+1$、$y=\\sin\\theta-2$ 的图像。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "在 $\\theta=0^\\circ,90^\\circ,180^\\circ,270^\\circ,360^\\circ$，基本正弦的纵坐标为 $0,1,0,-1,0$。"
+          },
+          {
+            "title": "推导",
+            "body": "分别加 $1$ 或减 $2$，得 $1,2,1,0,1$ 与 $-2,-1,-2,-3,-2$；各组平滑连接。"
+          }
+        ],
+        "answer": "三条曲线的中线分别为 $y=0,1,-2$，振幅均为 $1$，周期均为 $360^\\circ$。",
+        "printedPage": 238,
+        "pdfPage": 247,
+        "en": {
+          "prompt": "On the same axes, sketch $y=\\sin\\theta$, $y=\\sin\\theta+1$, and $y=\\sin\\theta-2$ for $0^\\circ\\le\\theta\\le360^\\circ$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "At $\\theta=0^\\circ,90^\\circ,180^\\circ,270^\\circ,360^\\circ$, sine has ordinates $0,1,0,-1,0$."
+            },
+            {
+              "title": "Work it out",
+              "body": "Add $1$ or subtract $2$ to get $1,2,1,0,1$ and $-2,-1,-2,-3,-2$; connect each set smoothly."
+            }
+          ],
+          "answer": "The midlines are $y=0,1,-2$; all three curves have amplitude $1$ and period $360^\\circ$.",
+          "label": "Investigate 1"
+        },
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究/配套练习 1",
+        "solutionImage": "assets/5-2-investigate1.png"
+      },
+      {
+        "prompt": "用变换语言，将 $y=\\sin\\theta+1$ 和 $y=\\sin\\theta-2$ 与 $y=\\sin\\theta$ 比较。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "外加常数只改变每一点的纵坐标：$(\\theta,y)\\mapsto(\\theta,y+d)$。"
+          }
+        ],
+        "answer": "分别上移 $1$ 单位和下移 $2$ 单位；形状与周期不变。",
+        "printedPage": 238,
+        "pdfPage": 247,
+        "en": {
+          "prompt": "Use transformations to compare $y=\\sin\\theta+1$ and $y=\\sin\\theta-2$ with $y=\\sin\\theta$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "An outside constant changes only the ordinate: $(\\theta,y)\\mapsto(\\theta,y+d)$."
+            }
+          ],
+          "answer": "Translate up $1$ unit and down $2$ units, respectively; shape and period remain unchanged.",
+          "label": "Investigate 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究/配套练习 2"
+      },
+      {
+        "prompt": "预测 $y=\\sin\\theta+3$ 和 $y=\\sin\\theta-4$ 的图像，并说明理由。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "每个基本正弦纵坐标分别加 $3$ 或减 $4$，所以振幅仍为 $1$；中线分别为 $3$ 与 $-4$。"
+          }
+        ],
+        "answer": "基本正弦分别上移 $3$、下移 $4$；值域分别为 $[2,4]$、$[-5,-3]$。",
+        "printedPage": 238,
+        "pdfPage": 247,
+        "en": {
+          "prompt": "Predict the graphs of $y=\\sin\\theta+3$ and $y=\\sin\\theta-4$. Justify your predictions.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Adding $3$ or subtracting $4$ to every sine ordinate preserves amplitude $1$ and moves the midline to $3$ or $-4$."
+            }
+          ],
+          "answer": "Translate the sine graph up $3$ and down $4$; the respective ranges are $[2,4]$ and $[-5,-3]$.",
+          "label": "Investigate 3"
+        },
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究/配套练习 3",
+        "solutionImage": "assets/5-2-investigate3.png"
+      },
+      {
+        "prompt": "(a) 在 $y=\\sin\\theta+d$ 中，$d>0$ 对图像有何影响？(b) $d<0$ 呢？",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $y_{新}-y_{原}=d>0$，每一点上移 $d$；(b) $d<0$ 时每一点下移 $|d|$。"
+          }
+        ],
+        "answer": "(a) 上移 $d$ 单位。(b) 下移 $|d|$ 单位；振幅和周期不变。",
+        "printedPage": 239,
+        "pdfPage": 248,
+        "en": {
+          "prompt": "(a) What effect does $d>0$ in $y=\\sin\\theta+d$ have on $y=\\sin\\theta$? (b) What if $d<0$?",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $y_{new}-y_{old}=d>0$, so every point moves up $d$. (b) For $d<0$, every point moves down $|d|$."
+            }
+          ],
+          "answer": "(a) Up $d$ units. (b) Down $|d|$ units; amplitude and period are unchanged.",
+          "label": "Investigate 4"
+        },
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "探究/配套练习 4",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "(a) 预测 $y=\\cos\\theta+d$ 中改变 $d$ 的作用。(b) 用图像验证。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 加 $d$ 把所有纵坐标平移 $d$，因此中线是 $y=d$，值域为 $[d-1,d+1]$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 比较 $d=0,1,-2$：在 $0^\\circ,90^\\circ,180^\\circ,270^\\circ,360^\\circ$ 的纵坐标依次为 $(1,0,-1,0,1)$、$(2,1,0,1,2)$、$(-1,-2,-3,-2,-1)$。"
+          }
+        ],
+        "answer": "余弦和正弦一样，$d>0$ 向上、$d<0$ 向下平移。",
+        "printedPage": 239,
+        "pdfPage": 248,
+        "en": {
+          "prompt": "(a) Predict the effect of varying $d$ in $y=\\cos\\theta+d$ on $y=\\cos\\theta$. (b) Verify with a graph.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) Adding $d$ translates every ordinate by $d$, so the midline is $y=d$ and the range is $[d-1,d+1]$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) For $d=0,1,-2$, the ordinates at $0^\\circ,90^\\circ,180^\\circ,270^\\circ,360^\\circ$ are $(1,0,-1,0,1)$, $(2,1,0,1,2)$, and $(-1,-2,-3,-2,-1)$."
+            }
+          ],
+          "answer": "As with sine, positive $d$ shifts up and negative $d$ shifts down.",
+          "label": "Investigate 5"
+        },
+        "id": "investigate-5",
+        "type": "practice",
+        "label": "探究/配套练习 5",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/5-2-investigate5.png"
+      },
+      {
+        "prompt": "在同一坐标系内，对 $-\\pi\\le\\theta\\le2\\pi$ 作 $y=\\cos\\theta$、$y=\\cos(\\theta+\\pi/2)$ 和 $y=\\cos(\\theta-\\pi)$。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "可先用恒等式写成 $\\cos\\theta$、$-\\sin\\theta$、$-\\cos\\theta$，在每隔 $\\pi/2$ 的点取值。"
+          },
+          {
+            "title": "推导",
+            "body": "从 $\\theta=-\\pi$ 起至 $2\\pi$，三组纵坐标分别为 $(-1,0,1,0,-1,0,1)$、$(0,1,0,-1,0,1,0)$、$(1,0,-1,0,1,0,-1)$。"
+          }
+        ],
+        "answer": "三图振幅 $1$、周期 $2\\pi$；后两图分别左移 $\\pi/2$ 和右移 $\\pi$。",
+        "printedPage": 239,
+        "pdfPage": 248,
+        "en": {
+          "prompt": "On the same axes, sketch $y=\\cos\\theta$, $y=\\cos(\\theta+\\pi/2)$, and $y=\\cos(\\theta-\\pi)$ for $-\\pi\\le\\theta\\le2\\pi$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Use the identities to write the curves as $\\cos\\theta$, $-\\sin\\theta$, and $-\\cos\\theta$, then sample every $\\pi/2$."
+            },
+            {
+              "title": "Work it out",
+              "body": "From $\\theta=-\\pi$ to $2\\pi$, the ordinate lists are $(-1,0,1,0,-1,0,1)$, $(0,1,0,-1,0,1,0)$, and $(1,0,-1,0,1,0,-1)$."
+            }
+          ],
+          "answer": "All have amplitude $1$ and period $2\\pi$; the latter two are shifted left $\\pi/2$ and right $\\pi$, respectively.",
+          "label": "Investigate 6"
+        },
+        "id": "investigate-6",
+        "type": "practice",
+        "label": "探究/配套练习 6",
+        "solutionImage": "assets/5-2-investigate6.png"
+      },
+      {
+        "prompt": "用变换语言，将 $y=\\cos(\\theta+\\pi/2)$、$y=\\cos(\\theta-\\pi)$ 与 $y=\\cos\\theta$ 比较。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "将内部写成 $\\theta-c$，两式分别有 $c=-\\pi/2$ 与 $c=\\pi$。"
+          }
+        ],
+        "answer": "分别左移 $\\pi/2$ 与右移 $\\pi$；不改变振幅、周期或中线。",
+        "printedPage": 239,
+        "pdfPage": 248,
+        "en": {
+          "prompt": "Use transformations to compare $y=\\cos(\\theta+\\pi/2)$ and $y=\\cos(\\theta-\\pi)$ with $y=\\cos\\theta$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Writing the arguments as $\\theta-c$ gives $c=-\\pi/2$ and $c=\\pi$."
+            }
+          ],
+          "answer": "Shift left $\\pi/2$ and right $\\pi$, respectively; amplitude, period, and midline are unchanged.",
+          "label": "Investigate 7"
+        },
+        "id": "investigate-7",
+        "type": "practice",
+        "label": "探究/配套练习 7"
+      },
+      {
+        "prompt": "预测 $y=\\cos(\\theta-\\pi/2)$ 与 $y=\\cos(\\theta+3\\pi/2)$ 的图像，说明理由。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "第一式将余弦右移 $\\pi/2$；第二式左移 $3\\pi/2$。两个相移相差 $2\\pi$，恰为一个周期。"
+          },
+          {
+            "title": "推导",
+            "body": "$\\cos(\\theta-\\pi/2)=\\sin\\theta$，而 $\\theta+3\\pi/2=(\\theta-\\pi/2)+2\\pi$。"
+          }
+        ],
+        "answer": "两图重合，均为 $y=\\sin\\theta$。",
+        "printedPage": 239,
+        "pdfPage": 248,
+        "en": {
+          "prompt": "Predict the graphs of $y=\\cos(\\theta-\\pi/2)$ and $y=\\cos(\\theta+3\\pi/2)$. Justify your predictions.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "The first shifts cosine right $\\pi/2$; the second shifts it left $3\\pi/2$. Their shifts differ by $2\\pi$, one whole period."
+            },
+            {
+              "title": "Work it out",
+              "body": "$\\cos(\\theta-\\pi/2)=\\sin\\theta$, and $\\theta+3\\pi/2=(\\theta-\\pi/2)+2\\pi$."
+            }
+          ],
+          "answer": "The two graphs coincide and both equal $y=\\sin\\theta$.",
+          "label": "Investigate 8"
+        },
+        "id": "investigate-8",
+        "type": "practice",
+        "label": "探究/配套练习 8",
+        "solutionImage": "assets/5-2-investigate8.png"
+      },
+      {
+        "prompt": "(a) $y=\\cos(\\theta-c)$ 中 $c>0$ 对余弦图有什么影响？(b) $c<0$ 呢？",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "要得到原来自变量为 $u$ 的同一纵坐标，令 $\\theta-c=u$，得 $\\theta=u+c$。"
+          }
+        ],
+        "answer": "(a) 右移 $c$。(b) 左移 $|c|$。",
+        "printedPage": 239,
+        "pdfPage": 248,
+        "en": {
+          "prompt": "(a) What effect does $c>0$ in $y=\\cos(\\theta-c)$ have on cosine? (b) What if $c<0$?",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "To reproduce the ordinate originally at input $u$, solve $\\theta-c=u$, giving $\\theta=u+c$."
+            }
+          ],
+          "answer": "(a) Shift right $c$. (b) Shift left $|c|$.",
+          "label": "Investigate 9"
+        },
+        "id": "investigate-9",
+        "type": "practice",
+        "label": "探究/配套练习 9",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "(a) 预测 $y=\\sin(\\theta-c)$ 中改变 $c$ 的作用。(b) 用图像验证。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 点 $(u,\\sin u)$ 变成 $(u+c,\\sin u)$；正 $c$ 向右，负 $c$ 向左。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 取 $c=\\pi/2$，$\\sin(\\theta-\\pi/2)=-\\cos\\theta$；取 $c=-\\pi/2$，$\\sin(\\theta+\\pi/2)=\\cos\\theta$，最高点分别在 $\\pi$ 与 $0$，验证平移。"
+          }
+        ],
+        "answer": "只改变水平位置，不改变振幅、周期、中线或值域。",
+        "printedPage": 239,
+        "pdfPage": 248,
+        "en": {
+          "prompt": "(a) Predict the effect of varying $c$ in $y=\\sin(\\theta-c)$ on sine. (b) Verify with a graph.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) The point $(u,\\sin u)$ becomes $(u+c,\\sin u)$; positive $c$ shifts right and negative $c$ shifts left."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) For $c=\\pi/2$, $\\sin(\\theta-\\pi/2)=-\\cos\\theta$; for $c=-\\pi/2$, $\\sin(\\theta+\\pi/2)=\\cos\\theta$. Their maxima at $\\pi$ and $0$ verify the shifts."
+            }
+          ],
+          "answer": "Only the horizontal position changes; amplitude, period, midline, and range remain unchanged.",
+          "label": "Investigate 10"
+        },
+        "id": "investigate-10",
+        "type": "practice",
+        "label": "探究/配套练习 10",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/5-2-investigate10.png"
+      },
+      {
+        "prompt": "(a) 作 $y=\\sin(x-30^\\circ)+3$ 的图。(b) 求定义域和值域。(c) 用变换语言与 $y=\\sin x$ 比较。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 一个周期从 $x=30^\\circ$ 起，关键点为 $(30^\\circ,3),(120^\\circ,4),(210^\\circ,3),(300^\\circ,2),(390^\\circ,3)$；平滑连接并重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 正弦有界于 $[-1,1]$，加 $3$ 得 $[2,4]$；自变量无额外限制。(c) $c=30^\\circ,d=3$。"
+          }
+        ],
+        "answer": "(a) 见图；(b) 定义域 $\\mathbb R$，值域 $[2,4]$；(c) 右移 $30^\\circ$、上移 $3$。",
+        "printedPage": 240,
+        "pdfPage": 249,
+        "en": {
+          "prompt": "(a) Sketch $y=\\sin(x-30^\\circ)+3$. (b) State its domain and range. (c) Compare it with $y=\\sin x$ using transformations.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) One cycle starts at $x=30^\\circ$, with key points $(30^\\circ,3),(120^\\circ,4),(210^\\circ,3),(300^\\circ,2),(390^\\circ,3)$; connect and repeat."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) Sine ranges over $[-1,1]$; adding $3$ gives $[2,4]$, with no restriction on the input. (c) $c=30^\\circ,d=3$."
+            }
+          ],
+          "answer": "(a) See graph. (b) Domain $\\mathbb R$, range $[2,4]$. (c) Right $30^\\circ$ and up $3$.",
+          "label": "Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/5-2-example1.png"
+      },
+      {
+        "prompt": "(a) 作 $y=\\cos(x+45^\\circ)-2$ 的图。(b) 求定义域和值域。(c) 与 $y=\\cos x$ 比较变换。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $c=-45^\\circ,d=-2$；关键点 $(-45^\\circ,-1),(45^\\circ,-2),(135^\\circ,-3),(225^\\circ,-2),(315^\\circ,-1)$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 将 $[-1,1]$ 减 $2$ 得 $[-3,-1]$。(c) 横坐标减 $45^\\circ$，纵坐标减 $2$。"
+          }
+        ],
+        "answer": "定义域 $\\mathbb R$，值域 $[-3,-1]$；左移 $45^\\circ$、下移 $2$，周期 $360^\\circ$。",
+        "printedPage": 240,
+        "pdfPage": 249,
+        "en": {
+          "prompt": "(a) Sketch $y=\\cos(x+45^\\circ)-2$. (b) State the domain and range. (c) Compare with $y=\\cos x$ using transformations.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $c=-45^\\circ,d=-2$; key points are $(-45^\\circ,-1),(45^\\circ,-2),(135^\\circ,-3),(225^\\circ,-2),(315^\\circ,-1)$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) Subtracting $2$ from $[-1,1]$ gives $[-3,-1]$. (c) Each abscissa decreases by $45^\\circ$ and each ordinate by $2$."
+            }
+          ],
+          "answer": "Domain $\\mathbb R$, range $[-3,-1]$; shift left $45^\\circ$ and down $2$, with period $360^\\circ$.",
+          "label": "Your Turn 1"
+        },
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "探究/配套练习 1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/5-2-yourturn1.png"
+      },
+      {
+        "prompt": "(a) 在两个周期上作 $y=-2\\cos(\\theta+\\pi)-1$。(b) 与 $y=\\cos\\theta$ 比较，说明各参数对应的变换。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $a=-2,b=1,c=-\\pi,d=-1$，周期 $2\\pi$。在 $0\\le\\theta\\le4\\pi$，关键点的纵坐标是 $1,-1,-3,-1,1,-1,-3,-1,1$，横坐标每次增加 $\\pi/2$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $a=-2$ 先关于横轴反射并竖直拉伸 $2$ 倍；$c=-\\pi$ 左移 $\\pi$；$d=-1$ 下移 $1$，中线 $y=-1$。"
+          }
+        ],
+        "answer": "振幅 $2$，周期 $2\\pi$，值域 $[-3,1]$；两周期图见图。",
+        "printedPage": 240,
+        "pdfPage": 249,
+        "en": {
+          "prompt": "(a) Sketch $y=-2\\cos(\\theta+\\pi)-1$ over two cycles. (b) Compare with $y=\\cos\\theta$, identifying the parameter for each transformation.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $a=-2,b=1,c=-\\pi,d=-1$, so the period is $2\\pi$. On $0\\le\\theta\\le4\\pi$, successive ordinates are $1,-1,-3,-1,1,-1,-3,-1,1$, spaced by $\\pi/2$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $a=-2$ reflects in the horizontal axis and stretches vertically by $2$; $c=-\\pi$ shifts left $\\pi$; $d=-1$ shifts down $1$, giving midline $y=-1$."
+            }
+          ],
+          "answer": "Amplitude $2$, period $2\\pi$, range $[-3,1]$; see the two-cycle graph.",
+          "label": "Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/5-2-example2.png"
+      },
+      {
+        "prompt": "(a) 在两个周期上作 $y=2\\sin(\\theta-\\pi/2)+2$。(b) 与 $y=\\sin\\theta$ 比较。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $a=2,c=\\pi/2,d=2,T=2\\pi$；从 $\\theta=\\pi/2$ 起每隔 $\\pi/2$，纵坐标为 $2,4,2,0,2,4,2,0,2$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 竖直拉伸 $2$ 倍，右移 $\\pi/2$，上移 $2$；中线 $y=2$，值域 $[0,4]$。"
+          }
+        ],
+        "answer": "振幅 $2$，周期 $2\\pi$；变换与关键点如上。",
+        "printedPage": 241,
+        "pdfPage": 250,
+        "en": {
+          "prompt": "(a) Sketch $y=2\\sin(\\theta-\\pi/2)+2$ over two cycles. (b) Compare with $y=\\sin\\theta$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $a=2,c=\\pi/2,d=2,T=2\\pi$; starting at $\\theta=\\pi/2$ and stepping by $\\pi/2$, the ordinates are $2,4,2,0,2,4,2,0,2$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) Stretch vertically by $2$, shift right $\\pi/2$, and up $2$. The midline is $y=2$ and range is $[0,4]$."
+            }
+          ],
+          "answer": "Amplitude $2$ and period $2\\pi$; transformations and key points are as above.",
+          "label": "Your Turn 2"
+        },
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "探究/配套练习 2",
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/5-2-yourturn2.png"
+      },
+      {
+        "prompt": "在两个周期上作 $y=3\\sin(2x-2\\pi/3)+2$。求竖直位移、振幅、周期、相移、定义域和值域。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "先提取 $2$：$y=3\\sin2(x-\\pi/3)+2$，所以 $a=3,b=2,c=\\pi/3,d=2$。"
+          },
+          {
+            "title": "推导",
+            "body": "$T=2\\pi/2=\\pi$。一周期五点为 $(\\pi/3,2),(7\\pi/12,5),(5\\pi/6,2),(13\\pi/12,-1),(4\\pi/3,2)$；再将各横坐标加 $\\pi$ 画第二周期。"
+          },
+          {
+            "title": "推导",
+            "body": "基本正弦水平缩为 $1/2$、竖直拉伸 $3$，再右移 $\\pi/3$、上移 $2$。$2-3=-1$、$2+3=5$。"
+          }
+        ],
+        "answer": "上移 $2$；振幅 $3$；周期 $\\pi$；右移 $\\pi/3$；定义域 $\\mathbb R$；值域 $[-1,5]$。",
+        "printedPage": 241,
+        "pdfPage": 250,
+        "en": {
+          "prompt": "Sketch $y=3\\sin(2x-2\\pi/3)+2$ over two cycles. State its vertical displacement, amplitude, period, phase shift, domain, and range.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Factor $2$: $y=3\\sin2(x-\\pi/3)+2$, so $a=3,b=2,c=\\pi/3,d=2$."
+            },
+            {
+              "title": "Work it out",
+              "body": "$T=2\\pi/2=\\pi$. Five points are $(\\pi/3,2),(7\\pi/12,5),(5\\pi/6,2),(13\\pi/12,-1),(4\\pi/3,2)$. Add $\\pi$ to their abscissas for a second cycle."
+            },
+            {
+              "title": "Work it out",
+              "body": "Compress sine horizontally by $1/2$, stretch vertically by $3$, shift right $\\pi/3$, and up $2$. The extrema are $2-3=-1$ and $2+3=5$."
+            }
+          ],
+          "answer": "Vertical displacement $2$ up; amplitude $3$; period $\\pi$; phase shift $\\pi/3$ right; domain $\\mathbb R$; range $[-1,5]$.",
+          "label": "Example 3"
+        },
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3",
+        "solutionImage": "assets/5-2-example3.png"
+      },
+      {
+        "prompt": "在两个周期上作 $y=2\\cos4(x+\\pi)-1$。求竖直位移、振幅、周期、相移、定义域和值域。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "$a=2,b=4,c=-\\pi,d=-1$，所以 $T=2\\pi/4=\\pi/2$；每个四分之一周期为 $\\pi/8$。"
+          },
+          {
+            "title": "推导",
+            "body": "从 $x=-\\pi$ 起每隔 $\\pi/8$，纵坐标为 $1,-1,-3,-1,1,-1,-3,-1,1$，画至 $x=0$，正好两个周期。"
+          }
+        ],
+        "answer": "下移 $1$；振幅 $2$；周期 $\\pi/2$；左移 $\\pi$（相当于四个周期）；定义域 $\\mathbb R$；值域 $[-3,1]$。",
+        "printedPage": 244,
+        "pdfPage": 253,
+        "en": {
+          "prompt": "Sketch $y=2\\cos4(x+\\pi)-1$ over two cycles. State the vertical displacement, amplitude, period, phase shift, domain, and range.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "$a=2,b=4,c=-\\pi,d=-1$, hence $T=2\\pi/4=\\pi/2$ and the quarter-period is $\\pi/8$."
+            },
+            {
+              "title": "Work it out",
+              "body": "Start at $x=-\\pi$, step by $\\pi/8$, and use ordinates $1,-1,-3,-1,1,-1,-3,-1,1$ through $x=0$, exactly two cycles."
+            }
+          ],
+          "answer": "Vertical displacement $1$ down; amplitude $2$; period $\\pi/2$; phase shift $\\pi$ left (four whole periods); domain $\\mathbb R$; range $[-3,1]$.",
+          "label": "Your Turn 3"
+        },
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "探究/配套练习 3",
+        "solutionImage": "assets/5-2-yourturn3.png"
+      },
+      {
+        "prompt": "原图为 $y=f(x)$。(a) 写成 $y=a\\sin b(x-c)+d$，$a>0$。(b) 写成 $y=a\\cos b(x-c)+d$，$a>0$。(c) 用技术核验。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "最大值 $4$、最小值 $0$，故 $a=(4-0)/2=2$，$d=(4+0)/2=2$。相邻最低点 $0,2\\pi/3$ 给 $T=2\\pi/3$，所以 $b=3$。"
+          },
+          {
+            "title": "推导",
+            "body": "(a) 中线上升点在 $x=\\pi/6$，得 $y=2\\sin3(x-\\pi/6)+2$。(b) 最高点在 $x=\\pi/3$，得 $y=2\\cos3(x-\\pi/3)+2$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 两式都等于 $-2\\cos3x+2$；在 $x=0,\\pi/6,\\pi/3,\\pi/2,2\\pi/3$ 均给出 $0,2,4,2,0$，与原图一致。"
+          }
+        ],
+        "answer": "(a) $y=2\\sin3(x-\\pi/6)+2$；(b) $y=2\\cos3(x-\\pi/3)+2$；(c) 两式图像重合。",
+        "printedPage": 244,
+        "pdfPage": 253,
+        "en": {
+          "prompt": "The given graph shows $y=f(x)$. (a) Write an equation $y=a\\sin b(x-c)+d$, $a>0$. (b) Write an equation $y=a\\cos b(x-c)+d$, $a>0$. (c) Use technology to verify.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Maximum $4$ and minimum $0$ give $a=(4-0)/2=2$ and $d=(4+0)/2=2$. Consecutive minima at $0,2\\pi/3$ give $T=2\\pi/3$ and $b=3$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(a) The rising midline crossing is $x=\\pi/6$, giving $y=2\\sin3(x-\\pi/6)+2$. (b) A maximum at $x=\\pi/3$ gives $y=2\\cos3(x-\\pi/3)+2$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) Both expressions simplify to $-2\\cos3x+2$. At $x=0,\\pi/6,\\pi/3,\\pi/2,2\\pi/3$, both give $0,2,4,2,0$, matching the original."
+            }
+          ],
+          "answer": "(a) $y=2\\sin3(x-\\pi/6)+2$. (b) $y=2\\cos3(x-\\pi/3)+2$. (c) The graphs coincide.",
+          "label": "Example 4"
+        },
+        "id": "example-4",
+        "type": "example",
+        "label": "例题 4",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/5-2-example4.png",
+        "solutionImage": "assets/5-2-example4-check.png"
+      },
+      {
+        "prompt": "原图为 $y=f(x)$。(a) 写出正振幅正弦式。(b) 写出正振幅余弦式。(c) 用技术核验。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "图上 $M=1,m=-3$，故 $a=2,d=-1$。相邻最低点为 $\\pi/6,5\\pi/6$，周期 $2\\pi/3$，故 $b=3$。"
+          },
+          {
+            "title": "推导",
+            "body": "(a) $x=\\pi/3$ 是中线上升点，得 $y=2\\sin3(x-\\pi/3)-1$。(b) $x=\\pi/2$ 是最高点，得 $y=2\\cos3(x-\\pi/2)-1$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 两式均化为 $-2\\sin3x-1$；在 $0,\\pi/6,\\pi/3,\\pi/2,2\\pi/3$ 的纵坐标均为 $-1,-3,-1,1,-1$。"
+          }
+        ],
+        "answer": "正弦式 $2\\sin3(x-\\pi/3)-1$；余弦式 $2\\cos3(x-\\pi/2)-1$；图像一致。",
+        "printedPage": 246,
+        "pdfPage": 255,
+        "en": {
+          "prompt": "The given graph shows $y=f(x)$. (a) Write $y=a\\sin b(x-c)+d$, $a>0$. (b) Write $y=a\\cos b(x-c)+d$, $a>0$. (c) Use technology to verify.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "The graph has $M=1,m=-3$, giving $a=2,d=-1$. Consecutive minima at $\\pi/6,5\\pi/6$ give period $2\\pi/3$, hence $b=3$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(a) The rising midline crossing is $x=\\pi/3$, so $y=2\\sin3(x-\\pi/3)-1$. (b) The maximum at $x=\\pi/2$ gives $y=2\\cos3(x-\\pi/2)-1$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) Both simplify to $-2\\sin3x-1$. At $0,\\pi/6,\\pi/3,\\pi/2,2\\pi/3$, both give $-1,-3,-1,1,-1$."
+            }
+          ],
+          "answer": "Sine form $2\\sin3(x-\\pi/3)-1$; cosine form $2\\cos3(x-\\pi/2)-1$; both match the graph.",
+          "label": "Your Turn 4"
+        },
+        "id": "your-turn-4",
+        "type": "practice",
+        "label": "探究/配套练习 4",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/5-2-yourturn4.png",
+        "solutionImage": "assets/5-2-yourturn4-check.png"
+      },
+      {
+        "prompt": "鲁珀特王子港是北美最深的天然港。泊位水深 $d$（米）近似为 $d(t)=8\\cos(\\pi t/6)+12$，$t$ 为第一次高潮后小时数。(a) 作两个周期的图。(b) 求潮汐周期。(c) 邮轮停靠至少需 $13$ 米水深，每周期可安全停靠几小时？(d) 若最低水深在 $6$ 小时，求该深度及其余最低水深的时间，说明理由。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a,b) 振幅 $8$ 米，中线 $12$ 米，$T=2\\pi/(\\pi/6)=12$ 小时；$t=0,3,6,9,12,15,18,21,24$ 时深度为 $20,12,4,12,20,12,4,12,20$ 米。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $8\\cos(\\pi t/6)+12\\ge13$ 给 $\\cos(\\pi t/6)\\ge1/8$。首个交点 $\\alpha=(6/\\pi)\\arccos(1/8)\\approx2.761$；一个周期内可用 $[0,\\alpha]\\cup[12-\\alpha,12]$，总时长 $2\\alpha\\approx5.52$ 小时。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) $d(6)=8\\cos\\pi+12=4$ 米；每 $12$ 小时重复，故最低时刻 $t=6+12n$，$n=0,1,2,\\ldots$。"
+          }
+        ],
+        "answer": "(a) 见图；(b) $12$ 小时；(c) 约 $5.52$ 小时/周期；(d) $4$ 米，在 $6,18,30,\\ldots$ 小时。",
+        "printedPage": 247,
+        "pdfPage": 256,
+        "en": {
+          "prompt": "Prince Rupert, British Columbia, has North America’s deepest natural harbour. Berth depth $d$ in metres is approximated by $d(t)=8\\cos(\\pi t/6)+12$, where $t$ is hours after the first high tide. (a) Graph two cycles. (b) Find the period. (c) An ocean liner needs at least $13$ m to dock safely; determine the safe hours per cycle from the graph. (d) If minimum depth occurs at $6$ h, find that depth and other times at which the water is at a minimum. Explain.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a,b) Amplitude $8$ m, midline $12$ m, and $T=2\\pi/(\\pi/6)=12$ h. At $t=0,3,6,9,12,15,18,21,24$, depths are $20,12,4,12,20,12,4,12,20$ m."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) $8\\cos(\\pi t/6)+12\\ge13$ gives $\\cos(\\pi t/6)\\ge1/8$. The first intersection is $\\alpha=(6/\\pi)\\arccos(1/8)\\approx2.761$. In one cycle the safe times are $[0,\\alpha]\\cup[12-\\alpha,12]$, totaling $2\\alpha\\approx5.52$ h."
+            },
+            {
+              "title": "Work it out",
+              "body": "(d) $d(6)=8\\cos\\pi+12=4$ m. The cycle repeats every $12$ h, so minima occur at $t=6+12n$, $n=0,1,2,\\ldots$."
+            }
+          ],
+          "answer": "(a) See graph. (b) $12$ h. (c) About $5.52$ h per cycle. (d) $4$ m at $6,18,30,\\ldots$ h.",
+          "label": "Example 5"
+        },
+        "id": "example-5",
+        "type": "example",
+        "label": "例题 5",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-2-example5.png"
+      },
+      {
+        "prompt": "新威斯敏斯特港水深 $d$（米）近似为 $d(t)=0.6\\cos(2\\pi t/13)+3.7$，$t$ 是第一次高潮后小时数。(a) 从 $t=0$ 起作两个周期图。(b) 求周期。(c) 船至少需 $3.5$ 米水深才可下水，每周期可安全下水几小时？(d) 求 $7$ 小时水深；还有何时达到同一水深？说明理由。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a,b) $T=2\\pi/(2\\pi/13)=13$ 小时；在 $t=0,3.25,6.5,9.75,13$，深度是 $4.3,3.7,3.1,3.7,4.3$，再平移 $13$ 小时画第二周期。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $d\\ge3.5$ 等价于 $\\cos(2\\pi t/13)\\ge-1/3$。令 $\\alpha=13\\arccos(-1/3)/(2\\pi)\\approx3.953$，可用时间为 $[0,\\alpha]\\cup[13-\\alpha,13]$，总长 $2\\alpha\\approx7.91$ 小时。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) $d(7)=3.7+0.6\\cos(14\\pi/13)\\approx3.1174$ 米。余弦关于最低点 $t=6.5$ 对称，因此 $t=6$ 也相同；再每 $13$ 小时重复。"
+          }
+        ],
+        "answer": "(b) $13$ 小时；(c) 约 $7.91$ 小时/周期；(d) 约 $3.12$ 米，在 $t=6+13n$ 或 $7+13n$，$n=0,1,2,\\ldots$。",
+        "printedPage": 248,
+        "pdfPage": 257,
+        "en": {
+          "prompt": "The water depth $d$ in metres at New Westminster, British Columbia, is approximated by $d(t)=0.6\\cos(2\\pi t/13)+3.7$, where $t$ is hours after the first high tide. (a) Graph two cycles from $t=0$. (b) Find the period. (c) A boat needs at least $3.5$ m to launch safely. For how many hours per cycle is this possible? (d) Find the depth at $7$ h. At what other times is it at this depth? Explain.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a,b) $T=2\\pi/(2\\pi/13)=13$ h. At $t=0,3.25,6.5,9.75,13$, depths are $4.3,3.7,3.1,3.7,4.3$; repeat $13$ h later."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) $d\\ge3.5$ is equivalent to $\\cos(2\\pi t/13)\\ge-1/3$. Let $\\alpha=13\\arccos(-1/3)/(2\\pi)\\approx3.953$. The safe intervals are $[0,\\alpha]\\cup[13-\\alpha,13]$, totaling $2\\alpha\\approx7.91$ h."
+            },
+            {
+              "title": "Work it out",
+              "body": "(d) $d(7)=3.7+0.6\\cos(14\\pi/13)\\approx3.1174$ m. Cosine is symmetric about the minimum at $t=6.5$, so $t=6$ has the same depth; both repeat every $13$ h."
+            }
+          ],
+          "answer": "(b) $13$ h. (c) About $7.91$ h per cycle. (d) About $3.12$ m, at $t=6+13n$ or $7+13n$, $n=0,1,2,\\ldots$.",
+          "label": "Your Turn 5"
+        },
+        "id": "your-turn-5",
+        "type": "practice",
+        "label": "探究/配套练习 5",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-2-yourturn5.png"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "相对于 $y=\\sin x$，确定各函数的相移和竖直位移，并分别作图。 (a) $y=\\sin(x-50^\\circ)+3$；(b) $y=\\sin(x+\\pi)$；(c) $y=\\sin(x+2\\pi/3)+5$；(d) $y=2\\sin(x+50^\\circ)-10$；(e) $y=-3\\sin(6x+30^\\circ)-3$；(f) $y=3\\sin\\frac12(x-\\pi/4)-10$。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $a=1,b=1,c=50^\\circ,d=3,T=360^\\circ$。右移 $50^\\circ$，上移 $3$。用 $x=50^\\circ,140^\\circ,230^\\circ,320^\\circ,410^\\circ$，对应 $y=3,4,3,2,3$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $a=1,b=1,c=-\\pi,d=0,T=2\\pi$。左移 $\\pi$，竖直位移 $0$。用 $x=-\\pi,-\\pi/2,0,\\pi/2,\\pi$，对应 $y=0,1,0,-1,0$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $a=1,b=1,c=-2\\pi/3,d=5,T=2\\pi$。左移 $2\\pi/3$，上移 $5$。用 $x=-2\\pi/3,-\\pi/6,\\pi/3,5\\pi/6,4\\pi/3$，对应 $y=5,6,5,4,5$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) $a=2,b=1,c=-50^\\circ,d=-10,T=360^\\circ$。左移 $50^\\circ$，下移 $10$。用 $x=-50^\\circ,40^\\circ,130^\\circ,220^\\circ,310^\\circ$，对应 $y=-10,-8,-10,-12,-10$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(e) $6x+30^\\circ=6(x+5^\\circ)$；$a=-3,b=6,c=-5^\\circ,d=-3,T=60^\\circ$。左移 $5^\\circ$，下移 $3$。用 $x=-5^\\circ,10^\\circ,25^\\circ,40^\\circ,55^\\circ$，对应 $y=-3,-6,-3,0,-3$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(f) $a=3,b=1/2,c=\\pi/4,d=-10,T=4\\pi$。右移 $\\pi/4$，下移 $10$。用 $x=\\pi/4,5\\pi/4,9\\pi/4,13\\pi/4,17\\pi/4$，对应 $y=-10,-7,-10,-13,-10$；平滑连接并按周期重复。"
+          }
+        ],
+        "answer": "(a) 右移 $50^\\circ$，上移 $3$；(b) 左移 $\\pi$，竖直位移 $0$；(c) 左移 $2\\pi/3$，上移 $5$；(d) 左移 $50^\\circ$，下移 $10$；(e) 左移 $5^\\circ$，下移 $3$；(f) 右移 $\\pi/4$，下移 $10$。",
+        "printedPage": 250,
+        "pdfPage": 259,
+        "en": {
+          "prompt": "Determine the phase shift and vertical displacement with respect to $y=\\sin x$ and sketch each function. (a) $y=\\sin(x-50^\\circ)+3$; (b) $y=\\sin(x+\\pi)$; (c) $y=\\sin(x+2\\pi/3)+5$; (d) $y=2\\sin(x+50^\\circ)-10$; (e) $y=-3\\sin(6x+30^\\circ)-3$; (f) $y=3\\sin\\frac12(x-\\pi/4)-10$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $a=1,b=1,c=50^\\circ,d=3,T=360^\\circ$. right $50^\\circ$, up $3$. Plot $x=50^\\circ,140^\\circ,230^\\circ,320^\\circ,410^\\circ$ with $y=3,4,3,2,3$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $a=1,b=1,c=-\\pi,d=0,T=2\\pi$. left $\\pi$, vertical displacement $0$. Plot $x=-\\pi,-\\pi/2,0,\\pi/2,\\pi$ with $y=0,1,0,-1,0$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) $a=1,b=1,c=-2\\pi/3,d=5,T=2\\pi$. left $2\\pi/3$, up $5$. Plot $x=-2\\pi/3,-\\pi/6,\\pi/3,5\\pi/6,4\\pi/3$ with $y=5,6,5,4,5$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(d) $a=2,b=1,c=-50^\\circ,d=-10,T=360^\\circ$. left $50^\\circ$, down $10$. Plot $x=-50^\\circ,40^\\circ,130^\\circ,220^\\circ,310^\\circ$ with $y=-10,-8,-10,-12,-10$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(e) $6x+30^\\circ=6(x+5^\\circ)$; $a=-3,b=6,c=-5^\\circ,d=-3,T=60^\\circ$. left $5^\\circ$, down $3$. Plot $x=-5^\\circ,10^\\circ,25^\\circ,40^\\circ,55^\\circ$ with $y=-3,-6,-3,0,-3$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(f) $a=3,b=1/2,c=\\pi/4,d=-10,T=4\\pi$. right $\\pi/4$, down $10$. Plot $x=\\pi/4,5\\pi/4,9\\pi/4,13\\pi/4,17\\pi/4$ with $y=-10,-7,-10,-13,-10$; connect smoothly and repeat periodically."
+            }
+          ],
+          "answer": "(a) right $50^\\circ$, up $3$; (b) left $\\pi$, vertical displacement $0$; (c) left $2\\pi/3$, up $5$; (d) left $50^\\circ$, down $10$; (e) left $5^\\circ$, down $3$; (f) right $\\pi/4$, down $10$."
+        },
+        "number": 1,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "solutionImage": "assets/5-2-exercise1.png"
+      },
+      {
+        "prompt": "相对于 $y=\\cos x$，确定各函数的相移和竖直位移，并分别作图。 (a) $y=\\cos(x-30^\\circ)+12$；(b) $y=\\cos(x-\\pi/3)$；(c) $y=\\cos(x+5\\pi/6)+16$；(d) $y=4\\cos(x+15^\\circ)+3$；(e) $y=4\\cos(x-\\pi)+4$；(f) $y=3\\cos(2x-\\pi/6)+7$。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $a=1,b=1,c=30^\\circ,d=12,T=360^\\circ$。右移 $30^\\circ$，上移 $12$。用 $x=30^\\circ,120^\\circ,210^\\circ,300^\\circ,390^\\circ$，对应 $y=13,12,11,12,13$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $a=1,b=1,c=\\pi/3,d=0,T=2\\pi$。右移 $\\pi/3$，竖直位移 $0$。用 $x=\\pi/3,5\\pi/6,4\\pi/3,11\\pi/6,7\\pi/3$，对应 $y=1,0,-1,0,1$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $a=1,b=1,c=-5\\pi/6,d=16,T=2\\pi$。左移 $5\\pi/6$，上移 $16$。用 $x=-5\\pi/6,-\\pi/3,\\pi/6,2\\pi/3,7\\pi/6$，对应 $y=17,16,15,16,17$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) $a=4,b=1,c=-15^\\circ,d=3,T=360^\\circ$。左移 $15^\\circ$，上移 $3$。用 $x=-15^\\circ,75^\\circ,165^\\circ,255^\\circ,345^\\circ$，对应 $y=7,3,-1,3,7$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(e) $a=4,b=1,c=\\pi,d=4,T=2\\pi$。右移 $\\pi$，上移 $4$。用 $x=\\pi,3\\pi/2,2\\pi,5\\pi/2,3\\pi$，对应 $y=8,4,0,4,8$；平滑连接并按周期重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(f) $2x-\\pi/6=2(x-\\pi/12)$；$a=3,b=2,c=\\pi/12,d=7,T=\\pi$。右移 $\\pi/12$，上移 $7$。用 $x=\\pi/12,\\pi/3,7\\pi/12,5\\pi/6,13\\pi/12$，对应 $y=10,7,4,7,10$；平滑连接并按周期重复。"
+          }
+        ],
+        "answer": "(a) 右移 $30^\\circ$，上移 $12$；(b) 右移 $\\pi/3$，竖直位移 $0$；(c) 左移 $5\\pi/6$，上移 $16$；(d) 左移 $15^\\circ$，上移 $3$；(e) 右移 $\\pi$，上移 $4$；(f) 右移 $\\pi/12$，上移 $7$。",
+        "printedPage": 250,
+        "pdfPage": 259,
+        "en": {
+          "prompt": "Determine the phase shift and vertical displacement with respect to $y=\\cos x$ and sketch each function. (a) $y=\\cos(x-30^\\circ)+12$; (b) $y=\\cos(x-\\pi/3)$; (c) $y=\\cos(x+5\\pi/6)+16$; (d) $y=4\\cos(x+15^\\circ)+3$; (e) $y=4\\cos(x-\\pi)+4$; (f) $y=3\\cos(2x-\\pi/6)+7$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $a=1,b=1,c=30^\\circ,d=12,T=360^\\circ$. right $30^\\circ$, up $12$. Plot $x=30^\\circ,120^\\circ,210^\\circ,300^\\circ,390^\\circ$ with $y=13,12,11,12,13$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $a=1,b=1,c=\\pi/3,d=0,T=2\\pi$. right $\\pi/3$, vertical displacement $0$. Plot $x=\\pi/3,5\\pi/6,4\\pi/3,11\\pi/6,7\\pi/3$ with $y=1,0,-1,0,1$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) $a=1,b=1,c=-5\\pi/6,d=16,T=2\\pi$. left $5\\pi/6$, up $16$. Plot $x=-5\\pi/6,-\\pi/3,\\pi/6,2\\pi/3,7\\pi/6$ with $y=17,16,15,16,17$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(d) $a=4,b=1,c=-15^\\circ,d=3,T=360^\\circ$. left $15^\\circ$, up $3$. Plot $x=-15^\\circ,75^\\circ,165^\\circ,255^\\circ,345^\\circ$ with $y=7,3,-1,3,7$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(e) $a=4,b=1,c=\\pi,d=4,T=2\\pi$. right $\\pi$, up $4$. Plot $x=\\pi,3\\pi/2,2\\pi,5\\pi/2,3\\pi$ with $y=8,4,0,4,8$; connect smoothly and repeat periodically."
+            },
+            {
+              "title": "Work it out",
+              "body": "(f) $2x-\\pi/6=2(x-\\pi/12)$; $a=3,b=2,c=\\pi/12,d=7,T=\\pi$. right $\\pi/12$, up $7$. Plot $x=\\pi/12,\\pi/3,7\\pi/12,5\\pi/6,13\\pi/12$ with $y=10,7,4,7,10$; connect smoothly and repeat periodically."
+            }
+          ],
+          "answer": "(a) right $30^\\circ$, up $12$; (b) right $\\pi/3$, vertical displacement $0$; (c) left $5\\pi/6$, up $16$; (d) left $15^\\circ$, up $3$; (e) right $\\pi$, up $4$; (f) right $\\pi/12$, up $7$."
+        },
+        "number": 2,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "solutionImage": "assets/5-2-exercise2.png"
+      },
+      {
+        "prompt": "(a) 求值域：(i) $y=3\\cos(x-\\pi/2)+5$；(ii) $y=-2\\sin(x+\\pi)-3$；(iii) $y=1.5\\sin x+4$；(iv) $y=\\frac23\\cos(x+50^\\circ)+\\frac34$。(b) 描述如何求 $y=a\\cos b(x-c)+d$ 或 $y=a\\sin b(x-c)+d$ 的值域。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a.i) $5\\pm3$ 给 $[2,8]$。(a.ii) $-3\\pm2$ 给 $[-5,-1]$。负振幅只反射，不改变幅度。"
+          },
+          {
+            "title": "推导",
+            "body": "(a.iii) $4\\pm1.5$ 给 $[2.5,5.5]$。(a.iv) $3/4\\pm2/3=(9\\pm8)/12$ 给 $[1/12,17/12]$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 三角部分取遍 $[-1,1]$，乘 $a$ 后为 $[-|a|,|a|]$，再加 $d$。"
+          }
+        ],
+        "answer": "(a) $[2,8],[-5,-1],[2.5,5.5],[1/12,17/12]$；(b) $[d-|a|,d+|a|]$（非退化正弦/余弦）。",
+        "printedPage": 250,
+        "pdfPage": 259,
+        "en": {
+          "prompt": "(a) Determine each range: (i) $y=3\\cos(x-\\pi/2)+5$; (ii) $y=-2\\sin(x+\\pi)-3$; (iii) $y=1.5\\sin x+4$; (iv) $y=\\frac23\\cos(x+50^\\circ)+\\frac34$. (b) Explain how to find the range of $y=a\\cos b(x-c)+d$ or $y=a\\sin b(x-c)+d$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a.i) $5\\pm3$ gives $[2,8]$. (a.ii) $-3\\pm2$ gives $[-5,-1]$; a negative amplitude coefficient reflects the wave without changing its size."
+            },
+            {
+              "title": "Work it out",
+              "body": "(a.iii) $4\\pm1.5$ gives $[2.5,5.5]$. (a.iv) $3/4\\pm2/3=(9\\pm8)/12$ gives $[1/12,17/12]$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) The trigonometric part covers $[-1,1]$; multiplying by $a$ gives $[-|a|,|a|]$, then add $d$."
+            }
+          ],
+          "answer": "(a) $[2,8],[-5,-1],[2.5,5.5],[1/12,17/12]$. (b) $[d-|a|,d+|a|]$ for a nonconstant sine/cosine wave."
+        },
+        "number": 3,
+        "subpartIds": [
+          "ai",
+          "aii",
+          "aiii",
+          "aiv",
+          "b"
+        ]
+      },
+      {
+        "prompt": "将各函数与原表 A–E 中的描述配对：(a) $y=-2\\cos2(x+4)-1$；(b) $y=2\\sin2(x-4)-1$；(c) $y=2\\sin(2x-4)-1$；(d) $y=3\\sin(3x-9)-1$；(e) $y=3\\sin(3x+\\pi)-1$。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 振幅 $2$，$T=\\pi$，左移 $4$，下移 $1$，故 D。(b) 振幅 $2$，$T=\\pi$，右移 $4$，下移 $1$，故 C。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $2x-4=2(x-2)$，相移右 $2$，故 B。(d) $3x-9=3(x-3)$，振幅 $3$，$T=2\\pi/3$，右移 $3$，故 A。(e) $3x+\\pi=3(x+\\pi/3)$，左移 $\\pi/3$，故 E。"
+          }
+        ],
+        "answer": "(a) D；(b) C；(c) B；(d) A；(e) E。",
+        "printedPage": 250,
+        "pdfPage": 259,
+        "en": {
+          "prompt": "Match each function with its description A–E in the original table: (a) $y=-2\\cos2(x+4)-1$; (b) $y=2\\sin2(x-4)-1$; (c) $y=2\\sin(2x-4)-1$; (d) $y=3\\sin(3x-9)-1$; (e) $y=3\\sin(3x+\\pi)-1$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) Amplitude $2$, $T=\\pi$, left $4$, down $1$: D. (b) Amplitude $2$, $T=\\pi$, right $4$, down $1$: C."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) $2x-4=2(x-2)$ gives right $2$: B. (d) $3x-9=3(x-3)$ gives amplitude $3$, $T=2\\pi/3$, right $3$: A. (e) $3x+\\pi=3(x+\\pi/3)$ gives left $\\pi/3$: E."
+            }
+          ],
+          "answer": "(a) D; (b) C; (c) B; (d) A; (e) E."
+        },
+        "number": 4,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "sourceImage": "assets/5-2-exercise4.png"
+      },
+      {
+        "prompt": "将函数与原图 A–D 配对：(a) $y=\\sin(x-\\pi/4)$；(b) $y=\\sin(x+\\pi/4)$；(c) $y=\\sin x-1$；(d) $y=\\sin x+1$。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 中线 $0$，上升零点右移到 $\\pi/4$，对应 D。(b) 中线 $0$，上升零点左移到 $-\\pi/4$，对应 B。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 值域 $[-2,0]$，中线 $-1$，对应 C。(d) 值域 $[0,2]$，中线 $1$，对应 A。"
+          }
+        ],
+        "answer": "(a) D；(b) B；(c) C；(d) A。",
+        "printedPage": 250,
+        "pdfPage": 259,
+        "en": {
+          "prompt": "Match each function with graph A–D: (a) $y=\\sin(x-\\pi/4)$; (b) $y=\\sin(x+\\pi/4)$; (c) $y=\\sin x-1$; (d) $y=\\sin x+1$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) Midline $0$ and rising zero at $\\pi/4$ identify D. (b) Midline $0$ and rising zero at $-\\pi/4$ identify B."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) Range $[-2,0]$ and midline $-1$ identify C. (d) Range $[0,2]$ and midline $1$ identify A."
+            }
+          ],
+          "answer": "(a) D; (b) B; (c) C; (d) A."
+        },
+        "number": 5,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/5-2-exercise5.png"
+      },
+      {
+        "prompt": "按特征写出 $y=a\\sin b(x-c)+d$：(a) 振幅 $4$、周期 $\\pi$、右移 $\\pi/2$、下移 $6$；(b) 振幅 $0.5$、周期 $4\\pi$、左移 $\\pi/6$、上移 $1$；(c) 振幅 $3/4$、周期 $720^\\circ$、无相移、下移 $5$。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 取 $a=4,c=\\pi/2,d=-6$，$b=2\\pi/\\pi=2$，得 $y=4\\sin2(x-\\pi/2)-6$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $b=2\\pi/(4\\pi)=1/2$，所以 $y=0.5\\sin\\frac12(x+\\pi/6)+1$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 角度制 $b=360^\\circ/720^\\circ=1/2$，所以 $y=\\frac34\\sin(\\frac12x)-5$。"
+          }
+        ],
+        "answer": "(a) $4\\sin2(x-\\pi/2)-6$；(b) $0.5\\sin\\frac12(x+\\pi/6)+1$；(c) $\\frac34\\sin(\\frac12x)-5$（角度）。",
+        "printedPage": 251,
+        "pdfPage": 260,
+        "en": {
+          "prompt": "Write $y=a\\sin b(x-c)+d$ for: (a) amplitude $4$, period $\\pi$, phase shift $\\pi/2$ right, vertical displacement $6$ down; (b) amplitude $0.5$, period $4\\pi$, phase shift $\\pi/6$ left, vertical displacement $1$ up; (c) amplitude $3/4$, period $720^\\circ$, no phase shift, vertical displacement $5$ down.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) Choose $a=4,c=\\pi/2,d=-6$; $b=2\\pi/\\pi=2$, giving $y=4\\sin2(x-\\pi/2)-6$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $b=2\\pi/(4\\pi)=1/2$, giving $y=0.5\\sin\\frac12(x+\\pi/6)+1$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) In degrees, $b=360^\\circ/720^\\circ=1/2$, giving $y=\\frac34\\sin(\\frac12x)-5$."
+            }
+          ],
+          "answer": "(a) $4\\sin2(x-\\pi/2)-6$; (b) $0.5\\sin\\frac12(x+\\pi/6)+1$; (c) $\\frac34\\sin(\\frac12x)-5$ (degrees)."
+        },
+        "number": 6,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "对 $y=\\cos x$ 作下列变换，求 $a,b,c,d$ 及 $y=a\\cos b(x-c)+d$：(a) 关于横轴竖直拉伸 $3$ 倍，关于纵轴水平拉伸 $2$ 倍，左移 $2$、上移 $3$；(b) 竖直伸缩 $1/2$ 倍，水平伸缩 $1/4$ 倍，右移 $3$、下移 $5$；(c) 竖直伸缩 $3/2$ 倍，水平拉伸 $3$ 倍，关于横轴反射，右移 $\\pi/4$、下移 $1$。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 水平伸缩系数为 $1/b=2$，故 $b=1/2$；$a=3,c=-2,d=3$。代入得 $y=3\\cos\\frac12(x+2)+3$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $1/b=1/4$ 给 $b=4$；$a=1/2,c=3,d=-5$，所以 $y=\\frac12\\cos4(x-3)-5$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 反射使 $a=-3/2$；$1/b=3$ 给 $b=1/3$；$c=\\pi/4,d=-1$，所以 $y=-\\frac32\\cos\\frac13(x-\\pi/4)-1$。"
+          }
+        ],
+        "answer": "各组 $(a,b,c,d)$ 为 $(3,1/2,-2,3)$、$(1/2,4,3,-5)$、$(-3/2,1/3,\\pi/4,-1)$；方程见步骤。",
+        "printedPage": 251,
+        "pdfPage": 260,
+        "en": {
+          "prompt": "Transform $y=\\cos x$ as follows. Determine $a,b,c,d$ and write $y=a\\cos b(x-c)+d$: (a) vertical stretch factor $3$ about the $x$-axis, horizontal stretch factor $2$ about the $y$-axis, left $2$, up $3$; (b) vertical scale factor $1/2$, horizontal scale factor $1/4$, right $3$, down $5$; (c) vertical scale factor $3/2$, horizontal stretch factor $3$, reflect in the $x$-axis, right $\\pi/4$, down $1$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) Horizontal scale $1/b=2$ gives $b=1/2$; $a=3,c=-2,d=3$. Therefore $y=3\\cos\\frac12(x+2)+3$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $1/b=1/4$ gives $b=4$; $a=1/2,c=3,d=-5$, so $y=\\frac12\\cos4(x-3)-5$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) Reflection gives $a=-3/2$; $1/b=3$ gives $b=1/3$; $c=\\pi/4,d=-1$. Thus $y=-\\frac32\\cos\\frac13(x-\\pi/4)-1$."
+            }
+          ],
+          "answer": "The parameter sets $(a,b,c,d)$ are $(3,1/2,-2,3)$, $(1/2,4,3,-5)$, and $(-3/2,1/3,\\pi/4,-1)$; equations are shown in the steps."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "白光经棱镜分成可见光谱，各颜色对应不同波长。根据原图，把颜色按周期从大到小排列。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "在同样的横向长度内，完整波的数目越少，两个相邻波峰的间距越大，周期越大。原图红光波峰间距最大，依次比较橙、黄、绿、蓝、靛、紫。"
+          }
+        ],
+        "answer": "红、橙、黄、绿、蓝、靛、紫。",
+        "printedPage": 251,
+        "pdfPage": 260,
+        "en": {
+          "prompt": "White light passing through a prism separates into the visible spectrum, with each colour corresponding to a different wavelength. Arrange the colours from greatest to smallest period using the diagram.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Over the same horizontal length, fewer complete waves mean a greater crest-to-crest spacing and hence a greater period. Red has the greatest spacing; comparison then gives orange, yellow, green, blue, indigo, violet."
+            }
+          ],
+          "answer": "Red, orange, yellow, green, blue, indigo, violet."
+        },
+        "number": 8,
+        "sourceImage": "assets/5-2-exercise8.png"
+      },
+      {
+        "prompt": "活塞发动机的活塞高度随时间可用正弦曲线表示。给定 $y=a\\sin b(x-c)+d$，活塞运动加快时哪些参数受影响？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "相同冲程更快完成，意味着周期减小。$T=2\\pi/|b|$，因此 $|b|$ 增大；若按通常取 $b>0$，则 $b$ 增大。"
+          },
+          {
+            "title": "推导",
+            "body": "冲程高度和中间位置没有改变，所以 $a$、$d$ 不变。固定同一初始相位时可保持 $c$ 不变。"
+          }
+        ],
+        "answer": "改变周期参数 $b$（$|b|$ 增大）。",
+        "printedPage": 251,
+        "pdfPage": 260,
+        "en": {
+          "prompt": "The height of a piston over time can be modelled by a sine curve. In $y=a\\sin b(x-c)+d$, which parameter(s) would be affected as the piston moves faster?",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "The same stroke is completed in less time, so the period decreases. Since $T=2\\pi/|b|$, $|b|$ increases; with the usual positive choice of $b$, $b$ increases."
+            },
+            {
+              "title": "Work it out",
+              "body": "The stroke height and central position do not change, so $a$ and $d$ remain fixed. Keeping the same initial phase allows $c$ to remain fixed."
+            }
+          ],
+          "answer": "The period parameter $b$ changes: $|b|$ increases."
+        },
+        "number": 9,
+        "sourceImage": "assets/5-2-exercise9.png"
+      },
+      {
+        "prompt": "Victor 和 Stewart 求 $f(x)=4\\sin(2x-6)+12$ 的相移。Victor 说向右 $6$，Stewart 说向右 $3$。(a) 谁正确？说明理由。(b) 作图验证。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $2x-6=2(x-3)$，所以标准式 $f(x)=4\\sin2(x-3)+12$，$c=3$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $T=\\pi$，从 $x=3$ 起的五点是 $(3,12),(3+\\pi/4,16),(3+\\pi/2,12),(3+3\\pi/4,8),(3+\\pi,12)$，上升中线交点位于 $3$。"
+          }
+        ],
+        "answer": "Stewart 正确，向右平移 $3$ 单位；图见解析。",
+        "printedPage": 252,
+        "pdfPage": 261,
+        "en": {
+          "prompt": "Victor says the phase shift of $f(x)=4\\sin(2x-6)+12$ is $6$ units right; Stewart says it is $3$ units right. (a) Who is correct? Explain. (b) Graph the function to verify.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $2x-6=2(x-3)$, so the standard form is $f(x)=4\\sin2(x-3)+12$ and $c=3$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $T=\\pi$, with key points $(3,12),(3+\\pi/4,16),(3+\\pi/2,12),(3+3\\pi/4,8),(3+\\pi,12)$. The rising midline crossing is at $3$."
+            }
+          ],
+          "answer": "Stewart is correct: the phase shift is $3$ units right; see the graph."
+        },
+        "number": 10,
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/5-2-exercise10.png"
+      },
+      {
+        "prompt": "一族 $y=a\\sin b(x-c)+d$ 图像只改变竖直位移。原函数值域为 $[-3,3]$。求以下 $d$ 的新值域：(a) $2$；(b) $-3$；(c) $-10$；(d) $8$。",
+        "concept": "translations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "原振幅 $3$、中线 $0$，新值域为 $[d-3,d+3]$。"
+          },
+          {
+            "title": "推导",
+            "body": "(a) $[2-3,2+3]=[-1,5]$；(b) $[-3-3,-3+3]=[-6,0]$；(c) $[-10-3,-10+3]=[-13,-7]$；(d) $[8-3,8+3]=[5,11]$。"
+          }
+        ],
+        "answer": "(a) $[-1,5]$；(b) $[-6,0]$；(c) $[-13,-7]$；(d) $[5,11]$。",
+        "printedPage": 252,
+        "pdfPage": 261,
+        "en": {
+          "prompt": "A family $y=a\\sin b(x-c)+d$ is made by changing only vertical displacement. The original range is $[-3,3]$. Determine the range for (a) $d=2$, (b) $d=-3$, (c) $d=-10$, (d) $d=8$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "The original amplitude is $3$ and midline is $0$, so the new range is $[d-3,d+3]$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(a) $[2-3,2+3]=[-1,5]$; (b) $[-3-3,-3+3]=[-6,0]$; (c) $[-10-3,-10+3]=[-13,-7]$; (d) $[8-3,8+3]=[5,11]$."
+            }
+          ],
+          "answer": "(a) $[-1,5]$; (b) $[-6,0]$; (c) $[-13,-7]$; (d) $[5,11]$."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "从 $f(x)=\\sin x$ 出发，分别作出变换后的图：(a) $f(x-\\pi/3)$；(b) $f(x+\\pi/4)$；(c) $f(x)+3$；(d) $f(x)-4$。",
+        "concept": "sketch",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 右移 $\\pi/3$。横坐标 $\\pi/3,5\\pi/6,4\\pi/3,11\\pi/6,7\\pi/3$ 对应 $0,1,0,-1,0$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 左移 $\\pi/4$。横坐标 $-\\pi/4,\\pi/4,3\\pi/4,5\\pi/4,7\\pi/4$ 对应 $0,1,0,-1,0$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 上移 $3$；在 $x=0,\\pi/2,\\pi,3\\pi/2,2\\pi$ 的纵坐标为 $3,4,3,2,3$。(d) 下移 $4$，同组横坐标对应 $-4,-3,-4,-5,-4$。"
+          }
+        ],
+        "answer": "四条曲线振幅均 $1$、周期均 $2\\pi$；各自平移与作图点如上。",
+        "printedPage": 252,
+        "pdfPage": 261,
+        "en": {
+          "prompt": "Sketch the graph after applying each transformation to $f(x)=\\sin x$: (a) $f(x-\\pi/3)$; (b) $f(x+\\pi/4)$; (c) $f(x)+3$; (d) $f(x)-4$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) Shift right $\\pi/3$. Inputs $\\pi/3,5\\pi/6,4\\pi/3,11\\pi/6,7\\pi/3$ give $0,1,0,-1,0$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) Shift left $\\pi/4$. Inputs $-\\pi/4,\\pi/4,3\\pi/4,5\\pi/4,7\\pi/4$ give $0,1,0,-1,0$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) Shift up $3$; at $x=0,\\pi/2,\\pi,3\\pi/2,2\\pi$, ordinates are $3,4,3,2,3$. (d) Shift down $4$; the same inputs give $-4,-3,-4,-5,-4$."
+            }
+          ],
+          "answer": "All four curves have amplitude $1$ and period $2\\pi$; the shifts and graphing points are given above."
+        },
+        "number": 12,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-2-exercise12.png"
+      },
+      {
+        "prompt": "$y=a\\sin b(x-c)+d$ 的值域为 $[-13,5]$。求 $a,d$。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "中线是极值平均：$d=(-13+5)/2=-4$。振幅是极差的一半：$|a|=(5-(-13))/2=9$。"
+          },
+          {
+            "title": "推导",
+            "body": "若采用正振幅系数的通常写法，取 $a=9$；单凭值域无法排除 $a=-9$，因反射后仍有相同值域。"
+          }
+        ],
+        "answer": "$d=-4$，$|a|=9$；通常取 $a=9$，也可为 $-9$。",
+        "printedPage": 252,
+        "pdfPage": 261,
+        "en": {
+          "prompt": "A function $y=a\\sin b(x-c)+d$ has range $[-13,5]$. State $a$ and $d$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "The midline is the average: $d=(-13+5)/2=-4$. Amplitude is half the range width: $|a|=(5-(-13))/2=9$."
+            },
+            {
+              "title": "Work it out",
+              "body": "With the usual positive coefficient choose $a=9$. The range alone also permits $a=-9$, since reflection leaves the range unchanged."
+            }
+          ],
+          "answer": "$d=-4$ and $|a|=9$; usually take $a=9$, though $a=-9$ is also compatible."
+        },
+        "number": 13
+      },
+      {
+        "prompt": "对原图 (a) 正弦、(b) 余弦、(c) 正弦，分别求：(i) 振幅；(ii) 周期；(iii) 相移；(iv) 竖直位移；(v) 定义域和值域；(vi) 在 $0\\le x\\le2\\pi$ 的最大值及全部发生横坐标；(vii) 同一区间的最小值及全部发生横坐标。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $M=3,m=-3$ 给振幅 $3$、中线 $0$；相邻波峰相距 $2\\pi$。中线上升点 $\\pi/4$，故 $y=3\\sin(x-\\pi/4)$。定义域 $\\mathbb R$，值域 $[-3,3]$。"
+          },
+          {
+            "title": "推导",
+            "body": "(a.vi,vii) 最大值要求 $x-\\pi/4=\\pi/2+2k\\pi$，区间内仅 $x=3\\pi/4$；最小值要求 $x-\\pi/4=3\\pi/2+2k\\pi$，仅 $x=7\\pi/4$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $M=0,m=-4$ 给振幅 $2$、中线 $-2$；周期 $2\\pi$；最高点在 $\\pi/2$，故 $y=2\\cos(x-\\pi/2)-2$。右移 $\\pi/2$、下移 $2$；定义域 $\\mathbb R$，值域 $[-4,0]$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b.vi,vii) 在区间内，$x-\\pi/2=0$ 给最大值 $0$，横坐标 $\\pi/2$；$x-\\pi/2=\\pi$ 给最小值 $-4$，横坐标 $3\\pi/2$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $M=3,m=-1$ 给振幅 $2$、中线 $1$；相邻最低点 $0,\\pi$ 给周期 $\\pi$、$b=2$。中线上升点 $\\pi/4$，所以 $y=2\\sin2(x-\\pi/4)+1$。右移 $\\pi/4$、上移 $1$；定义域 $\\mathbb R$，值域 $[-1,3]$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c.vi,vii) 最大值由 $2(x-\\pi/4)=\\pi/2+2k\\pi$ 得 $x=\\pi/2+k\\pi$，区间内为 $\\pi/2,3\\pi/2$。最低点 $x=k\\pi$，包括端点 $0,\\pi,2\\pi$，最小值 $-1$。"
+          }
+        ],
+        "answer": "(a) $A=3,T=2\\pi,c=\\pi/4,d=0$；最大 $3$ 在 $3\\pi/4$，最小 $-3$ 在 $7\\pi/4$。(b) $A=2,T=2\\pi,c=\\pi/2,d=-2$；最大 $0$ 在 $\\pi/2$，最小 $-4$ 在 $3\\pi/2$。(c) $A=2,T=\\pi,c=\\pi/4,d=1$；最大 $3$ 在 $\\pi/2,3\\pi/2$，最小 $-1$ 在 $0,\\pi,2\\pi$。定义域和值域见逐项步骤。",
+        "printedPage": 252,
+        "pdfPage": 261,
+        "en": {
+          "prompt": "For each given graph, (a) a sine function, (b) a cosine function, and (c) a sine function, state (i) amplitude, (ii) period, (iii) phase shift, (iv) vertical displacement, (v) domain and range, (vi) maximum and all inputs where it occurs on $0\\le x\\le2\\pi$, and (vii) minimum and all inputs where it occurs on that interval.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $M=3,m=-3$ give amplitude $3$ and midline $0$; consecutive maxima are $2\\pi$ apart. The rising midline crossing at $\\pi/4$ gives $y=3\\sin(x-\\pi/4)$. Domain $\\mathbb R$, range $[-3,3]$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(a.vi,vii) A maximum requires $x-\\pi/4=\\pi/2+2k\\pi$, giving only $x=3\\pi/4$ in the interval. A minimum requires $x-\\pi/4=3\\pi/2+2k\\pi$, giving only $x=7\\pi/4$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $M=0,m=-4$ give amplitude $2$ and midline $-2$. Period $2\\pi$ and a maximum at $\\pi/2$ give $y=2\\cos(x-\\pi/2)-2$. Shift right $\\pi/2$, down $2$; domain $\\mathbb R$, range $[-4,0]$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b.vi,vii) In the interval, $x-\\pi/2=0$ gives maximum $0$ at $\\pi/2$; $x-\\pi/2=\\pi$ gives minimum $-4$ at $3\\pi/2$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) $M=3,m=-1$ give amplitude $2$ and midline $1$. Consecutive minima at $0,\\pi$ give period $\\pi$ and $b=2$. A rising midline crossing at $\\pi/4$ gives $y=2\\sin2(x-\\pi/4)+1$. Shift right $\\pi/4$, up $1$; domain $\\mathbb R$, range $[-1,3]$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c.vi,vii) Maxima require $2(x-\\pi/4)=\\pi/2+2k\\pi$, so $x=\\pi/2+k\\pi$: $\\pi/2,3\\pi/2$ in the interval. Minima are at $x=k\\pi$, including endpoints $0,\\pi,2\\pi$, with value $-1$."
+            }
+          ],
+          "answer": "(a) $A=3,T=2\\pi,c=\\pi/4,d=0$; maximum $3$ at $3\\pi/4$, minimum $-3$ at $7\\pi/4$. (b) $A=2,T=2\\pi,c=\\pi/2,d=-2$; maximum $0$ at $\\pi/2$, minimum $-4$ at $3\\pi/2$. (c) $A=2,T=\\pi,c=\\pi/4,d=1$; maximum $3$ at $\\pi/2,3\\pi/2$, minimum $-1$ at $0,\\pi,2\\pi$. Domains and ranges are stated in the steps."
+        },
+        "number": 14,
+        "subpartIds": [
+          "a1",
+          "a2",
+          "a3",
+          "a4",
+          "a5",
+          "a6",
+          "a7",
+          "b1",
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6",
+          "b7",
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7"
+        ],
+        "sourceImage": "assets/5-2-exercise14.png"
+      },
+      {
+        "prompt": "对原图 (a)–(c) 分别求形如 $y=a\\sin b(x-c)+d$ 的方程。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $M=1,m=-3$，所以 $a=2,d=-1$；周期 $2\\pi$ 给 $b=1$，原点横坐标处为中线上升点，取 $c=0$，得 $y=2\\sin x-1$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $M=4,m=-2$，故 $a=3,d=1$；周期 $\\pi$ 给 $b=2$；中线上升点 $x=0$，故 $y=3\\sin2x+1$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $M=4,m=0$，故 $a=2,d=2$；周期 $\\pi/2$ 给 $b=4$。$x=0$ 处下降穿过中线，所以可取下一个上升交点 $c=\\pi/4$，得 $y=2\\sin4(x-\\pi/4)+2$。核验 $x=\\pi/8$ 时 $y=0$，$x=3\\pi/8$ 时 $y=4$。"
+          }
+        ],
+        "answer": "(a) $y=2\\sin x-1$；(b) $y=3\\sin2x+1$；(c) $y=2\\sin4(x-\\pi/4)+2$。",
+        "printedPage": 253,
+        "pdfPage": 262,
+        "en": {
+          "prompt": "Determine an equation $y=a\\sin b(x-c)+d$ for each original graph (a)–(c).",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $M=1,m=-3$ give $a=2,d=-1$. Period $2\\pi$ gives $b=1$; the rising midline crossing at $x=0$ gives $c=0$. Thus $y=2\\sin x-1$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $M=4,m=-2$ give $a=3,d=1$. Period $\\pi$ gives $b=2$; the rising midline crossing is $x=0$, so $y=3\\sin2x+1$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) $M=4,m=0$ give $a=2,d=2$. Period $\\pi/2$ gives $b=4$. At $x=0$ the graph crosses the midline downward, so choose the next rising crossing $c=\\pi/4$. Thus $y=2\\sin4(x-\\pi/4)+2$. Check: $y=0$ at $\\pi/8$ and $y=4$ at $3\\pi/8$."
+            }
+          ],
+          "answer": "(a) $y=2\\sin x-1$; (b) $y=3\\sin2x+1$; (c) $y=2\\sin4(x-\\pi/4)+2$."
+        },
+        "number": 15,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/5-2-exercise15.png"
+      },
+      {
+        "prompt": "对原图 (a)–(c) 分别求形如 $y=a\\cos b(x-c)+d$ 的方程。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $M=3,m=-1$ 给 $a=2,d=1$；周期 $\\pi$ 给 $b=2$，最高点 $x=\\pi/4$ 给 $c=\\pi/4$。方程 $y=2\\cos2(x-\\pi/4)+1$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $M=1,m=-3$ 给 $a=2,d=-1$；周期 $2\\pi$ 给 $b=1$；最高点在 $-\\pi/2$，所以 $y=2\\cos(x+\\pi/2)-1$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $M=2,m=0$ 给 $a=1,d=1$；周期 $2\\pi$、最高点在 $\\pi$，得 $y=\\cos(x-\\pi)+1$。代入 $0,\\pi,2\\pi$ 得 $0,2,0$。"
+          }
+        ],
+        "answer": "(a) $2\\cos2(x-\\pi/4)+1$；(b) $2\\cos(x+\\pi/2)-1$；(c) $\\cos(x-\\pi)+1$。",
+        "printedPage": 253,
+        "pdfPage": 262,
+        "en": {
+          "prompt": "For each original graph (a)–(c), write an equation $y=a\\cos b(x-c)+d$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $M=3,m=-1$ give $a=2,d=1$; period $\\pi$ gives $b=2$; the maximum at $x=\\pi/4$ gives $c=\\pi/4$. Hence $y=2\\cos2(x-\\pi/4)+1$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $M=1,m=-3$ give $a=2,d=-1$; period $2\\pi$ gives $b=1$; a maximum at $-\\pi/2$ gives $y=2\\cos(x+\\pi/2)-1$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) $M=2,m=0$ give $a=1,d=1$. Period $2\\pi$ and a maximum at $\\pi$ give $y=\\cos(x-\\pi)+1$. Substitution at $0,\\pi,2\\pi$ yields $0,2,0$."
+            }
+          ],
+          "answer": "(a) $2\\cos2(x-\\pi/4)+1$; (b) $2\\cos(x+\\pi/2)-1$; (c) $\\cos(x-\\pi)+1$."
+        },
+        "number": 16,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/5-2-exercise16.png"
+      },
+      {
+        "prompt": "(a) 作 $f(x)=\\cos(x-\\pi/2)$。(b) 根据图写成 $y=a\\sin b(x-c)+d$。(c) 两方程有什么关系？",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 取 $x=0,\\pi/2,\\pi,3\\pi/2,2\\pi$，得 $f(x)=0,1,0,-1,0$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 这些点与基本正弦相同，故 $a=1,b=1,c=0,d=0$。(c) 由差角式 $\\cos(x-\\pi/2)=\\cos x\\cdot0+\\sin x\\cdot1=\\sin x$，对所有实数成立。"
+          }
+        ],
+        "answer": "$y=\\sin x$；余弦右移 $\\pi/2$ 后与正弦完全重合。",
+        "printedPage": 253,
+        "pdfPage": 262,
+        "en": {
+          "prompt": "(a) Graph $f(x)=\\cos(x-\\pi/2)$. (b) Write the function as $y=a\\sin b(x-c)+d$. (c) What relationship do the two equations have?",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) At $x=0,\\pi/2,\\pi,3\\pi/2,2\\pi$, the values are $0,1,0,-1,0$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) These are the sine key points, giving $a=1,b=1,c=0,d=0$. (c) The difference identity gives $\\cos(x-\\pi/2)=\\cos x\\cdot0+\\sin x\\cdot1=\\sin x$ for all real $x$."
+            }
+          ],
+          "answer": "$y=\\sin x$; cosine shifted right $\\pi/2$ coincides with sine."
+        },
+        "number": 17,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/5-2-exercise17.png"
+      },
+      {
+        "prompt": "已知 $f(x)=\\sin x$ 的图像，需要怎样变换才能使像函数为 $g(x)=\\cos x$？",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "恒等式 $\\sin(x+\\pi/2)=\\cos x$ 表示把基本正弦中的 $x$ 替换为 $x+\\pi/2$。"
+          }
+        ],
+        "answer": "向左平移 $\\pi/2$ 单位（也可加减整周期得到等价相移）。",
+        "printedPage": 253,
+        "pdfPage": 262,
+        "en": {
+          "prompt": "What transformation of $f(x)=\\sin x$ gives the image function $g(x)=\\cos x$?",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "The identity $\\sin(x+\\pi/2)=\\cos x$ replaces $x$ in sine by $x+\\pi/2$."
+            }
+          ],
+          "answer": "Translate left $\\pi/2$ units; shifts differing by whole periods are equivalent."
+        },
+        "number": 18
+      },
+      {
+        "prompt": "余弦函数 $y=3\\cos b(x-c)$ 的一个周期范围如下。分别 (i) 求相移、周期、横截距；(ii) 求全部最高点和最低点坐标：(a) $30^\\circ\\le x\\le390^\\circ$；(b) $\\pi/4\\le x\\le5\\pi/4$。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a.i) 取 $c=30^\\circ$，$T=390^\\circ-30^\\circ=360^\\circ$，$b=1$；横截距在周期的四分之一和四分之三处：$30^\\circ+90^\\circ=120^\\circ$、$30^\\circ+270^\\circ=300^\\circ$。"
+          },
+          {
+            "title": "推导",
+            "body": "(a.ii) 端点为最高点 $(30^\\circ,3),(390^\\circ,3)$；中点为最低点 $(210^\\circ,-3)$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b.i) $c=\\pi/4$，$T=\\pi$，$b=2$；横截距为 $\\pi/4+\\pi/4=\\pi/2$ 和 $\\pi/4+3\\pi/4=\\pi$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b.ii) 最高点 $(\\pi/4,3),(5\\pi/4,3)$；最低点 $(3\\pi/4,-3)$。"
+          }
+        ],
+        "answer": "(a) 右移 $30^\\circ$，周期 $360^\\circ$，零点 $120^\\circ,300^\\circ$；(b) 右移 $\\pi/4$，周期 $\\pi$，零点 $\\pi/2,\\pi$。极值坐标如上。",
+        "printedPage": 253,
+        "pdfPage": 262,
+        "en": {
+          "prompt": "One cycle of $y=3\\cos b(x-c)$ has the following start and end. For each, (i) state phase shift, period, and $x$-intercepts; (ii) give the coordinates of the minima and maxima: (a) $30^\\circ\\le x\\le390^\\circ$; (b) $\\pi/4\\le x\\le5\\pi/4$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a.i) $c=30^\\circ$ and $T=390^\\circ-30^\\circ=360^\\circ$, so $b=1$. Zeros occur a quarter and three quarters through the cycle: $120^\\circ$ and $300^\\circ$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(a.ii) The endpoints are maxima $(30^\\circ,3),(390^\\circ,3)$; the midpoint is the minimum $(210^\\circ,-3)$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b.i) $c=\\pi/4$, $T=\\pi$, and $b=2$. Zeros are $\\pi/4+\\pi/4=\\pi/2$ and $\\pi/4+3\\pi/4=\\pi$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b.ii) Maxima are $(\\pi/4,3),(5\\pi/4,3)$; the minimum is $(3\\pi/4,-3)$."
+            }
+          ],
+          "answer": "(a) Right $30^\\circ$, period $360^\\circ$, zeros $120^\\circ,300^\\circ$. (b) Right $\\pi/4$, period $\\pi$, zeros $\\pi/2,\\pi$. Extreme coordinates are listed above."
+        },
+        "number": 19,
+        "subpartIds": [
+          "ai",
+          "aii",
+          "bi",
+          "bii"
+        ]
+      },
+      {
+        "prompt": "亚利桑那州 Paria Canyon 的 Coyote Buttes 有砂岩地貌 The Wave，由约 1.9 亿年前的沙丘形成。假设一个周期可由余弦近似。海拔最高 $5100$ 英尺，最低 $5000$ 英尺；周期起于峡谷 $1.75$ 英里处，终于 $2.75$ 英里处。写出近似模型。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "令 $x$ 为沿峡谷的英里数、$h$ 为海拔英尺数。$a=(5100-5000)/2=50$ 英尺，$d=(5100+5000)/2=5050$ 英尺。"
+          },
+          {
+            "title": "推导",
+            "body": "周期 $T=2.75-1.75=1$ 英里，故 $b=2\\pi$ 弧度/英里。选择周期起点为最高点，$c=1.75$，得 $h(x)=50\\cos[2\\pi(x-1.75)]+5050$。"
+          },
+          {
+            "title": "推导",
+            "body": "核验 $h(1.75)=h(2.75)=5100$，$h(2.25)=5000$。若横坐标用英尺，$1.75\\cdot5280=9240$、周期 $5280$，则 $h(s)=50\\cos[\\pi(s-9240)/2640]+5050$。"
+          }
+        ],
+        "answer": "$h(x)=50\\cos[2\\pi(x-1.75)]+5050$，$x$ 用英里，$h$ 用英尺；周期起点取最高点。",
+        "printedPage": 253,
+        "pdfPage": 262,
+        "en": {
+          "prompt": "The Wave is a sandstone formation on Coyote Buttes in the Paria Canyon, northern Arizona, formed from 190-million-year-old dunes. Approximate one cycle by a cosine curve. Maximum elevation is $5100$ ft, minimum $5000$ ft; the cycle begins at the $1.75$ mile mark and ends at $2.75$ miles. Write an equation approximating the pattern.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Let $x$ be distance in miles and $h$ elevation in feet. Then $a=(5100-5000)/2=50$ ft and $d=(5100+5000)/2=5050$ ft."
+            },
+            {
+              "title": "Work it out",
+              "body": "The period is $T=2.75-1.75=1$ mile, so $b=2\\pi$ radians per mile. Taking the cycle start as a maximum gives $c=1.75$ and $h(x)=50\\cos[2\\pi(x-1.75)]+5050$."
+            },
+            {
+              "title": "Work it out",
+              "body": "Check $h(1.75)=h(2.75)=5100$ and $h(2.25)=5000$. In feet, the start is $1.75\\cdot5280=9240$ and the period $5280$, so $h(s)=50\\cos[\\pi(s-9240)/2640]+5050$."
+            }
+          ],
+          "answer": "$h(x)=50\\cos[2\\pi(x-1.75)]+5050$, with $x$ in miles and $h$ in feet, taking the cycle start at a maximum."
+        },
+        "number": 20
+      },
+      {
+        "prompt": "比较 $y=3\\sin\\frac\\pi3(x-2)-1$ 与 $y=3\\cos\\frac\\pi3(x-7/2)-1$。两图是否等价？用图像支持答案。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "令 $u=\\frac\\pi3(x-2)$。余弦自变量 $\\frac\\pi3(x-7/2)=u-\\pi/2$，所以 $\\cos(u-\\pi/2)=\\sin u$。"
+          },
+          {
+            "title": "推导",
+            "body": "两式振幅均 $3$，周期均 $6$，中线均 $-1$；在 $x=2,3.5,5,6.5,8$ 的值都为 $-1,2,-1,-4,-1$，绘图重合。"
+          }
+        ],
+        "answer": "等价，对所有实数 $x$ 相等。",
+        "printedPage": 254,
+        "pdfPage": 263,
+        "en": {
+          "prompt": "Compare $y=3\\sin\\frac\\pi3(x-2)-1$ and $y=3\\cos\\frac\\pi3(x-7/2)-1$. Are the graphs equivalent? Support your answer graphically.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Let $u=\\frac\\pi3(x-2)$. The cosine argument is $\\frac\\pi3(x-7/2)=u-\\pi/2$, and $\\cos(u-\\pi/2)=\\sin u$."
+            },
+            {
+              "title": "Work it out",
+              "body": "Both have amplitude $3$, period $6$, and midline $-1$. At $x=2,3.5,5,6.5,8$, both give $-1,2,-1,-4,-1$; the plotted graphs coincide."
+            }
+          ],
+          "answer": "Equivalent: they agree for every real $x$."
+        },
+        "number": 21,
+        "solutionImage": "assets/5-2-exercise21.png"
+      },
+      {
+        "prompt": "降噪耳机产生与外界噪声相同但相位相差 $180^\\circ$ 的波以抵消噪声。若外界正弦波振幅 $4$、周期 $\\pi/2$，求耳机产生的波的方程。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "选择外界波的相位原点，写为 $n(x)=4\\sin4x$，因为 $b=2\\pi/(\\pi/2)=4$。若外界有相移 $c$，则写为 $4\\sin4(x-c)$。"
+          },
+          {
+            "title": "推导",
+            "body": "抵消波为 $h(x)=-n(x)=-4\\sin4x$。正振幅式为 $4\\sin(4x+\\pi)=4\\sin4(x+\\pi/4)$，横移为半个周期 $\\pi/4$。"
+          },
+          {
+            "title": "推导",
+            "body": "核验 $n(x)+h(x)=0$。注意整体横移 $\\pi$ 会使相位改变 $4\\pi$，并不能抵消。"
+          }
+        ],
+        "answer": "$h(x)=-4\\sin4x=4\\sin4(x+\\pi/4)$；若原波相移为 $c$，则 $h(x)=-4\\sin4(x-c)$。",
+        "printedPage": 254,
+        "pdfPage": 263,
+        "en": {
+          "prompt": "Noise-cancelling headphones reproduce the incoming wave with a phase difference of $180^\\circ$ to cancel ambient noise. The outside sine wave has amplitude $4$ and period $\\pi/2$. Determine an equation for the wave produced by the headphones.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Choose the outside wave’s phase origin so $n(x)=4\\sin4x$, because $b=2\\pi/(\\pi/2)=4$. With an outside phase shift $c$, use $4\\sin4(x-c)$."
+            },
+            {
+              "title": "Work it out",
+              "body": "The cancelling wave is $h(x)=-n(x)=-4\\sin4x$. With positive amplitude this is $4\\sin(4x+\\pi)=4\\sin4(x+\\pi/4)$; the shift is half the period, $\\pi/4$."
+            },
+            {
+              "title": "Work it out",
+              "body": "Check $n(x)+h(x)=0$. A horizontal shift of $\\pi$ changes the phase by $4\\pi$ and does not cancel this wave."
+            }
+          ],
+          "answer": "$h(x)=-4\\sin4x=4\\sin4(x+\\pi/4)$. If the original shift is $c$, use $h(x)=-4\\sin4(x-c)$."
+        },
+        "number": 22,
+        "sourceImage": "assets/5-2-exercise22.png",
+        "solutionImage": "assets/5-2-exercise22-check.png"
+      },
+      {
+        "prompt": "房屋屋檐夏季遮阳降温、冬季允许阳光入室取暖。Estevan 正午太阳仰角 $A$（度）可由 $A=-23.5\\sin[\\frac{360}{365}(x+102)]+41$ 表示，$x$ 为从 1 月 1 日开始经过的天数。(a) 用技术画出全年变化。(b) 求 2 月 12 日正午仰角。(c) 何日仰角最大？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 用角度制，$T=365$ 天，中线 $41^\\circ$，振幅 $23.5^\\circ$，范围 $17.5^\\circ$ 至 $64.5^\\circ$。在 $0\\le x\\le365$ 作图。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 采用 1 月 1 日 $x=0$ 的经过天数约定，2 月 12 日 $x=31+11=42$。$A(42)=-23.5\\sin(360\\cdot144/365)+41\\approx26.5408^\\circ$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 系数为负，最大值要求正弦为 $-1$：$\\frac{360}{365}(x+102)=270^\\circ+360^\\circ k$，得 $x=171.75+365k$。本年内为 $171.75$ 天；离散到最近整天为 $172$，约 6 月 22 日，仰角 $64.5^\\circ$。教材图读约为 6 月 21 日；模型精确顶点位于 6 月 21–22 日之间。"
+          }
+        ],
+        "answer": "(a) 见图；(b) 约 $26.5^\\circ$；(c) 模型峰值在 $x=171.75$，约 6 月 21–22 日（最近整天为 6 月 22 日）。",
+        "printedPage": 254,
+        "pdfPage": 263,
+        "en": {
+          "prompt": "A roof overhang shades windows in summer and admits sunlight in winter. The noon solar elevation $A$ in degrees at Estevan, Saskatchewan, is modelled by $A=-23.5\\sin[\\frac{360}{365}(x+102)]+41$, where $x$ is days elapsed beginning January 1. (a) Use technology to graph the change throughout the year. (b) Find the elevation on February 12. (c) On what date is the elevation greatest?",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) Use degree mode. The period is $365$ days, midline $41^\\circ$, amplitude $23.5^\\circ$, and range $17.5^\\circ$ to $64.5^\\circ$. Plot for $0\\le x\\le365$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) Taking January 1 as elapsed day $x=0$, February 12 has $x=31+11=42$. Thus $A(42)=-23.5\\sin(360\\cdot144/365)+41\\approx26.5408^\\circ$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) The negative coefficient makes the maximum occur when sine is $-1$: $\\frac{360}{365}(x+102)=270^\\circ+360^\\circ k$, giving $x=171.75+365k$. In the year, the vertex is at elapsed day $171.75$; the nearest whole day is $172$, about June 22, at $64.5^\\circ$. The textbook’s graphical date is approximately June 21; the exact model vertex falls between June 21 and 22."
+            }
+          ],
+          "answer": "(a) See graph. (b) About $26.5^\\circ$. (c) The model peaks at $x=171.75$, around June 21–22 (nearest whole elapsed day: June 22)."
+        },
+        "number": 23,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/5-2-exercise23.png"
+      },
+      {
+        "prompt": "运动 5 分钟后，一个人的呼吸气流速率 $r$（升/秒）近似为 $r=1.75\\sin(\\pi t/2)$，$t$ 以秒计。(a) 一完整呼吸周期需多久？(b) 每分钟几个周期？(c) 作图。(d) 求 $30$ 秒时速率并解释。(e) 求 $7.5$ 秒时速率并解释。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $T=2\\pi/(\\pi/2)=4$ 秒。(b) $60/4=15$ 周期/分钟。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 在 $t=0,1,2,3,4$ 取值 $0,1.75,0,-1.75,0$，每 $4$ 秒重复。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) $r(30)=1.75\\sin15\\pi=0$ 升/秒，是吸气与呼气之间的转折时刻；按正值为吸气的约定，此时肺充满。"
+          },
+          {
+            "title": "推导",
+            "body": "(e) $r(7.5)=1.75\\sin(15\\pi/4)=1.75(-\\sqrt2/2)\\approx-1.2374$ 升/秒。负号表示呼气，速率大小约 $1.24$ 升/秒。"
+          }
+        ],
+        "answer": "(a) $4$ 秒；(b) $15$ 次/分钟；(c) 见图；(d) $0$ 升/秒，呼吸换向；(e) 约 $-1.237$ 升/秒，呼气。",
+        "printedPage": 254,
+        "pdfPage": 263,
+        "en": {
+          "prompt": "After exercising for $5$ min, a person’s respiratory airflow $r$ in litres per second is approximated by $r=1.75\\sin(\\pi t/2)$, where $t$ is in seconds. (a) Find the time for a full cycle. (b) Find cycles per minute. (c) Sketch the graph. (d) Find and interpret airflow at $30$ s. (e) Find and interpret airflow at $7.5$ s.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $T=2\\pi/(\\pi/2)=4$ s. (b) $60/4=15$ cycles per minute."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) At $t=0,1,2,3,4$, the values are $0,1.75,0,-1.75,0$; repeat every $4$ s."
+            },
+            {
+              "title": "Work it out",
+              "body": "(d) $r(30)=1.75\\sin15\\pi=0$ L/s, a transition between inhalation and exhalation. Taking positive flow as inhalation, the lungs are full at this instant."
+            },
+            {
+              "title": "Work it out",
+              "body": "(e) $r(7.5)=1.75\\sin(15\\pi/4)=1.75(-\\sqrt2/2)\\approx-1.2374$ L/s. The negative sign means exhalation, at a magnitude of about $1.24$ L/s."
+            }
+          ],
+          "answer": "(a) $4$ s. (b) $15$ cycles/min. (c) See graph. (d) $0$ L/s, a breathing transition. (e) About $-1.237$ L/s, exhalation."
+        },
+        "number": 24,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "solutionImage": "assets/5-2-exercise24.png"
+      },
+      {
+        "prompt": "频率是每秒周期数。两个相近但不同频率的正弦波相加会产生脉动或拍，钢琴调音会用到这一现象。(a) 作 $y=\\cos x+\\cos0.9x$ 的图。(b) 求合成波的振幅和周期。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 用和化积：$y=2\\cos(0.05x)\\cos(0.95x)$。在 $0\\le x\\le20\\pi$ 画出合成波以及上下包络 $\\pm2|\\cos(0.05x)|$，可见拍。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 载波的幅度随 $x$ 变化，为 $2|\\cos(0.05x)|$，其最大值 $2$；因此本题通常称最大振幅为 $2$，但合成波不是固定振幅的单一正弦曲线。"
+          },
+          {
+            "title": "推导",
+            "body": "完整波形重复要求 $T=2\\pi m$ 且 $0.9T=2\\pi n$。于是 $9m=10n$，最小正整数解 $m=10,n=9$，故基本周期 $T=20\\pi$。"
+          }
+        ],
+        "answer": "最大包络振幅 $2$（瞬时包络 $2|\\cos0.05x|$），完整波形周期 $20\\pi$。",
+        "printedPage": 254,
+        "pdfPage": 263,
+        "en": {
+          "prompt": "Frequency is the number of cycles in $1$ s. Adding sinusoidal functions with similar unequal frequencies creates pulsations or beats, used in piano tuning. (a) Graph $y=\\cos x+\\cos0.9x$. (b) Determine the amplitude and period of the resulting wave.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) The sum-to-product identity gives $y=2\\cos(0.05x)\\cos(0.95x)$. Plot it on $0\\le x\\le20\\pi$, with envelopes $\\pm2|\\cos(0.05x)|$, to see the beats."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) The carrier’s envelope amplitude varies as $2|\\cos(0.05x)|$, with maximum $2$. Thus the usual answer “amplitude $2$” refers to the maximum envelope amplitude; the sum is not one fixed-amplitude sinusoid."
+            },
+            {
+              "title": "Work it out",
+              "body": "For the complete waveform to repeat, require $T=2\\pi m$ and $0.9T=2\\pi n$. Then $9m=10n$; the least positive integers are $m=10,n=9$, giving fundamental period $T=20\\pi$."
+            }
+          ],
+          "answer": "Maximum envelope amplitude $2$ (varying envelope $2|\\cos0.05x|$); complete waveform period $20\\pi$."
+        },
+        "number": 25,
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/5-2-exercise25.png"
+      },
+      {
+        "prompt": "(a) 填空使等式成立：(i) $4\\sin(x-30^\\circ)=4\\cos(x-\\square)$；(ii) $2\\sin(x-\\pi/4)=2\\cos(x-\\square)$；(iii) $-3\\cos(x-\\pi/2)=3\\sin(x+\\square)$；(iv) $\\cos(-2x+6\\pi)=\\sin2(x+\\square)$。(b) 选一式说明推导。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a.i) $\\sin u=\\cos(u-90^\\circ)$，故填 $30^\\circ+90^\\circ=120^\\circ$。(a.ii) 同理填 $\\pi/4+\\pi/2=3\\pi/4$。"
+          },
+          {
+            "title": "推导",
+            "body": "(a.iii) 左式 $=-3\\sin x$，而 $\\sin(x+\\pi)=-\\sin x$，所以填 $\\pi$。"
+          },
+          {
+            "title": "推导",
+            "body": "(a.iv) $\\cos(-2x+6\\pi)=\\cos2x$（偶性与周期性）；$\\cos2x=\\sin(2x+\\pi/2)=\\sin2(x+\\pi/4)$，所以填 $\\pi/4$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 以 (ii) 为例，余弦要比正弦的自变量再减去 $\\pi/2$：$(x-\\pi/4)-\\pi/2=x-3\\pi/4$，乘数 $2$ 不变。"
+          }
+        ],
+        "answer": "(a) (i) $120^\\circ$；(ii) $3\\pi/4$；(iii) $\\pi$；(iv) $\\pi/4$。加上相应整周期也可。",
+        "printedPage": 254,
+        "pdfPage": 263,
+        "en": {
+          "prompt": "(a) Fill the blanks: (i) $4\\sin(x-30^\\circ)=4\\cos(x-\\square)$; (ii) $2\\sin(x-\\pi/4)=2\\cos(x-\\square)$; (iii) $-3\\cos(x-\\pi/2)=3\\sin(x+\\square)$; (iv) $\\cos(-2x+6\\pi)=\\sin2(x+\\square)$. (b) Choose one equation and explain your answer.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a.i) Since $\\sin u=\\cos(u-90^\\circ)$, fill $30^\\circ+90^\\circ=120^\\circ$. (a.ii) Similarly, fill $\\pi/4+\\pi/2=3\\pi/4$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(a.iii) The left side is $-3\\sin x$, and $\\sin(x+\\pi)=-\\sin x$, so fill $\\pi$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(a.iv) By evenness and periodicity, $\\cos(-2x+6\\pi)=\\cos2x=\\sin(2x+\\pi/2)=\\sin2(x+\\pi/4)$, so fill $\\pi/4$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) For (ii), subtract another $\\pi/2$ from sine’s argument to use cosine: $(x-\\pi/4)-\\pi/2=x-3\\pi/4$. The multiplier $2$ stays unchanged."
+            }
+          ],
+          "answer": "(a) (i) $120^\\circ$; (ii) $3\\pi/4$; (iii) $\\pi$; (iv) $\\pi/4$. Equivalent values modulo the appropriate periods also work."
+        },
+        "number": 26,
+        "subpartIds": [
+          "ai",
+          "aii",
+          "aiii",
+          "aiv",
+          "b"
+        ]
+      },
+      {
+        "prompt": "求符合条件的正弦方程：(a) 振幅 $3$，最高点 $(-\\pi/2,5)$，右侧最近最高点 $(3\\pi/2,5)$；(b) 振幅 $3$，最低点 $(\\pi/4,-2)$，右侧最近最高点 $(3\\pi/4,4)$；(c) 最低点 $(-\\pi,3)$，右侧最近最高点 $(0,7)$；(d) 最低点 $(90^\\circ,-6)$，右侧最近最高点 $(150^\\circ,4)$。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $T=3\\pi/2-(-\\pi/2)=2\\pi$，$b=1,d=5-3=2$。最高点前四分之一周期的上升交点为 $-\\pi$，故 $y=3\\sin(x+\\pi)+2$。代入两最高点，正弦值均为 $1$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 极小到相邻极大的距离 $\\pi/2=T/2$，故 $T=\\pi,b=2$；$d=(-2+4)/2=1$，上升中点 $c=\\pi/2$，得 $y=3\\sin2(x-\\pi/2)+1$。在 $\\pi/4,3\\pi/4$，正弦分别为 $-1,1$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $a=(7-3)/2=2,d=5$，半周期为 $\\pi$，故 $T=2\\pi,b=1$。上升中点 $c=-\\pi/2$，得 $y=2\\sin(x+\\pi/2)+5$。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) $a=(4-(-6))/2=5,d=-1$；半周期 $150^\\circ-90^\\circ=60^\\circ$，故 $T=120^\\circ,b=3$；上升中点 $c=120^\\circ$，得 $y=5\\sin3(x-120^\\circ)-1$。"
+          }
+        ],
+        "answer": "(a) $3\\sin(x+\\pi)+2$；(b) $3\\sin2(x-\\pi/2)+1$；(c) $2\\sin(x+\\pi/2)+5$；(d) $5\\sin3(x-120^\\circ)-1$。",
+        "printedPage": 255,
+        "pdfPage": 264,
+        "en": {
+          "prompt": "Determine a sine equation with: (a) amplitude $3$, maximum $(-\\pi/2,5)$ and nearest maximum to the right $(3\\pi/2,5)$; (b) amplitude $3$, minimum $(\\pi/4,-2)$ and nearest maximum to the right $(3\\pi/4,4)$; (c) minimum $(-\\pi,3)$ and nearest maximum to the right $(0,7)$; (d) minimum $(90^\\circ,-6)$ and nearest maximum to the right $(150^\\circ,4)$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $T=3\\pi/2-(-\\pi/2)=2\\pi$, so $b=1,d=5-3=2$. The rising crossing a quarter-period before the maximum is $-\\pi$, giving $y=3\\sin(x+\\pi)+2$. Sine is $1$ at both given maxima."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) Minimum-to-next-maximum distance $\\pi/2=T/2$ gives $T=\\pi,b=2$. The midline is $d=(-2+4)/2=1$, and rising crossing $c=\\pi/2$. Thus $y=3\\sin2(x-\\pi/2)+1$; sine is $-1,1$ at $\\pi/4,3\\pi/4$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) $a=(7-3)/2=2,d=5$; half-period $\\pi$ gives $T=2\\pi,b=1$. The rising crossing is $c=-\\pi/2$, giving $y=2\\sin(x+\\pi/2)+5$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(d) $a=(4-(-6))/2=5,d=-1$. Half-period $150^\\circ-90^\\circ=60^\\circ$ gives $T=120^\\circ,b=3$. The rising crossing is $c=120^\\circ$, giving $y=5\\sin3(x-120^\\circ)-1$."
+            }
+          ],
+          "answer": "(a) $3\\sin(x+\\pi)+2$; (b) $3\\sin2(x-\\pi/2)+1$; (c) $2\\sin(x+\\pi/2)+5$; (d) $5\\sin3(x-120^\\circ)-1$."
+        },
+        "number": 27,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "摆与竖直线的夹角 $P$（弧度）可用 $P=a\\cos bt$ 表示，$a$ 为最大夹角，$t$ 为秒。教材把 $b$ 称为水平伸缩因子。周期近似为 $T=2\\pi\\sqrt{L/g}$，$L$ 为摆长，$g=9.8\\ \\mathrm{m/s^2}$。原图摆长 $20$ cm，从竖直位置至极端位置的弧长 $8$ cm。(a) 在 $0\\le t\\le5$ 作摆的位置模型图。(b) 求 $6$ 秒后的位置，精确至 $0.1$ cm。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "弧度定义给 $a=s/L=8/20=0.4$。重力公式中的摆长必须用米：$L=0.20$ m，所以 $T=2\\pi\\sqrt{0.20/9.8}=2\\pi/7\\approx0.8976$ 秒。"
+          },
+          {
+            "title": "推导",
+            "body": "(a) $b=2\\pi/T=7$，模型 $P(t)=0.4\\cos7t$。以向右为正，弧位置 $s(t)=20P(t)=8\\cos7t$ cm。首周期关键点 $t=0,\\pi/14,\\pi/7,3\\pi/14,2\\pi/7$ 对应角度 $0.4,0,-0.4,0,0.4$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $P(6)=0.4\\cos42\\approx-0.159994$ rad；$s(6)=20P(6)=8\\cos42\\approx-3.19988$ cm，负号表示在竖直线左侧。教材答案把 $20$ cm 当作公式中的 $20$ 而没有换成米；这里统一单位计算。"
+          }
+        ],
+        "answer": "(a) $P(t)=0.4\\cos7t$ rad，$0\\le t\\le5$；(b) 沿圆弧在竖直位置左侧约 $3.2$ cm。$b$ 为角频率，真正水平伸缩比例为 $1/b$。",
+        "printedPage": 255,
+        "pdfPage": 264,
+        "en": {
+          "prompt": "The pendulum angle $P$ in radians from the vertical is modelled by $P=a\\cos bt$, where $a$ is its maximum angle and $t$ is seconds. The text calls $b$ the horizontal stretch factor. The period is approximated by $T=2\\pi\\sqrt{L/g}$, where $L$ is pendulum length and $g=9.8\\ \\mathrm{m/s^2}$. The diagram gives length $20$ cm and an $8$ cm arc from the vertical to the extreme. (a) Sketch a model of its position for $0\\le t\\le5$. (b) Determine its position after $6$ s to the nearest tenth of a centimetre.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "Radians give $a=s/L=8/20=0.4$. Convert the length to metres for the gravity formula: $L=0.20$ m, so $T=2\\pi\\sqrt{0.20/9.8}=2\\pi/7\\approx0.8976$ s."
+            },
+            {
+              "title": "Work it out",
+              "body": "(a) $b=2\\pi/T=7$, giving $P(t)=0.4\\cos7t$. With right positive, arc position is $s(t)=20P(t)=8\\cos7t$ cm. In the first cycle, $t=0,\\pi/14,\\pi/7,3\\pi/14,2\\pi/7$ gives angles $0.4,0,-0.4,0,0.4$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) $P(6)=0.4\\cos42\\approx-0.159994$ rad and $s(6)=20P(6)=8\\cos42\\approx-3.19988$ cm. Negative means left of the vertical. The printed answer substitutes $20$ for the length without converting centimetres to metres; this solution uses consistent units."
+            }
+          ],
+          "answer": "(a) $P(t)=0.4\\cos7t$ rad for $0\\le t\\le5$. (b) About $3.2$ cm along the arc to the left of vertical. Here $b$ is angular frequency; the horizontal scale factor is $1/b$."
+        },
+        "number": 28,
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/5-2-exercise28.png",
+        "solutionImage": "assets/5-2-exercise28-check.png"
+      },
+      {
+        "prompt": "对 $y=a\\sin b(x-c)+d$，说明 $a,b,c,d$ 各自如何影响图像，并与第 1 章函数变换比较。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "$a$ 使纵坐标乘 $a$：竖直伸缩 $|a|$ 倍，负号关于横轴反射；$b$ 使横坐标相对相移点按 $1/|b|$ 缩放，$b<0$ 另有水平反射。"
+          },
+          {
+            "title": "推导",
+            "body": "$c$ 平移水平位置，正右负左；$d$ 平移竖直位置，正上负下。一般点映射为 $(u,v)\\mapsto(u/b+c,av+d)$，与第 1 章 $y=af(b(x-c))+d$ 完全相同。"
+          }
+        ],
+        "answer": "振幅 $|a|$；周期 $2\\pi/|b|$ 或 $360^\\circ/|b|$；相移 $c$；中线 $d$。变换规则与一般函数相同。",
+        "printedPage": 255,
+        "pdfPage": 264,
+        "en": {
+          "prompt": "For $y=a\\sin b(x-c)+d$, describe the effect of each parameter $a,b,c,d$ on the graph and compare with Chapter 1 function transformations.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "$a$ multiplies ordinates by $a$: vertical scale $|a|$ and reflection in the horizontal axis if negative. $b$ scales horizontal distances from the phase-shift point by $1/|b|$, with horizontal reflection if $b<0$."
+            },
+            {
+              "title": "Work it out",
+              "body": "$c$ translates horizontally, right if positive and left if negative; $d$ translates vertically, up if positive and down if negative. The point mapping is $(u,v)\\mapsto(u/b+c,av+d)$, exactly as for $y=af(b(x-c))+d$ in Chapter 1."
+            }
+          ],
+          "answer": "Amplitude $|a|$, period $2\\pi/|b|$ or $360^\\circ/|b|$, phase shift $c$, and midline $d$ follow the same rules as general function transformations."
+        },
+        "number": "C1"
+      },
+      {
+        "prompt": "作 $y=-\\sin x$ 和 $y=\\sin(-x)$ 的图。(a) 比较其相同与不同。(b) 说明原因。(c) 预测 $y=-\\cos x$ 与 $y=\\cos(-x)$ 如何比较。(d) 核验预测；若不正确，写出正确的余弦性质。",
+        "concept": "identities",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 在 $x=0,\\pi/2,\\pi,3\\pi/2,2\\pi$，两条正弦曲线均取 $0,-1,0,1,0$，完全重合。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 单位圆上把角度取负，纵坐标取反，因此 $\\sin(-x)=-\\sin x$；正弦是奇函数。"
+          },
+          {
+            "title": "推导",
+            "body": "(c,d) 余弦是横坐标，角度取负时不变：$\\cos(-x)=\\cos x$。因此 $-\\cos x$ 与 $\\cos(-x)$ 关于横轴互为镜像，而不重合；例如 $x=0$ 时分别为 $-1$、$1$。"
+          }
+        ],
+        "answer": "(a,b) 正弦两图完全相同，$\\sin(-x)=-\\sin x$。(c,d) 余弦两图关于横轴对称，$\\cos(-x)=\\cos x$。",
+        "printedPage": 255,
+        "pdfPage": 264,
+        "en": {
+          "prompt": "Sketch $y=-\\sin x$ and $y=\\sin(-x)$. (a) Compare the graphs. How are they alike or different? (b) Explain. (c) Predict how $y=-\\cos x$ and $y=\\cos(-x)$ compare. (d) Check your hypothesis and correct it if necessary.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) At $x=0,\\pi/2,\\pi,3\\pi/2,2\\pi$, both sine curves give $0,-1,0,1,0$, so they coincide."
+            },
+            {
+              "title": "Work it out",
+              "body": "(b) Negating the angle reverses the unit-circle ordinate, so $\\sin(-x)=-\\sin x$: sine is odd."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c,d) Cosine is the horizontal coordinate, unchanged by negating the angle: $\\cos(-x)=\\cos x$. Thus $-\\cos x$ and $\\cos(-x)$ are reflections in the horizontal axis and do not coincide; at $x=0$ they give $-1$ and $1$."
+            }
+          ],
+          "answer": "(a,b) The sine graphs coincide because $\\sin(-x)=-\\sin x$. (c,d) The cosine graphs reflect in the horizontal axis because $\\cos(-x)=\\cos x$."
+        },
+        "number": "C2",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-2-exerciseC2.png"
+      },
+      {
+        "prompt": "三角形 ABC 如原图内接于 $f(x)=5\\sin x$ 与 $g(x)=5\\cos x$ 的图像之间。求三角形面积。",
+        "concept": "fit",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "从原图识别：A 是余弦的首个正零点，$A=(\\pi/2,0)$；B 是正弦的首个正零点，$B=(\\pi,0)$；C 位于 A 正上方的正弦最高点，$C=(\\pi/2,5)$。C 不是两曲线的交点。"
+          },
+          {
+            "title": "推导",
+            "body": "底边 $AB=\\pi-\\pi/2=\\pi/2$，高 $AC=5$。面积 $\\frac12\\cdot\\frac\\pi2\\cdot5=5\\pi/4$。"
+          }
+        ],
+        "answer": "$5\\pi/4$ 平方单位。",
+        "printedPage": 255,
+        "pdfPage": 264,
+        "en": {
+          "prompt": "Triangle ABC is inscribed between the graphs $f(x)=5\\sin x$ and $g(x)=5\\cos x$, as shown. Determine its area.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "From the diagram, A is cosine’s first positive zero, $A=(\\pi/2,0)$; B is sine’s first positive zero, $B=(\\pi,0)$; C is the sine maximum directly above A, $C=(\\pi/2,5)$. C is not the curves’ intersection."
+            },
+            {
+              "title": "Work it out",
+              "body": "The base is $AB=\\pi-\\pi/2=\\pi/2$ and height $AC=5$. Thus area $=\\frac12\\cdot\\frac\\pi2\\cdot5=5\\pi/4$."
+            }
+          ],
+          "answer": "$5\\pi/4$ square units."
+        },
+        "number": "C3",
+        "sourceImage": "assets/5-2-exerciseC3.png"
+      },
+      {
+        "prompt": "在 $y=a\\sin b(x-c)+d$ 中，$a>0,b>0$。分别求使以下条件成立的参数限制：(a) 周期大于 $2\\pi$；(b) 振幅大于 $1$；(c) 图像过原点；(d) 没有横截距；(e) 纵截距为 $a$；(f) 一个周期长度为 $120^\\circ$。",
+        "concept": "parameters",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $2\\pi/b>2\\pi$ 且 $b>0$，故 $0<b<1$。(b) 振幅 $a>1$。其余参数任意。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 代入 $x=0,y=0$：$0=-a\\sin bc+d$，所以 $d=a\\sin bc$。例如 $c=0,d=0$，$a,b$ 任意正数。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) 值域 $[d-a,d+a]$ 不含 $0$，必须 $d-a>0$ 或 $d+a<0$，即 $d>a$ 或 $d<-a$。等号时会与横轴相切，不能包括。"
+          },
+          {
+            "title": "推导",
+            "body": "(e) $y(0)=-a\\sin bc+d=a$，故 $d=a(1+\\sin bc)$；例如 $b=1,c=-\\pi/2,d=0$。"
+          },
+          {
+            "title": "推导",
+            "body": "(f) 在角度制下 $360^\\circ/b=120^\\circ$，得 $b=3$；$a>0$ 及 $c,d$ 不受额外限制。"
+          }
+        ],
+        "answer": "(a) $0<b<1$；(b) $a>1$；(c) $d=a\\sin bc$；(d) $|d|>a$；(e) $d=a(1+\\sin bc)$；(f) $b=3$（角度制）。",
+        "printedPage": 255,
+        "pdfPage": 264,
+        "en": {
+          "prompt": "For $y=a\\sin b(x-c)+d$ with $a>0,b>0$, determine conditions on the parameters for: (a) period greater than $2\\pi$; (b) amplitude greater than $1$; (c) passing through the origin; (d) no $x$-intercepts; (e) $y$-intercept $a$; (f) cycle length $120^\\circ$.",
+          "steps": [
+            {
+              "title": "Work it out",
+              "body": "(a) $2\\pi/b>2\\pi$ with $b>0$ gives $0<b<1$. (b) Amplitude $a>1$. Other parameters are unrestricted."
+            },
+            {
+              "title": "Work it out",
+              "body": "(c) Substituting $x=0,y=0$ gives $0=-a\\sin bc+d$, hence $d=a\\sin bc$. For example, $c=0,d=0$ works for any positive $a,b$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(d) The range $[d-a,d+a]$ must exclude $0$: $d-a>0$ or $d+a<0$, so $d>a$ or $d<-a$. Equality would touch the axis and is excluded."
+            },
+            {
+              "title": "Work it out",
+              "body": "(e) $y(0)=-a\\sin bc+d=a$ gives $d=a(1+\\sin bc)$. One example is $b=1,c=-\\pi/2,d=0$."
+            },
+            {
+              "title": "Work it out",
+              "body": "(f) In degrees, $360^\\circ/b=120^\\circ$, giving $b=3$; there are no further restrictions on $a>0,c,d$."
+            }
+          ],
+          "answer": "(a) $0<b<1$; (b) $a>1$; (c) $d=a\\sin bc$; (d) $|d|>a$; (e) $d=a(1+\\sin bc)$; (f) $b=3$ in degrees."
+        },
+        "number": "C4",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4",
+      "example-5"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "investigate-5",
+      "investigate-6",
+      "investigate-7",
+      "investigate-8",
+      "investigate-9",
+      "investigate-10",
+      "your-turn-1",
+      "your-turn-2",
+      "your-turn-3",
+      "your-turn-4",
+      "your-turn-5"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "expectedSubparts": {
+      "investigate-4": [
+        "a",
+        "b"
+      ],
+      "investigate-5": [
+        "a",
+        "b"
+      ],
+      "investigate-9": [
+        "a",
+        "b"
+      ],
+      "investigate-10": [
+        "a",
+        "b"
+      ],
+      "example-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-2": [
+        "a",
+        "b"
+      ],
+      "example-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "your-turn-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-2": [
+        "a",
+        "b"
+      ],
+      "your-turn-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-3": [
+        "ai",
+        "aii",
+        "aiii",
+        "aiv",
+        "b"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-10": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-12": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-14": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5",
+        "a6",
+        "a7",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7"
+      ],
+      "exercise-15": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-16": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-17": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-19": [
+        "ai",
+        "aii",
+        "bi",
+        "bii"
+      ],
+      "exercise-23": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-24": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-25": [
+        "a",
+        "b"
+      ],
+      "exercise-26": [
+        "ai",
+        "aii",
+        "aiii",
+        "aiv",
+        "b"
+      ],
+      "exercise-27": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-28": [
+        "a",
+        "b"
+      ],
+      "exercise-C2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-C4": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independent source and mathematical review passed; exact final hashes and unchanged reviewed payload are recorded in the chapter audit."
+  }
+}

@@ -1,0 +1,996 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "3-review",
+    "section": "3 review",
+    "title": "第 3 章复习",
+    "en": {
+      "title": "Chapter 3 Review"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+      "kind": "pdf",
+      "pdfPages": [
+        162,
+        163
+      ],
+      "printedPages": [
+        153,
+        154
+      ]
+    },
+    "concepts": [
+      {
+        "id": "characteristics",
+        "title": "次数与端行为",
+        "summary": "多项式的次数与首项系数决定两端方向；代入零求y截距。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "奇次两端相反，偶次两端相同；实零点最多为次数，偶重根可使不同截点个数为奇数。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Degree and end behaviour",
+          "summary": "Degree and leading coefficient determine both tails; substitute zero for the y-intercept.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Odd degrees have opposite tails and even degrees have matching tails. The number of distinct real zeros is at most the degree; even multiplicities can make the number of distinct intercepts odd."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "remainder",
+        "title": "除法与余式",
+        "summary": "$P(x)=(x-a)Q(x)+P(a)$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "按降幂排列并补零；逐次除、乘、减；或逐列合成除法。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Division and remainders",
+          "summary": "$P(x)=(x-a)Q(x)+P(a)$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Order by descending powers, insert zeros, then divide, multiply and subtract, or perform synthetic division."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "factor",
+        "title": "因式与模型",
+        "summary": "$P(a)=0$ 当且仅当 $x-a$ 是因式。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "试常数项的因数，降次并继续分解；应用题检查每个尺寸为正。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Factors and models",
+          "summary": "$P(a)=0$ iff $x-a$ is a factor.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Test divisors of the constant term, reduce the degree and factor further. In applications require every dimension to be positive."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "graphs",
+        "title": "零点、重数与图像",
+        "summary": "奇重根穿过x轴，偶重根接触后返回；符号由每个因子的正负决定。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "列截点、y截距和端行为，在每个相邻零点区间试值，再画光滑曲线。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Zeros, multiplicity and graphs",
+          "summary": "An odd-multiplicity zero crosses the x-axis; an even-multiplicity zero touches and returns. Factor signs determine the sign of the function.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "List zeros, the y-intercept and end behaviour, test each interval between zeros, and sketch a smooth curve."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "transformations",
+        "title": "多项式变换",
+        "summary": "$y=a(b(x-h))^n+k$ 将 $(u,u^n)$ 映射为 $(u/b+h,au^n+k)$（$b\\ne0$）。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先水平比例及反射，再竖直比例及反射，最后平移。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Polynomial transformations",
+          "summary": "$y=a(b(x-h))^n+k$ maps $(u,u^n)$ to $(u/b+h,au^n+k)$ for $b\\ne0$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Apply horizontal scaling/reflection, vertical scaling/reflection, then translations."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "concept": "characteristics",
+        "prompt": "哪些是多项式函数？说明理由。(a) $y=\\sqrt{x+1}$；(b) $f(x)=3x^4$；(c) $g(x)=-3x^3-2x^2+x$；(d) $y=\\frac12x+7$。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 根式含变量，不能写成只有非负整数幂的有限和，所以不是。(b) 幂为4，系数为3，所以是四次多项式。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 幂3、2、1均为非负整数，所以是三次。(d) 分数是常数系数，幂为1和0，所以是一次。"
+          }
+        ],
+        "answer": "(b)、(c)、(d) 是；(a) 不是。",
+        "printedPage": 153,
+        "pdfPage": 162,
+        "en": {
+          "prompt": "Which of the following are polynomial functions? Justify your answer. (a) $y=\\sqrt{x+1}$; (b) $f(x)=3x^4$; (c) $g(x)=-3x^3-2x^2+x$; (d) $y=\\frac12x+7$.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "(a) The variable is under a square root; it is not a finite sum of nonnegative integer powers, so it is not polynomial. (b) Power 4 and coefficient 3 give a degree-4 polynomial."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(c) Powers 3, 2, 1 are nonnegative integers: degree 3. (d) A fractional constant coefficient is allowed; the powers are 1 and 0: degree 1."
+            }
+          ],
+          "answer": "(b), (c), (d) are polynomial; (a) is not."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 2,
+        "concept": "characteristics",
+        "prompt": "用次数与首项系数的符号描述端行为，说明可能的x截点个数与y截距。(a) $s(x)=x^4-3x^2+5x$；(b) $p(x)=-x^3+5x^2-x+4$；(c) $y=3x-2$；(d) $y=2x^2-4$；(e) $y=2x^5-3x^3+1$。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 次数4、首项正：两端向上，$s(0)=0$。(b) 次数3、首项负：左上右下，$p(0)=4$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 次数1、正：左下右上，y截距−2，恰有1个x截点。(d) 次数2、正：两端向上，y截距−4；由次数可有0、1或2个不同x截点，本函数解 $2x^2-4=0$ 得两个。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(e) 次数5、正：左下右上，y截距1。仅由次数判断，四次可有0–4个、三次可有1–3个、五次可有1–5个不同实截点；偶重根不能当作两个不同截点。具体(a)有2个，(b)有1个，(e)有3个。"
+          }
+        ],
+        "answer": "(a) 上/上，0；(b) 上/下，4；(c) 下/上，−2；(d) 上/上，−4；(e) 下/上，1。可能个数与实际个数见步骤。",
+        "printedPage": 153,
+        "pdfPage": 162,
+        "en": {
+          "prompt": "Use the degree and sign of the leading coefficient to describe the end behaviour. State the possible number of x-intercepts and the y-intercept. (a) $s(x)=x^4-3x^2+5x$; (b) $p(x)=-x^3+5x^2-x+4$; (c) $y=3x-2$; (d) $y=2x^2-4$; (e) $y=2x^5-3x^3+1$.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "(a) Degree 4, positive leading coefficient: both tails up; $s(0)=0$. (b) Degree 3, negative leading coefficient: left up, right down; $p(0)=4$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(c) Degree 1, positive: left down, right up; y-intercept −2 and exactly one x-intercept. (d) Degree 2, positive: both tails up, y-intercept −4. Degree alone allows 0, 1 or 2 distinct x-intercepts; this function has two from $2x^2-4=0$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(e) Degree 5, positive: left down, right up, y-intercept 1. From degree alone, quartics allow 0–4, cubics 1–3, and quintics 1–5 distinct real intercepts; an even-multiplicity root is one distinct intercept. Specifically (a) has 2, (b) has 1, and (e) has 3."
+            }
+          ],
+          "answer": "(a) up/up, 0; (b) up/down, 4; (c) down/up, −2; (d) up/up, −4; (e) down/up, 1. Possible and actual intercept counts are explained above."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      {
+        "number": 3,
+        "concept": "characteristics",
+        "prompt": "跳伞者从11500 ft高处跳下，跳下后t秒的高度（ft）为 $h(t)=11500-16t^2$。(a) 这是什么类型的函数？(b) 12秒后的高度？(c) 何时高1500 ft？(d) 大约多久到地面？",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 最高幂2，是二次多项式。(b) $h(12)=11500-16(144)=9196$ ft。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) $1500=11500-16t^2\\Rightarrow t^2=625\\Rightarrow t=25$ s，舍去负时间。(d) $0=11500-16t^2\\Rightarrow t=\\sqrt{718.75}\\approx26.81$ s。物理时间域 $0\\le t\\le26.81$（约）。"
+          }
+        ],
+        "answer": "(a) 二次；(b) 9196 ft；(c) 25 s；(d) 约26.81 s。",
+        "printedPage": 153,
+        "pdfPage": 162,
+        "en": {
+          "prompt": "A parachutist jumps from a plane 11 500 ft above the ground. Height h, in feet, t seconds after the jump is modelled by $h(t)=11500-16t^2$. (a) What type of function is h(t)? (b) What is the height after 12 s? (c) When will the height be 1500 ft? (d) Approximately how long will it take to reach the ground?",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "(a) The largest power is 2: a quadratic polynomial. (b) $h(12)=11500-16(144)=9196$ ft."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(c) $1500=11500-16t^2\\Rightarrow t^2=625\\Rightarrow t=25$ s, rejecting negative time. (d) $0=11500-16t^2\\Rightarrow t=\\sqrt{718.75}\\approx26.81$ s. The physical time domain is approximately $0\\le t\\le26.81$."
+            }
+          ],
+          "answer": "(a) quadratic; (b) 9196 ft; (c) 25 s; (d) about 26.81 s."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 4,
+        "concept": "remainder",
+        "prompt": "用余式定理求余数，再按指定方法作除法，写成 $\\frac{P(x)}{x-a}=Q(x)+\\frac R{x-a}$ 并列限制。(a) $x^3+9x^2-5x+3$ 除以 $x-2$，长除法；(b) $2x^3+x^2-2x+1$ 除以 $x+1$，长除法；(c) $12x^3+13x^2-23x+7$ 除以 $x-1$，合成除法；(d) $-8x^4-4x+10x^3+15$ 除以 $x+1$，合成除法。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) $P(2)=8+36-10+3=37$。长除法先取 $x^2$，相减余 $11x^2-5x+3$；再取 $11x$，相减余 $17x+3$；取17，余37。故 $\\frac{P(x)}{x-2}=x^2+11x+17+\\frac{37}{x-2}$，$x\\ne2$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) $P(-1)=-2+1+2+1=2$。先取 $2x^2$，余 $-x^2-2x+1$；再取 $-x$，余 $-x+1$；再取−1，余2。$\\frac{P(x)}{x+1}=2x^2-x-1+\\frac2{x+1}$，$x\\ne-1$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) $P(1)=12+13-23+7=9$。系数12,13,−23,7；落下12，再依次 $13+12=25$、$-23+25=2$、$7+2=9$。$\\frac{P(x)}{x-1}=12x^2+25x+2+\\frac9{x-1}$，$x\\ne1$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(d) 补零系数为−8,10,0,−4,15；$P(-1)=-8-10+4+15=1$。以−1合成：落下−8，$10+8=18$，$0-18=-18$，$-4+18=14$，$15-14=1$。$\\frac{P(x)}{x+1}=-8x^3+18x^2-18x+14+\\frac1{x+1}$，$x\\ne-1$。"
+          }
+        ],
+        "answer": "四个余数依次为37、2、9、1；商和限制见各小问。",
+        "printedPage": 153,
+        "pdfPage": 162,
+        "en": {
+          "prompt": "Use the remainder theorem to find the remainder, then divide using the indicated method. Express each result as $\\frac{P(x)}{x-a}=Q(x)+\\frac R{x-a}$ and state restrictions. (a) $x^3+9x^2-5x+3$ by $x-2$, long division; (b) $2x^3+x^2-2x+1$ by $x+1$, long division; (c) $12x^3+13x^2-23x+7$ by $x-1$, synthetic division; (d) $-8x^4-4x+10x^3+15$ by $x+1$, synthetic division.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "(a) $P(2)=8+36-10+3=37$. Long division: subtract $x^2(x-2)$ to get $11x^2-5x+3$; subtract $11x(x-2)$ to get $17x+3$; subtract $17(x-2)$ to leave 37. Thus $\\frac{P(x)}{x-2}=x^2+11x+17+\\frac{37}{x-2}$, $x\\ne2$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(b) $P(-1)=-2+1+2+1=2$. Subtract $2x^2(x+1)$ to leave $-x^2-2x+1$; subtract $-x(x+1)$ to leave $-x+1$; subtract $-1(x+1)$ to leave 2. Hence $\\frac{P(x)}{x+1}=2x^2-x-1+\\frac2{x+1}$, $x\\ne-1$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(c) $P(1)=12+13-23+7=9$. With coefficients 12,13,−23,7, bring down 12, then obtain $13+12=25$, $-23+25=2$, $7+2=9$. Thus $\\frac{P(x)}{x-1}=12x^2+25x+2+\\frac9{x-1}$, $x\\ne1$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(d) Include the missing zero: −8,10,0,−4,15. $P(-1)=-8-10+4+15=1$. Synthetic division by −1 gives −8; $10+8=18$; $0-18=-18$; $-4+18=14$; $15-14=1$. Thus $\\frac{P(x)}{x+1}=-8x^3+18x^2-18x+14+\\frac1{x+1}$, $x\\ne-1$."
+            }
+          ],
+          "answer": "Remainders: 37, 2, 9, 1 respectively; quotients and restrictions are shown for each part."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 5,
+        "concept": "remainder",
+        "prompt": "(a) $f(x)=x^4+kx^3-3x-5$ 除以 $x-3$ 余−14，求k。(b) 用该k求除以 $x+3$ 的余数。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) $f(3)=81+27k-9-5=67+27k=-14$，所以 $27k=-81$，$k=-3$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) $f(-3)=81+(-3)(-27)+9-5=166$。核对 $f(3)=81-81-9-5=-14$。"
+          }
+        ],
+        "answer": "(a) $k=-3$；(b) 166。",
+        "printedPage": 153,
+        "pdfPage": 162,
+        "en": {
+          "prompt": "(a) Determine k so that $f(x)=x^4+kx^3-3x-5$ leaves remainder −14 when divided by $x-3$. (b) Using that k, find the remainder when f(x) is divided by $x+3$.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "(a) $f(3)=81+27k-9-5=67+27k=-14$, so $27k=-81$ and $k=-3$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(b) $f(-3)=81+(-3)(-27)+9-5=166$. Check: $f(3)=81-81-9-5=-14$."
+            }
+          ],
+          "answer": "(a) $k=-3$; (b) 166."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 6,
+        "concept": "remainder",
+        "prompt": "$P(x)=4x^3-3x^2+bx+6$ 除以 $x-1$ 与 $x+3$ 的余数相同，求b。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "$P(1)=7+b$，$P(-3)=-108-27-3b+6=-129-3b$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "令 $7+b=-129-3b$，得 $4b=-136$，$b=-34$。两余数均为−27。"
+          }
+        ],
+        "answer": "$b=-34$。",
+        "printedPage": 153,
+        "pdfPage": 162,
+        "en": {
+          "prompt": "For what b will $P(x)=4x^3-3x^2+bx+6$ have the same remainder when divided by both $x-1$ and $x+3$?",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "$P(1)=7+b$ and $P(-3)=-108-27-3b+6=-129-3b$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "Set $7+b=-129-3b$, giving $4b=-136$, so $b=-34$. Both remainders are −27."
+            }
+          ],
+          "answer": "$b=-34$."
+        }
+      },
+      {
+        "number": 7,
+        "concept": "factor",
+        "prompt": "哪些二项式是 $P(x)=x^3-x^2-16x+16$ 的因式？说明理由。(a) $x-1$；(b) $x+1$；(c) $x+4$；(d) $x-4$。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "逐个代入对应的零点：(a) $P(1)=1-1-16+16=0$；(b) $P(-1)=-1-1+16+16=30$。所以(a)是，(b)不是。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) $P(-4)=-64-16+64+16=0$；(d) $P(4)=64-16-64+16=0$，两者均是。也可分组 $P=(x-1)(x^2-16)=(x-1)(x-4)(x+4)$。"
+          }
+        ],
+        "answer": "(a)、(c)、(d)。",
+        "printedPage": 153,
+        "pdfPage": 162,
+        "en": {
+          "prompt": "Which binomials are factors of $P(x)=x^3-x^2-16x+16$? Justify. (a) $x-1$; (b) $x+1$; (c) $x+4$; (d) $x-4$.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "Test the corresponding zeros: (a) $P(1)=1-1-16+16=0$; (b) $P(-1)=-1-1+16+16=30$. Thus (a) is a factor and (b) is not."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(c) $P(-4)=-64-16+64+16=0$; (d) $P(4)=64-16-64+16=0$, so both are factors. Grouping also gives $P=(x-1)(x^2-16)=(x-1)(x-4)(x+4)$."
+            }
+          ],
+          "answer": "(a), (c), (d)."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 8,
+        "concept": "factor",
+        "prompt": "完全分解。(a) $x^3-4x^2+x+6$；(b) $-4x^3-4x^2+16x+16$；(c) $x^4-4x^3-x^2+16x-12$；(d) $x^5-3x^4-5x^3+27x^2-32x+12$。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 代入−1得0；除以 $x+1$ 得 $x^2-5x+6=(x-2)(x-3)$。结果 $(x+1)(x-2)(x-3)$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 分组：$-4x^2(x+1)+16(x+1)=-4(x+1)(x^2-4)=-4(x+1)(x-2)(x+2)$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 代入1得0，商 $x^3-3x^2-4x+12$；分组为 $x^2(x-3)-4(x-3)=(x-3)(x-2)(x+2)$。结果 $(x-1)(x-3)(x-2)(x+2)$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(d) 连除 $x-1$ 两次得到商 $x^3-x^2-8x+12$；再除 $x-2$ 得 $x^2+x-6=(x-2)(x+3)$。所以 $(x-1)^2(x-2)^2(x+3)$。乘回：$(x^4-6x^3+13x^2-12x+4)(x+3)$ 正好得到原式。"
+          }
+        ],
+        "answer": "(a) $(x+1)(x-2)(x-3)$；(b) $-4(x+1)(x-2)(x+2)$；(c) $(x-1)(x-2)(x-3)(x+2)$；(d) $(x-1)^2(x-2)^2(x+3)$。",
+        "printedPage": 153,
+        "pdfPage": 162,
+        "en": {
+          "prompt": "Factor fully. (a) $x^3-4x^2+x+6$; (b) $-4x^3-4x^2+16x+16$; (c) $x^4-4x^3-x^2+16x-12$; (d) $x^5-3x^4-5x^3+27x^2-32x+12$.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "(a) Substitution at −1 gives 0. Divide by $x+1$ to get $x^2-5x+6=(x-2)(x-3)$. Result: $(x+1)(x-2)(x-3)$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(b) Group: $-4x^2(x+1)+16(x+1)=-4(x+1)(x^2-4)=-4(x+1)(x-2)(x+2)$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(c) Substitution at 1 gives 0; the quotient is $x^3-3x^2-4x+12$. Group it as $x^2(x-3)-4(x-3)=(x-3)(x-2)(x+2)$. Result: $(x-1)(x-3)(x-2)(x+2)$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(d) Divide twice by $x-1$ to obtain $x^3-x^2-8x+12$. Divide by $x-2$ to get $x^2+x-6=(x-2)(x+3)$. Hence $(x-1)^2(x-2)^2(x+3)$. Expanding $(x^4-6x^3+13x^2-12x+4)(x+3)$ returns the original polynomial."
+            }
+          ],
+          "answer": "(a) $(x+1)(x-2)(x-3)$; (b) $-4(x+1)(x-2)(x+2)$; (c) $(x-1)(x-2)(x-3)(x+2)$; (d) $(x-1)^2(x-2)^2(x+3)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 9,
+        "concept": "factor",
+        "prompt": "酒店入口使用的长方体花岗石块的体积（m³）为 $V(x)=2x^3+7x^2+2x-3$，x的单位为m。(a) 用x表示可能的尺寸。(b) x=1时的尺寸？",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "$V(-1)=-2+7-2-3=0$，除以 $x+1$ 得 $2x^2+5x-3=(2x-1)(x+3)$。所以可取 $x+1$、$2x-1$、$x+3$ 米。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "这组三尺寸为正需 $x>\\frac12$。(b) x=1时得2 m、1 m、4 m，体积8 m³；$V(1)=2+7+2-3=8$。"
+          }
+        ],
+        "answer": "(a) $(x+1)$ m、$(2x-1)$ m、$(x+3)$ m，$x>\\frac12$；(b) 2 m、1 m、4 m。",
+        "printedPage": 154,
+        "pdfPage": 163,
+        "en": {
+          "prompt": "Rectangular blocks of granite for a hotel entrance have volume, in cubic metres, $V(x)=2x^3+7x^2+2x-3$, where x is in metres. (a) What are possible dimensions in terms of x? (b) What are the dimensions when x=1?",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "$V(-1)=-2+7-2-3=0$. Dividing by $x+1$ gives $2x^2+5x-3=(2x-1)(x+3)$. Possible dimensions are $x+1$, $2x-1$, $x+3$ metres."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "These three dimensions are positive when $x>\\frac12$. (b) At x=1 they are 2 m, 1 m, 4 m, giving 8 m³; $V(1)=2+7+2-3=8$."
+            }
+          ],
+          "answer": "(a) $(x+1)$ m, $(2x-1)$ m, $(x+3)$ m, with $x>\\frac12$; (b) 2 m, 1 m, 4 m."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 10,
+        "concept": "factor",
+        "prompt": "求k，使 $x+3$ 是 $x^3+4x^2-2kx+3$ 的因式。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "因式定理要求 $P(-3)=0$。代入得 $-27+36+6k+3=0$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "$12+6k=0\\Rightarrow k=-2$。此时 $P=(x+3)(x^2+x+1)$，乘回核对。"
+          }
+        ],
+        "answer": "$k=-2$。",
+        "printedPage": 154,
+        "pdfPage": 163,
+        "en": {
+          "prompt": "Determine k so that $x+3$ is a factor of $x^3+4x^2-2kx+3$.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "The factor theorem requires $P(-3)=0$. Substitute to obtain $-27+36+6k+3=0$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "$12+6k=0\\Rightarrow k=-2$. Then $P=(x+3)(x^2+x+1)$, verified by expansion."
+            }
+          ],
+          "answer": "$k=-2$."
+        }
+      },
+      {
+        "number": 11,
+        "concept": "graphs",
+        "prompt": "对每个函数，求图像的x截点、次数与端行为、零点及重数、y截距、正负区间，并画图。(a) $y=(x+1)(x-2)(x+3)$；(b) $y=(x-3)(x+2)^2$；(c) $g(x)=x^4-16x^2$；(d) $g(x)=-x^5+16x$。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 零点−3、−1、2均重数1，截点 $(-3,0),(-1,0),(2,0)$。三次首项正，左下右上；y截距−6。区间试值−4、−2、0、3得符号−,+,−,+；故正区间 $(-3,-1)\\cup(2,\\infty)$，负区间 $(-\\infty,-3)\\cup(-1,2)$，在三截点均穿过。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 零点−2重数2、3重数1；截点 $(-2,0),(3,0)$。三次首项正，左下右上；y截距−12。$x<3$ 时除零点−2外平方因子为正而x−3为负；负区间 $(-\\infty,-2)\\cup(-2,3)$，正区间 $(3,\\infty)$；−2处接触，3处穿过。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) $g=x^2(x-4)(x+4)$。零点−4、4重数1，0重数2；x截点 $(-4,0),(0,0),(4,0)$，y截距0。四次正，两端向上。正区间 $(-\\infty,-4)\\cup(4,\\infty)$；负区间 $(-4,0)\\cup(0,4)$；±4处穿过，0处接触。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(d) $g=-x(x-2)(x+2)(x^2+4)$，最后一个因子恒正。零点−2、0、2各重数1；截点 $(-2,0),(0,0),(2,0)$，y截距0。五次负，左上右下。试−3、−1、1、3得+,−,+,−，故正 $(-\\infty,-2)\\cup(0,2)$；负 $(-2,0)\\cup(2,\\infty)$。用截点、符号和两端连接为下列光滑曲线。"
+          }
+        ],
+        "answer": "全部截点、重数、端行为和正负区间见(a)–(d)；四幅图如下。",
+        "printedPage": 154,
+        "pdfPage": 163,
+        "en": {
+          "prompt": "For each function, determine the x-intercepts, degree and end behaviour, zeros and multiplicities, y-intercept, and intervals where the function is positive or negative. Then sketch the graph. (a) $y=(x+1)(x-2)(x+3)$; (b) $y=(x-3)(x+2)^2$; (c) $g(x)=x^4-16x^2$; (d) $g(x)=-x^5+16x$.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "(a) Zeros −3,−1,2 each have multiplicity 1, giving intercepts $(-3,0),(-1,0),(2,0)$. Degree 3 with positive leading term: left down/right up; y-intercept −6. Test −4,−2,0,3 to get signs −,+,−,+. Positive on $(-3,-1)\\cup(2,\\infty)$; negative on $(-\\infty,-3)\\cup(-1,2)$; cross at all three zeros."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(b) Zeros −2 (multiplicity 2) and 3 (multiplicity 1) give $(-2,0),(3,0)$. Degree 3, positive leading term: left down/right up; y-intercept −12. For x<3 the square is positive except at −2, while x−3 is negative. Negative on $(-\\infty,-2)\\cup(-2,3)$; positive on $(3,\\infty)$. Touch at −2, cross at 3."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(c) $g=x^2(x-4)(x+4)$. Zeros −4,4 have multiplicity 1; 0 has multiplicity 2. Intercepts are $(-4,0),(0,0),(4,0)$; y-intercept 0. Degree 4, positive: both tails up. Positive on $(-\\infty,-4)\\cup(4,\\infty)$; negative on $(-4,0)\\cup(0,4)$. Cross at ±4 and touch at 0."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(d) $g=-x(x-2)(x+2)(x^2+4)$, whose last factor is always positive. Zeros −2,0,2 each have multiplicity 1, giving $(-2,0),(0,0),(2,0)$; y-intercept 0. Degree 5, negative: left up/right down. Tests at −3,−1,1,3 give +,−,+,−. Positive on $(-\\infty,-2)\\cup(0,2)$; negative on $(-2,0)\\cup(2,\\infty)$. Connect the intercepts consistently with these signs and tails as below."
+            }
+          ],
+          "answer": "All intercepts, multiplicities, tails and sign intervals are given in (a)–(d); the four sketches are below."
+        },
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              2,
+              -5,
+              -6
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -10,
+              "yMax": 10
+            },
+            "expressionLatex": "(a)\\ y=(x+1)(x-2)(x+3)"
+          },
+          {
+            "numerator": [
+              1,
+              1,
+              -8,
+              -12
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -18,
+              "yMax": 12
+            },
+            "expressionLatex": "(b)\\ y=(x-3)(x+2)^2"
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              -16,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -70,
+              "yMax": 40
+            },
+            "expressionLatex": "(c)\\ y=x^4-16x^2"
+          },
+          {
+            "numerator": [
+              -1,
+              0,
+              0,
+              0,
+              16,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 3,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "expressionLatex": "(d)\\ y=-x^5+16x"
+          }
+        ],
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 12,
+        "concept": "transformations",
+        "prompt": "$y=x^3$ 变为 $y=2(-4(x-1))^3+3$。(a) 参数与对应变换是什么？(b) 完成表格，依次为水平伸缩/关于y轴反射、竖直伸缩/关于x轴反射、左右平移、上下平移，写参数值及方程。(c) 画变换后的图像。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) $a=2,b=-4,h=1,k=3$。水平压缩为原来的1/4并关于y轴反射，竖直拉伸2倍，右移1、上移3。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 逐步方程：b=−4时 $y=(-4x)^3$；加入a=2时 $y=2(-4x)^3$；加入h=1时 $y=2(-4(x-1))^3$；加入k=3时 $y=2(-4(x-1))^3+3$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 点映射 $(u,u^3)\\mapsto(1-u/4,2u^3+3)$；u=−1,0,1对应 $(1.25,1),(1,3),(0.75,5)$。函数为 $-128(x-1)^3+3$，左上右下，在(1,3)变平后继续下降。"
+          }
+        ],
+        "answer": "$a=2,b=-4,h=1,k=3$；各行方程与图见解析。",
+        "printedPage": 154,
+        "pdfPage": 163,
+        "en": {
+          "prompt": "The graph of $y=x^3$ is transformed to $y=2(-4(x-1))^3+3$. (a) What are the parameters and corresponding transformations? (b) Complete the table: horizontal stretch/reflection in y-axis; vertical stretch/reflection in x-axis; translation left/right; translation up/down. Give the parameter value and equation in each row. (c) Sketch the transformed graph.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "(a) $a=2,b=-4,h=1,k=3$. Horizontally compress by factor 1/4 and reflect in the y-axis; vertically stretch by 2; translate right 1 and up 3."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(b) Successive rows: b=−4 gives $y=(-4x)^3$; a=2 gives $y=2(-4x)^3$; h=1 gives $y=2(-4(x-1))^3$; k=3 gives $y=2(-4(x-1))^3+3$."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(c) Map $(u,u^3)\\mapsto(1-u/4,2u^3+3)$. Values u=−1,0,1 give $(1.25,1),(1,3),(0.75,5)$. The function is $-128(x-1)^3+3$, falling from left up to right down and flattening at (1,3)."
+            }
+          ],
+          "answer": "$a=2,b=-4,h=1,k=3$; successive equations and graph are shown in the solution."
+        },
+        "graph": {
+          "numerator": [
+            -128,
+            384,
+            -384,
+            131
+          ],
+          "denominator": [
+            1
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 2,
+            "yMin": -8,
+            "yMax": 14
+          },
+          "expressionLatex": "y=2(-4(x-1))^3+3"
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 13,
+        "concept": "graphs",
+        "prompt": "求与所给图(a)、(b)对应的多项式函数方程。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 最低次数模型在x=−3处接触（重数2），x=−1处穿过（重数1），所以 $y=a(x+3)^2(x+1)$。读点 $(-2,-1)$ 得 $-1=a(1)(-1)$，故a=1。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) x=−1处穿过，x=2处平坦穿过，取重数1和3：$y=a(x+1)(x-2)^3$。y截距为8，$8=a(1)(-8)$，所以a=−1。这些是与给定曲线相符的标准最低次数方程；有限图形资料本身不唯一规定任意更高次数多项式。"
+          }
+        ],
+        "answer": "(a) $y=(x+3)^2(x+1)$；(b) $y=-(x+1)(x-2)^3$（标准最低次数模型）。",
+        "printedPage": 154,
+        "pdfPage": 163,
+        "en": {
+          "prompt": "Determine the equation of the polynomial function corresponding to each supplied graph (a), (b).",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "(a) The least-degree model touches at x=−3 (multiplicity 2) and crosses at x=−1 (multiplicity 1), so $y=a(x+3)^2(x+1)$. Read $(-2,-1)$: $-1=a(1)(-1)$, hence a=1."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(b) The graph crosses at x=−1 and flattens while crossing at x=2: use multiplicities 1 and 3, giving $y=a(x+1)(x-2)^3$. The y-intercept is 8, so $8=a(1)(-8)$ and a=−1. These are the standard least-degree equations consistent with the supplied curves; finite graphical data alone do not uniquely fix arbitrary higher-degree polynomials."
+            }
+          ],
+          "answer": "(a) $y=(x+3)^2(x+1)$; (b) $y=-(x+1)(x-2)^3$ (standard least-degree models)."
+        },
+        "sourceImage": "assets/3-review-13.png",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 14,
+        "concept": "graphs",
+        "prompt": "四次函数的零点为−2、−1、3（3的重数2）。(a) 求两个符合条件的函数方程。(b) 求同时经过(2,24)的函数方程。",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "次数 $1+1+2=4$，因此全族为 $y=a(x+2)(x+1)(x-3)^2$，$a\\ne0$。(a) 可取a=1和a=−1。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 代入(2,24)：$24=a(4)(3)(1)=12a$，所以a=2。代回得24，零点重数均保持。"
+          }
+        ],
+        "answer": "(a) $y=\\pm(x+2)(x+1)(x-3)^2$ 为两个例子；(b) $y=2(x+2)(x+1)(x-3)^2$。",
+        "printedPage": 154,
+        "pdfPage": 163,
+        "en": {
+          "prompt": "The zeros of a quartic are −2, −1, and 3 (multiplicity 2). (a) Give equations for two functions satisfying this condition. (b) Find the equation also passing through (2,24).",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "The multiplicities sum to $1+1+2=4$, so the family is $y=a(x+2)(x+1)(x-3)^2$, $a\\ne0$. (a) Choose a=1 and a=−1."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "(b) Substitute (2,24): $24=a(4)(3)(1)=12a$, so a=2. Substitution checks 24 and all zero multiplicities remain unchanged."
+            }
+          ],
+          "answer": "(a) Two examples are $y=\\pm(x+2)(x+1)(x-3)^2$; (b) $y=2(x+2)(x+1)(x-3)^2$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 15,
+        "concept": "factor",
+        "prompt": "纸盒的宽比长少5 cm，高为长的两倍。(a) 写体积方程。(b) 体积384 cm³时各尺寸是多少？",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "设长为x cm，宽x−5、高2x；$V(x)=x(x-5)(2x)=2x^3-10x^2$，实际域x>5。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "$2x^3-10x^2=384\\Rightarrow x^3-5x^2-192=0=(x-8)(x^2+3x+24)$。二次项判别式 $9-96=-87<0$，所以唯一实根x=8。尺寸8、3、16 cm，乘积384。"
+          }
+        ],
+        "answer": "(a) $V=2x^2(x-5)$，x>5；(b) 长8 cm、宽3 cm、高16 cm。",
+        "printedPage": 154,
+        "pdfPage": 163,
+        "en": {
+          "prompt": "A cardboard box has width 5 cm less than its length and height double its length. (a) Write an equation for the volume. (b) Find the dimensions if the volume is 384 cm³.",
+          "steps": [
+            {
+              "title": "Calculate and explain",
+              "body": "Let the length be x cm; width is x−5 and height 2x. Thus $V(x)=x(x-5)(2x)=2x^3-10x^2$, with physical domain x>5."
+            },
+            {
+              "title": "Calculate and explain",
+              "body": "$2x^3-10x^2=384\\Rightarrow x^3-5x^2-192=0=(x-8)(x^2+3x+24)$. The quadratic discriminant is $9-96=-87<0$, so x=8 is the only real root. Dimensions 8,3,16 cm multiply to 384."
+            }
+          ],
+          "answer": "(a) $V=2x^2(x-5)$, x>5; (b) length 8 cm, width 3 cm, height 16 cm."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "expectedSubparts": {
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-5": [
+        "a",
+        "b"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-9": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-12": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-13": [
+        "a",
+        "b"
+      ],
+      "exercise-14": [
+        "a",
+        "b"
+      ],
+      "exercise-15": [
+        "a",
+        "b"
+      ]
+    },
+    "source": {
+      "pdfPages": [
+        162,
+        163
+      ],
+      "printedPages": [
+        153,
+        154
+      ]
+    },
+    "pageInventory": [
+      {
+        "pdfPage": 162,
+        "printedPage": 153,
+        "items": [
+          "Review 1–8; 2 has a–e; 4 uses long division a,b and synthetic c,d"
+        ]
+      },
+      {
+        "pdfPage": 163,
+        "printedPage": 154,
+        "items": [
+          "Review 9–15",
+          "12(b) transformation table",
+          "13(a,b) given graphs"
+        ]
+      }
+    ],
+    "sourceFigures": [
+      {
+        "file": "3-review-13.png",
+        "pdfPage": 163,
+        "description": "Both supplied polynomial graphs with axes, labels and scale"
+      }
+    ],
+    "notes": [
+      "Review ends on printed154. No examples or associated Your Turn questions. Inventory counted visually before authoring."
+    ]
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "reviewFiles": [
+      "audit/end-author-exact-math.json",
+      "audit/end-independent-review.json"
+    ]
+  }
+}

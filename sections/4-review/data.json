@@ -1,0 +1,1118 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "4-review",
+    "section": "4 Review",
+    "title": "第 4 章复习",
+    "en": {
+      "title": "Chapter 4 Review"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        215,
+        216,
+        217
+      ],
+      "pdfPages": [
+        224,
+        225,
+        226
+      ]
+    },
+    "concepts": [
+      {
+        "id": "angles",
+        "title": "角的度量与旋转",
+        "summary": "$180^\\circ=\\pi$ 弧度；同终边角相差整周。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "以 $\\pi/180$ 或 $180/\\pi$ 换算，按整周约化；弧长 $s=r\\theta$ 必须用弧度。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Angle measure and rotations",
+          "summary": "$180^\\circ=\\pi$ rad; coterminal angles differ by a whole turn.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Convert with $\\pi/180$ or $180/\\pi$; reduce modulo one turn; use $s=r\\theta$ with radians."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "circle",
+        "title": "单位圆与对称",
+        "summary": "$x^2+y^2=1$，$P(\\theta)=(\\cos\\theta,\\sin\\theta)$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用特殊三角形及符号变化；逆时针四分之一周把 (x,y) 变为 (-y,x)。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "The unit circle and symmetry",
+          "summary": "$x^2+y^2=1$, $P(\\theta)=(\\cos\\theta,\\sin\\theta)$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use special triangles and sign changes; a quarter turn sends (x,y) to (-y,x)."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "ratios",
+        "title": "三角比与反求角",
+        "summary": "终边点 (x,y) 的 r 为到原点距离。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用 $r=\\sqrt{x^2+y^2}$、正弦 y/r、余弦 x/r、正切 y/x 及倒数；确定符号并找全部允许角。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Ratios and inverse angles",
+          "summary": "For a point (x,y) on a terminal arm, r is its distance from the origin.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use $r=\\sqrt{x^2+y^2}$, sine = y/r, cosine = x/r, tangent = y/x, and reciprocals. Determine signs and every allowed angle."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "equations",
+        "title": "三角方程",
+        "summary": "先对三角比做代数运算，再求角。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "分解，保留可行比值，按周期列全分支并查端点。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Trigonometric equations",
+          "summary": "Algebra in a ratio is followed by an angle-solving stage.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Factor, retain admissible ratio roots, enumerate periodic branches and check interval endpoints."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "各角处于标准位置，终边在哪个象限？(a) $100^\\circ$；(b) $500^\\circ$；(c) 10；(d) $29\\pi/6$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 100° 在 90° 与 180° 之间，第二象限。(b) $500^\\circ-360^\\circ=140^\\circ$，第二象限。(c) $10-2\\pi\\approx3.717$ 在 π 与 3π/2 之间，第三象限。(d) $29\\pi/6-4\\pi=5\\pi/6$，第二象限。"
+          }
+        ],
+        "answer": "(a) II; (b) II; (c) III; (d) II.",
+        "printedPage": 215,
+        "pdfPage": 224,
+        "en": {
+          "prompt": "For each angle in standard position, in which quadrant does it terminate? (a) $100^\\circ$; (b) $500^\\circ$; (c) 10; (d) $29\\pi/6$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) 100° is between 90° and 180°: II. (b) $500^\\circ-360^\\circ=140^\\circ$: II. (c) $10-2\\pi\\approx3.717$ is between π and 3π/2: III. (d) $29\\pi/6-4\\pi=5\\pi/6$: II."
+            }
+          ],
+          "answer": "(a) II; (b) II; (c) III; (d) II."
+        },
+        "number": 1,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "画标准位置角，并在度与弧度之间精确换算：(a) $5\\pi/2$；(b) $240^\\circ$；(c) $-405^\\circ$；(d) -3.5。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $(5\\pi/2)(180^\\circ/\\pi)=450^\\circ$，正向一周加 90°，终边为 +y 轴。(b) $240(\\pi/180)=4\\pi/3$，第三象限。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $-405(\\pi/180)=-9\\pi/4$，顺时针一周再 45°，终边为第四象限 315°。(d) $-3.5(180^\\circ/\\pi)=-630^\\circ/\\pi$，顺时针 3.5 弧度，同终边角 $2\\pi-3.5$ 在第二象限。"
+          }
+        ],
+        "answer": "(a) $450^\\circ$; (b) $4\\pi/3$; (c) $-9\\pi/4$; (d) $-(630/\\pi)^\\circ$.",
+        "printedPage": 215,
+        "pdfPage": 224,
+        "en": {
+          "prompt": "Draw each angle in standard position; convert degrees to radians and radians to degrees, exactly. (a) $5\\pi/2$; (b) $240^\\circ$; (c) $-405^\\circ$; (d) -3.5.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) $(5\\pi/2)(180^\\circ/\\pi)=450^\\circ$: one positive turn plus 90°, terminal +y axis. (b) $240(\\pi/180)=4\\pi/3$: III."
+            },
+            {
+              "title": "Work",
+              "body": "(c) $-405(\\pi/180)=-9\\pi/4$: clockwise one turn plus 45°, terminal at 315° in IV. (d) $-3.5(180^\\circ/\\pi)=-630^\\circ/\\pi$: clockwise 3.5 rad, coterminal with $2\\pi-3.5$ in II."
+            }
+          ],
+          "answer": "(a) $450^\\circ$; (b) $4\\pi/3$; (c) $-9\\pi/4$; (d) $-(630/\\pi)^\\circ$."
+        },
+        "number": 2,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/4-review-solution-2.png"
+      },
+      {
+        "prompt": "度与弧度互换，必要时保留百分之一：(a) $20^\\circ$；(b) $-185^\\circ$；(c) -1.75；(d) $5\\pi/12$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $20\\pi/180=\\pi/9\\approx0.35$ 弧度。(b) $-185\\pi/180=-37\\pi/36\\approx-3.23$ 弧度。(c) $-1.75(180^\\circ/\\pi)\\approx-100.27^\\circ$。(d) $(5\\pi/12)(180^\\circ/\\pi)=75^\\circ$，精确值。"
+          }
+        ],
+        "answer": "(a) 0.35 rad; (b) -3.23 rad; (c) $-100.27^\\circ$; (d) $75^\\circ$.",
+        "printedPage": 215,
+        "pdfPage": 224,
+        "en": {
+          "prompt": "Convert degrees to radians and radians to degrees; round to the nearest hundredth where needed. (a) $20^\\circ$; (b) $-185^\\circ$; (c) -1.75; (d) $5\\pi/12$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) $20\\pi/180=\\pi/9\\approx0.35$ rad. (b) $-185\\pi/180=-37\\pi/36\\approx-3.23$ rad. (c) $-1.75(180^\\circ/\\pi)\\approx-100.27^\\circ$. (d) $(5\\pi/12)(180^\\circ/\\pi)=75^\\circ$ exactly."
+            }
+          ],
+          "answer": "(a) 0.35 rad; (b) -3.23 rad; (c) $-100.27^\\circ$; (d) $75^\\circ$."
+        },
+        "number": 3,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "求 $0^\\circ\\le\\theta<360^\\circ$ 或 $0\\le\\theta<2\\pi$ 内同终边角，画出所在象限：(a) 6.75；(b) $400^\\circ$；(c) -3；(d) $-105^\\circ$。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 减 $2\\pi$，得 $6.75-2\\pi\\approx0.467$，第一象限。(b) $400^\\circ-360^\\circ=40^\\circ$，第一象限。(c) $-3+2\\pi\\approx3.283$，第三象限。(d) $-105^\\circ+360^\\circ=255^\\circ$，第三象限。"
+          }
+        ],
+        "answer": "(a) $6.75-2\\pi$, I; (b) $40^\\circ$, I; (c) $2\\pi-3$, III; (d) $255^\\circ$, III.",
+        "printedPage": 215,
+        "pdfPage": 224,
+        "en": {
+          "prompt": "Find a coterminal angle in $0^\\circ\\le\\theta<360^\\circ$ or $0\\le\\theta<2\\pi$. Draw its quadrant. (a) 6.75; (b) $400^\\circ$; (c) -3; (d) $-105^\\circ$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Subtract $2\\pi$: $6.75-2\\pi\\approx0.467$, I. (b) $400^\\circ-360^\\circ=40^\\circ$, I. (c) $-3+2\\pi\\approx3.283$, III. (d) $-105^\\circ+360^\\circ=255^\\circ$, III."
+            }
+          ],
+          "answer": "(a) $6.75-2\\pi$, I; (b) $40^\\circ$, I; (c) $2\\pi-3$, III; (d) $255^\\circ$, III."
+        },
+        "number": 4,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/4-review-solution-4.png"
+      },
+      {
+        "prompt": "写出全部同终边角表达式并解释变量：(a) $250^\\circ$；(b) $5\\pi/2$；(c) $-300^\\circ$；(d) 6。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "加整数整周：度数加 $360^\\circ n$，弧度加 $2\\pi n$，$n\\in\\mathbb Z$；n = 0 包含原角。"
+          }
+        ],
+        "answer": "(a) $250^\\circ+360^\\circ n$; (b) $5\\pi/2+2\\pi n$; (c) $-300^\\circ+360^\\circ n$; (d) $6+2\\pi n$, $n\\in\\mathbb Z$.",
+        "printedPage": 215,
+        "pdfPage": 224,
+        "en": {
+          "prompt": "Write all coterminal angles and explain your variable. (a) $250^\\circ$; (b) $5\\pi/2$; (c) $-300^\\circ$; (d) 6.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Add integer full turns: $360^\\circ n$ in degrees or $2\\pi n$ in radians, $n\\in\\mathbb Z$. n = 0 includes the given angle."
+            }
+          ],
+          "answer": "(a) $250^\\circ+360^\\circ n$; (b) $5\\pi/2+2\\pi n$; (c) $-300^\\circ+360^\\circ n$; (d) $6+2\\pi n$, $n\\in\\mathbb Z$."
+        },
+        "number": 5,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "喷气发动机摩托车测试转速 80 000 转/分。求角速度：(a) 弧度/分；(b) 度/秒。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $80000(2\\pi)=160000\\pi$ 弧度/分。(b) $80000(360^\\circ)/60=480000^\\circ$/秒；分换秒须除以 60。"
+          }
+        ],
+        "answer": "(a) $160000\\pi$ rad/min; (b) $480000^\\circ$/s.",
+        "printedPage": 215,
+        "pdfPage": 224,
+        "en": {
+          "prompt": "A jet-engine motorcycle is tested at 80 000 rpm. Find angular velocity in (a) radians per minute; (b) degrees per second.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) $80000(2\\pi)=160000\\pi$ rad/min. (b) $80000(360^\\circ)/60=480000^\\circ$/s. The minute-to-second conversion divides by 60."
+            }
+          ],
+          "answer": "(a) $160000\\pi$ rad/min; (b) $480000^\\circ$/s."
+        },
+        "number": 6,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "$P(\\theta)=(x,y)$ 为单位圆终点。求坐标：(a) $P(5\\pi/6)$；(b) $P(-150^\\circ)$；(c) $P(-11\\pi/2)$；(d) $P(45^\\circ)$；(e) $P(120^\\circ)$；(f) $P(11\\pi/3)$。",
+        "concept": "circle",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 150°，第二象限参照角 30°，坐标 $(-\\sqrt3/2,1/2)$。(b) -150° 同终边 210°，第三象限 $(-\\sqrt3/2,-1/2)$。(c) $-11\\pi/2+6\\pi=\\pi/2$，得 (0,1)。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) 45° 得 $(\\sqrt2/2,\\sqrt2/2)$。(e) 120° 第二象限得 $(-1/2,\\sqrt3/2)$。(f) $11\\pi/3-2\\pi=5\\pi/3$，得 $(1/2,-\\sqrt3/2)$。"
+          }
+        ],
+        "answer": "(a) $(-\\sqrt3/2,1/2)$; (b) $(-\\sqrt3/2,-1/2)$; (c) (0,1); (d) $(\\sqrt2/2,\\sqrt2/2)$; (e) $(-1/2,\\sqrt3/2)$; (f) $(1/2,-\\sqrt3/2)$.",
+        "printedPage": 215,
+        "pdfPage": 224,
+        "en": {
+          "prompt": "$P(\\theta)=(x,y)$ is the unit-circle terminal point. Give the coordinates: (a) $P(5\\pi/6)$; (b) $P(-150^\\circ)$; (c) $P(-11\\pi/2)$; (d) $P(45^\\circ)$; (e) $P(120^\\circ)$; (f) $P(11\\pi/3)$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) 150°, II, reference 30°: $(-\\sqrt3/2,1/2)$. (b) -150° = 210° terminal, III: $(-\\sqrt3/2,-1/2)$. (c) $-11\\pi/2+6\\pi=\\pi/2$: (0,1)."
+            },
+            {
+              "title": "Work",
+              "body": "(d) 45°: $(\\sqrt2/2,\\sqrt2/2)$. (e) 120°, II: $(-1/2,\\sqrt3/2)$. (f) $11\\pi/3-2\\pi=5\\pi/3$: $(1/2,-\\sqrt3/2)$."
+            }
+          ],
+          "answer": "(a) $(-\\sqrt3/2,1/2)$; (b) $(-\\sqrt3/2,-1/2)$; (c) (0,1); (d) $(\\sqrt2/2,\\sqrt2/2)$; (e) $(-1/2,\\sqrt3/2)$; (f) $(1/2,-\\sqrt3/2)$."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "prompt": "(a) 已知 $P(\\pi/3)=(1/2,\\sqrt3/2)$，解释如何求 $P(2\\pi/3),P(4\\pi/3),P(5\\pi/3)$；(b) 若 $P(\\theta)=(-2\\sqrt2/3,1/3)$，求 $P(\\theta+\\pi/2)$；(c) $P(5\\pi/6+\\pi)$ 在哪个象限？求该 θ 与坐标。",
+        "concept": "circle",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 分别关于 y 轴、原点、x 轴反射，得 $(-1/2,\\sqrt3/2)$、$(-1/2,-\\sqrt3/2)$、$(1/2,-\\sqrt3/2)$。(b) 四分之一周把 $(x,y)\\to(-y,x)$，得 $(-1/3,-2\\sqrt2/3)$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $\\theta=5\\pi/6+\\pi=11\\pi/6$，第四象限参照角 $\\pi/6$，故坐标 $(\\sqrt3/2,-1/2)$。"
+          }
+        ],
+        "answer": "(a) $(-1/2,\\sqrt3/2),(-1/2,-\\sqrt3/2),(1/2,-\\sqrt3/2)$; (b) $(-1/3,-2\\sqrt2/3)$; (c) IV, $11\\pi/6$, $(\\sqrt3/2,-1/2)$.",
+        "printedPage": 216,
+        "pdfPage": 225,
+        "en": {
+          "prompt": "(a) Given $P(\\pi/3)=(1/2,\\sqrt3/2)$, explain how to find $P(2\\pi/3),P(4\\pi/3),P(5\\pi/3)$. (b) If $P(\\theta)=(-2\\sqrt2/3,1/3)$, find $P(\\theta+\\pi/2)$. (c) In which quadrant is $P(5\\pi/6+\\pi)$? If this represents $P(\\theta)$, give θ and its coordinates.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Reflect across y, origin, x respectively: $(-1/2,\\sqrt3/2)$, $(-1/2,-\\sqrt3/2)$, $(1/2,-\\sqrt3/2)$. (b) A quarter turn sends $(x,y)\\to(-y,x)$: $(-1/3,-2\\sqrt2/3)$."
+            },
+            {
+              "title": "Work",
+              "body": "(c) $\\theta=5\\pi/6+\\pi=11\\pi/6$, in IV, with reference $\\pi/6$, so $(\\sqrt3/2,-1/2)$."
+            }
+          ],
+          "answer": "(a) $(-1/2,\\sqrt3/2),(-1/2,-\\sqrt3/2),(1/2,-\\sqrt3/2)$; (b) $(-1/3,-2\\sqrt2/3)$; (c) IV, $11\\pi/6$, $(\\sqrt3/2,-1/2)$."
+        },
+        "number": 8,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "求 $-2\\pi\\le\\theta<2\\pi$ 内全部角，其终点为：(a) (0,1)；(b) $(\\sqrt3/2,-1/2)$；(c) $(-1/\\sqrt2,1/\\sqrt2)$；(d) $(-1/2,\\sqrt3/2)$。",
+        "concept": "circle",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "一周基本角分别为 (a) $\\pi/2$；(b) $11\\pi/6$；(c) $3\\pi/4$；(d) $2\\pi/3$。各减 $2\\pi$ 得第二个范围内角，再加减一周即越界。"
+          }
+        ],
+        "answer": "(a) $-3\\pi/2,\\pi/2$; (b) $-\\pi/6,11\\pi/6$; (c) $-5\\pi/4,3\\pi/4$; (d) $-4\\pi/3,2\\pi/3$.",
+        "printedPage": 216,
+        "pdfPage": 225,
+        "en": {
+          "prompt": "Find all θ in $-2\\pi\\le\\theta<2\\pi$ with terminal point (a) (0,1); (b) $(\\sqrt3/2,-1/2)$; (c) $(-1/\\sqrt2,1/\\sqrt2)$; (d) $(-1/2,\\sqrt3/2)$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "One-turn angles are (a) $\\pi/2$, (b) $11\\pi/6$, (c) $3\\pi/4$, (d) $2\\pi/3$. Subtract $2\\pi$ once from each to obtain the second allowed angle; another turn leaves the domain."
+            }
+          ],
+          "answer": "(a) $-3\\pi/2,\\pi/2$; (b) $-\\pi/6,11\\pi/6$; (c) $-5\\pi/4,3\\pi/4$; (d) $-4\\pi/3,2\\pi/3$."
+        },
+        "number": 9,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "求 $-180^\\circ<\\theta\\le360^\\circ$ 内全部角，其终点为：(a) $(-\\sqrt3/2,-1/2)$；(b) (-1,0)；(c) $(-\\sqrt2/2,\\sqrt2/2)$；(d) $(1/2,-\\sqrt3/2)$。",
+        "concept": "circle",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "基本角为 210°、180°、135°、300°；减 360° 后检查是否大于 -180°：(a) -150° 保留；(b) -180° 排除；(c) -225° 越界；(d) -60° 保留。"
+          }
+        ],
+        "answer": "(a) $-150^\\circ,210^\\circ$; (b) $180^\\circ$; (c) $135^\\circ$; (d) $-60^\\circ,300^\\circ$.",
+        "printedPage": 216,
+        "pdfPage": 225,
+        "en": {
+          "prompt": "Find all θ in $-180^\\circ<\\theta\\le360^\\circ$ with terminal point (a) $(-\\sqrt3/2,-1/2)$; (b) (-1,0); (c) $(-\\sqrt2/2,\\sqrt2/2)$; (d) $(1/2,-\\sqrt3/2)$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Base angles are 210°, 180°, 135°, 300°. Subtract 360° when the result stays above -180°: (a) -150°; (b) -180° excluded; (c) -225° excluded; (d) -60°."
+            }
+          ],
+          "answer": "(a) $-150^\\circ,210^\\circ$; (b) $180^\\circ$; (c) $135^\\circ$; (d) $-60^\\circ,300^\\circ$."
+        },
+        "number": 10,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "若 $P(\\theta)=(\\sqrt5/3,-2/3)$：(a) 求 θ 并用图说明；(b) 终边在哪个象限；(c) 求 $P(\\theta+\\pi)$；(d) $P(\\theta+\\pi/2)$；(e) $P(\\theta-\\pi/2)$。",
+        "concept": "circle",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a,b) x > 0、y < 0，射线在第四象限。令 $\\alpha=\\arcsin(2/3)$；一正周中 θ 为 $2\\pi-\\alpha\\approx5.55346$ 弧度，通式为 $-\\alpha+2\\pi n$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 半周 $(x,y)\\to(-x,-y)$，得 $(-\\sqrt5/3,2/3)$。(d) 逆时针四分之一周 $(-y,x)=(2/3,\\sqrt5/3)$。(e) 顺时针四分之一周 $(y,-x)=(-2/3,-\\sqrt5/3)$。"
+          }
+        ],
+        "answer": "(a) $-\\arcsin(2/3)+2\\pi n$, $n\\in\\mathbb Z$; (b) IV; (c) $(-\\sqrt5/3,2/3)$; (d) $(2/3,\\sqrt5/3)$; (e) $(-2/3,-\\sqrt5/3)$.",
+        "printedPage": 216,
+        "pdfPage": 225,
+        "en": {
+          "prompt": "If $P(\\theta)=(\\sqrt5/3,-2/3)$: (a) find θ, explaining with a diagram; (b) identify its quadrant; (c) find $P(\\theta+\\pi)$; (d) $P(\\theta+\\pi/2)$; (e) $P(\\theta-\\pi/2)$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a,b) x > 0, y < 0 puts the ray in IV. Let $\\alpha=\\arcsin(2/3)$; θ = $2\\pi-\\alpha\\approx5.55346$ rad in one positive turn, or $-\\alpha+2\\pi n$ generally."
+            },
+            {
+              "title": "Work",
+              "body": "(c) Half turn: $(x,y)\\to(-x,-y)$ gives $(-\\sqrt5/3,2/3)$. (d) CCW quarter: $(-y,x)=(2/3,\\sqrt5/3)$. (e) CW quarter: $(y,-x)=(-2/3,-\\sqrt5/3)$."
+            }
+          ],
+          "answer": "(a) $-\\arcsin(2/3)+2\\pi n$, $n\\in\\mathbb Z$; (b) IV; (c) $(-\\sqrt5/3,2/3)$; (d) $(2/3,\\sqrt5/3)$; (e) $(-2/3,-\\sqrt5/3)$."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "solutionImage": "assets/4-review-solution-11.png"
+      },
+      {
+        "prompt": "若 $\\cos\\theta=1/3$，$0^\\circ\\le\\theta\\le270^\\circ$，求其余所有三角比，根式保留精确形式。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "该范围内正余弦只允许第一象限。单位圆 $y=\\sqrt{1-(1/3)^2}=2\\sqrt2/3>0$，故正弦为 $2\\sqrt2/3$，正切 y/x 为 $2\\sqrt2$。"
+          },
+          {
+            "title": "推导",
+            "body": "取倒数并有理化：余割 $3/(2\\sqrt2)=3\\sqrt2/4$，正割 3，余切 $1/(2\\sqrt2)=\\sqrt2/4$。"
+          }
+        ],
+        "answer": "$\\sin\\theta=2\\sqrt2/3$, $\\tan\\theta=2\\sqrt2$, $\\csc\\theta=3\\sqrt2/4$, $\\sec\\theta=3$, $\\cot\\theta=\\sqrt2/4$.",
+        "printedPage": 216,
+        "pdfPage": 225,
+        "en": {
+          "prompt": "If $\\cos\\theta=1/3$, $0^\\circ\\le\\theta\\le270^\\circ$, find each other trigonometric ratio, in exact form when radicals occur.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Positive cosine in this domain permits I only. On the unit circle $y=\\sqrt{1-(1/3)^2}=2\\sqrt2/3>0$. Thus sine = $2\\sqrt2/3$, tangent = y/x = $2\\sqrt2$."
+            },
+            {
+              "title": "Work",
+              "body": "Take reciprocals and rationalize: cosecant = $3/(2\\sqrt2)=3\\sqrt2/4$, secant = 3, cotangent = $1/(2\\sqrt2)=\\sqrt2/4$."
+            }
+          ],
+          "answer": "$\\sin\\theta=2\\sqrt2/3$, $\\tan\\theta=2\\sqrt2$, $\\csc\\theta=3\\sqrt2/4$, $\\sec\\theta=3$, $\\cot\\theta=\\sqrt2/4$."
+        },
+        "number": 12
+      },
+      {
+        "prompt": "不用计算器求精确值：(a) $\\sin(-3\\pi/2)$；(b) $\\cos(3\\pi/4)$；(c) $\\cot(7\\pi/6)$；(d) $\\sec(-210^\\circ)$；(e) $\\tan720^\\circ$；(f) $\\csc300^\\circ$。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) -3π/2 与 π/2 同终边，正弦为 1。(b) 3π/4 在第二象限，余弦 $-\\sqrt2/2$。(c) 7π/6 在第三象限，参照角 π/6，余切 $(-\\sqrt3/2)/(-1/2)=\\sqrt3$。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) -210° 与 150° 同终边，余弦 $-\\sqrt3/2$，正割 $-2\\sqrt3/3$。(e) 720° 终边为 +x 轴，正切 0。(f) 300° 正弦 $-\\sqrt3/2$，余割 $-2\\sqrt3/3$。"
+          }
+        ],
+        "answer": "(a) 1; (b) $-\\sqrt2/2$; (c) $\\sqrt3$; (d) $-2\\sqrt3/3$; (e) 0; (f) $-2\\sqrt3/3$.",
+        "printedPage": 216,
+        "pdfPage": 225,
+        "en": {
+          "prompt": "Without a calculator, find exact values. (a) $\\sin(-3\\pi/2)$; (b) $\\cos(3\\pi/4)$; (c) $\\cot(7\\pi/6)$; (d) $\\sec(-210^\\circ)$; (e) $\\tan720^\\circ$; (f) $\\csc300^\\circ$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) -3π/2 is coterminal with π/2, so sine = 1. (b) 3π/4 is II, so cosine = $-\\sqrt2/2$. (c) 7π/6 is III with reference π/6: cotangent = $(-\\sqrt3/2)/(-1/2)=\\sqrt3$."
+            },
+            {
+              "title": "Work",
+              "body": "(d) -210° is coterminal with 150°, cosine = $-\\sqrt3/2$, so secant = $-2\\sqrt3/3$. (e) 720° ends on +x: tangent = 0. (f) sine 300° = $-\\sqrt3/2$, so cosecant = $-2\\sqrt3/3$."
+            }
+          ],
+          "answer": "(a) 1; (b) $-\\sqrt2/2$; (c) $\\sqrt3$; (d) $-2\\sqrt3/3$; (e) 0; (f) $-2\\sqrt3/3$."
+        },
+        "number": 13,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "prompt": "求全部角，保留百分之一单位，并画出象限：(a) $\\sin\\theta=0.54$，$-2\\pi<\\theta\\le2\\pi$；(b) $\\tan\\theta=9.3$，$-180^\\circ\\le\\theta<360^\\circ$；(c) $\\cos\\theta=-0.77$，$-\\pi\\le\\theta<\\pi$；(d) $\\csc\\theta=9.5$，$-270^\\circ<\\theta\\le90^\\circ$。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $\\alpha=\\arcsin0.54=0.570437\\ldots$，第一、二象限基本角为 $\\alpha,\\pi-\\alpha$，各再减 $2\\pi$，得 $-5.71,-3.71,0.57,2.57$ 弧度。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $\\alpha=\\arctan9.3=83.862744\\ldots^\\circ$；正切在第一、三象限为正，每隔 180° 重复，得 $-96.14^\\circ,83.86^\\circ,263.86^\\circ$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $\\beta=\\arccos(-0.77)=2.449637\\ldots$，第二、三象限射线在本范围表示为 $\\pm\\beta\\approx-2.45,2.45$ 弧度。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) 正弦为 1/9.5，$\\alpha=\\arcsin(1/9.5)=6.042328\\ldots^\\circ$。第一、二象限射线在范围内为 $\\alpha$ 与 $180^\\circ-\\alpha-360^\\circ$，即 $6.04^\\circ,-186.04^\\circ$。"
+          }
+        ],
+        "answer": "(a) -5.71, -3.71, 0.57, 2.57 rad; (b) $-96.14^\\circ,83.86^\\circ,263.86^\\circ$; (c) -2.45, 2.45 rad; (d) $-186.04^\\circ,6.04^\\circ$.",
+        "printedPage": 216,
+        "pdfPage": 225,
+        "en": {
+          "prompt": "Find all approximate angles, to the nearest hundredth of a unit. Sketch the quadrants. (a) $\\sin\\theta=0.54$, $-2\\pi<\\theta\\le2\\pi$; (b) $\\tan\\theta=9.3$, $-180^\\circ\\le\\theta<360^\\circ$; (c) $\\cos\\theta=-0.77$, $-\\pi\\le\\theta<\\pi$; (d) $\\csc\\theta=9.5$, $-270^\\circ<\\theta\\le90^\\circ$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) $\\alpha=\\arcsin0.54=0.570437\\ldots$, with I/II base angles $\\alpha,\\pi-\\alpha$. Include each minus $2\\pi$: $-5.71,-3.71,0.57,2.57$ rad."
+            },
+            {
+              "title": "Work",
+              "body": "(b) $\\alpha=\\arctan9.3=83.862744\\ldots^\\circ$; tangent positive in I/III and repeats by 180°: $-96.14^\\circ,83.86^\\circ,263.86^\\circ$."
+            },
+            {
+              "title": "Work",
+              "body": "(c) $\\beta=\\arccos(-0.77)=2.449637\\ldots$; II/III rays give $\\theta=\\pm\\beta\\approx-2.45,2.45$ rad in this domain."
+            },
+            {
+              "title": "Work",
+              "body": "(d) Sine = 1/9.5. $\\alpha=\\arcsin(1/9.5)=6.042328\\ldots^\\circ$; I/II rays give $\\alpha$ and $180^\\circ-\\alpha-360^\\circ$, hence $6.04^\\circ,-186.04^\\circ$."
+            }
+          ],
+          "answer": "(a) -5.71, -3.71, 0.57, 2.57 rad; (b) $-96.14^\\circ,83.86^\\circ,263.86^\\circ$; (c) -2.45, 2.45 rad; (d) $-186.04^\\circ,6.04^\\circ$."
+        },
+        "number": 14,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/4-review-solution-14.png"
+      },
+      {
+        "prompt": "求各比值，保留三位小数：(a) $\\sin285^\\circ$；(b) $\\cot130^\\circ$；(c) $\\cos4.5$；(d) $\\sec7.38$。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 度模式 $\\sin285^\\circ=-0.965925\\ldots\\to-0.966$。(b) $1/\\tan130^\\circ=-0.839099\\ldots\\to-0.839$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 弧度模式 $\\cos4.5=-0.210795\\ldots\\to-0.211$。(d) $1/\\cos7.38=2.190904\\ldots\\to2.191$。"
+          }
+        ],
+        "answer": "(a) -0.966; (b) -0.839; (c) -0.211; (d) 2.191.",
+        "printedPage": 217,
+        "pdfPage": 226,
+        "en": {
+          "prompt": "Find each ratio to three decimal places. (a) $\\sin285^\\circ$; (b) $\\cot130^\\circ$; (c) $\\cos4.5$; (d) $\\sec7.38$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Degree mode: $\\sin285^\\circ=-0.965925\\ldots\\to-0.966$. (b) $1/\\tan130^\\circ=-0.839099\\ldots\\to-0.839$."
+            },
+            {
+              "title": "Work",
+              "body": "(c) Radian mode: $\\cos4.5=-0.210795\\ldots\\to-0.211$. (d) $1/\\cos7.38=2.190904\\ldots\\to2.191$."
+            }
+          ],
+          "answer": "(a) -0.966; (b) -0.839; (c) -0.211; (d) 2.191."
+        },
+        "number": 15,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "θ 的终边过 A(-3,4)。(a) 作图用量角器测角，保留整数度；(b) 求精确 $\\cos\\theta$；(c) 求精确 $\\csc\\theta+\\tan\\theta$；(d) 由余弦求角的度数与弧度，保留一位小数。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a,b) 在第二象限画 A，连接 O 与 A。$r=\\sqrt{9+16}=5$，故 $\\cos\\theta=-3/5$。一周正角 $\\arccos(-3/5)=126.869898\\ldots^\\circ$，量角器约 127°。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $\\csc\\theta=5/4$，$\\tan\\theta=-4/3$，和为 $15/12-16/12=-1/12$。(d) θ ≈ 126.9°；$\\arccos(-3/5)=2.214297\\ldots\\approx2.2$ 弧度。"
+          }
+        ],
+        "answer": "(a) 127°；(b) $-3/5$；(c) $-1/12$；(d) 一正周内 126.9°、2.2 弧度。",
+        "printedPage": 217,
+        "pdfPage": 226,
+        "en": {
+          "prompt": "The terminal arm of θ passes through A(-3,4). (a) Draw it and use a protractor to estimate θ to the nearest degree. (b) Find exact $\\cos\\theta$. (c) Find exact $\\csc\\theta+\\tan\\theta$. (d) From cosine, find θ in degrees and radians to the nearest tenth.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a,b) Plot A in II and join O to A. $r=\\sqrt{9+16}=5$, so $\\cos\\theta=-3/5$. The positive angle in one turn is $\\arccos(-3/5)=126.869898\\ldots^\\circ$, so a protractor gives about 127°."
+            },
+            {
+              "title": "Work",
+              "body": "(c) $\\csc\\theta=5/4$, $\\tan\\theta=-4/3$, so sum = $15/12-16/12=-1/12$. (d) θ ≈ 126.9°, and $\\arccos(-3/5)=2.214297\\ldots\\approx2.2$ rad."
+            }
+          ],
+          "answer": "(a) 127°; (b) $-3/5$; (c) $-1/12$; (d) 126.9°, 2.2 rad (one positive turn)."
+        },
+        "number": 16,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/4-review-solution-16.png"
+      },
+      {
+        "prompt": "因式分解：(a) $\\cos^2\\theta+\\cos\\theta$；(b) $\\sin^2\\theta-3\\sin\\theta-4$；(c) $\\cot^2\\theta-9$；(d) $2\\tan^2\\theta-9\\tan\\theta+10$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 提取余弦得 $\\cos\\theta(\\cos\\theta+1)$。(b) 积 -4、和 -3，得 $(\\sin\\theta-4)(\\sin\\theta+1)$。(c) 平方差得 $(\\cot\\theta-3)(\\cot\\theta+3)$。(d) $(2\\tan\\theta-5)(\\tan\\theta-2)$ 展开为 $2\\tan^2\\theta-4\\tan\\theta-5\\tan\\theta+10$。"
+          }
+        ],
+        "answer": "(a) $\\cos\\theta(\\cos\\theta+1)$; (b) $(\\sin\\theta-4)(\\sin\\theta+1)$; (c) $(\\cot\\theta-3)(\\cot\\theta+3)$; (d) $(2\\tan\\theta-5)(\\tan\\theta-2)$.",
+        "printedPage": 217,
+        "pdfPage": 226,
+        "en": {
+          "prompt": "Factor. (a) $\\cos^2\\theta+\\cos\\theta$; (b) $\\sin^2\\theta-3\\sin\\theta-4$; (c) $\\cot^2\\theta-9$; (d) $2\\tan^2\\theta-9\\tan\\theta+10$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Extract cosine: $\\cos\\theta(\\cos\\theta+1)$. (b) Product -4, sum -3: $(\\sin\\theta-4)(\\sin\\theta+1)$. (c) Difference of squares: $(\\cot\\theta-3)(\\cot\\theta+3)$. (d) $(2\\tan\\theta-5)(\\tan\\theta-2)$ expands to $2\\tan^2\\theta-4\\tan\\theta-5\\tan\\theta+10$."
+            }
+          ],
+          "answer": "(a) $\\cos\\theta(\\cos\\theta+1)$; (b) $(\\sin\\theta-4)(\\sin\\theta+1)$; (c) $(\\cot\\theta-3)(\\cot\\theta+3)$; (d) $(2\\tan\\theta-5)(\\tan\\theta-2)$."
+        },
+        "number": 17,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "解释为何不能求以下实数值：(a) $\\sin^{-1}2$；(b) $\\tan90^\\circ$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 实数角正弦在 [-1,1]，故 2 无实数反正弦值。(b) 正切 = 正弦/余弦，90° 时为 1/0，无定义。"
+          }
+        ],
+        "answer": "(a) 无实数值；(b) 无定义。",
+        "printedPage": 217,
+        "pdfPage": 226,
+        "en": {
+          "prompt": "Explain why it is impossible to find (a) $\\sin^{-1}2$; (b) $\\tan90^\\circ$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Sine of a real angle is in [-1,1], so no real inverse-sine value exists for 2. (b) Tangent = sine/cosine, and at 90° it is 1/0, which is undefined."
+            }
+          ],
+          "answer": "(a) No real value; (b) undefined."
+        },
+        "number": 18,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "不求具体解，判断解数：(a) $4\\cos\\theta-3=0$，$0^\\circ<\\theta\\le360^\\circ$；(b) $\\sin\\theta+0.9=0$，$-\\pi\\le\\theta\\le\\pi$；(c) $0.5\\tan\\theta-1.5=0$，$-180^\\circ\\le\\theta\\le0^\\circ$；(d) $\\csc\\theta$ 无定义，$\\theta\\in[-2\\pi,4\\pi)$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 余弦 3/4 一周两次，端点非解，故 2。(b) 正弦 -0.9 在下半圆两次，故 2。(c) 正切 3 每 180° 一解，端点非解，故 1。(d) 余割在 $n\\pi$ 无定义，n = -2、-1、0、1、2、3，共 6。"
+          }
+        ],
+        "answer": "(a) 2; (b) 2; (c) 1; (d) 6.",
+        "printedPage": 217,
+        "pdfPage": 226,
+        "en": {
+          "prompt": "Without solving, determine the number of solutions. (a) $4\\cos\\theta-3=0$, $0^\\circ<\\theta\\le360^\\circ$; (b) $\\sin\\theta+0.9=0$, $-\\pi\\le\\theta\\le\\pi$; (c) $0.5\\tan\\theta-1.5=0$, $-180^\\circ\\le\\theta\\le0^\\circ$; (d) $\\csc\\theta$ undefined, $\\theta\\in[-2\\pi,4\\pi)$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Cosine = 3/4 occurs twice in a turn; neither endpoint is a root: 2. (b) Sine = -0.9 occurs twice on the lower semicircle: 2. (c) Tangent = 3 has one solution per 180° period, endpoints nonroots: 1. (d) Cosecant undefined at $n\\pi$; n = -2,-1,0,1,2,3: 6."
+            }
+          ],
+          "answer": "(a) 2; (b) 2; (c) 1; (d) 6."
+        },
+        "number": 19,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "求精确解：(a) $\\csc\\theta=\\sqrt2$，$\\theta\\in[0^\\circ,360^\\circ]$；(b) $2\\cos\\theta+1=0$，$0\\le\\theta<2\\pi$；(c) $3\\tan\\theta-\\sqrt3=0$，$-180^\\circ\\le\\theta<360^\\circ$；(d) $\\cot\\theta+1=0$，$-\\pi\\le\\theta<\\pi$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 正弦 $\\sqrt2/2$，得 45°、135°。(b) 余弦 -1/2，得 $2\\pi/3,4\\pi/3$。(c) 正切 $\\sqrt3/3$，角为 $30^\\circ+180^\\circ n$，保留 -150°、30°、210°。(d) 余切 -1 即正切 -1，$-\\pi/4+n\\pi$ 得 $-\\pi/4,3\\pi/4$。"
+          }
+        ],
+        "answer": "(a) $45^\\circ,135^\\circ$; (b) $2\\pi/3,4\\pi/3$; (c) $-150^\\circ,30^\\circ,210^\\circ$; (d) $-\\pi/4,3\\pi/4$.",
+        "printedPage": 217,
+        "pdfPage": 226,
+        "en": {
+          "prompt": "Find exact roots. (a) $\\csc\\theta=\\sqrt2$, $\\theta\\in[0^\\circ,360^\\circ]$; (b) $2\\cos\\theta+1=0$, $0\\le\\theta<2\\pi$; (c) $3\\tan\\theta-\\sqrt3=0$, $-180^\\circ\\le\\theta<360^\\circ$; (d) $\\cot\\theta+1=0$, $-\\pi\\le\\theta<\\pi$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Sine = $\\sqrt2/2$: 45°,135°. (b) Cosine = -1/2: $2\\pi/3,4\\pi/3$. (c) Tangent = $\\sqrt3/3$, so $30^\\circ+180^\\circ n$; retain -150°,30°,210°. (d) Cotangent = -1 means tangent = -1; $-\\pi/4+n\\pi$ gives $-\\pi/4,3\\pi/4$."
+            }
+          ],
+          "answer": "(a) $45^\\circ,135^\\circ$; (b) $2\\pi/3,4\\pi/3$; (c) $-150^\\circ,30^\\circ,210^\\circ$; (d) $-\\pi/4,3\\pi/4$."
+        },
+        "number": 20,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "尽量精确求解，否则保留三位小数：(a) $\\sin^2\\theta+\\sin\\theta-2=0$，$0\\le\\theta<2\\pi$；(b) $\\tan^2\\theta+3\\tan\\theta=0$，$0^\\circ<\\theta\\le360^\\circ$；(c) $6\\cos^2\\theta+\\cos\\theta=1$，$\\theta\\in(0^\\circ,360^\\circ)$；(d) $\\sec^2\\theta-4=0$，$\\theta\\in[-\\pi,\\pi]$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $(\\sin\\theta-1)(\\sin\\theta+2)=0$，排除 -2，保留正弦 1，得 $\\pi/2$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $\\tan\\theta(\\tan\\theta+3)=0$；正切 0 得 180°、360°（排除 0°）；正切 -3 得 $180^\\circ-\\arctan3\\approx108.435^\\circ$ 与 $360^\\circ-\\arctan3\\approx288.435^\\circ$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $(3\\cos\\theta-1)(2\\cos\\theta+1)=0$；余弦 1/3 得 70.529°、289.471°；余弦 -1/2 得精确 120°、240°。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) 正割 ±2 即余弦 ±1/2，保留 $-2\\pi/3,-\\pi/3,\\pi/3,2\\pi/3$，±π 均非根。"
+          }
+        ],
+        "answer": "(a) $\\pi/2$; (b) $108.435^\\circ,180^\\circ,288.435^\\circ,360^\\circ$; (c) $70.529^\\circ,120^\\circ,240^\\circ,289.471^\\circ$; (d) $-2\\pi/3,-\\pi/3,\\pi/3,2\\pi/3$.",
+        "printedPage": 217,
+        "pdfPage": 226,
+        "en": {
+          "prompt": "Solve exactly where possible, otherwise to the nearest thousandth. (a) $\\sin^2\\theta+\\sin\\theta-2=0$, $0\\le\\theta<2\\pi$; (b) $\\tan^2\\theta+3\\tan\\theta=0$, $0^\\circ<\\theta\\le360^\\circ$; (c) $6\\cos^2\\theta+\\cos\\theta=1$, $\\theta\\in(0^\\circ,360^\\circ)$; (d) $\\sec^2\\theta-4=0$, $\\theta\\in[-\\pi,\\pi]$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) $(\\sin\\theta-1)(\\sin\\theta+2)=0$; reject -2, keep sine = 1: $\\pi/2$."
+            },
+            {
+              "title": "Work",
+              "body": "(b) $\\tan\\theta(\\tan\\theta+3)=0$; tangent = 0 gives 180°,360° (exclude 0°); tangent = -3 gives $180^\\circ-\\arctan3\\approx108.435^\\circ$ and $360^\\circ-\\arctan3\\approx288.435^\\circ$."
+            },
+            {
+              "title": "Work",
+              "body": "(c) $(3\\cos\\theta-1)(2\\cos\\theta+1)=0$. Cosine = 1/3 gives 70.529°,289.471°; cosine = -1/2 gives exact 120°,240°."
+            },
+            {
+              "title": "Work",
+              "body": "(d) Secant = ±2 means cosine = ±1/2. Retain $-2\\pi/3,-\\pi/3,\\pi/3,2\\pi/3$; neither ±π is a root."
+            }
+          ],
+          "answer": "(a) $\\pi/2$; (b) $108.435^\\circ,180^\\circ,288.435^\\circ,360^\\circ$; (c) $70.529^\\circ,120^\\circ,240^\\circ,289.471^\\circ$; (d) $-2\\pi/3,-\\pi/3,\\pi/3,2\\pi/3$."
+        },
+        "number": 21,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "给出范围，使 $\\sin\\theta=\\sqrt3/2$ 恰有下列解：(a) $\\pi/3,2\\pi/3$；(b) $-5\\pi/3,-4\\pi/3,\\pi/3$；(c) $-660^\\circ,-600^\\circ,-300^\\circ,-240^\\circ$；(d) $-240^\\circ,60^\\circ,120^\\circ,420^\\circ$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "全部根为 $\\pi/3+2\\pi n$ 或 $2\\pi/3+2\\pi n$，即 $60^\\circ+360^\\circ n$ 或 $120^\\circ+360^\\circ n$。在最外所求根与下个不需要的根之间选端点。"
+          },
+          {
+            "title": "推导",
+            "body": "可选：(a) $[0,\\pi]$；(b) $[-2\\pi,\\pi/2]$；(c) $[-720^\\circ,-180^\\circ]$；(d) $[-240^\\circ,420^\\circ]$。在各范围内列周期分支，恰为所求根。"
+          }
+        ],
+        "answer": "每题一种选择：(a) $[0,\\pi]$；(b) $[-2\\pi,\\pi/2]$；(c) $[-720^\\circ,-180^\\circ]$；(d) $[-240^\\circ,420^\\circ]$。",
+        "printedPage": 217,
+        "pdfPage": 226,
+        "en": {
+          "prompt": "Give a domain where $\\sin\\theta=\\sqrt3/2$ has exactly these solutions. (a) $\\pi/3,2\\pi/3$; (b) $-5\\pi/3,-4\\pi/3,\\pi/3$; (c) $-660^\\circ,-600^\\circ,-300^\\circ,-240^\\circ$; (d) $-240^\\circ,60^\\circ,120^\\circ,420^\\circ$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "All roots are $\\pi/3+2\\pi n$ or $2\\pi/3+2\\pi n$, equivalently $60^\\circ+360^\\circ n$ or $120^\\circ+360^\\circ n$. Choose endpoints between the requested extreme roots and the next unwanted roots."
+            },
+            {
+              "title": "Work",
+              "body": "Examples: (a) $[0,\\pi]$; (b) $[-2\\pi,\\pi/2]$; (c) $[-720^\\circ,-180^\\circ]$; (d) $[-240^\\circ,420^\\circ]$. Listing the periodic branches inside each confirms exactly the required roots."
+            }
+          ],
+          "answer": "One choice each: (a) $[0,\\pi]$; (b) $[-2\\pi,\\pi/2]$; (c) $[-720^\\circ,-180^\\circ]$; (d) $[-240^\\circ,420^\\circ]$."
+        },
+        "number": 22,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "按指定单位求通解：(a) $\\sin x=-1/2$，弧度；(b) $\\sin x=\\sin^2x$，度；(c) $\\sec x+2=0$，度；(d) $(\\tan x-1)(\\tan x-\\sqrt3)=0$，弧度。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 负正弦在第三、四象限，基本角 $7\\pi/6,11\\pi/6$，加 $2\\pi n$。(b) $\\sin x(\\sin x-1)=0$，得 $x=180^\\circ n$ 或 $90^\\circ+360^\\circ n$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 正割 -2 即余弦 -1/2，得 $x=120^\\circ+360^\\circ n$ 或 $240^\\circ+360^\\circ n$。(d) 正切为 1 或 √3，周期 π，得 $x=\\pi/4+n\\pi$ 或 $\\pi/3+n\\pi$；所有 n 为整数。"
+          }
+        ],
+        "answer": "(a) $7\\pi/6+2\\pi n$ or $11\\pi/6+2\\pi n$; (b) $180^\\circ n$ or $90^\\circ+360^\\circ n$; (c) $120^\\circ+360^\\circ n$ or $240^\\circ+360^\\circ n$; (d) $\\pi/4+\\pi n$ or $\\pi/3+\\pi n$; $n\\in\\mathbb Z$.",
+        "printedPage": 217,
+        "pdfPage": 226,
+        "en": {
+          "prompt": "Find each general solution in the specified units. (a) $\\sin x=-1/2$, radians; (b) $\\sin x=\\sin^2x$, degrees; (c) $\\sec x+2=0$, degrees; (d) $(\\tan x-1)(\\tan x-\\sqrt3)=0$, radians.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Negative sine gives III,IV base angles $7\\pi/6,11\\pi/6$, add $2\\pi n$. (b) $\\sin x(\\sin x-1)=0$ gives $x=180^\\circ n$ or $90^\\circ+360^\\circ n$."
+            },
+            {
+              "title": "Work",
+              "body": "(c) Secant = -2 means cosine = -1/2; $x=120^\\circ+360^\\circ n$ or $240^\\circ+360^\\circ n$. (d) Tangent = 1 or √3, with period π: $x=\\pi/4+n\\pi$ or $\\pi/3+n\\pi$. All n are integers."
+            }
+          ],
+          "answer": "(a) $7\\pi/6+2\\pi n$ or $11\\pi/6+2\\pi n$; (b) $180^\\circ n$ or $90^\\circ+360^\\circ n$; (c) $120^\\circ+360^\\circ n$ or $240^\\circ+360^\\circ n$; (d) $\\pi/4+\\pi n$ or $\\pi/3+\\pi n$; $n\\in\\mathbb Z$."
+        },
+        "number": 23,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "expectedSubparts": {
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-6": [
+        "a",
+        "b"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-10": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-14": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-15": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-16": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-17": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-18": [
+        "a",
+        "b"
+      ],
+      "exercise-19": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-20": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-21": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-22": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-23": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original source pages, all bilingual conditions/subparts, solutions and referenced figures independently reviewed. Exact calculations and interval checks are saved in the chapter audit package. Open research/construction tasks retain their stated scope.",
+    "independentReview": "audit/4-review-independent-review.json",
+    "reviewedDataSha256": "9bdc3503307added70f393df6093802c2d46a12f92bcdf577c0139b860d406bf",
+    "reviewedPayloadSha256": "0bd46b73701f10067cd666cd562964670833e798461fc200945e6002ad0320fb"
+  }
+}

@@ -1,0 +1,3656 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "3-1",
+    "section": "3.1",
+    "title": "多项式函数的特征",
+    "description": "第三章 · 辨认并分析多项式函数：定义、次数、端行为、截距、定义域与值域；包含全部探究、例题、Your Turn、1–13、C1–C4和Project Corner。",
+    "en": {
+      "title": "Characteristics of Polynomial Functions",
+      "description": "Chapter 3 · Identify and analyse polynomial functions: definitions, degree, tails, intercepts, domain and range. Includes every Investigate/Reflect prompt, Example, Your Turn, Exercises 1–13 and C1–C4, and Project Corner."
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+      "kind": "pdf",
+      "pdfPages": [
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "printedPages": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117
+      ]
+    },
+    "concepts": [
+      {
+        "id": "identify",
+        "title": "辨认多项式函数",
+        "summary": "多项式函数为 $f(x)=a_nx^n+a_{n-1}x^{n-1}+\\cdots+a_1x+a_0$，指数为非负整数、系数为实数；$a_n\\ne0$。本章例题把系数限制为整数。",
+        "method": [
+          {
+            "title": "检查指数",
+            "body": "先化简；变量不能在分母、根号、指数位置或绝对值内。常数是零次多项式，零多项式的次数另作约定。"
+          },
+          {
+            "title": "读首项与常数项",
+            "body": "按降幂排列。最高非零项的指数是次数，其系数是首项系数；常数项等于 $f(0)$。一次、二次、三次、四次、五次分别称 linear、quadratic、cubic、quartic、quintic。"
+          }
+        ],
+        "pitfalls": [
+          "没有写出的常数项为0。$3^x$与$3x^4$的变量位置不同。"
+        ],
+        "en": {
+          "title": "Identify polynomial functions",
+          "summary": "A polynomial has the form $f(x)=a_nx^n+a_{n-1}x^{n-1}+\\cdots+a_1x+a_0$, with nonnegative integer exponents, real coefficients and $a_n\\ne0$. This chapter restricts its coefficients to integers.",
+          "method": [
+            {
+              "title": "Check exponents",
+              "body": "Simplify first. Variable powers must be nonnegative integers; variable denominators, radicals, exponents and absolute values generally fail this form. A nonzero constant has degree zero; the zero polynomial requires a separate degree convention."
+            },
+            {
+              "title": "Read the leading and constant terms",
+              "body": "Arrange descending powers. The highest nonzero exponent is the degree, its coefficient is the leading coefficient, and the constant is $f(0)$. Degrees 1–5 are linear, quadratic, cubic, quartic and quintic."
+            }
+          ],
+          "pitfalls": [
+            "An omitted constant term is zero. The variable is in different positions in $3^x$ and $3x^4$."
+          ]
+        }
+      },
+      {
+        "id": "end-behaviour",
+        "title": "次数、符号与端行为",
+        "summary": "当 $|x|$ 很大时，首项 $a_nx^n$ 决定图像两端。奇次两端相反，偶次两端相同。",
+        "method": [
+          {
+            "title": "判断奇偶",
+            "body": "偶次时两端同为首项系数的符号；奇次时右端与首项系数同号，左端相反。"
+          },
+          {
+            "title": "写出方向",
+            "body": "正奇次：III→I；负奇次：II→IV；正偶次：II→I；负偶次：III→IV。这里象限表示足够远处的尾端。零次非零常数为水平线。"
+          }
+        ],
+        "pitfalls": [
+          "偶次不表示首项系数一定为正。常数函数不符合非零次偶次函数的无限上/下尾端。"
+        ],
+        "en": {
+          "title": "Degree, sign and end behaviour",
+          "summary": "For large $|x|$, the leading term $a_nx^n$ determines the tails. Odd degrees have opposite tails; even degrees have matching tails.",
+          "method": [
+            {
+              "title": "Determine parity",
+              "body": "For even degree both tails have the sign of the leading coefficient. For odd degree the right tail has that sign and the left tail has its opposite."
+            },
+            {
+              "title": "State directions",
+              "body": "Positive odd: III→I; negative odd: II→IV; positive even: II→I; negative even: III→IV. Quadrants describe sufficiently distant tails. A nonzero degree-zero constant is horizontal."
+            }
+          ],
+          "pitfalls": [
+            "Even degree does not imply a positive leading coefficient. Constant functions are exceptions to the unbounded-tail rule for positive even degree."
+          ]
+        }
+      },
+      {
+        "id": "intercepts-range",
+        "title": "截距、定义域和值域",
+        "summary": "多项式的定义域是全体实数。$y$截距为$(0,a_0)$；$x$截距是不同实根的位置，最多$n$个。",
+        "method": [
+          {
+            "title": "用图像与代入读截距",
+            "body": "代入$x=0$求纵截距，解$f(x)=0$求横截距；相切也算一个横截距。奇次至少有一个，正次数偶次可能一个也没有。"
+          },
+          {
+            "title": "判断整体最大最小值",
+            "body": "奇次值域为$\\mathbb R$，无整体最大或最小值，但可以有局部极值。正首项偶次有整体最小值$m$，值域$[m,\\infty)$；负首项偶次有整体最大值$M$，值域$(-\\infty,M]$。"
+          }
+        ],
+        "pitfalls": [
+          "原书“无最大或最小点”在此指整体极值，不排除局部转折点。非零常数的值域是单点。"
+        ],
+        "en": {
+          "title": "Intercepts, domain and range",
+          "summary": "Every polynomial has real domain $\\mathbb R$. The $y$-intercept is $(0,a_0)$; the $x$-intercepts are its distinct real zeros, at most $n$ of them.",
+          "method": [
+            {
+              "title": "Find intercepts",
+              "body": "Set $x=0$ for the $y$-intercept and solve $f(x)=0$ for $x$-intercepts. A tangency counts as one intercept. Odd degree has at least one; positive even degree can have none."
+            },
+            {
+              "title": "Find global extrema and range",
+              "body": "Odd degree has range $\\mathbb R$ and no global maximum or minimum, but can have local extrema. Positive-leading even degree has a global minimum $m$ and range $[m,\\infty)$; negative-leading even degree has a global maximum $M$ and range $(-\\infty,M]$."
+            }
+          ],
+          "pitfalls": [
+            "The textbook’s no maximum/minimum statement refers to global extrema, not local turning points. A nonzero constant has a singleton range."
+          ]
+        }
+      },
+      {
+        "id": "transformations",
+        "title": "幂函数的对称与变换",
+        "summary": "$(-x)^n=(-1)^nx^n$。$y=a(x-h)^n+k$把$y=x^n$横移$h$、纵向伸缩$|a|$倍、再上移$k$，$a<0$还关于横轴反射。",
+        "method": [
+          {
+            "title": "先区分括号",
+            "body": "偶$n$时$(-x)^n=x^n$；奇$n$时$(-x)^n=-x^n$。注意$-x^n$的负号在幂外。"
+          },
+          {
+            "title": "用对应点核对",
+            "body": "原点$(u,u^n)$变成$(h+u,au^n+k)$；选$u=0,\\pm1$等点核对平移与伸缩。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Power-function symmetry and transformations",
+          "summary": "$(-x)^n=(-1)^nx^n$. In $y=a(x-h)^n+k$, shift $y=x^n$ horizontally by $h$, vertically scale by $|a|$, reflect across the $x$-axis if $a<0$, then shift up by $k$.",
+          "method": [
+            {
+              "title": "Respect parentheses",
+              "body": "For even $n$, $(-x)^n=x^n$; for odd $n$, $(-x)^n=-x^n$. In $-x^n$ the minus sign is outside the power."
+            },
+            {
+              "title": "Check corresponding points",
+              "body": "A point $(u,u^n)$ becomes $(h+u,au^n+k)$. Check $u=0,\\pm1$ to confirm shifts and scaling."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "models",
+        "title": "多项式模型与实际限制",
+        "summary": "把题设量和单位代入原函数；代数定义域与情境允许的范围要分别检查。物理长度、数量和时间通常有额外限制。",
+        "method": [
+          {
+            "title": "确定变量含义",
+            "body": "先处理单位：以“百”为单位的$x$，1500件对应$x=15$，不是1500。"
+          },
+          {
+            "title": "计算并筛选",
+            "body": "展开具体代入运算，检查正尺寸、整数数量和模型有效时间。对开放问题给可验证的一个例子，说明不唯一。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Polynomial models and contextual restrictions",
+          "summary": "Substitute the stated quantities with their units and distinguish the algebraic domain from the context’s permitted values. Physical lengths, counts and time impose additional restrictions.",
+          "method": [
+            {
+              "title": "Interpret the variable",
+              "body": "Convert units first: if $x$ is in hundreds, 1500 objects means $x=15$, not 1500."
+            },
+            {
+              "title": "Calculate and restrict",
+              "body": "Show substitution arithmetic, then enforce positive dimensions, integer counts and the model’s time interval. Give a verifiable example for open questions and explain non-uniqueness."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "graph-reasoning",
+        "title": "从图像推断与构造",
+        "summary": "两端、截距和转折可以限制多项式的次数与首项符号，通常不能唯一确定公式。一个不同实根不强迫次数为奇数。",
+        "method": [
+          {
+            "title": "先识别可以确定的特征",
+            "body": "从尾端判断奇偶和首项符号，从标注读截距或极值；$k$个转折要求次数至少$k+1$。"
+          },
+          {
+            "title": "区分一个模型与唯一答案",
+            "body": "例如$(x-2)^2$与$(x-2)^3$都只有一个不同实根2。照片无坐标时只能给合理定性模型，不能伪造唯一系数。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Reasoning from graphs and constructing models",
+          "summary": "Tails, intercepts and turning points constrain a polynomial’s degree and leading sign but usually do not determine its equation uniquely. Exactly one distinct real root does not force an odd degree.",
+          "method": [
+            {
+              "title": "Identify what is determined",
+              "body": "Read parity and leading sign from tails and use labels for intercepts/extrema. A curve with $k$ turns requires degree at least $k+1$."
+            },
+            {
+              "title": "Separate an example from a unique answer",
+              "body": "Both $(x-2)^2$ and $(x-2)^3$ have exactly one distinct real zero, 2. A photograph without coordinates supports a qualitative model, not unique coefficients."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "degree-table",
+        "title": "原书特征表：零至五次",
+        "summary": "原书第109页用以下六个函数说明次数0–5。各式的代数定义域均为$\\mathbb R$，所有首项系数均为正。这里保留每一个原式与各自特征。",
+        "method": [
+          {
+            "title": "零次：$f(x)=3$",
+            "body": "次数0（偶数），首项系数3，常数3。水平线，无横截距，纵截距$(0,3)$，值域$\\{3\\}$；整体最大和最小同为3。"
+          },
+          {
+            "title": "一次：$f(x)=2x+1$",
+            "body": "次数1（奇数），首项系数2，常数1，尾端III→I。解$2x+1=0$得横截距$(-\\frac12,0)$一个，纵截距$(0,1)$；值域$\\mathbb R$，无整体最大或最小。"
+          },
+          {
+            "title": "二次：$f(x)=2x^2-3$",
+            "body": "次数2（偶数），首项系数2，常数$-3$，两端上（II→I）。横截距$\\pm\\sqrt{3/2}$共两个；纵截距及顶点$(0,-3)$，整体最小值$-3$，值域$[-3,\\infty)$。原表误印为$y\\ge-2$；由$f(0)=-3$立即可核实正确下界是$-3$。"
+          },
+          {
+            "title": "三次：$f(x)=x^3+2x^2-x-2$",
+            "body": "次数3（奇数），首项系数1，常数$-2$，尾端III→I。分解$(x+2)(x+1)(x-1)$得三个横截距$-2,-1,1$；纵截距$(0,-2)$，值域$\\mathbb R$，无整体最大或最小。"
+          },
+          {
+            "title": "四次：$f(x)=x^4+5x^3+5x^2-5x-6$",
+            "body": "次数4（偶数），首项系数1，常数$-6$，尾端II→I。分解$(x+3)(x+2)(x+1)(x-1)$得四个横截距$-3,-2,-1,1$；纵截距$(0,-6)$。图形技术给整体最小值约$-6.91$（$x\\approx0.326$），值域约$[-6.91,\\infty)$。"
+          },
+          {
+            "title": "五次：$f(x)=x^5+3x^4-5x^3-15x^2+4x+12$",
+            "body": "次数5（奇数），首项系数1，常数12，尾端III→I。分解$(x+3)(x^2-1)(x^2-4)$得五个横截距$-3,-2,-1,1,2$；纵截距$(0,12)$，值域$\\mathbb R$，无整体最大或最小。"
+          }
+        ],
+        "pitfalls": [
+          "表中的整体极值不同于局部极值；三次和五次仍可有局部转折。"
+        ],
+        "en": {
+          "title": "Source characteristics chart: degrees zero to five",
+          "summary": "The source chart on p. 109 uses the following six functions for degrees 0–5. Each has algebraic domain $\\mathbb R$ and a positive leading coefficient. Every formula and its individual characteristics are retained here.",
+          "method": [
+            {
+              "title": "Degree 0: $f(x)=3$",
+              "body": "Degree 0 (even), leading coefficient 3, constant 3. Horizontal line; no x-intercepts; y-intercept $(0,3)$; range $\\{3\\}$. Both global maximum and minimum are 3."
+            },
+            {
+              "title": "Degree 1: $f(x)=2x+1$",
+              "body": "Degree 1 (odd), leading coefficient 2, constant 1, tails III→I. Solving $2x+1=0$ gives the single x-intercept $(-\\frac12,0)$; y-intercept $(0,1)$. Range $\\mathbb R$; no global maximum/minimum."
+            },
+            {
+              "title": "Degree 2: $f(x)=2x^2-3$",
+              "body": "Degree 2 (even), leading coefficient 2, constant $-3$, tails II→I. There are two x-intercepts $\\pm\\sqrt{3/2}$. Its y-intercept and vertex are $(0,-3)$, giving global minimum $-3$ and range $[-3,\\infty)$. The source prints $y\\ge-2$ in error; $f(0)=-3$ confirms the correct lower bound $-3$."
+            },
+            {
+              "title": "Degree 3: $f(x)=x^3+2x^2-x-2$",
+              "body": "Degree 3 (odd), leading coefficient 1, constant $-2$, tails III→I. Factoring $(x+2)(x+1)(x-1)$ gives three x-intercepts $-2,-1,1$. The y-intercept is $(0,-2)$; range $\\mathbb R$; no global maximum/minimum."
+            },
+            {
+              "title": "Degree 4: $f(x)=x^4+5x^3+5x^2-5x-6$",
+              "body": "Degree 4 (even), leading coefficient 1, constant $-6$, tails II→I. Factoring $(x+3)(x+2)(x+1)(x-1)$ gives four intercepts $-3,-2,-1,1$; y-intercept $(0,-6)$. Graphing gives global minimum approximately $-6.91$ at $x\\approx0.326$, so the range is approximately $[-6.91,\\infty)$."
+            },
+            {
+              "title": "Degree 5: $f(x)=x^5+3x^4-5x^3-15x^2+4x+12$",
+              "body": "Degree 5 (odd), leading coefficient 1, constant 12, tails III→I. Factoring $(x+3)(x^2-1)(x^2-4)$ gives five intercepts $-3,-2,-1,1,2$; y-intercept $(0,12)$. Range $\\mathbb R$; no global maximum/minimum."
+            }
+          ],
+          "pitfalls": [
+            "Global extrema differ from local extrema: the cubic and quintic can still have local turning points."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1 · 四组图像",
+        "prompt": "利用图形技术在不同坐标系中分别画出A、B、C、D四组函数，并描绘结果。; A: $y=x$, $y=x^2$, $y=x^3$, $y=x^4$, $y=x^5$; B: $y=-3x$, $y=-2x^2$, $y=-4x^3$, $y=-2x^4$, $y=-x^5$; C: $y=x+1$, $y=x^2-3$, $y=x^3-4$, $y=x^4+2$, $y=x^5-1$; D: $y=x^2-x-2$, $y=x^3+4x^2+x-6$, $y=x^4+2x^3-7x^2-8x+12$, $y=x^5+3x^4-5x^3-15x^2+4x+12$",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "逐组输入",
+            "body": "每组独立坐标系内输入原表各式。A、B、C各五式，D四式（没有一次函数）。下方四图分别显示各组，曲线图例保留公式。"
+          },
+          {
+            "title": "检查关键点",
+            "body": "A、B的所有曲线经过$(0,0)$。C各式纵截距依次为$1,-3,-4,2,-1$；D依次为$-2,-6,12,12$。确认图窗可见截距与转折，不能把屏幕边缘当作函数端点。"
+          }
+        ],
+        "answer": "四组图像如下；各组应在独立坐标系中比较。",
+        "pdfPage": 115,
+        "printedPage": 106,
+        "en": {
+          "label": "Investigate 1 · Four graph sets",
+          "prompt": "Graph each set of functions on a different set of coordinate axes using graphing technology. Sketch the results.; A: $y=x$, $y=x^2$, $y=x^3$, $y=x^4$, $y=x^5$; B: $y=-3x$, $y=-2x^2$, $y=-4x^3$, $y=-2x^4$, $y=-x^5$; C: $y=x+1$, $y=x^2-3$, $y=x^3-4$, $y=x^4+2$, $y=x^5-1$; D: $y=x^2-x-2$, $y=x^3+4x^2+x-6$, $y=x^4+2x^3-7x^2-8x+12$, $y=x^5+3x^4-5x^3-15x^2+4x+12$",
+          "steps": [
+            {
+              "title": "Enter each set",
+              "body": "Use separate axes for each source column: five functions each in A, B and C, and four in D (no linear entry). The four plots below retain the curve formulas."
+            },
+            {
+              "title": "Check anchor points",
+              "body": "All A and B curves pass through $(0,0)$. The C $y$-intercepts are $1,-3,-4,2,-1$, and the D $y$-intercepts are $-2,-6,12,12$, in table order. Check that the viewport shows intercepts and turns; screen edges are not endpoints."
+            }
+          ],
+          "answer": "The four sets are plotted below on separate axes."
+        },
+        "sourceImage": "assets/3-1-investigate-table.png",
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 4,
+              "yMin": -15,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "Set A: y=x",
+            "label": "Set A: y=x",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^2"
+              },
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^3"
+              },
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^4"
+              },
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^5"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -3,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 4,
+              "yMin": -15,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "Set B: y=-3x",
+            "label": "Set B: y=-3x",
+            "traces": [
+              {
+                "numerator": [
+                  -2,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=-2x^2"
+              },
+              {
+                "numerator": [
+                  -4,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=-4x^3"
+              },
+              {
+                "numerator": [
+                  -2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=-2x^4"
+              },
+              {
+                "numerator": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=-x^5"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              1
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 4,
+              "yMin": -15,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "Set C: y=x+1",
+            "label": "Set C: y=x+1",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  -3
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^2-3"
+              },
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  -4
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^3-4"
+              },
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  2
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^4+2"
+              },
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^5-1"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              -1,
+              -2
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -4,
+              "xMax": 4,
+              "yMin": -15,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "Set D: y=x^2-x-2",
+            "label": "Set D: y=x^2-x-2",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  4,
+                  1,
+                  -6
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^3+4x^2+x-6"
+              },
+              {
+                "numerator": [
+                  1,
+                  2,
+                  -7,
+                  -8,
+                  12
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^4+2x^3-7x^2-8x+12"
+              },
+              {
+                "numerator": [
+                  1,
+                  3,
+                  -5,
+                  -15,
+                  4,
+                  12
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^5+3x^4-5x^3-15x^2+4x+12"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 2 · 组内比较",
+        "prompt": "比较探究1每组内的图像，按端行为、次数、常数项、首项系数和横截距个数说明相同点与不同点。",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "A组",
+            "body": "次数依次$1,2,3,4,5$；首项系数全为1，常数全为0，且各只有一个横截距$x=0$。奇次从III到I，偶次从II到I。"
+          },
+          {
+            "title": "B组",
+            "body": "次数同A；首项系数依次$-3,-2,-4,-2,-1$，常数均0，各一个横截距$x=0$。奇次从II到IV，偶次从III到IV；相对于A，纵向缩放并关于横轴反射。"
+          },
+          {
+            "title": "C组",
+            "body": "次数依次1至5，首项系数均1；常数为$1,-3,-4,2,-1$。横截距分别为$-1$、$\\pm\\sqrt3$、$\\sqrt[3]4$、无、1，故个数为$1,2,1,0,1$。端行为同次数相应的A函数，常数只改变竖直位置。"
+          },
+          {
+            "title": "D组",
+            "body": "次数为$2,3,4,5$，首项系数均1；常数为$-2,-6,12,12$。分解依次为$(x-2)(x+1)$、$(x-1)(x+2)(x+3)$、$(x-1)(x-2)(x+2)(x+3)$、$(x+3)(x^2-1)(x^2-4)$，因此横截距个数分别为$2,3,4,5$。偶次两端上，奇次左下右上。"
+          }
+        ],
+        "answer": "同次数的首项决定端行为；常数是纵截距；其他项可改变横截距和局部形状。",
+        "pdfPage": 115,
+        "printedPage": 106,
+        "en": {
+          "label": "Investigate 2 · Compare within each set",
+          "prompt": "Compare the graphs within each set from step 1. Describe their similarities and differences in terms of end behaviour, degree, constant term, leading coefficient, and number of x-intercepts.",
+          "steps": [
+            {
+              "title": "Set A",
+              "body": "Degrees are $1,2,3,4,5$; all leading coefficients are 1, all constants are 0, and each graph has exactly one $x$-intercept, $x=0$. Odd degrees run III→I; even degrees run II→I."
+            },
+            {
+              "title": "Set B",
+              "body": "The degrees match A; leading coefficients are $-3,-2,-4,-2,-1$, constants are zero, and each has one $x$-intercept, $x=0$. Odd degrees run II→IV and even degrees III→IV. These are vertical scalings/reflections of A."
+            },
+            {
+              "title": "Set C",
+              "body": "Degrees are 1–5 and leading coefficients are 1. Constants are $1,-3,-4,2,-1$. Zeros are $-1$, $\\pm\\sqrt3$, $\\sqrt[3]4$, none, and 1; counts are $1,2,1,0,1$. Tails match A at the corresponding degree; changing the constant vertically shifts a graph."
+            },
+            {
+              "title": "Set D",
+              "body": "Degrees are $2,3,4,5$, leading coefficients are 1, and constants are $-2,-6,12,12$. Factorizations are $(x-2)(x+1)$, $(x-1)(x+2)(x+3)$, $(x-1)(x-2)(x+2)(x+3)$, and $(x+3)(x^2-1)(x^2-4)$, so the numbers of distinct $x$-intercepts are $2,3,4,5$. Even tails rise on both sides; odd tails fall left and rise right."
+            }
+          ],
+          "answer": "At a fixed degree, the leading term determines tails, the constant gives the $y$-intercept, and other terms can change zeros and local shape."
+        }
+      },
+      {
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 3 · 组间比较",
+        "prompt": "把探究1的各组图像互相比较，沿用探究2的五个方面说明异同。",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "固定次数比较",
+            "body": "同一行次数相同；A、C、D首项系数为正，B为负。A、C、D的两端方向相同；B方向相反。B的系数绝对值还会改变陡峭程度。"
+          },
+          {
+            "title": "比较截距",
+            "body": "A与B常数都是0；C相当于平移A，纵截距各不相同；D有额外中间项。即使次数与首项相同，横截距也可不同，例如$x^4$一个、$x^4+2$零个、D四次式四个。"
+          }
+        ],
+        "answer": "次数与首项符号控制尾端，但不唯一决定截距数、平移或转折。",
+        "pdfPage": 116,
+        "printedPage": 107,
+        "en": {
+          "label": "Investigate 3 · Compare the sets",
+          "prompt": "Compare the sets of graphs from step 1 to each other. Describe their similarities and differences as in step 2.",
+          "steps": [
+            {
+              "title": "Compare equal degrees",
+              "body": "Each row has the same degree. A, C and D have positive leading coefficients, while B has negative ones. A/C/D have matching tail directions; B reverses them, and its coefficient magnitudes also alter steepness."
+            },
+            {
+              "title": "Compare intercepts",
+              "body": "A/B constants are zero. C vertically shifts A; D adds intermediate terms. Equal degree and leading coefficient do not imply equal zero counts: $x^4$ has one intercept, $x^4+2$ none, and the D quartic four."
+            }
+          ],
+          "answer": "Degree and leading sign control tails but do not uniquely determine intercept counts, shifts or turns."
+        }
+      },
+      {
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "探究 4 · 与基本曲线比较",
+        "prompt": "考虑探究1中的三次、四次和五次图像。哪些图像分别与$y=x$、$y=-x$、$y=x^2$、$y=-x^2$类似？解释类似之处。",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "奇次曲线",
+            "body": "A、C、D中的三次及五次式首项为正，与$y=x$一样左下右上。B的$-4x^3,-x^5$与$y=-x$一样左上右下。"
+          },
+          {
+            "title": "偶次曲线",
+            "body": "A、C、D的四次式首项为正，与$y=x^2$一样两端上；B的$-2x^4$与$y=-x^2$一样两端下。这里类似指端行为，不表示中间形状完全相同。"
+          }
+        ],
+        "answer": "正/负奇次分别类比$x/-x$，正/负偶次分别类比$x^2/-x^2$。",
+        "pdfPage": 116,
+        "printedPage": 107,
+        "en": {
+          "label": "Investigate 4 · Compare basic tails",
+          "prompt": "Consider the cubic, quartic, and quintic graphs from step 1. Which graphs are similar to $y=x$, $y=-x$, $y=x^2$, and $y=-x^2$? Explain how they are similar.",
+          "steps": [
+            {
+              "title": "Odd-degree curves",
+              "body": "The positive-leading cubics and quintics in A/C/D have tails like $y=x$: down left, up right. The B functions $-4x^3,-x^5$ have tails like $y=-x$: up left, down right."
+            },
+            {
+              "title": "Even-degree curves",
+              "body": "The positive-leading quartics in A/C/D have both tails up, like $y=x^2$. The B quartic $-2x^4$ has both tails down, like $y=-x^2$. Similarity here concerns tails, not an identical shape in between."
+            }
+          ],
+          "answer": "Positive/negative odd tails resemble $x/-x$; positive/negative even tails resemble $x^2/-x^2$."
+        }
+      },
+      {
+        "id": "investigate-5",
+        "type": "practice",
+        "label": "反思 5",
+        "prompt": "(a) 一次、三次和五次函数的图像与方程有何相似？(b) 二次和四次函数有何相似？(c) 描述图像端行为与相应函数次数的关系。",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "(a) 奇次",
+            "body": "最高指数1、3、5均为奇数，$x\\to-\\infty$与$x\\to\\infty$时首项符号相反，所以两端相反；定义域、值域均为实数，至少一横截距。"
+          },
+          {
+            "title": "(b) 偶次",
+            "body": "最高指数2、4为偶数，两端的$x^n$同为正，因此两端同向。首项正则两端上，有整体最小；首项负则两端下，有整体最大。"
+          },
+          {
+            "title": "(c) 一般化",
+            "body": "对次数$n\\ge1$，奇$n$两端相反，偶$n$两端相同；首项系数决定上升或下降的选择。次数0的常数函数是水平线。"
+          }
+        ],
+        "answer": "(a) 奇次两端相反；(b) 正次数偶次两端相同；(c) 具体上下方向再由首项系数符号决定。",
+        "pdfPage": 116,
+        "printedPage": 107,
+        "en": {
+          "label": "Reflect and Respond 5",
+          "prompt": "(a) How are the graphs and equations of linear, cubic, and quintic functions similar? (b) How are the graphs and equations of quadratic and quartic functions similar? (c) Describe the relationship between the end behaviours of the graphs and the degree of the corresponding function.",
+          "steps": [
+            {
+              "title": "(a) Odd degrees",
+              "body": "Highest powers 1, 3 and 5 are odd, so the leading term has opposite signs as $x\\to-\\infty$ and $x\\to\\infty$. Tails are opposite, domain and range are real, and at least one $x$-intercept exists."
+            },
+            {
+              "title": "(b) Even degrees",
+              "body": "Highest powers 2 and 4 are even, so $x^n$ is positive at both distant ends. A positive leading coefficient gives two rising tails and a global minimum; a negative one gives two falling tails and a global maximum."
+            },
+            {
+              "title": "(c) Generalize",
+              "body": "For degree $n\\ge1$, odd $n$ gives opposite tails and even $n$ matching tails; leading sign determines the directions. Degree-zero constants are horizontal."
+            }
+          ],
+          "answer": "(a) Odd-degree tails oppose; (b) positive even-degree tails agree; (c) leading sign determines which tail rises or falls."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "id": "investigate-6",
+        "type": "practice",
+        "label": "反思 6",
+        "prompt": "函数方程首项系数的符号与图像端行为有什么关系？",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "先看右端",
+            "body": "当$x$为很大的正数时$x^n>0$，所以右端由$a_n$的符号决定：正则上，负则下。"
+          },
+          {
+            "title": "再看左端",
+            "body": "偶次左端与右端同向，奇次相反。把首项系数变号会把两端方向都倒转；只有把全函数取负才是整个图像关于横轴的反射。"
+          }
+        ],
+        "answer": "正首项右端上，负首项右端下；左端再由次数奇偶决定。",
+        "pdfPage": 116,
+        "printedPage": 107,
+        "en": {
+          "label": "Reflect and Respond 6",
+          "prompt": "What is the relationship between the sign of the leading coefficient of a function equation and the end behaviour of the graph of the function?",
+          "steps": [
+            {
+              "title": "Inspect the right tail",
+              "body": "For large positive $x$, $x^n>0$, so a positive $a_n$ sends the right tail up and a negative $a_n$ sends it down."
+            },
+            {
+              "title": "Inspect the left tail",
+              "body": "The left tail matches the right for even degree and opposes it for odd degree. Reversing the leading sign reverses both tails; negating the whole function, specifically, reflects its entire graph in the $x$-axis."
+            }
+          ],
+          "answer": "Positive leading sign gives a rising right tail; negative gives a falling right tail. Parity determines the left tail."
+        }
+      },
+      {
+        "id": "investigate-7",
+        "type": "practice",
+        "label": "反思 7",
+        "prompt": "函数方程的常数项与图像位置有什么关系？",
+        "concept": "intercepts-range",
+        "steps": [
+          {
+            "title": "代入零",
+            "body": "$f(0)=a_n0^n+\\cdots+a_1(0)+a_0=a_0$，所以图像与纵轴相交于$(0,a_0)$。"
+          },
+          {
+            "title": "只改变常数",
+            "body": "若其余系数固定，把$a_0$增加$k$就得到$f(x)+k$，图像上移$k$；减少则下移。并非任意两条有同常数的曲线形状都相同。"
+          }
+        ],
+        "answer": "常数项给纵截距；只改变常数项就是竖直平移。",
+        "pdfPage": 116,
+        "printedPage": 107,
+        "en": {
+          "label": "Reflect and Respond 7",
+          "prompt": "What is the relationship between the constant term in a function equation and the position of the graph of the function?",
+          "steps": [
+            {
+              "title": "Substitute zero",
+              "body": "$f(0)=a_n0^n+\\cdots+a_1(0)+a_0=a_0$, so the graph meets the $y$-axis at $(0,a_0)$."
+            },
+            {
+              "title": "Change only the constant",
+              "body": "With all other coefficients fixed, increasing $a_0$ by $k$ gives $f(x)+k$, shifting the graph up $k$. Decreasing it shifts down. Equal constants alone do not imply equal graph shapes."
+            }
+          ],
+          "answer": "The constant is the $y$-intercept; changing only it produces a vertical shift."
+        }
+      },
+      {
+        "id": "investigate-8",
+        "type": "practice",
+        "label": "反思 8",
+        "prompt": "图像横截距的最少与最多个数与函数次数有什么关系？",
+        "concept": "intercepts-range",
+        "steps": [
+          {
+            "title": "最多次数个",
+            "body": "次数$n$的非零多项式最多有$n$个不同实零点；例如D中次数2至5的式子分别达到了2至5个。"
+          },
+          {
+            "title": "最少由奇偶决定",
+            "body": "正次数偶次最少0个，例如$x^2+1$；奇次两端相反且连续，至少过横轴一次，例如$x^3$恰1个。非零常数无横截距，零函数则整条横轴都是零点。"
+          }
+        ],
+        "answer": "次数$n\\ge1$：奇次1至$n$个，偶次0至$n$个不同横截距；次数0另论。",
+        "pdfPage": 116,
+        "printedPage": 107,
+        "en": {
+          "label": "Reflect and Respond 8",
+          "prompt": "What is the relationship between the minimum and maximum numbers of x-intercepts of the graph of a function with the degree of the function?",
+          "steps": [
+            {
+              "title": "At most the degree",
+              "body": "A nonzero degree-$n$ polynomial has at most $n$ distinct real zeros. The D functions of degrees 2–5 attain 2–5 intercepts."
+            },
+            {
+              "title": "Parity controls the minimum",
+              "body": "Positive even degree can have none, as in $x^2+1$. Odd degree has opposite tails and continuity, hence at least one crossing; $x^3$ has exactly one. A nonzero constant has none; the zero function has every real number as a zero."
+            }
+          ],
+          "answer": "For $n\\ge1$: odd degree has 1 through $n$ distinct intercepts, even degree 0 through $n$; degree zero is exceptional."
+        }
+      },
+      {
+        "id": "link-ideas-constant",
+        "type": "practice",
+        "label": "联系知识 · 常数项",
+        "prompt": "与$a_0$关联的$x$的幂是多少？",
+        "concept": "identify",
+        "steps": [
+          {
+            "title": "使用零次幂",
+            "body": "常数项写作$a_0x^0$，因为$x^0=1$（多项式记号中的零次项恒为1），所以关联幂为0。"
+          }
+        ],
+        "answer": "0次。",
+        "pdfPage": 116,
+        "printedPage": 107,
+        "en": {
+          "label": "Link the Ideas · Constant term",
+          "prompt": "What power of $x$ is associated with $a_0$?",
+          "steps": [
+            {
+              "title": "Use the zeroth power",
+              "body": "The constant term is $a_0x^0$: the degree-zero monomial is the constant 1. Thus the associated power is 0."
+            }
+          ],
+          "answer": "Power 0."
+        }
+      },
+      {
+        "id": "example-1",
+        "type": "example",
+        "label": "教材例题 1 · 辨认多项式",
+        "prompt": "哪些函数是多项式？说明理由。指出每个多项式的次数、首项系数和常数项。(a) $g(x)=\\sqrt x+5$；(b) $f(x)=3x^4$；(c) $y=|x|$；(d) $y=2x^3+3x^2-4x-1$。",
+        "concept": "identify",
+        "steps": [
+          {
+            "title": "(a) 根式",
+            "body": "$\\sqrt x=x^{1/2}$，指数$1/2$不是非负整数，因此不是多项式。"
+          },
+          {
+            "title": "(b) 单项式",
+            "body": "$3x^4$的指数为4，所以是四次多项式，首项系数3，常数项0。"
+          },
+          {
+            "title": "(c) 绝对值",
+            "body": "$|x|$在负数区间等于$-x$、正数区间等于$x$，不能由一个全实数上的多项式公式表示，因此不是多项式函数。"
+          },
+          {
+            "title": "(d) 读首项",
+            "body": "各指数为3、2、1、0，均为非负整数；最高项$2x^3$，所以是三次，首项系数2，常数$-1$。"
+          }
+        ],
+        "answer": "(a) 否；(b) 是，次数4、首项系数3、常数0；(c) 否；(d) 是，次数3、首项系数2、常数−1。",
+        "pdfPage": 117,
+        "printedPage": 108,
+        "en": {
+          "label": "Example 1 · Identify Polynomial Functions",
+          "prompt": "Which functions are polynomials? Justify your answer. State the degree, the leading coefficient, and the constant term of each polynomial function. (a) $g(x)=\\sqrt x+5$; (b) $f(x)=3x^4$; (c) $y=|x|$; (d) $y=2x^3+3x^2-4x-1$.",
+          "steps": [
+            {
+              "title": "(a) Radical",
+              "body": "$\\sqrt x=x^{1/2}$ has exponent $1/2$, which is not a nonnegative integer. It is not a polynomial."
+            },
+            {
+              "title": "(b) Monomial",
+              "body": "$3x^4$ has exponent 4: degree 4, leading coefficient 3, constant 0."
+            },
+            {
+              "title": "(c) Absolute value",
+              "body": "$|x|$ equals $-x$ for negative $x$ and $x$ for positive $x$; it cannot be one polynomial on all real numbers."
+            },
+            {
+              "title": "(d) Read the leading term",
+              "body": "Exponents 3, 2, 1 and 0 qualify. The leading term $2x^3$ gives degree 3, leading coefficient 2 and constant $-1$."
+            }
+          ],
+          "answer": "(a) No. (b) Yes: degree 4, leading coefficient 3, constant 0. (c) No. (d) Yes: degree 3, leading coefficient 2, constant −1."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "id": "practice-1",
+        "type": "practice",
+        "label": "Your Turn 1",
+        "prompt": "辨认各函数是否为多项式并说明理由，指出每个多项式的次数、首项系数、常数项。(a) $h(x)=\\frac1x$；(b) $y=3x^2-2x^5+4$；(c) $y=-4x^4-4x+3$；(d) $y=x^{1/2}-7$。",
+        "concept": "identify",
+        "steps": [
+          {
+            "title": "(a) 负指数",
+            "body": "$1/x=x^{-1}$，指数$-1$不合要求，且$x=0$处无定义；不是多项式。"
+          },
+          {
+            "title": "(b) 降幂排列",
+            "body": "$-2x^5+3x^2+4$的最高项为$-2x^5$，是五次，首项系数$-2$，常数4。"
+          },
+          {
+            "title": "(c) 整数指数",
+            "body": "指数4、1、0均合要求，最高项$-4x^4$；四次，首项系数$-4$，常数3。"
+          },
+          {
+            "title": "(d) 分数指数",
+            "body": "$x^{1/2}$的指数$1/2$不是非负整数，所以不是多项式。"
+          }
+        ],
+        "answer": "(a)、(d)不是；(b)次数5、首项系数−2、常数4；(c)次数4、首项系数−4、常数3。",
+        "pdfPage": 117,
+        "printedPage": 108,
+        "en": {
+          "label": "Your Turn 1",
+          "prompt": "Identify whether each function is a polynomial function. Justify your answer. State the degree, the leading coefficient, and the constant term of each polynomial function. (a) $h(x)=\\frac1x$; (b) $y=3x^2-2x^5+4$; (c) $y=-4x^4-4x+3$; (d) $y=x^{1/2}-7$.",
+          "steps": [
+            {
+              "title": "(a) Negative exponent",
+              "body": "$1/x=x^{-1}$ has a forbidden negative exponent and is undefined at $x=0$. It is not a polynomial."
+            },
+            {
+              "title": "(b) Descending powers",
+              "body": "$-2x^5+3x^2+4$ has leading term $-2x^5$: degree 5, leading coefficient $-2$, constant 4."
+            },
+            {
+              "title": "(c) Integer exponents",
+              "body": "Exponents 4, 1 and 0 qualify. The leading term is $-4x^4$: degree 4, leading coefficient $-4$, constant 3."
+            },
+            {
+              "title": "(d) Fractional exponent",
+              "body": "The exponent $1/2$ in $x^{1/2}$ is not a nonnegative integer, so it is not a polynomial."
+            }
+          ],
+          "answer": "(a)/(d) are not polynomials. (b): degree 5, leading coefficient −2, constant 4. (c): degree 4, leading coefficient −4, constant 3."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "id": "chart-negative-leading",
+        "type": "practice",
+        "label": "图表反思 · 负首项",
+        "prompt": "若首项系数变为负数，图表中多项式函数的特征会怎样改变？ 原表六个正首项例函数及其各自特征完整列于本知识点，下方图像重绘其原函数。",
+        "concept": "degree-table",
+        "steps": [
+          {
+            "title": "尾端倒转",
+            "body": "正次数偶次原来两端上，改为两端下；正奇次原来左下右上，改为左上右下。偶次的整体最小改为整体最大；奇次仍无整体极值且值域全实数。 上述尾端与极值类型规则针对正次数。零次常数$c$变为$-c$仍为水平线，值域为$\\{-c\\}$，整体最大和最小都为$-c$。"
+          },
+          {
+            "title": "区分保留项",
+            "body": "次数与代数定义域不变。对正次数函数，仅首项变号时，纵截距保持$a_0$而横截距可能改变；若把整个函数乘$-1$，横截距不变、纵截距变号、全图关于横轴反射。 零次函数的首项就是常数本身，因此变号时常数也随之变号。"
+          }
+        ],
+        "answer": "尾端与整体极值类型倒转；次数和定义域不变，其余要看是否同时改变其他系数。 此尾端规则针对正次数；零次常数只由$c$变为$-c$的水平线。",
+        "pdfPage": 118,
+        "printedPage": 109,
+        "en": {
+          "label": "Chart reflection · Negative leading coefficient",
+          "prompt": "How would the characteristics of polynomial functions change if the leading coefficient were negative? All six positive-leading source examples and their individual characteristics appear in this concept; the plots below reproduce their original functions.",
+          "steps": [
+            {
+              "title": "Reverse tails",
+              "body": "For positive even degree, both tails change from up to down. For odd degree, down-left/up-right changes to up-left/down-right. Even degree has a global maximum instead of a global minimum; odd degree still has no global extremum and has real range. These tail/extremum rules concern positive degree. A degree-zero constant $c$ becomes the horizontal line $-c$, with range $\\{-c\\}$ and both global maximum and minimum $-c$."
+            },
+            {
+              "title": "Distinguish the changes",
+              "body": "Degree and algebraic domain remain unchanged. For positive degree, if only the leading coefficient changes sign, the constant stays $a_0$ but zeros can change. If the entire function is multiplied by $-1$, zeros stay fixed, the $y$-intercept changes sign, and the whole graph reflects in the $x$-axis. For degree zero, the leading term is the constant itself, so its sign also changes."
+            }
+          ],
+          "answer": "Tail directions and the type of global extremum reverse. Degree and domain stay fixed; other changes depend on whether the remaining coefficients also change. The tail rule concerns positive degree; a degree-zero constant simply changes from the horizontal line $c$ to $-c$."
+        },
+        "graphs": [
+          {
+            "numerator": [
+              3
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -10,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "f(x)=3",
+            "label": "f(x)=3"
+          },
+          {
+            "numerator": [
+              2,
+              1
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -10,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "f(x)=2x+1",
+            "label": "f(x)=2x+1"
+          },
+          {
+            "numerator": [
+              2,
+              0,
+              -3
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -10,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "f(x)=2x^2-3",
+            "label": "f(x)=2x^2-3"
+          },
+          {
+            "numerator": [
+              1,
+              2,
+              -1,
+              -2
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -10,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "f(x)=x^3+2x^2-x-2",
+            "label": "f(x)=x^3+2x^2-x-2"
+          },
+          {
+            "numerator": [
+              1,
+              5,
+              5,
+              -5,
+              -6
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -10,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "f(x)=x^4+5x^3+5x^2-5x-6",
+            "label": "f(x)=x^4+5x^3+5x^2-5x-6"
+          },
+          {
+            "numerator": [
+              1,
+              3,
+              -5,
+              -15,
+              4,
+              12
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -10,
+              "yMax": 15
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "f(x)=x^5+3x^4-5x^3-15x^2+4x+12",
+            "label": "f(x)=x^5+3x^4-5x^3-15x^2+4x+12"
+          }
+        ]
+      },
+      {
+        "id": "example-2",
+        "type": "example",
+        "label": "教材例题 2 · 匹配图像",
+        "prompt": "对每个多项式，指出类型、次数奇偶、端行为、可能横截距个数、有无整体最大/最小值和纵截距，再匹配附图。(a) $g(x)=-x^4+10x^2+5x-4$；(b) $f(x)=x^3+x^2-5x+3$；(c) $p(x)=-2x^5+5x^3-x$；(d) $h(x)=x^4+4x^3-x^2-16x-12$。",
+        "concept": "intercepts-range",
+        "steps": [
+          {
+            "title": "(a) 四次负首项",
+            "body": "$-x^4$给偶数次数4，左下右下（III→IV），横截距可能0至4个；有整体最大值，纵截距$(0,-4)$，匹配D。"
+          },
+          {
+            "title": "(b) 三次正首项",
+            "body": "$x^3$给奇数次数3，左下右上（III→I），1至3个可能横截距，无整体最大或最小值，纵截距$(0,3)$，匹配A。局部转折不违反“无整体极值”。"
+          },
+          {
+            "title": "(c) 五次负首项",
+            "body": "$-2x^5$给奇数次数5，左上右下（II→IV），1至5个可能横截距，无整体极值，纵截距$(0,0)$，匹配C。"
+          },
+          {
+            "title": "(d) 四次正首项",
+            "body": "$x^4$给偶数次数4，两端上（II→I），0至4个可能横截距，有整体最小值，纵截距$(0,-12)$，匹配B。"
+          }
+        ],
+        "answer": "(a) D；(b) A；(c) C；(d) B；各项特征见解析。",
+        "pdfPage": 119,
+        "printedPage": 110,
+        "en": {
+          "label": "Example 2 · Match a Polynomial Function With Its Graph",
+          "prompt": "Identify for each polynomial the type and whether its degree is even or odd, end behaviour, possible number of x-intercepts, whether it has a maximum or minimum value, and the y-intercept. Then match each to its corresponding supplied graph. (a) $g(x)=-x^4+10x^2+5x-4$; (b) $f(x)=x^3+x^2-5x+3$; (c) $p(x)=-2x^5+5x^3-x$; (d) $h(x)=x^4+4x^3-x^2-16x-12$.",
+          "steps": [
+            {
+              "title": "(a) Negative quartic",
+              "body": "$-x^4$ gives even degree 4, both tails down (III→IV), 0–4 possible $x$-intercepts, a global maximum, and $y$-intercept $(0,-4)$: D."
+            },
+            {
+              "title": "(b) Positive cubic",
+              "body": "$x^3$ gives odd degree 3, down-left/up-right (III→I), 1–3 possible intercepts, no global maximum/minimum, and $y$-intercept $(0,3)$: A. Local turns do not contradict the absence of global extrema."
+            },
+            {
+              "title": "(c) Negative quintic",
+              "body": "$-2x^5$ gives odd degree 5, up-left/down-right (II→IV), 1–5 possible intercepts, no global extremum, and $y$-intercept $(0,0)$: C."
+            },
+            {
+              "title": "(d) Positive quartic",
+              "body": "$x^4$ gives even degree 4, both tails up (II→I), 0–4 possible intercepts, a global minimum, and $y$-intercept $(0,-12)$: B."
+            }
+          ],
+          "answer": "(a) D; (b) A; (c) C; (d) B. Every requested characteristic is listed in the steps."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/3-1-example-2.png"
+      },
+      {
+        "id": "practice-2",
+        "type": "practice",
+        "label": "Your Turn 2",
+        "prompt": "(a) 描述$f(x)=-x^3-3x^2+2x+1$的端行为、可能横截距个数、纵截距和有无整体最大/最小值。(b) 附图中哪一个是其图像？",
+        "concept": "intercepts-range",
+        "steps": [
+          {
+            "title": "(a) 读取首项与常数",
+            "body": "$-x^3$是负首项三次，故左上右下（II→IV），可能1、2或3个不同横截距；$f(0)=1$，纵截距$(0,1)$。奇次无整体最大或最小值。"
+          },
+          {
+            "title": "(b) 筛选图像",
+            "body": "B和D两端方向不符；A虽方向正确但纵截距负，C的纵截距为1且两端方向相符，所以选C。"
+          }
+        ],
+        "answer": "(a) II→IV，1至3个可能横截距，$(0,1)$，无整体极值；(b) C。",
+        "pdfPage": 120,
+        "printedPage": 111,
+        "en": {
+          "label": "Your Turn 2",
+          "prompt": "(a) Describe the end behaviour of $f(x)=-x^3-3x^2+2x+1$. State the possible number of x-intercepts, the y-intercept, and whether the graph has a maximum or minimum value. (b) Which of the supplied graphs is the graph of the function?",
+          "steps": [
+            {
+              "title": "(a) Read leading and constant terms",
+              "body": "$-x^3$ is a negative-leading cubic: up left, down right (II→IV), with 1, 2 or 3 possible distinct intercepts. Since $f(0)=1$, the $y$-intercept is $(0,1)$. Odd degree gives no global maximum/minimum."
+            },
+            {
+              "title": "(b) Select the graph",
+              "body": "B/D have the wrong tail directions. A has the right directions but a negative $y$-intercept. C has the required $y$-intercept 1 and tails: select C."
+            }
+          ],
+          "answer": "(a) II→IV; 1–3 possible intercepts; $(0,1)$; no global extremum. (b) C."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/3-1-practice-2.png"
+      },
+      {
+        "id": "example-3",
+        "type": "example",
+        "label": "教材例题 3 · 金库体积",
+        "prompt": "某银行金库为长方体，体积$V$（立方米）与门宽$w$（米）的关系为$V(w)=w^3+13w^2+54w+72$。(a) 门宽1米时体积多少？(b) 最小体积是多少，此时门宽多少？为什么这种情况不现实？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a) 代入宽度",
+            "body": "$V(1)=1^3+13(1)^2+54(1)+72=1+13+54+72=140$，体积为$140\\,\\mathrm{m}^3$。"
+          },
+          {
+            "title": "(b) 限制实际范围",
+            "body": "宽度要求$w\\ge0$（实际有门需$w>0$）。在非负范围，$V(w)-72=w(w^2+13w+54)\\ge0$，等号仅在$w=0$，所以允许退化边界时最小值72。不能在全实数上说这个三次式有最小值。"
+          },
+          {
+            "title": "解释不现实",
+            "body": "门宽0米时$V(0)=72\\,\\mathrm{m}^3$，但没有可用门口。若严格要求$w>0$，72只是可趋近的下界而不被达到，故没有最小可用体积。"
+          }
+        ],
+        "answer": "(a) $140\\,\\mathrm{m}^3$；(b) 允许$w=0$时边界最小体积$72\\,\\mathrm{m}^3$，此时无可用门；实际$w>0$时下界72不取到。",
+        "pdfPage": 121,
+        "printedPage": 112,
+        "en": {
+          "label": "Example 3 · Application of a Polynomial Function",
+          "prompt": "A bank vault is a rectangular prism. Its volume $V$, in cubic metres, is related to doorway width $w$, in metres, by $V(w)=w^3+13w^2+54w+72$. (a) What is its volume if the door is 1 m wide? (b) What is the least volume? What door width gives it? Why is this not realistic?",
+          "steps": [
+            {
+              "title": "(a) Substitute the width",
+              "body": "$V(1)=1^3+13(1)^2+54(1)+72=1+13+54+72=140$, so volume is $140\\,\\mathrm{m}^3$."
+            },
+            {
+              "title": "(b) Apply the contextual domain",
+              "body": "Width requires $w\\ge0$ (a real door needs $w>0$). For nonnegative $w$, $V(w)-72=w(w^2+13w+54)\\ge0$, with equality only at $w=0$. Including the degenerate boundary gives minimum 72. The cubic has no minimum over all real inputs."
+            },
+            {
+              "title": "Explain the boundary",
+              "body": "$V(0)=72\\,\\mathrm{m}^3$ corresponds to a zero-width doorway. If $w>0$ is required, 72 is an unattained lower bound, so no smallest usable volume exists."
+            }
+          ],
+          "answer": "(a) $140\\,\\mathrm{m}^3$. (b) Including $w=0$ gives boundary minimum $72\\,\\mathrm{m}^3$, with no usable doorway. For actual $w>0$, the lower bound 72 is not attained."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graph": {
+          "numerator": [
+            1,
+            13,
+            54,
+            72
+          ],
+          "denominator": [
+            1
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 3,
+            "yMin": 0,
+            "yMax": 400
+          },
+          "verticalAsymptotes": [],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [
+            {
+              "x": 0,
+              "y": 72
+            },
+            {
+              "x": 1,
+              "y": 140
+            }
+          ],
+          "expressionLatex": "V(w)=w^3+13w^2+54w+72",
+          "label": "V(w)=w^3+13w^2+54w+72"
+        }
+      },
+      {
+        "id": "practice-3",
+        "type": "practice",
+        "label": "Your Turn 3",
+        "prompt": "某烤箱为长方体，其体积$V$（立方英寸）与门高$h$（英寸）满足$V(h)=h^3+10h^2+31h+30$。(a) 门高8英寸时体积多少？(b) 最小体积时门高是多少？解释。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a) 具体计算",
+            "body": "$V(8)=8^3+10(8)^2+31(8)+30=512+640+248+30=1430$，单位为立方英寸。"
+          },
+          {
+            "title": "(b) 分析边界",
+            "body": "在$h\\ge0$上，$V(h)-30=h(h^2+10h+31)\\ge0$，等号只在$h=0$，所以允许退化门高0英寸时最小体积30立方英寸。"
+          },
+          {
+            "title": "区分实际烤箱",
+            "body": "门高0无法使用。若要求$h>0$，最小值不取到，体积仅能无限接近30而总大于30。"
+          }
+        ],
+        "answer": "(a) 1430立方英寸；(b) 退化边界门高0英寸（体积30）；实际门高须正，此边界不可用。",
+        "pdfPage": 121,
+        "printedPage": 112,
+        "en": {
+          "label": "Your Turn 3",
+          "prompt": "A toaster oven is a rectangular prism. Its volume $V$, in cubic inches, is related to oven-door height $h$, in inches, by $V(h)=h^3+10h^2+31h+30$. (a) What is the volume if the door height is 8 in.? (b) What is the door height for the least volume? Explain.",
+          "steps": [
+            {
+              "title": "(a) Calculate",
+              "body": "$V(8)=8^3+10(8)^2+31(8)+30=512+640+248+30=1430$ cubic inches."
+            },
+            {
+              "title": "(b) Analyze the boundary",
+              "body": "For $h\\ge0$, $V(h)-30=h(h^2+10h+31)\\ge0$, with equality only at $h=0$. Allowing the degenerate zero-height door gives minimum volume 30 cubic inches."
+            },
+            {
+              "title": "Interpret an actual oven",
+              "body": "A zero-height doorway is unusable. With $h>0$, no minimum is attained: volumes approach 30 from above."
+            }
+          ],
+          "answer": "(a) 1430 cubic inches. (b) The boundary height is 0 in. (volume 30), an unusable doorway; positive actual heights do not attain this bound."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "project-corner",
+        "type": "practice",
+        "label": "Project Corner · 多项式无处不在",
+        "prompt": "每幅图显示可由多项式函数建模的物体部分。描述能对各物体所标部分建模的多项式函数：(landscape) 山脊；(harp) 竖琴的红线轮廓。",
+        "concept": "graph-reasoning",
+        "steps": [
+          {
+            "title": "山脊部分",
+            "body": "按红线箭头，左右两端都向下，中间依次有局部高、低、高，共3个转折。因此至少四次；负首项四次函数是合适的定性模型，远端III→IV，有整体最大值。照片无坐标，只比较标出的局部形状。"
+          },
+          {
+            "title": "竖琴部分",
+            "body": "红线从左侧上升到局部高点，再下降到局部低点，最后向右上升。两个转折可由正首项三次函数建模，端行为III→I。这里把有限的物体轮廓用曲线局部拟合，不认为琴的实体无限延长。"
+          },
+          {
+            "title": "可核验范围",
+            "body": "没有坐标或尺度，不能确定唯一零点、系数或精确方程；次数、首项符号与转折描述只是一个合理模型。"
+          }
+        ],
+        "answer": "山脊：负首项四次（至少四次）；竖琴：正首项三次（至少三次）。精确公式不由图片唯一确定。",
+        "pdfPage": 126,
+        "printedPage": 117,
+        "en": {
+          "label": "Project Corner · Polynomials Abound",
+          "prompt": "Each image shows a portion of an object that can be modelled by a polynomial function. Describe the polynomial function that models each object: (landscape) the marked ridge; (harp) the red harp contour.",
+          "steps": [
+            {
+              "title": "Landscape",
+              "body": "The red arrows point downward at both ends; the marked portion has local high–low–high, or three turns. Degree at least 4 is required. A negative-leading quartic is a reasonable qualitative model, with III→IV tails and a global maximum. The photograph has no coordinates, so this describes the indicated shape."
+            },
+            {
+              "title": "Harp",
+              "body": "The red contour rises to a local maximum, falls to a local minimum, then rises rightward. Two turns can be modelled by a positive-leading cubic, with III→I tails. A finite object is fitted by a curve segment, not assumed to extend infinitely."
+            },
+            {
+              "title": "Scope of verification",
+              "body": "Without coordinates or scale, unique zeros, coefficients and an exact equation cannot be determined. Degree, leading sign and turns supply reasonable models, not unique answers."
+            }
+          ],
+          "answer": "Landscape: negative-leading quartic (at least degree 4). Harp: positive-leading cubic (at least degree 3). The images do not determine unique equations."
+        },
+        "subpartIds": [
+          "landscape",
+          "harp"
+        ],
+        "sourceImage": "assets/3-1-project.png"
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "辨认各式是否为多项式函数，并说明理由。(a) $h(x)=2-\\sqrt x$；(b) $y=3x+1$；(c) $f(x)=3^x$；(d) $g(x)=3x^4-7$；(e) $p(x)=x^{-3}+x^2+3x$；(f) $y=-4x^3+2x+5$。",
+        "concept": "identify",
+        "steps": [
+          {
+            "title": "(a) 根指数",
+            "body": "$\\sqrt x=x^{1/2}$的指数不是非负整数，所以否。"
+          },
+          {
+            "title": "(b) 一次",
+            "body": "指数1和0均合要求，所以是一次多项式。"
+          },
+          {
+            "title": "(c) 指数函数",
+            "body": "变量在指数位置，$3^x$不是有限个非负整数幂之和，所以否。"
+          },
+          {
+            "title": "(d) 四次",
+            "body": "指数4和0均合要求，所以是四次多项式。"
+          },
+          {
+            "title": "(e) 负幂",
+            "body": "$x^{-3}=1/x^3$有负指数且0处无定义，所以否。"
+          },
+          {
+            "title": "(f) 三次",
+            "body": "指数3、1、0均合要求，所以是三次多项式。"
+          }
+        ],
+        "answer": "(a) 否；(b) 是；(c) 否；(d) 是；(e) 否；(f) 是。",
+        "pdfPage": 123,
+        "printedPage": 114,
+        "en": {
+          "prompt": "Identify whether each is a polynomial function. Justify your answers. (a) $h(x)=2-\\sqrt x$; (b) $y=3x+1$; (c) $f(x)=3^x$; (d) $g(x)=3x^4-7$; (e) $p(x)=x^{-3}+x^2+3x$; (f) $y=-4x^3+2x+5$.",
+          "steps": [
+            {
+              "title": "(a) Radical exponent",
+              "body": "$\\sqrt x=x^{1/2}$ has a non-integer exponent, so no."
+            },
+            {
+              "title": "(b) Linear",
+              "body": "Powers 1 and 0 qualify, so it is a linear polynomial."
+            },
+            {
+              "title": "(c) Exponential",
+              "body": "The variable is in the exponent; $3^x$ is not a finite sum of nonnegative integer powers, so no."
+            },
+            {
+              "title": "(d) Quartic",
+              "body": "Powers 4 and 0 qualify, so it is a quartic polynomial."
+            },
+            {
+              "title": "(e) Negative power",
+              "body": "$x^{-3}=1/x^3$ has a negative exponent and is undefined at zero, so no."
+            },
+            {
+              "title": "(f) Cubic",
+              "body": "Powers 3, 1 and 0 qualify, so it is a cubic polynomial."
+            }
+          ],
+          "answer": "(a) No; (b) Yes; (c) No; (d) Yes; (e) No; (f) Yes."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "指出每个多项式的次数、类型、首项系数和常数项。(a) $f(x)=-x+3$；(b) $y=9x^2$；(c) $g(x)=3x^4+3x^2-2x+1$；(d) $k(x)=4-3x^3$；(e) $y=-2x^5-2x^3+9$；(f) $h(x)=-6$。",
+        "concept": [
+          "identify",
+          "degree-table"
+        ],
+        "steps": [
+          {
+            "title": "(a) 读$-x$",
+            "body": "最高项$-x$给次数1（一次），首项系数$-1$；代入0得常数3。"
+          },
+          {
+            "title": "(b) 读$9x^2$",
+            "body": "次数2（二次），首项系数9；没有零次项，所以常数0。"
+          },
+          {
+            "title": "(c) 读$3x^4$",
+            "body": "最高非零项是$3x^4$；次数4（四次），首项系数3，常数1。"
+          },
+          {
+            "title": "(d) 先排列",
+            "body": "$4-3x^3=-3x^3+4$；次数3（三次），首项系数$-3$，常数4。"
+          },
+          {
+            "title": "(e) 读$-2x^5$",
+            "body": "次数5（五次），首项系数$-2$，常数9。"
+          },
+          {
+            "title": "(f) 常数函数",
+            "body": "$-6=-6x^0$，次数0（常数函数），首项系数与常数均为$-6$。"
+          }
+        ],
+        "answer": "依次（次数，类型，首项系数，常数）：(a)1，一次，−1，3；(b)2，二次，9，0；(c)4，四次，3，1；(d)3，三次，−3，4；(e)5，五次，−2，9；(f)0，常数，−6，−6。",
+        "pdfPage": 123,
+        "printedPage": 114,
+        "en": {
+          "prompt": "What are the degree, type, leading coefficient, and constant term of each polynomial function? (a) $f(x)=-x+3$; (b) $y=9x^2$; (c) $g(x)=3x^4+3x^2-2x+1$; (d) $k(x)=4-3x^3$; (e) $y=-2x^5-2x^3+9$; (f) $h(x)=-6$.",
+          "steps": [
+            {
+              "title": "(a) Read $-x$",
+              "body": "The leading term $-x$ gives degree 1 (linear), leading coefficient $-1$; evaluation at zero gives constant 3."
+            },
+            {
+              "title": "(b) Read $9x^2$",
+              "body": "Degree 2 (quadratic), leading coefficient 9; no degree-zero term means constant 0."
+            },
+            {
+              "title": "(c) Read $3x^4$",
+              "body": "Leading term $3x^4$ gives degree 4 (quartic), leading coefficient 3, constant 1."
+            },
+            {
+              "title": "(d) Reorder",
+              "body": "$4-3x^3=-3x^3+4$: degree 3 (cubic), leading coefficient $-3$, constant 4."
+            },
+            {
+              "title": "(e) Read $-2x^5$",
+              "body": "Degree 5 (quintic), leading coefficient $-2$, constant 9."
+            },
+            {
+              "title": "(f) Constant function",
+              "body": "$-6=-6x^0$: degree 0 (constant), leading coefficient and constant both $-6$."
+            }
+          ],
+          "answer": "In order (degree, type, leading coefficient, constant): (a) 1, linear, −1, 3; (b) 2, quadratic, 9, 0; (c) 4, quartic, 3, 1; (d) 3, cubic, −3, 4; (e) 5, quintic, −2, 9; (f) 0, constant, −6, −6."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "对附图(a)–(d)分别指出：奇次或偶次；首项系数正负；横截距个数；定义域和值域。",
+        "concept": [
+          "graph-reasoning",
+          "intercepts-range"
+        ],
+        "steps": [
+          {
+            "title": "(a) 读尾端与交点",
+            "body": "左下右上表示奇次且首项为正。图线与横轴相交三次。多项式定义域$\\mathbb R$，奇次值域$\\mathbb R$。"
+          },
+          {
+            "title": "(b) 逐个数横截距",
+            "body": "左下右上，故奇次、首项正。依次有五个不同横截距，包括靠近原点的两个小幅交点。定义域和值域均为$\\mathbb R$。"
+          },
+          {
+            "title": "(c) 包括相切点",
+            "body": "两端下表示偶次、首项负。左侧接触横轴的极大点也算横截距，加上右侧两个交点，共3个。标注最高点约$(3.22,16.9)$，定义域$\\mathbb R$，值域约$(-\\infty,16.9]$。"
+          },
+          {
+            "title": "(d) 整图在横轴下方",
+            "body": "两端下，偶次、首项负。最高点为$(-1,-3)$，低于横轴，所以横截距0个。定义域$\\mathbb R$，值域$(-\\infty,-3]$。"
+          }
+        ],
+        "answer": "(a) 奇、正、3、$D=R=\\mathbb R$；(b) 奇、正、5、$D=R=\\mathbb R$；(c) 偶、负、3、$D=\\mathbb R$，$R\\approx(-\\infty,16.9]$；(d) 偶、负、0、$D=\\mathbb R$，$R=(-\\infty,-3]$。",
+        "pdfPage": 123,
+        "printedPage": 114,
+        "en": {
+          "prompt": "For each supplied graph (a)–(d), determine whether it represents an odd- or even-degree polynomial, determine whether the leading coefficient is positive or negative, state the number of x-intercepts, and state the domain and range.",
+          "steps": [
+            {
+              "title": "(a) Read tails and intersections",
+              "body": "Down-left/up-right tails mean odd degree and positive leading coefficient. There are three intersections with the x-axis. Domain $\\mathbb R$; odd-degree range $\\mathbb R$."
+            },
+            {
+              "title": "(b) Count all intercepts",
+              "body": "Down-left/up-right means odd degree, positive leading sign. Count five distinct intercepts, including the small crossings near the origin. Domain and range are $\\mathbb R$."
+            },
+            {
+              "title": "(c) Include the tangency",
+              "body": "Both tails down mean even degree and negative leading coefficient. The left tangency plus two right crossings give three intercepts. The labelled global maximum is approximately $(3.22,16.9)$; domain $\\mathbb R$, range approximately $(-\\infty,16.9]$."
+            },
+            {
+              "title": "(d) Entire graph below the axis",
+              "body": "Both tails down mean even degree, negative leading coefficient. The maximum $(-1,-3)$ is below the x-axis, so there are no x-intercepts. Domain $\\mathbb R$; range $(-\\infty,-3]$."
+            }
+          ],
+          "answer": "(a) Odd, positive, 3, $D=R=\\mathbb R$. (b) Odd, positive, 5, $D=R=\\mathbb R$. (c) Even, negative, 3, $D=\\mathbb R$, $R\\approx(-\\infty,16.9]$. (d) Even, negative, 0, $D=\\mathbb R$, $R=(-\\infty,-3]$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/3-1-exercise-3.png"
+      },
+      {
+        "number": 4,
+        "prompt": "用次数和首项系数符号描述各函数图像的端行为，指出可能横截距个数和纵截距的值。(a) $f(x)=x^2+3x-1$；(b) $g(x)=-4x^3+2x^2-x+5$；(c) $h(x)=-7x^4+2x^3-3x^2+6x+4$；(d) $q(x)=x^5-3x^2+9x$；(e) $p(x)=4-2x$；(f) $v(x)=-x^3+2x^4-4x^2$。",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "(a) $x^2$",
+            "body": "次数2偶数，首项系数1：II→I（两端上）；可能0、1或2个横截距；$f(0)=-1$。"
+          },
+          {
+            "title": "(b) $-4x^3$",
+            "body": "次数3奇数、首项负：II→IV；可能1、2或3个横截距；$g(0)=5$。"
+          },
+          {
+            "title": "(c) $-7x^4$",
+            "body": "次数4偶数、首项负：III→IV；可能0至4个横截距；$h(0)=4$。"
+          },
+          {
+            "title": "(d) $x^5$",
+            "body": "次数5奇数、首项正：III→I；可能1至5个横截距；$q(0)=0$。"
+          },
+          {
+            "title": "(e) $-2x$",
+            "body": "排列为$-2x+4$，次数1、首项负：II→IV；恰1个横截距；$p(0)=4$。"
+          },
+          {
+            "title": "(f) $2x^4$",
+            "body": "排列为$2x^4-x^3-4x^2$，次数4偶数、首项正：II→I；仅由次数与首项可说可能0至4个横截距，$v(0)=0$。本式实际含$x^2$因子，所以0必为截距，实际共有3个；题目要求的是由首项得到的可能范围。"
+          }
+        ],
+        "answer": "(a) II→I，0–2，−1；(b) II→IV，1–3，5；(c) III→IV，0–4，4；(d) III→I，1–5，0；(e) II→IV，1，4；(f) II→I，次数判据0–4，0（本式实际3个截距）。",
+        "pdfPage": 123,
+        "printedPage": 114,
+        "en": {
+          "prompt": "Use the degree and sign of the leading coefficient of each function to describe its end behaviour. State the possible number of x-intercepts and value of the y-intercept. (a) $f(x)=x^2+3x-1$; (b) $g(x)=-4x^3+2x^2-x+5$; (c) $h(x)=-7x^4+2x^3-3x^2+6x+4$; (d) $q(x)=x^5-3x^2+9x$; (e) $p(x)=4-2x$; (f) $v(x)=-x^3+2x^4-4x^2$.",
+          "steps": [
+            {
+              "title": "(a) $x^2$",
+              "body": "Degree 2, positive leading coefficient 1: II→I (both tails up); 0, 1 or 2 possible x-intercepts; $f(0)=-1$."
+            },
+            {
+              "title": "(b) $-4x^3$",
+              "body": "Degree 3 odd, negative leading coefficient: II→IV; 1, 2 or 3 possible intercepts; $g(0)=5$."
+            },
+            {
+              "title": "(c) $-7x^4$",
+              "body": "Degree 4 even, negative leading coefficient: III→IV; 0–4 possible intercepts; $h(0)=4$."
+            },
+            {
+              "title": "(d) $x^5$",
+              "body": "Degree 5 odd, positive leading coefficient: III→I; 1–5 possible intercepts; $q(0)=0$."
+            },
+            {
+              "title": "(e) $-2x$",
+              "body": "Reorder as $-2x+4$. Degree 1, negative leading coefficient: II→IV; exactly one x-intercept; $p(0)=4$."
+            },
+            {
+              "title": "(f) $2x^4$",
+              "body": "Reorder as $2x^4-x^3-4x^2$. Degree 4 even, positive leading coefficient: II→I; degree/sign alone allow 0–4 intercepts; $v(0)=0$. This particular formula has an $x^2$ factor, guaranteeing zero and in fact three distinct zeros; the question asks the general possibility from the leading term."
+            }
+          ],
+          "answer": "(a) II→I, 0–2, −1; (b) II→IV, 1–3, 5; (c) III→IV, 0–4, 4; (d) III→I, 1–5, 0; (e) II→IV, 1, 4; (f) II→I, degree-based 0–4, 0 (this formula actually has 3 intercepts)."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "Jake声称所有$y=ax^n+x+b$形式的多项式函数（$a,b,n$均为偶整数），图像都从第二象限延伸至第一象限。你同意吗？举例解释。",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "反例否定“所有”",
+            "body": "$a=-2,b=2,n=2$都为偶整数，但$y=-2x^2+x+2$有负首项，图像两端下，从III到IV，所以不同意。"
+          },
+          {
+            "title": "指出成立条件",
+            "body": "$a=2,b=2,n=2$给$y=2x^2+x+2$，正首项正偶数次数时才有II→I尾端。$b$影响纵截距，不影响正次数首项的尾端。"
+          },
+          {
+            "title": "补查退化值",
+            "body": "若允许$a=0$，结果为$y=x+b$；若$n=0$，则$y=x+(a+b)$，两者都是一次，III→I。负整数$n$通常不是多项式，已被题目“多项式”条件排除。"
+          }
+        ],
+        "answer": "不同意。偶整数首项系数可以为负；例如$-2x^2+x+2$两端都向下。",
+        "pdfPage": 124,
+        "printedPage": 115,
+        "en": {
+          "prompt": "Jake claims that all graphs of polynomial functions of the form $y=ax^n+x+b$, where $a,b,n$ are even integers, extend from quadrant II to quadrant I. Do you agree? Use examples to explain your answer.",
+          "steps": [
+            {
+              "title": "Disprove the universal claim",
+              "body": "$a=-2,b=2,n=2$ are even integers, but $y=-2x^2+x+2$ has negative leading coefficient and both tails down (III→IV). Thus disagree."
+            },
+            {
+              "title": "State when it works",
+              "body": "$a=2,b=2,n=2$ gives $y=2x^2+x+2$, with II→I tails. The claim works for positive leading coefficient and positive even degree; $b$ affects the y-intercept, not these tails."
+            },
+            {
+              "title": "Check degeneracies",
+              "body": "If $a=0$, the result is $y=x+b$; if $n=0$, it is $y=x+(a+b)$. Both are linear, with III→I tails. Negative $n$ normally fails the stated polynomial condition."
+            }
+          ],
+          "answer": "Disagree: an even integer leading coefficient can be negative. For example, $-2x^2+x+2$ has both tails down."
+        }
+      },
+      {
+        "number": 6,
+        "prompt": "某滑雪板制造商利润$P$（元）可由$P(x)=1000x+x^4-3000$建模，其中$x$为售出滑雪板数量，以百件为单位。(a) 次数？(b) 首项系数、常数及常数的意义？(c) 端行为？(d) 定义域的限制与理由？(e) 横截距在此情境的意义？(f) 售出1500件时利润多少？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a) 与 (b) 排列",
+            "body": "$P(x)=x^4+1000x-3000$：次数4，首项系数1，常数$-3000$。$P(0)=-3000$表示未售出时亏损3000元，可解释为初始/固定成本。"
+          },
+          {
+            "title": "(c) 与 (d) 尾端和数量限制",
+            "body": "代数图像正偶次，两端上（II→I）。实际$x\\ge0$；整件售出要求$100x$为非负整数，即$x=0,0.01,0.02,\\ldots$。连续曲线是数量模型的近似。"
+          },
+          {
+            "title": "(e) 收支平衡",
+            "body": "横截距满足$P(x)=0$，表示总收入抵消总成本、利润为0的收支平衡销量。负截距没有实际意义；正解约$x=2.92664$，即约293件，精确连续临界值不是整件数量。"
+          },
+          {
+            "title": "(f) 换算后代入",
+            "body": "$1500/100=15$，所以$P(15)=1000(15)+15^4-3000=15000+50625-3000=62625$元。"
+          }
+        ],
+        "answer": "(a)4；(b)1、−3000，零销量亏损3000元；(c)代数两端上；(d)非负、以0.01为步长；(e)收支平衡销量；(f)62625元。",
+        "pdfPage": 124,
+        "printedPage": 115,
+        "en": {
+          "prompt": "A snowboard manufacturer models profit $P$, in dollars, by $P(x)=1000x+x^4-3000$, where $x$ is the number of snowboards sold, in hundreds. (a) What is the degree? (b) What are the leading coefficient and constant, and what does the constant represent? (c) Describe the end behaviour. (d) State and explain domain restrictions. (e) What do the x-intercepts represent? (f) What is the profit from selling 1500 snowboards?",
+          "steps": [
+            {
+              "title": "(a) and (b) Reorder",
+              "body": "$P(x)=x^4+1000x-3000$: degree 4, leading coefficient 1, constant $-3000$. At zero sales, $P(0)=-3000$ means a $3000 loss, consistent with initial/fixed cost."
+            },
+            {
+              "title": "(c) and (d) Tails and count restrictions",
+              "body": "The unrestricted positive quartic has both tails up (II→I). Context requires $x\\ge0$; whole snowboards require nonnegative integer $100x$, so $x=0,0.01,0.02,\\ldots$. The continuous curve approximates these sales counts."
+            },
+            {
+              "title": "(e) Break-even",
+              "body": "An x-intercept has $P(x)=0$: revenue covers cost and profit is zero. A negative intercept is not meaningful. The positive continuous root is approximately $x=2.92664$, about 293 boards; that exact continuous threshold is not a whole-board count."
+            },
+            {
+              "title": "(f) Convert then substitute",
+              "body": "$1500/100=15$, so $P(15)=1000(15)+15^4-3000=15000+50625-3000=62625$ dollars."
+            }
+          ],
+          "answer": "(a) 4. (b) 1 and −3000: a $3000 zero-sales loss. (c) Both algebraic tails up. (d) Nonnegative multiples of 0.01. (e) Break-even sales. (f) $62 625."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "number": 7,
+        "prompt": "某医学研究者建立患者对药物的反应时间$r$（分钟）模型$r(d)=-3d^3+3d^2$，$d$是被血液吸收的药量（毫升）。(a) 多项式类型？(b) 首项系数与常数？(c) 先预测画草图，再用图形技术比较。(d) 定义域限制及理由？",
+        "concept": [
+          "models",
+          "intercepts-range"
+        ],
+        "steps": [
+          {
+            "title": "(a) 与 (b) 读项",
+            "body": "最高项$-3d^3$，因此为三次，首项系数$-3$，常数0。"
+          },
+          {
+            "title": "(c) 描图关键点",
+            "body": "$r(d)=3d^2(1-d)$，零点$d=0$（相切）和$d=1$（穿过）。全图左上右下，$(0,0)$为局部低点，$(\\frac23,\\frac49)$为局部高点；例如$r(0.5)=0.375$。下图核对草图。"
+          },
+          {
+            "title": "(d) 限制药量与时间",
+            "body": "实际$d\\ge0$且$r(d)\\ge0$。在非负$d$上，$3d^2(1-d)\\ge0$等价于$0\\le d\\le1$；超出1毫升模型给负时间，不能采用。若要求正药量和正反应时间，则$0<d<1$。"
+          }
+        ],
+        "answer": "(a)三次；(b)−3、0；(c)关键点$(0,0),(\\frac23,\\frac49),(1,0)$；(d)$0\\le d\\le1$毫升（正药量且正时间则去掉端点）。",
+        "pdfPage": 124,
+        "printedPage": 115,
+        "en": {
+          "prompt": "A medical researcher models a patient’s reaction time $r$, in minutes, by $r(d)=-3d^3+3d^2$, where $d$ is the amount of drug, in millilitres, absorbed into the blood. (a) What type of polynomial is it? (b) What are its leading coefficient and constant? (c) Sketch a prediction, then graph using technology and compare. (d) What are the domain restrictions, and why?",
+          "steps": [
+            {
+              "title": "(a) and (b) Read the terms",
+              "body": "The leading term $-3d^3$ gives a cubic, leading coefficient $-3$, constant 0."
+            },
+            {
+              "title": "(c) Plot anchor points",
+              "body": "$r(d)=3d^2(1-d)$ has zeros 0 (tangency) and 1 (crossing). The unrestricted tails are up left/down right; $(0,0)$ is a local minimum and $(\\frac23,\\frac49)$ a local maximum. For example, $r(0.5)=0.375$. Compare the plot below with these predictions."
+            },
+            {
+              "title": "(d) Restrict dose and time",
+              "body": "Physical dose needs $d\\ge0$ and time $r(d)\\ge0$. On nonnegative $d$, $3d^2(1-d)\\ge0$ gives $0\\le d\\le1$. Beyond 1 mL the model gives negative time. Strictly positive dose and time require $0<d<1$."
+            }
+          ],
+          "answer": "(a) Cubic. (b) −3, 0. (c) Key points $(0,0),(\\frac23,\\frac49),(1,0)$. (d) $0\\le d\\le1$ mL; exclude endpoints if dose and time must both be positive."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            -3,
+            3,
+            0,
+            0
+          ],
+          "denominator": [
+            1
+          ],
+          "bounds": {
+            "xMin": -0.5,
+            "xMax": 1.5,
+            "yMin": -1,
+            "yMax": 1
+          },
+          "verticalAsymptotes": [],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0.6666666666666666,
+              "y": 0.4444444444444444
+            },
+            {
+              "x": 1,
+              "y": 0
+            }
+          ],
+          "expressionLatex": "r(d)=-3d^3+3d^2",
+          "label": "r(d)=-3d^3+3d^2"
+        }
+      },
+      {
+        "number": 8,
+        "prompt": "参照本节开篇蜂巢例子。(a) 证明$f(r)=3r^2-3r+1$在$r=1,2,3$时给出正确六边形总数。(b) 12圈蜂巢共有多少六边形？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a) 对照图形计数",
+            "body": "第一圈1个；第二圈在周围增加6个，共7个；第三圈再加12个，共19个。代入$f(1)=3-3+1=1$；$f(2)=12-6+1=7$；$f(3)=27-9+1=19$，全部吻合。"
+          },
+          {
+            "title": "(b) 代入12圈",
+            "body": "$f(12)=3(12)^2-3(12)+1=432-36+1=397$个。圈数须为正整数。"
+          }
+        ],
+        "answer": "(a)1、7、19，与原图一致；(b)397个六边形。",
+        "pdfPage": 124,
+        "printedPage": 115,
+        "en": {
+          "prompt": "Refer to the honeycomb example at the beginning of the section (p. 106). (a) Show that $f(r)=3r^2-3r+1$ gives the correct total number of hexagons when $r=1,2,3$. (b) Determine the total for 12 rings.",
+          "steps": [
+            {
+              "title": "(a) Compare counts",
+              "body": "The first ring has 1 cell; the second adds 6 for 7; the third adds 12 for 19. Substitution gives $f(1)=3-3+1=1$, $f(2)=12-6+1=7$, and $f(3)=27-9+1=19$, matching the diagram."
+            },
+            {
+              "title": "(b) Substitute 12 rings",
+              "body": "$f(12)=3(12)^2-3(12)+1=432-36+1=397$ cells. The ring count is a positive integer."
+            }
+          ],
+          "answer": "(a) 1, 7, 19, matching the diagram. (b) 397 hexagons."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/3-1-honeycomb.png"
+      },
+      {
+        "number": 9,
+        "prompt": "加拿大西部乡村人口减少、城市人口增加，一部分原因是农业规模扩大和传统家庭农场减少。人口学家用$P(t)=t^4-20t^3-20t^2+1500t+15000$预测某镇$t$年后人口，假设此模型适用于未来20年。(a) 图像主要特征是什么？(b) 当前人口？(c) 10年后人口？(d) 何时约24000人？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a) 确定模型区间",
+            "body": "代数式为首项系数1的四次函数，两端上，纵截距$(0,15000)$；实际时间限于$0\\le t\\le20$。用图形技术读取：约$t=5.89$时局部最高20258人，约$t=13.74$时局部最低15596人；之后增长至$P(20)=37000$。在实际区间整体最小为15000、最大为37000，值域$[15000,37000]$，没有横截距。"
+          },
+          {
+            "title": "(b) 与 (c) 代入",
+            "body": "当前$t=0$，$P(0)=15000$。十年后$P(10)=10^4-20(10)^3-20(10)^2+1500(10)+15000=10000-20000-2000+15000+15000=18000$人。"
+          },
+          {
+            "title": "(d) 与24000相交",
+            "body": "解$P(t)=24000$，即$t^4-20t^3-20t^2+1500t-9000=0$。图像在$[0,20]$内与水平线$P=24000$有一个交点$t\\approx18.0307$；代入得$P(18.0307)\\approx24000.1$，所以约18.0年后。另一个实解约$-9.47$不在未来模型区间。"
+          }
+        ],
+        "answer": "(a)正四次，实际区间[0,20]，局部转折约(5.89,20258)、(13.74,15596)，实际值域[15000,37000]；(b)15000；(c)18000；(d)约18.03年后。",
+        "pdfPage": 125,
+        "printedPage": 116,
+        "en": {
+          "prompt": "Rural populations in Western Canada have declined while larger urban centres have grown, partly because of expanding agricultural operations and fewer traditional family farms. A demographer predicts a town’s population $t$ years from now using $P(t)=t^4-20t^3-20t^2+1500t+15000$. Assume the model can be used for the next 20 years. (a) What are the key graph features? (b) Current population? (c) Population in 10 years? (d) When will the population be approximately 24000?",
+          "steps": [
+            {
+              "title": "(a) Restrict the model",
+              "body": "The algebraic quartic has leading coefficient 1, rising tails and y-intercept $(0,15000)$. The valid time interval is $0\\le t\\le20$. Graphing gives a local high of about 20258 at $t\\approx5.89$ and a local low of about 15596 at $t\\approx13.74$, followed by growth to $P(20)=37000$. On this interval the global minimum is 15000, maximum 37000, range $[15000,37000]$, with no x-intercept."
+            },
+            {
+              "title": "(b) and (c) Substitute",
+              "body": "Now $t=0$, so $P(0)=15000$. In ten years, $P(10)=10^4-20(10)^3-20(10)^2+1500(10)+15000=10000-20000-2000+15000+15000=18000$ people."
+            },
+            {
+              "title": "(d) Intersect 24000",
+              "body": "Solve $P(t)=24000$, or $t^4-20t^3-20t^2+1500t-9000=0$. The graph intersects $P=24000$ once on $[0,20]$, at $t\\approx18.0307$. Checking gives $P(18.0307)\\approx24000.1$, so about 18.0 years from now. The other real solution, about $-9.47$, is outside the future-time interval."
+            }
+          ],
+          "answer": "(a) Positive quartic on [0,20], local turns about (5.89,20258), (13.74,15596), contextual range [15000,37000]. (b) 15000. (c) 18000. (d) About 18.03 years from now."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            1,
+            -20,
+            -20,
+            1500,
+            15000
+          ],
+          "denominator": [
+            1
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 20,
+            "yMin": 0,
+            "yMax": 40000
+          },
+          "verticalAsymptotes": [],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [
+            {
+              "x": 0,
+              "y": 15000
+            },
+            {
+              "x": 10,
+              "y": 18000
+            },
+            {
+              "x": 18.03067785,
+              "y": 24000
+            },
+            {
+              "x": 20,
+              "y": 37000
+            }
+          ],
+          "expressionLatex": "P(t)=t^4-20t^3-20t^2+1500t+15000",
+          "label": "P(t)=t^4-20t^3-20t^2+1500t+15000",
+          "traces": [
+            {
+              "numerator": [
+                24000
+              ],
+              "denominator": [
+                1
+              ],
+              "label": "P=24000"
+            }
+          ]
+        }
+      },
+      {
+        "number": 10,
+        "prompt": "一组无盖盒子的体积$V$（立方厘米）可由$V(x)=4x^3-220x^2+2800x$建模，其中$x$是每个盒子的高（厘米）。(a) 用图形技术画$V(x)$，说明限制。(b) 将$V(x)$完全因式分解，说明因式形式与图像的关系。",
+        "concept": [
+          "models",
+          "intercepts-range"
+        ],
+        "steps": [
+          {
+            "title": "(b) 完全分解",
+            "body": "$V(x)=4x(x^2-55x+700)=4x(x-20)(x-35)$，因为$20+35=55$、$20\\cdot35=700$。乘回$4x[x^2-55x+700]$得到原式。"
+          },
+          {
+            "title": "(a) 画完整代数图",
+            "body": "图像为正首项三次，左下右上，在$x=0,20,35$各穿过横轴。对$x>0$，在$(0,20)$与$(35,\\infty)$体积为正，在$(20,35)$为负。下图同时显示完整曲线和通常盒子使用的第一段。"
+          },
+          {
+            "title": "说明物理限制与信息边界",
+            "body": "非退化盒子须$x>0,V>0$。通常的固定纸板折盒解释可写$V=x(40-2x)(70-2x)$，底边都正给$0<x<20$；$x=0,20$只作零体积边界。教材本题未明说纸板尺寸或边长，所以只按给定公式和“正体积”，还不能逻辑上排除$x>35$；采用$0<x<20$需说明上述几何解释，而不把额外尺寸当原题已知。"
+          },
+          {
+            "title": "因式与图的对应",
+            "body": "三个不同一次因式对应三个横截距；各重数1，所以都穿过而非相切。零点20、35可解释为上述折盒模型某个底边变成0；零点0表示高度为0。"
+          }
+        ],
+        "answer": "(b)$4x(x-20)(x-35)$，横截距0、20、35。(a)通常折盒解释为$0<x<20$厘米；只按公式与正体积，则允许$(0,20)\\cup(35,\\infty)$，原题没有足以唯一确定几何截断的额外尺寸。",
+        "pdfPage": 125,
+        "printedPage": 116,
+        "en": {
+          "prompt": "The volume $V$, in cubic centimetres, of a collection of open-topped boxes is modelled by $V(x)=4x^3-220x^2+2800x$, where $x$ is the height, in centimetres, of each box. (a) Use technology to graph $V(x)$. State the restrictions. (b) Fully factor $V(x)$ and state the relationship between the factored form and graph.",
+          "steps": [
+            {
+              "title": "(b) Factor completely",
+              "body": "$V(x)=4x(x^2-55x+700)=4x(x-20)(x-35)$, since $20+35=55$ and $20\\cdot35=700$. Expanding gives the original polynomial."
+            },
+            {
+              "title": "(a) Graph the algebraic function",
+              "body": "The positive-leading cubic has down-left/up-right tails and crosses at $x=0,20,35$. For $x>0$, volume is positive on $(0,20)$ and $(35,\\infty)$, negative on $(20,35)$. The plots show the broader curve and the first positive branch normally used for a box."
+            },
+            {
+              "title": "Explain physical limits and source scope",
+              "body": "A nondegenerate box needs $x>0,V>0$. The usual fixed-sheet interpretation writes $V=x(40-2x)(70-2x)$; positive base dimensions give $0<x<20$, with 0 and 20 degenerate boundaries. The question does not explicitly supply sheet dimensions or base-side formulas. The formula plus positive volume alone also permits $x>35$; excluding that branch requires the stated geometric interpretation."
+            },
+            {
+              "title": "Connect factors and graph",
+              "body": "The three distinct linear factors give three x-intercepts, each simple, so the curve crosses at all three. In the stated folding interpretation, 20 and 35 collapse a base dimension; zero collapses the height."
+            }
+          ],
+          "answer": "(b) $4x(x-20)(x-35)$, with intercepts 0, 20, 35. (a) The usual folding-box interpretation gives $0<x<20$ cm. Formula and positive volume alone permit $(0,20)\\cup(35,\\infty)$; the source supplies no extra dimensions that uniquely enforce the geometric cutoff."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              4,
+              -220,
+              2800,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 40,
+              "yMin": -18000,
+              "yMax": 18000
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 20,
+                "y": 0
+              },
+              {
+                "x": 35,
+                "y": 0
+              }
+            ],
+            "expressionLatex": "V(x)=4x^3-220x^2+2800x",
+            "label": "V(x)=4x^3-220x^2+2800x"
+          },
+          {
+            "numerator": [
+              4,
+              -220,
+              2800,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": 0,
+              "xMax": 20,
+              "yMin": 0,
+              "yMax": 13000
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "V(x)=x(40-2x)(70-2x)",
+            "label": "V(x)=x(40-2x)(70-2x)"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "prompt": "(a) 分别画偶次函数对$y=(-x)^2,y=x^2$；$y=(-x)^4,y=x^4$；$y=(-x)^6,y=x^6$。观察并用代数解释。(b) 对奇次函数对$y=(-x)^3,y=x^3$；$y=(-x)^5,y=x^5$；$y=(-x)^7,y=x^7$重复。(c) 总结$y=(-x)^n$（$n$为非负整数）的规律并举例。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "(a) 偶次同图",
+            "body": "$(-x)^2=(-1)^2x^2=x^2$；$(-x)^4=x^4$；$(-x)^6=x^6$。每对图像完全重合，关于纵轴对称；如下前三图。"
+          },
+          {
+            "title": "(b) 奇次互为反射",
+            "body": "$(-x)^3=-x^3$、$(-x)^5=-x^5$、$(-x)^7=-x^7$。每对关于纵轴互为反射，也可看作关于横轴反射；正幂曲线III→I，负幂曲线II→IV，交于原点。"
+          },
+          {
+            "title": "(c) 用$(-1)^n$统一",
+            "body": "$(-x)^n=(-1)^nx^n$：偶$n$时等于$x^n$，奇$n$时等于$-x^n$。例如$(-2)^4=16=2^4$、$(-2)^5=-32=-2^5$。$n=0$为常数1（多项式的零次项），与两图重合的结论一致。"
+          }
+        ],
+        "answer": "(a)三对均重合；(b)三对均关于纵轴互为反射；(c)偶$n$得$x^n$，奇$n$得$-x^n$。",
+        "pdfPage": 125,
+        "printedPage": 116,
+        "en": {
+          "prompt": "(a) Graph each even-degree pair: $y=(-x)^2$ and $y=x^2$; $y=(-x)^4$ and $y=x^4$; $y=(-x)^6$ and $y=x^6$. State your observations with an algebraic explanation. (b) Repeat for $y=(-x)^3$ and $y=x^3$; $y=(-x)^5$ and $y=x^5$; $y=(-x)^7$ and $y=x^7$. (c) Describe what you learned about $y=(-x)^n$, where $n$ is a whole number. Support with examples.",
+          "steps": [
+            {
+              "title": "(a) Even powers coincide",
+              "body": "$(-x)^2=(-1)^2x^2=x^2$, $(-x)^4=x^4$, $(-x)^6=x^6$. Each pair coincides and is symmetric about the y-axis, as in the first three plots."
+            },
+            {
+              "title": "(b) Odd powers reflect",
+              "body": "$(-x)^3=-x^3$, $(-x)^5=-x^5$, $(-x)^7=-x^7$. Each pair reflects across the y-axis (equivalently here across the x-axis). Positive powers run III→I, negative ones II→IV; they meet at the origin."
+            },
+            {
+              "title": "(c) Generalize using $(-1)^n$",
+              "body": "$(-x)^n=(-1)^nx^n$: even $n$ gives $x^n$, odd $n$ gives $-x^n$. For example, $(-2)^4=16=2^4$, while $(-2)^5=-32=-2^5$. At $n=0$ the degree-zero monomial is the constant 1, also giving coincident graphs."
+            }
+          ],
+          "answer": "(a) All three pairs coincide. (b) All three pairs reflect in the y-axis. (c) Even $n$ gives $x^n$; odd $n$ gives $-x^n$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -2,
+              "xMax": 2,
+              "yMin": -1,
+              "yMax": 8
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=(-x)^2=x^2",
+            "label": "y=(-x)^2=x^2",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^2"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -2,
+              "xMax": 2,
+              "yMin": -1,
+              "yMax": 8
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=(-x)^4=x^4",
+            "label": "y=(-x)^4=x^4",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^4"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -2,
+              "xMax": 2,
+              "yMin": -1,
+              "yMax": 8
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=(-x)^6=x^6",
+            "label": "y=(-x)^6=x^6",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^6"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -1,
+              0,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -2,
+              "xMax": 2,
+              "yMin": -8,
+              "yMax": 8
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=(-x)^3",
+            "label": "y=(-x)^3",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^3"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -2,
+              "xMax": 2,
+              "yMin": -8,
+              "yMax": 8
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=(-x)^5",
+            "label": "y=(-x)^5",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^5"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -2,
+              "xMax": 2,
+              "yMin": -8,
+              "yMax": 8
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=(-x)^7",
+            "label": "y=(-x)^7",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^7"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "prompt": "(a) 描述$y=x^2$与$y=3(x-4)^2+2$的关系。(b) 预测$y=x^4$与$y=3(x-4)^4+2$的关系。(c) 用图形技术验证(b)。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "(a) 二次变换",
+            "body": "从$y=x^2$向右移4，纵向伸长3倍，再向上移2；顶点由$(0,0)$变为$(4,2)$。对应点$(1,1)$变为$(5,5)$、$(-1,1)$变为$(3,5)$。"
+          },
+          {
+            "title": "(b) 四次预测",
+            "body": "同样右移4、纵伸3、上移2；四次图像的最低点为$(4,2)$，对称轴$x=4$，值域$[2,\\infty)$。"
+          },
+          {
+            "title": "(c) 代入与图像检验",
+            "body": "$x=4$得$2$，$x=3,5$得$3(1)^4+2=5$，$x=2,6$得$3(2)^4+2=50$。下图使用展开式$3x^4-48x^3+288x^2-768x+770$作图，与这些点相符，验证预测。"
+          }
+        ],
+        "answer": "(a)、(b)均右移4、纵向伸长3倍、上移2；(c)图像和代入点吻合。",
+        "pdfPage": 125,
+        "printedPage": 116,
+        "en": {
+          "prompt": "(a) Describe the relationship between $y=x^2$ and $y=3(x-4)^2+2$. (b) Predict the relationship between $y=x^4$ and $y=3(x-4)^4+2$. (c) Verify your prediction in (b) by graphing using technology.",
+          "steps": [
+            {
+              "title": "(a) Quadratic transformations",
+              "body": "Shift $y=x^2$ right 4, stretch vertically by 3, then shift up 2. Vertex $(0,0)$ becomes $(4,2)$. Points $(1,1)$ and $(-1,1)$ become $(5,5)$ and $(3,5)$."
+            },
+            {
+              "title": "(b) Quartic prediction",
+              "body": "The same transformations apply: right 4, vertical scale 3, up 2. The quartic has minimum $(4,2)$, symmetry axis $x=4$ and range $[2,\\infty)$."
+            },
+            {
+              "title": "(c) Check substitutions and graph",
+              "body": "At $x=4$, $y=2$; at $x=3,5$, $y=3(1)^4+2=5$; at $x=2,6$, $y=3(2)^4+2=50$. The plotted expanded form $3x^4-48x^3+288x^2-768x+770$ agrees with these points and verifies the prediction."
+            }
+          ],
+          "answer": "(a)/(b) Both shift right 4, vertically stretch by 3, and shift up 2. (c) Graph and substituted points agree."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 7,
+              "yMin": -1,
+              "yMax": 55
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x^2;\\quad y=3(x-4)^2+2",
+            "label": "y=x^2;\\quad y=3(x-4)^2+2",
+            "traces": [
+              {
+                "numerator": [
+                  3,
+                  -24,
+                  50
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=3(x-4)^2+2"
+              }
+            ]
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 7,
+              "yMin": -1,
+              "yMax": 55
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [
+              {
+                "x": 4,
+                "y": 2
+              },
+              {
+                "x": 3,
+                "y": 5
+              },
+              {
+                "x": 5,
+                "y": 5
+              },
+              {
+                "x": 2,
+                "y": 50
+              },
+              {
+                "x": 6,
+                "y": 50
+              }
+            ],
+            "expressionLatex": "y=x^4;\\quad y=3(x-4)^4+2",
+            "label": "y=x^4;\\quad y=3(x-4)^4+2",
+            "traces": [
+              {
+                "numerator": [
+                  3,
+                  -48,
+                  288,
+                  -768,
+                  770
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=3(x-4)^4+2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "prompt": "若次数为$n$的多项式方程恰有一个实根，你能对相应多项式函数的形式得出什么结论？解释。",
+        "concept": "graph-reasoning",
+        "steps": [
+          {
+            "title": "区分不同实根与重数",
+            "body": "通常“一个实根”指只有一个不同的实数$r$满足$f(r)=0$。这表示只有一个横截距，不表示函数必须为一次或奇次。例如$(x-2)^2$（偶次）和$(x-2)^3$（奇次）都只有实根2。"
+          },
+          {
+            "title": "描述可能因式",
+            "body": "可写$f(x)=(x-r)^mQ(x)$，其中$m\\ge1$，$Q$无实零点且在$r$处不为0。实系数时非实根成共轭对，故$\\deg Q$为偶数，$m$与$n$同奇偶。$m$奇则穿过横轴，$m$偶则相切；简单例子为$a(x-r)^n$。"
+          },
+          {
+            "title": "若题意计重数",
+            "body": "若“恰有一个实根”是计重数后的总数，则$m=1$，非实根数$n-1$为偶数，因此$n$必为奇数。需要说明采用哪种含义，不能把两种说法混为一谈。"
+          }
+        ],
+        "answer": "一个不同实根只确定一个横截距；次数可奇可偶，可能形式为$(x-r)^mQ(x)$且$Q$无实零点。若计重数总共仅一个实根，则次数必为奇数。",
+        "pdfPage": 125,
+        "printedPage": 116,
+        "en": {
+          "prompt": "If a polynomial equation of degree $n$ has exactly one real root, what can you conclude about the form of the corresponding polynomial function? Explain.",
+          "steps": [
+            {
+              "title": "Distinguish distinct roots from multiplicity",
+              "body": "Usually one real root means one distinct real number $r$ with $f(r)=0$: one x-intercept. This does not force linear or odd degree. Both $(x-2)^2$ (even) and $(x-2)^3$ (odd) have only the real root 2."
+            },
+            {
+              "title": "Describe possible factors",
+              "body": "Write $f(x)=(x-r)^mQ(x)$, with $m\\ge1$ and $Q$ having no real zeros, including at $r$. With real coefficients, nonreal roots occur in conjugate pairs, so $\\deg Q$ is even and $m$ has the same parity as $n$. Odd $m$ crosses the axis; even $m$ touches. A simple possible form is $a(x-r)^n$."
+            },
+            {
+              "title": "If roots are counted with multiplicity",
+              "body": "If exactly one real root means one in total counted with multiplicity, then $m=1$ and the nonreal-root count $n-1$ is even, so $n$ is odd. State this interpretation rather than conflating it with one distinct intercept."
+            }
+          ],
+          "answer": "One distinct real root means one x-intercept; degree may be odd or even, with form $(x-r)^mQ(x)$ where $Q$ has no real zeros. If exactly one is counted with multiplicity, the degree must be odd."
+        }
+      },
+      {
+        "number": "C1",
+        "prompt": "简述多项式次数与图像下列特征的关系：横截距个数；最大或最小点；定义域和值域。",
+        "concept": [
+          "intercepts-range",
+          "end-behaviour"
+        ],
+        "steps": [
+          {
+            "title": "次数与截距",
+            "body": "次数$n\\ge1$最多$n$个不同横截距。奇次至少1个；偶次可以0个。截距个数并不等于次数，例如$x^4+1$为四次却无实零点。"
+          },
+          {
+            "title": "整体极值和值域",
+            "body": "奇次无整体最大或最小，值域$\\mathbb R$；正首项偶次有整体最小$m$、值域$[m,\\infty)$；负首项偶次有整体最大$M$、值域$(-\\infty,M]$。次数$n$的局部转折最多$n-1$个。"
+          },
+          {
+            "title": "定义域与常数特例",
+            "body": "所有多项式代数定义域均为$\\mathbb R$；应用中可能限制输入。非零常数次数0，值域为$\\{c\\}$，无横截距；其最大和最小都为$c$。零多项式的次数另行约定，全部实数都是零点。"
+          }
+        ],
+        "answer": "正次数：最多次数个不同横截距；奇次至少1个、值域全实数且无整体极值；偶次可0个并有整体最小或最大；代数定义域全实数。常数函数另论。",
+        "pdfPage": 125,
+        "printedPage": 116,
+        "en": {
+          "prompt": "Prepare a brief summary of the relationship between polynomial degree and the following graph features: number of x-intercepts; maximum or minimum point; domain and range.",
+          "steps": [
+            {
+              "title": "Degree and intercepts",
+              "body": "Degree $n\\ge1$ permits at most $n$ distinct x-intercepts. Odd degree has at least one; even degree can have none. The count need not equal degree: $x^4+1$ is quartic with no real zero."
+            },
+            {
+              "title": "Global extrema and range",
+              "body": "Odd degree has no global maximum/minimum and range $\\mathbb R$. Positive-leading even degree has global minimum $m$ and range $[m,\\infty)$; negative-leading even degree has global maximum $M$ and range $(-\\infty,M]$. Degree $n$ has at most $n-1$ local turning points."
+            },
+            {
+              "title": "Domain and constant exception",
+              "body": "All polynomial algebraic domains are $\\mathbb R$; applications may restrict them. A nonzero constant has degree 0, range $\\{c\\}$ and no x-intercept; both its maximum and minimum are $c$. The zero polynomial uses a separate degree convention and every real number is a zero."
+            }
+          ],
+          "answer": "For positive degree: at most the degree many distinct intercepts; odd degree has at least one, real range and no global extremum; even degree can have none and has a global minimum/maximum. Algebraic domain is real. Constants are exceptional."
+        }
+      },
+      {
+        "number": "C2",
+        "prompt": "(a) 分别给出一个可能的多项式方程，其图像延伸方向为(i) III到I；(ii) II到I；(iii) II到IV；(iv) III到IV。(b) 与同学答案比较异同。",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "(a-i) 与 (a-ii) 右端上",
+            "body": "(i)取$y=x^3$，正奇次左下右上。(ii)取$y=x^2$，正偶次两端上。"
+          },
+          {
+            "title": "(a-iii) 与 (a-iv) 右端下",
+            "body": "(iii)取$y=-x^3$，负奇次左上右下。(iv)取$y=-x^2$，负偶次两端下。"
+          },
+          {
+            "title": "(b) 可比较的样例",
+            "body": "答案不唯一。另一组可取$3x^5+2$、$2x^4-3$、$-4x^5+1$、$-2x^4-1$。每一对的次数奇偶及首项符号相同，尾端相同；次数、伸缩、纵截距和局部形状可以不同。这是可用于与同学比较的示例，不声称已经进行了课堂讨论。"
+          }
+        ],
+        "answer": "(a)(i)$y=x^3$；(ii)$y=x^2$；(iii)$y=-x^3$；(iv)$y=-x^2$。(b)同奇偶与首项符号保证同端行为，其余可不同。",
+        "pdfPage": 125,
+        "printedPage": 116,
+        "en": {
+          "prompt": "(a) State a possible polynomial equation whose graph extends (i) from quadrant III to quadrant I; (ii) from quadrant II to quadrant I; (iii) from quadrant II to quadrant IV; (iv) from quadrant III to quadrant IV. (b) Compare your answers with a classmate’s and discuss similarities and differences.",
+          "steps": [
+            {
+              "title": "(a-i) and (a-ii) Rising right tails",
+              "body": "(i) Choose $y=x^3$: positive odd degree, down left/up right. (ii) Choose $y=x^2$: positive even degree, both tails up."
+            },
+            {
+              "title": "(a-iii) and (a-iv) Falling right tails",
+              "body": "(iii) Choose $y=-x^3$: negative odd degree, up left/down right. (iv) Choose $y=-x^2$: negative even degree, both tails down."
+            },
+            {
+              "title": "(b) An example comparison",
+              "body": "Answers vary. Another valid set is $3x^5+2$, $2x^4-3$, $-4x^5+1$, $-2x^4-1$. Corresponding pairs share degree parity, leading sign and tails, but may differ in degree, scale, y-intercept and local shape. This supplies a model comparison rather than claiming a classmate interaction took place."
+            }
+          ],
+          "answer": "(a) (i) $y=x^3$; (ii) $y=x^2$; (iii) $y=-x^3$; (iv) $y=-x^2$. (b) Matching parity and leading sign guarantee matching tails; other characteristics may differ."
+        },
+        "subpartIds": [
+          "ai",
+          "aii",
+          "aiii",
+          "aiv",
+          "b"
+        ]
+      },
+      {
+        "number": "C3",
+        "prompt": "向另一位学生说明直线$y=x$与次数大于1的奇次多项式函数的异同，用图像支持。",
+        "concept": [
+          "graph-reasoning",
+          "end-behaviour"
+        ],
+        "steps": [
+          {
+            "title": "共同点",
+            "body": "两者都是连续多项式，定义域和值域全实数，至少一个横截距且无整体最大或最小。奇次多项式首项为正时同$y=x$一样III→I；负首项时方向相反，为II→IV。"
+          },
+          {
+            "title": "差异与实例",
+            "body": "直线斜率恒为1、恰一个零点0、无转折。$y=x^3$同样单调但弯曲；$y=x^3-3x$有三个零点$-\\sqrt3,0,\\sqrt3$和两个局部转折。一般$n>1$奇次可有至多$n$个横截距和$n-1$个转折，纵截距也不一定0。"
+          }
+        ],
+        "answer": "相同：全实数定义域和值域、连续、无整体极值、至少一零点。不同：高次可弯曲、有局部转折和多个零点；负首项尾端与$y=x$相反。",
+        "pdfPage": 125,
+        "printedPage": 116,
+        "en": {
+          "prompt": "Describe to another student the similarities and differences between the line $y=x$ and polynomial functions of odd degree greater than one. Use graphs to support your answer.",
+          "steps": [
+            {
+              "title": "Similarities",
+              "body": "Both are continuous polynomials with real domain and range, at least one x-intercept and no global maximum/minimum. Positive-leading odd polynomials have III→I tails like $y=x$; negative-leading ones instead have II→IV tails."
+            },
+            {
+              "title": "Differences and examples",
+              "body": "The line has constant slope 1, exactly one zero at 0 and no turns. $y=x^3$ is also increasing but curved; $y=x^3-3x$ has three zeros $-\\sqrt3,0,\\sqrt3$ and two local turns. Higher odd degree $n$ permits up to $n$ intercepts and $n-1$ turns, and its y-intercept need not be zero."
+            }
+          ],
+          "answer": "Same: real domain/range, continuity, no global extrema, at least one zero. Different: higher degree can curve, turn locally and have multiple zeros; negative leading sign reverses the tails of $y=x$."
+        },
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -3,
+              "xMax": 3,
+              "yMin": -6,
+              "yMax": 6
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x;\\ y=x^3;\\ y=x^3-3x;\\ y=-x^3",
+            "label": "y=x;\\ y=x^3;\\ y=x^3-3x;\\ y=-x^3",
+            "traces": [
+              {
+                "numerator": [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^3"
+              },
+              {
+                "numerator": [
+                  1,
+                  0,
+                  -3,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=x^3-3x"
+              },
+              {
+                "numerator": [
+                  -1,
+                  0,
+                  0,
+                  0
+                ],
+                "denominator": [
+                  1
+                ],
+                "label": "y=-x^3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "number": "C4",
+        "prompt": "Mini Lab。步骤1：用图形技术画出以下15个函数，抄写并完成“次数、端行为”表。; $y=x+2$; $y=-3x+1$; $y=x^2-4$; $y=-2x^2-2x+4$; $y=x^3-4x$; $y=-x^3+3x-2$; $y=2x^3+16$; $y=-x^3-4x$; $y=x^4-4x^2+5$; $y=-x^4+x^3+4x^2-4x$; $y=x^4+2x^2+1$; $y=x^5-2x^4-3x^3+5x^2+4x-1$; $y=x^5-1$; $y=-x^5+x^4+8x^3+8x^2-16x-16$; $y=x(x+1)^2(x+4)^2$; 步骤2：同次数两函数，首项系数符号如何影响端行为？步骤3：偶次函数的端行为如何比较？步骤4：奇次函数的端行为如何比较？",
+        "concept": "end-behaviour",
+        "steps": [
+          {
+            "title": "步骤1 · 逐行完成表",
+            "body": "每行先读最高次非零项；最后一行$x(x+1)^2(x+4)^2$次数$1+2+2=5$、首项系数1。表中“次数，方向”依原表顺序为：; $y=x+2$: 1, III→I; $y=-3x+1$: 1, II→IV; $y=x^2-4$: 2, II→I; $y=-2x^2-2x+4$: 2, III→IV; $y=x^3-4x$: 3, III→I; $y=-x^3+3x-2$: 3, II→IV; $y=2x^3+16$: 3, III→I; $y=-x^3-4x$: 3, II→IV; $y=x^4-4x^2+5$: 4, II→I; $y=-x^4+x^3+4x^2-4x$: 4, III→IV; $y=x^4+2x^2+1$: 4, II→I; $y=x^5-2x^4-3x^3+5x^2+4x-1$: 5, III→I; $y=x^5-1$: 5, III→I; $y=-x^5+x^4+8x^3+8x^2-16x-16$: 5, II→IV; $y=x(x+1)^2(x+4)^2$: 5, III→I"
+          },
+          {
+            "title": "步骤2 · 同次异号",
+            "body": "首项系数符号相反时，两端的上下方向同时倒转。例如$x^2-4$两端上，而$-2x^2-2x+4$两端下。中间项不改变足够远处的尾端。"
+          },
+          {
+            "title": "步骤3 · 偶次",
+            "body": "两端总同向：首项正则II→I（上、上），首项负则III→IV（下、下）。"
+          },
+          {
+            "title": "步骤4 · 奇次",
+            "body": "两端总反向：首项正则III→I（左下右上），首项负则II→IV（左上右下）。下方15图逐行对应原表，不能把图窗边界当实际端点。"
+          }
+        ],
+        "answer": "表格全15行见步骤1，图像逐行列出；偶次两端同向，奇次两端相反；首项变号倒转两端。",
+        "pdfPage": 126,
+        "printedPage": 117,
+        "en": {
+          "prompt": "Mini Lab. Step 1: Graph each of the following fifteen functions using technology. Copy and complete the Degree and End Behaviour table.; $y=x+2$; $y=-3x+1$; $y=x^2-4$; $y=-2x^2-2x+4$; $y=x^3-4x$; $y=-x^3+3x-2$; $y=2x^3+16$; $y=-x^3-4x$; $y=x^4-4x^2+5$; $y=-x^4+x^3+4x^2-4x$; $y=x^4+2x^2+1$; $y=x^5-2x^4-3x^3+5x^2+4x-1$; $y=x^5-1$; $y=-x^5+x^4+8x^3+8x^2-16x-16$; $y=x(x+1)^2(x+4)^2$; Step 2: For two functions of the same degree, how does the leading coefficient sign affect end behaviour? Step 3: How do even-degree end behaviours compare? Step 4: How do odd-degree end behaviours compare?",
+          "steps": [
+            {
+              "title": "Step 1 · Complete every row",
+              "body": "Read the highest nonzero power in each row. The last row $x(x+1)^2(x+4)^2$ has degree $1+2+2=5$ and leading coefficient 1. Each row below gives degree, then tails, in source order:; $y=x+2$: 1, III→I; $y=-3x+1$: 1, II→IV; $y=x^2-4$: 2, II→I; $y=-2x^2-2x+4$: 2, III→IV; $y=x^3-4x$: 3, III→I; $y=-x^3+3x-2$: 3, II→IV; $y=2x^3+16$: 3, III→I; $y=-x^3-4x$: 3, II→IV; $y=x^4-4x^2+5$: 4, II→I; $y=-x^4+x^3+4x^2-4x$: 4, III→IV; $y=x^4+2x^2+1$: 4, II→I; $y=x^5-2x^4-3x^3+5x^2+4x-1$: 5, III→I; $y=x^5-1$: 5, III→I; $y=-x^5+x^4+8x^3+8x^2-16x-16$: 5, II→IV; $y=x(x+1)^2(x+4)^2$: 5, III→I"
+            },
+            {
+              "title": "Step 2 · Same degree, opposite sign",
+              "body": "Opposite leading signs reverse both tails. For example, $x^2-4$ has two rising tails, while $-2x^2-2x+4$ has two falling tails. Lower-degree terms do not change the distant tails."
+            },
+            {
+              "title": "Step 3 · Even degree",
+              "body": "The two tails agree: positive leading sign gives II→I (up/up), negative gives III→IV (down/down)."
+            },
+            {
+              "title": "Step 4 · Odd degree",
+              "body": "The tails oppose: positive leading sign gives III→I (down left/up right), negative gives II→IV (up left/down right). The fifteen plots below follow the table rows; viewport edges are not graph endpoints."
+            }
+          ],
+          "answer": "All fifteen table rows are completed in Step 1 and plotted in order. Even-degree tails agree, odd-degree tails oppose, and reversing leading sign reverses both tails."
+        },
+        "subpartIds": [
+          "step1",
+          "step2",
+          "step3",
+          "step4"
+        ],
+        "graphs": [
+          {
+            "numerator": [
+              1,
+              2
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x+2",
+            "label": "y=x+2"
+          },
+          {
+            "numerator": [
+              -3,
+              1
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=-3x+1",
+            "label": "y=-3x+1"
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              -4
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x^2-4",
+            "label": "y=x^2-4"
+          },
+          {
+            "numerator": [
+              -2,
+              -2,
+              4
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=-2x^2-2x+4",
+            "label": "y=-2x^2-2x+4"
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              -4,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x^3-4x",
+            "label": "y=x^3-4x"
+          },
+          {
+            "numerator": [
+              -1,
+              0,
+              3,
+              -2
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=-x^3+3x-2",
+            "label": "y=-x^3+3x-2"
+          },
+          {
+            "numerator": [
+              2,
+              0,
+              0,
+              16
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=2x^3+16",
+            "label": "y=2x^3+16"
+          },
+          {
+            "numerator": [
+              -1,
+              0,
+              -4,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=-x^3-4x",
+            "label": "y=-x^3-4x"
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              -4,
+              0,
+              5
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x^4-4x^2+5",
+            "label": "y=x^4-4x^2+5"
+          },
+          {
+            "numerator": [
+              -1,
+              1,
+              4,
+              -4,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=-x^4+x^3+4x^2-4x",
+            "label": "y=-x^4+x^3+4x^2-4x"
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              2,
+              0,
+              1
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x^4+2x^2+1",
+            "label": "y=x^4+2x^2+1"
+          },
+          {
+            "numerator": [
+              1,
+              -2,
+              -3,
+              5,
+              4,
+              -1
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x^5-2x^4-3x^3+5x^2+4x-1",
+            "label": "y=x^5-2x^4-3x^3+5x^2+4x-1"
+          },
+          {
+            "numerator": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x^5-1",
+            "label": "y=x^5-1"
+          },
+          {
+            "numerator": [
+              -1,
+              1,
+              8,
+              8,
+              -16,
+              -16
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=-x^5+x^4+8x^3+8x^2-16x-16",
+            "label": "y=-x^5+x^4+8x^3+8x^2-16x-16"
+          },
+          {
+            "numerator": [
+              1,
+              10,
+              33,
+              40,
+              16,
+              0
+            ],
+            "denominator": [
+              1
+            ],
+            "bounds": {
+              "xMin": -5,
+              "xMax": 5,
+              "yMin": -30,
+              "yMax": 30
+            },
+            "verticalAsymptotes": [],
+            "horizontalAsymptote": null,
+            "holes": [],
+            "points": [],
+            "expressionLatex": "y=x(x+1)^2(x+4)^2",
+            "label": "y=x(x+1)^2(x+4)^2"
+          }
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "section": "3.1",
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12 (2012)",
+      "pdfPages": [
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "printedPages": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117
+      ]
+    },
+    "boundary": "3.1 begins on printed 106 / PDF 115 and ends on printed 117 / PDF 126. Section 3.2 starts on PDF 127. No Review Skills occurs in 3.1.",
+    "inventoryMethod": "Independently counted from all twelve rendered source pages before composing solutions; extracted text used only as an aid.",
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "investigate-5",
+      "investigate-6",
+      "investigate-7",
+      "investigate-8",
+      "link-ideas-constant",
+      "practice-1",
+      "chart-negative-leading",
+      "practice-2",
+      "practice-3",
+      "project-corner"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "expectedSubparts": {
+      "investigate-5": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "example-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "example-3": [
+        "a",
+        "b"
+      ],
+      "practice-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "practice-2": [
+        "a",
+        "b"
+      ],
+      "practice-3": [
+        "a",
+        "b"
+      ],
+      "project-corner": [
+        "landscape",
+        "harp"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-8": [
+        "a",
+        "b"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-10": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-C2": [
+        "ai",
+        "aii",
+        "aiii",
+        "aiv",
+        "b"
+      ],
+      "exercise-C4": [
+        "step1",
+        "step2",
+        "step3",
+        "step4"
+      ]
+    },
+    "pageInventory": [
+      {
+        "pdfPage": 115,
+        "printedPage": 106,
+        "items": [
+          "Focus: identifying and analysing polynomial functions",
+          "Honeycomb context",
+          "Investigate 1: 19 functions in sets A–D",
+          "Investigate 2: compare each set using five characteristics"
+        ],
+        "figures": [
+          "honeycomb diagram",
+          "19-function source table"
+        ]
+      },
+      {
+        "pdfPage": 116,
+        "printedPage": 107,
+        "items": [
+          "Investigate 3–4",
+          "Reflect and Respond 5a–c,6,7,8",
+          "Definition of polynomial function",
+          "Margin question: power associated with a0"
+        ],
+        "figures": []
+      },
+      {
+        "pdfPage": 117,
+        "printedPage": 108,
+        "items": [
+          "Example1 a–d",
+          "Your Turn1 a–d"
+        ],
+        "figures": []
+      },
+      {
+        "pdfPage": 118,
+        "printedPage": 109,
+        "items": [
+          "Characteristics chart degree0–5",
+          "Margin question: negative leading coefficient"
+        ],
+        "figures": [
+          "six chart graphs, summarized as concepts"
+        ]
+      },
+      {
+        "pdfPage": 119,
+        "printedPage": 110,
+        "items": [
+          "Example2 a–d question and four supplied graphs",
+          "Example2a solution"
+        ],
+        "figures": [
+          "Example2 graphs A–D"
+        ]
+      },
+      {
+        "pdfPage": 120,
+        "printedPage": 111,
+        "items": [
+          "Example2b–d solutions",
+          "Your Turn2 a–b"
+        ],
+        "figures": [
+          "Your Turn2 graphs A–D"
+        ]
+      },
+      {
+        "pdfPage": 121,
+        "printedPage": 112,
+        "items": [
+          "Example3 a–b and domain margin prompt",
+          "Your Turn3 a–b"
+        ],
+        "figures": [
+          "Example3 solution graph, not a given figure"
+        ]
+      },
+      {
+        "pdfPage": 122,
+        "printedPage": 113,
+        "items": [
+          "Key Ideas: polynomial form, odd/even end behaviour, intercepts, domain and range"
+        ],
+        "figures": [
+          "four explanatory Key Ideas graphs, concepts reproduce their mathematical substance"
+        ]
+      },
+      {
+        "pdfPage": 123,
+        "printedPage": 114,
+        "items": [
+          "Exercises1a–f,2a–f,3a–d,4a–f"
+        ],
+        "figures": [
+          "Exercise3 graphs a–d"
+        ]
+      },
+      {
+        "pdfPage": 124,
+        "printedPage": 115,
+        "items": [
+          "Exercise5",
+          "Exercise6a–f",
+          "Exercise7a–d",
+          "Exercise8a–b"
+        ],
+        "figures": [
+          "decorative snowboard/honey photos excluded; honeycomb mathematical diagram retained from PDF115"
+        ]
+      },
+      {
+        "pdfPage": 125,
+        "printedPage": 116,
+        "items": [
+          "Exercises9a–d,10a–b,11a–c,12a–c,13",
+          "C1,C2a-i–iv and b,C3"
+        ],
+        "figures": []
+      },
+      {
+        "pdfPage": 126,
+        "printedPage": 117,
+        "items": [
+          "C4 Mini Lab steps1–4 with fifteen table rows",
+          "Project Corner: landscape and harp polynomial descriptions"
+        ],
+        "figures": [
+          "Project Corner landscape",
+          "Project Corner harp"
+        ]
+      }
+    ],
+    "sourceFigures": [
+      {
+        "file": "3-1-investigate-table.png",
+        "pdfPage": 115,
+        "description": "19 functions in Sets A–D, original row and set labels"
+      },
+      {
+        "file": "3-1-honeycomb.png",
+        "pdfPage": 115,
+        "description": "Honeycomb rings used by Exercise8"
+      },
+      {
+        "file": "3-1-example-2.png",
+        "pdfPage": 119,
+        "description": "Given four graphs A–D; crop ends before Solution"
+      },
+      {
+        "file": "3-1-practice-2.png",
+        "pdfPage": 120,
+        "description": "Given four graphs A–D for Your Turn2"
+      },
+      {
+        "file": "3-1-exercise-3.png",
+        "pdfPage": 123,
+        "description": "Composite of original supplied graphs a–d, retaining axis and extrema labels"
+      },
+      {
+        "file": "3-1-project.png",
+        "pdfPage": 126,
+        "description": "Original two Project Corner objects with red indicated portions"
+      }
+    ],
+    "notes": [
+      "Investigate1 has 5 A,5 B,5 C and4 D functions; D has no linear function.",
+      "Investigate2 compares degree, end behaviour, constant, leading coefficient and x-intercepts for all nineteen functions.",
+      "Investigate4 has four bullet comparisons y=x,−x,x²,−x².",
+      "Exercise11a and b each have three function pairs.",
+      "C4 Step1 has fifteen function rows; every row is retained and graphed.",
+      "ProjectCorner supplies no coordinate scale; a degree/sign description is verifiable but a unique polynomial equation is not.",
+      "Source chart PDF118 lists range y≥−2 beside f(x)=2x²−3; correct range is y≥−3.",
+      "No external links or lecture sources are needed for this section."
+    ]
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "reviewFiles": [
+      "audit/3-1-author-math.json",
+      "audit/3-1-independent-review.json"
+    ],
+    "note": "Author visually checked all twelve source pages; independent source and solution review is pending. Structural checks do not certify mathematics."
+  }
+}

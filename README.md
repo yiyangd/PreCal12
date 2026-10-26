@@ -2,17 +2,25 @@
 
 Bilingual study notes based on McGraw-Hill Ryerson **Pre-Calculus 12** (2012).
 
-- [Course home](https://yiyangd.github.io/PreCal12/)
-- [Section 3.2 — The Remainder Theorem](https://yiyangd.github.io/PreCal12/sections/3-2/)
-- [中文首页](https://yiyangd.github.io/PreCal12/?lang=zh)
-- [3.2 余式定理（中文）](https://yiyangd.github.io/PreCal12/sections/3-2/?lang=zh)
+- [Course home](https://yiyangd.github.io/PreCal12/) · [中文首页](https://yiyangd.github.io/PreCal12/?lang=zh)
+- [Chapter 3 overview](https://yiyangd.github.io/PreCal12/sections/3-overview/)
+- [Chapter 4 overview](https://yiyangd.github.io/PreCal12/sections/4-overview/)
+- [Chapter 5 overview](https://yiyangd.github.io/PreCal12/sections/5-overview/)
 
-The home lists the textbook's 4 units, 11 chapters and 39 numbered sections. Section 3.2 is available; all other sections and review materials are marked as planned.
+The home preserves the complete textbook outline: 4 units, 11 chapters and 39 numbered sections. Available pages are derived from reviewed source data. Other materials remain explicitly Planned. Each completed chapter includes its opening, four numbered sections, Review and Practice Test.
 
-Section 3.2 covers printed pages 118–125 (PDF pages 127–134): 7 concepts, Investigate 1–8, Examples 1–4, all 4 Your Turn problems, Exercises 1–17 and Create Connections C1–C3. Every question and subpart has English and Chinese explanations. Given diagrams are retained with their source locations. English is the default; language selection carries through course navigation.
+| Chapter | Concepts | Example records | Practice records | Exercise records | Total question records |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 3 | 39 | 17 | 50 | 108 | 175 |
+| 4 | 36 | 15 | 73 | 149 | 237 |
+| 5 | 33 | 15 | 69 | 145 | 229 |
 
-Features include concept-to-exercise links and return links, exercise number/range/keyword filters, locally saved concept progress, synthetic-division tables, responsive layouts, and printing. The synthetic tables use the root/add convention, with an explanation of its equivalence to the textbook's divisor-constant/subtraction convention.
+Counts refer to parent question records; all source subparts are included. Practice includes the actual Investigate, Reflect and Respond, Your Turn, margin and Project Corner tasks, with their original labels. Worked explanations explicitly labelled in the textbook are retained with source provenance.
 
-This is a static HTML/CSS/JavaScript website. Open `index.html` directly for offline study, or serve this folder using any static web server. Lesson content is embedded in the HTML and also saved as matching `data.json`. Course-map metadata is embedded in the home and mirrored in `course-map.json`.
+English is the default, with Chinese available from the language controls or `?lang=zh`. Language carries through home/lesson navigation. Concept labels link back from exercises and preserve filters, expanded solutions and locally saved learning progress. Given source diagrams appear before solutions; solution diagrams expand with the explanations. Lessons support mobile layouts and printing.
 
-The original textbook PDF, authoring workspace and temporary audit files are not included. Source and mathematical reviews were completed before publication. These notes are an independent learning resource and are not an official publisher website.
+Source limitations are explained at the relevant questions. Chapter 4 Section 4.3 Exercise 18(c) omits a connecting-rod length, so its parameterized answer and non-uniqueness are retained. Personal-coordinate, physical-measurement and external research activities retain their open scope; no personal data or measurements are invented. Explicit source-model inconsistencies are documented and explained in both languages. Historical external career/research websites have not been verified as current resources.
+
+This is a static HTML/CSS/JavaScript site; open `index.html` directly for offline study or serve this folder. Lesson JSON is embedded in each HTML file and mirrored in `data.json`. The root course map likewise has matching embedded and standalone JSON. Section 3.2 retains its existing URL, approved content, concept IDs and progress key.
+
+Only reviewed public site resources are included. The original textbook PDF, private authoring/audit workspace and credentials are excluded. This is an independent learning resource, not an official publisher website.

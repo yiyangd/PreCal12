@@ -1,0 +1,1239 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "5-review",
+    "section": "5 Review",
+    "title": "第 5 章复习",
+    "en": {
+      "title": "Chapter 5 Review"
+    },
+    "source": {
+      "kind": "pdf",
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "printedPages": [
+        282,
+        285
+      ],
+      "pdfPages": [
+        291,
+        294
+      ]
+    },
+    "concepts": [
+      {
+        "id": "sinecosine",
+        "title": "正余弦基本图像",
+        "summary": "振幅为系数绝对值，周期由横向系数决定。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用四分之一周期的关键点画图，分别核对截距、极值与单位。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Basic sine and cosine graphs",
+          "summary": "Amplitude is the absolute vertical coefficient; the horizontal coefficient determines period.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Plot quarter-period key points, then check intercepts, extrema, and units."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "transformations",
+        "title": "正弦曲线变换",
+        "summary": "$y=a\\sin b(x-c)+d$ 的振幅 $|a|$、中线 $d$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先将角内因式分解，再读取相移；按周期分五个关键点作图。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Sinusoidal transformations",
+          "summary": "$y=a\\sin b(x-c)+d$ has amplitude $|a|$ and midline d.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Factor the argument before reading phase; plot five quarter-period points."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "tangent",
+        "title": "正切与渐近线",
+        "summary": "$\\tan x=\\sin x/\\cos x$，分母为零时无定义。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先排除余弦零点，再求零点与各支行为。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Tangent and asymptotes",
+          "summary": "$\\tan x=\\sin x/\\cos x$ is undefined when the denominator is zero.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Exclude cosine zeros first, then find zeros and branch behaviour."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "equationsmodels",
+        "title": "三角方程与现实模型",
+        "summary": "保留所有分支与实际时间单位。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先隔离三角值，列通解，再按范围筛选；模型用振幅、中线、周期和相位。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Equations and real-world models",
+          "summary": "Retain all branches and contextual time units.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Isolate the trig value, write general solutions, and filter; build models from amplitude, midline, period, and phase."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "画 $y=\\sin x$，$-360^\\circ\\le x\\le360^\\circ$。a) x截距？b) y截距？c) 定义域、值域、周期？d) 最大值？",
+        "concept": "sinecosine",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 正弦的零点给横截距 $-360^\\circ,-180^\\circ,0^\\circ,180^\\circ,360^\\circ$；b) 代 $x=0$ 得 $y=0$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "c) 函数本身定义域为实数；本次绘图区间为 $[-360^\\circ,360^\\circ]$。值域 $[-1,1]$，基本周期360°。d) 最大值1。"
+          }
+        ],
+        "answer": "a) $-360^\\circ,-180^\\circ,0^\\circ,180^\\circ,360^\\circ$；b) $(0,0)$；c)全域实数，图限上述区间，值域 $[-1,1]$，周期360°；d)1。",
+        "printedPage": 282,
+        "pdfPage": 291,
+        "en": {
+          "prompt": "Sketch $y=\\sin x$ for $-360^\\circ\\le x\\le360^\\circ$. a) Find x-intercepts. b) Find the y-intercept. c) State domain, range, and period. d) State the greatest value.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Zeros of sin give x-intercepts $-360^\\circ,-180^\\circ,0^\\circ,180^\\circ,360^\\circ$; b) set $x=0$ to obtain $y=0$."
+            },
+            {
+              "title": "Step 2",
+              "body": "c) The full function has real domain; the requested plotted restriction is $[-360^\\circ,360^\\circ]$. Range is $[-1,1]$ and fundamental period is 360°. d) Maximum is 1."
+            }
+          ],
+          "answer": "a) $-360^\\circ,-180^\\circ,0^\\circ,180^\\circ,360^\\circ$; b) $(0,0)$; c) all real x, restricted as plotted, range $[-1,1]$, period360°; d)1."
+        },
+        "number": 1,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-review-1.png"
+      },
+      {
+        "prompt": "画 $y=\\cos x$，$-360^\\circ\\le x\\le360^\\circ$。a) x截距？b) y截距？c) 定义域、值域、周期？d) 最大值？",
+        "concept": "sinecosine",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 余弦的零点给横截距 $-270^\\circ,-90^\\circ,90^\\circ,270^\\circ$；b) 代 $x=0$ 得 $y=1$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "c) 函数本身定义域为实数；本次绘图区间为 $[-360^\\circ,360^\\circ]$。值域 $[-1,1]$，基本周期360°。d) 最大值1。"
+          }
+        ],
+        "answer": "a) $-270^\\circ,-90^\\circ,90^\\circ,270^\\circ$；b) $(0,1)$；c)全域实数，图限上述区间，值域 $[-1,1]$，周期360°；d)1。",
+        "printedPage": 282,
+        "pdfPage": 291,
+        "en": {
+          "prompt": "Sketch $y=\\cos x$ for $-360^\\circ\\le x\\le360^\\circ$. a) Find x-intercepts. b) Find the y-intercept. c) State domain, range, and period. d) State the greatest value.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Zeros of cos give x-intercepts $-270^\\circ,-90^\\circ,90^\\circ,270^\\circ$; b) set $x=0$ to obtain $y=1$."
+            },
+            {
+              "title": "Step 2",
+              "body": "c) The full function has real domain; the requested plotted restriction is $[-360^\\circ,360^\\circ]$. Range is $[-1,1]$ and fundamental period is 360°. d) Maximum is 1."
+            }
+          ],
+          "answer": "a) $-270^\\circ,-90^\\circ,90^\\circ,270^\\circ$; b) $(0,1)$; c) all real x, restricted as plotted, range $[-1,1]$, period360°; d)1."
+        },
+        "number": 2,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-review-2.png"
+      },
+      {
+        "prompt": "把函数与所附A–D图匹配：a) $y=\\sin x$；b) $y=\\sin2x$；c) $y=-\\sin x$；d) $y=\\frac12\\sin x$。",
+        "concept": "sinecosine",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "A从原点上升，振幅1、周期 $2\\pi$；B从原点下降、周期 $2\\pi$；C振幅1/2；D一段 $2\\pi$ 含两周期。"
+          }
+        ],
+        "answer": "a) A；b) D；c) B；d) C。",
+        "printedPage": 282,
+        "pdfPage": 291,
+        "en": {
+          "prompt": "Match the functions to given graphs A–D: a) $y=\\sin x$; b) $y=\\sin2x$; c) $y=-\\sin x$; d) $y=\\frac12\\sin x$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "A rises through the origin with amplitude1 and period $2\\pi$; B falls through it with period $2\\pi$; C has amplitude1/2; D completes two cycles in $2\\pi$."
+            }
+          ],
+          "answer": "a) A; b) D; c) B; d) C."
+        },
+        "number": 3,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/5-review-3.png"
+      },
+      {
+        "prompt": "不画图求振幅和弧度/角度周期：a)$y=-3\\sin2x$；b)$y=4\\cos0.5x$；c)$y=\\frac13\\sin(5x/6)$；d)$y=-5\\cos(3x/2)$。",
+        "concept": "sinecosine",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "统一使用 $A=|a|$，$T=2\\pi/|b|$（弧度）或 $360^\\circ/|b|$（角度）。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "a) $A=3,T=\\pi=180^\\circ$；b) $A=4,T=4\\pi=720^\\circ$；c) $A=1/3,T=12\\pi/5=432^\\circ$；d) $A=5,T=4\\pi/3=240^\\circ$。"
+          }
+        ],
+        "answer": "a)3,π,180°；b)4,4π,720°；c)1/3,12π/5,432°；d)5,4π/3,240°。",
+        "printedPage": 282,
+        "pdfPage": 291,
+        "en": {
+          "prompt": "Without graphing find amplitude and period in radians and degrees: a)$y=-3\\sin2x$; b)$y=4\\cos0.5x$; c)$y=\\frac13\\sin(5x/6)$; d)$y=-5\\cos(3x/2)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Use $A=|a|$, $T=2\\pi/|b|$ radians or $360^\\circ/|b|$ degrees."
+            },
+            {
+              "title": "Step 2",
+              "body": "a) $A=3,T=\\pi=180^\\circ$; b) $A=4,T=4\\pi=720^\\circ$; c) $A=1/3,T=12\\pi/5=432^\\circ$; d) $A=5,T=4\\pi/3=240^\\circ$."
+            }
+          ],
+          "answer": "a)3,π,180°; b)4,4π,720°; c)1/3,12π/5,432°; d)5,4π/3,240°."
+        },
+        "number": 4,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "说明如何区分并画图验证：a) $\\sin x,\\sin2x,2\\sin x$；b) $\\sin x,-\\sin x,\\sin(-x)$；c) $\\cos x,-\\cos x,\\cos(-x)$。",
+        "concept": "sinecosine",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) $\\sin x$振幅1周期 $2\\pi$；$\\sin2x$振幅1周期 $\\pi$；$2\\sin x$振幅2周期 $2\\pi$。分别比较高度和重复次数。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 正弦为奇函数，$\\sin(-x)=-\\sin x$，后两图重合，且是第一图关于x轴的反射。c) 余弦为偶函数，$\\cos(-x)=\\cos x$；负余弦关于x轴反射，初值−1而另两者初值1。"
+          }
+        ],
+        "answer": "各函数的振幅、周期与奇偶关系见步骤与三组图。",
+        "printedPage": 282,
+        "pdfPage": 291,
+        "en": {
+          "prompt": "Describe how to distinguish and graph to check: a) $\\sin x,\\sin2x,2\\sin x$; b) $\\sin x,-\\sin x,\\sin(-x)$; c) $\\cos x,-\\cos x,\\cos(-x)$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) $\\sin x$ has amplitude1/period $2\\pi$; $\\sin2x$ amplitude1/period $\\pi$; $2\\sin x$ amplitude2/period $2\\pi$. Compare heights and repetition rates."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) Sine is odd, so $\\sin(-x)=-\\sin x$; the last two coincide and reflect the first in the x-axis. c) Cosine is even, $\\cos(-x)=\\cos x$; negative cosine is reflected in the x-axis and starts at −1 instead of1."
+            }
+          ],
+          "answer": "See the amplitude/period/parity comparisons and three graph panels."
+        },
+        "number": 5,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/5-review-5.png"
+      },
+      {
+        "prompt": "写 $y=a\\cos bx$ 的一个方程：a) A=3, T=π；b) A=4, T=150°；c) A=1/2, T=720°；d) A=3/4, T=π/6",
+        "concept": "sinecosine",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "取正振幅系数；角度周期用 $b=360^\\circ/T$，弧度周期用 $b=2\\pi/T$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "a) $y=3\\cos(2x)$；b) $y=4\\cos(12/5x)$；c) $y=1/2\\cos(1/2x)$；d) $y=3/4\\cos(12x)$"
+          }
+        ],
+        "answer": "a) $y=3\\cos(2x)$；b) $y=4\\cos(12/5x)$；c) $y=1/2\\cos(1/2x)$；d) $y=3/4\\cos(12x)$",
+        "printedPage": 282,
+        "pdfPage": 291,
+        "en": {
+          "prompt": "Write an equation $y=a\\cos bx$ for: a) A=3, T=π；b) A=4, T=150°；c) A=1/2, T=720°；d) A=3/4, T=π/6",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Choose positive a; use $b=360^\\circ/T$ for degree periods and $b=2\\pi/T$ for radian periods."
+            },
+            {
+              "title": "Step 2",
+              "body": "a) $y=3\\cos(2x)$；b) $y=4\\cos(12/5x)$；c) $y=1/2\\cos(1/2x)$；d) $y=3/4\\cos(12x)$"
+            }
+          ],
+          "answer": "a) $y=3\\cos(2x)$；b) $y=4\\cos(12/5x)$；c) $y=1/2\\cos(1/2x)$；d) $y=3/4\\cos(12x)$"
+        },
+        "number": 6,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "写 $y=a\\sin bx$ 的一个方程：a) A=8, T=180°；b) A=0.4, T=60°；c) A=3/2, T=4π；d) A=2, T=2π/3",
+        "concept": "sinecosine",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "取正振幅系数；角度周期用 $b=360^\\circ/T$，弧度周期用 $b=2\\pi/T$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "a) $y=8\\sin(2x)$；b) $y=0.4\\sin(6x)$；c) $y=3/2\\sin(1/2x)$；d) $y=2\\sin(3x)$"
+          }
+        ],
+        "answer": "a) $y=8\\sin(2x)$；b) $y=0.4\\sin(6x)$；c) $y=3/2\\sin(1/2x)$；d) $y=2\\sin(3x)$",
+        "printedPage": 283,
+        "pdfPage": 292,
+        "en": {
+          "prompt": "Write an equation $y=a\\sin bx$ for: a) A=8, T=180°；b) A=0.4, T=60°；c) A=3/2, T=4π；d) A=2, T=2π/3",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Choose positive a; use $b=360^\\circ/T$ for degree periods and $b=2\\pi/T$ for radian periods."
+            },
+            {
+              "title": "Step 2",
+              "body": "a) $y=8\\sin(2x)$；b) $y=0.4\\sin(6x)$；c) $y=3/2\\sin(1/2x)$；d) $y=2\\sin(3x)$"
+            }
+          ],
+          "answer": "a) $y=8\\sin(2x)$；b) $y=0.4\\sin(6x)$；c) $y=3/2\\sin(1/2x)$；d) $y=2\\sin(3x)$"
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "求振幅、周期、相移、竖直平移，并各画两周期：a)$y=2\\cos[3(x-\\pi/2)]-8$；b)$y=\\sin[\\frac12(x-\\pi/4)]+3$；c)$y=-4\\cos[2(x-30^\\circ)]+7$；d)$y=\\frac13\\sin[\\frac14(x-60^\\circ)]-1$。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "由 $A=|a|$，$T=2\\pi/|b|$或 $360^\\circ/|b|$，直接从已因式分解的 $x-c$ 读取右移c。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "a) $A=2,T=2\\pi/3,c=\\pi/2,d=-8$；b)$A=1,T=4\\pi,c=\\pi/4,d=3$；c)$A=4,T=180^\\circ,c=30^\\circ,d=7$且上下反射；d)$A=1/3,T=1440^\\circ,c=60^\\circ,d=-1$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "各图从c至c+2T，按每隔T/4取点；余弦从 $a+d$ 起，正弦从中线d起。"
+          }
+        ],
+        "answer": "四组参数与两周期图见步骤。",
+        "printedPage": 283,
+        "pdfPage": 292,
+        "en": {
+          "prompt": "Find amplitude, period, phase shift, and vertical displacement and sketch two cycles: a)$y=2\\cos[3(x-\\pi/2)]-8$; b)$y=\\sin[\\frac12(x-\\pi/4)]+3$; c)$y=-4\\cos[2(x-30^\\circ)]+7$; d)$y=\\frac13\\sin[\\frac14(x-60^\\circ)]-1$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Use $A=|a|$, $T=2\\pi/|b|$ or $360^\\circ/|b|$ and read right shift c from the factored $x-c$."
+            },
+            {
+              "title": "Step 2",
+              "body": "a) $A=2,T=2\\pi/3,c=\\pi/2,d=-8$; b)$A=1,T=4\\pi,c=\\pi/4,d=3$; c)$A=4,T=180^\\circ,c=30^\\circ,d=7$ with reflection; d)$A=1/3,T=1440^\\circ,c=60^\\circ,d=-1$."
+            },
+            {
+              "title": "Step 3",
+              "body": "Plot from c to c+2T with points every T/4; cosine starts at a+d and sine at midline d."
+            }
+          ],
+          "answer": "See all four parameter sets and two-cycle plots."
+        },
+        "number": 8,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-review-8.png"
+      },
+      {
+        "prompt": "同轴画 $f(x)=\\cos[2(x-\\pi/2)]$ 与 $g(x)=\\cos(2x-\\pi/2)$，$0\\le x\\le2\\pi$。a) 各周期？b) 各相移？c) $y=\\cos b(x-\\pi)$ 相移？d) $y=\\cos(bx-\\pi)$ 相移？",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 两者横向系数均2，周期π。b) f右移π/2；$g=\\cos[2(x-\\pi/4)]$，右移π/4。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "c) 相移π。d) 对 $b\\ne0$，$bx-\\pi=b(x-\\pi/b)$，相移为有向量π/b；b<0时为左移。b=0为常数，通常不定义相移。"
+          }
+        ],
+        "answer": "a) 都π；b)右π/2、右π/4；c)π；d)π/b，b≠0。",
+        "printedPage": 283,
+        "pdfPage": 292,
+        "en": {
+          "prompt": "Graph $f(x)=\\cos[2(x-\\pi/2)]$ and $g(x)=\\cos(2x-\\pi/2)$ for $0\\le x\\le2\\pi$. a) Find periods. b) Find phase shifts. c) Phase shift of $y=\\cos b(x-\\pi)$? d) Phase shift of $y=\\cos(bx-\\pi)$?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Both have coefficient2 and periodπ. b) f shifts right π/2; $g=\\cos[2(x-\\pi/4)]$ shifts right π/4."
+            },
+            {
+              "title": "Step 2",
+              "body": "c) Phase shift is π. d) For $b\\ne0$, $bx-\\pi=b(x-\\pi/b)$, so signed shift is π/b (left if b<0). For b=0 the function is constant and phase shift is not normally defined."
+            }
+          ],
+          "answer": "a) Both π; b) right π/2 and right π/4; c)π; d)π/b for b≠0."
+        },
+        "number": 9,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-review-9.png"
+      },
+      {
+        "prompt": "把所附a–d各图分别写成 $y=a\\sin b(x-c)+d$ 与 $y=a\\cos b(x-c)+d$。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 极值4、−2，A=3、中线1、周期180°、最低在0°。故 $y=3\\sin[2(x-45^\\circ)]+1=-3\\cos2x+1$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 极值1、−3，A=2、中线−1，周期180°、在原点中线上升。$y=2\\sin2x-1=2\\cos[2(x-45^\\circ)]-1$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) 极值1、−3，A=2、中线−1、周期π、最低在0。$y=2\\sin[2(x-\\pi/4)]-1=-2\\cos2x-1$。"
+          },
+          {
+            "title": "第 4 步",
+            "body": "d) 极值4、−2，A=3、中线1，周期4π，最大在3π/2。$y=3\\sin[\\frac12(x-\\pi/2)]+1=3\\cos[\\frac12(x-3\\pi/2)]+1$。"
+          }
+        ],
+        "answer": "a–d的两种等价方程见逐项步骤。",
+        "printedPage": 283,
+        "pdfPage": 292,
+        "en": {
+          "prompt": "For each given graph a–d write an equation in both forms $y=a\\sin b(x-c)+d$ and $y=a\\cos b(x-c)+d$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Extrema4/−2 give A=3, midline1; period180° and minimum at0°. Thus $y=3\\sin[2(x-45^\\circ)]+1=-3\\cos2x+1$."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) Extrema1/−3 give A=2, midline−1; period180° and rising midline at0°. $y=2\\sin2x-1=2\\cos[2(x-45^\\circ)]-1$."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) Extrema1/−3 give A=2, midline−1, periodπ and minimum at0. $y=2\\sin[2(x-\\pi/4)]-1=-2\\cos2x-1$."
+            },
+            {
+              "title": "Step 4",
+              "body": "d) Extrema4/−2 give A=3, midline1, period4π, maximum at3π/2. $y=3\\sin[\\frac12(x-\\pi/2)]+1=3\\cos[\\frac12(x-3\\pi/2)]+1$."
+            }
+          ],
+          "answer": "The two equivalent equations for each graph are given in the corresponding step."
+        },
+        "number": 10,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/5-review-10.png"
+      },
+      {
+        "prompt": "a) 写正弦函数：A=4、T=π、右移π/3、下移5。b) 写余弦函数：A=0.5、T=4π、左移π/6、上移1。c) 写正弦函数：A=2/3、T=540°、无相移、下移5。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) $b=2\\pi/\\pi=2$，$y=4\\sin[2(x-\\pi/3)]-5$。b) $b=2\\pi/(4\\pi)=1/2$，$y=0.5\\cos[\\frac12(x+\\pi/6)]+1$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "c) $b=360/540=2/3$，$y=\\frac23\\sin(2x/3)-5$，自变量用度。"
+          }
+        ],
+        "answer": "a)$4\\sin2(x-\\pi/3)-5$；b)$0.5\\cos[\\frac12(x+\\pi/6)]+1$；c)$\\frac23\\sin(2x/3)-5$。",
+        "printedPage": 283,
+        "pdfPage": 292,
+        "en": {
+          "prompt": "a) Write a sine function with A=4, T=π, right shift π/3, down5. b) Write a cosine with A=0.5, T=4π, left shiftπ/6, up1. c) Write a sine with A=2/3, T=540°, no phase shift, down5.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) $b=2$, giving $y=4\\sin[2(x-\\pi/3)]-5$. b) $b=1/2$, giving $y=0.5\\cos[\\frac12(x+\\pi/6)]+1$."
+            },
+            {
+              "title": "Step 2",
+              "body": "c) $b=360/540=2/3$, so $y=\\frac23\\sin(2x/3)-5$, with x measured in degrees."
+            }
+          ],
+          "answer": "a)$4\\sin2(x-\\pi/3)-5$; b)$0.5\\cos[\\frac12(x+\\pi/6)]+1$; c)$\\frac23\\sin(2x/3)-5$."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "分别画图并求定义域、值域、最大最小、x及y截距：a)$y=2\\cos(x-45^\\circ)+3$；b)$y=4\\sin[2(x-\\pi/3)]+1$。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 全域实数；中线3、A=2，所以值域 $[1,5]$，最大5、最小1。因最低仍大于0无x截距；$y(0)=2\\cos45^\\circ+3=3+\\sqrt2$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 全域实数，值域 $[-3,5]$、最大5、最小−3；$y(0)=1+4\\sin(-2\\pi/3)=1-2\\sqrt3$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "b) x截距满足 $\\sin[2(x-\\pi/3)]=-1/4$。令 $\\alpha=\\arcsin(-1/4)$，$x=\\pi/3+\\alpha/2+\\pi n$ 或 $\\pi/3+(\\pi-\\alpha)/2+\\pi n$，$n\\in\\mathbb Z$。"
+          }
+        ],
+        "answer": "全部特征与两族x截距见步骤；截距坐标应写 $(x,0)$ 与 $(0,y)$。",
+        "printedPage": 284,
+        "pdfPage": 293,
+        "en": {
+          "prompt": "Graph each function and state domain, range, extrema, and x/y-intercepts: a)$y=2\\cos(x-45^\\circ)+3$; b)$y=4\\sin[2(x-\\pi/3)]+1$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Domain is real; midline3 and A=2 give range $[1,5]$, maximum5/minimum1. No x-intercepts because the minimum is positive; $y(0)=3+\\sqrt2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) Domain is real, range $[-3,5]$, maximum5/minimum−3; $y(0)=1-2\\sqrt3$."
+            },
+            {
+              "title": "Step 3",
+              "body": "b) Zeros satisfy $\\sin[2(x-\\pi/3)]=-1/4$. Let $\\alpha=\\arcsin(-1/4)$; then $x=\\pi/3+\\alpha/2+\\pi n$ or $\\pi/3+(\\pi-\\alpha)/2+\\pi n$, $n\\in\\mathbb Z$."
+            }
+          ],
+          "answer": "All features and both zero families appear above; intercept coordinates are $(x,0)$ and $(0,y)$."
+        },
+        "number": 12,
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/5-review-12.png"
+      },
+      {
+        "prompt": "用变换语言说明从基本正弦或余弦如何得到：a)$3\\sin2(x-\\pi/3)+6$；b)$-2\\cos[\\frac12(x+\\pi/4)]-3$；c)$\\frac34\\cos2(x-30^\\circ)+10$；d)$-\\sin2(x+45^\\circ)-8$。",
+        "concept": "transformations",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 正弦图横向压缩为1/2、纵向伸长3，右移π/3，上移6。b) 余弦横向伸长2、纵向伸长2并关于x轴反射，左移π/4，下移3。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "c) 余弦横向压缩1/2、纵向压缩3/4，右移30°、上移10。d) 正弦横向压缩1/2、关于x轴反射、左移45°、下移8。先相对原点伸缩再平移。"
+          }
+        ],
+        "answer": "a–d的完整变换见逐项步骤。",
+        "printedPage": 284,
+        "pdfPage": 293,
+        "en": {
+          "prompt": "Describe transformations from basic sine or cosine to: a)$3\\sin2(x-\\pi/3)+6$; b)$-2\\cos[\\frac12(x+\\pi/4)]-3$; c)$\\frac34\\cos2(x-30^\\circ)+10$; d)$-\\sin2(x+45^\\circ)-8$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Compress sine horizontally by1/2, stretch vertically by3, shift rightπ/3 and up6. b) Stretch cosine horizontally by2 and vertically by2, reflect in the x-axis, shift leftπ/4 and down3."
+            },
+            {
+              "title": "Step 2",
+              "body": "c) Compress cosine horizontally by1/2 and vertically by3/4, shift right30° and up10. d) Compress sine horizontally by1/2, reflect in the x-axis, shift left45° and down8. Apply scaling/reflection before translation."
+            }
+          ],
+          "answer": "Complete transformations are given for a–d above."
+        },
+        "number": 13,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "邮轮接近码头的声波 $y=2\\sin2\\theta$，离开时 $y=2\\sin(\\theta/2)$。a) 在 $0\\le\\theta\\le2\\pi$ 作图比较。b) 两者与 $y=\\sin\\theta$ 比较如何？",
+        "concept": "sinecosine",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 两者振幅2；接近时周期π，所以图上2周期；离开时周期4π，所以图上半周期。前者更频繁振动，对应更高音高。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 与基本正弦相比，两者均纵向伸长2；接近图横向压缩1/2，离开图横向伸长2；中线均0。"
+          }
+        ],
+        "answer": "见三曲线；接近周期π，离开周期4π，振幅均2。",
+        "printedPage": 284,
+        "pdfPage": 293,
+        "en": {
+          "prompt": "A cruise-ship horn has wave $y=2\\sin2\\theta$ approaching and $y=2\\sin(\\theta/2)$ departing. a) Compare graphs on $0\\le\\theta\\le2\\pi$. b) Compare each with $y=\\sin\\theta$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Both amplitudes are2. Approaching periodπ gives two displayed cycles; departing period4π gives half a cycle. The former oscillates more rapidly and represents higher pitch."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) Relative to basic sine, both stretch vertically by2. The approaching graph compresses horizontally by1/2; the departing graph stretches horizontally by2; both midlines are0."
+            }
+          ],
+          "answer": "See the three curves: approach periodπ, departure period4π, both amplitude2."
+        },
+        "number": 14,
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/5-review-14.png"
+      },
+      {
+        "prompt": "a) 在 $-2\\pi\\le\\theta\\le2\\pi$ 及 $-360^\\circ\\le\\theta\\le360^\\circ$ 画 $y=\\tan\\theta$。b) 求 i)定义域 ii)值域 iii)y截距 iv)x截距 v)渐近线。",
+        "concept": "tangent",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "正切等于正弦除余弦。i) 排除 $\\theta=\\pi/2+n\\pi$（90°+180°n）；所绘域还要与闭区间相交。ii) 值域全部实数。iii) y截距(0,0)。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "iv) 零点 $\\theta=n\\pi$（180°n），本图为 $-2\\pi,-\\pi,0,\\pi,2\\pi$（−360°,−180°,0°,180°,360°）。v) 图内渐近线 $\\pm\\pi/2,\\pm3\\pi/2$（±90°,±270°）。每支递增，不跨渐近线连线。"
+          }
+        ],
+        "answer": "各特征见步骤；角度图与弧度图为相同曲线、横刻度以180°=π换算。",
+        "printedPage": 284,
+        "pdfPage": 293,
+        "en": {
+          "prompt": "a) Graph $y=\\tan\\theta$ for $-2\\pi\\le\\theta\\le2\\pi$ and $-360^\\circ\\le\\theta\\le360^\\circ$. b) Find i) domain ii) range iii) y-intercept iv) x-intercepts v) asymptotes.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Tangent is sine divided by cosine. i) Exclude $\\theta=\\pi/2+n\\pi$ (90°+180°n), and intersect with the plotted interval. ii) Range is all real numbers. iii) y-intercept is(0,0)."
+            },
+            {
+              "title": "Step 2",
+              "body": "iv) Zeros are $\\theta=n\\pi$ (180°n); displayed zeros are $-2\\pi,-\\pi,0,\\pi,2\\pi$ (−360°,−180°,0°,180°,360°). v) Displayed asymptotes are $\\pm\\pi/2,\\pm3\\pi/2$ (±90°,±270°). Each branch increases; do not join across asymptotes."
+            }
+          ],
+          "answer": "See all characteristics above; relabel the same horizontal scale using180°=π for the degree graph."
+        },
+        "number": 15,
+        "subpartIds": [
+          "a",
+          "bi",
+          "bii",
+          "biii",
+          "biv",
+          "bv"
+        ],
+        "solutionImage": "assets/5-review-15-dual.png"
+      },
+      {
+        "prompt": "单位圆点 $P(\\sqrt3/2,1/2)$，射线OP与 $x=1$ 的切线相交于Q（见图）。a) 求Q精确坐标。b) 说明sinθ、cosθ、tanθ关系。c) θ趋90°时tanθ怎样？d) θ=90°时怎样？",
+        "concept": "tangent",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) OP斜率 $(1/2)/(\\sqrt3/2)=1/\\sqrt3$，在x=1处y=1/√3，故 $Q=(1,\\sqrt3/3)$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) $\\cos\\theta=x_P,\\sin\\theta=y_P,\\tan\\theta=\\sin\\theta/\\cos\\theta$。c) 从左趋90°时Q沿切线上升无界，tanθ趋+∞；从右趋时为−∞。d) cos90°=0，所以正切无定义，不等于∞。"
+          }
+        ],
+        "answer": "a)$(1,\\sqrt3/3)$；b–d)见步骤中的商关系、单侧极限与无定义。",
+        "printedPage": 284,
+        "pdfPage": 293,
+        "en": {
+          "prompt": "On the unit circle $P(\\sqrt3/2,1/2)$ lies on ray OP, which meets the tangent x=1 at Q (diagram shown). a) Find Q exactly. b) Relate sinθ, cosθ, tanθ. c) What happens to tanθ as θ approaches90°? d) At θ=90°?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Slope OP is $(1/2)/(\\sqrt3/2)=1/\\sqrt3$. At x=1, y=1/√3, so $Q=(1,\\sqrt3/3)$."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) $\\cos\\theta=x_P$, $\\sin\\theta=y_P$, $\\tan\\theta=\\sin\\theta/\\cos\\theta$. c) From the left Q rises without bound and tanθ tends to+∞; from the right it tends to−∞. d) cos90°=0, so tangent is undefined, not equal to infinity."
+            }
+          ],
+          "answer": "a)$(1,\\sqrt3/3)$; b–d) see the quotient relation, one-sided behaviour, and undefined value."
+        },
+        "number": 16,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/5-review-16.png"
+      },
+      {
+        "prompt": "a) cosθ与正切渐近线有何关系？b) sinθ与正切x截距有何关系？",
+        "concept": "tangent",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) $\\tan\\theta=\\sin\\theta/\\cos\\theta$，cosθ=0且sinθ=±1时出现竖直渐近线，位置 $\\pi/2+n\\pi$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "b) 当sinθ=0，cosθ=±1≠0，故正切为0；x截距为 $(n\\pi,0)$。"
+          }
+        ],
+        "answer": "a)余弦零点给渐近线；b)正弦零点给正切零点。",
+        "printedPage": 284,
+        "pdfPage": 293,
+        "en": {
+          "prompt": "a) How does cosθ relate to tangent’s asymptotes? b) How does sinθ relate to tangent’s x-intercepts?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) In $\\tan\\theta=\\sin\\theta/\\cos\\theta$, zeros of cosine have sine±1 and produce vertical asymptotes at $\\pi/2+n\\pi$."
+            },
+            {
+              "title": "Step 2",
+              "body": "b) At sine zeros, cosine is±1≠0, so tangent is0; x-intercepts are $(n\\pi,0)$."
+            }
+          ],
+          "answer": "a)Cosine zeros give asymptotes; b)sine zeros give tangent zeros."
+        },
+        "number": 17,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "用太阳仰角与树高时可借助tanθ量影长。太阳正上方时影子怎样？这与正切图有什么关系？",
+        "concept": "tangent",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "设树高H、影长s、太阳仰角θ，则 $\\tan\\theta=H/s$，所以 $s=H/\\tan\\theta$（0<θ<90°）。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "θ从左趋90°时，tanθ趋+∞而s趋0。正上方理想影长0；是tan的倒数给影长，不是tan本身趋0。"
+          }
+        ],
+        "answer": "影长趋0，正切在90°处无定义并有竖直渐近线。",
+        "printedPage": 284,
+        "pdfPage": 293,
+        "en": {
+          "prompt": "Tangent is used to find shadow lengths from a tree’s height and the Sun’s elevation. What happens with the Sun directly overhead, and how does this relate to the tangent graph?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "With height H, shadow s, and elevation θ, $\\tan\\theta=H/s$, hence $s=H/\\tan\\theta$ for0<θ<90°."
+            },
+            {
+              "title": "Step 2",
+              "body": "As θ tends to90° from below, tanθ tends to+∞ while s tends to0. The ideal shadow vanishes; it is reciprocal tangent that gives shadow length."
+            }
+          ],
+          "answer": "The shadow tends to0; tangent is undefined at90° with a vertical asymptote."
+        },
+        "number": 18
+      },
+      {
+        "prompt": "什么是竖直渐近线？如何判断三角函数是否有竖直渐近线？",
+        "concept": "tangent",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "若x趋某个有限值a时函数值至少从一侧无界，直线x=a为竖直渐近线。对于本章tan，检查分母cos为0且分子sin不为0的位置。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "正弦余弦有界、全实数定义域，故本身无竖直渐近线；正切在 $x=\\pi/2+n\\pi$ 有渐近线。仅“某处无定义”并不足以证明渐近线，还须无界。"
+          }
+        ],
+        "answer": "有限横坐标附近的无界行为给竖直渐近线；正切例为 $\\pi/2+n\\pi$。",
+        "printedPage": 284,
+        "pdfPage": 293,
+        "en": {
+          "prompt": "What is a vertical asymptote, and how can you tell when a trigonometric function has one?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "If a function grows without bound on at least one side as x approaches a finite a, x=a is a vertical asymptote. For tangent, check where denominator cosine is0 while numerator sine is nonzero."
+            },
+            {
+              "title": "Step 2",
+              "body": "Sine and cosine are bounded with real domains and have no vertical asymptotes. Tangent has them at $x=\\pi/2+n\\pi$. Being undefined alone is insufficient; unbounded behaviour is needed."
+            }
+          ],
+          "answer": "Unbounded behaviour near a finite input gives a vertical asymptote; tangent’s are $\\pi/2+n\\pi$."
+        },
+        "number": 19
+      },
+      {
+        "prompt": "图解：a)$2\\sin x-1=0$，$0\\le x\\le2\\pi$；b)$0=2\\cos(x-30^\\circ)+5$，$0^\\circ\\le x\\le360^\\circ$；c)$\\sin[\\pi(x-6)/4]=0.5$，弧度通解；d)$4\\cos(x-45^\\circ)+7=10$，角度通解。",
+        "concept": "equationsmodels",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) sinx=1/2，一周期两个交点 $\\pi/6,5\\pi/6$。b) 余弦曲线值域[3,7]，不与y=0相交，故无解。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "c) $\\pi(x-6)/4=\\pi/6+2\\pi n$ 或 $5\\pi/6+2\\pi n$，故 $x=20/3+8n$ 或 $28/3+8n$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "d) $\\cos(x-45^\\circ)=3/4$，故 $x=45^\\circ\\pm\\arccos(3/4)+360^\\circ n$。"
+          }
+        ],
+        "answer": "a)$\\pi/6,5\\pi/6$；b)无解；c)$20/3+8n,28/3+8n$；d)约$3.590^\\circ+360^\\circ n$或$86.410^\\circ+360^\\circ n$，n整数。",
+        "printedPage": 284,
+        "pdfPage": 293,
+        "en": {
+          "prompt": "Solve graphically: a)$2\\sin x-1=0$ on $0\\le x\\le2\\pi$; b)$0=2\\cos(x-30^\\circ)+5$ on $0^\\circ\\le x\\le360^\\circ$; c)$\\sin[\\pi(x-6)/4]=0.5$, general radians solution; d)$4\\cos(x-45^\\circ)+7=10$, general degrees solution.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) sinx=1/2 gives two intersections $\\pi/6,5\\pi/6$. b) The cosine expression ranges from3 to7 and never intersects y=0, so no solution."
+            },
+            {
+              "title": "Step 2",
+              "body": "c) $\\pi(x-6)/4=\\pi/6+2\\pi n$ or $5\\pi/6+2\\pi n$, hence $x=20/3+8n$ or $28/3+8n$."
+            },
+            {
+              "title": "Step 3",
+              "body": "d) $\\cos(x-45^\\circ)=3/4$, so $x=45^\\circ\\pm\\arccos(3/4)+360^\\circ n$."
+            }
+          ],
+          "answer": "a)$\\pi/6,5\\pi/6$; b)no solution; c)$20/3+8n,28/3+8n$; d)about$3.590^\\circ+360^\\circ n$ or$86.410^\\circ+360^\\circ n$, integer n."
+        },
+        "number": 20,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-review-20.png"
+      },
+      {
+        "prompt": "Victoria的Royal BC Museum建于1886年，为保护文物温度超过22°C时开空调。夏天 $T=12\\cos t+19$，T(°C)、t(h)。a)画图。b)每天空调开多久（0.1 h）？c)为何温度模型重要？",
+        "concept": "equationsmodels",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a) 按原式弧度解释，振幅12、中线19、周期2π h；在0–24 h画图，不擅自补24小时系数。b) $T>22\\Rightarrow\\cos t>1/4$，令 $\\alpha=\\arccos(1/4)$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "在一天内区间为 $[0,\\alpha)$、$(2\\pi n-\\alpha,2\\pi n+\\alpha)$ (n=1,2,3)，以及 $(8\\pi-\\alpha,24]$。总长 $\\alpha+6\\alpha+24-(8\\pi-\\alpha)=8\\alpha+24-8\\pi$。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) 温度与湿度控制有助于保护文物，也帮助规划设备运行。原式周期不是24小时；若另设24小时日周期，则需改模型而不是改变原题的计算。"
+          }
+        ],
+        "answer": "b) 9.41219 h，约9.4 h；a,c)见图和解释。",
+        "printedPage": 285,
+        "pdfPage": 294,
+        "en": {
+          "prompt": "The Royal BC Museum in Victoria, founded in1886, uses air conditioning above22°C to preserve artifacts. In summer $T=12\\cos t+19$, T(°C), t(h). a)Graph it. b)How long per day is AC on, to0.1h? c)Why is temperature modelling important?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a) Under the literal radian interpretation, amplitude12, midline19, period2π h; plot0–24h without inserting a 24-hour frequency. b) $T>22\\Rightarrow\\cos t>1/4$; let $\\alpha=\\arccos(1/4)$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Within one day use $[0,\\alpha)$, $(2\\pi n-\\alpha,2\\pi n+\\alpha)$ for n=1,2,3, and $(8\\pi-\\alpha,24]$. Total length is $8\\alpha+24-8\\pi$."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) Temperature control helps preserve artifacts and plan equipment operation. The printed function does not have a 24-hour period; a daily-cycle assumption requires a different model, not an unannounced change to this calculation."
+            }
+          ],
+          "answer": "b) 9.41219 h, about9.4 h; a,c)see plot and explanation."
+        },
+        "number": 21,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/5-review-21.png"
+      },
+      {
+        "prompt": "摩天轮乘客高 $h(t)=12\\sin[\\pi(t-30)/45]+15$，h米、t秒。a)画图。b)最高最低？c)一周时间？d)45s时高？",
+        "concept": "equationsmodels",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "a,b) 中线15、振幅12，所以最高27m、最低3m。c)$T=2\\pi/(\\pi/45)=90$s。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "d)$h(45)=12\\sin(\\pi/3)+15=15+6\\sqrt3\\approx25.392$m。"
+          }
+        ],
+        "answer": "b)27m,3m；c)90s；d)$15+6\\sqrt3$m。",
+        "printedPage": 285,
+        "pdfPage": 294,
+        "en": {
+          "prompt": "A Ferris-wheel rider follows $h(t)=12\\sin[\\pi(t-30)/45]+15$, h metres, t seconds. a)Graph it. b)Find extrema. c)Time per revolution? d)Height at45s?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "a,b) Midline15 and amplitude12 give maximum27m and minimum3m. c)$T=2\\pi/(\\pi/45)=90$s."
+            },
+            {
+              "title": "Step 2",
+              "body": "d)$h(45)=12\\sin(\\pi/3)+15=15+6\\sqrt3\\approx25.392$m."
+            }
+          ],
+          "answer": "b)27m,3m; c)90s; d)$15+6\\sqrt3$m."
+        },
+        "number": 22,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/5-review-22.png"
+      },
+      {
+        "prompt": "Lethbridge最长日6月21日日照15.7h，最短日12月21日8.3h。a)求日照L随时间的正弦模型。b)4月3日日照多少？",
+        "concept": "equationsmodels",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "用非闰年日序，6月21日为172、12月21日为355。A=(15.7−8.3)/2=3.7h，中线12h，T=365日；以最高对齐，可取 $L(t)=12+3.7\\cos[2\\pi(t-172)/365]$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "4月3日为第93日，代入 $L(93)$。由于两极值日期相隔183而半365为182.5日，此为常用近似模型，不能声称两日期都精确对齐。"
+          }
+        ],
+        "answer": "a)$L=12+3.7\\cos[2\\pi(t-172)/365]$；b)约12.774h。",
+        "printedPage": 285,
+        "pdfPage": 294,
+        "en": {
+          "prompt": "Lethbridge’s longest day is June21 with15.7h daylight and shortest is December21 with8.3h. a)Model daylight L versus time. b)Find daylight on April3.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Using non-leap-year day numbers, June21 is172 and December21 is355. A=(15.7−8.3)/2=3.7h, midline12h, T=365days; align the maximum: $L(t)=12+3.7\\cos[2\\pi(t-172)/365]$."
+            },
+            {
+              "title": "Step 2",
+              "body": "April3 is day93; substitute $L(93)$. Since the extreme dates differ by183 days while half365 is182.5, this conventional model is approximate rather than an exact alignment of both dates."
+            }
+          ],
+          "answer": "a)$L=12+3.7\\cos[2\\pi(t-172)/365]$; b)about12.774h."
+        },
+        "number": 23,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "太阳黑子每年数量周期地在10到110间；1750–1948有18整周期，1750为最大。a)预计2000年数量？b)2000年后首次约35个的年份？c)2000年后首次最大年份？",
+        "concept": "equationsmodels",
+        "steps": [
+          {
+            "title": "第 1 步",
+            "body": "$T=(1948-1750)/18=11$年，A=50、中线60；模型 $N(y)=60+50\\cos[2\\pi(y-1750)/11]$。"
+          },
+          {
+            "title": "第 2 步",
+            "body": "a)$N(2000)=52.884258$，约53。b)N=35给cosu=−1/2，故 $y=1750+11(n+1/3)$ 或 $1750+11(n+2/3)$；2000后最早为2006.667，约2007年。"
+          },
+          {
+            "title": "第 3 步",
+            "body": "c) 最大在 $y=1750+11n$；大于2000的最小整数n为23，年份2003。"
+          }
+        ],
+        "answer": "a)约53；b)约2006.667（约2007）；c)2003。",
+        "printedPage": 285,
+        "pdfPage": 294,
+        "en": {
+          "prompt": "Sunspots vary periodically between10 and110 per year. There are18 complete cycles from1750 to1948, and1750 is a maximum. a)Predict the number in2000. b)Find the first year after2000 with about35. c)Find the first maximum year after2000.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "$T=(1948-1750)/18=11$years, A=50, midline60: $N(y)=60+50\\cos[2\\pi(y-1750)/11]$."
+            },
+            {
+              "title": "Step 2",
+              "body": "a)$N(2000)=52.884258$, about53. b)N=35 gives cosu=−1/2, so $y=1750+11(n+1/3)$ or $1750+11(n+2/3)$; the earliest after2000 is2006.667, about2007."
+            },
+            {
+              "title": "Step 3",
+              "body": "c) Maxima occur at $y=1750+11n$; the smallest integer n giving a year after2000 is23, hence2003."
+            }
+          ],
+          "answer": "a)about53; b)about2006.667 (about2007); c)2003."
+        },
+        "number": 24,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "expectedSubparts": {
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-10": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-14": [
+        "a",
+        "b"
+      ],
+      "exercise-15": [
+        "a",
+        "bi",
+        "bii",
+        "biii",
+        "biv",
+        "bv"
+      ],
+      "exercise-16": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-17": [
+        "a",
+        "b"
+      ],
+      "exercise-20": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-21": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-22": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-23": [
+        "a",
+        "b"
+      ],
+      "exercise-24": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Independent source and mathematical review passed; exact final hashes and unchanged reviewed payload are recorded in the chapter audit."
+  }
+}

@@ -1,0 +1,660 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "4-test",
+    "section": "4 Practice Test",
+    "title": "第 4 章练习测试",
+    "en": {
+      "title": "Chapter 4 Practice Test"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        218,
+        219
+      ],
+      "pdfPages": [
+        227,
+        228
+      ]
+    },
+    "concepts": [
+      {
+        "id": "angles",
+        "title": "角的度量与弧长",
+        "summary": "$180^\\circ=\\pi$ 弧度；$s=r\\theta$ 使用弧度。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "换算单位，约化整周，并保留实际半径与长度单位。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Angle measure and arc length",
+          "summary": "$180^\\circ=\\pi$ radians; $s=r\\theta$ requires radians.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Convert units, reduce rotations, and retain the physical radius and length units."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "circle",
+        "title": "单位圆与几何",
+        "summary": "$x^2+y^2=1$，$P(\\theta)=(\\cos\\theta,\\sin\\theta)$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "用符号与对称，逆时针四分之一周把 (x,y) 变为 (-y,x)。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Unit circle and geometry",
+          "summary": "$x^2+y^2=1$ and $P(\\theta)=(\\cos\\theta,\\sin\\theta)$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Use signs and symmetry; CCW quarter turn maps (x,y) to (-y,x)."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "ratios",
+        "title": "三角比",
+        "summary": "由参照角及象限求六个三角比。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "求正弦、余弦、正切，分母非零时取倒数。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Trigonometric ratios",
+          "summary": "Use the reference angle and quadrant to obtain all six ratios.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Compute sine, cosine and tangent; use reciprocals only when denominators are nonzero."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "equations",
+        "title": "方程与完整解集",
+        "summary": "代数比值根须转为全部允许角。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "分解或隔离，检查值域、周期、端点与原方程。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Equations and complete solution sets",
+          "summary": "Algebraic ratio roots must be converted to all permitted angles.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Factor or isolate; check the range, periods, endpoints and original equation."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "选择最佳答案：若 $\\cos\\theta=\\sqrt3/2$，θ 可能为哪项？A $2\\pi/3$；B $5\\pi/6$；C $5\\pi/3$；D $11\\pi/6$。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "检查单位圆 x 坐标：A 为 -1/2，B 为 $-\\sqrt3/2$，C 为 1/2，D 为 $\\sqrt3/2$，仅 D 符合。"
+          }
+        ],
+        "answer": "D, $11\\pi/6$.",
+        "printedPage": 218,
+        "pdfPage": 227,
+        "en": {
+          "prompt": "Choose the best answer. If $\\cos\\theta=\\sqrt3/2$, which could be θ? A $2\\pi/3$; B $5\\pi/6$; C $5\\pi/3$; D $11\\pi/6$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Check the unit-circle x-coordinates: A = -1/2, B = $-\\sqrt3/2$, C = 1/2, D = $\\sqrt3/2$. Only D matches."
+            }
+          ],
+          "answer": "D, $11\\pi/6$."
+        },
+        "number": 1
+      },
+      {
+        "prompt": "选择 $\\sin\\theta=-\\sqrt3/2$，$0^\\circ\\le\\theta<360^\\circ$ 的精确解：A 60°、120°；B -60°、-120°；C 240°、300°；D -240°、-300°。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "参照角 60°，正弦在第三、四象限为负，得 $180^\\circ+60^\\circ=240^\\circ$ 与 $360^\\circ-60^\\circ=300^\\circ$；负数选项不在范围内。"
+          }
+        ],
+        "answer": "C, $240^\\circ,300^\\circ$.",
+        "printedPage": 218,
+        "pdfPage": 227,
+        "en": {
+          "prompt": "Choose exact solutions of $\\sin\\theta=-\\sqrt3/2$, $0^\\circ\\le\\theta<360^\\circ$. A 60°,120°; B -60°,-120°; C 240°,300°; D -240°,-300°.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Reference angle 60°; sine negative in III/IV gives $180^\\circ+60^\\circ=240^\\circ$, $360^\\circ-60^\\circ=300^\\circ$. Negative choices do not satisfy the domain."
+            }
+          ],
+          "answer": "C, $240^\\circ,300^\\circ$."
+        },
+        "number": 2
+      },
+      {
+        "prompt": "若 $\\cot\\theta=1.4$，哪个是 θ 的近似弧度值？A 0.620；B 0.951；C 1.052；D 0.018。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "正切为 1/1.4 = 5/7；弧度模式 $\\theta=\\arctan(5/7)=0.620249\\ldots$，取 0.620。"
+          }
+        ],
+        "answer": "A, 0.620 rad.",
+        "printedPage": 218,
+        "pdfPage": 227,
+        "en": {
+          "prompt": "If $\\cot\\theta=1.4$, which is one approximate measure in radians? A 0.620; B 0.951; C 1.052; D 0.018.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Tangent = 1/1.4 = 5/7. In radian mode $\\theta=\\arctan(5/7)=0.620249\\ldots$, which rounds to 0.620."
+            }
+          ],
+          "answer": "A, 0.620 rad."
+        },
+        "number": 3
+      },
+      {
+        "prompt": "单位圆点 $P=(-3/4,\\sqrt7/4)$ 逆时针转 90° 后 Q 为何？A $(\\sqrt7/4,-3/4)$；B $(-\\sqrt7/4,-3/4)$；C $(3/4,\\sqrt7/4)$；D $(-3/4,-\\sqrt7/4)$。",
+        "concept": "circle",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "逆时针 90° 将 $(x,y)\\to(-y,x)$，代入 P 得第三象限 $Q=(-\\sqrt7/4,-3/4)$，符合原图。"
+          }
+        ],
+        "answer": "B, $(-\\sqrt7/4,-3/4)$.",
+        "printedPage": 218,
+        "pdfPage": 227,
+        "en": {
+          "prompt": "$P=(-3/4,\\sqrt7/4)$ is on the unit circle. What is Q after a 90° counterclockwise rotation? A $(\\sqrt7/4,-3/4)$; B $(-\\sqrt7/4,-3/4)$; C $(3/4,\\sqrt7/4)$; D $(-3/4,-\\sqrt7/4)$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "A 90° CCW rotation sends $(x,y)\\to(-y,x)$. Substituting P gives $Q=(-\\sqrt7/4,-3/4)$ in III, matching the original diagram."
+            }
+          ],
+          "answer": "B, $(-\\sqrt7/4,-3/4)$."
+        },
+        "number": 4,
+        "sourceImage": "assets/4-test-q4-unit.png"
+      },
+      {
+        "prompt": "$\\sin\\theta(\\sin\\theta+1)=0$ 在 $-180^\\circ<\\theta<360^\\circ$ 内有几个解？A 3；B 4；C 5；D 6。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "正弦为 0 得 0°、180°，排除 -180° 与 360°；正弦为 -1 得 -90°、270°，共四个不同解，选 B。"
+          }
+        ],
+        "answer": "B，4 个解。",
+        "printedPage": 218,
+        "pdfPage": 227,
+        "en": {
+          "prompt": "How many solutions does $\\sin\\theta(\\sin\\theta+1)=0$ have for $-180^\\circ<\\theta<360^\\circ$? A 3; B 4; C 5; D 6.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Sine = 0 gives 0°,180°; -180° and 360° are excluded. Sine = -1 gives -90°,270°. Four distinct solutions, so B."
+            }
+          ],
+          "answer": "B, 4 solutions."
+        },
+        "number": 5
+      },
+      {
+        "prompt": "车辆轮胎直径 75 厘米，边缘标一点。(a) 时速 110 千米/时，求该点每秒转角的度数与弧度，保留一位小数；(b) 直径改为 66 厘米时求弧度值，讨论直径是否影响轮胎寿命。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "假定无滑动滚动，一秒路程 $s=110000/3600=275/9$ 米，半径 0.375 米。故 $\\theta=s/r=2200/27=81.481481\\ldots$ 弧度，度数为 $\\theta(180/\\pi)=4668.544997\\ldots^\\circ$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 半径 0.33 米，$\\theta=(275/9)/0.33=2500/27=92.592593\\ldots$ 弧度。小轮胎同路程转数与胎面弯曲次数更多，可能影响磨损；材料、载荷及使用也影响寿命，不能仅由直径定寿命。"
+          }
+        ],
+        "answer": "(a) 每秒 $4668.5^\\circ$、81.5 弧度；(b) 每秒 92.6 弧度；小轮胎转数更多。",
+        "printedPage": 218,
+        "pdfPage": 227,
+        "en": {
+          "prompt": "A vehicle has tires 75 cm in diameter, with a point marked on the edge. (a) If it travels at 110 km/h, find the angle through which the point turns each second, in degrees and radians to the nearest tenth. (b) Find the radian answer for 66 cm diameter; does diameter affect tire life? Explain.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Assuming rolling without slipping, the one-second distance is $s=110000/3600=275/9$ m. Radius = 0.375 m. Thus $\\theta=s/r=2200/27=81.481481\\ldots$ rad, or $\\theta(180/\\pi)=4668.544997\\ldots^\\circ$."
+            },
+            {
+              "title": "Work",
+              "body": "(b) Radius = 0.33 m: $\\theta=(275/9)/0.33=2500/27=92.592593\\ldots$ rad. A smaller tire makes more rotations per distance and more flexing cycles per tread element, which may affect wear; material, load and use also affect life, so diameter alone does not determine it."
+            }
+          ],
+          "answer": "(a) $4668.5^\\circ$, 81.5 rad per second; (b) 92.6 rad per second; smaller tires rotate more."
+        },
+        "number": 6,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "(a) 写出原点为圆心、半径 1 的圆方程；(b) 求所有缺失坐标并作图：(i) $(2\\sqrt3/5,y)$；(ii) $(x,\\sqrt7/4)$，x < 0；(c) 已知终边交单位圆点的 y 坐标，如何用单位圆方程求 $\\cos\\theta$？",
+        "concept": "circle",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 勾股定理给出 $x^2+y^2=1$。(b-i) $y^2=1-12/25=13/25$，故 $y=\\pm\\sqrt{13}/5$，在第一、四象限。(b-ii) $x^2=1-7/16=9/16$，x < 0 选择 $x=-3/4$，在第二象限。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $\\cos\\theta=x=\\pm\\sqrt{1-y^2}$；需象限或 x 符号选正负，除非 |y| = 1 时 x = 0，并须检查 $|y|\\le1$。"
+          }
+        ],
+        "answer": "(a) $x^2+y^2=1$; (b-i) $y=\\pm\\sqrt{13}/5$; (b-ii) $x=-3/4$; (c) $\\cos\\theta=\\pm\\sqrt{1-y^2}$ with the quadrant sign.",
+        "printedPage": 218,
+        "pdfPage": 227,
+        "en": {
+          "prompt": "(a) Give the equation for a circle centred at the origin with radius 1. (b) Find every missing coordinate and draw diagrams: (i) $(2\\sqrt3/5,y)$; (ii) $(x,\\sqrt7/4)$, x < 0. (c) Explain how to use the unit-circle equation to find $\\cos\\theta$ from the y-coordinate of a terminal-arm intersection.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Pythagoras gives $x^2+y^2=1$. (b-i) $y^2=1-12/25=13/25$, so $y=\\pm\\sqrt{13}/5$, in I and IV. (b-ii) $x^2=1-7/16=9/16$; x < 0 selects $x=-3/4$, in II."
+            },
+            {
+              "title": "Work",
+              "body": "(c) $\\cos\\theta=x=\\pm\\sqrt{1-y^2}$. A quadrant or sign of x is needed to choose the sign, unless |y| = 1, when x = 0. Check that $|y|\\le1$."
+            }
+          ],
+          "answer": "(a) $x^2+y^2=1$; (b-i) $y=\\pm\\sqrt{13}/5$; (b-ii) $x=-3/4$; (c) $\\cos\\theta=\\pm\\sqrt{1-y^2}$ with the quadrant sign."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "bi",
+          "bii",
+          "c"
+        ],
+        "solutionImage": "assets/4-test-solution-7.png"
+      },
+      {
+        "prompt": "某角余弦为负，已找到第三象限的一个解。(a) 如何找 0 与 2π 间另一个解？(b) 如何写通解？",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "设第三象限解为 β，$\\pi<\\beta<3\\pi/2$。关于 x 轴反射，第二象限角为 $2\\pi-\\beta$，两者 x 坐标相同。各基本角加 $2\\pi n$ 即得全部实数解。"
+          }
+        ],
+        "answer": "(a) $2\\pi-\\beta$; (b) $\\theta=\\beta+2\\pi n$ or $2\\pi-\\beta+2\\pi n$, $n\\in\\mathbb Z$.",
+        "printedPage": 219,
+        "pdfPage": 228,
+        "en": {
+          "prompt": "Cosine of an angle is negative and one solution is in III. (a) Explain how to find the other solution between 0 and 2π. (b) Describe the general solution.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Let the III solution be β, with $\\pi<\\beta<3\\pi/2$. Reflect across the x-axis: the II angle is $2\\pi-\\beta$. Both have the same x-coordinate. Add $2\\pi n$ to each base angle to obtain all real solutions."
+            }
+          ],
+          "answer": "(a) $2\\pi-\\beta$; (b) $\\theta=\\beta+2\\pi n$ or $2\\pi-\\beta+2\\pi n$, $n\\in\\mathbb Z$."
+        },
+        "number": 8,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "解 $2\\cos\\theta+\\sqrt2=0$，$\\theta\\in\\mathbb R$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "$\\cos\\theta=-\\sqrt2/2$，参照角 π/4，第二、三象限得 $3\\pi/4,5\\pi/4$，加整周 $2\\pi n$；代入为 $2(-\\sqrt2/2)+\\sqrt2=0$。"
+          }
+        ],
+        "answer": "$\\theta=3\\pi/4+2\\pi n$ or $5\\pi/4+2\\pi n$, $n\\in\\mathbb Z$.",
+        "printedPage": 219,
+        "pdfPage": 228,
+        "en": {
+          "prompt": "Solve $2\\cos\\theta+\\sqrt2=0$, $\\theta\\in\\mathbb R$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "$\\cos\\theta=-\\sqrt2/2$. Reference angle π/4 in II/III gives $3\\pi/4,5\\pi/4$. Add full turns $2\\pi n$. Substitution gives $2(-\\sqrt2/2)+\\sqrt2=0$."
+            }
+          ],
+          "answer": "$\\theta=3\\pi/4+2\\pi n$ or $5\\pi/4+2\\pi n$, $n\\in\\mathbb Z$."
+        },
+        "number": 9
+      },
+      {
+        "prompt": "解释 3° 与 3 弧度的区别。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "$3^\\circ=3\\pi/180=\\pi/60\\approx0.05236$ 弧度，是第一象限小角。3 弧度为 $(540/\\pi)^\\circ\\approx171.9^\\circ$，是接近半周的第二象限角；数值相同不表示单位相同。"
+          }
+        ],
+        "answer": "$3^\\circ=\\pi/60$ rad; 3 rad ≈ 171.9°.",
+        "printedPage": 219,
+        "pdfPage": 228,
+        "en": {
+          "prompt": "Explain the difference between an angle of 3° and one of 3 radians.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "$3^\\circ=3\\pi/180=\\pi/60\\approx0.05236$ rad, a small I angle. Three radians equals $(540/\\pi)^\\circ\\approx171.9^\\circ$, a II angle close to a half turn. The numeric measure alone does not specify the unit."
+            }
+          ],
+          "answer": "$3^\\circ=\\pi/60$ rad; 3 rad ≈ 171.9°."
+        },
+        "number": 10
+      },
+      {
+        "prompt": "标准位置角为 -500°。(a) 求象限；(b) 求参照角；(c) 求六个三角比，保留一位小数。",
+        "concept": "ratios",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a,b) $-500^\\circ+720^\\circ=220^\\circ$，第三象限；参照角 $220^\\circ-180^\\circ=40^\\circ$。正弦余弦负，正切正。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 正弦 $-\\sin40^\\circ\\approx-0.642788$，余弦 $-\\cos40^\\circ\\approx-0.766044$，正切 $\\tan40^\\circ\\approx0.839100$；在取近似前取倒数得余割 -1.555724、正割 -1.305407、余切 1.191754。"
+          }
+        ],
+        "answer": "(a) III; (b) 40°; (c) sin -0.6, cos -0.8, tan 0.8, csc -1.6, sec -1.3, cot 1.2.",
+        "printedPage": 219,
+        "pdfPage": 228,
+        "en": {
+          "prompt": "An angle in standard position is -500°. (a) Identify its quadrant. (b) Find the reference angle. (c) Find all six ratios to one decimal place.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a,b) $-500^\\circ+720^\\circ=220^\\circ$, in III; reference = $220^\\circ-180^\\circ=40^\\circ$. Thus sine and cosine are negative; tangent is positive."
+            },
+            {
+              "title": "Work",
+              "body": "(c) Sine = $-\\sin40^\\circ\\approx-0.642788$, cosine = $-\\cos40^\\circ\\approx-0.766044$, tangent = $\\tan40^\\circ\\approx0.839100$. Reciprocals before rounding give csc ≈ -1.555724, sec ≈ -1.305407, cot ≈ 1.191754."
+            }
+          ],
+          "answer": "(a) III; (b) 40°; (c) sin -0.6, cos -0.8, tan 0.8, csc -1.6, sec -1.3, cot 1.2."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "各给一个正、负同终边角，再写全部同终边角通式：(a) $13\\pi/4$；(b) -575°。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 减 $2\\pi$ 得正角 $5\\pi/4$，再减 $2\\pi$ 得负角 $-3\\pi/4$；通式 $13\\pi/4+2\\pi n$。(b) 加 720° 得 145°，加 360° 得 -215°；通式 $-575^\\circ+360^\\circ n$，n 为整数。"
+          }
+        ],
+        "answer": "(a) $5\\pi/4,-3\\pi/4$; $13\\pi/4+2\\pi n$. (b) 145°,-215°; $-575^\\circ+360^\\circ n$, $n\\in\\mathbb Z$.",
+        "printedPage": 219,
+        "pdfPage": 228,
+        "en": {
+          "prompt": "Give one positive and one negative coterminal angle, then a general expression for all coterminal angles: (a) $13\\pi/4$; (b) -575°.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Subtract $2\\pi$ to get $5\\pi/4>0$; subtract another $2\\pi$ to get $-3\\pi/4<0$. All: $13\\pi/4+2\\pi n$. (b) Add 720° to get 145°; add 360° to get -215°. All: $-575^\\circ+360^\\circ n$, n integer."
+            }
+          ],
+          "answer": "(a) $5\\pi/4,-3\\pi/4$; $13\\pi/4+2\\pi n$. (b) 145°,-215°; $-575^\\circ+360^\\circ n$, $n\\in\\mathbb Z$."
+        },
+        "number": 12,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "图示 A 至 E 道路的弯曲段为圆弧。求总长，保留十分之一千米。AB 半径 1.3 千米、圆心角 1.48 弧度；BC = 1.9 千米；CD 半径 1 千米、圆心角 79°；DE = 2.5 千米。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "$AB=r\\theta=1.3(1.48)=1.924$ 千米。$79^\\circ=79\\pi/180$ 弧度，故 $CD=1(79\\pi/180)=1.378810\\ldots$ 千米。"
+          },
+          {
+            "title": "推导",
+            "body": "总长 $1.924+1.9+79\\pi/180+2.5=7.702810\\ldots\\approx7.7$ 千米。"
+          }
+        ],
+        "answer": "7.7 千米。",
+        "printedPage": 219,
+        "pdfPage": 228,
+        "en": {
+          "prompt": "The road from A to E is shown; curves are circular arcs. Determine its length to the nearest tenth of a kilometre. AB has radius 1.3 km and central angle 1.48 rad; BC = 1.9 km; CD has radius 1 km and central angle 79°; DE = 2.5 km.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "$AB=r\\theta=1.3(1.48)=1.924$ km. Convert $79^\\circ=79\\pi/180$ rad, so $CD=1(79\\pi/180)=1.378810\\ldots$ km."
+            },
+            {
+              "title": "Work",
+              "body": "Total = $1.924+1.9+79\\pi/180+2.5=7.702810\\ldots\\approx7.7$ km."
+            }
+          ],
+          "answer": "7.7 km."
+        },
+        "number": 13,
+        "sourceImage": "assets/4-test-q13-road.png"
+      },
+      {
+        "prompt": "画任意三角形 ABC，A 为原点，AB 在 +x 轴上，C 在第一象限。证明面积为 $\\frac12bc\\sin A$ 或 $\\frac12ac\\sin B$。",
+        "concept": "circle",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "按通常记号 a = BC、b = CA、c = AB。从 C 向 AB 所在直线作垂线，高为 h；由 CA 得 $h=b\\sin A$，故面积 $\\frac12ch=\\frac12bc\\sin A$。"
+          },
+          {
+            "title": "推导",
+            "body": "由 CB 得 $h=a\\sin B$。若 B 为钝角，直角三角形锐角为 180°−B，其正弦仍为 sin B，故两种情形面积均为 $\\frac12ch=\\frac12ac\\sin B$。"
+          }
+        ],
+        "answer": "$A_{\\triangle}=\\frac12bc\\sin A=\\frac12ac\\sin B$.",
+        "printedPage": 219,
+        "pdfPage": 228,
+        "en": {
+          "prompt": "Draw any triangle ABC with A at the origin, AB along +x and C in I. Show its area is $\\frac12bc\\sin A$ or $\\frac12ac\\sin B$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Use conventional side labels a = BC, b = CA, c = AB. Drop the perpendicular from C to line AB with height h. From CA, $h=b\\sin A$, so area = $\\frac12ch=\\frac12bc\\sin A$."
+            },
+            {
+              "title": "Work",
+              "body": "From CB, $h=a\\sin B$. If B is obtuse, the right-triangle acute angle is 180°−B and its sine still equals sin B. Thus area = $\\frac12ch=\\frac12ac\\sin B$ in either case."
+            }
+          ],
+          "answer": "$A_{\\triangle}=\\frac12bc\\sin A=\\frac12ac\\sin B$."
+        },
+        "number": 14,
+        "solutionImage": "assets/4-test-solution-14.png"
+      },
+      {
+        "prompt": "尽量给精确解，否则保留百分之一：(a) $3\\tan^2\\theta-\\tan\\theta-4=0$，$-\\pi<\\theta<2\\pi$；(b) $\\sin^2\\theta+\\sin\\theta-1=0$，$0\\le\\theta<2\\pi$；(c) $\\tan^2\\theta=4\\tan\\theta$，$\\theta\\in[0,2\\pi]$。",
+        "concept": "equations",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) 分解 $(3\\tan\\theta-4)(\\tan\\theta+1)=0$。正切 4/3 时令 $\\alpha=\\arctan(4/3)=0.927295\\ldots$，范围内为 $\\alpha-\\pi,\\alpha,\\alpha+\\pi\\approx-2.21,0.93,4.07$。正切 -1 时得精确 $-\\pi/4,3\\pi/4,7\\pi/4$。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) 令 u 为正弦，$u=(-1\\pm\\sqrt5)/2$；排除小于 -1 的值，令 $v=(\\sqrt5-1)/2$，得 $\\theta=\\arcsin v,\\pi-\\arcsin v\\approx0.67,2.48$。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) 分解 $\\tan\\theta(\\tan\\theta-4)=0$。正切 0 得 $0,\\pi,2\\pi$，含两端点；正切 4 得 $\\arctan4,\\pi+\\arctan4\\approx1.33,4.47$。未除以正切，零解全部保留。"
+          }
+        ],
+        "answer": "(a) $-\\pi/4,3\\pi/4,7\\pi/4$, and -2.21, 0.93, 4.07; (b) 0.67, 2.48; (c) $0,\\pi,2\\pi$, and 1.33, 4.47 (radians).",
+        "printedPage": 219,
+        "pdfPage": 228,
+        "en": {
+          "prompt": "Solve exactly where possible, otherwise to the nearest hundredth. (a) $3\\tan^2\\theta-\\tan\\theta-4=0$, $-\\pi<\\theta<2\\pi$; (b) $\\sin^2\\theta+\\sin\\theta-1=0$, $0\\le\\theta<2\\pi$; (c) $\\tan^2\\theta=4\\tan\\theta$, $\\theta\\in[0,2\\pi]$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) Factor $(3\\tan\\theta-4)(\\tan\\theta+1)=0$. For tan = 4/3 let $\\alpha=\\arctan(4/3)=0.927295\\ldots$; the domain gives $\\alpha-\\pi,\\alpha,\\alpha+\\pi\\approx-2.21,0.93,4.07$. Tan = -1 gives exact $-\\pi/4,3\\pi/4,7\\pi/4$."
+            },
+            {
+              "title": "Work",
+              "body": "(b) With u = sine, $u=(-1\\pm\\sqrt5)/2$. Reject the value below -1; let $v=(\\sqrt5-1)/2$. Then $\\theta=\\arcsin v,\\pi-\\arcsin v\\approx0.67,2.48$."
+            },
+            {
+              "title": "Work",
+              "body": "(c) Factor $\\tan\\theta(\\tan\\theta-4)=0$. Tan = 0 gives $0,\\pi,2\\pi$, including both endpoints. Tan = 4 gives $\\arctan4,\\pi+\\arctan4\\approx1.33,4.47$. No division by tangent is used, so zeros are retained."
+            }
+          ],
+          "answer": "(a) $-\\pi/4,3\\pi/4,7\\pi/4$, and -2.21, 0.93, 4.07; (b) 0.67, 2.48; (c) $0,\\pi,2\\pi$, and 1.33, 4.47 (radians)."
+        },
+        "number": 15,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "Jack 骑在 West Edmonton Mall 旋转木马上，距中心 8 米。旋转 210° 后停下让哭泣小孩下马。Jack 走过多长弧线？给精确值及保留百分之一米的近似值。",
+        "concept": "angles",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "$210^\\circ=210\\pi/180=7\\pi/6$ 弧度，弧长 $s=r\\theta=8(7\\pi/6)=28\\pi/3$ 米；数值 $29.321531\\ldots\\approx29.32$ 米。"
+          }
+        ],
+        "answer": "$28\\pi/3$ 米，约 29.32 米。",
+        "printedPage": 219,
+        "pdfPage": 228,
+        "en": {
+          "prompt": "Jack rides a carousel horse 8 m from the centre at West Edmonton Mall. It turns 210° before stopping to let a crying child off. How far did Jack travel? Give exact and approximate answers to the nearest hundredth of a metre.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "Convert $210^\\circ=210\\pi/180=7\\pi/6$ rad. Arc length $s=r\\theta=8(7\\pi/6)=28\\pi/3$ m. Numerically this is $29.321531\\ldots\\approx29.32$ m."
+            }
+          ],
+          "answer": "$28\\pi/3$ m ≈ 29.32 m."
+        },
+        "number": 16
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "expectedSubparts": {
+      "exercise-6": [
+        "a",
+        "b"
+      ],
+      "exercise-7": [
+        "a",
+        "bi",
+        "bii",
+        "c"
+      ],
+      "exercise-8": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ],
+      "exercise-15": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original source pages, all bilingual conditions/subparts, solutions and referenced figures independently reviewed. Exact calculations and interval checks are saved in the chapter audit package. Open research/construction tasks retain their stated scope.",
+    "independentReview": "audit/4-test-independent-review.json",
+    "reviewedDataSha256": "de78d6969c3c1b5e23e4b7129267d9fafbfb909226acc22ef5d3a37f5373bdf2",
+    "reviewedPayloadSha256": "6eb78a8c1ba693fe476792e3d6d0b5d33c0c21b78bf61434dafc869eaa9410c2"
+  }
+}

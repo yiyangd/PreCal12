@@ -8,20 +8,340 @@
   },
   "sections": [
     {
+      "slug": "3-overview",
+      "section": "3 overview",
+      "title": "第三章导读与术语",
+      "en": {
+        "title": "Chapter 3 Opening and Key Terms",
+        "chapter": "Chapter 3 · Polynomial Functions"
+      },
+      "chapter": "第三章 · 多项式函数",
+      "counts": {
+        "concepts": 4,
+        "examples": 0,
+        "practice": 1,
+        "exercises": 0
+      }
+    },
+    {
+      "slug": "3-1",
+      "section": "3.1",
+      "title": "多项式函数的特征",
+      "en": {
+        "title": "Characteristics of Polynomial Functions",
+        "chapter": "Chapter 3 · Polynomial Functions"
+      },
+      "chapter": "第三章 · 多项式函数",
+      "counts": {
+        "concepts": 7,
+        "examples": 3,
+        "practice": 14,
+        "exercises": 17
+      }
+    },
+    {
       "slug": "3-2",
       "section": "3.2",
       "title": "余式定理",
       "en": {
         "title": "The Remainder Theorem",
-        "chapter": "Unit 1 · Chapter 3 Polynomial Functions"
+        "chapter": "Chapter 3 · Polynomial Functions"
       },
+      "chapter": "第三章 · 多项式函数",
       "counts": {
         "concepts": 7,
         "examples": 4,
         "practice": 12,
         "exercises": 20
+      }
+    },
+    {
+      "slug": "3-3",
+      "section": "3.3",
+      "title": "因式定理",
+      "en": {
+        "title": "The Factor Theorem",
+        "chapter": "Chapter 3 · Polynomial Functions"
       },
-      "chapter": "Unit 1 · 第 3 章 多项式函数"
+      "chapter": "第三章 · 多项式函数",
+      "counts": {
+        "concepts": 6,
+        "examples": 6,
+        "practice": 10,
+        "exercises": 19
+      }
+    },
+    {
+      "slug": "3-4",
+      "section": "3.4",
+      "title": "多项式函数的方程与图像",
+      "en": {
+        "title": "Equations and Graphs of Polynomial Functions",
+        "chapter": "Chapter 3 · Polynomial Functions"
+      },
+      "chapter": "第三章 · 多项式函数",
+      "counts": {
+        "concepts": 5,
+        "examples": 4,
+        "practice": 13,
+        "exercises": 27
+      }
+    },
+    {
+      "slug": "3-review",
+      "section": "3 review",
+      "title": "第 3 章复习",
+      "en": {
+        "title": "Chapter 3 Review",
+        "chapter": "Chapter 3 · Polynomial Functions"
+      },
+      "chapter": "第三章 · 多项式函数",
+      "counts": {
+        "concepts": 5,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 15
+      }
+    },
+    {
+      "slug": "3-test",
+      "section": "3 test",
+      "title": "第 3 章练习测试",
+      "en": {
+        "title": "Chapter 3 Practice Test",
+        "chapter": "Chapter 3 · Polynomial Functions"
+      },
+      "chapter": "第三章 · 多项式函数",
+      "counts": {
+        "concepts": 5,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 10
+      }
+    },
+    {
+      "slug": "4-overview",
+      "section": "4 Overview",
+      "title": "三角学与单位圆——章开篇",
+      "en": {
+        "title": "Trigonometry and the Unit Circle — Chapter Opening",
+        "chapter": "Trigonometry and the Unit Circle"
+      },
+      "chapter": "三角学与单位圆",
+      "counts": {
+        "concepts": 3,
+        "examples": 0,
+        "practice": 1,
+        "exercises": 0
+      }
+    },
+    {
+      "slug": "4-1",
+      "section": "4.1",
+      "title": "角与角的度量",
+      "en": {
+        "title": "Angles and Angle Measure",
+        "chapter": "Trigonometry and the Unit Circle"
+      },
+      "chapter": "三角学与单位圆",
+      "counts": {
+        "concepts": 7,
+        "examples": 4,
+        "practice": 17,
+        "exercises": 32
+      }
+    },
+    {
+      "slug": "4-2",
+      "section": "4.2",
+      "title": "单位圆",
+      "en": {
+        "title": "The Unit Circle",
+        "chapter": "Trigonometry and the Unit Circle"
+      },
+      "chapter": "三角学与单位圆",
+      "counts": {
+        "concepts": 6,
+        "examples": 3,
+        "practice": 18,
+        "exercises": 24
+      }
+    },
+    {
+      "slug": "4-3",
+      "section": "4.3",
+      "title": "三角比",
+      "en": {
+        "title": "Trigonometric Ratios",
+        "chapter": "Trigonometry and the Unit Circle"
+      },
+      "chapter": "三角学与单位圆",
+      "counts": {
+        "concepts": 7,
+        "examples": 5,
+        "practice": 23,
+        "exercises": 27
+      }
+    },
+    {
+      "slug": "4-4",
+      "section": "4.4",
+      "title": "三角方程初步",
+      "en": {
+        "title": "Introduction to Trigonometric Equations",
+        "chapter": "Trigonometry and the Unit Circle"
+      },
+      "chapter": "三角学与单位圆",
+      "counts": {
+        "concepts": 5,
+        "examples": 3,
+        "practice": 14,
+        "exercises": 27
+      }
+    },
+    {
+      "slug": "4-review",
+      "section": "4 Review",
+      "title": "第 4 章复习",
+      "en": {
+        "title": "Chapter 4 Review",
+        "chapter": "Trigonometry and the Unit Circle"
+      },
+      "chapter": "三角学与单位圆",
+      "counts": {
+        "concepts": 4,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 23
+      }
+    },
+    {
+      "slug": "4-test",
+      "section": "4 Practice Test",
+      "title": "第 4 章练习测试",
+      "en": {
+        "title": "Chapter 4 Practice Test",
+        "chapter": "Trigonometry and the Unit Circle"
+      },
+      "chapter": "三角学与单位圆",
+      "counts": {
+        "concepts": 4,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 16
+      }
+    },
+    {
+      "slug": "5-overview",
+      "section": "5 Overview",
+      "title": "三角函数与图像：章开篇",
+      "en": {
+        "title": "Trigonometric Functions and Graphs: Chapter Opening",
+        "chapter": "Chapter 5: Trigonometric Functions and Graphs"
+      },
+      "chapter": "第5章：三角函数与图像",
+      "counts": {
+        "concepts": 6,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 0
+      }
+    },
+    {
+      "slug": "5-1",
+      "section": "5.1",
+      "title": "正弦与余弦函数的图像",
+      "en": {
+        "title": "Graphing Sine and Cosine Functions",
+        "chapter": "Chapter 5: Trigonometric Functions and Graphs"
+      },
+      "chapter": "第5章：三角函数与图像",
+      "counts": {
+        "concepts": 6,
+        "examples": 4,
+        "practice": 11,
+        "exercises": 29
+      }
+    },
+    {
+      "slug": "5-2",
+      "section": "5.2",
+      "title": "正弦型函数的变换",
+      "en": {
+        "title": "Transformations of Sinusoidal Functions",
+        "chapter": "Chapter 5: Trigonometric Functions and Graphs"
+      },
+      "chapter": "第5章：三角函数与图像",
+      "counts": {
+        "concepts": 6,
+        "examples": 5,
+        "practice": 15,
+        "exercises": 32
+      }
+    },
+    {
+      "slug": "5-3",
+      "section": "5.3",
+      "title": "正切函数",
+      "en": {
+        "title": "The Tangent Function",
+        "chapter": "Chapter 5: Trigonometric Functions and Graphs"
+      },
+      "chapter": "第5章：三角函数与图像",
+      "counts": {
+        "concepts": 4,
+        "examples": 2,
+        "practice": 22,
+        "exercises": 17
+      }
+    },
+    {
+      "slug": "5-4",
+      "section": "5.4",
+      "title": "三角函数的方程与图像",
+      "en": {
+        "title": "Equations and Graphs of Trigonometric Functions",
+        "chapter": "Chapter 5: Trigonometric Functions and Graphs"
+      },
+      "chapter": "第5章：三角函数与图像",
+      "counts": {
+        "concepts": 4,
+        "examples": 4,
+        "practice": 21,
+        "exercises": 26
+      }
+    },
+    {
+      "slug": "5-review",
+      "section": "5 Review",
+      "title": "第 5 章复习",
+      "en": {
+        "title": "Chapter 5 Review",
+        "chapter": "Chapter 5: Trigonometric Functions and Graphs"
+      },
+      "chapter": "第5章：三角函数与图像",
+      "counts": {
+        "concepts": 4,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 24
+      }
+    },
+    {
+      "slug": "5-test",
+      "section": "5 Practice Test",
+      "title": "第 5 章练习测试",
+      "en": {
+        "title": "Chapter 5 Practice Test",
+        "chapter": "Chapter 5: Trigonometric Functions and Graphs"
+      },
+      "chapter": "第5章：三角函数与图像",
+      "counts": {
+        "concepts": 3,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 17
+      }
     }
   ]
 }
