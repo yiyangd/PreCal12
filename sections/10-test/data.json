@@ -1,0 +1,716 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "10-test",
+    "section": "10 Test",
+    "title": "第 10 章练习测试",
+    "en": {
+      "title": "Chapter 10 Practice Test"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        512,
+        513
+      ],
+      "pdfPages": [
+        521,
+        522
+      ]
+    },
+    "concepts": [
+      {
+        "id": "sum-difference",
+        "title": "函数的和与差",
+        "summary": "$(f\\pm g)(x)=f(x)\\pm g(x)$，定义域是原定义域的交集。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先记录共同输入，再合并同类项；用顶点、根式代换或图像求值域。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Sums and differences",
+          "summary": "$(f\\pm g)(x)=f(x)\\pm g(x)$, with the intersection of the original domains.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Record common inputs before combining terms; use vertices, a square-root substitution, or graphs to determine the range."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "product-quotient",
+        "title": "函数的积与商",
+        "summary": "$(fg)(x)=f(x)g(x)$；商还要求 $g(x)\\ne0$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先记录并排除原式不允许的输入，再化简。约分后仍保留原排除点；只有化简式在该点具有有限值时才是空洞。若仍有不可约分母零点，须另判该点附近的渐近线等行为。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Products and quotients",
+          "summary": "$(fg)(x)=f(x)g(x)$; a quotient also requires $g(x)\\ne0$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Record and exclude inputs forbidden by the original functions before simplifying. Keep those exclusions after cancellation. An excluded input produces a hole only when the reduced formula has a finite value there. If an uncancelled denominator still vanishes, examine the nearby behaviour separately, including possible vertical asymptotes."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "composition",
+        "title": "复合函数与定义域",
+        "summary": "$(f\\circ g)(x)=f(g(x))$：先 $g$，后 $f$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "把内函数整体代入；要求 $x\\in D_g$ 且 $g(x)\\in D_f$。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Composition and its domain",
+          "summary": "$(f\\circ g)(x)=f(g(x))$: apply $g$ first, then $f$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Substitute the entire inner expression; require $x\\in D_g$ and $g(x)\\in D_f$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "models",
+        "title": "运算建模与单位",
+        "summary": "将情境转成函数，保留时间、价格、长度和面积单位。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "按事件顺序运算，给出模型适用的实际范围。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Modelling and units",
+          "summary": "Translate the situation into functions while retaining time, price, length, and area units.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Apply operations in event order and state the physically meaningful scope."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "选择最佳答案。$f(x)=(x+3)^2$、$g(x)=x+4$，哪项表示 $h(x)=f(x)+g(x)$？A $x^2+7x+7$；B $x^2+7x+13$；C $x^2+x+13$；D $x^2+2x+7$。",
+        "concept": "sum-difference",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$(x+3)^2+x+4=x^2+6x+9+x+4=x^2+7x+13$，对应 B。"
+          }
+        ],
+        "answer": "B。",
+        "printedPage": 512,
+        "pdfPage": 521,
+        "en": {
+          "prompt": "Choose the best answer. Let $f(x)=(x+3)^2$ and $g(x)=x+4$. Which represents $h(x)=f(x)+g(x)$? A $x^2+7x+7$; B $x^2+7x+13$; C $x^2+x+13$; D $x^2+2x+7$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$(x+3)^2+x+4=x^2+6x+9+x+4=x^2+7x+13$, which is B."
+            }
+          ],
+          "answer": "B."
+        }
+      },
+      {
+        "number": 2,
+        "prompt": "若 $f(x)=x+8$、$g(x)=2x^2-128$，$y=g(x)/f(x)$ 的定义域是什么？A $\\{x\\mid x\\in\\mathbb R\\}$；B $\\{x\\mid x\\in\\mathbb I\\}$；C $\\{x\\mid x\\ne8,x\\in\\mathbb R\\}$；D $\\{x\\mid x\\ne-8,x\\in\\mathbb R\\}$。",
+        "concept": "product-quotient",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "原分母 $x+8\\ne0$，所以 $x\\ne-8$。即使化简为 $2(x-8)$，这个原限制仍保留，选择 D。"
+          }
+        ],
+        "answer": "D。",
+        "printedPage": 512,
+        "pdfPage": 521,
+        "en": {
+          "prompt": "If $f(x)=x+8$ and $g(x)=2x^2-128$, what is the domain of $y=g(x)/f(x)$? A $\\{x\\mid x\\in\\mathbb R\\}$; B $\\{x\\mid x\\in\\mathbb I\\}$; C $\\{x\\mid x\\ne8,x\\in\\mathbb R\\}$; D $\\{x\\mid x\\ne-8,x\\in\\mathbb R\\}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "The original denominator requires $x+8\\ne0$, hence $x\\ne-8$. Simplifying to $2(x-8)$ does not remove that restriction. Choose D."
+            }
+          ],
+          "answer": "D."
+        }
+      },
+      {
+        "number": 3,
+        "prompt": "原图给出两个函数。对 $x\\in\\mathbb R$，哪项为真？A $g(x)-f(x)<0$；B $f(x)/g(x)>1,x\\ne0$；C $f(x)<g(x)$；D $g(x)+f(x)<0$。",
+        "concept": "sum-difference",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "从原图读出 $f(x)=x^2+2$、$g(x)=x$。$g-f=-x^2+x-2=-(x-1/2)^2-7/4<0$ 对所有实数成立，所以 A。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "B 在 $x=-1$ 时商为 $-3$，不成立；C 与已证不等式相反；D 在 $x=0$ 时和为 $2>0$。"
+          }
+        ],
+        "answer": "A。",
+        "printedPage": 512,
+        "pdfPage": 521,
+        "en": {
+          "prompt": "The graphs of two functions are shown. Which is true for $x\\in\\mathbb R$? A $g(x)-f(x)<0$; B $f(x)/g(x)>1,x\\ne0$; C $f(x)<g(x)$; D $g(x)+f(x)<0$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "The graph gives $f(x)=x^2+2$ and $g(x)=x$. Then $g-f=-x^2+x-2=-(x-1/2)^2-7/4<0$ for every real input, so A."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "B fails at $x=-1$, where the quotient is $-3$; C contradicts the proved inequality; D fails at $x=0$, where the sum is $2>0$."
+            }
+          ],
+          "answer": "A."
+        },
+        "sourceImage": "assets/10-test-3-source.png"
+      },
+      {
+        "number": 4,
+        "prompt": "给定 $f(x)=5-x$、$g(x)=2\\sqrt{3x}$，$f(g(3))$ 是多少？A $5-2\\sqrt6$；B $2\\sqrt{15-3x^2}$；C $-1$；D $1$。",
+        "concept": "composition",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$g(3)=2\\sqrt9=6$；$f(g(3))=f(6)=5-6=-1$。"
+          }
+        ],
+        "answer": "C。",
+        "printedPage": 512,
+        "pdfPage": 521,
+        "en": {
+          "prompt": "Given $f(x)=5-x$ and $g(x)=2\\sqrt{3x}$, what is $f(g(3))$? A $5-2\\sqrt6$; B $2\\sqrt{15-3x^2}$; C $-1$; D $1$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$g(3)=2\\sqrt9=6$, then $f(g(3))=f(6)=5-6=-1$."
+            }
+          ],
+          "answer": "C."
+        }
+      },
+      {
+        "number": 5,
+        "prompt": "若 $f(x)=x+5$、$g(x)=x^2$，哪项表示 $y=f(g(x))$？A $y=x^2+5$；B $y=x^2+25$；C $y=x^2+x+5$；D $y=x^2+10x+25$。",
+        "concept": "composition",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "把内函数 $x^2$ 代入 $f$ 的输入，得到 $f(g(x))=x^2+5$，选 A。"
+          }
+        ],
+        "answer": "A。",
+        "printedPage": 512,
+        "pdfPage": 521,
+        "en": {
+          "prompt": "Which function represents $y=f(g(x))$ if $f(x)=x+5$ and $g(x)=x^2$? A $y=x^2+5$; B $y=x^2+25$; C $y=x^2+x+5$; D $y=x^2+10x+25$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "Substitute the inner expression $x^2$ into $f$: $f(g(x))=x^2+5$. Choose A."
+            }
+          ],
+          "answer": "A."
+        }
+      },
+      {
+        "number": 6,
+        "prompt": "给定 $f(x)=\\sin x$、$g(x)=2x^2$，求 a) $h=(f+g)(x)$；b) $h=(f-g)(x)$；c) $h=(f\\cdot g)(x)$；d) $h=(f/g)(x)$。",
+        "concept": [
+          "sum-difference",
+          "product-quotient"
+        ],
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "a) $h=\\sin x+2x^2$；b) $h=\\sin x-2x^2$；c) $h=2x^2\\sin x$。三个定义域均为 $\\mathbb R$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "d) $h=\\sin x/(2x^2)$，原分母要求 $2x^2\\ne0$，所以 $D=\\mathbb R\\setminus\\{0\\}$。"
+          }
+        ],
+        "answer": "a) $\\sin x+2x^2$；b) $\\sin x-2x^2$；c) $2x^2\\sin x$；d) $\\sin x/(2x^2),x\\ne0$。",
+        "printedPage": 512,
+        "pdfPage": 521,
+        "en": {
+          "prompt": "Given $f(x)=\\sin x$ and $g(x)=2x^2$, determine a) $h=(f+g)(x)$; b) $h=(f-g)(x)$; c) $h=(f\\cdot g)(x)$; d) $h=(f/g)(x)$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "a) $h=\\sin x+2x^2$; b) $h=\\sin x-2x^2$; c) $h=2x^2\\sin x$. All three domains are $\\mathbb R$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "d) $h=\\sin x/(2x^2)$; $2x^2\\ne0$ requires $D=\\mathbb R\\setminus\\{0\\}$."
+            }
+          ],
+          "answer": "a) $\\sin x+2x^2$; b) $\\sin x-2x^2$; c) $2x^2\\sin x$; d) $\\sin x/(2x^2),x\\ne0$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 7,
+        "prompt": "抄写并补全表格的缺项。列为 $g(x),f(x),(f+g)(x),(f\\circ g)(x)$。a) 已知 $g=x-8,f=\\sqrt{x}$；b) 已知 $g=x+3,f=4x$；c) 已知 $f=\\sqrt{x-4},(f\\circ g)(x)=\\sqrt{x^2-4}$；d) 已知 $g=1/x,(f\\circ g)(x)=x$。",
+        "concept": [
+          "sum-difference",
+          "composition"
+        ],
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "a) 和 $x-8+\\sqrt{x}$，$D=[0,\\infty)$；复合 $\\sqrt{x-8}$，$D=[8,\\infty)$。b) 和 $5x+3$；复合 $4x+12$；定义域均为 $\\mathbb R$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "c) 常规的多项式选择为 $g(x)=x^2$，和为 $x^2+\\sqrt{x-4}$（$x\\ge4$）；复合为 $\\sqrt{x^2-4}$（$x\\le-2$ 或 $x\\ge2$）。严格地说，只给复合的实数函数值，并未唯一指定 $(-2,2)$ 内的 $g$；表中填的是最简单的代数选择。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "d) 取 $f(x)=1/x$，则和 $2/x$，定义域 $x\\ne0$；$f(1/x)=1/(1/x)=x$，但复合仍只在 $x\\ne0$ 成立。复合条件也不决定 $f(0)$；标准倒数函数在该点未定义。"
+          }
+        ],
+        "answer": "a) $x-8+\\sqrt{x}$、$\\sqrt{x-8}$；b) $5x+3$、$4x+12$；c) 常规 $g=x^2$、和 $x^2+\\sqrt{x-4}$；d) 常规 $f=1/x$、和 $2/x$；限制见步骤。",
+        "printedPage": 512,
+        "pdfPage": 521,
+        "en": {
+          "prompt": "Copy and complete the missing entries in the table with columns $g(x),f(x),(f+g)(x),(f\\circ g)(x)$. a) $g=x-8,f=\\sqrt{x}$; b) $g=x+3,f=4x$; c) $f=\\sqrt{x-4},(f\\circ g)(x)=\\sqrt{x^2-4}$; d) $g=1/x,(f\\circ g)(x)=x$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "a) Sum $x-8+\\sqrt{x}$, $D=[0,\\infty)$; composition $\\sqrt{x-8}$, $D=[8,\\infty)$. b) Sum $5x+3$; composition $4x+12$; both domains are $\\mathbb R$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "c) The conventional polynomial choice is $g(x)=x^2$. The sum is $x^2+\\sqrt{x-4}$ for $x\\ge4$; composition is $\\sqrt{x^2-4}$ for $x\\le-2$ or $x\\ge2$. Strictly, real values of the composite do not uniquely specify $g$ on $(-2,2)$; this is the simplest algebraic choice."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "d) Choose $f(x)=1/x$. The sum is $2/x$, $x\\ne0$; $f(1/x)=1/(1/x)=x$, still only for $x\\ne0$. The composition does not determine $f(0)$; the standard reciprocal function is undefined there."
+            }
+          ],
+          "answer": "a) $x-8+\\sqrt{x}$, $\\sqrt{x-8}$; b) $5x+3$, $4x+12$; c) conventional $g=x^2$, sum $x^2+\\sqrt{x-4}$; d) conventional $f=1/x$, sum $2/x$. Restrictions are in the steps."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/10-test-7-source.png"
+      },
+      {
+        "number": 8,
+        "prompt": "求 $g(x)=1/(1+x)$ 和 $h(x)=1/(3+2x)$ 的积，然后写组合函数的定义域。",
+        "concept": "product-quotient",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "$gh=1/[(1+x)(3+2x)]=1/(2x^2+5x+3)$。原分母分别要求 $x\\ne-1$ 和 $x\\ne-3/2$；二者都必须保留。"
+          }
+        ],
+        "answer": "$gh=1/(2x^2+5x+3)$；$D=\\mathbb R\\setminus\\{-1,-3/2\\}$。",
+        "printedPage": 512,
+        "pdfPage": 521,
+        "en": {
+          "prompt": "Determine the product of $g(x)=1/(1+x)$ and $h(x)=1/(3+2x)$, then state its domain.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "$gh=1/[(1+x)(3+2x)]=1/(2x^2+5x+3)$. The original denominators require $x\\ne-1$ and $x\\ne-3/2$, both retained."
+            }
+          ],
+          "answer": "$gh=1/(2x^2+5x+3)$; $D=\\mathbb R\\setminus\\{-1,-3/2\\}$."
+        }
+      },
+      {
+        "number": 9,
+        "prompt": "用原图的 $f(x)$、$g(x)$ 画各组合函数：a) $y=(f-g)(x)$；b) $y=(f/g)(x)$。",
+        "concept": [
+          "sum-difference",
+          "product-quotient"
+        ],
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "从原图顶点 $(1,9)$、零点 $-2,4$ 读出 $f(x)=-(x-1)^2+9=-x^2+2x+8$；直线 $g(x)=x+2$。a) 差 $-x^2+x+6=-(x-1/2)^2+25/4$；顶点 $(1/2,25/4)$、零点 $-2,3$。$D=\\mathbb R$，$R=(-\\infty,25/4]$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "b) $[-(x-4)(x+2)]/(x+2)=4-x$，但 $x\\ne-2$。画斜率 $-1$、纵截距 $4$ 的直线，并挖空 $(-2,6)$；$R=\\mathbb R\\setminus\\{6\\}$。"
+          }
+        ],
+        "answer": "a) $y=-x^2+x+6$；b) $y=4-x,x\\ne-2$。",
+        "printedPage": 513,
+        "pdfPage": 522,
+        "en": {
+          "prompt": "Use the original graphs of $f(x)$ and $g(x)$ to sketch a) $y=(f-g)(x)$; b) $y=(f/g)(x)$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "The vertex $(1,9)$ and zeros $-2,4$ give $f(x)=-(x-1)^2+9=-x^2+2x+8$; the line is $g(x)=x+2$. a) Difference $-x^2+x+6=-(x-1/2)^2+25/4$, vertex $(1/2,25/4)$ and zeros $-2,3$. $D=\\mathbb R$, $R=(-\\infty,25/4]$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "b) $[-(x-4)(x+2)]/(x+2)=4-x$, retaining $x\\ne-2$. Draw the line with slope $-1$ and intercept $4$, with hole $(-2,6)$; $R=\\mathbb R\\setminus\\{6\\}$."
+            }
+          ],
+          "answer": "a) $y=-x^2+x+6$; b) $y=4-x,x\\ne-2$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/10-test-9-source.png",
+        "solutionImage": "assets/10-test-9-solution.png"
+      },
+      {
+        "number": 10,
+        "prompt": "对每对函数，求 $g(f(x))$ 并写定义域和值域。a) $f(x)=3-x,g(x)=|x+3|$；b) $f(x)=4^x,g(x)=x+1$；c) $f(x)=x^4,g(x)=\\sqrt{x}$。",
+        "concept": "composition",
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "a) $g(f(x))=|3-x+3|=|6-x|$，$D=\\mathbb R$，$R=[0,\\infty)$，最低点 $(6,0)$。b) $g(f(x))=4^x+1$，$D=\\mathbb R$；因 $4^x>0$，$R=(1,\\infty)$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "c) $g(f(x))=\\sqrt{x^4}=|x^2|=x^2$。内函数 $x^4\\ge0$ 总能输入根函数，所以 $D=\\mathbb R$，$R=[0,\\infty)$。"
+          }
+        ],
+        "answer": "a) $|6-x|$，$D=\\mathbb R,R=[0,\\infty)$；b) $4^x+1$，$D=\\mathbb R,R=(1,\\infty)$；c) $x^2$，$D=\\mathbb R,R=[0,\\infty)$。",
+        "printedPage": 513,
+        "pdfPage": 522,
+        "en": {
+          "prompt": "For each pair, determine $g(f(x))$ and state its domain and range. a) $f(x)=3-x,g(x)=|x+3|$; b) $f(x)=4^x,g(x)=x+1$; c) $f(x)=x^4,g(x)=\\sqrt{x}$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "a) $g(f(x))=|3-x+3|=|6-x|$, $D=\\mathbb R$, $R=[0,\\infty)$, minimum at $(6,0)$. b) $g(f(x))=4^x+1$, $D=\\mathbb R$; since $4^x>0$, $R=(1,\\infty)$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "c) $g(f(x))=\\sqrt{x^4}=|x^2|=x^2$. Since $x^4\\ge0$ for every real $x$, $D=\\mathbb R$, $R=[0,\\infty)$."
+            }
+          ],
+          "answer": "a) $|6-x|$, $D=\\mathbb R,R=[0,\\infty)$; b) $4^x+1$, $D=\\mathbb R,R=(1,\\infty)$; c) $x^2$, $D=\\mathbb R,R=[0,\\infty)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 11,
+        "prompt": "Becky 每份工资扣 200 元退休金，可在联邦所得税之前或之后扣；税率 28%。a) 以每期工资 $x$ 表示扣退休金后的收入 $r$ 和税后收入 $t$。b) 求并解释 $t(r(x))$。c) 每期 2700 元时，用 b) 求净收入。d) 用 $r(t(x))$ 求净收入。e) 解释差额。",
+        "concept": [
+          "composition",
+          "models"
+        ],
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "a) $r(x)=x-200$，$t(x)=0.72x$。b) $t(r(x))=0.72(x-200)=0.72x-144$，先扣退休金，再对余款收税。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "c) $0.72(2700-200)=0.72(2500)=1800$ 元。d) $r(t(x))=0.72x-200$，在 $2700$ 时为 $1944-200=1744$ 元。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "e) 税前扣款使应税额少 200 元，少交税 $0.28(200)=56$ 元，故净收入多 56 元。按本题固定税率模型，税前扣款要 $x\\ge200$，若税后净额不为负，则另一顺序要 $x\\ge200/0.72$。"
+          }
+        ],
+        "answer": "a) $r=x-200,t=0.72x$；b) $0.72x-144$；c) 1800 元；d) 1744 元；e) 税前扣款多留 56 元。",
+        "printedPage": 513,
+        "pdfPage": 522,
+        "en": {
+          "prompt": "Becky has 200 dollars deducted from every paycheque for retirement, either before or after federal income tax is assessed. Her federal tax rate is 28%. a) Let $x$ be earnings per pay period; represent income $r$ after retirement and income $t$ after federal taxes. b) Determine and interpret $t(r(x))$. c) For earnings of 2700 dollars, calculate net income using b). d) Calculate net income using $r(t(x))$. e) Explain the difference.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "a) $r(x)=x-200$, $t(x)=0.72x$. b) $t(r(x))=0.72(x-200)=0.72x-144$, deducting retirement before taxing the remainder."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "c) $0.72(2700-200)=0.72(2500)=1800$ dollars. d) $r(t(x))=0.72x-200$ gives $1944-200=1744$ dollars at $2700$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "e) Deducting before tax reduces taxable earnings by 200 dollars and tax by $0.28(200)=56$ dollars, increasing net income by 56 dollars. In this fixed-rate model, the first order needs $x\\ge200$; nonnegative after-tax net income in the other order needs $x\\ge200/0.72$."
+            }
+          ],
+          "answer": "a) $r=x-200,t=0.72x$; b) $0.72x-144$; c) 1800 dollars; d) 1744 dollars; e) 56 dollars more remains with the pre-tax deduction."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      {
+        "number": 12,
+        "prompt": "钟摆释放后按照 $x(t)=(10\\cos2t)(0.95^t)$ 往复摆动，$x$ 为离静止位置的水平位移（厘米），$t$ 为时间（秒）。a) 画函数图像。b) 此式是两函数之积。指出各函数，并说明哪一个负责 i) 周期运动；ii) 振幅的指数衰减。",
+        "concept": [
+          "product-quotient",
+          "models"
+        ],
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "a) 采用弧度制、$t\\ge0$。图从 $(0,10)$ 开始，在包络 $x=\\pm10(0.95)^t$ 内振荡；零点 $t=\\pi/4+k\\pi/2$（非负整数 $k$），余弦周期为 $\\pi$ 秒。完整乘积因振幅减小并非周期函数。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "b-i) $f(t)=10\\cos2t$ 负责往复运动，角频率 $2$ 弧度/秒。b-ii) $g(t)=0.95^t$ 每秒乘 $0.95$，因此振幅每秒降低 5%，包络为 $10(0.95)^t$ 厘米。"
+          }
+        ],
+        "answer": "图如解析；周期因子 $10\\cos2t$，衰减因子 $0.95^t$。",
+        "printedPage": 513,
+        "pdfPage": 522,
+        "en": {
+          "prompt": "A pendulum is released and swings according to $x(t)=(10\\cos2t)(0.95^t)$, where $x$ is horizontal displacement from rest in centimetres and $t$ is time in seconds. a) Graph the function. b) Identify the two factors and explain which is responsible for i) periodic motion; ii) exponential decay of amplitude.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "a) Use radians and $t\\ge0$. The graph starts at $(0,10)$ and oscillates inside $x=\\pm10(0.95)^t$. Zeros occur at $t=\\pi/4+k\\pi/2$ for nonnegative integers $k$; the cosine factor has period $\\pi$ seconds. The full product is not periodic because its amplitude decreases."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "b-i) $f(t)=10\\cos2t$ produces the oscillation, with angular frequency $2$ radians per second. b-ii) $g(t)=0.95^t$ multiplies amplitude by $0.95$ each second, a 5% decrease per second; the amplitude envelope is $10(0.95)^t$ cm."
+            }
+          ],
+          "answer": "See the graph; $10\\cos2t$ causes oscillation and $0.95^t$ causes exponential amplitude decay."
+        },
+        "subpartIds": [
+          "a",
+          "bi",
+          "bii"
+        ],
+        "solutionImage": "assets/10-test-12-solution.png"
+      },
+      {
+        "number": 13,
+        "prompt": "给定 $f(x)=2x^2+11x-21$、$g(x)=2x-3$，求方程并画各组合函数草图：a) $y=f(x)-g(x)$；b) $y=f(x)+g(x)$；c) $y=f(x)/g(x)$；d) $y=f(g(x))$。",
+        "concept": [
+          "sum-difference",
+          "product-quotient",
+          "composition"
+        ],
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "a) $2x^2+11x-21-(2x-3)=2x^2+9x-18=2(x+9/4)^2-225/8$。向上开口，零点 $-6,3/2$，顶点 $(-9/4,-225/8)$；$D=\\mathbb R$，$R=[-225/8,\\infty)$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "b) $2x^2+13x-24=2(x+13/4)^2-361/8$。零点 $-8,3/2$，顶点 $(-13/4,-361/8)$；$D=\\mathbb R$，$R=[-361/8,\\infty)$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "c) $f(x)=(2x-3)(x+7)$，商为 $x+7$，仍须 $x\\ne3/2$；空洞 $(3/2,17/2)$，$R=\\mathbb R\\setminus\\{17/2\\}$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "d) $2(2x-3)^2+11(2x-3)-21=8x^2-2x-36=8(x-1/8)^2-289/8$。顶点 $(1/8,-289/8)$，零点 $-2,9/4$；$D=\\mathbb R$，$R=[-289/8,\\infty)$。"
+          }
+        ],
+        "answer": "a) $2x^2+9x-18$；b) $2x^2+13x-24$；c) $x+7,x\\ne3/2$；d) $8x^2-2x-36$。",
+        "printedPage": 513,
+        "pdfPage": 522,
+        "en": {
+          "prompt": "Given $f(x)=2x^2+11x-21$ and $g(x)=2x-3$, determine the equation and sketch each combined function: a) $y=f(x)-g(x)$; b) $y=f(x)+g(x)$; c) $y=f(x)/g(x)$; d) $y=f(g(x))$.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "a) $2x^2+11x-21-(2x-3)=2x^2+9x-18=2(x+9/4)^2-225/8$. It opens upward, with zeros $-6,3/2$ and vertex $(-9/4,-225/8)$; $D=\\mathbb R$, $R=[-225/8,\\infty)$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "b) $2x^2+13x-24=2(x+13/4)^2-361/8$. Zeros $-8,3/2$, vertex $(-13/4,-361/8)$; $D=\\mathbb R$, $R=[-361/8,\\infty)$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "c) $f(x)=(2x-3)(x+7)$, so the quotient is $x+7$, retaining $x\\ne3/2$. Hole $(3/2,17/2)$; $R=\\mathbb R\\setminus\\{17/2\\}$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "d) $2(2x-3)^2+11(2x-3)-21=8x^2-2x-36=8(x-1/8)^2-289/8$. Vertex $(1/8,-289/8)$, zeros $-2,9/4$; $D=\\mathbb R$, $R=[-289/8,\\infty)$."
+            }
+          ],
+          "answer": "a) $2x^2+9x-18$; b) $2x^2+13x-24$; c) $x+7,x\\ne3/2$; d) $8x^2-2x-36$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/10-test-13-solution.png"
+      },
+      {
+        "number": 14,
+        "prompt": "石头落入湖面，产生以 $50\\text{ cm/s}$ 向外传播的圆形波纹。a) 写圆面积关于时间的函数，说明组合函数类型。b) 画图。c) 5 秒后的面积是多少？d) 计算 30 秒后的面积是否合理？解释。",
+        "concept": [
+          "composition",
+          "models"
+        ],
+        "steps": [
+          {
+            "title": "计算与核对",
+            "body": "a) 半径 $r(t)=50t$ 厘米，面积函数 $A(r)=\\pi r^2$，复合得 $A(t)=A(r(t))=2500\\pi t^2$ 平方厘米，$t\\ge0$。b) 画第一象限向上抛物线，经过 $(0,0)$、$(1,2500\\pi)$、$(5,62500\\pi)$。"
+          },
+          {
+            "title": "计算与核对",
+            "body": "c) $A(5)=2500\\pi(25)=62500\\pi$ 平方厘米 $=6.25\\pi$ 平方米，约 $19.635$ 平方米。d) 理想模型给 $r(30)=1500$ 厘米 $=15$ 米，$A(30)=225\\pi$ 平方米；只有波纹保持可辨、以恒速传播且未遇岸边或障碍时才适用。原题没有这些资料，不能肯定 30 秒仍合理。"
+          }
+        ],
+        "answer": "$A(t)=2500\\pi t^2$ 平方厘米；5 秒为 $62500\\pi$ 平方厘米；30 秒结果有条件。",
+        "printedPage": 513,
+        "pdfPage": 522,
+        "en": {
+          "prompt": "A stone dropped into a lake creates a circular ripple travelling outward at $50\\text{ cm/s}$. a) Write area as a function of time and state the type of combined function. b) Graph it. c) Find the area after 5 s. d) Is it reasonable to calculate the area after 30 s? Explain.",
+          "steps": [
+            {
+              "title": "Calculate and check",
+              "body": "a) Radius $r(t)=50t$ cm and area $A(r)=\\pi r^2$ give the composite $A(t)=A(r(t))=2500\\pi t^2$ cm² for $t\\ge0$. b) Draw the first-quadrant upward parabola through $(0,0)$, $(1,2500\\pi)$, and $(5,62500\\pi)$."
+            },
+            {
+              "title": "Calculate and check",
+              "body": "c) $A(5)=2500\\pi(25)=62500\\pi$ cm² $=6.25\\pi$ m², about $19.635$ m². d) The ideal model gives $r(30)=1500$ cm $=15$ m and $A(30)=225\\pi$ m². This is meaningful only if the ripple remains discernible, keeps its speed, and has not met a shore or obstacle. The question gives no evidence guaranteeing those conditions at 30 s."
+            }
+          ],
+          "answer": "$A(t)=2500\\pi t^2$ cm²; after 5 s, $62500\\pi$ cm²; the 30-second result is conditional."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/10-test-14-solution.png"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "expectedSubparts": {
+      "exercise-6": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-9": [
+        "a",
+        "b"
+      ],
+      "exercise-10": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-12": [
+        "a",
+        "bi",
+        "bii"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-14": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "reviewer": "author_10_3 (independent of root extras author)",
+    "reviewNote": "All original pages visually inspected and solutions independently derived before content comparison. Reviewed every English and Chinese condition, named subpart, calculation, domain/range, source crop and analytical plot. Corrections and exact file hashes are recorded in extras-independent-review.json.",
+    "quotientRevisionReview": "Accepted by independent reviewer author_10_3: cancellation retains exclusions; finite reduced value versus remaining denominator behaviour distinguishes holes from possible asymptotes. Original question records unchanged. See audit/quotient-exclusions-independent-review.json."
+  }
+}

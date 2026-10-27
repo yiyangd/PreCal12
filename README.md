@@ -9,6 +9,9 @@ Bilingual study notes based on McGraw-Hill Ryerson **Pre-Calculus 12** (2012).
 - [Chapter 6 overview](https://yiyangd.github.io/PreCal12/sections/6-overview/)
 - [Chapter 7 overview](https://yiyangd.github.io/PreCal12/sections/7-overview/)
 - [Chapter 8 overview](https://yiyangd.github.io/PreCal12/sections/8-overview/)
+- [Chapter 9 overview](https://yiyangd.github.io/PreCal12/sections/9-overview/)
+- [Chapter 10 overview](https://yiyangd.github.io/PreCal12/sections/10-overview/)
+- [Chapter 11 overview](https://yiyangd.github.io/PreCal12/sections/11-overview/)
 
 The home preserves the complete textbook outline: 4 units, 11 chapters and 39 numbered sections. Available pages are derived from reviewed source data. Other materials remain explicitly Planned. Each completed chapter includes its opening, all actual numbered sections, Review and Practice Test. Chapter 7 has three numbered sections.
 
@@ -20,6 +23,9 @@ The home preserves the complete textbook outline: 4 units, 11 chapters and 39 nu
 | 6 | 37 | 15 | 59 | 129 | 203 |
 | 7 | 28 | 8 | 38 | 79 | 125 |
 | 8 | 37 | 17 | 58 | 139 | 214 |
+| 9 | 27 | 12 | 56 | 98 | 166 |
+| 10 | 28 | 12 | 52 | 101 | 165 |
+| 11 | 30 | 10 | 54 | 129 | 193 |
 
 Counts refer to parent question records; all source subparts are included. Practice includes the actual Investigate, Reflect and Respond, Your Turn, margin and Project Corner tasks, with their original labels. Worked explanations explicitly labelled in the textbook are retained with source provenance.
 
@@ -33,15 +39,22 @@ Only reviewed public site resources are included. The original textbook PDF, pri
 
 Additional reviewed source limitations:
 
-- Discussion, construction, measurement and created-example tasks in 6.1–6.4 explicitly provide examples or methods; no learner measurements or classmate responses are invented.
-- The 6.2 solstice power formula at Igloolik gives negative algebraic power; actual received solar power is interpreted as 0 during polar night.
-- Review 6(d): the printed equal-coefficient trigonometric extension does not converge to a bounded sawtooth; no unique valid sufficient term count follows from the printed pattern.
-- Original reciprocal/tangent formulas are compared on their common domains; canceled holes and continuous extensions are explicitly distinguished.
-- 7.2 Project Corner models are possible approximate fits read from the provided low-resolution historical graph; no unique exact revenue fit is asserted.
-- Continuous population, decay and financial interpolation are distinguished from discrete people and complete crediting dates; the literal milk model has no narrower practical temperature interval supplied.
-- The chapter opening chemistry career link is contextual; all in-scope mathematical tasks can be completed from the supplied source without live legacy external websites.
-- 8.1C2 /8.2C4 /8.3C4 /8.4C1,C5: Worked exemplars and mathematical criteria supplied; personal peer discussion/poster production not fabricated.
-- 8.3 ProjectCorner PDF412: Textbook leaves fit criterion unspecified. Student text explicitly chooses identical all-data least-squares criteria, uses all19observations, reports residuals, and does not assert exact interpolation or guaranteed future trend.
-- 8.3 Example4b PDF407-408: Sound-safety assumption kept as a premise for the textbook calculation; no universal independent health claim made.
-- 8.2 KeyIdeas PDF398: Both languages state b(x-h)>0, so sign of b affects the half-line; a=0/b=0 degenerate transformations excluded.
-- 8.4financial questions;Review23;Test13,17: Interpolation distinguished from complete payments/credit dates/annual readings. Test13 supports65fullwithdrawals, with onlypartial66th; cannot round up fullpayments.
+- Chapter9opening/CareerLink PDF437–438: Opening lens/wind/light equations are explicitly illustrative models. The source-era chartered-accountant career route and external links are preserved as historical context; current external requirements were not verified.
+- 9.1C1/C3/GPS;9.2C3/ProjectCorner PDF465;9.3discussiontasks: Worked exemplars, classification criteria and a concrete script/production plan are supplied. Students still complete their own partner discussion, external research or final video/slides; no personal responses, measured data or media completion are fabricated.
+- 9.2Exercises7/10/16/21 PDF462–464: Published expressions are labelled simplest matching models; finite graphical features do not prove uniqueness over all rational functions. Original labelled diagrams remain visible before solutions.
+- Review11 PDF478: The diagram measures d from the force point, so fulcrum distance is d+0.4. Both signed full-lever domain and nonnegative drawn-distance convention are distinguished. Distance for17.5kg is8/7m from the fulcrum.
+- Test16d PDF480: One constant boat speed cannot yield exactly45minutes each way in a4km/h current. Text keeps the original wording and separately solves exact, at-most45minutes-per-leg, and90minutes-total conditions; the latter must not be called45minutes each way.
+- 9.3Investigate/Exercise11/Exercise14 PDF466/475–476: Medication and thermal-expansion results are statements about the supplied textbook models. Exercise14b retains both nonnegative C=10 starting temperatures and distinguishes rising-branch increase209.29K from endpoint-only alternative305.84K; no empirical calibration interval is invented.
+- 9.2Exercise22 PDF465: The printed vice-versa identity holds only on common inputs x≠±2. The function g remains defined with zeros at±2; those points are not removed.
+- 10.1 Q19 distinguishes remaining distance along the ski course from vertical height; the alternative coordinate convention is stated explicitly.
+- 10.1 C3 uses all38 original bungee measurements but its damped cosine is an approximate fit; fourth-crest counting conventions and model precision are stated.
+- 10.2 Q8d cannot be realized by a finite denominator function on the full printed domain; the formal expression is valid only after an additional input exclusion.
+- 10.2 Q12 prints inconsistent fish/food scales. Literal units imply shortage at the start; the approximately11.65-year answer is explicitly conditional on an added matching-scale interpretation.
+- 10.2 Q14 gives no numerical parameters, so its plotted parameter choice is illustrative. The musical Project Corner is an open creative task with a checked sample, not fabricated student work.
+- 10.3 Q13b says unit price while subsequent parts require total cost; both readings are distinguished. Q18a is an identity only on the common domain.
+- PracticeTest7c,d offers simplest valid algebraic choices; composition alone does not determine function values outside the composite domain.
+- Career and historical sidebars are textbook-era background; external career links have not been verified as current information.
+- Chapter opener p514;11.1opening-password/C4;11.3ProjectCornerp545/C4: Personal familiarity, measured card-generation speed, career files, discussion and artwork remain student activities. Conditional timing formulas and fully solved labelled examples are supplied; no personal observation, interview or finished artwork is fabricated.
+- 11.1YourTurn1b/YourTurn4;11.2Exercises7b,10b,15c;Review10;Test10: Solutions explicitly distinguish allowing/requiring repeated digits, assume physical posters distinct where sameness is unstated, expose both mixed/same-grade readings, distinguish zero-inclusive/positive counts, and make120triangles conditional on no-three-collinear. These are source ambiguities, not missing source or invented fixed answers.
+- 11.2C4MINILAB PDF545;Review19 PDF556: Circle vertices are fixed:70quadrilaterals,2squares,6rectangles/parallelograms,24strict or30inclusive isosceles trapezoids. Counter task explicitly states adjacent-unlike-jump/minimum interpretation and supplies both finalorientation counts45/55 for10each,300/325 for25each.
+- CareerLinkp515;11.1password/postal context;11.2artist/card sidebars: Historical narrative and printed web links are identified as textbook context. Current operational password times, postal allocation exhaustion, external career links and current biography are not claimed independently verified.

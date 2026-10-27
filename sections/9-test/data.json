@@ -1,0 +1,1103 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "9-test",
+    "section": "9",
+    "title": "第 9 章练习测试",
+    "en": {
+      "title": "Chapter 9 Practice Test"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        470,
+        471
+      ],
+      "pdfPages": [
+        479,
+        480
+      ]
+    },
+    "concepts": [
+      {
+        "id": "transform",
+        "title": "倒数函数及变换",
+        "summary": "从 $1/x$ 或 $1/x^2$ 出发分析伸缩、平移与反射。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "将式子化为 $a/(x-h)+k$ 或 $a/(x-h)^2+k$；记录原限制、渐近线、截距和值域。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Reciprocal transformations",
+          "summary": "Use $1/x$ or $1/x^2$ to identify stretches, translations and reflections.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Write $a/(x-h)+k$ or $a/(x-h)^2+k$; record original restrictions, asymptotes, intercepts and range."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "analyse",
+        "title": "约分、空洞与渐近线",
+        "summary": "先由原分母确定定义域，再分析简化式。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "原分母的所有零点始终排除。完全约简后，只有当表达式在某个被排除点有有限值时，才在该点标孔洞（空心点）；若约简后的分母仍在该点为零，则检查竖直渐近线及两侧行为。部分约分不一定产生孔洞，例如 $x/x^2=1/x$（$x\\ne0$）在 $x=0$ 仍有竖直渐近线。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Cancellation, holes and asymptotes",
+          "summary": "Determine the domain from the original denominator before simplifying.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Keep every zero of the original denominator excluded. After fully reducing the expression, mark a hole at an excluded input only if the reduced expression has a finite value there. If the reduced denominator is still zero there, examine the vertical asymptote and behaviour on both sides. Partial cancellation need not produce a hole: $x/x^2=1/x$, with $x\\ne0$, still has a vertical asymptote at $x=0$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "equation",
+        "title": "有理方程与图像",
+        "summary": "解对应于合法交点横坐标或差函数的零点。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先列限制，清分母，解多项式，再代回原式并与图像交点核对。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Rational equations and graphs",
+          "summary": "Solutions are valid intersection x-coordinates or zeros of a difference function.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "List restrictions, clear denominators, solve the polynomial, then check the original equation and graph intersections."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "model",
+        "title": "情境模型与实际范围",
+        "summary": "把代数范围与题目中有意义的输入取交集。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "标明单位与离散/连续输入；在实际范围内解释渐近趋势并核对模型解。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Models and contextual domains",
+          "summary": "Intersect algebraic domains with meaningful inputs in the situation.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "State units and discrete or continuous inputs; interpret asymptotes and verify solutions within the contextual domain."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "kind": "practice-test"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "选择最佳答案。哪个函数有竖直渐近线 $x=2$？A $y=\\frac{x-2}{x}$；B $y=\\frac{x+2}{x}$；C $y=\\frac{x}{x-2}$；D $y=\\frac{x}{x+2}$。",
+        "concept": "analyse",
+        "steps": [
+          {
+            "title": "检查",
+            "body": "检查：C的分母在2为零、分子为2非零，所以 $x=2$ 是竖直渐近线。A、B在 $x=0$，D在 $x=-2$ 有竖直渐近线。"
+          }
+        ],
+        "answer": "C",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "Choose the best answer. Which function has a vertical asymptote at $x=2$? A $y=\\frac{x-2}{x}$; B $y=\\frac{x+2}{x}$; C $y=\\frac{x}{x-2}$; D $y=\\frac{x}{x+2}$.",
+          "steps": [
+            {
+              "title": "Check",
+              "body": "Check: C has denominator zero and numerator 2 at $x=2$, so $x=2$ is a vertical asymptote. A and B have one at $x=0$; D has one at $x=-2$."
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "number": 2,
+        "prompt": "选择最佳答案。所给A–D图中，哪一幅表示 $y=\\frac{x^2-2x}{x^2-5x+6}$？",
+        "concept": "analyse",
+        "steps": [
+          {
+            "title": "因式分解",
+            "body": "因式分解：$y=x(x-2)/[(x-2)(x-3)]=x/(x-3)$，保留 $x\\ne2,3$。竖直渐近线 $x=3$、水平渐近线 $y=1$，横纵截距为原点；$x=2$ 对应空洞 $(2,-2)$，故选D。"
+          }
+        ],
+        "answer": "D",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "Choose the best answer. Which given graph A–D represents $y=\\frac{x^2-2x}{x^2-5x+6}$?",
+          "steps": [
+            {
+              "title": "Factor",
+              "body": "Factor: $y=x(x-2)/[(x-2)(x-3)]=x/(x-3)$, retaining $x\\ne2,3$. There is a vertical asymptote $x=3$, horizontal asymptote $y=1$, both intercepts at the origin and hole $(2,-2)$; choose D."
+            }
+          ],
+          "answer": "D"
+        },
+        "sourceImage": "assets/9-test-q2.png"
+      },
+      {
+        "number": 3,
+        "prompt": "选择最佳答案。关于 $y=-\\frac4{x-2}$，哪句正确？A 当 $x$ 趋近 $-2$ 时，$|y|$ 变得很大；B 当 $|x|$ 很大时，$y$ 趋近 $-4$；C 当 $x$ 趋近2时，$|y|$ 变得很大；D 当 $|x|$ 很大时，$y$ 趋近4。",
+        "concept": "transform",
+        "steps": [
+          {
+            "title": "检查",
+            "body": "检查：$|y|=4/|x-2|$，当 $x\\to2$ 时无界增大；当 $|x|\\to\\infty$ 时 $y\\to0$，而 $x\\to-2$ 时 $y\\to1$。"
+          }
+        ],
+        "answer": "C",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "Choose the best answer. Which statement about $y=-\\frac4{x-2}$ is true? A As $x$ approaches $-2$, $|y|$ becomes very large. B As $|x|$ becomes very large, $y$ approaches $-4$. C As $x$ approaches 2, $|y|$ becomes very large. D As $|x|$ becomes very large, $y$ approaches 4.",
+          "steps": [
+            {
+              "title": "Check",
+              "body": "Check: $|y|=4/|x-2|$ grows without bound as $x\\to2$. As $|x|\\to\\infty$, $y\\to0$; as $x\\to-2$, $y\\to1$."
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "number": 4,
+        "prompt": "选择最佳答案。$5-x=\\frac{x+2}{2x-3}$ 的根可用哪种方法求？A $y=\\frac{x+2}{2x-3}$ 与 $y=x-5$ 的交点横坐标；B $y=\\frac{x+2}{2x-3}+x-5$ 的横截距；C $y=\\frac{x+2}{2x-3}$ 与 $y=x+5$ 的交点横坐标；D $y=\\frac{x+2}{2x-3}-x+5$ 的横截距。",
+        "concept": "equation",
+        "steps": [
+          {
+            "title": "移项",
+            "body": "移项：原方程等价于 $\\frac{x+2}{2x-3}+x-5=0$，$x\\ne3/2$。因此B中函数的零点横坐标给出所求根。A与C的直线符号不符；D也未把原式移到同一边。"
+          }
+        ],
+        "answer": "B",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "Choose the best answer. The roots of $5-x=\\frac{x+2}{2x-3}$ can be determined using which of the following? A The x-coordinates of intersections of $y=\\frac{x+2}{2x-3}$ and $y=x-5$. B The x-intercepts of $y=\\frac{x+2}{2x-3}+x-5$. C The x-coordinates of intersections of $y=\\frac{x+2}{2x-3}$ and $y=x+5$. D The x-intercepts of $y=\\frac{x+2}{2x-3}-x+5$.",
+          "steps": [
+            {
+              "title": "Rearrange",
+              "body": "Rearrange: the original is equivalent to $\\frac{x+2}{2x-3}+x-5=0$, $x\\ne3/2$. Thus the x-intercepts in B give the roots. The lines in A and C have the wrong signs, and D is not the original difference."
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "number": 5,
+        "prompt": "选择最佳答案。哪个函数等价于 $y=\\frac{6x-5}{x+7}$？A $y=\\frac{37}{x+7}+6$；B $y=-\\frac{37}{x+7}+6$；C $y=\\frac{47}{x+7}+6$；D $y=-\\frac{47}{x+7}+6$。",
+        "concept": "transform",
+        "steps": [
+          {
+            "title": "除法",
+            "body": "除法：$6x-5=6(x+7)-47$，故 $y=6-47/(x+7)$，两式均要求 $x\\ne-7$。"
+          }
+        ],
+        "answer": "D",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "Choose the best answer. Which function is equivalent to $y=\\frac{6x-5}{x+7}$? A $y=\\frac{37}{x+7}+6$; B $y=-\\frac{37}{x+7}+6$; C $y=\\frac{47}{x+7}+6$; D $y=-\\frac{47}{x+7}+6$.",
+          "steps": [
+            {
+              "title": "Divide",
+              "body": "Divide: $6x-5=6(x+7)-47$, so $y=6-47/(x+7)$; both expressions require $x\\ne-7$."
+            }
+          ],
+          "answer": "D"
+        }
+      },
+      {
+        "number": 6,
+        "prompt": "选择最佳答案。关于 $y=\\frac{x}{x^2-x}$ 哪句正确？A 横截距为0；B 纵截距为0；C 在 $(0,-1)$ 有不连续点；D 有竖直渐近线 $x=0$。",
+        "concept": "analyse",
+        "steps": [
+          {
+            "title": "约分但保留限制",
+            "body": "约分但保留限制：$y=x/[x(x-1)]=1/(x-1)$，$x\\ne0,1$。$x=0$ 的极限值为 $-1$，形成空洞 $(0,-1)$；原式在0无定义，所以没有纵截距，也没有横截距。竖直渐近线为 $x=1$。"
+          }
+        ],
+        "answer": "C",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "Choose the best answer. Which statement about $y=\\frac{x}{x^2-x}$ is true? A It has an x-intercept of 0. B It has a y-intercept of 0. C It has a point of discontinuity at $(0,-1)$. D It has a vertical asymptote at $x=0$.",
+          "steps": [
+            {
+              "title": "Cancel but retain restrictions",
+              "body": "Cancel but retain restrictions: $y=x/[x(x-1)]=1/(x-1)$, $x\\ne0,1$. Its limiting value at 0 is $-1$, giving hole $(0,-1)$. Since 0 is excluded there is no y-intercept, nor any x-intercept; the vertical asymptote is $x=1$."
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "number": 7,
+        "prompt": "用图像和代数解方程 $x-6=\\frac{x^2}{x+1}$。",
+        "concept": "equation",
+        "steps": [
+          {
+            "title": "图解",
+            "body": "图解：$y=x-6$ 与 $y=x^2/(x+1)$ 相交于约 $(-1.2,-7.2)$。在 $x=-1$ 原有理式无定义，不能视为交点。"
+          },
+          {
+            "title": "代数验证",
+            "body": "代数验证：$x\\ne-1$；$(x-6)(x+1)=x^2\\Rightarrow-5x-6=0\\Rightarrow x=-6/5$。代回左边 $-36/5$，右边 $(36/25)/(-1/5)=-36/5$。"
+          }
+        ],
+        "answer": "$x=-6/5=-1.2$。",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "Solve $x-6=\\frac{x^2}{x+1}$ graphically and algebraically.",
+          "steps": [
+            {
+              "title": "Graph",
+              "body": "Graph: $y=x-6$ and $y=x^2/(x+1)$ meet near $(-1.2,-7.2)$. The rational expression is undefined at $x=-1$, so it is not an intersection."
+            },
+            {
+              "title": "Verify algebraically",
+              "body": "Verify algebraically: $x\\ne-1$; $(x-6)(x+1)=x^2\\Rightarrow-5x-6=0\\Rightarrow x=-6/5$. Substitution gives left side $-36/5$ and right side $(36/25)/(-1/5)=-36/5$."
+            }
+          ],
+          "answer": "$x=-6/5=-1.2$."
+        },
+        "graph": {
+          "numerator": [
+            1,
+            0,
+            0
+          ],
+          "denominator": [
+            1,
+            1
+          ],
+          "bounds": {
+            "xMin": -4,
+            "xMax": 4,
+            "yMin": -14,
+            "yMax": 5
+          },
+          "verticalAsymptotes": [
+            -1
+          ],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [
+            {
+              "x": -1.2,
+              "y": -7.2
+            }
+          ],
+          "expressionLatex": "y=x-6\\quad\\mathrm{and}\\quad y=x^2/(x+1)",
+          "traces": [
+            {
+              "numerator": [
+                1,
+                -6
+              ],
+              "denominator": [
+                1
+              ],
+              "label": "y=x−6"
+            },
+            {
+              "numerator": [
+                1,
+                0,
+                0
+              ],
+              "denominator": [
+                1,
+                1
+              ],
+              "verticalAsymptotes": [
+                -1
+              ],
+              "label": "y=x²/(x+1)"
+            }
+          ]
+        }
+      },
+      {
+        "number": 8,
+        "prompt": "(a) 画出 $y=-\\frac6{x+4}-3$。(b) 指出定义域、值域以及所有渐近线和截距。",
+        "concept": "transform",
+        "steps": [
+          {
+            "title": "(a) 变换",
+            "body": "(a) 变换：$1/x$ 反射于横轴、纵向伸长6倍，再左移4、下移3。中心 $(-4,-3)$；左支在 $y=-3$ 上方，右支在下方。"
+          },
+          {
+            "title": "(b) 特征",
+            "body": "(b) 特征：$x\\ne-4,y\\ne-3$；渐近线 $x=-4,y=-3$。$0=-6/(x+4)-3$ 得 $x=-6$；代 $x=0$ 得 $y=-9/2$。"
+          }
+        ],
+        "answer": "$D=\\mathbb{R}\\setminus\\{-4\\},R=\\mathbb{R}\\setminus\\{-3\\}$；截距 $(-6,0),(0,-9/2)$。",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "(a) Sketch $y=-\\frac6{x+4}-3$. (b) Identify the domain and range and state all asymptotes and intercepts.",
+          "steps": [
+            {
+              "title": "(a) Transform",
+              "body": "(a) Transform: reflect $1/x$ in the x-axis, stretch vertically by 6, shift left 4 and down 3. The centre is $(-4,-3)$; the left branch is above $y=-3$ and the right branch below it."
+            },
+            {
+              "title": "(b) Features",
+              "body": "(b) Features: $x\\ne-4,y\\ne-3$; asymptotes $x=-4,y=-3$. Setting $0=-6/(x+4)-3$ gives $x=-6$; setting $x=0$ gives $y=-9/2$."
+            }
+          ],
+          "answer": "$D=\\mathbb{R}\\setminus\\{-4\\},R=\\mathbb{R}\\setminus\\{-3\\}$; intercepts $(-6,0),(0,-9/2)$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graph": {
+          "numerator": [
+            -3,
+            -18
+          ],
+          "denominator": [
+            1,
+            4
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 4,
+            "yMin": -10,
+            "yMax": 6
+          },
+          "verticalAsymptotes": [
+            -4
+          ],
+          "horizontalAsymptote": -3,
+          "holes": [],
+          "points": [
+            {
+              "x": -6,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": -4.5
+            }
+          ],
+          "expressionLatex": "y=-6/(x+4)-3"
+        }
+      },
+      {
+        "number": 9,
+        "prompt": "用图像求 $\\frac3x+4=\\frac2{x+3}-1$ 的近似解，保留两位小数。",
+        "concept": "equation",
+        "steps": [
+          {
+            "title": "图解",
+            "body": "图解：分别画 $y=3/x+4$ 和 $y=2/(x+3)-1$，竖直渐近线为 $x=0,-3$；两曲线有两个交点，横坐标约 $-2.47,-0.73$。"
+          },
+          {
+            "title": "独立核算",
+            "body": "独立核算：$x\\ne0,-3$；$3(x+3)+5x(x+3)=2x\\Rightarrow5x^2+16x+9=0$，所以 $x=(-8\\pm\\sqrt{19})/5$；两根均合法。"
+          }
+        ],
+        "answer": "$x\\approx-2.47,-0.73$。",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "Determine the approximate solutions of $\\frac3x+4=\\frac2{x+3}-1$ graphically, to two decimal places.",
+          "steps": [
+            {
+              "title": "Graph",
+              "body": "Graph: plot $y=3/x+4$ and $y=2/(x+3)-1$, with vertical asymptotes $x=0,-3$. The two intersections have x-coordinates about $-2.47,-0.73$."
+            },
+            {
+              "title": "Independent check",
+              "body": "Independent check: $x\\ne0,-3$; $3(x+3)+5x(x+3)=2x\\Rightarrow5x^2+16x+9=0$, so $x=(-8\\pm\\sqrt{19})/5$. Both roots are allowed."
+            }
+          ],
+          "answer": "$x\\approx-2.47,-0.73$."
+        },
+        "graph": {
+          "numerator": [
+            4,
+            3
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": -5,
+            "xMax": 2,
+            "yMin": -10,
+            "yMax": 12
+          },
+          "verticalAsymptotes": [
+            0,
+            -3
+          ],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "y=3/x+4\\quad\\mathrm{and}\\quad y=2/(x+3)-1",
+          "traces": [
+            {
+              "numerator": [
+                4,
+                3
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 4,
+              "label": "y=3/x+4"
+            },
+            {
+              "numerator": [
+                -1,
+                -1
+              ],
+              "denominator": [
+                1,
+                3
+              ],
+              "verticalAsymptotes": [
+                -3
+              ],
+              "horizontalAsymptote": -1,
+              "label": "y=2/(x+3)−1"
+            }
+          ]
+        }
+      },
+      {
+        "number": 10,
+        "prompt": "(a) 画出 $y=\\frac{x^2-2x-8}{x-4}$。(b) 解释 $x$ 接近不可取值时的函数行为。",
+        "concept": "analyse",
+        "steps": [
+          {
+            "title": "(a) 约分",
+            "body": "(a) 约分：$x^2-2x-8=(x-4)(x+2)$，所以 $y=x+2$，但 $x\\ne4$。画直线并在 $(4,6)$ 留空洞；截距为 $(-2,0),(0,2)$。"
+          },
+          {
+            "title": "(b) 趋势",
+            "body": "(b) 趋势：$x\\to4^-$ 和 $x\\to4^+$ 时 $y\\to6$，但 $y(4)$ 无定义。此处是可去不连续点，不是竖直渐近线。"
+          }
+        ],
+        "answer": "直线 $y=x+2$ 去掉 $(4,6)$；$D:x\\ne4,R:y\\ne6$。",
+        "printedPage": 470,
+        "pdfPage": 479,
+        "en": {
+          "prompt": "(a) Sketch $y=\\frac{x^2-2x-8}{x-4}$. (b) Explain its behaviour for $x$ near the non-permissible value.",
+          "steps": [
+            {
+              "title": "(a) Cancel",
+              "body": "(a) Cancel: $x^2-2x-8=(x-4)(x+2)$, so $y=x+2$, but $x\\ne4$. Draw the line with hole $(4,6)$; intercepts are $(-2,0),(0,2)$."
+            },
+            {
+              "title": "(b) Behaviour",
+              "body": "(b) Behaviour: as $x\\to4^-$ or $x\\to4^+$, $y\\to6$, but $y(4)$ is undefined. This is a removable discontinuity rather than a vertical asymptote."
+            }
+          ],
+          "answer": "The line $y=x+2$ with $(4,6)$ removed; $D:x\\ne4,R:y\\ne6$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graph": {
+          "numerator": [
+            1,
+            -2,
+            -8
+          ],
+          "denominator": [
+            1,
+            -4
+          ],
+          "bounds": {
+            "xMin": -6,
+            "xMax": 8,
+            "yMin": -4,
+            "yMax": 10
+          },
+          "verticalAsymptotes": [],
+          "horizontalAsymptote": null,
+          "holes": [
+            {
+              "x": 4,
+              "y": 6
+            }
+          ],
+          "points": [],
+          "expressionLatex": "y=(x^2-2x-8)/(x-4)"
+        }
+      },
+      {
+        "number": 11,
+        "prompt": "预测 $y=\\frac{2x^2+7x-4}{x^2+x-12}$ 的所有竖直渐近线、不连续点和截距位置，并逐项说明理由。",
+        "concept": "analyse",
+        "steps": [
+          {
+            "title": "分解",
+            "body": "分解：分子 $(2x-1)(x+4)$，分母 $(x+4)(x-3)$，所以简化为 $(2x-1)/(x-3)$，保留 $x\\ne-4,3$。"
+          },
+          {
+            "title": "不连续性",
+            "body": "不连续性：因子 $x+4$ 约去，空洞纵坐标为 $(-9)/(-7)=9/7$，即 $(-4,9/7)$。$x=3$ 分母为零而分子5非零，所以为竖直渐近线。"
+          },
+          {
+            "title": "截距",
+            "body": "截距：合法分子零点 $x=1/2$ 给出 $(1/2,0)$；$x=0$ 给 $(-4)/(-12)=1/3$，纵截距 $(0,1/3)$。$x=-4$ 的原分子虽为零，但点不在定义域内。"
+          }
+        ],
+        "answer": "竖直渐近线 $x=3$；空洞 $(-4,9/7)$；截距 $(1/2,0),(0,1/3)$。",
+        "printedPage": 471,
+        "pdfPage": 480,
+        "en": {
+          "prompt": "Predict the locations of any vertical asymptotes, points of discontinuity and intercepts for $y=\\frac{2x^2+7x-4}{x^2+x-12}$. Give a reason for each prediction.",
+          "steps": [
+            {
+              "title": "Factor",
+              "body": "Factor: numerator $(2x-1)(x+4)$ and denominator $(x+4)(x-3)$ simplify to $(2x-1)/(x-3)$, retaining $x\\ne-4,3$."
+            },
+            {
+              "title": "Discontinuities",
+              "body": "Discontinuities: cancelling $x+4$ leaves a hole at $(-4,9/7)$ because $(-9)/(-7)=9/7$. At $x=3$ the denominator is zero and numerator 5 is nonzero, giving a vertical asymptote."
+            },
+            {
+              "title": "Intercepts",
+              "body": "Intercepts: the allowed numerator zero $x=1/2$ gives $(1/2,0)$. At $x=0$, $(-4)/(-12)=1/3$, giving $(0,1/3)$. Although the original numerator is zero at $-4$, that input is excluded."
+            }
+          ],
+          "answer": "Vertical asymptote $x=3$; hole $(-4,9/7)$; intercepts $(1/2,0),(0,1/3)$."
+        }
+      },
+      {
+        "number": 12,
+        "prompt": "将有理函数与所给A–D图配对并说明理由。(a) $A(x)=\\frac{x^2-9x}{x}$；(b) $B(x)=\\frac{x^2}{x^2-9}$；(c) $C(x)=\\frac{x^2-9}{x^2}$；(d) $D(x)=\\frac{x^2}{x^2-9x}$。",
+        "concept": "analyse",
+        "steps": [
+          {
+            "title": "推导",
+            "body": "(a) $A=x-9$，$x\\ne0$，直线在 $(0,-9)$ 有空洞，所以对应图D。"
+          },
+          {
+            "title": "推导",
+            "body": "(b) $B=x^2/[(x-3)(x+3)]$，竖直渐近线 $x=\\pm3$，水平渐近线1，经过原点；在 $-3<x<3$ 时非正，故对应图A。"
+          },
+          {
+            "title": "推导",
+            "body": "(c) $C=1-9/x^2$，竖直渐近线 $x=0$，两侧均趋 $-\\infty$，横截距 $\\pm3$，水平渐近线1，故对应图B。"
+          },
+          {
+            "title": "推导",
+            "body": "(d) $D=x/(x-9)$，原限制 $x\\ne0,9$；竖直渐近线9，空洞 $(0,0)$，水平渐近线1，故对应图C。"
+          }
+        ],
+        "answer": "(a) D；(b) A；(c) B；(d) C。",
+        "printedPage": 471,
+        "pdfPage": 480,
+        "en": {
+          "prompt": "Match each rational function to its given graph A–D. Give reasons. (a) $A(x)=\\frac{x^2-9x}{x}$; (b) $B(x)=\\frac{x^2}{x^2-9}$; (c) $C(x)=\\frac{x^2-9}{x^2}$; (d) $D(x)=\\frac{x^2}{x^2-9x}$.",
+          "steps": [
+            {
+              "title": "Work",
+              "body": "(a) $A=x-9$, $x\\ne0$, is a line with hole $(0,-9)$, so it matches graph D."
+            },
+            {
+              "title": "Work",
+              "body": "(b) $B=x^2/[(x-3)(x+3)]$ has vertical asymptotes $x=\\pm3$, horizontal asymptote 1, and passes through the origin. It is nonpositive between $-3,3$, matching graph A."
+            },
+            {
+              "title": "Work",
+              "body": "(c) $C=1-9/x^2$ has vertical asymptote $x=0$ with both sides tending to $-\\infty$, x-intercepts $\\pm3$ and horizontal asymptote 1, matching graph B."
+            },
+            {
+              "title": "Work",
+              "body": "(d) $D=x/(x-9)$ retains $x\\ne0,9$; it has vertical asymptote 9, hole $(0,0)$ and horizontal asymptote 1, matching graph C."
+            }
+          ],
+          "answer": "(a) D; (b) A; (c) B; (d) C."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/9-test-q12.png"
+      },
+      {
+        "number": 13,
+        "prompt": "比较 $f(x)=\\frac{2x-3}{4x^2-9}$ 与 $g(x)=\\frac{2x-3}{4x^2+9}$ 的图像，并通过方程解释显著差异。",
+        "concept": "analyse",
+        "steps": [
+          {
+            "title": "$f$ 的分母",
+            "body": "$f$ 的分母：$4x^2-9=(2x-3)(2x+3)$，所以 $f=1/(2x+3)$ 但 $x\\ne\\pm3/2$。$x=-3/2$ 为竖直渐近线；$(3/2,1/6)$ 是空洞；纵截距 $1/3$，没有横截距。"
+          },
+          {
+            "title": "$g$ 的分母",
+            "body": "$g$ 的分母：$4x^2+9>0$ 对所有实数成立，因此无空洞、无竖直渐近线，定义域为全体实数。分子在 $x=3/2$ 为零，所以横截距 $(3/2,0)$；纵截距 $-1/3$。"
+          },
+          {
+            "title": "远端比较",
+            "body": "远端比较：两者分母次数大于分子次数，均以 $y=0$ 为水平渐近线。$f$ 从不等于0；$g$ 则在 $3/2$ 穿过水平渐近线。$f$ 在负向渐近线两侧无界；$g$ 连续且有界。"
+          }
+        ],
+        "answer": "改变分母中的符号使 $f$ 出现一个空洞和一条竖直渐近线，而 $g$ 无实分母零点且有一个横截距；两者均趋近水平渐近线0。",
+        "printedPage": 471,
+        "pdfPage": 480,
+        "en": {
+          "prompt": "Compare the graphs of $f(x)=\\frac{2x-3}{4x^2-9}$ and $g(x)=\\frac{2x-3}{4x^2+9}$. Explain significant differences by comparing their equations.",
+          "steps": [
+            {
+              "title": "Denominator of $f$",
+              "body": "Denominator of $f$: $4x^2-9=(2x-3)(2x+3)$, so $f=1/(2x+3)$ but $x\\ne\\pm3/2$. There is a vertical asymptote at $x=-3/2$, hole $(3/2,1/6)$, y-intercept $1/3$, and no x-intercept."
+            },
+            {
+              "title": "Denominator of $g$",
+              "body": "Denominator of $g$: $4x^2+9>0$ for every real input, so it has no holes or vertical asymptotes and has domain all real numbers. Its numerator vanishes at $x=3/2$, giving x-intercept $(3/2,0)$; its y-intercept is $-1/3$."
+            },
+            {
+              "title": "End behaviour",
+              "body": "End behaviour: both have horizontal asymptote $y=0$ because denominator degree exceeds numerator degree. $f$ never equals 0, while $g$ crosses this asymptote at $3/2$. $f$ is unbounded near its negative vertical asymptote; $g$ is continuous and bounded."
+            }
+          ],
+          "answer": "The denominator sign change gives $f$ a hole and vertical asymptote, while $g$ has no real denominator zeros and has an x-intercept. Both approach horizontal asymptote 0."
+        },
+        "graph": {
+          "numerator": [
+            2,
+            -3
+          ],
+          "denominator": [
+            4,
+            0,
+            -9
+          ],
+          "bounds": {
+            "xMin": -5,
+            "xMax": 6,
+            "yMin": -3,
+            "yMax": 3
+          },
+          "verticalAsymptotes": [
+            -1.5
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [
+            {
+              "x": 1.5,
+              "y": 0.16666666666666666
+            }
+          ],
+          "points": [],
+          "expressionLatex": "f(x)=(2x-3)/(4x^2-9),\\quad g(x)=(2x-3)/(4x^2+9)",
+          "traces": [
+            {
+              "numerator": [
+                2,
+                -3
+              ],
+              "denominator": [
+                4,
+                0,
+                -9
+              ],
+              "verticalAsymptotes": [
+                -1.5
+              ],
+              "horizontalAsymptote": 0,
+              "holes": [
+                {
+                  "x": 1.5,
+                  "y": 0.16666666666666666
+                }
+              ],
+              "label": "f(x)=(2x−3)/(4x²−9)"
+            },
+            {
+              "numerator": [
+                2,
+                -3
+              ],
+              "denominator": [
+                4,
+                0,
+                9
+              ],
+              "verticalAsymptotes": [],
+              "horizontalAsymptote": 0,
+              "label": "g(x)=(2x−3)/(4x²+9)"
+            }
+          ]
+        }
+      },
+      {
+        "number": 14,
+        "prompt": "Alex用代数解 $\\frac{x^2}{x-2}-2=\\frac{3x-2}{x-2}$，得到两个不同的 $x$ 值。(a) 用代数解并解释Alex哪里出错。(b) 用图像解，解释图像方法如何帮助避免这个错误。",
+        "concept": "equation",
+        "steps": [
+          {
+            "title": "(a) 限制",
+            "body": "(a) 限制：$x\\ne2$。乘以 $x-2$ 得 $x^2-2(x-2)=3x-2$，即 $x^2-5x+6=(x-2)(x-3)=0$。候选2、3中2使原分母为零，必须舍去；3代回两边均为7。"
+          },
+          {
+            "title": "(b) 图解",
+            "body": "(b) 图解：分别画原方程两边，只有交点 $(3,7)$。$x=2$ 为两图的竖直渐近线，不是交点；也可画差函数 $y=x-3$，但必须在 $(2,-1)$ 标空洞。"
+          }
+        ],
+        "answer": "唯一合法解 $x=3$。Alex把原式未定义的候选值2也保留了。",
+        "printedPage": 471,
+        "pdfPage": 480,
+        "en": {
+          "prompt": "Alex solved $\\frac{x^2}{x-2}-2=\\frac{3x-2}{x-2}$ algebraically and found two different values of $x$. (a) Solve algebraically and explain the error. (b) Solve graphically and explain how this helps avoid Alex’s error.",
+          "steps": [
+            {
+              "title": "(a) Restrict",
+              "body": "(a) Restrict: $x\\ne2$. Multiplication by $x-2$ gives $x^2-2(x-2)=3x-2$, hence $x^2-5x+6=(x-2)(x-3)=0$. Of candidates 2 and 3, 2 makes the original denominator zero and must be rejected; at 3 both sides equal 7."
+            },
+            {
+              "title": "(b) Graph",
+              "body": "(b) Graph: plot the original two sides; their only intersection is $(3,7)$. At $x=2$ both graphs have vertical asymptotes rather than an intersection. Alternatively graph their difference $y=x-3$, retaining the hole $(2,-1)$."
+            }
+          ],
+          "answer": "The only valid solution is $x=3$. Alex retained candidate 2 although the original equation is undefined there."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graph": {
+          "numerator": [
+            1,
+            -2,
+            4
+          ],
+          "denominator": [
+            1,
+            -2
+          ],
+          "bounds": {
+            "xMin": -1,
+            "xMax": 6,
+            "yMin": -8,
+            "yMax": 16
+          },
+          "verticalAsymptotes": [
+            2
+          ],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [
+            {
+              "x": 3,
+              "y": 7
+            }
+          ],
+          "expressionLatex": "y=x^2/(x-2)-2\\quad\\mathrm{and}\\quad y=(3x-2)/(x-2)",
+          "traces": [
+            {
+              "numerator": [
+                1,
+                -2,
+                4
+              ],
+              "denominator": [
+                1,
+                -2
+              ],
+              "verticalAsymptotes": [
+                2
+              ],
+              "label": "y=x²/(x−2)−2"
+            },
+            {
+              "numerator": [
+                3,
+                -2
+              ],
+              "denominator": [
+                1,
+                -2
+              ],
+              "verticalAsymptotes": [
+                2
+              ],
+              "label": "y=(3x−2)/(x−2)"
+            }
+          ]
+        }
+      },
+      {
+        "number": 15,
+        "prompt": "Jennifer为高尔夫比赛练习推杆，目前31次中成功10次。(a) 从现在起再尝试 $x$ 次且其中一半成功，写出总成功率 $A$ 关于 $x$ 的方程。(b) 用图像求总成功率达到40%还需尝试多少次。",
+        "concept": "model",
+        "steps": [
+          {
+            "title": "(a) 建模",
+            "body": "(a) 建模：成功次数 $10+x/2$，总次数 $31+x$，故 $A(x)=(10+0.5x)/(31+x)$。实际 $x$ 为非负整数，若恰好一半成功，$x$ 应为偶数；若用百分数显示，再乘100%。"
+          },
+          {
+            "title": "(b) 图解并核算",
+            "body": "(b) 图解并核算：画 $A(x)$ 和水平线 $A=0.4$，交点 $(24,0.4)$。$10+0.5x=0.4(31+x)\\Rightarrow0.1x=2.4\\Rightarrow x=24$；新增12次成功后 $22/55=0.4$。"
+          }
+        ],
+        "answer": "$A=(10+0.5x)/(31+x)$；还需24次推杆。",
+        "printedPage": 471,
+        "pdfPage": 480,
+        "en": {
+          "prompt": "Jennifer is practising putting for a golf tournament and has succeeded on 10 of 31 putts. (a) If she tries $x$ more putts and succeeds on half, what equation gives her overall success rate $A$ as a function of $x$? (b) Use a graphical approach to find how many more putts make her average 40%.",
+          "steps": [
+            {
+              "title": "(a) Model",
+              "body": "(a) Model: successes are $10+x/2$, attempts $31+x$, so $A(x)=(10+0.5x)/(31+x)$. Actual $x$ is a nonnegative integer; exact half-success requires even $x$. Multiply by 100% to display a percent."
+            },
+            {
+              "title": "(b) Graph and check",
+              "body": "(b) Graph and check: plot $A(x)$ and horizontal line $A=0.4$, meeting at $(24,0.4)$. $10+0.5x=0.4(31+x)\\Rightarrow0.1x=2.4\\Rightarrow x=24$; 12 more successes give $22/55=0.4$."
+            }
+          ],
+          "answer": "$A=(10+0.5x)/(31+x)$; 24 more putts."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graph": {
+          "numerator": [
+            0.5,
+            10
+          ],
+          "denominator": [
+            1,
+            31
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 100,
+            "yMin": 0.3,
+            "yMax": 0.55
+          },
+          "verticalAsymptotes": [],
+          "horizontalAsymptote": 0.5,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "A(x)=(10+0.5x)/(31+x)",
+          "traces": [
+            {
+              "numerator": [
+                0.5,
+                10
+              ],
+              "denominator": [
+                1,
+                31
+              ],
+              "horizontalAsymptote": 0.5,
+              "label": "A(x)"
+            },
+            {
+              "numerator": [
+                0.4
+              ],
+              "denominator": [
+                1
+              ],
+              "label": "A=0.4"
+            }
+          ]
+        }
+      },
+      {
+        "number": 16,
+        "prompt": "Jarek住在朋友Edward家上游20 km处，河水流速4 km/h。他乘船往返的总时间 $t$（小时）为 $t=\\frac{40v}{v^2-16}$，$v$ 为船速（km/h）。(a) 若要完成往返，定义域是什么？解释。(b) 画函数图像并解释。(c) 不可取值附近的行为在此情境中表示什么？(d) 要把行程保持为每程45分钟，Jarek需要多大的船速？",
+        "concept": "model",
+        "steps": [
+          {
+            "title": "(a) 定义域",
+            "body": "(a) 定义域：顺流速度 $v+4$，逆流速度 $v-4$；要完成逆流航行必须 $v>4$。往返时间 $20/(v+4)+20/(v-4)=40v/(v^2-16)$。"
+          },
+          {
+            "title": "(b) 图像",
+            "body": "(b) 图像：在 $v>4$ 上正且递减；$t(8)=20/3$ 小时，$t(12)=15/4$ 小时，$t(20)=25/12$ 小时。船速增加时往返时间缩短，趋近0但不会在有限船速下等于0。"
+          },
+          {
+            "title": "(c) 渐近",
+            "body": "(c) 渐近：$v\\to4^+$ 时，逆流地速趋近0，逆流时间及总时间趋于无穷。$v=4$ 无法逆流；代数上另一不可取值 $-4$ 不属于实际船速范围。"
+          },
+          {
+            "title": "(d) 原措辞需区分",
+            "body": "(d) 原措辞需区分：固定同一船速且水流不为零时，两程不可能恰好都45分钟。顺流要求 $20/(v+4)=3/4\\Rightarrow v=68/3$；逆流要求 $20/(v-4)=3/4\\Rightarrow v=92/3$，两值不同。若“每程不超过45分钟”，取 $v\\ge92/3\\approx30.67$ km/h；此时逆流45分钟，顺流约34.62分钟。"
+          },
+          {
+            "title": "若题意是往返共90分钟",
+            "body": "若题意是往返共90分钟：$40v/(v^2-16)=3/2$ 得 $3v^2-80v-48=0$，合法根 $v=(40+4\\sqrt{109})/3\\approx27.25$ km/h。两程约38.40与51.60分钟，不能称为每程45分钟。"
+          }
+        ],
+        "answer": "$D:v>4$。每程恰好45分钟无同一恒定船速解；每程最多45分钟的最低船速约30.67 km/h。若只限总时90分钟则约27.25 km/h。",
+        "printedPage": 471,
+        "pdfPage": 480,
+        "en": {
+          "prompt": "Jarek lives 20 km upstream from his friend Edward on a river flowing at 4 km/h. His boat’s round-trip time $t$ in hours is $t=\\frac{40v}{v^2-16}$, where $v$ is boat speed in km/h. (a) What domain allows a complete round trip? Explain. (b) Graph and interpret the function. (c) Explain the behaviour near its non-permissible value in context. (d) What boat speed does Jarek need to keep the trip to 45 min each way?",
+          "steps": [
+            {
+              "title": "(a) Domain",
+              "body": "(a) Domain: downstream speed is $v+4$ and upstream speed $v-4$; completing the upstream leg requires $v>4$. The total is $20/(v+4)+20/(v-4)=40v/(v^2-16)$."
+            },
+            {
+              "title": "(b) Graph",
+              "body": "(b) Graph: for $v>4$ it is positive and decreasing; $t(8)=20/3$ h, $t(12)=15/4$ h, $t(20)=25/12$ h. A faster boat reduces round-trip time, approaching 0 without reaching 0 at finite speed."
+            },
+            {
+              "title": "(c) Asymptote",
+              "body": "(c) Asymptote: as $v\\to4^+$, upstream ground speed tends to 0 and upstream and total times tend to infinity. At $v=4$ an upstream trip is impossible. The other algebraic exclusion, $-4$, lies outside the contextual domain."
+            },
+            {
+              "title": "(d) Distinguish the wording",
+              "body": "(d) Distinguish the wording: with one constant boat speed and nonzero current, both legs cannot take exactly 45 minutes. Downstream $20/(v+4)=3/4$ requires $v=68/3$; upstream $20/(v-4)=3/4$ requires $v=92/3$. If each leg must take at most 45 minutes, require $v\\ge92/3\\approx30.67$ km/h; upstream takes 45 minutes and downstream about 34.62 minutes at the minimum speed."
+            },
+            {
+              "title": "If the intended condition is 90 minutes total",
+              "body": "If the intended condition is 90 minutes total: $40v/(v^2-16)=3/2$ gives $3v^2-80v-48=0$, with valid root $v=(40+4\\sqrt{109})/3\\approx27.25$ km/h. The legs take about 38.40 and 51.60 minutes, not 45 minutes each."
+            }
+          ],
+          "answer": "$D:v>4$. Exactly 45 minutes on both legs has no common constant-speed solution. At most 45 minutes on each leg requires a minimum of about 30.67 km/h; a 90-minute total instead requires about 27.25 km/h."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/9-test-q16.png",
+        "graph": {
+          "numerator": [
+            40,
+            0
+          ],
+          "denominator": [
+            1,
+            0,
+            -16
+          ],
+          "bounds": {
+            "xMin": 4,
+            "xMax": 40,
+            "yMin": 0,
+            "yMax": 15
+          },
+          "verticalAsymptotes": [
+            4
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "t=40v/(v^2-16), v>4"
+        }
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "expectedSubparts": {
+      "exercise-8": [
+        "a",
+        "b"
+      ],
+      "exercise-10": [
+        "a",
+        "b"
+      ],
+      "exercise-12": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-14": [
+        "a",
+        "b"
+      ],
+      "exercise-15": [
+        "a",
+        "b"
+      ],
+      "exercise-16": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original source and full solutions previously independently reviewed; cancellation concept qualification independently re-reviewed in audit/concept-cancellation-revision-independent.json. All question records unchanged."
+  }
+}

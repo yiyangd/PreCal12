@@ -1,0 +1,1107 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "11-review",
+    "section": "11 Review",
+    "kind": "review",
+    "title": "第 11 章复习",
+    "en": {
+      "title": "Chapter 11 Review"
+    },
+    "source": {
+      "kind": "pdf",
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "printedPages": [
+        546,
+        547
+      ],
+      "pdfPages": [
+        555,
+        556
+      ]
+    },
+    "concepts": [
+      {
+        "id": "counting",
+        "title": "乘法原理与限制",
+        "summary": "依次选择；先分互斥情况，再相加。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "每阶段乘可选数；先处理首位、重复、相邻或不相邻限制。"
+          }
+        ],
+        "pitfalls": [
+          "不要加入原题没有的限制。"
+        ],
+        "en": {
+          "title": "Counting principles and restrictions",
+          "summary": "Make choices in stages; add disjoint cases.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Multiply choices at successive stages. Handle leading digits, repetition, adjacency and separation first."
+            }
+          ],
+          "pitfalls": [
+            "Do not add restrictions absent from the question."
+          ]
+        }
+      },
+      {
+        "id": "permutations",
+        "title": "排列与重复元素",
+        "summary": "有序选取用 ${}_nP_r=n!/(n-r)!$；重复元素用多重集排列。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "将必须相邻的元素视为一个块，再乘块内排列；不相邻可用补集。"
+          }
+        ],
+        "pitfalls": [
+          "相同字母不能当成不同元素；$0!=1$。"
+        ],
+        "en": {
+          "title": "Permutations and repeated objects",
+          "summary": "Ordered selections use ${}_nP_r=n!/(n-r)!$; repeated objects require multiset permutations.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Treat required neighbours as a block and multiply internal arrangements; use a complement for forbidden neighbours."
+            }
+          ],
+          "pitfalls": [
+            "Identical letters are indistinguishable; $0!=1$."
+          ]
+        }
+      },
+      {
+        "id": "combinations",
+        "title": "组合与分组",
+        "summary": "无序选取用 $\\binom{n}{r}=n!/[r!(n-r)!]$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "不同类别分别选取并相乘；合法参数为整数且 $0\\le r\\le n$。"
+          }
+        ],
+        "pitfalls": [
+          "大小不同的小组可由大小辨别，不再除以小组个数的阶乘。"
+        ],
+        "en": {
+          "title": "Combinations and grouping",
+          "summary": "Unordered selections use $\\binom{n}{r}=n!/[r!(n-r)!]$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Choose within separate categories and multiply; parameters are integers with $0\\le r\\le n$."
+            }
+          ],
+          "pitfalls": [
+            "Different group sizes identify the groups; do not divide again by the factorial of the number of groups."
+          ]
+        }
+      },
+      {
+        "id": "factorials",
+        "title": "阶乘式与合法参数",
+        "summary": "展开相邻阶乘，约去公共因子，保留原定义限制。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先写 $n!=n(n-1)!$；排列组合方程求解后检查整数与 $n\\ge r$。"
+          }
+        ],
+        "pitfalls": [
+          "阶乘通常仅对非负整数定义；原分母不能为零。"
+        ],
+        "en": {
+          "title": "Factorial expressions and admissible parameters",
+          "summary": "Expand adjacent factorials, cancel common factors and retain original restrictions.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "First write $n!=n(n-1)!$. Check integer solutions and $n\\ge r$ after solving permutation/combination equations."
+            }
+          ],
+          "pitfalls": [
+            "Factorials here are defined only for nonnegative integers; original denominators cannot be zero."
+          ]
+        }
+      },
+      {
+        "id": "binomial",
+        "title": "二项式与指定项",
+        "summary": "$(a+b)^n=\\sum_{r=0}^{n}\\binom{n}{r}a^{n-r}b^r$。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "第 $r+1$ 项为 $T_{r+1}=\\binom{n}{r}a^{n-r}b^r$；先解指数条件再算系数。"
+          }
+        ],
+        "pitfalls": [
+          "负号属于第二项；分式要求分母变量不为零。"
+        ],
+        "en": {
+          "title": "Binomial expansions and selected terms",
+          "summary": "$(a+b)^n=\\sum_{r=0}^{n}\\binom{n}{r}a^{n-r}b^r$.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Term $r+1$ is $T_{r+1}=\\binom{n}{r}a^{n-r}b^r$. Solve the exponent condition before computing the coefficient."
+            }
+          ],
+          "pitfalls": [
+            "Include the sign of the second term; denominator variables must be nonzero."
+          ]
+        }
+      },
+      {
+        "id": "patterns",
+        "title": "帕斯卡三角形、路径与模式",
+        "summary": "每个内部数是相邻两个前行数之和；网格路径同样递推。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "到格点的路径数来自左侧与下方（或上方）的和；也可从总步数中选某方向步数。"
+          }
+        ],
+        "pitfalls": [
+          "观察模式后需给递推或计数证明。"
+        ],
+        "en": {
+          "title": "Pascal triangle, paths and patterns",
+          "summary": "Each interior entry is the sum of two adjacent entries above; grid paths obey the same recurrence.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Add routes from the two possible preceding vertices; equivalently choose positions for one direction among all steps."
+            }
+          ],
+          "pitfalls": [
+            "Support a pattern with a recurrence or a counting proof."
+          ]
+        }
+      }
+    ],
+    "questions": []
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "一对年轻夫妇计划生三个孩子。(a) 画树状图，表示三个孩子可能的性别。(b) 用树状图确定一男两女的结果数。",
+        "concept": "counting",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 按出生次序，每层分为男 B 与女 G。树的八个叶为 BBB、BBG、BGB、BGG、GBB、GBG、GGB、GGG，见解析图。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 一男两女对应 BGG、GBG、GGB，故为 3 个结果。"
+          }
+        ],
+        "answer": "(a) 8 个叶；(b) 3 个结果。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "A young couple plans to have three children. (a) Draw a tree diagram to show the possible genders for three children. (b) Use your tree diagram to determine the number of outcomes that give them one boy and two girls.",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) In birth order, branch to B or G at each level. The eight leaves are BBB, BBG, BGB, BGG, GBB, GBG, GGB and GGG; see the solution tree."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) One boy and two girls gives BGG, GBG and GGB, hence 3 outcomes."
+            }
+          ],
+          "answer": "(a) 8 leaves; (b) 3 outcomes."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/review-1-tree.png"
+      },
+      {
+        "number": 2,
+        "prompt": "足球场有九个门：北侧四个，南侧五个。(a) 进出球场共有多少种方式？(b) 从北门进入、从任何另一个门离开有多少种方式？",
+        "concept": "counting",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 入门有 9 种，出门也有 9 种，允许同门：$9\\times9=81$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 先选北门的 4 种之一，再选其余 8 门：$4\\times8=32$。"
+          }
+        ],
+        "answer": "(a) 81；(b) 32。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "A football stadium has nine gates: four on the north side and five on the south side. (a) In how many ways can you enter and leave the stadium? (b) In how many ways can you enter through a north gate and leave by any other gate?",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) There are 9 entrance and 9 exit choices; the same gate is allowed: $9\\times9=81$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) Choose one of 4 north gates and one of the other 8 exits: $4\\times8=32$."
+            }
+          ],
+          "answer": "(a) 81; (b) 32."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "用各单词的全部字母可排成多少种不同顺序？(a) bite (b) bitten (c) mammal (d) mathematical（答案保留阶乘形式）。",
+        "concept": "permutations",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 4 个不同字母：$4!=24$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 6 个字母中 t 重复两次：$6!/2!=360$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) mammal 中 m 有 3 个、a 有 2 个：$6!/(3!2!)=60$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(d) mathematical 有 12 个字母，a 三次、m 和 t 各两次：$12!/(3!2!2!)$。"
+          }
+        ],
+        "answer": "(a) 24；(b) 360；(c) 60；(d) $12!/(3!2!2!)$。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "How many different arrangements can you make using all of the letters of each word? (a) bite (b) bitten (c) mammal (d) mathematical (leave this answer in factorial form).",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) Four distinct letters: $4!=24$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) There are six letters with two t’s: $6!/2!=360$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(c) In mammal, m occurs 3 times and a twice: $6!/(3!2!)=60$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(d) mathematical has 12 letters, with a three times and m and t twice each: $12!/(3!2!2!)$."
+            }
+          ],
+          "answer": "(a) 24; (b) 360; (c) 60; (d) $12!/(3!2!2!)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "Anna、Bob、Cleo、Dina 和 Eric 五人坐成一排。以下情况各有多少坐法？(a) Anna 与 Cleo 必须相邻；(b) Anna 与 Cleo 必须相邻，Dina 与 Eric 也必须相邻；(c) Anna 与 Cleo 不能相邻。",
+        "concept": "permutations",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 把 AC 当一块，与 B、D、E 排列；块内有两种：$4!\\times2=48$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 两块 AC、DE 和 B：$3!\\times2\\times2=24$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 全部减去相邻：$5!-48=72$。"
+          }
+        ],
+        "answer": "(a) 48；(b) 24；(c) 72。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "Five people, Anna, Bob, Cleo, Dina, and Eric, are seated in a row. In how many ways can they be seated if (a) Anna and Cleo must sit together? (b) Anna and Cleo must sit together and so must Dina and Eric? (c) Anna and Cleo must not sit together?",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) Arrange block AC with B, D and E, allowing two internal orders: $4!\\times2=48$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) Arrange blocks AC, DE and B: $3!\\times2\\times2=24$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(c) Subtract adjacent arrangements from all orders: $5!-48=72$."
+            }
+          ],
+          "answer": "(a) 48; (b) 24; (c) 72."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "olympic 的字母有多少种排列，如果 (a) 无限制？(b) 辅音与元音（o、i、y）交替？(c) 所有元音位于每个排列的中间？",
+        "concept": "permutations",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 七个字母不同，故 $7!=5040$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 四辅音、三元音只能按 CVCVCVC 排列。各类内部排列：$4!3!=144$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 中间三位为第 3、4、5 位。元音在其中排 $3!$ 种，辅音排其余四位 $4!$ 种：$144$。"
+          }
+        ],
+        "answer": "(a) 5040；(b) 144；(c) 144。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "In how many ways can the letters of olympic be arranged if (a) there are no restrictions? (b) consonants and vowels (o, i, and y) alternate? (c) all vowels are in the middle of each arrangement?",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) All seven letters differ, so $7!=5040$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) Four consonants and three vowels require CVCVCVC. Permute within each type: $4!3!=144$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(c) The three middle positions are 3, 4 and 5. Arrange vowels there in $3!$ ways and consonants elsewhere in $4!$ ways: $144$."
+            }
+          ],
+          "answer": "(a) 5040; (b) 144; (c) 144."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 6,
+        "prompt": "某网站密码有 4–8 个字符，每个字符可为数字或字母，但每个密码最多含一个数字，允许重复。(a) 有多少 4 字符密码？(b) 有多少 8 字符密码？(c) 黑客每 10 s 检查一个组合，检查全部 8 字符密码比全部 4 字符密码多用多少时间？",
+        "concept": "counting",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "采用通常的 26 字母、10 数字，不区分字母大小写。长度 $k$ 的密码分为无数字 $26^k$ 与恰一数字 $k\\cdot10\\cdot26^{k-1}$ 两个互斥情况。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(a) $26^4+40(26^3)=1,160,016$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) $26^8+80(26^7)=851,371,878,656$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 时间差为 $10(851371878656-1160016)=8,513,707,186,400$ s，以 365 天为一年约 269,967.88 年。这里沿用题给检查速率，未作实际测量。"
+          }
+        ],
+        "answer": "(a) 1,160,016；(b) 851,371,878,656；(c) 多 8,513,707,186,400 s。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "Passwords on a certain Web site can have from four to eight characters. A character can be any digit or letter. Any password can have at most one digit on this Web site. Repetitions are allowed. (a) How many four-character passwords are possible? (b) How many eight-character passwords are possible? (c) If a hacker can check one combination every 10 s, how much longer does it take to check all of the eight-character passwords than to check all of the four-character passwords?",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "Use the usual 26 letters and 10 digits, without distinguishing case. For length $k$, disjoint cases give $26^k$ with no digit and $k\\cdot10\\cdot26^{k-1}$ with exactly one digit."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) $26^4+40(26^3)=1,160,016$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) $26^8+80(26^7)=851,371,878,656$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(c) The time difference is $10(851371878656-1160016)=8,513,707,186,400$ s, about 269,967.88 years of 365 days. This uses the supplied rate, not measured performance."
+            }
+          ],
+          "answer": "(a) 1,160,016; (b) 851,371,878,656; (c) 8,513,707,186,400 s longer."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 7,
+        "prompt": "化简：(a) $\\frac{n!+(n-1)!}{n!-(n-1)!}$；(b) $\\frac{(x+1)!+(x-1)!}{x!}$。",
+        "concept": "factorials",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 分子为 $(n+1)(n-1)!$，分母为 $(n-1)(n-1)!$。约去阶乘，得 $(n+1)/(n-1)$；原式要求整数 $n\\ge2$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) $(x+1)!/x!=x+1$，$(x-1)!/x!=1/x$，故 $x+1+1/x=(x^2+x+1)/x$，整数 $x\\ge1$。"
+          }
+        ],
+        "answer": "(a) $\\frac{n+1}{n-1}$，整数 $n\\ge2$；(b) $\\frac{x^2+x+1}{x}$，整数 $x\\ge1$。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "Simplify each expression. (a) $\\frac{n!+(n-1)!}{n!-(n-1)!}$ (b) $\\frac{(x+1)!+(x-1)!}{x!}$",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) The numerator is $(n+1)(n-1)!$ and denominator $(n-1)(n-1)!$. Cancel to obtain $(n+1)/(n-1)$, with integer $n\\ge2$ from the original expression."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) $(x+1)!/x!=x+1$ and $(x-1)!/x!=1/x$, giving $x+1+1/x=(x^2+x+1)/x$, for integer $x\\ge1$."
+            }
+          ],
+          "answer": "(a) $\\frac{n+1}{n-1}$, integer $n\\ge2$; (b) $\\frac{x^2+x+1}{x}$, integer $x\\ge1$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 8,
+        "prompt": "十个小彩灯泡中有三个已烧坏。(a) 随机选出四个灯泡有多少方式？(b) 选出两个好灯泡和两个烧坏灯泡有多少方式？",
+        "concept": "combinations",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 灯泡个体不同，选择不计次序：$\\binom{10}{4}=210$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 七个好灯泡选二，三个坏灯泡选二：$\\binom72\\binom32=21\\times3=63$。"
+          }
+        ],
+        "answer": "(a) 210；(b) 63。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "Imagine that you have ten small, coloured-light bulbs, of which three are burned out. (a) In how many ways can you randomly select four of the light bulbs? (b) In how many ways can you select two good light bulbs and two burned out light bulbs?",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) The bulbs are individual objects and selection order does not matter: $\\binom{10}{4}=210$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) Choose two of seven good bulbs and two of three burned-out bulbs: $\\binom72\\binom32=21\\times3=63$."
+            }
+          ],
+          "answer": "(a) 210; (b) 63."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 9,
+        "prompt": "计算：(a) ${}_{10}C_3$ (b) ${}_{10}P_4$ (c) ${}_5C_3\\times{}_5P_2$ (d) $(15!/(4!11!))({}_6P_3)$。",
+        "concept": "combinations",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) $10\\cdot9\\cdot8/(3\\cdot2\\cdot1)=120$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) $10\\cdot9\\cdot8\\cdot7=5040$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) $(5\\cdot4\\cdot3/6)(5\\cdot4)=10\\cdot20=200$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(d) $\\binom{15}{4}({}_6P_3)=1365\\cdot120=163800$。"
+          }
+        ],
+        "answer": "(a) 120；(b) 5040；(c) 200；(d) 163800。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "Calculate the value of each expression. (a) ${}_{10}C_3$ (b) ${}_{10}P_4$ (c) ${}_5C_3\\times{}_5P_2$ (d) $(15!/(4!11!))({}_6P_3)$",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) $10\\cdot9\\cdot8/(3\\cdot2\\cdot1)=120$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) $10\\cdot9\\cdot8\\cdot7=5040$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(c) $(5\\cdot4\\cdot3/6)(5\\cdot4)=10\\cdot20=200$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(d) $\\binom{15}{4}({}_6P_3)=1365\\cdot120=163800$."
+            }
+          ],
+          "answer": "(a) 120; (b) 5040; (c) 200; (d) 163800."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 10,
+        "prompt": "(a) 用一枚 1 分、一枚 5 分、一枚 10 分和一枚 25 分硬币，可以组成多少种不同金额？(b) 列出所有金额以验证 (a)。",
+        "concept": "combinations",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 每枚硬币用或不用，共 $2^4=16$ 个子集。去掉不用任何硬币的空集，得 15 个非零金额；下列枚举表明没有重复金额。若把不使用任何硬币的0分也算作金额，则另加这一个，得16种。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 不用 25 分时，非空金额为 1、5、6、10、11、15、16 分；用 25 分时，为 25、26、30、31、35、36、40、41 分。"
+          }
+        ],
+        "answer": "(a) 15；(b) 1、5、6、10、11、15、16、25、26、30、31、35、36、40、41 分。若包含0分，则为16种。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "(a) How many different sums of money can you form using one penny, one nickel, one dime, and one quarter? (b) List all possible sums to confirm your answer from part a).",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) Each coin is used or omitted, giving $2^4=16$ subsets. Remove the empty selection for 15 nonzero sums; the following list confirms no duplicate values. If the zero-cent sum using no coins is also counted, add that one selection to obtain 16."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) Without the quarter the nonempty sums are 1, 5, 6, 10, 11, 15 and 16 cents. With it they are 25, 26, 30, 31, 35, 36, 40 and 41 cents."
+            }
+          ],
+          "answer": "(a) 15; (b) 1, 5, 6, 10, 11, 15, 16, 25, 26, 30, 31, 35, 36, 40, 41 cents. If zero cents is included, there are 16 sums."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 11,
+        "prompt": "解 $n$，并验证每个答案：(a) ${}_nC_2=28$ (b) ${}_nC_3=4({}_nP_2)$。",
+        "concept": "factorials",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) $n(n-1)/2=28$，故 $n^2-n-56=(n-8)(n+7)=0$。因 $n\\ge2$ 为整数，只取 $n=8$；$\\binom82=28$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) $n\\ge3$，可约去非零的 $n(n-1)$：$(n-2)/6=4$，得 $n=26$。验证 $\\binom{26}{3}=2600=4(26\\cdot25)$。"
+          }
+        ],
+        "answer": "(a) 8；(b) 26。",
+        "printedPage": 546,
+        "pdfPage": 555,
+        "en": {
+          "prompt": "Solve for $n$. Show that each answer is correct. (a) ${}_nC_2=28$ (b) ${}_nC_3=4({}_nP_2)$",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) $n(n-1)/2=28$, so $n^2-n-56=(n-8)(n+7)=0$. With integer $n\\ge2$, only $n=8$ is admissible; $\\binom82=28$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) Since $n\\ge3$, cancel nonzero $n(n-1)$ to obtain $(n-2)/6=4$ and $n=26$. Check $\\binom{26}{3}=2600=4(26\\cdot25)$."
+            }
+          ],
+          "answer": "(a) 8; (b) 26."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 12,
+        "prompt": "十名学生要分成一个两人组、一个三人组和一个五人组，有多少种分法？",
+        "concept": "combinations",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "先选两人，再从余下八人选三人，最后五人确定：$\\binom{10}{2}\\binom83\\binom55=45\\cdot56\\cdot1=2520$。组大小不同，三组已可辨别。"
+          }
+        ],
+        "answer": "2520 种。",
+        "printedPage": 547,
+        "pdfPage": 556,
+        "en": {
+          "prompt": "Ten students are instructed to break into a group of two, a group of three, and a group of five. In how many ways can this be done?",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "Choose two students, then three from the remaining eight; the final five are fixed: $\\binom{10}{2}\\binom83\\binom55=45\\cdot56\\cdot1=2520$. Different sizes distinguish the groups."
+            }
+          ],
+          "answer": "2520 ways."
+        }
+      },
+      {
+        "number": 13,
+        "prompt": "(a) 创作两个答案为 $5!/(2!3!)$ 的问题，一个涉及排列，另一个涉及组合；解释哪一个是哪种。(b) 五种油漆颜色特价，从中选两种的方法数是否等于选三种？解释。",
+        "concept": "combinations",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 一个有效的示例排列题：把两枚相同红珠和三枚相同蓝珠排成一行，有多少顺序？$5!/(2!3!)=10$，位置次序有意义。示例组合题：五位学生选两位参赛，有多少队伍？$\\binom52=10$，队员次序无意义。学生可另创满足条件的问题。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 相等：$\\binom52=10=\\binom53$。每个选出的两色集合唯一对应未选出的三色集合。"
+          }
+        ],
+        "answer": "(a) 示例：重复珠子的排列与五选二；均为 10。(b) 相等，均为 10。",
+        "printedPage": 547,
+        "pdfPage": 556,
+        "en": {
+          "prompt": "(a) Create two problems where the answer to each is represented by $5!/(2!3!)$. One problem must involve a permutation and the other a combination. Explain which is which. (b) Five colours of paint are on sale. Is the number of ways of choosing two colours from the five options the same as the number of ways of choosing three colours from the five? Explain your answer.",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) An illustrative permutation problem: how many rows can be made with two identical red and three identical blue beads? $5!/(2!3!)=10$, and position order matters. A combination problem: how many teams of two can be selected from five students? $\\binom52=10$, and member order does not matter. Students may create other valid problems."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) Yes: $\\binom52=10=\\binom53$. Every selected pair corresponds uniquely to the complementary triple."
+            }
+          ],
+          "answer": "(a) Illustrations: repeated-bead rows and two of five students; both give 10. (b) Equal, both 10."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 14,
+        "prompt": "对下列帕斯卡三角形行，写出下一行：(a) 1 2 1 (b) 1 8 28 56 70 56 28 8 1。",
+        "concept": "patterns",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 两端写 1，内部相邻相加：$1,1+2,2+1,1$，得 1 3 3 1。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 同法得 1 9 36 84 126 126 84 36 9 1。"
+          }
+        ],
+        "answer": "(a) 1 3 3 1；(b) 1 9 36 84 126 126 84 36 9 1。",
+        "printedPage": 547,
+        "pdfPage": 556,
+        "en": {
+          "prompt": "For each row from Pascal’s triangle, write the next row. (a) 1 2 1 (b) 1 8 28 56 70 56 28 8 1",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) Put 1 at each end and add adjacent entries: $1,1+2,2+1,1$, giving 1 3 3 1."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) The same rule gives 1 9 36 84 126 126 84 36 9 1."
+            }
+          ],
+          "answer": "(a) 1 3 3 1; (b) 1 9 36 84 126 126 84 36 9 1."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 15,
+        "prompt": "解释如何用乘法、帕斯卡三角形或组合确定 $(x+y)^n$（$n\\in\\mathbb N$）展开式各项的系数，并用示例支持解释。",
+        "concept": "binomial",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "乘法示例：$(x+y)^2=x^2+2xy+y^2$；再乘 $(x+y)$ 得 $x^3+3x^2y+3xy^2+y^3$，同类项合并产生系数。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "帕斯卡三角形：从顶行 $n=0$ 计，第 $n$ 行给指数 $n$ 的系数；$n=3$ 行为 1 3 3 1。相邻相加就是上述乘法合并。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "组合：在 $n$ 个因子中选 $r$ 个提供 $y$，其余提供 $x$，共有 $\\binom nr$ 种，因此 $x^{n-r}y^r$ 的系数是 $\\binom nr$。例如 $x^2y$ 的系数为 $\\binom31=3$。"
+          }
+        ],
+        "answer": "$x^{n-r}y^r$ 的系数为 $\\binom nr$；三种方法给出同一系数。",
+        "printedPage": 547,
+        "pdfPage": 556,
+        "en": {
+          "prompt": "Explain how to determine the coefficients of the terms in the expansion of $(x+y)^n$, $n\\in\\mathbb N$, using multiplication, Pascal’s triangle, or combinations. Use examples to support your explanations.",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "By multiplication, $(x+y)^2=x^2+2xy+y^2$; multiplying once more by $(x+y)$ gives $x^3+3x^2y+3xy^2+y^3$. Collecting like terms produces the coefficients."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "In Pascal’s triangle, count the top as row $n=0$; row $n$ gives coefficients for exponent $n$. For $n=3$ the row is 1 3 3 1. Adjacent addition matches collecting the products."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "By combinations, choose the $r$ of $n$ factors supplying $y$; the others supply $x$. Thus the coefficient of $x^{n-r}y^r$ is $\\binom nr$. For example the coefficient of $x^2y$ is $\\binom31=3$."
+            }
+          ],
+          "answer": "The coefficient of $x^{n-r}y^r$ is $\\binom nr$; all three methods agree."
+        }
+      },
+      {
+        "number": 16,
+        "prompt": "用二项式定理展开并化简：(a) $(a+b)^5$ (b) $(x-3)^3$ (c) $(2x^2-1/x^2)^4$。",
+        "concept": "binomial",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 系数为 1,5,10,10,5,1，依次降低 $a$ 幂并升高 $b$ 幂，得 $a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) $x^3+3x^2(-3)+3x(-3)^2+(-3)^3=x^3-9x^2+27x-27$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 第 $r+1$ 项为 $\\binom4r2^{4-r}(-1)^r x^{8-4r}$。令 $r=0,1,2,3,4$，得 $16x^8-32x^4+24-8/x^4+1/x^8$，$x\\ne0$。"
+          }
+        ],
+        "answer": "(a) $a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5$；(b) $x^3-9x^2+27x-27$；(c) $16x^8-32x^4+24-8/x^4+1/x^8$，$x\\ne0$。",
+        "printedPage": 547,
+        "pdfPage": 556,
+        "en": {
+          "prompt": "Expand using the binomial theorem. Simplify. (a) $(a+b)^5$ (b) $(x-3)^3$ (c) $(2x^2-1/x^2)^4$",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) Use coefficients 1,5,10,10,5,1, decreasing powers of $a$ and increasing powers of $b$: $a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) $x^3+3x^2(-3)+3x(-3)^2+(-3)^3=x^3-9x^2+27x-27$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(c) Term $r+1$ is $\\binom4r2^{4-r}(-1)^r x^{8-4r}$. Substituting $r=0,1,2,3,4$ gives $16x^8-32x^4+24-8/x^4+1/x^8$, $x\\ne0$."
+            }
+          ],
+          "answer": "(a) $a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5$; (b) $x^3-9x^2+27x-27$; (c) $16x^8-32x^4+24-8/x^4+1/x^8$, $x\\ne0$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 17,
+        "prompt": "求指定项并化简：(a) $(a+b)^9$ 的第三项；(b) $(x-2y)^6$ 的第六项；(c) $(1/x-2x^2)^6$ 的中间项。",
+        "concept": "binomial",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) 第三项对应 $r=2$：$T_3=\\binom92a^7b^2=36a^7b^2$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 第六项对应 $r=5$：$T_6=\\binom65x(-2y)^5=-192xy^5$。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 共七项，中间为第四项，$r=3$：$T_4=\\binom63x^{-3}(-2x^2)^3=-160x^3$，$x\\ne0$。"
+          }
+        ],
+        "answer": "(a) $36a^7b^2$；(b) $-192xy^5$；(c) $-160x^3$，$x\\ne0$。",
+        "printedPage": 547,
+        "pdfPage": 556,
+        "en": {
+          "prompt": "Determine the indicated term in each binomial expansion. Simplify each answer. (a) third term of $(a+b)^9$ (b) sixth term of $(x-2y)^6$ (c) middle term of $(1/x-2x^2)^6$",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) The third term has $r=2$: $T_3=\\binom92a^7b^2=36a^7b^2$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) The sixth term has $r=5$: $T_6=\\binom65x(-2y)^5=-192xy^5$."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(c) There are seven terms, so the middle is the fourth, $r=3$: $T_4=\\binom63x^{-3}(-2x^2)^3=-160x^3$, $x\\ne0$."
+            }
+          ],
+          "answer": "(a) $36a^7b^2$; (b) $-192xy^5$; (c) $-160x^3$, $x\\ne0$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "number": 18,
+        "prompt": "图示可计算从 A 到每个交点的路线数，只能向上或向右移动。(a) 画相同网格，用计数和模式标出从 A 到各交点的路线数，图中已有几个数。(b) 说明如何叠加帕斯卡三角形，得到到任一格点的路径数。(c) 从 A 到 B 有多少路径？(d) 用另一方法求从 A 到 B 的路径数。",
+        "concept": "patterns",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "(a) A 计为 1，底边和左边各点均为 1。内部点等于左点与下点之和。由底向上五行分别是：1 1 1 1 1 1；1 2 3 4 5 6；1 3 6 10 15 21；1 4 10 20 35 56；1 5 15 35 70 126。见解析网格。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(b) 把 A 当帕斯卡三角形顶点，沿斜线 $i+j=k$ 读第 $k$ 行；每个值 $\\binom{i+j}{i}$ 都由两前驱相加得到。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) 右上 B 的递推值为 126。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(d) 到 B 必须走五次右、四次上。在九步中选四步向上：$\\binom94=9!/(4!5!)=126$，与递推一致。"
+          }
+        ],
+        "answer": "(a) 见完整网格；(b) 沿斜对角线叠加帕斯卡三角形；(c)(d) 126。",
+        "printedPage": 547,
+        "pdfPage": 556,
+        "en": {
+          "prompt": "You can determine the number of possible routes from A to each intersection in the diagram. Assume you can move only up or to the right. (a) Draw a diagram like the one shown. Mark the number of possible routes or pathways from A to each intersection in your diagram. A few have been done for you. Use counting and patterns. (b) Show how you can superimpose Pascal’s triangle to get the number of pathways from A to any point on the grid. (c) How many pathways are possible to go from A to B? (d) Use a different method to determine the number of possible pathways going from A to B.",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) Assign 1 to A and every vertex on the bottom and left edges. Each interior count is the sum of the left and lower counts. From bottom to top the rows are: 1 1 1 1 1 1; 1 2 3 4 5 6; 1 3 6 10 15 21; 1 4 10 20 35 56; 1 5 15 35 70 126. See the completed solution grid."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(b) Put the apex of Pascal’s triangle at A. Diagonals $i+j=k$ read row $k$; each value $\\binom{i+j}{i}$ is the sum from the two predecessors."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(c) The recurrence gives 126 at B."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(d) A route to B contains five right steps and four up steps. Choose positions of the four up steps: $\\binom94=9!/(4!5!)=126$, agreeing with the recurrence."
+            }
+          ],
+          "answer": "(a) See completed grid; (b) overlay Pascal’s triangle along diagonals; (c)(d) 126."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/review-18-source.png",
+        "solutionImage": "assets/review-18-grid.png"
+      },
+      {
+        "number": 19,
+        "prompt": "十枚绿色和十枚黄色计数器交替排成一行。每次移动，一枚计数器只能跳过一枚异色计数器。任务是将所有计数器分成两组，使绿色全在一端、黄色全在另一端。(a) 各十枚时需要多少次移动？(b) 用两种颜色的计数器，建立每色 2 至 12 枚时的模式。(c) 每色 25 枚时需要多少次移动？",
+        "concept": "patterns",
+        "steps": [
+          {
+            "title": "计算与说明",
+            "body": "按原图 GYGY…GY，将一次跳过相邻异色计数器理解为交换该相邻异色对；求完成分组所需的最少次数，不计来回撤销。若绿色在左，依次各绿子前有 $0,1,\\ldots,n-1$ 枚黄子，每对都需跨越一次，最少为 $n(n-1)/2$。从左逐个把绿子移过前方黄子即可达到此数。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(a) $10\\cdot9/2=45$ 次。(b) 每色 $n=2,3,\\ldots,12$ 时，次数为 1、3、6、10、15、21、28、36、45、55、66；相邻差依次为 2、3、…、11。"
+          },
+          {
+            "title": "计算与说明",
+            "body": "(c) $25\\cdot24/2=300$ 次。若规定黄色在左，则需跨越另一组异色对，次数为 $n(n+1)/2$，各十枚为 55 次、各 25 枚为 325 次。原题允许任一端，因此最少值取前者；最终顺序不同会改变次数。"
+          }
+        ],
+        "answer": "(a) 最少 45；(b) 1、3、6、10、15、21、28、36、45、55、66；(c) 最少 300。另一最终颜色顺序分别为 55 和 325。",
+        "printedPage": 547,
+        "pdfPage": 556,
+        "en": {
+          "prompt": "Ten green and ten yellow counters are placed alternately in a row. On each move, a counter can only jump one of its opposite colour. The task is to arrange all of the counters in two groups so that all of the green counters are at one end and all of the yellow counters are at the other end. (a) How many moves are necessary if you have ten green and ten yellow counters? (b) Establish a pattern for 2 to 12 counters of each colour. Use 2 different colours of counters. (c) How many moves are necessary for 25 of each colour?",
+          "steps": [
+            {
+              "title": "Calculation and explanation",
+              "body": "For the pictured GYGY…GY row, interpret a jump over one neighbouring opposite-colour counter as swapping that adjacent unlike pair. Count the minimum moves to group, excluding undoing moves. With green on the left, the green counters have $0,1,\\ldots,n-1$ yellow predecessors; each such pair must cross once, giving $n(n-1)/2$. Move each green counter left across its yellow predecessors to attain the bound."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(a) $10\\cdot9/2=45$ moves. (b) For $n=2,3,\\ldots,12$ of each colour, the counts are 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66; successive differences are 2, 3, …, 11."
+            },
+            {
+              "title": "Calculation and explanation",
+              "body": "(c) $25\\cdot24/2=300$ moves. If yellow must be on the left, the other set of unlike pairs must cross, giving $n(n+1)/2$: 55 for ten of each and 325 for 25 of each. Since the question allows either end, the minimum is the former; a prescribed final orientation changes the count."
+            }
+          ],
+          "answer": "(a) Minimum 45; (b) 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66; (c) minimum 300. The opposite final orientation gives 55 and 325 respectively."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/review-19-source.png"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "expectedSubparts": {
+      "exercise-1": [
+        "a",
+        "b"
+      ],
+      "exercise-2": [
+        "a",
+        "b"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-7": [
+        "a",
+        "b"
+      ],
+      "exercise-8": [
+        "a",
+        "b"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-10": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b"
+      ],
+      "exercise-13": [
+        "a",
+        "b"
+      ],
+      "exercise-14": [
+        "a",
+        "b"
+      ],
+      "exercise-16": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-17": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-18": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-19": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "A reviewer independent of the author inspected PDF555–557, derived every result before opening these content files, checked every bilingual prompt/subpart/step/answer and source/solution figure, and independently enumerated high-risk counts. See audit/independent-review-test.json and its source-first evidence."
+  }
+}

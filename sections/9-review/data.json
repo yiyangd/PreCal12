@@ -1,0 +1,900 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "9-review",
+    "section": "9",
+    "title": "第 9 章复习",
+    "en": {
+      "title": "Chapter 9 Review"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        468,
+        469
+      ],
+      "pdfPages": [
+        477,
+        478
+      ]
+    },
+    "concepts": [
+      {
+        "id": "transform",
+        "title": "倒数函数及变换",
+        "summary": "从 $1/x$ 或 $1/x^2$ 出发分析伸缩、平移与反射。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "将式子化为 $a/(x-h)+k$ 或 $a/(x-h)^2+k$；记录原限制、渐近线、截距和值域。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Reciprocal transformations",
+          "summary": "Use $1/x$ or $1/x^2$ to identify stretches, translations and reflections.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Write $a/(x-h)+k$ or $a/(x-h)^2+k$; record original restrictions, asymptotes, intercepts and range."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "analyse",
+        "title": "约分、空洞与渐近线",
+        "summary": "先由原分母确定定义域，再分析简化式。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "原分母的所有零点始终排除。完全约简后，只有当表达式在某个被排除点有有限值时，才在该点标孔洞（空心点）；若约简后的分母仍在该点为零，则检查竖直渐近线及两侧行为。部分约分不一定产生孔洞，例如 $x/x^2=1/x$（$x\\ne0$）在 $x=0$ 仍有竖直渐近线。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Cancellation, holes and asymptotes",
+          "summary": "Determine the domain from the original denominator before simplifying.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Keep every zero of the original denominator excluded. After fully reducing the expression, mark a hole at an excluded input only if the reduced expression has a finite value there. If the reduced denominator is still zero there, examine the vertical asymptote and behaviour on both sides. Partial cancellation need not produce a hole: $x/x^2=1/x$, with $x\\ne0$, still has a vertical asymptote at $x=0$."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "equation",
+        "title": "有理方程与图像",
+        "summary": "解对应于合法交点横坐标或差函数的零点。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先列限制，清分母，解多项式，再代回原式并与图像交点核对。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Rational equations and graphs",
+          "summary": "Solutions are valid intersection x-coordinates or zeros of a difference function.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "List restrictions, clear denominators, solve the polynomial, then check the original equation and graph intersections."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "model",
+        "title": "情境模型与实际范围",
+        "summary": "把代数范围与题目中有意义的输入取交集。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "标明单位与离散/连续输入；在实际范围内解释渐近趋势并核对模型解。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Models and contextual domains",
+          "summary": "Intersect algebraic domains with meaningful inputs in the situation.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "State units and discrete or continuous inputs; interpret asymptotes and verify solutions within the contextual domain."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "kind": "review"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "用变换画出各函数图像，指出定义域、值域、截距及渐近线。(a) $y=\\frac{8}{x-1}$；(b) $y=\\frac{3}{x}+2$；(c) $y=-\\frac{12}{x+4}-5$。",
+        "concept": "transform",
+        "steps": [
+          {
+            "title": "(a) 变换",
+            "body": "(a) 变换：$1/x$ 纵向伸长8倍，右移1。$x\\ne1,y\\ne0$；无横截距，$y(0)=-8$；渐近线 $x=1,y=0$。"
+          },
+          {
+            "title": "(b) 变换",
+            "body": "(b) 变换：纵向伸长3倍，上移2。$x\\ne0,y\\ne2$；$3/x+2=0$ 得 $x=-3/2$，无纵截距；渐近线 $x=0,y=2$。"
+          },
+          {
+            "title": "(c) 变换",
+            "body": "(c) 变换：反射于横轴、纵向伸长12倍、左移4再下移5。$x\\ne-4,y\\ne-5$；$-12/(x+4)=5$ 得 $x=-32/5$；$y(0)=-8$。"
+          }
+        ],
+        "answer": "(a) $D=\\mathbb{R}\\setminus\\{1\\},R=\\mathbb{R}\\setminus\\{0\\}$；(b) $D=\\mathbb{R}\\setminus\\{0\\},R=\\mathbb{R}\\setminus\\{2\\}$；(c) $D=\\mathbb{R}\\setminus\\{-4\\},R=\\mathbb{R}\\setminus\\{-5\\}$，渐近线 $x=-4,y=-5$。",
+        "printedPage": 468,
+        "pdfPage": 477,
+        "en": {
+          "prompt": "Sketch the graph of each function using transformations. Identify the domain and range, intercepts, and asymptotes. (a) $y=\\frac{8}{x-1}$; (b) $y=\\frac{3}{x}+2$; (c) $y=-\\frac{12}{x+4}-5$.",
+          "steps": [
+            {
+              "title": "(a) Transform",
+              "body": "(a) Transform: stretch $1/x$ vertically by 8 and shift right 1. $x\\ne1,y\\ne0$; no x-intercept; $y(0)=-8$; asymptotes $x=1,y=0$."
+            },
+            {
+              "title": "(b) Transform",
+              "body": "(b) Transform: stretch vertically by 3 and shift up 2. $x\\ne0,y\\ne2$; $3/x+2=0$ gives $x=-3/2$; no y-intercept; asymptotes $x=0,y=2$."
+            },
+            {
+              "title": "(c) Transform",
+              "body": "(c) Transform: reflect in the x-axis, stretch vertically by 12, shift left 4 and down 5. $x\\ne-4,y\\ne-5$; $-12/(x+4)=5$ gives $x=-32/5$; $y(0)=-8$."
+            }
+          ],
+          "answer": "(a) $D=\\mathbb{R}\\setminus\\{1\\},R=\\mathbb{R}\\setminus\\{0\\}$. (b) $D=\\mathbb{R}\\setminus\\{0\\},R=\\mathbb{R}\\setminus\\{2\\}$. (c) $D=\\mathbb{R}\\setminus\\{-4\\},R=\\mathbb{R}\\setminus\\{-5\\}$, asymptotes $x=-4,y=-5$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/9-review-q1-sol.png"
+      },
+      {
+        "number": 2,
+        "prompt": "画出函数图像，指出所有渐近线和截距。(a) $y=\\frac{x}{x+2}$；(b) $y=\\frac{2x+5}{x-1}$；(c) $y=\\frac{-5x-3}{x-6}$。",
+        "concept": "transform",
+        "steps": [
+          {
+            "title": "(a) 改写",
+            "body": "(a) 改写：$y=1-2/(x+2)$。渐近线 $x=-2,y=1$；$x=0$ 时 $y=0$，两个截距重合于原点。"
+          },
+          {
+            "title": "(b) 改写",
+            "body": "(b) 改写：$y=2+7/(x-1)$。渐近线 $x=1,y=2$；$2x+5=0$ 得横截距 $(-5/2,0)$；纵截距 $(0,-5)$。"
+          },
+          {
+            "title": "(c) 改写",
+            "body": "(c) 改写：$y=-5-33/(x-6)$。渐近线 $x=6,y=-5$；$-5x-3=0$ 得 $(-3/5,0)$；纵截距 $(0,1/2)$。"
+          }
+        ],
+        "answer": "三图均为双曲线：按以上平移与伸缩绘制，并排除各竖直渐近线处的输入。",
+        "printedPage": 468,
+        "pdfPage": 477,
+        "en": {
+          "prompt": "Graph each function, and identify any asymptotes and intercepts. (a) $y=\\frac{x}{x+2}$; (b) $y=\\frac{2x+5}{x-1}$; (c) $y=\\frac{-5x-3}{x-6}$.",
+          "steps": [
+            {
+              "title": "(a) Rewrite",
+              "body": "(a) Rewrite: $y=1-2/(x+2)$. Asymptotes $x=-2,y=1$; at $x=0$, $y=0$, so both intercepts are at the origin."
+            },
+            {
+              "title": "(b) Rewrite",
+              "body": "(b) Rewrite: $y=2+7/(x-1)$. Asymptotes $x=1,y=2$; $2x+5=0$ gives $(-5/2,0)$; the y-intercept is $(0,-5)$."
+            },
+            {
+              "title": "(c) Rewrite",
+              "body": "(c) Rewrite: $y=-5-33/(x-6)$. Asymptotes $x=6,y=-5$; $-5x-3=0$ gives $(-3/5,0)$; the y-intercept is $(0,1/2)$."
+            }
+          ],
+          "answer": "All three are reciprocal hyperbolas with the transformations and features above; each vertical-asymptote input is excluded."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/9-review-q2-sol.png"
+      },
+      {
+        "number": 3,
+        "prompt": "画出 $f(x)=\\frac1{x^2}$、$g(x)=\\frac6{(x-3)^2}+2$ 和 $h(x)=\\frac{-4}{x^2+12x+36}$。比较图像特征并指出共同点。",
+        "concept": "transform",
+        "steps": [
+          {
+            "title": "$f$",
+            "body": "$f$：$D:x\\ne0,R:y>0$；渐近线 $x=0,y=0$；关于 $x=0$ 对称，无截距。"
+          },
+          {
+            "title": "$g$",
+            "body": "$g$：纵向伸长6倍，右移3，上移2；$D:x\\ne3,R:y>2$；渐近线 $x=3,y=2$，对称轴 $x=3$；纵截距 $(0,8/3)$，无横截距。"
+          },
+          {
+            "title": "$h$",
+            "body": "$h$：$x^2+12x+36=(x+6)^2$，所以反射、伸长4倍并左移6；$D:x\\ne-6,R:y<0$；渐近线 $x=-6,y=0$，纵截距 $(0,-1/9)$，无横截距。"
+          }
+        ],
+        "answer": "共同点：每图两支、均有一条竖直与一条水平渐近线，关于竖直渐近线对称；$f,g$ 两支在水平渐近线上方，$h$ 在下方。",
+        "printedPage": 468,
+        "pdfPage": 477,
+        "en": {
+          "prompt": "Graph $f(x)=\\frac1{x^2}$, $g(x)=\\frac6{(x-3)^2}+2$, and $h(x)=\\frac{-4}{x^2+12x+36}$. Compare their characteristics and identify common features.",
+          "steps": [
+            {
+              "title": "$f$",
+              "body": "$f$: $D:x\\ne0,R:y>0$; asymptotes $x=0,y=0$; symmetric about $x=0$; no intercepts."
+            },
+            {
+              "title": "$g$",
+              "body": "$g$: stretch vertically by 6, shift right 3 and up 2; $D:x\\ne3,R:y>2$; asymptotes $x=3,y=2$ and symmetry axis $x=3$; y-intercept $(0,8/3)$ and no x-intercept."
+            },
+            {
+              "title": "$h$",
+              "body": "$h$: $x^2+12x+36=(x+6)^2$, so reflect, stretch by 4 and shift left 6. $D:x\\ne-6,R:y<0$; asymptotes $x=-6,y=0$; y-intercept $(0,-1/9)$ and no x-intercept."
+            }
+          ],
+          "answer": "Each has two branches, one vertical and one horizontal asymptote, and symmetry about its vertical asymptote. The branches of $f,g$ lie above their horizontal asymptotes; those of $h$ lie below."
+        },
+        "graph": {
+          "numerator": [
+            1
+          ],
+          "denominator": [
+            1,
+            0,
+            0
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 10,
+            "yMin": -6,
+            "yMax": 8
+          },
+          "verticalAsymptotes": [
+            0,
+            3,
+            -6
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "f(x)=1/x^2,\\quad g(x)=6/(x-3)^2+2,\\quad h(x)=-4/(x+6)^2",
+          "traces": [
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                0,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 0,
+              "label": "f(x)=1/x²"
+            },
+            {
+              "numerator": [
+                2,
+                -12,
+                24
+              ],
+              "denominator": [
+                1,
+                -6,
+                9
+              ],
+              "verticalAsymptotes": [
+                3
+              ],
+              "horizontalAsymptote": 2,
+              "label": "g(x)=6/(x−3)²+2"
+            },
+            {
+              "numerator": [
+                -4
+              ],
+              "denominator": [
+                1,
+                12,
+                36
+              ],
+              "verticalAsymptotes": [
+                -6
+              ],
+              "horizontalAsymptote": 0,
+              "label": "h(x)=−4/(x+6)²"
+            }
+          ]
+        }
+      },
+      {
+        "number": 4,
+        "prompt": "棒球联盟向一家收取固定费用500元再加每套35元的公司订新队服。(a) 用方程和图像表示每套平均成本随订购数量的变化。(b) 指出图像关键特征并解释平均成本的变化。(c) 若每套成本要控制在40元，需要订多少套？",
+        "concept": "model",
+        "steps": [
+          {
+            "title": "(a) 建模",
+            "body": "(a) 建模：总费用 $500+35n$，故平均成本 $C(n)=(500+35n)/n=35+500/n$，$n=1,2,3,\\ldots$。图示曲线帮助观察，实际只取正整数点。"
+          },
+          {
+            "title": "(b) 特征",
+            "body": "(b) 特征：$n=0$ 为延伸曲线的竖直渐近线，$C=35$ 为水平渐近线；无实际截距。数量越大，固定费用分摊越少，$C$ 由上方趋近35元。"
+          },
+          {
+            "title": "(c) 求解",
+            "body": "(c) 求解：$35+500/n=40\\Rightarrow500=5n\\Rightarrow n=100$；代回 $(500+3500)/100=40$。"
+          }
+        ],
+        "answer": "恰好40元时订100套；若要求每套不超过40元，至少100套。",
+        "printedPage": 468,
+        "pdfPage": 477,
+        "en": {
+          "prompt": "A baseball league plans to order new uniforms from a company that charges 500 dollars plus 35 dollars per uniform. (a) Represent the average cost per uniform as a function of the number ordered using an equation and a graph. (b) Identify key features and explain how average cost changes with the number ordered. (c) The league needs to keep the cost per uniform at 40 dollars. How many uniforms must it order?",
+          "steps": [
+            {
+              "title": "(a) Model",
+              "body": "(a) Model: total cost is $500+35n$, so $C(n)=(500+35n)/n=35+500/n$, for $n=1,2,3,\\ldots$. The curve guides the eye; actual orders are positive integer points."
+            },
+            {
+              "title": "(b) Features",
+              "body": "(b) Features: $n=0$ is the continuous extension’s vertical asymptote and $C=35$ its horizontal asymptote; there are no contextual intercepts. Larger orders spread the fixed cost and make $C$ decrease toward 35 dollars from above."
+            },
+            {
+              "title": "(c) Solve",
+              "body": "(c) Solve: $35+500/n=40\\Rightarrow500=5n\\Rightarrow n=100$. Check $(500+3500)/100=40$."
+            }
+          ],
+          "answer": "Order 100 uniforms for exactly 40 dollars each; at least 100 if the cap is 40 dollars."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graph": {
+          "numerator": [
+            35,
+            500
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 200,
+            "yMin": 0,
+            "yMax": 150
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 35,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "C(n)=35+500/n"
+        }
+      },
+      {
+        "number": 5,
+        "prompt": "画图并分析各函数，包括不可取值附近的行为。(a) $y=\\frac{x^2+2x}{x}$；(b) $y=\\frac{x^2-16}{x-4}$；(c) $y=\\frac{2x^2-3x-5}{2x-5}$。",
+        "concept": "analyse",
+        "steps": [
+          {
+            "title": "(a) 约分",
+            "body": "(a) 约分：$x(x+2)/x=x+2$，保留 $x\\ne0$。直线 $y=x+2$ 在 $(0,2)$ 有空洞；横截距 $(-2,0)$，无纵截距；$D:x\\ne0,R:y\\ne2$，$x\\to0$ 时 $y\\to2$。"
+          },
+          {
+            "title": "(b) 约分",
+            "body": "(b) 约分：$(x-4)(x+4)/(x-4)=x+4$，$x\\ne4$。空洞 $(4,8)$，横截距 $(-4,0)$，纵截距 $(0,4)$；$D:x\\ne4,R:y\\ne8$，$x\\to4$ 时 $y\\to8$。"
+          },
+          {
+            "title": "(c) 因式分解",
+            "body": "(c) 因式分解：$(2x-5)(x+1)/(2x-5)=x+1$，$x\\ne5/2$。空洞 $(5/2,7/2)$，截距 $(-1,0),(0,1)$；$D:x\\ne5/2,R:y\\ne7/2$，$x\\to5/2$ 时 $y\\to7/2$。"
+          }
+        ],
+        "answer": "三图均为去掉一个点的直线，均无竖直或水平渐近线；不可取值处是空洞而非竖直渐近线。",
+        "printedPage": 468,
+        "pdfPage": 477,
+        "en": {
+          "prompt": "Graph and analyse each function, including its behaviour near non-permissible values. (a) $y=\\frac{x^2+2x}{x}$; (b) $y=\\frac{x^2-16}{x-4}$; (c) $y=\\frac{2x^2-3x-5}{2x-5}$.",
+          "steps": [
+            {
+              "title": "(a) Cancel",
+              "body": "(a) Cancel: $x(x+2)/x=x+2$, retaining $x\\ne0$. The line $y=x+2$ has a hole at $(0,2)$; x-intercept $(-2,0)$, no y-intercept; $D:x\\ne0,R:y\\ne2$ and $y\\to2$ as $x\\to0$."
+            },
+            {
+              "title": "(b) Cancel",
+              "body": "(b) Cancel: $(x-4)(x+4)/(x-4)=x+4$, $x\\ne4$. Hole $(4,8)$, intercepts $(-4,0),(0,4)$; $D:x\\ne4,R:y\\ne8$ and $y\\to8$ as $x\\to4$."
+            },
+            {
+              "title": "(c) Factor",
+              "body": "(c) Factor: $(2x-5)(x+1)/(2x-5)=x+1$, $x\\ne5/2$. Hole $(5/2,7/2)$, intercepts $(-1,0),(0,1)$; $D:x\\ne5/2,R:y\\ne7/2$ and $y\\to7/2$ as $x\\to5/2$."
+            }
+          ],
+          "answer": "Each graph is a line with one point removed, with no vertical or horizontal asymptote. The excluded value gives a hole rather than a vertical asymptote."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/9-review-q5-sol.png"
+      },
+      {
+        "number": 6,
+        "prompt": "哪个有理函数与所给各图匹配？说明理由。$A(x)=\\frac{x-4}{x^2-5x+4}$，$B(x)=\\frac{x^2+5x+4}{x^2+1}$，$C(x)=\\frac{x-1}{x^2-4}$。",
+        "concept": "analyse",
+        "steps": [
+          {
+            "title": "Graph 1",
+            "body": "Graph 1：$B=(x+1)(x+4)/(x^2+1)$，分母恒正，无竖直渐近线，零点为 $-4,-1$，纵截距4，水平渐近线1，吻合图1。"
+          },
+          {
+            "title": "Graph 2",
+            "body": "Graph 2：$C$ 的分母 $(x-2)(x+2)$ 不约分，竖直渐近线 $x=\\pm2$，横截距1，水平渐近线0，吻合图2。"
+          },
+          {
+            "title": "Graph 3",
+            "body": "Graph 3：$A=1/(x-1)$，但 $x\\ne1,4$；$x=1$ 为竖直渐近线，$(4,1/3)$ 为空洞，吻合图3。"
+          }
+        ],
+        "answer": "Graph 1 → $B$；Graph 2 → $C$；Graph 3 → $A$。",
+        "printedPage": 468,
+        "pdfPage": 477,
+        "en": {
+          "prompt": "Which rational function matches each given graph? Give reasons. $A(x)=\\frac{x-4}{x^2-5x+4}$, $B(x)=\\frac{x^2+5x+4}{x^2+1}$, $C(x)=\\frac{x-1}{x^2-4}$.",
+          "steps": [
+            {
+              "title": "Graph 1",
+              "body": "Graph 1: $B=(x+1)(x+4)/(x^2+1)$ has positive denominator, no vertical asymptotes, zeros $-4,-1$, y-intercept 4 and horizontal asymptote 1, matching Graph 1."
+            },
+            {
+              "title": "Graph 2",
+              "body": "Graph 2: $C$ has uncancelled denominator $(x-2)(x+2)$, vertical asymptotes $x=\\pm2$, x-intercept 1 and horizontal asymptote 0, matching Graph 2."
+            },
+            {
+              "title": "Graph 3",
+              "body": "Graph 3: $A=1/(x-1)$ but $x\\ne1,4$; $x=1$ is a vertical asymptote and $(4,1/3)$ is a hole, matching Graph 3."
+            }
+          ],
+          "answer": "Graph 1 → $B$; Graph 2 → $C$; Graph 3 → $A$."
+        },
+        "subpartIds": [
+          "graph1",
+          "graph2",
+          "graph3"
+        ],
+        "sourceImage": "assets/9-review-q6.png"
+      },
+      {
+        "number": 7,
+        "prompt": "公司用 $C(p)=\\frac{40\\,000p}{100-p}$ 估算危险物泄漏的清理费用，$C$ 单位为元，$p$ 为已清理的百分数。(a) 在实际定义域上画图。(b) 图像形状说明什么？(c) 按此模型能否完全清理？用图像特征说明。",
+        "concept": "model",
+        "steps": [
+          {
+            "title": "(a) 范围",
+            "body": "(a) 范围：$0\\le p<100$。$C(0)=0,C(50)=40\\,000,C(90)=360\\,000,C(99)=3\\,960\\,000$；图像在第一象限递增，$p=100$ 为竖直渐近线。"
+          },
+          {
+            "title": "(b) 解释",
+            "body": "(b) 解释：清理比例越接近100%，单位增加所需费用越大；例如50%到90%增加320000元，而90%到99%增加3600000元。"
+          },
+          {
+            "title": "(c) 结论",
+            "body": "(c) 结论：$p\\to100^-$ 时 $C\\to+\\infty$，且 $p=100$ 无定义。因此该模型不允许有限费用达到完全清理；这是模型结论。"
+          }
+        ],
+        "answer": "实际定义域 $[0,100)$；清理费用加速上升，有限费用下不能达到模型的100%。",
+        "printedPage": 469,
+        "pdfPage": 478,
+        "en": {
+          "prompt": "A company uses $C(p)=\\frac{40\\,000p}{100-p}$ to estimate the dollar cost of cleaning a hazardous spill; $p$ is the percent cleaned up. (a) Graph it for an applicable domain. (b) What does the shape show? (c) Is complete cleanup possible according to this model? Justify using graph features.",
+          "steps": [
+            {
+              "title": "(a) Domain",
+              "body": "(a) Domain: $0\\le p<100$. $C(0)=0,C(50)=40\\,000,C(90)=360\\,000,C(99)=3\\,960\\,000$; the first-quadrant curve increases and has vertical asymptote $p=100$."
+            },
+            {
+              "title": "(b) Interpret",
+              "body": "(b) Interpret: costs accelerate as the cleaned percentage approaches 100%; going from 50% to 90% adds 320000 dollars, while 90% to 99% adds 3600000 dollars."
+            },
+            {
+              "title": "(c) Conclusion",
+              "body": "(c) Conclusion: as $p\\to100^-$, $C\\to+\\infty$ and $p=100$ is undefined. Thus this model does not allow complete cleanup at finite cost; this is a statement about the model."
+            }
+          ],
+          "answer": "Contextual domain $[0,100)$; cost rises increasingly rapidly and the model cannot reach 100% at finite cost."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graph": {
+          "numerator": [
+            40000,
+            0
+          ],
+          "denominator": [
+            -1,
+            100
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 100,
+            "yMin": 0,
+            "yMax": 4000000
+          },
+          "verticalAsymptotes": [
+            100
+          ],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "C(p)=40000p/(100-p)"
+        }
+      },
+      {
+        "number": 8,
+        "prompt": "(a) 用代数求 $x+\\frac4{x-2}-7=0$ 的根。(b) 画出 $y=x+\\frac4{x-2}-7$ 并找横截距。(c) 解释方程根与图像横截距的联系。",
+        "concept": "equation",
+        "steps": [
+          {
+            "title": "(a) 限制并清分母",
+            "body": "(a) 限制并清分母：$x\\ne2$；$(x-7)(x-2)+4=0\\Rightarrow x^2-9x+18=(x-3)(x-6)=0$。两根3、6合法；代回 $3+4-7=0$ 与 $6+1-7=0$。"
+          },
+          {
+            "title": "(b) 画图",
+            "body": "(b) 画图：$y=(x-3)(x-6)/(x-2)$，竖直渐近线 $x=2$，斜渐近线 $y=x-7$，纵截距 $-9$，横截距 $(3,0),(6,0)$。"
+          },
+          {
+            "title": "(c) 联系",
+            "body": "(c) 联系：图像的横截距满足 $y=0$；其横坐标正是定义域内使原方程成立的输入。"
+          }
+        ],
+        "answer": "根为 $x=3,6$，对应横截距 $(3,0),(6,0)$。",
+        "printedPage": 469,
+        "pdfPage": 478,
+        "en": {
+          "prompt": "(a) Determine the roots of $x+\\frac4{x-2}-7=0$ algebraically. (b) Graph $y=x+\\frac4{x-2}-7$ and determine its x-intercepts. (c) Explain the connection between roots and x-intercepts.",
+          "steps": [
+            {
+              "title": "(a) Restrict and clear",
+              "body": "(a) Restrict and clear: $x\\ne2$; $(x-7)(x-2)+4=0\\Rightarrow x^2-9x+18=(x-3)(x-6)=0$. Both 3 and 6 are valid; substitution gives $3+4-7=0$ and $6+1-7=0$."
+            },
+            {
+              "title": "(b) Graph",
+              "body": "(b) Graph: $y=(x-3)(x-6)/(x-2)$ has vertical asymptote $x=2$, oblique asymptote $y=x-7$, y-intercept $-9$ and x-intercepts $(3,0),(6,0)$."
+            },
+            {
+              "title": "(c) Connect",
+              "body": "(c) Connect: at an x-intercept $y=0$, so its x-coordinate is exactly a domain input satisfying the original equation."
+            }
+          ],
+          "answer": "Roots $x=3,6$ correspond to x-intercepts $(3,0),(6,0)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graph": {
+          "numerator": [
+            1,
+            -9,
+            18
+          ],
+          "denominator": [
+            1,
+            -2
+          ],
+          "bounds": {
+            "xMin": -2,
+            "xMax": 9,
+            "yMin": -12,
+            "yMax": 8
+          },
+          "verticalAsymptotes": [
+            2
+          ],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "y=x+4/(x-2)-7",
+          "obliqueAsymptote": {
+            "slope": 1,
+            "intercept": -7
+          }
+        }
+      },
+      {
+        "number": 9,
+        "prompt": "用图像求各方程的解，再用代数验证。(a) $x-8=\\frac{33}{x}$；(b) $\\frac{x-10}{x-7}=x-2$；(c) $x=\\frac{3x-1}{x+2}+3$；(d) $2x+1=\\frac{13-4x}{x-5}$。",
+        "concept": "equation",
+        "steps": [
+          {
+            "title": "(a) 交点与核算",
+            "body": "(a) 交点与核算：画 $y=x-8$ 与 $y=33/x$，交点 $(-3,-11),(11,3)$。$x\\ne0$；$x^2-8x-33=(x-11)(x+3)=0$，两根均合法。"
+          },
+          {
+            "title": "(b) 交点与核算",
+            "body": "(b) 交点与核算：画 $y=(x-10)/(x-7)$ 与 $y=x-2$，交点 $(4,2),(6,4)$。$x\\ne7$；$x-10=(x-2)(x-7)$，即 $(x-4)(x-6)=0$。"
+          },
+          {
+            "title": "(c) 交点与核算",
+            "body": "(c) 交点与核算：画 $y=x$ 与 $y=(3x-1)/(x+2)+3$，交点 $(-1,-1),(5,5)$。$x\\ne-2$；$x(x+2)=6x+5\\Rightarrow(x-5)(x+1)=0$。"
+          },
+          {
+            "title": "(d) 交点与核算",
+            "body": "(d) 交点与核算：画 $y=2x+1$ 与 $y=(13-4x)/(x-5)$，交点 $(-2,-3),(4.5,10)$。$x\\ne5$；$(2x+1)(x-5)=13-4x\\Rightarrow(2x-9)(x+2)=0$。"
+          }
+        ],
+        "answer": "(a) $-3,11$；(b) $4,6$；(c) $-1,5$；(d) $-2,9/2$。每个所列交点代回原方程两边相等。",
+        "printedPage": 469,
+        "pdfPage": 478,
+        "en": {
+          "prompt": "Determine the solution to each equation graphically, then verify algebraically. (a) $x-8=\\frac{33}{x}$; (b) $\\frac{x-10}{x-7}=x-2$; (c) $x=\\frac{3x-1}{x+2}+3$; (d) $2x+1=\\frac{13-4x}{x-5}$.",
+          "steps": [
+            {
+              "title": "(a) Intersections and check",
+              "body": "(a) Intersections and check: plot $y=x-8$ and $y=33/x$; they meet at $(-3,-11),(11,3)$. With $x\\ne0$, $x^2-8x-33=(x-11)(x+3)=0$; both roots are valid."
+            },
+            {
+              "title": "(b) Intersections and check",
+              "body": "(b) Intersections and check: plot $y=(x-10)/(x-7)$ and $y=x-2$; intersections $(4,2),(6,4)$. With $x\\ne7$, $x-10=(x-2)(x-7)$ gives $(x-4)(x-6)=0$."
+            },
+            {
+              "title": "(c) Intersections and check",
+              "body": "(c) Intersections and check: plot $y=x$ and $y=(3x-1)/(x+2)+3$; intersections $(-1,-1),(5,5)$. For $x\\ne-2$, $x(x+2)=6x+5\\Rightarrow(x-5)(x+1)=0$."
+            },
+            {
+              "title": "(d) Intersections and check",
+              "body": "(d) Intersections and check: plot $y=2x+1$ and $y=(13-4x)/(x-5)$; intersections $(-2,-3),(4.5,10)$. With $x\\ne5$, $(2x+1)(x-5)=13-4x\\Rightarrow(2x-9)(x+2)=0$."
+            }
+          ],
+          "answer": "(a) $-3,11$; (b) $4,6$; (c) $-1,5$; (d) $-2,9/2$. At every listed intersection the original two sides agree."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/9-review-q9-sol.png"
+      },
+      {
+        "number": 10,
+        "prompt": "用图像解方程，答案保留两位小数。(a) $\\frac{x-4}{5-2x}=3$；(b) $1.2x=\\frac{x}{x+6.7}+3.9$；(c) $3x+2=\\frac{5x+4}{x+1}$；(d) $\\frac{x^2-2x-8}{x+2}=\\frac14x-2$。",
+        "concept": "equation",
+        "steps": [
+          {
+            "title": "(a) 图解",
+            "body": "(a) 图解：$y=(x-4)/(5-2x)$ 与 $y=3$ 相交于约 $(2.71,3)$。核算 $x\\ne2.5$，$x-4=15-6x$ 得 $x=19/7\\approx2.71$。"
+          },
+          {
+            "title": "(b) 图解与核算",
+            "body": "(b) 图解与核算：画 $y=1.2x$ 与 $y=x/(x+6.7)+3.9$，交点横坐标约 $-6.15,3.54$。$x\\ne-6.7$；清分母得 $1.2x^2+3.14x-26.13=0$，两根均合法。"
+          },
+          {
+            "title": "(c) 图解与核算",
+            "body": "(c) 图解与核算：画直线 $y=3x+2$ 和有理曲线，得到横坐标约 $-0.82,0.82$。$x\\ne-1$；$(3x+2)(x+1)=5x+4\\Rightarrow3x^2-2=0$，即 $x=\\pm\\sqrt{2/3}$。"
+          },
+          {
+            "title": "(d) 图解与核算",
+            "body": "(d) 图解与核算：左侧为 $y=x-4$ 且 $x\\ne-2$，在 $(-2,-6)$ 有空洞；与 $y=x/4-2$ 相交。$x-4=x/4-2$ 得 $x=8/3\\approx2.67$，交点纵坐标 $-4/3$。"
+          }
+        ],
+        "answer": "(a) $2.71$；(b) $-6.15,3.54$；(c) $-0.82,0.82$；(d) $2.67$。",
+        "printedPage": 469,
+        "pdfPage": 478,
+        "en": {
+          "prompt": "Solve each equation graphically, to the nearest hundredth. (a) $\\frac{x-4}{5-2x}=3$; (b) $1.2x=\\frac{x}{x+6.7}+3.9$; (c) $3x+2=\\frac{5x+4}{x+1}$; (d) $\\frac{x^2-2x-8}{x+2}=\\frac14x-2$.",
+          "steps": [
+            {
+              "title": "(a) Graph",
+              "body": "(a) Graph: $y=(x-4)/(5-2x)$ meets $y=3$ near $(2.71,3)$. Check $x\\ne2.5$; $x-4=15-6x$ gives $x=19/7\\approx2.71$."
+            },
+            {
+              "title": "(b) Graph and check",
+              "body": "(b) Graph and check: plot $y=1.2x$ and $y=x/(x+6.7)+3.9$; intersection x-coordinates are approximately $-6.15,3.54$. With $x\\ne-6.7$, clearing gives $1.2x^2+3.14x-26.13=0$; both roots are valid."
+            },
+            {
+              "title": "(c) Graph and check",
+              "body": "(c) Graph and check: plot $y=3x+2$ and the rational curve; intersection x-coordinates are about $-0.82,0.82$. With $x\\ne-1$, $(3x+2)(x+1)=5x+4\\Rightarrow3x^2-2=0$, giving $x=\\pm\\sqrt{2/3}$."
+            },
+            {
+              "title": "(d) Graph and check",
+              "body": "(d) Graph and check: the left curve is $y=x-4$, $x\\ne-2$, with hole $(-2,-6)$; intersect it with $y=x/4-2$. Solving $x-4=x/4-2$ gives $x=8/3\\approx2.67$, with y-coordinate $-4/3$."
+            }
+          ],
+          "answer": "(a) $2.71$; (b) $-6.15,3.54$; (c) $-0.82,0.82$; (d) $2.67$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/9-review-q10-sol.png"
+      },
+      {
+        "number": 11,
+        "prompt": "图示杠杆用于用绳索提起质量为 $m$ kg 的物体，恒定的提升力作用点离支点0.4 m。可提升的最大质量与图示位置 $d$（m）的关系为 $m=\\frac{20}{d+0.4}$。(a) 若物体可放在3 m长杠杆上的任意位置，定义域是什么？(b) 画图并解释。(c) 描述函数在不可取值附近的行为并解释实际含义。(d) 要支撑最大质量17.5 kg，物体离支点多远？",
+        "concept": "model",
+        "steps": [
+          {
+            "title": "(a) 读图",
+            "body": "(a) 读图：图中 $d$ 从提升力作用点量起，物体到支点的距离为 $r=d+0.4$。若真允许杠杆上的任意位置，$0<r\\le3$，故 $-0.4<d\\le2.6$；支点处 $r=0$ 模型无定义。若把图中 $d$ 仅当作向右的非负距离，则对应的画出部分为 $0\\le d\\le2.6$。"
+          },
+          {
+            "title": "(b) 图像",
+            "body": "(b) 图像：$m=20/r$ 为正且递减。$r=0.4,1,2,3$ 时 $m=50,20,10,20/3$ kg；物体越远离支点，可提升的最大质量越小。图中横轴为 $d=r-0.4$。"
+          },
+          {
+            "title": "(c) 渐近",
+            "body": "(c) 渐近：$d\\to-0.4^+$ 即 $r\\to0^+$，$m\\to+\\infty$。理想模型中力臂趋零使可支撑质量无界；真实杠杆仍受材料强度等限制。"
+          },
+          {
+            "title": "(d) 求距离",
+            "body": "(d) 求距离：$17.5=20/(d+0.4)$ 给出 $d+0.4=20/17.5=8/7$ m，因此 $d=26/35$ m。题目要的是到支点的距离 $r=8/7\\approx1.14$ m，不是 $d$。"
+          }
+        ],
+        "answer": "全杠杆位置用有向偏移表示时 $d\\in(-0.4,2.6]$；离支点约 $1.14$ m。图示非负 $d$ 的约定与全杠杆范围的区别如上。",
+        "printedPage": 469,
+        "pdfPage": 478,
+        "en": {
+          "prompt": "The lever shown lifts a mass of $m$ kilograms on a cable with a constant force applied 0.4 m from the fulcrum. The maximum mass depends on the labelled position $d$ in metres and is $m=\\frac{20}{d+0.4}$. (a) What is the domain if the mass can be positioned anywhere on the 3-m lever? (b) Graph and interpret it. (c) Describe the behaviour near the non-permissible value and its meaning. (d) How far from the fulcrum can it support a maximum mass of 17.5 kg?",
+          "steps": [
+            {
+              "title": "(a) Read the labels",
+              "body": "(a) Read the labels: $d$ starts at the lifting-force point, so the distance from the fulcrum is $r=d+0.4$. Allowing every position on the lever gives $0<r\\le3$, hence $-0.4<d\\le2.6$; $r=0$ is undefined. If $d$ is interpreted only as the nonnegative rightward distance drawn, the depicted portion is $0\\le d\\le2.6$."
+            },
+            {
+              "title": "(b) Graph",
+              "body": "(b) Graph: $m=20/r$ is positive and decreasing. At $r=0.4,1,2,3$, masses are $50,20,10,20/3$ kg. Farther from the fulcrum means a smaller maximum mass. The plotted horizontal coordinate is $d=r-0.4$."
+            },
+            {
+              "title": "(c) Asymptote",
+              "body": "(c) Asymptote: as $d\\to-0.4^+$, equivalently $r\\to0^+$, $m\\to+\\infty$. The ideal model predicts unbounded capacity as the load’s moment arm tends to zero; a real lever remains limited by material strength."
+            },
+            {
+              "title": "(d) Solve the distance",
+              "body": "(d) Solve the distance: $17.5=20/(d+0.4)$ gives $d+0.4=20/17.5=8/7$ m, hence $d=26/35$ m. The requested distance from the fulcrum is $r=8/7\\approx1.14$ m, rather than $d$."
+            }
+          ],
+          "answer": "Using signed offset for all lever positions, $d\\in(-0.4,2.6]$. The mass is about $1.14$ m from the fulcrum. The nonnegative drawn-$d$ convention is distinguished above."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/9-review-q11.png",
+        "graph": {
+          "numerator": [
+            20
+          ],
+          "denominator": [
+            1,
+            0.4
+          ],
+          "bounds": {
+            "xMin": -0.4,
+            "xMax": 2.6,
+            "yMin": 0,
+            "yMax": 100
+          },
+          "verticalAsymptotes": [
+            -0.4
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "m=20/(d+0.4)"
+        }
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "expectedSubparts": {
+      "exercise-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-6": [
+        "graph1",
+        "graph2",
+        "graph3"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-10": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original source and full solutions previously independently reviewed; cancellation concept qualification independently re-reviewed in audit/concept-cancellation-revision-independent.json. All question records unchanged."
+  }
+}

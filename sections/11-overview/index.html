@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174d53">
+  <meta name="description" content="Bilingual textbook study notes with concepts, examples, practice, and step-by-step solutions.">
+  <title>Study Notes</title>
+  <link rel="stylesheet" href="styles.css?v=chapter-11-20261027">
+  <script id="lesson-data" type="application/json">{"course":{"id":"precal12-mhr","title":"微积分预备 12","en":{"title":"Pre-Calculus 12"}},"lesson":{"id":"11-overview","section":"11","title":"排列、组合与二项式定理","en":{"title":"Permutations, Combinations, and the Binomial Theorem"},"source":{"kind":"pdf","title":"McGraw-Hill Ryerson Pre-Calculus 12","printedPages":[514,515],"pdfPages":[523,524]},"concepts":[{"id":"counting-context","title":"组合数学：计数的艺术","summary":"组合数学属于离散数学，研究如何系统地计算可能结果。","method":[{"title":"方法","body":"教材联系帕斯卡三角形、幻方、柯尼斯堡七桥、Kirkman女学生问题和全景拼图卡。本章研究基本计数原理、阶乘、排列、组合和二项式定理。"}],"pitfalls":[],"en":{"title":"Combinatorics: the art of counting","summary":"Combinatorics is a branch of discrete mathematics concerned with systematic counting.","method":[{"title":"Method","body":"The text connects Pascal’s triangle, magic squares, the Königsberg bridge problem, Kirkman’s schoolgirl problem and myriorama cards. The chapter studies the fundamental counting principle, factorials, permutations, combinations and the binomial theorem."}],"pitfalls":[]}},{"id":"myriorama","title":"全景拼图卡与排列","summary":"教材记载：Jean-Pierre Brès约于1823年在法国发明全景拼图卡，John Clark后来在英国改进。","method":[{"title":"方法","body":"人物、建筑与景色卡片可以按任意顺序拼成风景；24张“The Endless Landscape”卡片共有 $24!$ 个顺序。"}],"pitfalls":["生成全部排列所需时间取决于给定或实测速率。"],"en":{"title":"Myriorama cards and permutations","summary":"The textbook reports that Jean-Pierre Brès invented myriorama cards in France around 1823 and John Clark developed them further in England.","method":[{"title":"Method","body":"Cards depicting people, buildings and scenery can be placed in any order to make landscapes. The 24-card “The Endless Landscape” set has $24!$ possible orders."}],"pitfalls":["The time needed to generate every order depends on a specified or measured rate."]}},{"id":"career","title":"职业联系：精算师","summary":"精算师利用数学评估事件发生的可能性，尤其是企业或政府面临的风险。","method":[{"title":"方法","body":"他们设计减少负面事件机会及影响的方法；保险公司据此厘定费率，企业据此评估冒险决策。原书的职业网站链接仅作为教材时代的延伸阅读。"}],"pitfalls":[],"en":{"title":"Career Link: actuaries","summary":"Actuaries use mathematics to assess the likelihood of events, especially risks faced by businesses and governments.","method":[{"title":"Method","body":"They devise ways to reduce the probability and impact of negative events; insurers use this information to set rates and corporations to assess risk-taking. The printed career web link is textbook-era further reading."}],"pitfalls":[]}}],"questions":[{"prompt":"你熟悉帕斯卡三角形、幻方、柯尼斯堡七桥问题、Kirkman女学生问题或全景拼图卡中的哪些？","concept":"counting-context","steps":[{"title":"建立联系","body":"帕斯卡三角形涉及数的规律；幻方涉及把数放入格子；桥梁问题涉及路线；女学生问题涉及分组；拼图卡涉及顺序。选择与你真实经验相符的例子。"}],"answer":"开放回答：记录自己真正接触过的项目，并说明其计数或安排问题。","printedPage":514,"pdfPage":523,"en":{"prompt":"Are you familiar with Pascal’s triangle, the magic square, the Königsberg bridge problem, Kirkman’s schoolgirl problem, or myriorama cards?","steps":[{"title":"Make connections","body":"Pascal’s triangle involves number patterns; magic squares place numbers in cells; bridge problems concern routes; schoolgirl problems concern grouping; myriorama cards concern order. Select examples that match your actual experience."}],"answer":"Open response: identify examples you have actually encountered and describe their counting or arrangement question.","label":"Opening: prior familiarity"},"id":"opening-familiarity","type":"practice","label":"开篇：已有经验"},{"prompt":"你认为生成24张全景拼图卡的 $6.2\\times10^{23}$ 种不同排列需要多长时间？","concept":"myriorama","steps":[{"title":"核对排列数","body":"$24!=620448401733239439360000\\approx6.2\\times10^{23}$。每一种是24张不同卡片的一个线性顺序。"},{"title":"用速率建模","body":"若实测每秒完成 $v$ 种，时间为 $T=24!/v$ 秒；按365.25日为一年，约为 $1.9661\\times10^{16}/v$ 年。这是条件公式，不是虚构的个人操作速率。"}],"answer":"若每秒生成 $v>0$ 种，需约 $6.2\\times10^{23}/v$ 秒；题目没有给定速率，故无唯一数值时间。","printedPage":514,"pdfPage":523,"en":{"prompt":"How long do you think it would take to generate the $6.2\\times10^{23}$ possible different arrangements from a 24-card myriorama set?","steps":[{"title":"Check the count","body":"$24!=620448401733239439360000\\approx6.2\\times10^{23}$. Each arrangement is a linear order of 24 different cards."},{"title":"Model the rate","body":"If the measured rate is $v$ arrangements per second, $T=24!/v$ seconds, or about $1.9661\\times10^{16}/v$ years using 365.25 days per year. This is a conditional formula rather than an invented personal rate."}],"answer":"At $v>0$ arrangements per second, about $6.2\\times10^{23}/v$ seconds are needed. No rate is given, so there is no unique numerical time.","label":"Opening: a 24-card myriorama"},"id":"opening-myriorama","type":"practice","label":"开篇：24张全景拼图卡"}],"kind":"overview"},"textbook":{"exercises":[]},"coverage":{"expectedExamples":[],"expectedPractice":["opening-familiarity","opening-myriorama"],"expectedExercises":[],"expectedSubparts":{}},"audit":{"sourceReviewed":true,"solutionsReviewed":true,"note":"Independent visual-source and all-record mathematics review completed by the binomial author, independent of the permutations author. Details and exact enumeration evidence: audit/independent-permutations.json. Open tasks retain clearly labelled samples and personal-work limitations."}}</script>
+<script src="app.js?v=chapter-11-20261027" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to lesson</a>
+  <header class="topbar">
+    <a class="brand" href="../../index.html" aria-label="Back to course home"><span class="brand-mark">f<span>(x)</span></span><span>Study notes <small>Study notes</small></span></a>
+    <div class="topbar-actions"><div class="language-switch" role="group" aria-label="Page language"><button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">中文</button><button type="button" data-lang="en" lang="en" class="is-active" aria-pressed="true">English</button></div><span class="save-note">Progress saved in this browser</span><button class="button button-quiet" id="print-button" type="button"><span aria-hidden="true">↗</span> Print / PDF</button></div>
+  </header>
+  <div class="page-layout" id="top">
+    <aside class="sidebar" aria-label="Lesson contents">
+      <div class="sidebar-inner">
+        <div class="chapter-label">COURSE</div>
+        <div class="sidebar-title">Lesson<span>Section</span></div>
+        <div class="progress-box"><div><span>Lesson progress</span><strong id="progress-label">0 / 0</strong></div><progress id="lesson-progress" max="1" value="0" aria-label="Lesson progress"></progress></div>
+        <nav id="topic-nav" class="topic-nav" aria-label="Concepts"></nav>
+        <a class="exercise-nav" href="#textbook-exercises"><span aria-hidden="true">▦</span> Textbook Exercises <span aria-hidden="true">↗</span></a>
+        <div class="sidebar-foot">For each concept<br>Method → Example → Practice → Textbook</div>
+      </div>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <nav class="lesson-breadcrumb" aria-label="Breadcrumb"><a id="home-link" href="../../index.html">← Back to home</a><span aria-hidden="true">/</span><span></span></nav>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy"><div class="eyebrow">SECTION <span>TEXTBOOK STUDY</span></div><h1 id="page-title">Lesson</h1><p>Study concepts, examples, and practice with step-by-step solutions.</p><div class="hero-meta"><span>Textbook study</span><span>Concepts · Examples · Practice</span></div></div>
+        <div class="hero-note"><span class="note-index"></span><p>Understand the concept<br>Follow the example<br>Practise independently</p><div class="note-line"></div><small>Understand the method, one step at a time</small></div>
+      </section>
+      <div class="reading-toolbar"><p><span class="status-dot" aria-hidden="true"></span>Examples explained; try practice questions first</p><div><button class="text-button" id="expand-all" type="button">Expand all solutions</button><span class="toolbar-divider" aria-hidden="true"></span><button class="text-button" id="collapse-all" type="button">Collapse all solutions</button></div></div>
+      <div id="loading" class="loading" role="status">Loading lesson content…</div>
+      <p id="math-warning" class="math-warning" role="status" hidden></p>
+      <div id="lesson-content"></div>
+      <section id="textbook-exercises" class="exercise-section" aria-labelledby="exercise-title" hidden>
+        <div class="section-heading"><div><div class="eyebrow">TEXTBOOK · SECTION</div><h2 id="exercise-title">Textbook Exercises</h2><p id="exercise-intro">Find exercises by concept and put the method into practice.</p></div><span class="count-pill" id="exercise-count"></span></div>
+        <div class="exercise-filters"><label for="exercise-topic"><span data-ui="filter-topic">Concept</span><select id="exercise-topic"><option value="all">All concepts</option></select></label><label class="search-label" for="exercise-search"><span data-ui="filter-search">Exercise number or keyword</span><input id="exercise-search" type="search" placeholder="e.g. 23, 1-10, GR1, keyword" autocomplete="off"></label><button class="button button-quiet" id="clear-filters" type="button">Reset</button></div>
+        <div id="exercise-list"></div><p id="exercise-empty" class="empty-message" hidden>No matching exercises. Try another number, keyword or concept.</p>
+      </section>
+      <footer class="page-footer"><span>Study notes · Section</span><span id="source-note"></span><a href="#top">Back to top ↑</a></footer>
+    </main>
+  </div>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+</body>
+</html>

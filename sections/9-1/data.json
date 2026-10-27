@@ -1,0 +1,4222 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "9-1",
+    "section": "9.1",
+    "title": "用变换探究有理函数",
+    "en": {
+      "title": "Exploring Rational Functions Using Transformations",
+      "description": "Use reciprocal and reciprocal-square transformations to graph, compare, and apply rational functions."
+    },
+    "description": "用倒数与平方倒数函数的变换作图、比较与建立实际模型。",
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445
+      ],
+      "pdfPages": [
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454
+      ]
+    },
+    "concepts": [
+      {
+        "id": "inverse",
+        "title": "有理函数与反比例",
+        "summary": "有理函数是多项式之比 $f(x)=p(x)/q(x)$，取值时原分母不得为零。$y=a/x$（$a\\ne0$）满足 $xy=a$，其渐近线为两坐标轴。",
+        "method": [
+          {
+            "title": "先查定义域",
+            "body": "从原分母排除使其为零的值；在路程、面积等情境中再限制正变量。"
+          },
+          {
+            "title": "建立表与图",
+            "body": "用固定乘积求有序数对，分别画不连续的两支；用远端和禁值附近行为核对。"
+          }
+        ],
+        "pitfalls": [
+          "除以零无定义；无限接近一个值不表示达到该值。",
+          "实际离散人数或次数不能当成任意正实数。"
+        ],
+        "en": {
+          "title": "Rational functions and inverse proportion",
+          "summary": "A rational function is a quotient of polynomials $f(x)=p(x)/q(x)$, evaluated only where the original denominator is nonzero. For $y=a/x$ with $a\\ne0$, $xy=a$ and both axes are asymptotes.",
+          "method": [
+            {
+              "title": "Check the domain first",
+              "body": "Exclude zeros of the original denominator, then apply contextual restrictions such as positive dimensions or speeds."
+            },
+            {
+              "title": "Build a table and graph",
+              "body": "Generate ordered pairs using the fixed product. Draw separate branches and check behaviour near excluded values and at the ends."
+            }
+          ],
+          "pitfalls": [
+            "Division by zero is undefined; approaching a value does not mean attaining it.",
+            "Discrete counts cannot be treated as arbitrary positive real numbers."
+          ]
+        }
+      },
+      {
+        "id": "transform1",
+        "title": "倒数函数的变换",
+        "summary": "对 $y=a/(x-h)+k$ 且 $a\\ne0$，从 $1/x$ 纵向缩放 $|a|$ 倍，负 $a$ 时关于横轴反射，再平移 $(h,k)$。渐近线 $x=h,y=k$。",
+        "method": [
+          {
+            "title": "定位中心与参考线",
+            "body": "先画 $x=h,y=k$；定义域 $x\\ne h$、值域 $y\\ne k$。"
+          },
+          {
+            "title": "映射点",
+            "body": "将基本点 $(u,v)$ 变为 $(u+h,av+k)$，再求原式的轴截距核对。"
+          }
+        ],
+        "pitfalls": [
+          "$x+1=x-(-1)$ 表示左移 $1$。",
+          "$a=0$ 为退化情形，不能仍称 $x=h$ 为竖直渐近线。"
+        ],
+        "en": {
+          "title": "Transformations of the reciprocal function",
+          "summary": "For $y=a/(x-h)+k$, $a\\ne0$, scale $1/x$ vertically by $|a|$, reflect in the $x$-axis if $a<0$, then translate by $(h,k)$. Asymptotes are $x=h,y=k$.",
+          "method": [
+            {
+              "title": "Locate the centre and guides",
+              "body": "Draw $x=h,y=k$ first. Domain $x\\ne h$, range $y\\ne k$."
+            },
+            {
+              "title": "Map points",
+              "body": "Map each base point $(u,v)$ to $(u+h,av+k)$, then check the intercepts in the original expression."
+            }
+          ],
+          "pitfalls": [
+            "$x+1=x-(-1)$ shifts the graph left by $1$.",
+            "$a=0$ is degenerate; $x=h$ is then not a vertical asymptote."
+          ]
+        }
+      },
+      {
+        "id": "linearquotient",
+        "title": "线性式之比的等价形式",
+        "summary": "将 $y=(mx+n)/(cx+d)$（$c\\ne0$）写成常数加倒数项，可直接看出变换。必须保留原分母的限制。",
+        "method": [
+          {
+            "title": "除法或重组",
+            "body": "把分子写成分母的倍数加余式；除法后将线性分母首项系数提出。"
+          },
+          {
+            "title": "核对截距与渐近线",
+            "body": "分母零点只有未约去时才是竖直渐近线；令原分子为零找横截距，代 $x=0$ 找纵截距（若允许）。"
+          }
+        ],
+        "pitfalls": [
+          "约去因子后仍不能恢复原来禁止的输入；被约去的禁值可能是孔洞。",
+          "水平渐近线可以被某些有理函数穿过，见题 22。"
+        ],
+        "en": {
+          "title": "Equivalent forms of linear-over-linear functions",
+          "summary": "Rewrite $y=(mx+n)/(cx+d)$, $c\\ne0$, as a constant plus a reciprocal term to reveal transformations. Retain the original denominator restriction.",
+          "method": [
+            {
+              "title": "Divide or regroup",
+              "body": "Write the numerator as a multiple of the denominator plus a remainder, then factor out the denominator leading coefficient."
+            },
+            {
+              "title": "Check intercepts and asymptotes",
+              "body": "A denominator zero is a vertical asymptote only if it does not cancel. Set the original numerator to zero for $x$-intercepts and substitute $x=0$ for the $y$-intercept, if allowed."
+            }
+          ],
+          "pitfalls": [
+            "Cancelling a factor does not restore an excluded input; it may create a hole.",
+            "Some rational functions cross horizontal asymptotes; see Exercise 22."
+          ]
+        }
+      },
+      {
+        "id": "transform2",
+        "title": "平方倒数函数的变换与比较",
+        "summary": "$y=a/(x-h)^2+k$ 的两支关于 $x=h$ 对称。非零 $a$ 时，$a>0$ 的值域为 $y>k$，$a<0$ 的值域为 $y<k$。",
+        "method": [
+          {
+            "title": "先识别完全平方",
+            "body": "如 $x^2-10x+25=(x-5)^2$，才能正确读平移。"
+          },
+          {
+            "title": "分清两侧符号",
+            "body": "平方分母为正；用 $a$ 的符号判断两支在水平渐近线的上方或下方，并核对所有轴截距。"
+          }
+        ],
+        "pitfalls": [
+          "不要把 $1/x^2$ 的一侧正一侧负；两侧同号。",
+          "值域边界 $k$ 不能取到。"
+        ],
+        "en": {
+          "title": "Reciprocal-square transformations and comparisons",
+          "summary": "The branches of $y=a/(x-h)^2+k$ are symmetric about $x=h$. For nonzero $a$, the range is $y>k$ if $a>0$ and $y<k$ if $a<0$.",
+          "method": [
+            {
+              "title": "Recognize the perfect square",
+              "body": "For example, $x^2-10x+25=(x-5)^2$, which reveals the correct translation."
+            },
+            {
+              "title": "Check signs on both sides",
+              "body": "The squared denominator is positive. The sign of $a$ places both branches above or below the horizontal asymptote. Check all intercepts."
+            }
+          ],
+          "pitfalls": [
+            "The two sides of $1/x^2$ have the same sign.",
+            "The boundary value $k$ is not attained."
+          ]
+        }
+      },
+      {
+        "id": "construct",
+        "title": "由条件构造与分析图像",
+        "summary": "由渐近线确定 $h,k$，再用已知点求 $a$。仅给渐近线通常不能唯一确定函数；组合有理式时保留所有原限制。",
+        "method": [
+          {
+            "title": "将条件写成方程",
+            "body": "对 $y=a/(x-h)+k$，已知点 $(x_0,y_0)$ 给出 $a=(x_0-h)(y_0-k)$。"
+          },
+          {
+            "title": "独立验证",
+            "body": "代回每个给定点，检查原分母、截距、渐近线、孔洞和所有分支；值域需考虑整个图像。"
+          }
+        ],
+        "pitfalls": [
+          "不要从无刻度草图臆造系数。",
+          "从图上读数时必须核对每格所代表的数值。"
+        ],
+        "en": {
+          "title": "Constructing and analysing graphs from conditions",
+          "summary": "Use asymptotes to identify $h,k$, then a given point to determine $a$. Asymptotes alone usually do not specify one function. Retain every original restriction when combining rational expressions.",
+          "method": [
+            {
+              "title": "Translate conditions into equations",
+              "body": "For $y=a/(x-h)+k$, a point $(x_0,y_0)$ gives $a=(x_0-h)(y_0-k)$."
+            },
+            {
+              "title": "Verify independently",
+              "body": "Substitute every given point and check original denominators, intercepts, asymptotes, holes, and all branches. Determine the range from the whole graph."
+            }
+          ],
+          "pitfalls": [
+            "Do not invent coefficients from an unscaled sketch.",
+            "Check the value represented by each grid interval."
+          ]
+        }
+      },
+      {
+        "id": "application",
+        "title": "平均费用与实际有理模型",
+        "summary": "平均量是总量除以输入量。固定费 $F$ 加单位费率 $r$ 的平均费用为 $F/x+r$；实际输入可能是整数、有限区间或正实数。",
+        "method": [
+          {
+            "title": "定义变量与单位",
+            "body": "先写总量和平均量，注明金额、小时、册数等单位，给实际定义域。"
+          },
+          {
+            "title": "比较与解释",
+            "body": "解两模型相等的方程并检查合法范围；水平渐近线常是长期单位费率，竖直渐近线可能位于实际范围之外。"
+          }
+        ],
+        "pitfalls": [
+          "连续曲线可能只是离散数据的参考图，不是所有点都可实现。",
+          "固定费用不等于平均单位费用；比较时使用相同输入。"
+        ],
+        "en": {
+          "title": "Average costs and contextual rational models",
+          "summary": "An average is a total divided by its input. A fixed fee $F$ plus unit rate $r$ gives average cost $F/x+r$. Contextual inputs may be integers, a finite interval, or positive real numbers.",
+          "method": [
+            {
+              "title": "Define variables and units",
+              "body": "Write total and average quantities, identify units such as dollars, hours, or booklets, and give the contextual domain."
+            },
+            {
+              "title": "Compare and interpret",
+              "body": "Solve where the models are equal and check admissibility. A horizontal asymptote often represents a long-term unit rate; a vertical asymptote may lie outside the contextual domain."
+            }
+          ],
+          "pitfalls": [
+            "A continuous curve may only guide discrete data; not every point is realizable.",
+            "A fixed fee differs from average unit cost; compare at the same input."
+          ]
+        }
+      },
+      {
+        "id": "inversefunction",
+        "title": "有理函数的反函数（习题拓展）",
+        "summary": "反函数交换输入和输出；由原方程解出原输入，再交换变量。原函数的值域成为反函数定义域。此知识来自本节习题 21。",
+        "method": [
+          {
+            "title": "解出变量",
+            "body": "设 $y=f(x)$，清分母时先记录原限制，整理成 $x$ 的一次方程。"
+          },
+          {
+            "title": "交换与验证",
+            "body": "交换 $x,y$，记录新分母限制，再验证复合得到恒等式。"
+          }
+        ],
+        "pitfalls": [
+          "反函数不是倒数 $1/f(x)$。",
+          "反函数定义域由原值域决定，不能直接照抄原定义域。"
+        ],
+        "en": {
+          "title": "Inverse rational functions (exercise extension)",
+          "summary": "An inverse exchanges input and output. Solve the original equation for its input, then exchange variables. The original range becomes the inverse domain. This extension comes from Exercise 21.",
+          "method": [
+            {
+              "title": "Solve for the input",
+              "body": "Let $y=f(x)$, record original restrictions, clear denominators, and collect terms to obtain a linear equation in $x$."
+            },
+            {
+              "title": "Exchange and verify",
+              "body": "Exchange $x,y$, record the new denominator restriction, and verify the composition gives the identity."
+            }
+          ],
+          "pitfalls": [
+            "The inverse is not the reciprocal $1/f(x)$.",
+            "The inverse domain comes from the original range, not the original domain."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "id": "opening-question",
+        "type": "practice",
+        "label": "开篇问题",
+        "prompt": "骑行加拿大横贯步道的一段 $120$ km 路程，所需时间随平均速度变化。这个有理函数的图像是什么样的？",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "建立关系",
+            "body": "设速度为 $v$ km/h、时间为 $t$ h，由 $vt=120$ 得 $t=120/v$，实际范围为 $v>0$。"
+          },
+          {
+            "title": "判断图像",
+            "body": "例如 $(v,t)=(10,12),(20,6),(40,3)$；速度增加，时间减少。曲线在第一象限，趋近两坐标轴但不接触它们。"
+          }
+        ],
+        "answer": "$t=120/v$，$v>0,t>0$；第一象限的递减双曲线。",
+        "printedPage": 430,
+        "pdfPage": 439,
+        "en": {
+          "label": "Opening question",
+          "prompt": "If you cycle a 120-km section of the Trans Canada Trail, the time is related to your average speed. What does the graph of this rational function look like?",
+          "steps": [
+            {
+              "title": "Build the relation",
+              "body": "Let speed be $v$ km/h and time be $t$ h. Since $vt=120$, $t=120/v$, with $v>0$."
+            },
+            {
+              "title": "Describe the graph",
+              "body": "For example, $(v,t)=(10,12),(20,6),(40,3)$. Time decreases as speed increases. The first-quadrant branch approaches both axes without reaching them."
+            }
+          ],
+          "answer": "$t=120/v$, $v>0,t>0$: a decreasing first-quadrant hyperbola."
+        },
+        "graph": {
+          "numerator": [
+            120
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 45,
+            "yMin": 0,
+            "yMax": 30
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "y=\\frac{120}{x}"
+        }
+      },
+      {
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1",
+        "prompt": "a) 完成骑行 $120$ km 所需时间表。平均速度（km/h）为 $1,2,3,4,5,6,8,10,12,15,20,24,30,40$。b) 平均速度越来越小或越来越大时，时间怎样变化？",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "a) 逐项计算",
+            "body": "由 $t=120/v$，依次得到时间（h）$120,60,40,30,24,20,15,12,10,8,6,5,4,3$。"
+          },
+          {
+            "title": "b) 比较变化",
+            "body": "正速度趋近 $0$ 时，分母变小，时间无界增加；速度无界增加时，时间趋近 $0$，但对有限正速度始终大于 $0$。"
+          }
+        ],
+        "answer": "a) 时间为 $120,60,40,30,24,20,15,12,10,8,6,5,4,3$ h。b) 速度趋近 $0$ 时 $t$ 无界增大；速度增大时 $t$ 趋近 $0$。",
+        "printedPage": 431,
+        "pdfPage": 440,
+        "en": {
+          "label": "Investigate 1",
+          "prompt": "a) Copy and complete the table of times to cycle a 120-km stretch at average speeds (km/h) $1,2,3,4,5,6,8,10,12,15,20,24,30,40$. b) What happens to the time as average speed gets smaller and smaller; larger and larger?",
+          "steps": [
+            {
+              "title": "a) Calculate each entry",
+              "body": "Using $t=120/v$, the times (h), in order, are $120,60,40,30,24,20,15,12,10,8,6,5,4,3$."
+            },
+            {
+              "title": "b) Compare changes",
+              "body": "As positive speed approaches $0$, time increases without bound. As speed increases without bound, time approaches $0$ but stays positive for every finite positive speed."
+            }
+          ],
+          "answer": "a) Times: $120,60,40,30,24,20,15,12,10,8,6,5,4,3$ h. b) $t$ grows without bound as speed approaches $0$ and approaches $0$ as speed grows."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 2",
+        "prompt": "a) 写出时间 $t$（h）关于平均速度 $v$（km/h）的函数。b) 在此情境中，$0$ 是否属于定义域或值域？解释。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "a) 用路程公式",
+            "body": "$120=vt$，所以 $t(v)=120/v$。"
+          },
+          {
+            "title": "b) 检查零",
+            "body": "若 $v=0$，不能在有限时间完成 $120$ km，且除数为零；若 $t=0$，有限速度不能走完正路程。因此定义域 $v>0$，值域 $t>0$。"
+          }
+        ],
+        "answer": "$t=120/v$；$0$ 不在实际定义域和值域中。",
+        "printedPage": 431,
+        "pdfPage": 440,
+        "en": {
+          "label": "Investigate 2",
+          "prompt": "a) Write an equation for time $t$, in hours, as a function of average speed $v$, in kilometres per hour. b) Is zero part of the domain or range in this situation? Explain.",
+          "steps": [
+            {
+              "title": "a) Use distance = speed × time",
+              "body": "$120=vt$, so $t(v)=120/v$."
+            },
+            {
+              "title": "b) Check zero",
+              "body": "At $v=0$, the distance cannot be covered in finite time and the divisor is zero. At $t=0$, no finite speed covers the positive distance. Thus domain $v>0$ and range $t>0$."
+            }
+          ],
+          "answer": "$t=120/v$; zero belongs to neither the contextual domain nor range."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 3",
+        "prompt": "a) 画出上述函数的图像。b) 图像的形状怎样联系第 2b 步的答案？c) 图像说明平均速度越接近零，骑行 $120$ km 所需时间怎样变化？",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "a) 标点连线",
+            "body": "画 $t=120/v$ 的正支，标出 $(5,24),(10,12),(20,6),(40,3)$。只取 $v>0$。"
+          },
+          {
+            "title": "b) 渐近坐标轴",
+            "body": "曲线趋近 $v=0$ 与 $t=0$，但不与它们相交，符合两者都不取零。"
+          },
+          {
+            "title": "c) 读左端行为",
+            "body": "当 $v$ 从正侧趋近 $0$ 时，$120/v$ 无界增加，骑行时间越来越长。"
+          }
+        ],
+        "answer": "第一象限递减曲线；渐近线 $v=0,t=0$；速度趋近零时时间无界增加。",
+        "printedPage": 431,
+        "pdfPage": 440,
+        "en": {
+          "label": "Investigate 3",
+          "prompt": "a) Graph the function. b) How does its shape relate to step 2b? c) What does the graph show about the time to cycle 120 km as average speed gets closer to zero?",
+          "steps": [
+            {
+              "title": "a) Plot points",
+              "body": "Draw the positive branch of $t=120/v$, marking $(5,24),(10,12),(20,6),(40,3)$. Use only $v>0$."
+            },
+            {
+              "title": "b) Approach the axes",
+              "body": "The curve approaches $v=0$ and $t=0$ without intersecting them, consistent with neither variable being zero."
+            },
+            {
+              "title": "c) Read behaviour near zero",
+              "body": "As $v$ approaches $0$ from the positive side, $120/v$ increases without bound, so the trip takes longer and longer."
+            }
+          ],
+          "answer": "A decreasing first-quadrant curve, with asymptotes $v=0,t=0$; time increases without bound near zero speed."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graph": {
+          "numerator": [
+            120
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 45,
+            "yMin": 0,
+            "yMax": 30
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "y=\\frac{120}{x}"
+        }
+      },
+      {
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "反思与回应 4",
+        "prompt": "a) 平均速度和时间的关系怎样与图像形状相联系？b) 此函数的图像有端点吗？解释。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "a) 反比例",
+            "body": "$vt=120$：速度乘以正数 $c$，时间除以 $c$。因此速度越大，时间越小，图像向右下降且逐渐变平。"
+          },
+          {
+            "title": "b) 检查边界",
+            "body": "模型规定 $v>0$，没有最小正速度和最大速度，$t$ 也只能趋近零而不能等于零。因此理想模型没有端点；现实骑行速度的限制不在题设模型中。"
+          }
+        ],
+        "answer": "a) 反比例对应递减双曲线。b) 理想模型无端点。",
+        "printedPage": 431,
+        "pdfPage": 440,
+        "en": {
+          "label": "Reflect and Respond 4",
+          "prompt": "a) How is the relationship between average speed and time connected to the graph shape? b) Does the graph have endpoints? Explain.",
+          "steps": [
+            {
+              "title": "a) Inverse proportion",
+              "body": "$vt=120$: multiplying speed by a positive factor $c$ divides time by $c$. Thus the graph decreases to the right and gradually flattens."
+            },
+            {
+              "title": "b) Check boundaries",
+              "body": "The model has $v>0$, with no smallest positive or largest allowed speed; time approaches but never equals zero. The idealized graph has no endpoints. Real cycling speed limits are not specified in this model."
+            }
+          ],
+          "answer": "a) Inverse proportion produces a decreasing hyperbola. b) The idealized model has no endpoints."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "investigate-5",
+        "type": "practice",
+        "label": "探究 5",
+        "prompt": "a) 用技术画 $y=1/x,y=4/x,y=12/x$。b) 描述 $x$ 趋近零时的行为。c) 当 $|x|$ 越来越大时，函数值怎样变化？d) 比较图像；对任意实数 $a$，描述 $y=1/x$ 与 $y=a/x$ 的关系。",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "a) 画三条曲线",
+            "body": "在同一坐标系画三条双曲线；$x=1$ 时的值依次为 $1,4,12$，$x=-1$ 时为 $-1,-4,-12$。"
+          },
+          {
+            "title": "b) 零点附近",
+            "body": "三者当 $x$ 从正侧趋近 $0$ 时趋向正无穷，从负侧趋近 $0$ 时趋向负无穷；都在 $x=0$ 无定义。"
+          },
+          {
+            "title": "c) 远端",
+            "body": "$|a/x|=|a|/|x|$，当 $|x|$ 增大时趋近 $0$。"
+          },
+          {
+            "title": "d) 参数关系",
+            "body": "$a>0$ 时纵向缩放因子为 $a$；$a<0$ 时再关于 $x$ 轴反射，缩放因子 $|a|$；$a=0$ 是退化情形：原式定义域仍排除 $0$，其图像是 $y=0$ 上除去原点的一条直线，不再有竖直渐近线。"
+          }
+        ],
+        "answer": "非零 $a$ 决定纵向缩放和反射；三条给定曲线均以 $x=0,y=0$ 为渐近线。$a=0$ 为带原点孔洞的退化直线。",
+        "printedPage": 431,
+        "pdfPage": 440,
+        "en": {
+          "label": "Investigate 5",
+          "prompt": "a) Graph $y=1/x,y=4/x,y=12/x$ using technology. b) Describe their behaviour as $x$ approaches zero. c) What happens as $|x|$ grows? d) Compare the graphs; for any real $a$, describe the relationship between $y=1/x$ and $y=a/x$.",
+          "steps": [
+            {
+              "title": "a) Plot the three curves",
+              "body": "Draw all three hyperbolas on the same axes. At $x=1$ their values are $1,4,12$; at $x=-1$ they are $-1,-4,-12$."
+            },
+            {
+              "title": "b) Near zero",
+              "body": "All three increase without bound as $x$ approaches $0$ from the right and decrease without bound from the left. All are undefined at $x=0$."
+            },
+            {
+              "title": "c) At the ends",
+              "body": "$|a/x|=|a|/|x|$ approaches $0$ as $|x|$ grows."
+            },
+            {
+              "title": "d) Parameter relationship",
+              "body": "For $a>0$, scale vertically by $a$; for $a<0$, scale by $|a|$ and reflect in the $x$-axis. For $a=0$, the original expression still excludes $x=0$: it is the line $y=0$ with the origin removed, with no vertical asymptote."
+            }
+          ],
+          "answer": "Nonzero $a$ determines vertical scaling and reflection. The three given graphs have asymptotes $x=0,y=0$. The $a=0$ case degenerates to a line with a hole at the origin."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            1
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 10,
+            "yMin": -15,
+            "yMax": 15
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "label": "y=1/x",
+          "traces": [
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 0,
+              "holes": [],
+              "points": [],
+              "label": "y=1/x"
+            },
+            {
+              "numerator": [
+                4
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "label": "y=4/x"
+            },
+            {
+              "numerator": [
+                12
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "label": "y=12/x"
+            }
+          ]
+        }
+      },
+      {
+        "id": "investigate-6",
+        "type": "practice",
+        "label": "探究 6",
+        "prompt": "a) 画 $y=1/x$ 与 $y=4/(x-3)+2$。b) 比较图像，方程中的数怎样改变相对于基本函数 $y=1/x$ 的形状和位置？c) 第 5 步中哪个函数的图像与 $y=4/(x-3)+2$ 全等？为什么？",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "a) 画图与渐近线",
+            "body": "$y=4/(x-3)+2$ 的渐近线为 $x=3,y=2$，经过 $(4,6),(5,4),(2,-2),(1,0)$。"
+          },
+          {
+            "title": "b) 逐步变换",
+            "body": "从 $y=1/x$ 纵向拉伸 $4$ 倍，再右移 $3$、上移 $2$；点 $(x,y)$ 变成 $(x+3,4y+2)$。"
+          },
+          {
+            "title": "c) 判断全等",
+            "body": "$y=4/x$ 只需平移 $(3,2)$ 就得到该图像，平移保持形状和大小，因此全等。"
+          }
+        ],
+        "answer": "纵向拉伸 $4$ 倍，右移 $3$、上移 $2$；与 $y=4/x$ 全等。",
+        "printedPage": 431,
+        "pdfPage": 440,
+        "en": {
+          "label": "Investigate 6",
+          "prompt": "a) Graph $y=1/x$ and $y=4/(x-3)+2$. b) Compare the graphs. How do the numbers change shape and position relative to $y=1/x$? c) Which function from step 5 has a congruent graph, and why?",
+          "steps": [
+            {
+              "title": "a) Plot and locate asymptotes",
+              "body": "$y=4/(x-3)+2$ has asymptotes $x=3,y=2$ and passes through $(4,6),(5,4),(2,-2),(1,0)$."
+            },
+            {
+              "title": "b) Apply transformations",
+              "body": "Stretch $y=1/x$ vertically by $4$, then translate right $3$ and up $2$: $(x,y)$ maps to $(x+3,4y+2)$."
+            },
+            {
+              "title": "c) Identify congruence",
+              "body": "Translate $y=4/x$ by $(3,2)$ to obtain this graph. Translation preserves shape and size, so the graphs are congruent."
+            }
+          ],
+          "answer": "Stretch vertically by $4$, right $3$, up $2$; congruent to $y=4/x$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graph": {
+          "numerator": [
+            2,
+            -2
+          ],
+          "denominator": [
+            1,
+            -3
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 10,
+            "yMin": -10,
+            "yMax": 10
+          },
+          "verticalAsymptotes": [
+            3
+          ],
+          "horizontalAsymptote": 2,
+          "holes": [],
+          "points": [],
+          "label": "y=4/(x-(3))+(2)",
+          "traces": [
+            {
+              "numerator": [
+                2,
+                -2
+              ],
+              "denominator": [
+                1,
+                -3
+              ],
+              "verticalAsymptotes": [
+                3
+              ],
+              "horizontalAsymptote": 2,
+              "holes": [],
+              "points": [],
+              "label": "y=4/(x-(3))+(2)"
+            },
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 0,
+              "label": "y=1/x"
+            }
+          ]
+        }
+      },
+      {
+        "id": "investigate-7",
+        "type": "practice",
+        "label": "探究 7",
+        "prompt": "a) 预测 $y=-12/(x+1)-5$ 中参数的作用，再画图检验。b) 第 5 步哪个函数图像与它全等？方程和图像怎样联系？",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "a) 读参数",
+            "body": "$a=-12,h=-1,k=-5$：纵向拉伸 $12$ 倍，关于 $x$ 轴反射，左移 $1$、下移 $5$；渐近线 $x=-1,y=-5$。例如 $(0,-17),(-2,7),(1,-11),(-3,1)$。"
+          },
+          {
+            "title": "b) 比较全等",
+            "body": "由 $y=12/x$ 经过反射和平移得到，反射和平移都保持距离，所以这两图全等。"
+          }
+        ],
+        "answer": "反射、纵向拉伸 $12$ 倍、左移 $1$ 下移 $5$；与 $y=12/x$ 全等。",
+        "printedPage": 432,
+        "pdfPage": 441,
+        "en": {
+          "label": "Investigate 7",
+          "prompt": "a) Predict the effects of the parameters in $y=-12/(x+1)-5$ and graph to check. b) Which function from step 5 has a congruent graph? How are the equations and graphs connected?",
+          "steps": [
+            {
+              "title": "a) Read parameters",
+              "body": "$a=-12,h=-1,k=-5$: stretch vertically by $12$, reflect in the $x$-axis, then translate left $1$ and down $5$. Asymptotes are $x=-1,y=-5$. Points include $(0,-17),(-2,7),(1,-11),(-3,1)$."
+            },
+            {
+              "title": "b) Compare congruence",
+              "body": "It is obtained from $y=12/x$ by reflection and translation. Both preserve distances, so these graphs are congruent."
+            }
+          ],
+          "answer": "Reflect and stretch vertically by $12$, then left $1$, down $5$; congruent to $y=12/x$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graph": {
+          "numerator": [
+            -5,
+            -17
+          ],
+          "denominator": [
+            1,
+            1
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 10,
+            "yMin": -20,
+            "yMax": 12
+          },
+          "verticalAsymptotes": [
+            -1
+          ],
+          "horizontalAsymptote": -5,
+          "holes": [],
+          "points": [],
+          "label": "y=-12/(x-(-1))+(-5)"
+        }
+      },
+      {
+        "id": "investigate-8",
+        "type": "practice",
+        "label": "反思与回应 8",
+        "prompt": "将 $y=1/x$ 纵向拉伸 $a$ 倍时，渐近线位置会改变吗？解释。",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "非零缩放",
+            "body": "对非零拉伸因子，$y=a/x$ 的禁值仍为 $x=0$；当 $|x|$ 增大时 $a/x$ 趋近零，所以渐近线仍为 $x=0,y=0$。"
+          },
+          {
+            "title": "补充退化情形",
+            "body": "$a=0$ 不构成真正的拉伸；原式成为 $y=0$（$x\\ne0$），只有孔洞，没有竖直渐近线。"
+          }
+        ],
+        "answer": "非零纵向拉伸不改变渐近线 $x=0,y=0$；$a=0$ 必须单独处理。",
+        "printedPage": 432,
+        "pdfPage": 441,
+        "en": {
+          "label": "Reflect and Respond 8",
+          "prompt": "Are the asymptote locations of $y=1/x$ affected by a vertical stretch by factor $a$? Explain.",
+          "steps": [
+            {
+              "title": "Nonzero scaling",
+              "body": "For a nonzero stretch factor, $y=a/x$ still excludes $x=0$, and $a/x$ approaches zero as $|x|$ grows. The asymptotes remain $x=0,y=0$."
+            },
+            {
+              "title": "Degenerate case",
+              "body": "$a=0$ is not a genuine stretch. The expression is $y=0$ for $x\\ne0$, with a hole and no vertical asymptote."
+            }
+          ],
+          "answer": "A nonzero vertical stretch leaves $x=0,y=0$ unchanged; $a=0$ is a separate degenerate case."
+        }
+      },
+      {
+        "id": "investigate-9",
+        "type": "practice",
+        "label": "反思与回应 9",
+        "prompt": "a) 能否由 $y=a/(x-h)+k$ 判断竖直渐近线的位置？解释。b) 当 $x$ 趋近禁值时，函数值怎样改变？c) 哪个未平移函数的图像与 $y=8/(x-7)+6$ 全等？怎样不用技术作图？",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "a) 分母为零",
+            "body": "非零 $a$ 时，$x-h=0$ 给出竖直渐近线 $x=h$；$a=0$ 时仅有孔洞而不是竖直渐近线。"
+          },
+          {
+            "title": "b) 左右行为",
+            "body": "对本节形式且 $a\\ne0$，$|y|$ 无界增大；$a>0$ 时左侧趋负无穷、右侧趋正无穷；$a<0$ 时相反。一般有理函数的禁值也可能是孔洞，不能一概说无界。"
+          },
+          {
+            "title": "c) 平移作图",
+            "body": "先画 $y=8/x$，例如 $(1,8),(2,4),(-1,-8),(-2,-4)$，再将每点右移 $7$、上移 $6$；渐近线也移到 $x=7,y=6$。"
+          }
+        ],
+        "answer": "a) 非零 $a$ 时为 $x=h$。b) 本节非退化形式的函数值在两侧无界。c) 平移 $y=8/x$：右 $7$、上 $6$。",
+        "printedPage": 432,
+        "pdfPage": 441,
+        "en": {
+          "label": "Reflect and Respond 9",
+          "prompt": "a) Can you locate the vertical asymptote from $y=a/(x-h)+k$? Explain. b) Describe how function values change as $x$ approaches a non-permissible value. c) What non-translated function has a congruent graph to $y=8/(x-7)+6$? How could you graph it without technology?",
+          "steps": [
+            {
+              "title": "a) Set the denominator to zero",
+              "body": "For $a\\ne0$, $x-h=0$ gives the vertical asymptote $x=h$. If $a=0$, there is a hole rather than a vertical asymptote."
+            },
+            {
+              "title": "b) One-sided behaviour",
+              "body": "For this form with $a\\ne0$, $|y|$ grows without bound. For $a>0$, the left branch tends downward and the right upward; for $a<0$, the directions reverse. A general rational function can instead have a hole at an excluded value."
+            },
+            {
+              "title": "c) Graph by translation",
+              "body": "Draw $y=8/x$, using $(1,8),(2,4),(-1,-8),(-2,-4)$, then shift each point right $7$ and up $6$. Shift the asymptotes to $x=7,y=6$."
+            }
+          ],
+          "answer": "a) $x=h$ for $a\\ne0$. b) Values are unbounded on the two sides for the nondegenerate form. c) Translate $y=8/x$ right $7$ and up $6$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1",
+        "prompt": "用数值表和图像分析函数 $y=10/x$。识别图像特征，包括函数在禁值附近的行为。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "列数值表",
+            "body": "取 $x=-10,-5,-2,-1,-0.5,0,0.5,1,2,5,10$，则 $y=-1,-2,-5,-10,-20,$ 无定义，$20,10,5,2,1$。"
+          },
+          {
+            "title": "画两支曲线",
+            "body": "在第一、三象限标点，平滑连接。$x\\ne0$；由 $10/x=0$ 无解，$y\\ne0$，所以无截距。"
+          },
+          {
+            "title": "检查渐近行为",
+            "body": "当 $x$ 从右侧趋近 $0$ 时 $y$ 无界增大，从左侧趋近 $0$ 时无界减小；$|x|$ 无界增大时 $y$ 趋近 $0$。"
+          }
+        ],
+        "answer": "定义域 $x\\ne0$；值域 $y\\ne0$；渐近线 $x=0,y=0$；无截距，图像在第一、三象限。",
+        "printedPage": 432,
+        "pdfPage": 441,
+        "en": {
+          "label": "Example 1",
+          "prompt": "Analyse $y=10/x$ using a table of values and a graph. Identify characteristics of the graph, including the behaviour for its non-permissible value.",
+          "steps": [
+            {
+              "title": "Make a value table",
+              "body": "For $x=-10,-5,-2,-1,-0.5,0,0.5,1,2,5,10$, the corresponding $y$ values are $-1,-2,-5,-10,-20,$ undefined, $20,10,5,2,1$."
+            },
+            {
+              "title": "Draw the two branches",
+              "body": "Plot and connect the points in quadrants I and III. Since $x\\ne0$ and $10/x=0$ has no solution, $y\\ne0$ and there are no intercepts."
+            },
+            {
+              "title": "Check asymptotic behaviour",
+              "body": "As $x$ approaches $0$ from the right, $y$ increases without bound; from the left, it decreases without bound. As $|x|$ grows without bound, $y$ approaches $0$."
+            }
+          ],
+          "answer": "Domain $x\\ne0$; range $y\\ne0$; asymptotes $x=0,y=0$; no intercepts; branches in quadrants I and III."
+        },
+        "graph": {
+          "numerator": [
+            0,
+            10
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 10,
+            "yMin": -10,
+            "yMax": 10
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "label": "y=10/(x-(0))+(0)"
+        }
+      },
+      {
+        "id": "margin-433",
+        "type": "practice",
+        "label": "第 433 页旁注",
+        "prompt": "a) 为什么函数 $y=10/x$ 在 $x=0$ 无定义？b) 方程可改写为 $xy=10$。怎样用这种形式生成表格和图像中的有序数对？c) 当 $x$ 趋近零时，为什么 $|y|$ 增大？d) 当 $|x|$ 很大时，$y$ 怎样变化？",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "a) 禁止除零",
+            "body": "$x=0$ 时分母为零；没有实数 $y$ 满足 $0y=10$。"
+          },
+          {
+            "title": "b) 固定乘积",
+            "body": "选任意非零 $x$，令 $y=10/x$，使 $xy=10$。例如 $2\\times5=10$、$(-5)(-2)=10$。"
+          },
+          {
+            "title": "c) 分母绝对值变小",
+            "body": "$|y|=10/|x|$；正分母越接近零，商越大。"
+          },
+          {
+            "title": "d) 远端趋零",
+            "body": "$10/|x|$ 趋近零，所以 $y$ 从正侧或负侧趋近 $0$。"
+          }
+        ],
+        "answer": "a) 除数为零。b) 选取乘积为 $10$ 的数对。c) $|y|=10/|x|$。d) $y$ 趋近 $0$。",
+        "printedPage": 433,
+        "pdfPage": 442,
+        "en": {
+          "label": "Margin questions, p. 433",
+          "prompt": "a) Why is $y=10/x$ undefined at zero? b) The equation can be rearranged to $xy=10$. How can this form generate ordered pairs? c) Why does $|y|$ get larger as $x$ approaches zero? d) What happens to $y$ as $|x|$ becomes very large?",
+          "steps": [
+            {
+              "title": "a) Division by zero",
+              "body": "At $x=0$, the denominator is zero; no real $y$ satisfies $0y=10$."
+            },
+            {
+              "title": "b) Keep the product fixed",
+              "body": "Choose any nonzero $x$ and set $y=10/x$ so that $xy=10$: for example, $2\\times5=10$ and $(-5)(-2)=10$."
+            },
+            {
+              "title": "c) Shrinking denominator magnitude",
+              "body": "$|y|=10/|x|$: the closer the positive denominator is to zero, the larger the quotient."
+            },
+            {
+              "title": "d) End behaviour",
+              "body": "$10/|x|$ approaches zero, so $y$ approaches $0$ from above or below."
+            }
+          ],
+          "answer": "a) Division by zero. b) Choose pairs with product $10$. c) $|y|=10/|x|$. d) $y$ approaches $0$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "自主练习 1",
+        "prompt": "用数值表和图像分析函数 $y=6/x$。识别图像特征，包括函数在禁值附近的行为。",
+        "concept": "inverse",
+        "steps": [
+          {
+            "title": "建立数值表",
+            "body": "$x=-6,-3,-2,-1,-0.5,0,0.5,1,2,3,6$ 对应 $y=-1,-2,-3,-6,-12,$ 无定义，$12,6,3,2,1$。"
+          },
+          {
+            "title": "识别特征",
+            "body": "分母不能为零，$6/x$ 也不可能等于零。定义域 $x\\ne0$，值域 $y\\ne0$，没有截距。"
+          },
+          {
+            "title": "判断两端与零附近",
+            "body": "$x$ 从右侧趋零时 $y$ 趋正无穷，从左侧趋零时趋负无穷；$|x|$ 很大时 $y$ 趋零。"
+          }
+        ],
+        "answer": "渐近线 $x=0,y=0$；定义域和值域均排除 $0$；第一、三象限双曲线，无截距。",
+        "printedPage": 433,
+        "pdfPage": 442,
+        "en": {
+          "label": "Your Turn 1",
+          "prompt": "Analyse $y=6/x$ using a table of values and a graph. Identify characteristics, including behaviour for its non-permissible value.",
+          "steps": [
+            {
+              "title": "Make a table",
+              "body": "$x=-6,-3,-2,-1,-0.5,0,0.5,1,2,3,6$ gives $y=-1,-2,-3,-6,-12,$ undefined, $12,6,3,2,1$."
+            },
+            {
+              "title": "Identify characteristics",
+              "body": "The denominator cannot be zero, and $6/x$ cannot equal zero. Domain $x\\ne0$, range $y\\ne0$, with no intercepts."
+            },
+            {
+              "title": "Describe limits",
+              "body": "As $x$ approaches zero from the right, $y$ increases without bound; from the left, it decreases without bound. As $|x|$ grows, $y$ approaches zero."
+            }
+          ],
+          "answer": "Asymptotes $x=0,y=0$; domain and range both exclude $0$; a hyperbola in quadrants I and III, with no intercepts."
+        },
+        "graph": {
+          "numerator": [
+            0,
+            6
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 10,
+            "yMin": -10,
+            "yMax": 10
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "label": "y=6/(x-(0))+(0)"
+        }
+      },
+      {
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2",
+        "prompt": "用变换画出函数 $y=6/(x-2)-3$ 的草图，并识别图像的重要特征。",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "确定变换",
+            "body": "$a=6,h=2,k=-3$。从 $y=1/x$ 纵向拉伸 $6$ 倍，右移 $2$、下移 $3$，点映射为 $(x,y)\\to(x+2,6y-3)$。"
+          },
+          {
+            "title": "求渐近线与截距",
+            "body": "渐近线 $x=2,y=-3$。令 $x=0$ 得 $y=-6$；令 $y=0$ 得 $6=3(x-2)$，所以 $x=4$。"
+          },
+          {
+            "title": "概括行为",
+            "body": "定义域 $x\\ne2$；值域 $y\\ne-3$。$x$ 从左、右趋近 $2$ 时，$y$ 分别无界减小、增大；$|x|$ 很大时趋近 $-3$。"
+          }
+        ],
+        "answer": "渐近线 $x=2,y=-3$；截距 $(4,0),(0,-6)$；定义域 $x\\ne2$，值域 $y\\ne-3$。",
+        "printedPage": 434,
+        "pdfPage": 443,
+        "en": {
+          "label": "Example 2",
+          "prompt": "Sketch $y=6/(x-2)-3$ using transformations, and identify important characteristics of the graph.",
+          "steps": [
+            {
+              "title": "Determine transformations",
+              "body": "$a=6,h=2,k=-3$: stretch $y=1/x$ vertically by $6$, then right $2$ and down $3$. Map $(x,y)\\to(x+2,6y-3)$."
+            },
+            {
+              "title": "Find asymptotes and intercepts",
+              "body": "Asymptotes are $x=2,y=-3$. At $x=0$, $y=-6$. At $y=0$, $6=3(x-2)$, giving $x=4$."
+            },
+            {
+              "title": "Summarize behaviour",
+              "body": "Domain $x\\ne2$; range $y\\ne-3$. As $x$ approaches $2$ from the left and right, $y$ decreases and increases without bound, respectively. As $|x|$ grows, $y$ approaches $-3$."
+            }
+          ],
+          "answer": "Asymptotes $x=2,y=-3$; intercepts $(4,0),(0,-6)$; domain $x\\ne2$, range $y\\ne-3$."
+        },
+        "graph": {
+          "numerator": [
+            -3,
+            12
+          ],
+          "denominator": [
+            1,
+            -2
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 10,
+            "yMin": -10,
+            "yMax": 10
+          },
+          "verticalAsymptotes": [
+            2
+          ],
+          "horizontalAsymptote": -3,
+          "holes": [],
+          "points": [],
+          "label": "y=6/(x-(2))+(-3)"
+        }
+      },
+      {
+        "id": "margin-434",
+        "type": "practice",
+        "label": "第 434 页旁注",
+        "prompt": "对 $y=6/(x-2)-3$：a) 怎样用渐近线帮助作图？b) 怎样利用 $y=6/x$ 的有序数对来作图？c) 当 $x$ 趋近 $2$ 时，$|y|$ 怎样变化？d) 当 $|x|$ 很大时，$y$ 怎样变化？",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "a) 先画参考线",
+            "body": "先画 $x=2$ 和 $y=-3$，再在其相交中心的右上、左下区域画两支渐近曲线。"
+          },
+          {
+            "title": "b) 平移坐标",
+            "body": "将 $y=6/x$ 上每点 $(u,6/u)$ 变成 $(u+2,6/u-3)$。例如 $(1,6)\\to(3,3)$，$(-1,-6)\\to(1,-9)$。"
+          },
+          {
+            "title": "c) 接近禁值",
+            "body": "当 $x$ 越来越接近 $2$ 时，$6/(x-2)$ 的绝对值无界增大，减去 $3$ 不改变这个无界行为。"
+          },
+          {
+            "title": "d) 远端行为",
+            "body": "$6/(x-2)$ 趋近 $0$，因此 $y$ 趋近 $-3$。"
+          }
+        ],
+        "answer": "a) 先画 $x=2,y=-3$。b) 右移 $2$、下移 $3$。c) $|y|$ 无界增大。d) $y$ 趋近 $-3$。",
+        "printedPage": 434,
+        "pdfPage": 443,
+        "en": {
+          "label": "Margin questions, p. 434",
+          "prompt": "For $y=6/(x-2)-3$: a) How can asymptotes help sketch the graph? b) How can ordered pairs for $y=6/x$ help? c) What happens to $|y|$ as $x$ approaches $2$? d) What happens to $y$ as $|x|$ becomes very large?",
+          "steps": [
+            {
+              "title": "a) Draw guide lines",
+              "body": "Draw $x=2$ and $y=-3$ first, then sketch branches above-right and below-left of their intersection."
+            },
+            {
+              "title": "b) Translate coordinates",
+              "body": "Map each $(u,6/u)$ to $(u+2,6/u-3)$: for example, $(1,6)\\to(3,3)$ and $(-1,-6)\\to(1,-9)$."
+            },
+            {
+              "title": "c) Approach the excluded value",
+              "body": "As $x$ approaches $2$, the magnitude of $6/(x-2)$ grows without bound; subtracting $3$ does not change that unbounded behaviour."
+            },
+            {
+              "title": "d) End behaviour",
+              "body": "$6/(x-2)$ approaches $0$, so $y$ approaches $-3$."
+            }
+          ],
+          "answer": "a) Draw $x=2,y=-3$ first. b) Shift right $2$, down $3$. c) $|y|$ grows without bound. d) $y$ approaches $-3$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "id": "margin-435",
+        "type": "practice",
+        "label": "第 435 页旁注",
+        "prompt": "对 $y=6/(x-2)-3$ 的特征表：a) 哪些特征互相关联？b) 各特征怎样联系函数方程？",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "a) 联系禁值与渐近线",
+            "body": "禁值 $x=2$、定义域排除 $2$、竖直渐近线 $x=2$ 及近 $2$ 的无界行为是一组联系；值域排除 $-3$、水平渐近线 $y=-3$ 及远端趋近 $-3$ 是另一组。"
+          },
+          {
+            "title": "b) 读方程",
+            "body": "分母 $x-2$ 说明 $x\\ne2$；非零分子 $6$ 使 $6/(x-2)$ 不能为零，故 $y\\ne-3$；该分式在远端趋零，说明水平渐近线。"
+          }
+        ],
+        "answer": "禁值、定义域和竖直渐近线互相关联；值域、水平渐近线和远端行为互相关联。",
+        "printedPage": 435,
+        "pdfPage": 444,
+        "en": {
+          "label": "Margin questions, p. 435",
+          "prompt": "For the characteristic table of $y=6/(x-2)-3$: a) Which listed characteristics are related? b) How is each characteristic related to the equation?",
+          "steps": [
+            {
+              "title": "a) Connect characteristics",
+              "body": "The excluded value $2$, domain exclusion, vertical asymptote $x=2$, and unbounded behaviour near $2$ are linked. Range exclusion $-3$, horizontal asymptote $y=-3$, and end behaviour toward $-3$ are also linked."
+            },
+            {
+              "title": "b) Read the equation",
+              "body": "The denominator $x-2$ gives $x\\ne2$. The nonzero numerator means $6/(x-2)$ cannot be zero, hence $y\\ne-3$. The fraction tends to zero at the ends, giving the horizontal asymptote."
+            }
+          ],
+          "answer": "The excluded value, domain, and vertical asymptote are linked; the range, horizontal asymptote, and end behaviour are linked."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "自主练习 2",
+        "prompt": "用变换画出 $y=4/(x+1)+5$ 的草图，并识别重要特征。",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "确定变换",
+            "body": "从 $y=1/x$ 纵向拉伸 $4$ 倍，左移 $1$、上移 $5$。渐近线 $x=-1,y=5$。"
+          },
+          {
+            "title": "求截距",
+            "body": "$x=0$ 时 $y=9$；$y=0$ 时 $4=-5(x+1)$，得 $x=-9/5$。可标点 $(0,9),(-2,1),(1,7),(-3,3)$。"
+          },
+          {
+            "title": "说明行为",
+            "body": "定义域 $x\\ne-1$，值域 $y\\ne5$。从左趋近 $-1$ 时 $y$ 无界减小，从右趋近时无界增加；远端趋近 $5$。"
+          }
+        ],
+        "answer": "渐近线 $x=-1,y=5$；截距 $(-9/5,0),(0,9)$；定义域 $x\\ne-1$，值域 $y\\ne5$。",
+        "printedPage": 435,
+        "pdfPage": 444,
+        "en": {
+          "label": "Your Turn 2",
+          "prompt": "Sketch $y=4/(x+1)+5$ using transformations, and identify important characteristics.",
+          "steps": [
+            {
+              "title": "Determine transformations",
+              "body": "Stretch $y=1/x$ vertically by $4$, then translate left $1$ and up $5$. Asymptotes: $x=-1,y=5$."
+            },
+            {
+              "title": "Find intercepts",
+              "body": "At $x=0$, $y=9$. At $y=0$, $4=-5(x+1)$ gives $x=-9/5$. Plot $(0,9),(-2,1),(1,7),(-3,3)$."
+            },
+            {
+              "title": "Describe behaviour",
+              "body": "Domain $x\\ne-1$, range $y\\ne5$. Values decrease without bound on approaching $-1$ from the left and increase without bound from the right; end behaviour approaches $5$."
+            }
+          ],
+          "answer": "Asymptotes $x=-1,y=5$; intercepts $(-9/5,0),(0,9)$; domain $x\\ne-1$, range $y\\ne5$."
+        },
+        "graph": {
+          "numerator": [
+            5,
+            9
+          ],
+          "denominator": [
+            1,
+            1
+          ],
+          "bounds": {
+            "xMin": -8,
+            "xMax": 6,
+            "yMin": -5,
+            "yMax": 15
+          },
+          "verticalAsymptotes": [
+            -1
+          ],
+          "horizontalAsymptote": 5,
+          "holes": [],
+          "points": [],
+          "label": "y=4/(x-(-1))+(5)"
+        }
+      },
+      {
+        "id": "example-3",
+        "type": "example",
+        "label": "例题 3",
+        "prompt": "画出函数 $y=(4x-5)/(x-2)$，识别所有渐近线和截距。",
+        "concept": "linearquotient",
+        "steps": [
+          {
+            "title": "保留限制并改写",
+            "body": "$x\\ne2$。$4x-5=4(x-2)+3$，所以 $y=4+3/(x-2)$；原分母的限制保留。"
+          },
+          {
+            "title": "求截距",
+            "body": "$x=0$ 时 $y=(-5)/(-2)=5/2$；$y=0$ 要求 $4x-5=0$，故 $x=5/4$，此时分母非零。"
+          },
+          {
+            "title": "作图并定域值域",
+            "body": "从 $y=1/x$ 拉伸 $3$ 倍，右移 $2$、上移 $4$。渐近线 $x=2,y=4$；定义域 $x\\ne2$，值域 $y\\ne4$；可标点 $(3,7),(5,5),(1,1),(-1,3)$。"
+          }
+        ],
+        "answer": "$y=3/(x-2)+4$；渐近线 $x=2,y=4$；截距 $(5/4,0),(0,5/2)$。",
+        "printedPage": 435,
+        "pdfPage": 444,
+        "en": {
+          "label": "Example 3",
+          "prompt": "Graph $y=(4x-5)/(x-2)$. Identify any asymptotes and intercepts.",
+          "steps": [
+            {
+              "title": "Retain the restriction and rewrite",
+              "body": "$x\\ne2$. Since $4x-5=4(x-2)+3$, $y=4+3/(x-2)$, with the original restriction retained."
+            },
+            {
+              "title": "Find intercepts",
+              "body": "At $x=0$, $y=(-5)/(-2)=5/2$. For $y=0$, solve $4x-5=0$, giving $x=5/4$, which does not make the denominator zero."
+            },
+            {
+              "title": "Graph and determine domain/range",
+              "body": "Stretch $y=1/x$ by $3$, then right $2$, up $4$. Asymptotes $x=2,y=4$; domain $x\\ne2$, range $y\\ne4$. Useful points: $(3,7),(5,5),(1,1),(-1,3)$."
+            }
+          ],
+          "answer": "$y=3/(x-2)+4$; asymptotes $x=2,y=4$; intercepts $(5/4,0),(0,5/2)$."
+        },
+        "graph": {
+          "numerator": [
+            4,
+            -5
+          ],
+          "denominator": [
+            1,
+            -2
+          ],
+          "bounds": {
+            "xMin": -6,
+            "xMax": 10,
+            "yMin": -5,
+            "yMax": 12
+          },
+          "verticalAsymptotes": [
+            2
+          ],
+          "horizontalAsymptote": 4,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "y=\\frac{4x-5}{x-2}"
+        }
+      },
+      {
+        "id": "margin-436",
+        "type": "practice",
+        "label": "第 436 页旁注",
+        "prompt": "对 $y=(4x-5)/(x-2)$：a) 为什么把分子改成含 $(x-2)$ 的形式？b) 这种形式与多项式除法怎样联系？c) 怎样用 $y=3/x$ 的有序数对得到图中四个绿点？d) 这四个点怎样联系图像对称性？",
+        "concept": "linearquotient",
+        "steps": [
+          {
+            "title": "a) 分出常数项",
+            "body": "写成 $4(x-2)+3$ 后，可将分式分成 $4+3/(x-2)$，从而直接看出变换和渐近线。"
+          },
+          {
+            "title": "b) 商与余式",
+            "body": "多项式除法给出商 $4$、余式 $3$：$4x-5=4(x-2)+3$。"
+          },
+          {
+            "title": "c) 平移四点",
+            "body": "$y=3/x$ 上 $(1,3),(3,1),(-1,-3),(-3,-1)$ 右移 $2$、上移 $4$，得到 $(3,7),(5,5),(1,1),(-1,3)$。"
+          },
+          {
+            "title": "d) 中心与轴对称",
+            "body": "对应点两两以 $(2,4)$ 为中点，表现出绕渐近线交点 $180$ 度旋转对称；交换相对坐标也显示对称轴 $y-4=x-2$ 与 $y-4=-(x-2)$。"
+          }
+        ],
+        "answer": "商 $4$、余式 $3$；绿点为 $(3,7),(5,5),(1,1),(-1,3)$；对称中心 $(2,4)$。",
+        "printedPage": 436,
+        "pdfPage": 445,
+        "en": {
+          "label": "Margin questions, p. 436",
+          "prompt": "For $y=(4x-5)/(x-2)$: a) Why change the numerator to involve $(x-2)$? b) How is this related to polynomial division? c) How do ordered pairs for $y=3/x$ give the four green points? d) How are these points related to graph symmetry?",
+          "steps": [
+            {
+              "title": "a) Separate the constant part",
+              "body": "Writing $4(x-2)+3$ splits the quotient into $4+3/(x-2)$, revealing the transformations and asymptotes."
+            },
+            {
+              "title": "b) Quotient and remainder",
+              "body": "Polynomial division gives quotient $4$ and remainder $3$: $4x-5=4(x-2)+3$."
+            },
+            {
+              "title": "c) Translate four points",
+              "body": "Shift $(1,3),(3,1),(-1,-3),(-3,-1)$ right $2$ and up $4$, obtaining $(3,7),(5,5),(1,1),(-1,3)$."
+            },
+            {
+              "title": "d) Central and axial symmetry",
+              "body": "Opposite pairs have midpoint $(2,4)$, showing $180$-degree rotational symmetry about the asymptote intersection. Interchanging relative coordinates also gives symmetry axes $y-4=x-2$ and $y-4=-(x-2)$."
+            }
+          ],
+          "answer": "Quotient $4$, remainder $3$; green points $(3,7),(5,5),(1,1),(-1,3)$; symmetry centre $(2,4)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "自主练习 3",
+        "prompt": "画出函数 $y=(2x+2)/(x-4)$。识别所有渐近线和截距。",
+        "concept": "linearquotient",
+        "steps": [
+          {
+            "title": "改写并保留限制",
+            "body": "$x\\ne4$；$2x+2=2(x-4)+10$，所以 $y=2+10/(x-4)$。"
+          },
+          {
+            "title": "求截距",
+            "body": "$2x+2=0$ 给出 $x=-1$，分母不为零；$x=0$ 时 $y=2/(-4)=-1/2$。"
+          },
+          {
+            "title": "画图",
+            "body": "从 $y=1/x$ 拉伸 $10$ 倍，右移 $4$、上移 $2$；渐近线 $x=4,y=2$。定义域 $x\\ne4$，值域 $y\\ne2$。"
+          }
+        ],
+        "answer": "渐近线 $x=4,y=2$；截距 $(-1,0),(0,-1/2)$。",
+        "printedPage": 437,
+        "pdfPage": 446,
+        "en": {
+          "label": "Your Turn 3",
+          "prompt": "Graph $y=(2x+2)/(x-4)$. Identify any asymptotes and intercepts.",
+          "steps": [
+            {
+              "title": "Rewrite and retain the restriction",
+              "body": "$x\\ne4$; $2x+2=2(x-4)+10$, so $y=2+10/(x-4)$."
+            },
+            {
+              "title": "Find intercepts",
+              "body": "$2x+2=0$ gives $x=-1$, with nonzero denominator. At $x=0$, $y=2/(-4)=-1/2$."
+            },
+            {
+              "title": "Graph",
+              "body": "Stretch $y=1/x$ by $10$, then translate right $4$, up $2$. Asymptotes $x=4,y=2$; domain $x\\ne4$, range $y\\ne2$."
+            }
+          ],
+          "answer": "Asymptotes $x=4,y=2$; intercepts $(-1,0),(0,-1/2)$."
+        },
+        "graph": {
+          "numerator": [
+            2,
+            2
+          ],
+          "denominator": [
+            1,
+            -4
+          ],
+          "bounds": {
+            "xMin": -6,
+            "xMax": 12,
+            "yMin": -10,
+            "yMax": 15
+          },
+          "verticalAsymptotes": [
+            4
+          ],
+          "horizontalAsymptote": 2,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "y=\\frac{2x+2}{x-4}"
+        }
+      },
+      {
+        "id": "example-4",
+        "type": "example",
+        "label": "例题 4",
+        "prompt": "考虑 $f(x)=1/x^2$、$g(x)=3/(x^2-10x+25)$、$h(x)=6-1/(x+4)^2$。分别画 $f$ 与 $g$、$f$ 与 $h$，比较函数图像特征。",
+        "concept": "transform2",
+        "steps": [
+          {
+            "title": "比较 $f$ 与 $g$",
+            "body": "$x^2-10x+25=(x-5)^2$，故 $g(x)=3f(x-5)$：纵向拉伸 $3$ 倍、右移 $5$。$f$ 的定义域排除 $0$，$g$ 的排除 $5$；两者值域都是 $y>0$，水平渐近线都是 $y=0$。"
+          },
+          {
+            "title": "比较 $f$ 与 $h$",
+            "body": "$h(x)=-f(x+4)+6$：关于 $x$ 轴反射，左移 $4$、上移 $6$。定义域排除 $-4$，值域 $y<6$；渐近线 $x=-4,y=6$。"
+          },
+          {
+            "title": "核对近端与截距",
+            "body": "$f,g$ 在各自竖直渐近线两侧都向上无界，$h$ 两侧都向下无界。$f,g$ 无 $x$ 截距；$g(0)=3/25$。$h(0)=95/16$，$h=0$ 给出 $x=-4\\pm1/\\sqrt{6}$。"
+          }
+        ],
+        "answer": "$g=3f(x-5)$，渐近线 $x=5,y=0$，值域 $y>0$；$h=-f(x+4)+6$，渐近线 $x=-4,y=6$，值域 $y<6$。",
+        "printedPage": 437,
+        "pdfPage": 446,
+        "en": {
+          "label": "Example 4",
+          "prompt": "Consider $f(x)=1/x^2$, $g(x)=3/(x^2-10x+25)$, and $h(x)=6-1/(x+4)^2$. Graph each pair: $f$ and $g$; $f$ and $h$. Compare their graph characteristics.",
+          "steps": [
+            {
+              "title": "Compare $f$ and $g$",
+              "body": "$x^2-10x+25=(x-5)^2$, so $g(x)=3f(x-5)$: stretch vertically by $3$, then right $5$. Domains exclude $0$ for $f$ and $5$ for $g$; both ranges are $y>0$, and both have horizontal asymptote $y=0$."
+            },
+            {
+              "title": "Compare $f$ and $h$",
+              "body": "$h(x)=-f(x+4)+6$: reflect in the $x$-axis, then left $4$ and up $6$. Its domain excludes $-4$, range is $y<6$, and asymptotes are $x=-4,y=6$."
+            },
+            {
+              "title": "Check local behaviour and intercepts",
+              "body": "$f,g$ rise without bound on both sides of their vertical asymptotes; $h$ falls without bound on both sides. Neither $f$ nor $g$ has an $x$-intercept; $g(0)=3/25$. For $h$, $h(0)=95/16$ and $h=0$ gives $x=-4\\pm1/\\sqrt{6}$."
+            }
+          ],
+          "answer": "$g=3f(x-5)$: asymptotes $x=5,y=0$, range $y>0$. $h=-f(x+4)+6$: asymptotes $x=-4,y=6$, range $y<6$."
+        },
+        "subpartIds": [
+          "fg",
+          "fh"
+        ],
+        "graph": {
+          "numerator": [
+            1
+          ],
+          "denominator": [
+            1,
+            0,
+            0
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 12,
+            "yMin": -10,
+            "yMax": 12
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "label": "f(x)=1/x^2",
+          "traces": [
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                0,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 0,
+              "holes": [],
+              "points": [],
+              "label": "f(x)=1/x^2"
+            },
+            {
+              "numerator": [
+                3
+              ],
+              "denominator": [
+                1,
+                -10,
+                25
+              ],
+              "verticalAsymptotes": [
+                5
+              ],
+              "horizontalAsymptote": 0,
+              "label": "g(x)=3/(x-5)^2"
+            },
+            {
+              "numerator": [
+                6,
+                48,
+                95
+              ],
+              "denominator": [
+                1,
+                8,
+                16
+              ],
+              "verticalAsymptotes": [
+                -4
+              ],
+              "horizontalAsymptote": 6,
+              "label": "h(x)=6-1/(x+4)^2"
+            }
+          ]
+        }
+      },
+      {
+        "id": "your-turn-4",
+        "type": "practice",
+        "label": "自主练习 4",
+        "prompt": "画出 $f(x)=1/x^2$、$g(x)=-1/(x-3)^2$、$h(x)=2+5/(x^2+2x+1)$，并比较图像特征。",
+        "concept": "transform2",
+        "steps": [
+          {
+            "title": "分析 $f$",
+            "body": "$f$ 的定义域 $x\\ne0$，值域 $y>0$；渐近线 $x=0,y=0$，两侧近零都向上无界，无截距。"
+          },
+          {
+            "title": "分析 $g$",
+            "body": "$g=-f(x-3)$：右移 $3$ 并关于 $x$ 轴反射。定义域 $x\\ne3$，值域 $y<0$；渐近线 $x=3,y=0$，两侧向下无界；$y$ 截距 $(0,-1/9)$，无 $x$ 截距。"
+          },
+          {
+            "title": "分析 $h$",
+            "body": "$x^2+2x+1=(x+1)^2$，所以 $h=5f(x+1)+2$。左移 $1$、纵向拉伸 $5$ 倍、上移 $2$；定义域 $x\\ne-1$，值域 $y>2$；渐近线 $x=-1,y=2$；$y$ 截距 $(0,7)$，无 $x$ 截距。"
+          }
+        ],
+        "answer": "三者都有一条竖直和一条水平渐近线；$f,g,h$ 的值域依次为 $y>0,y<0,y>2$。",
+        "printedPage": 438,
+        "pdfPage": 447,
+        "en": {
+          "label": "Your Turn 4",
+          "prompt": "Graph $f(x)=1/x^2$, $g(x)=-1/(x-3)^2$, and $h(x)=2+5/(x^2+2x+1)$. Compare their graph characteristics.",
+          "steps": [
+            {
+              "title": "Analyse $f$",
+              "body": "$f$ has domain $x\\ne0$, range $y>0$, asymptotes $x=0,y=0$, and no intercepts. Both branches rise without bound near zero."
+            },
+            {
+              "title": "Analyse $g$",
+              "body": "$g=-f(x-3)$: translate right $3$ and reflect in the $x$-axis. Domain $x\\ne3$, range $y<0$, asymptotes $x=3,y=0$; both sides fall without bound. The $y$-intercept is $(0,-1/9)$; no $x$-intercept."
+            },
+            {
+              "title": "Analyse $h$",
+              "body": "$x^2+2x+1=(x+1)^2$, so $h=5f(x+1)+2$: left $1$, vertical stretch by $5$, up $2$. Domain $x\\ne-1$, range $y>2$, asymptotes $x=-1,y=2$. Its $y$-intercept is $(0,7)$; no $x$-intercept."
+            }
+          ],
+          "answer": "Each has one vertical and one horizontal asymptote; the ranges of $f,g,h$ are $y>0,y<0,y>2$, respectively."
+        },
+        "graph": {
+          "numerator": [
+            1
+          ],
+          "denominator": [
+            1,
+            0,
+            0
+          ],
+          "bounds": {
+            "xMin": -7,
+            "xMax": 9,
+            "yMin": -10,
+            "yMax": 12
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "label": "f(x)=1/x^2",
+          "traces": [
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                0,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 0,
+              "holes": [],
+              "points": [],
+              "label": "f(x)=1/x^2"
+            },
+            {
+              "numerator": [
+                -1
+              ],
+              "denominator": [
+                1,
+                -6,
+                9
+              ],
+              "verticalAsymptotes": [
+                3
+              ],
+              "horizontalAsymptote": 0,
+              "label": "g(x)=-1/(x-3)^2"
+            },
+            {
+              "numerator": [
+                2,
+                4,
+                7
+              ],
+              "denominator": [
+                1,
+                2,
+                1
+              ],
+              "verticalAsymptotes": [
+                -1
+              ],
+              "horizontalAsymptote": 2,
+              "label": "h(x)=2+5/(x+1)^2"
+            }
+          ]
+        }
+      },
+      {
+        "id": "example-5",
+        "type": "example",
+        "label": "例题 5",
+        "prompt": "移动电话预付套餐一收每月 $10$ 元，另收每条短信或每分钟通话 10 分；套餐二收每月 $5$ 元，另收每条短信或每分钟 15 分。通话按整分钟收费。a) 用有理函数表示每条或每分钟的平均费用。b) 画图。c) 随短信与分钟总数变化，平均费用怎样改变？d) 哪个套餐更合适？",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "a) 建模",
+            "body": "设 $x$ 为短信和整分钟通话的合计数，$x$ 为正整数。总费用为 $10+0.10x$ 和 $5+0.15x$，平均费用 $f_1=10/x+0.10$、$f_2=5/x+0.15$，单位为元/次。"
+          },
+          {
+            "title": "b) 画图",
+            "body": "画出连续模型作参考，仅正整数点代表实际账单。$x=50,100,200$ 时，两套餐平均费用依次为 $(0.30,0.25),(0.20,0.20),(0.15,0.175)$。"
+          },
+          {
+            "title": "c) 解释渐近线",
+            "body": "平均费用随 $x$ 增加而减少，分别从上方趋近每次 $0.10$ 和 $0.15$ 元。连续模型的渐近线为 $x=0$ 及各自水平费率；实际使用最少为 $1$，不应声称实际次数可任意趋近零。"
+          },
+          {
+            "title": "d) 比较费用",
+            "body": "令 $10/x+0.10=5/x+0.15$，得 $5=0.05x$，所以 $x=100$。差为 $(5-0.05x)/x$：$1\\le x<100$ 时套餐二较便宜；$x>100$ 时套餐一较便宜；$100$ 时均为每次 $0.20$ 元。"
+          }
+        ],
+        "answer": "$f_1=(10+0.10x)/x$，$f_2=(5+0.15x)/x$，$x=1,2,\\ldots$；少于 $100$ 次选二，多于 $100$ 次选一，$100$ 次相同。",
+        "printedPage": 439,
+        "pdfPage": 448,
+        "en": {
+          "label": "Example 5",
+          "prompt": "A prepaid mobile plan has a monthly fee of 10 dollars and charges 10 cents per text or minute. Another has a monthly fee of 5 dollars and charges 15 cents per text or minute. Talk time is billed per whole minute. a) Represent each average cost per text or minute with a rational function. b) Graph them. c) Describe how average costs change with combined usage. d) Which plan is the better choice?",
+          "steps": [
+            {
+              "title": "a) Model",
+              "body": "Let $x$ be the combined count of texts and whole minutes, a positive integer. Total costs are $10+0.10x$ and $5+0.15x$; average costs are $f_1=10/x+0.10$, $f_2=5/x+0.15$ dollars per usage unit."
+            },
+            {
+              "title": "b) Graph",
+              "body": "Use the continuous curves as guides; only positive-integer inputs represent actual bills. At $x=50,100,200$, the paired averages are $(0.30,0.25),(0.20,0.20),(0.15,0.175)$."
+            },
+            {
+              "title": "c) Interpret asymptotes",
+              "body": "Both averages decrease with $x$, approaching $0.10$ and $0.15$ from above. Continuous-model asymptotes are $x=0$ and the respective rates. Actual usage is at least $1$; it cannot vary arbitrarily close to zero."
+            },
+            {
+              "title": "d) Compare costs",
+              "body": "Set $10/x+0.10=5/x+0.15$: $5=0.05x$, so $x=100$. The difference is $(5-0.05x)/x$. Plan 2 is cheaper for $1\\le x<100$; Plan 1 for $x>100$; at $100$ both average $0.20$."
+            }
+          ],
+          "answer": "$f_1=(10+0.10x)/x$, $f_2=(5+0.15x)/x$, $x=1,2,\\ldots$; Plan 2 below $100$ units, Plan 1 above $100$, equal at $100$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            0.1,
+            10
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 300,
+            "yMin": 0,
+            "yMax": 1
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0.1,
+          "holes": [],
+          "points": [],
+          "label": "Plan 1: 10/x+0.10",
+          "traces": [
+            {
+              "numerator": [
+                0.1,
+                10
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 0.1,
+              "holes": [],
+              "points": [],
+              "label": "Plan 1: 10/x+0.10"
+            },
+            {
+              "numerator": [
+                0.15,
+                5
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 0.15,
+              "label": "Plan 2: 5/x+0.15"
+            }
+          ]
+        }
+      },
+      {
+        "id": "margin-439",
+        "type": "practice",
+        "label": "第 439 页旁注",
+        "prompt": "为什么例题 5 的图像只显示第一象限？",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "解释实际变量",
+            "body": "$x$ 是使用次数，只取正整数；总费用和平均费用都为正。负使用次数和负平均费用没有本题意义。"
+          }
+        ],
+        "answer": "实际定义域 $x=1,2,\\ldots$ 且平均费用为正，所以只用第一象限。",
+        "printedPage": 439,
+        "pdfPage": 448,
+        "en": {
+          "label": "Margin questions, p. 439",
+          "prompt": "Why does the graph in Example 5 show only quadrant I?",
+          "steps": [
+            {
+              "title": "Interpret the variables",
+              "body": "$x$ counts usage and is a positive integer. Total and average costs are positive. Negative usage and negative average costs have no meaning here."
+            }
+          ],
+          "answer": "The contextual domain is $x=1,2,\\ldots$ and average costs are positive, so only quadrant I is relevant."
+        }
+      },
+      {
+        "id": "your-turn-5",
+        "type": "practice",
+        "label": "自主练习 5",
+        "prompt": "Marlysse 为卑诗省 Atlin 镇及周边制作旅游手册，比较两家印刷公司。第一家收 $50$ 元开机费和每册 $2.50$ 元；第二家收 $80$ 元开机费和每册 $2.10$ 元。a) 写每家公司平均每册费用关于册数的函数。b) 画两个函数。c) 解释图像特征与情境的关系。d) 给出选择建议。",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "a) 平均费用",
+            "body": "设正整数 $n$ 为册数，$A(n)=(50+2.50n)/n=50/n+2.50$，$B(n)=(80+2.10n)/n=80/n+2.10$，单位元/册。"
+          },
+          {
+            "title": "b) 画图与数值",
+            "body": "在正整数点作图；$n=25,75,100$ 时，$A=4.50,19/6,3.00$，$B=5.30,19/6,2.90$。"
+          },
+          {
+            "title": "c) 解释图像",
+            "body": "两平均费用递减，固定费分摊到更多册；水平渐近线为每册 $2.50$ 与 $2.10$ 元，永不达到。$n=0$ 平均费用无定义，实际定义域为正整数。"
+          },
+          {
+            "title": "d) 解交点并建议",
+            "body": "$50+2.50n=80+2.10n$ 给出 $0.40n=30$，$n=75$。少于 $75$ 册选第一家，多于 $75$ 册选第二家，$75$ 册同价（总费用 $237.50$ 元）。"
+          }
+        ],
+        "answer": "$A=50/n+2.50$，$B=80/n+2.10$；$n$ 为正整数。少于 $75$ 册选一，多于 $75$ 册选二，$75$ 册相同。",
+        "printedPage": 441,
+        "pdfPage": 450,
+        "en": {
+          "label": "Your Turn 5",
+          "prompt": "Marlysse is producing a tourism booklet for Atlin, British Columbia, and its surrounding area. One printer charges a setup fee of 50 dollars and 2.50 dollars per booklet; the other charges 80 dollars for setup and 2.10 dollars per booklet. a) Represent each average cost per booklet as a function of the number printed. b) Graph both. c) Relate graph characteristics to the situation. d) Advise her how to choose.",
+          "steps": [
+            {
+              "title": "a) Average costs",
+              "body": "For a positive integer count $n$, $A(n)=(50+2.50n)/n=50/n+2.50$ and $B(n)=(80+2.10n)/n=80/n+2.10$, in dollars per booklet."
+            },
+            {
+              "title": "b) Plot values",
+              "body": "Plot at positive integers. At $n=25,75,100$, $A=4.50,19/6,3.00$ and $B=5.30,19/6,2.90$."
+            },
+            {
+              "title": "c) Interpret the curves",
+              "body": "Both averages decrease as setup costs are spread over more booklets. Horizontal asymptotes are $2.50$ and $2.10$ dollars per booklet, never attained. Average cost is undefined at $n=0$; the contextual domain is positive integers."
+            },
+            {
+              "title": "d) Find the crossing and advise",
+              "body": "$50+2.50n=80+2.10n$ gives $0.40n=30$, $n=75$. Choose the first printer below $75$ copies, the second above $75$; at $75$, both totals are $237.50$."
+            }
+          ],
+          "answer": "$A=50/n+2.50$, $B=80/n+2.10$, for positive-integer $n$. First printer below $75$, second above $75$, equal at $75$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            2.5,
+            50
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 200,
+            "yMin": 0,
+            "yMax": 12
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 2.5,
+          "holes": [],
+          "points": [],
+          "label": "Printer A: 50/n+2.50",
+          "traces": [
+            {
+              "numerator": [
+                2.5,
+                50
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 2.5,
+              "holes": [],
+              "points": [],
+              "label": "Printer A: 50/n+2.50"
+            },
+            {
+              "numerator": [
+                2.1,
+                80
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 2.1,
+              "label": "Printer B: 80/n+2.10"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "四个有理函数及其图像如下。各图像对应哪个函数？说明每项理由。$A(x)=2/x-1$，$B(x)=2/(x+1)$，$C(x)=2/(x-1)$，$D(x)=2/x+1$。图 a–d 见原图。",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "a) 比较渐近线",
+            "body": "图 a 的竖直渐近线为 $x=-1$、水平渐近线为 $y=0$，且过 $(0,2)$，故对应 $B(x)=2/(x+1)$。"
+          },
+          {
+            "title": "b) 比较渐近线",
+            "body": "图 b 的渐近线为 $x=0,y=-1$，且 $x$ 截距为 $2$，故对应 $A(x)=2/x-1$。"
+          },
+          {
+            "title": "c) 比较渐近线",
+            "body": "图 c 的渐近线为 $x=0,y=1$，$x$ 截距为 $-2$，故对应 $D(x)=2/x+1$。"
+          },
+          {
+            "title": "d) 比较渐近线",
+            "body": "图 d 的渐近线为 $x=1,y=0$，且过 $(0,-2)$，故对应 $C(x)=2/(x-1)$。"
+          }
+        ],
+        "answer": "a) B；b) A；c) D；d) C。",
+        "printedPage": 442,
+        "pdfPage": 451,
+        "en": {
+          "prompt": "Four rational functions and their graphs are shown. Which graph matches which function? Give reasons for each choice. $A(x)=2/x-1$, $B(x)=2/(x+1)$, $C(x)=2/(x-1)$, $D(x)=2/x+1$. Refer to graphs a–d.",
+          "steps": [
+            {
+              "title": "a) Compare asymptotes",
+              "body": "Graph a has vertical asymptote $x=-1$, horizontal asymptote $y=0$, and passes through $(0,2)$, so it is $B(x)=2/(x+1)$."
+            },
+            {
+              "title": "b) Compare asymptotes",
+              "body": "Graph b has asymptotes $x=0,y=-1$ and $x$-intercept $2$, so it is $A(x)=2/x-1$."
+            },
+            {
+              "title": "c) Compare asymptotes",
+              "body": "Graph c has asymptotes $x=0,y=1$ and $x$-intercept $-2$, so it is $D(x)=2/x+1$."
+            },
+            {
+              "title": "d) Compare asymptotes",
+              "body": "Graph d has asymptotes $x=1,y=0$ and passes through $(0,-2)$, so it is $C(x)=2/(x-1)$."
+            }
+          ],
+          "answer": "a) B; b) A; c) D; d) C."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/9-1-ex1-given.png"
+      },
+      {
+        "number": 2,
+        "prompt": "识别合适的基本有理函数 $y=1/x$ 或 $y=1/x^2$，再用变换画各函数草图，并指出渐近线：a) $y=1/(x+2)$；b) $y=1/(x-3)$；c) $y=1/(x+1)^2$；d) $y=1/(x-4)^2$。",
+        "concept": [
+          "transform1",
+          "transform2"
+        ],
+        "steps": [
+          {
+            "title": "a) 左移双曲线",
+            "body": "基本函数 $1/x$，左移 $2$。点 $(1,1),(-1,-1)$ 变成 $(-1,1),(-3,-1)$；渐近线 $x=-2,y=0$。"
+          },
+          {
+            "title": "b) 右移双曲线",
+            "body": "基本函数 $1/x$，右移 $3$。点 $(1,1),(-1,-1)$ 变成 $(4,1),(2,-1)$；渐近线 $x=3,y=0$。"
+          },
+          {
+            "title": "c) 左移平方倒数",
+            "body": "基本函数 $1/x^2$，左移 $1$。点 $(1,1),(-1,1)$ 变成 $(0,1),(-2,1)$；渐近线 $x=-1,y=0$，两支均在横轴上方。"
+          },
+          {
+            "title": "d) 右移平方倒数",
+            "body": "基本函数 $1/x^2$，右移 $4$。点 $(1,1),(-1,1)$ 变成 $(5,1),(3,1)$；渐近线 $x=4,y=0$，两支均在横轴上方。"
+          }
+        ],
+        "answer": "a) $1/x$ 左移 $2$，$x=-2,y=0$。b) $1/x$ 右移 $3$，$x=3,y=0$。c) $1/x^2$ 左移 $1$，$x=-1,y=0$。d) $1/x^2$ 右移 $4$，$x=4,y=0$。",
+        "printedPage": 442,
+        "pdfPage": 451,
+        "en": {
+          "prompt": "Identify the appropriate base rational function, $y=1/x$ or $y=1/x^2$, and use transformations to sketch each graph. Identify the asymptotes. a) $y=1/(x+2)$; b) $y=1/(x-3)$; c) $y=1/(x+1)^2$; d) $y=1/(x-4)^2$.",
+          "steps": [
+            {
+              "title": "a) Shift the hyperbola left",
+              "body": "Use $1/x$ and shift left $2$. Points $(1,1),(-1,-1)$ become $(-1,1),(-3,-1)$; asymptotes $x=-2,y=0$."
+            },
+            {
+              "title": "b) Shift the hyperbola right",
+              "body": "Use $1/x$ and shift right $3$. Points $(1,1),(-1,-1)$ become $(4,1),(2,-1)$; asymptotes $x=3,y=0$."
+            },
+            {
+              "title": "c) Shift the reciprocal square left",
+              "body": "Use $1/x^2$ and shift left $1$. Points $(1,1),(-1,1)$ become $(0,1),(-2,1)$; asymptotes $x=-1,y=0$, with both branches above the $x$-axis."
+            },
+            {
+              "title": "d) Shift the reciprocal square right",
+              "body": "Use $1/x^2$ and shift right $4$. Points $(1,1),(-1,1)$ become $(5,1),(3,1)$; asymptotes $x=4,y=0$, with both branches above the $x$-axis."
+            }
+          ],
+          "answer": "a) $1/x$ left $2$, $x=-2,y=0$. b) $1/x$ right $3$, $x=3,y=0$. c) $1/x^2$ left $1$, $x=-1,y=0$. d) $1/x^2$ right $4$, $x=4,y=0$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            1
+          ],
+          "denominator": [
+            1,
+            2
+          ],
+          "bounds": {
+            "xMin": -7,
+            "xMax": 9,
+            "yMin": -5,
+            "yMax": 8
+          },
+          "verticalAsymptotes": [
+            -2
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "label": "a: 1/(x+2)",
+          "traces": [
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                2
+              ],
+              "verticalAsymptotes": [
+                -2
+              ],
+              "horizontalAsymptote": 0,
+              "holes": [],
+              "points": [],
+              "label": "a: 1/(x+2)"
+            },
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                -3
+              ],
+              "verticalAsymptotes": [
+                3
+              ],
+              "label": "b: 1/(x-3)"
+            },
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                2,
+                1
+              ],
+              "verticalAsymptotes": [
+                -1
+              ],
+              "label": "c: 1/(x+1)^2"
+            },
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                -8,
+                16
+              ],
+              "verticalAsymptotes": [
+                4
+              ],
+              "label": "d: 1/(x-4)^2"
+            }
+          ]
+        }
+      },
+      {
+        "number": 3,
+        "prompt": "用变换画各函数草图。指出定义域、值域、截距与渐近线。a) $y=6/(x+1)$；b) $y=4/x+1$；c) $y=2/(x-4)-5$；d) $y=-8/(x-2)+3$。",
+        "concept": "transform1",
+        "steps": [
+          {
+            "title": "a) 分析并作图",
+            "body": "从 $1/x$ 纵向拉伸 $6$ 倍、左移 $1$。定义域 $x\\ne-1$，值域 $y\\ne0$；渐近线 $x=-1,y=0$；$y(0)=6$，无 $x$ 截距。可标点 $(0,6),(-2,-6),(1,3),(-3,-3)$。"
+          },
+          {
+            "title": "b) 分析并作图",
+            "body": "纵向拉伸 $4$ 倍、上移 $1$。定义域 $x\\ne0$，值域 $y\\ne1$；渐近线 $x=0,y=1$；$0=4/x+1$ 得 $x=-4$，无 $y$ 截距。点 $(1,5),(-1,-3),(2,3),(-2,-1)$ 可辅助。"
+          },
+          {
+            "title": "c) 分析并作图",
+            "body": "纵向拉伸 $2$ 倍、右移 $4$、下移 $5$。定义域 $x\\ne4$，值域 $y\\ne-5$；渐近线 $x=4,y=-5$。$y(0)=-11/2$；$2/(x-4)=5$ 得 $x=22/5$。点 $(5,-3),(3,-7)$。"
+          },
+          {
+            "title": "d) 分析并作图",
+            "body": "纵向拉伸 $8$ 倍、关于 $x$ 轴反射、右移 $2$、上移 $3$。定义域 $x\\ne2$，值域 $y\\ne3$；渐近线 $x=2,y=3$。$y(0)=7$；$8/(x-2)=3$ 得 $x=14/3$。点 $(3,-5),(1,11)$。"
+          }
+        ],
+        "answer": "a) $D:x\\ne-1,R:y\\ne0$；$(0,6)$，无横截距；渐近线 $x=-1,y=0$。b) $D:x\\ne0,R:y\\ne1$；$(-4,0)$，无纵截距；$x=0,y=1$。c) $D:x\\ne4,R:y\\ne-5$；$(22/5,0),(0,-11/2)$；$x=4,y=-5$。d) $D:x\\ne2,R:y\\ne3$；$(14/3,0),(0,7)$；$x=2,y=3$。",
+        "printedPage": 442,
+        "pdfPage": 451,
+        "en": {
+          "prompt": "Sketch each graph using transformations. Identify domain, range, intercepts, and asymptotes. a) $y=6/(x+1)$; b) $y=4/x+1$; c) $y=2/(x-4)-5$; d) $y=-8/(x-2)+3$.",
+          "steps": [
+            {
+              "title": "a) Analyse and graph",
+              "body": "Stretch $1/x$ by $6$ and shift left $1$. Domain $x\\ne-1$, range $y\\ne0$; asymptotes $x=-1,y=0$. The $y$-intercept is $(0,6)$; no $x$-intercept. Plot $(0,6),(-2,-6),(1,3),(-3,-3)$."
+            },
+            {
+              "title": "b) Analyse and graph",
+              "body": "Stretch by $4$, then up $1$. Domain $x\\ne0$, range $y\\ne1$; asymptotes $x=0,y=1$. Solving $0=4/x+1$ gives $x=-4$; no $y$-intercept. Useful points: $(1,5),(-1,-3),(2,3),(-2,-1)$."
+            },
+            {
+              "title": "c) Analyse and graph",
+              "body": "Stretch by $2$, right $4$, down $5$. Domain $x\\ne4$, range $y\\ne-5$; asymptotes $x=4,y=-5$. $y(0)=-11/2$; solving $2/(x-4)=5$ gives $x=22/5$. Points include $(5,-3),(3,-7)$."
+            },
+            {
+              "title": "d) Analyse and graph",
+              "body": "Stretch by $8$, reflect in the $x$-axis, right $2$, up $3$. Domain $x\\ne2$, range $y\\ne3$; asymptotes $x=2,y=3$. $y(0)=7$; solving $8/(x-2)=3$ gives $x=14/3$. Points include $(3,-5),(1,11)$."
+            }
+          ],
+          "answer": "a) $D:x\\ne-1,R:y\\ne0$; $(0,6)$, no $x$-intercept; asymptotes $x=-1,y=0$. b) $D:x\\ne0,R:y\\ne1$; $(-4,0)$, no $y$-intercept; $x=0,y=1$. c) $D:x\\ne4,R:y\\ne-5$; $(22/5,0),(0,-11/2)$; $x=4,y=-5$. d) $D:x\\ne2,R:y\\ne3$; $(14/3,0),(0,7)$; $x=2,y=3$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            6
+          ],
+          "denominator": [
+            1,
+            1
+          ],
+          "bounds": {
+            "xMin": -8,
+            "xMax": 10,
+            "yMin": -14,
+            "yMax": 15
+          },
+          "verticalAsymptotes": [
+            -1
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "label": "a: 6/(x+1)",
+          "traces": [
+            {
+              "numerator": [
+                6
+              ],
+              "denominator": [
+                1,
+                1
+              ],
+              "verticalAsymptotes": [
+                -1
+              ],
+              "horizontalAsymptote": 0,
+              "holes": [],
+              "points": [],
+              "label": "a: 6/(x+1)"
+            },
+            {
+              "numerator": [
+                1,
+                4
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 1,
+              "label": "b: 4/x+1"
+            },
+            {
+              "numerator": [
+                -5,
+                22
+              ],
+              "denominator": [
+                1,
+                -4
+              ],
+              "verticalAsymptotes": [
+                4
+              ],
+              "horizontalAsymptote": -5,
+              "label": "c: 2/(x-4)-5"
+            },
+            {
+              "numerator": [
+                3,
+                -14
+              ],
+              "denominator": [
+                1,
+                -2
+              ],
+              "verticalAsymptotes": [
+                2
+              ],
+              "horizontalAsymptote": 3,
+              "label": "d: -8/(x-2)+3"
+            }
+          ]
+        }
+      },
+      {
+        "number": 4,
+        "prompt": "用技术画出各函数，并识别所有渐近线与截距。a) $y=(2x+1)/(x-4)$；b) $y=(3x-2)/(x+1)$；c) $y=(-4x+3)/(x+2)$；d) $y=(2-6x)/(x-5)$。",
+        "concept": "linearquotient",
+        "steps": [
+          {
+            "title": "a) 除法与截距",
+            "body": "$2x+1=2(x-4)+9$，所以 $y=2+9/(x-4)$。渐近线 $x=4,y=2$；$2x+1=0$ 得横截距 $(-1/2,0)$；$x=0$ 得纵截距 $(0,-1/4)$。"
+          },
+          {
+            "title": "b) 除法与截距",
+            "body": "$3x-2=3(x+1)-5$，所以 $y=3-5/(x+1)$。渐近线 $x=-1,y=3$；截距 $(2/3,0),(0,-2)$。"
+          },
+          {
+            "title": "c) 除法与截距",
+            "body": "$-4x+3=-4(x+2)+11$，所以 $y=-4+11/(x+2)$。渐近线 $x=-2,y=-4$；截距 $(3/4,0),(0,3/2)$。"
+          },
+          {
+            "title": "d) 除法与截距",
+            "body": "$2-6x=-6(x-5)-28$，所以 $y=-6-28/(x-5)$。渐近线 $x=5,y=-6$；截距 $(1/3,0),(0,-2/5)$。每项竖直渐近线均来自不能约去的分母零点。"
+          }
+        ],
+        "answer": "a) $x=4,y=2$；$(-1/2,0),(0,-1/4)$。b) $x=-1,y=3$；$(2/3,0),(0,-2)$。c) $x=-2,y=-4$；$(3/4,0),(0,3/2)$。d) $x=5,y=-6$；$(1/3,0),(0,-2/5)$。",
+        "printedPage": 442,
+        "pdfPage": 451,
+        "en": {
+          "prompt": "Graph each function using technology and identify any asymptotes and intercepts. a) $y=(2x+1)/(x-4)$; b) $y=(3x-2)/(x+1)$; c) $y=(-4x+3)/(x+2)$; d) $y=(2-6x)/(x-5)$.",
+          "steps": [
+            {
+              "title": "a) Division and intercepts",
+              "body": "$2x+1=2(x-4)+9$, so $y=2+9/(x-4)$. Asymptotes $x=4,y=2$; solve $2x+1=0$ for $(-1/2,0)$; set $x=0$ for $(0,-1/4)$."
+            },
+            {
+              "title": "b) Division and intercepts",
+              "body": "$3x-2=3(x+1)-5$, so $y=3-5/(x+1)$. Asymptotes $x=-1,y=3$; intercepts $(2/3,0),(0,-2)$."
+            },
+            {
+              "title": "c) Division and intercepts",
+              "body": "$-4x+3=-4(x+2)+11$, so $y=-4+11/(x+2)$. Asymptotes $x=-2,y=-4$; intercepts $(3/4,0),(0,3/2)$."
+            },
+            {
+              "title": "d) Division and intercepts",
+              "body": "$2-6x=-6(x-5)-28$, so $y=-6-28/(x-5)$. Asymptotes $x=5,y=-6$; intercepts $(1/3,0),(0,-2/5)$. Each vertical asymptote comes from an uncancelled denominator zero."
+            }
+          ],
+          "answer": "a) $x=4,y=2$; $(-1/2,0),(0,-1/4)$. b) $x=-1,y=3$; $(2/3,0),(0,-2)$. c) $x=-2,y=-4$; $(3/4,0),(0,3/2)$. d) $x=5,y=-6$; $(1/3,0),(0,-2/5)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            2,
+            1
+          ],
+          "denominator": [
+            1,
+            -4
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 12,
+            "yMin": -16,
+            "yMax": 16
+          },
+          "verticalAsymptotes": [
+            4
+          ],
+          "horizontalAsymptote": 2,
+          "holes": [],
+          "points": [],
+          "label": "a",
+          "traces": [
+            {
+              "numerator": [
+                2,
+                1
+              ],
+              "denominator": [
+                1,
+                -4
+              ],
+              "verticalAsymptotes": [
+                4
+              ],
+              "horizontalAsymptote": 2,
+              "holes": [],
+              "points": [],
+              "label": "a"
+            },
+            {
+              "numerator": [
+                3,
+                -2
+              ],
+              "denominator": [
+                1,
+                1
+              ],
+              "verticalAsymptotes": [
+                -1
+              ],
+              "horizontalAsymptote": 3,
+              "label": "b"
+            },
+            {
+              "numerator": [
+                -4,
+                3
+              ],
+              "denominator": [
+                1,
+                2
+              ],
+              "verticalAsymptotes": [
+                -2
+              ],
+              "horizontalAsymptote": -4,
+              "label": "c"
+            },
+            {
+              "numerator": [
+                -6,
+                2
+              ],
+              "denominator": [
+                1,
+                -5
+              ],
+              "verticalAsymptotes": [
+                5
+              ],
+              "horizontalAsymptote": -6,
+              "label": "d"
+            }
+          ]
+        }
+      },
+      {
+        "number": 5,
+        "prompt": "将每个函数写成 $y=a/(x-h)+k$ 的形式，求所有渐近线与截距，再用技术画图确认。a) $y=(11x+12)/x$；b) $y=x/(x+8)$；c) $y=(-x-2)/(x+6)$。",
+        "concept": "linearquotient",
+        "steps": [
+          {
+            "title": "a) 分离分式",
+            "body": "$y=11+12/x$，$x\\ne0$。渐近线 $x=0,y=11$；$11x+12=0$ 得 $(-12/11,0)$；$x=0$ 无定义，所以无纵截距。"
+          },
+          {
+            "title": "b) 分解分子",
+            "body": "$x=(x+8)-8$，所以 $y=1-8/(x+8)$，$x\\ne-8$。渐近线 $x=-8,y=1$；分子为零且分母非零时 $x=0$，两个截距同为 $(0,0)$。"
+          },
+          {
+            "title": "c) 分解分子",
+            "body": "$-x-2=-(x+6)+4$，所以 $y=-1+4/(x+6)$，$x\\ne-6$。渐近线 $x=-6,y=-1$；截距 $(-2,0),(0,-1/3)$。"
+          }
+        ],
+        "answer": "a) $12/x+11$；$x=0,y=11$；$(-12/11,0)$，无纵截距。b) $-8/(x+8)+1$；$x=-8,y=1$；$(0,0)$。c) $4/(x+6)-1$；$x=-6,y=-1$；$(-2,0),(0,-1/3)$。",
+        "printedPage": 442,
+        "pdfPage": 451,
+        "en": {
+          "prompt": "Write each function in the form $y=a/(x-h)+k$. Determine any asymptotes and intercepts, then confirm by graphing with technology. a) $y=(11x+12)/x$; b) $y=x/(x+8)$; c) $y=(-x-2)/(x+6)$.",
+          "steps": [
+            {
+              "title": "a) Separate the quotient",
+              "body": "$y=11+12/x$, $x\\ne0$. Asymptotes $x=0,y=11$; solve $11x+12=0$ for $(-12/11,0)$; no $y$-intercept because $x=0$ is excluded."
+            },
+            {
+              "title": "b) Rewrite the numerator",
+              "body": "$x=(x+8)-8$, so $y=1-8/(x+8)$, $x\\ne-8$. Asymptotes $x=-8,y=1$; the numerator is zero at $x=0$ with nonzero denominator, so both intercepts are $(0,0)$."
+            },
+            {
+              "title": "c) Rewrite the numerator",
+              "body": "$-x-2=-(x+6)+4$, so $y=-1+4/(x+6)$, $x\\ne-6$. Asymptotes $x=-6,y=-1$; intercepts $(-2,0),(0,-1/3)$."
+            }
+          ],
+          "answer": "a) $12/x+11$; $x=0,y=11$; $(-12/11,0)$, no $y$-intercept. b) $-8/(x+8)+1$; $x=-8,y=1$; $(0,0)$. c) $4/(x+6)-1$; $x=-6,y=-1$; $(-2,0),(0,-1/3)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graph": {
+          "numerator": [
+            11,
+            12
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": -15,
+            "xMax": 10,
+            "yMin": -8,
+            "yMax": 20
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 11,
+          "holes": [],
+          "points": [],
+          "label": "a",
+          "traces": [
+            {
+              "numerator": [
+                11,
+                12
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 11,
+              "holes": [],
+              "points": [],
+              "label": "a"
+            },
+            {
+              "numerator": [
+                1,
+                0
+              ],
+              "denominator": [
+                1,
+                8
+              ],
+              "verticalAsymptotes": [
+                -8
+              ],
+              "horizontalAsymptote": 1,
+              "label": "b"
+            },
+            {
+              "numerator": [
+                -1,
+                -2
+              ],
+              "denominator": [
+                1,
+                6
+              ],
+              "verticalAsymptotes": [
+                -6
+              ],
+              "horizontalAsymptote": -1,
+              "label": "c"
+            }
+          ]
+        }
+      },
+      {
+        "number": 6,
+        "prompt": "画 $f(x)=1/x^2$、$g(x)=-8/(x+6)^2$、$h(x)=4/(x^2-4x+4)-3$。讨论图像特征并指出共同点。",
+        "concept": "transform2",
+        "steps": [
+          {
+            "title": "基本函数",
+            "body": "$f$ 的定义域排除 $0$，值域 $y>0$；渐近线 $x=0,y=0$，无截距，图像关于 $x=0$ 对称。"
+          },
+          {
+            "title": "变换 $g$",
+            "body": "$g=-8f(x+6)$：左移 $6$、拉伸 $8$ 倍、关于 $x$ 轴反射。定义域 $x\\ne-6$，值域 $y<0$；渐近线 $x=-6,y=0$；纵截距 $(0,-2/9)$，无横截距。"
+          },
+          {
+            "title": "变换 $h$",
+            "body": "$h=4/(x-2)^2-3=4f(x-2)-3$。定义域 $x\\ne2$，值域 $y>-3$；渐近线 $x=2,y=-3$；$h(0)=-2$。$4/(x-2)^2=3$ 给出横截距 $x=2\\pm2/\\sqrt{3}$。"
+          },
+          {
+            "title": "共同点",
+            "body": "各有一个禁值、两支曲线、一个竖直和一个水平渐近线；都关于竖直渐近线对称。靠近禁值时 $f,h$ 向上无界、$g$ 向下无界。"
+          }
+        ],
+        "answer": "$f:D:x\\ne0,R:y>0$；$g:D:x\\ne-6,R:y<0$；$h:D:x\\ne2,R:y>-3$。各有一个竖直及一个水平渐近线。",
+        "printedPage": 442,
+        "pdfPage": 451,
+        "en": {
+          "prompt": "Graph $f(x)=1/x^2$, $g(x)=-8/(x+6)^2$, and $h(x)=4/(x^2-4x+4)-3$. Discuss graph characteristics and identify common features.",
+          "steps": [
+            {
+              "title": "Base function",
+              "body": "$f$ excludes $0$ from its domain, has range $y>0$, asymptotes $x=0,y=0$, no intercepts, and symmetry about $x=0$."
+            },
+            {
+              "title": "Transform $g$",
+              "body": "$g=-8f(x+6)$: left $6$, stretch by $8$, reflect in the $x$-axis. Domain $x\\ne-6$, range $y<0$; asymptotes $x=-6,y=0$; $y$-intercept $(0,-2/9)$, no $x$-intercept."
+            },
+            {
+              "title": "Transform $h$",
+              "body": "$h=4/(x-2)^2-3=4f(x-2)-3$. Domain $x\\ne2$, range $y>-3$; asymptotes $x=2,y=-3$; $h(0)=-2$. Solving $4/(x-2)^2=3$ gives $x=2\\pm2/\\sqrt{3}$."
+            },
+            {
+              "title": "Common features",
+              "body": "Each has one excluded value, two branches, one vertical and one horizontal asymptote, and symmetry about its vertical asymptote. Near the excluded values, $f,h$ rise without bound and $g$ falls without bound."
+            }
+          ],
+          "answer": "$f:D:x\\ne0,R:y>0$; $g:D:x\\ne-6,R:y<0$; $h:D:x\\ne2,R:y>-3$. Each has one vertical and one horizontal asymptote."
+        },
+        "graph": {
+          "numerator": [
+            1
+          ],
+          "denominator": [
+            1,
+            0,
+            0
+          ],
+          "bounds": {
+            "xMin": -12,
+            "xMax": 9,
+            "yMin": -12,
+            "yMax": 12
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "label": "f",
+          "traces": [
+            {
+              "numerator": [
+                1
+              ],
+              "denominator": [
+                1,
+                0,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 0,
+              "holes": [],
+              "points": [],
+              "label": "f"
+            },
+            {
+              "numerator": [
+                -8
+              ],
+              "denominator": [
+                1,
+                12,
+                36
+              ],
+              "verticalAsymptotes": [
+                -6
+              ],
+              "horizontalAsymptote": 0,
+              "label": "g"
+            },
+            {
+              "numerator": [
+                -3,
+                12,
+                -8
+              ],
+              "denominator": [
+                1,
+                -4,
+                4
+              ],
+              "verticalAsymptotes": [
+                2
+              ],
+              "horizontalAsymptote": -3,
+              "label": "h"
+            }
+          ]
+        }
+      },
+      {
+        "number": 7,
+        "prompt": "把原图中各函数写成 $y=a/(x-h)+k$ 的形式（图 a–d 的已知点及渐近线见图）。",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "a) 代入已知点",
+            "body": "渐近线 $x=0,y=0$，故 $y=a/x$。由图上 $(-2,2)$ 得 $a=(-2)(2)=-4$；另点 $(2,-2)$ 验证乘积也是 $-4$。"
+          },
+          {
+            "title": "b) 代入已知点",
+            "body": "渐近线 $x=-3,y=0$，故 $y=a/(x+3)$。图上 $(-2,1)$ 给出 $a=1(-2+3)=1$；点 $(-4,-1)$ 也符合。"
+          },
+          {
+            "title": "c) 代入已知点",
+            "body": "渐近线 $x=2,y=4$，故 $y=a/(x-2)+4$。点 $(4,8)$ 给出 $a=(8-4)(4-2)=8$；$(6,6)$ 验证 $8/(6-2)+4=6$。"
+          },
+          {
+            "title": "d) 代入已知点",
+            "body": "渐近线 $x=1,y=-6$，故 $y=a/(x-1)-6$。点 $(2,-10)$ 给出 $a=(-10+6)(2-1)=-4$；$(3,-8)$ 也符合。"
+          }
+        ],
+        "answer": "a) $y=-4/x$；b) $y=1/(x+3)$；c) $y=8/(x-2)+4$；d) $y=-4/(x-1)-6$。",
+        "printedPage": 443,
+        "pdfPage": 452,
+        "en": {
+          "prompt": "Write each function in the given graphs a–d in the form $y=a/(x-h)+k$. Use the labelled points and asymptotes.",
+          "steps": [
+            {
+              "title": "a) Substitute a given point",
+              "body": "Asymptotes $x=0,y=0$ give $y=a/x$. The point $(-2,2)$ gives $a=(-2)(2)=-4$; $(2,-2)$ confirms the same product."
+            },
+            {
+              "title": "b) Substitute a given point",
+              "body": "Asymptotes $x=-3,y=0$ give $y=a/(x+3)$. At $(-2,1)$, $a=1(-2+3)=1$; $(-4,-1)$ also fits."
+            },
+            {
+              "title": "c) Substitute a given point",
+              "body": "Asymptotes $x=2,y=4$ give $y=a/(x-2)+4$. At $(4,8)$, $a=(8-4)(4-2)=8$; $(6,6)$ confirms $8/(6-2)+4=6$."
+            },
+            {
+              "title": "d) Substitute a given point",
+              "body": "Asymptotes $x=1,y=-6$ give $y=a/(x-1)-6$. At $(2,-10)$, $a=(-10+6)(2-1)=-4$; $(3,-8)$ also fits."
+            }
+          ],
+          "answer": "a) $y=-4/x$; b) $y=1/(x+3)$; c) $y=8/(x-2)+4$; d) $y=-4/(x-1)-6$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/9-1-ex7-given.png"
+      },
+      {
+        "number": 8,
+        "prompt": "有理函数 $y=a/(x-7)+k$ 经过 $(10,1)$ 和 $(2,9)$。a) 求 $a,k$。b) 画出函数。",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "a) 联立求参",
+            "body": "代入两点得 $1=a/3+k$、$9=-a/5+k$。相减：$-8=a/3+a/5=8a/15$，所以 $a=-15$。代回 $1=-5+k$ 得 $k=6$。"
+          },
+          {
+            "title": "b) 按渐近线作图",
+            "body": "函数为 $y=-15/(x-7)+6$。先画 $x=7,y=6$；标出两给定点。纵截距 $(0,57/7)$；令 $y=0$ 得 $x=19/2$。左支在 $y=6$ 上方，右支在下方；定义域 $x\\ne7$，值域 $y\\ne6$。"
+          }
+        ],
+        "answer": "$a=-15,k=6$；$y=-15/(x-7)+6$。",
+        "printedPage": 443,
+        "pdfPage": 452,
+        "en": {
+          "prompt": "The rational function $y=a/(x-7)+k$ passes through $(10,1)$ and $(2,9)$. a) Determine $a,k$. b) Graph the function.",
+          "steps": [
+            {
+              "title": "a) Solve for the parameters",
+              "body": "The points give $1=a/3+k$ and $9=-a/5+k$. Subtract: $-8=a/3+a/5=8a/15$, so $a=-15$. Then $1=-5+k$ gives $k=6$."
+            },
+            {
+              "title": "b) Graph using asymptotes",
+              "body": "The function is $y=-15/(x-7)+6$. Draw $x=7,y=6$ and mark both given points. The $y$-intercept is $(0,57/7)$; $y=0$ gives $x=19/2$. The left branch lies above $y=6$, the right below. Domain $x\\ne7$, range $y\\ne6$."
+            }
+          ],
+          "answer": "$a=-15,k=6$; $y=-15/(x-7)+6$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graph": {
+          "numerator": [
+            6,
+            -57
+          ],
+          "denominator": [
+            1,
+            -7
+          ],
+          "bounds": {
+            "xMin": -5,
+            "xMax": 18,
+            "yMin": -10,
+            "yMax": 20
+          },
+          "verticalAsymptotes": [
+            7
+          ],
+          "horizontalAsymptote": 6,
+          "holes": [],
+          "points": [],
+          "label": "y=-15/(x-(7))+(6)"
+        }
+      },
+      {
+        "number": 9,
+        "prompt": "a) 写出一个形如 $y=p(x)/q(x)$，且渐近线为 $x=2,y=-3$ 的函数。b) 画图并指出定义域和值域。c) 满足条件的函数是否只有一个？解释。",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "a) 构造一个例子",
+            "body": "取 $y=1/(x-2)-3=(-3x+7)/(x-2)$。分母 $x-2$ 在 $2$ 为零而分子为 $1$，所以 $x=2$ 为竖直渐近线；远端分式趋零，水平渐近线为 $-3$。"
+          },
+          {
+            "title": "b) 作图并求范围",
+            "body": "标出 $(3,-2),(1,-4)$，截距 $(7/3,0),(0,-7/2)$。定义域 $x\\ne2$，值域 $y\\ne-3$。"
+          },
+          {
+            "title": "c) 说明不唯一",
+            "body": "对每个非零实数 $a$，$y=a/(x-2)-3$ 都有这两条渐近线。例如 $a=1$ 与 $a=2$ 给出不同图像，所以有无穷多个。"
+          }
+        ],
+        "answer": "一个例子：$y=(-3x+7)/(x-2)$，定义域 $x\\ne2$，值域 $y\\ne-3$；满足条件的函数有无穷多个。",
+        "printedPage": 443,
+        "pdfPage": 452,
+        "en": {
+          "prompt": "a) Write a possible rational function $y=p(x)/q(x)$ with asymptotes $x=2,y=-3$. b) Sketch its graph and identify domain and range. c) Is there only one possible function? Explain.",
+          "steps": [
+            {
+              "title": "a) Construct one example",
+              "body": "Choose $y=1/(x-2)-3=(-3x+7)/(x-2)$. At $x=2$ the denominator vanishes and numerator is $1$, giving vertical asymptote $x=2$. The fractional term approaches zero at the ends, giving $y=-3$."
+            },
+            {
+              "title": "b) Graph and determine range",
+              "body": "Mark $(3,-2),(1,-4)$ and intercepts $(7/3,0),(0,-7/2)$. Domain $x\\ne2$, range $y\\ne-3$."
+            },
+            {
+              "title": "c) Explain non-uniqueness",
+              "body": "Every nonzero real $a$ gives a function $y=a/(x-2)-3$ with these asymptotes. For example, $a=1$ and $a=2$ produce different graphs, so infinitely many are possible."
+            }
+          ],
+          "answer": "One example is $y=(-3x+7)/(x-2)$, with domain $x\\ne2$ and range $y\\ne-3$; infinitely many functions meet the conditions."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graph": {
+          "numerator": [
+            -3,
+            7
+          ],
+          "denominator": [
+            1,
+            -2
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 10,
+            "yMin": -10,
+            "yMax": 10
+          },
+          "verticalAsymptotes": [
+            2
+          ],
+          "horizontalAsymptote": -3,
+          "holes": [],
+          "points": [],
+          "label": "y=1/(x-(2))+(-3)"
+        }
+      },
+      {
+        "number": 10,
+        "prompt": "Mira 用代数把 $y=(2-3x)/(x-7)$ 改写成可手绘的等价形式；她的完整过程见原图，最后得到 $y=23/(x-7)-3$。a) 找出并改正错误。b) 不用技术怎样发现错误？用技术又可以怎样发现？",
+        "concept": "linearquotient",
+        "steps": [
+          {
+            "title": "a) 找到符号错误",
+            "body": "她把 $-3x-21$ 当成 $-3(x-7)$，但 $-3(x-7)=-3x+21$。正确写法为 $2-3x=-3(x-7)-19$，所以 $y=-3-19/(x-7)$，且 $x\\ne7$。"
+          },
+          {
+            "title": "b) 手算与技术检验",
+            "body": "手算将她最后式通分，得到 $(-3x+44)/(x-7)$，与原分子不同；或代 $x=0$，原式 $-2/7$ 而她的式为 $-44/7$。用计算器同屏画原式和改写式或比较数值表，两曲线不重合。"
+          }
+        ],
+        "answer": "正确为 $y=-19/(x-7)-3$，$x\\ne7$；错误是提取 $-3$ 时括号内符号不正确。",
+        "printedPage": 443,
+        "pdfPage": 452,
+        "en": {
+          "prompt": "Mira rewrites $y=(2-3x)/(x-7)$ to graph it by hand. Her work is shown and ends with $y=23/(x-7)-3$. a) Identify and correct any errors. b) How could she discover the error without technology? How could she do so with technology?",
+          "steps": [
+            {
+              "title": "a) Locate the sign error",
+              "body": "She treats $-3x-21$ as $-3(x-7)$, but $-3(x-7)=-3x+21$. Correctly, $2-3x=-3(x-7)-19$, so $y=-3-19/(x-7)$, with $x\\ne7$."
+            },
+            {
+              "title": "b) Check by hand and technology",
+              "body": "Combine her final expression into one fraction: $(-3x+44)/(x-7)$, with the wrong numerator. Or use $x=0$: the original gives $-2/7$, hers $-44/7$. A calculator can graph both or compare tables; they do not coincide."
+            }
+          ],
+          "answer": "The correct form is $y=-19/(x-7)-3$, $x\\ne7$. The error is the sign when factoring out $-3$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/9-1-ex10-mira.png"
+      },
+      {
+        "number": 11,
+        "prompt": "a) 将 $y=(x-2)/(2x+4)$ 写成 $y=a/(x-h)+k$。b) 用变换画函数草图。",
+        "concept": "linearquotient",
+        "steps": [
+          {
+            "title": "a) 归一化分母",
+            "body": "$2x+4=2(x+2)$ 且 $x-2=(x+2)-4$，所以 $y=1/2-2/(x+2)$，限制 $x\\ne-2$。"
+          },
+          {
+            "title": "b) 变换与特征",
+            "body": "从 $1/x$ 纵向拉伸 $2$ 倍、关于横轴反射、左移 $2$、上移 $1/2$。渐近线 $x=-2,y=1/2$；截距 $(2,0),(0,-1/2)$；值域 $y\\ne1/2$。"
+          }
+        ],
+        "answer": "$y=-2/(x+2)+1/2$；渐近线 $x=-2,y=1/2$，截距 $(2,0),(0,-1/2)$。",
+        "printedPage": 443,
+        "pdfPage": 452,
+        "en": {
+          "prompt": "a) Write $y=(x-2)/(2x+4)$ in the form $y=a/(x-h)+k$. b) Sketch the graph using transformations.",
+          "steps": [
+            {
+              "title": "a) Normalize the denominator",
+              "body": "$2x+4=2(x+2)$ and $x-2=(x+2)-4$, so $y=1/2-2/(x+2)$, with $x\\ne-2$."
+            },
+            {
+              "title": "b) Transform and identify features",
+              "body": "Stretch $1/x$ by $2$, reflect in the $x$-axis, shift left $2$, up $1/2$. Asymptotes $x=-2,y=1/2$; intercepts $(2,0),(0,-1/2)$; range $y\\ne1/2$."
+            }
+          ],
+          "answer": "$y=-2/(x+2)+1/2$; asymptotes $x=-2,y=1/2$, intercepts $(2,0),(0,-1/2)$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graph": {
+          "numerator": [
+            1,
+            -2
+          ],
+          "denominator": [
+            2,
+            4
+          ],
+          "bounds": {
+            "xMin": -8,
+            "xMax": 8,
+            "yMin": -5,
+            "yMax": 6
+          },
+          "verticalAsymptotes": [
+            -2
+          ],
+          "horizontalAsymptote": 0.5,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "y=\\frac{x-2}{2x+4}"
+        }
+      },
+      {
+        "number": 12,
+        "prompt": "求 $y=(3x-5)/(2x+3)$ 的截距位置，并借助图像确定渐近线。",
+        "concept": "linearquotient",
+        "steps": [
+          {
+            "title": "求横纵截距",
+            "body": "分母要求 $x\\ne-3/2$。$3x-5=0$ 得横截距 $(5/3,0)$；$x=0$ 时 $y=-5/3$，得纵截距 $(0,-5/3)$。"
+          },
+          {
+            "title": "确定渐近线",
+            "body": "$3x-5=(3/2)(2x+3)-19/2$，故 $y=3/2-(19/4)/(x+3/2)$。所以图像的渐近线为 $x=-3/2,y=3/2$；分子在禁值不为零，没有孔洞。"
+          }
+        ],
+        "answer": "截距 $(5/3,0),(0,-5/3)$；渐近线 $x=-3/2,y=3/2$。",
+        "printedPage": 443,
+        "pdfPage": 452,
+        "en": {
+          "prompt": "Determine the locations of the intercepts of $y=(3x-5)/(2x+3)$. Use its graph to help determine the asymptotes.",
+          "steps": [
+            {
+              "title": "Find intercepts",
+              "body": "The denominator requires $x\\ne-3/2$. Solving $3x-5=0$ gives $(5/3,0)$; setting $x=0$ gives $(0,-5/3)$."
+            },
+            {
+              "title": "Determine asymptotes",
+              "body": "$3x-5=(3/2)(2x+3)-19/2$, so $y=3/2-(19/4)/(x+3/2)$. Thus asymptotes are $x=-3/2,y=3/2$. The numerator is nonzero at the excluded value, so there is no hole."
+            }
+          ],
+          "answer": "Intercepts $(5/3,0),(0,-5/3)$; asymptotes $x=-3/2,y=3/2$."
+        },
+        "graph": {
+          "numerator": [
+            3,
+            -5
+          ],
+          "denominator": [
+            2,
+            3
+          ],
+          "bounds": {
+            "xMin": -8,
+            "xMax": 8,
+            "yMin": -8,
+            "yMax": 8
+          },
+          "verticalAsymptotes": [
+            -1.5
+          ],
+          "horizontalAsymptote": 1.5,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "y=\\frac{3x-5}{2x+3}"
+        }
+      },
+      {
+        "number": 13,
+        "prompt": "某城市寻找房屋的买家人数 $N$ 与平均房价 $p$ 的关系为 $N(p)=500000/p$。解释 $p$ 变化时函数值怎样变化，以及这种行为在情境中表示什么。",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "判断反比例",
+            "body": "$p>0$；若价格乘以正因子 $c$，则 $N$ 除以 $c$。例如 $p=100000,250000,500000$ 时模型给出 $N=5,2,1$。"
+          },
+          {
+            "title": "解释极端与局限",
+            "body": "价格增加时，预测买家人数减少并趋近零；价格从正侧趋零时模型无界增加。实际人数为非负整数，城市人口有限，所以这些极端是模型趋势，不能当作实际无限人数。"
+          }
+        ],
+        "answer": "正价格越高，预测买家越少；价格越低，预测买家越多；模型在极端价格下存在现实局限。",
+        "printedPage": 443,
+        "pdfPage": 452,
+        "en": {
+          "prompt": "The number $N$ of buyers looking for a home in a city is related to average home price $p$ by $N(p)=500000/p$. Explain the behaviour as $p$ changes and its meaning in this situation.",
+          "steps": [
+            {
+              "title": "Identify inverse proportion",
+              "body": "$p>0$. Multiplying price by a positive factor $c$ divides $N$ by $c$. For example, prices $100000,250000,500000$ give model values $N=5,2,1$."
+            },
+            {
+              "title": "Interpret extremes and limitations",
+              "body": "As price increases, predicted buyers decrease toward zero. As positive price approaches zero, the model grows without bound. Actual counts are nonnegative integers and population is finite, so these extremes describe model trends rather than literal unlimited buyers."
+            }
+          ],
+          "answer": "Higher positive prices predict fewer buyers; lower prices predict more. The model has practical limitations at extreme prices."
+        }
+      },
+      {
+        "number": 14,
+        "prompt": "一个长方形的面积恒为 $24\\text{ cm}^2$。a) 写长度 $l$ 关于宽度 $w$ 的函数并画图。b) 描述宽度变化时长度怎样变化。",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "a) 用面积建模",
+            "body": "$lw=24$，所以 $l(w)=24/w$，$w>0$。图像经过 $(1,24),(2,12),(3,8),(4,6),(6,4)$；实际只取第一象限，渐近坐标轴。"
+          },
+          {
+            "title": "b) 解释变化",
+            "body": "宽度乘以 $c>0$，长度除以 $c$；如宽度加倍，长度减半。宽度趋零时长度无界增加；宽度无界增加时长度趋零，面积仍为 $24$。"
+          }
+        ],
+        "answer": "$l=24/w$，$w>0,l>0$；长度与宽度成反比例。",
+        "printedPage": 444,
+        "pdfPage": 453,
+        "en": {
+          "prompt": "A rectangle has constant area $24\\text{ cm}^2$. a) Write length $l$ as a function of width $w$ and graph it. b) Describe how length changes as width varies.",
+          "steps": [
+            {
+              "title": "a) Model with area",
+              "body": "$lw=24$, so $l(w)=24/w$, with $w>0$. Plot $(1,24),(2,12),(3,8),(4,6),(6,4)$ in quadrant I; both axes are asymptotes."
+            },
+            {
+              "title": "b) Interpret the change",
+              "body": "Multiplying width by $c>0$ divides length by $c$; doubling width halves length. Length grows without bound near zero width and approaches zero for large width, while area stays $24$."
+            }
+          ],
+          "answer": "$l=24/w$, $w>0,l>0$; length varies inversely with width."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "graph": {
+          "numerator": [
+            24
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 15,
+            "yMin": 0,
+            "yMax": 25
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "expressionLatex": "y=\\frac{24}{x}"
+        }
+      },
+      {
+        "number": 15,
+        "prompt": "某大型中学学生会为当地慈善机构募款，目标为 $4000$ 元。a) 设捐款学生人数为 $x$、每名学生为达到目标所需平均捐款为 $y$，写 $y$ 关于 $x$ 的函数。b) 画图。c) 解释各种 $x$ 值时的函数行为。d) 若当地商家先捐 $1000$ 元，方程和图像怎样改变？",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "a) 分摊目标",
+            "body": "$xy=4000$，所以 $y=4000/x$ 元/人，$x$ 是不超过学校学生人数的正整数。"
+          },
+          {
+            "title": "b) 标实际点",
+            "body": "例如 $x=100,200,400,800$ 时，$y=40,20,10,5$。画第一象限参考曲线，只有实际允许的整数人数点代表情境。"
+          },
+          {
+            "title": "c) 解释反比例",
+            "body": "参加人数越多，每人所需平均捐款越小；人数加倍则平均捐款减半。$x=0$ 无法分摊，平均捐款无定义；理想曲线渐近 $y=0$，但实际人数有限。"
+          },
+          {
+            "title": "d) 减去商家捐款",
+            "body": "学生只需筹 $4000-1000=3000$ 元，故 $y=3000/x$，是原图纵向缩小为 $3/4$。相同人数的平均捐款降低 $25\\%$，渐近线不变。"
+          }
+        ],
+        "answer": "$y=4000/x$；商家捐款后 $y=3000/x$，图像纵向缩为 $3/4$；$x$ 为学校允许的正整数人数。",
+        "printedPage": 444,
+        "pdfPage": 453,
+        "en": {
+          "prompt": "A large high-school student council sets a fundraising goal of 4000 dollars for a local charity. a) Let $x$ be the number of contributing students and $y$ the average required per student. Write $y$ as a function of $x$. b) Graph it. c) Explain its behaviour for various $x$. d) How do the equation and graph change with a business donation of 1000 dollars?",
+          "steps": [
+            {
+              "title": "a) Share the target",
+              "body": "$xy=4000$, so $y=4000/x$ dollars per student. $x$ is a positive integer no larger than the school population."
+            },
+            {
+              "title": "b) Plot contextual points",
+              "body": "For $x=100,200,400,800$, $y=40,20,10,5$. Draw the first-quadrant guide curve; only allowed integer student counts represent the situation."
+            },
+            {
+              "title": "c) Interpret inverse proportion",
+              "body": "More contributors reduce the required average; doubling contributors halves it. At $x=0$, an average share is undefined. The ideal curve approaches $y=0$, but actual school population is finite."
+            },
+            {
+              "title": "d) Subtract the business donation",
+              "body": "Students need $4000-1000=3000$, so $y=3000/x$, a vertical scaling by $3/4$. At the same count, the average is $25\\%$ lower; asymptotes are unchanged."
+            }
+          ],
+          "answer": "$y=4000/x$; after the donation, $y=3000/x$, scaled vertically by $3/4$. $x$ is an allowed positive-integer contributor count."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            4000
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 1000,
+            "yMin": 0,
+            "yMax": 100
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 0,
+          "holes": [],
+          "points": [],
+          "label": "4000/x",
+          "traces": [
+            {
+              "numerator": [
+                4000
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 0,
+              "holes": [],
+              "points": [],
+              "label": "4000/x"
+            },
+            {
+              "numerator": [
+                3000
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "label": "3000/x"
+            }
+          ]
+        }
+      },
+      {
+        "number": 16,
+        "prompt": "Hanna 比较两款冷冻柜。第一款售价 $500$ 元，估计每年电费 $100$ 元；第二款更节能，售价 $800$ 元、每年电费 $60$ 元。a) 写每款平均每年费用关于使用年数的函数。b) 选合理定义域画图。c) 指出重要特征并解释意义。d) 图像怎样帮助她选择？",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "a) 建立平均成本",
+            "body": "设 $t>0$ 年，$A(t)=(500+100t)/t=500/t+100$，$B(t)=(800+60t)/t=800/t+60$，单位元/年。"
+          },
+          {
+            "title": "b) 选择示例视窗",
+            "body": "可用 $0<t\\le20$ 年作示例视窗（寿命并未在题中规定）。$t=5,10,20$ 时 $A=200,150,125$，$B=220,140,100$。"
+          },
+          {
+            "title": "c) 解释特征",
+            "body": "两曲线递减，购置费分摊时间越长，平均费用越低。连续模型竖直渐近线为 $t=0$；水平渐近线分别为 $A=100$ 和 $B=60$，即各自年电费。"
+          },
+          {
+            "title": "d) 求交点作决定",
+            "body": "$500/t+100=800/t+60$ 得 $40t=300$，$t=7.5$。少于 $7.5$ 年选第一款成本较低；超过 $7.5$ 年第二款较低；此时都为 $500/3$ 元/年。若按整年比较，前 $7$ 年第一款较低，第 $8$ 年起第二款较低。"
+          }
+        ],
+        "answer": "$A=500/t+100$，$B=800/t+60$，$t>0$；交点 $t=7.5$ 年。预计短期选一，超过 $7.5$ 年选二。",
+        "printedPage": 444,
+        "pdfPage": 453,
+        "en": {
+          "prompt": "Hanna compares two deep freezers. One costs 500 dollars with estimated electricity cost 100 dollars/year; the more efficient model costs 800 dollars with electricity cost 60 dollars/year. a) Write average cost per year as a function of years of use. b) Graph for a reasonable domain. c) Identify and interpret important characteristics. d) How can the graph help her choose?",
+          "steps": [
+            {
+              "title": "a) Model average costs",
+              "body": "For $t>0$ years, $A(t)=(500+100t)/t=500/t+100$ and $B(t)=(800+60t)/t=800/t+60$, in dollars per year."
+            },
+            {
+              "title": "b) Choose an illustrative window",
+              "body": "An illustrative window is $0<t\\le20$ years; the problem does not prescribe a lifespan. At $t=5,10,20$, $A=200,150,125$ and $B=220,140,100$."
+            },
+            {
+              "title": "c) Interpret characteristics",
+              "body": "Both curves decrease as purchase costs are spread over more time. The continuous models have vertical asymptote $t=0$ and horizontal asymptotes $A=100$ and $B=60$, the respective yearly electricity costs."
+            },
+            {
+              "title": "d) Find the crossover",
+              "body": "$500/t+100=800/t+60$ gives $40t=300$, $t=7.5$. The first is cheaper below $7.5$ years, the second above; both average $500/3$ dollars/year at the crossing. For whole-year comparisons, the first is cheaper through year $7$, the second from year $8$."
+            }
+          ],
+          "answer": "$A=500/t+100$, $B=800/t+60$, $t>0$; crossover at $7.5$ years. Choose the first for shorter use and the second beyond $7.5$ years."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            100,
+            500
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 20,
+            "yMin": 0,
+            "yMax": 500
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 100,
+          "holes": [],
+          "points": [],
+          "label": "Model A",
+          "traces": [
+            {
+              "numerator": [
+                100,
+                500
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 100,
+              "holes": [],
+              "points": [],
+              "label": "Model A"
+            },
+            {
+              "numerator": [
+                60,
+                800
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 60,
+              "label": "Model B"
+            }
+          ]
+        }
+      },
+      {
+        "number": 17,
+        "prompt": "欧姆定律为 $I=V/R$，$I$ 单位 A，$V$ 单位 V，$R$ 单位 $\\Omega$。图中电池 $12$ V、灯泡 $15\\Omega$，串联可变电阻 $x\\Omega$，可设为 $0$ 至 $100\\Omega$，总电阻为灯泡和可变电阻之和。a) 写电流 $I$ 关于 $x$ 的函数。b) 合适定义域是什么？此情境的图像有竖直渐近线吗？解释。c) 画图；要得到恰好 $0.2$ A，电阻怎样设置？d) 若只有电池和可变电阻，函数怎样改变？解释竖直渐近线意义。",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "a) 相加电阻",
+            "body": "$R=15+x$，所以 $I(x)=12/(x+15)$ A。"
+          },
+          {
+            "title": "b) 区分代数与实际范围",
+            "body": "实际定义域 $0\\le x\\le100$。延伸函数在 $x=-15$ 有竖直渐近线，但它在实际定义域外，因此本题实际图像没有竖直渐近线；端点为 $(0,0.8),(100,12/115)$。"
+          },
+          {
+            "title": "c) 解所需电流",
+            "body": "画两端点间的递减曲线。$0.2=12/(x+15)$ 得 $0.2x+3=12$，$x=45\\Omega$，在允许范围内；检验 $12/(45+15)=0.2$ A。"
+          },
+          {
+            "title": "d) 移除灯泡",
+            "body": "只剩可变电阻时 $I=12/x$，有效范围为 $0<x\\le100$。竖直渐近线 $x=0$ 表示理想模型在电阻趋零时预测电流无界增加；零电阻形成短路，公式在零处无定义，真实电路不能产生无限电流。"
+          }
+        ],
+        "answer": "a) $I=12/(x+15)$ A。b) $[0,100]$，实际图像无竖直渐近线。c) $45\\Omega$。d) $I=12/x$，$0<x\\le100$，竖直渐近线 $x=0$。",
+        "printedPage": 444,
+        "pdfPage": 453,
+        "en": {
+          "prompt": "Ohm's law is $I=V/R$, with current in A, voltage in V, and resistance in $\\Omega$. The circuit has a 12-V battery, a $15\\Omega$ bulb, and a series variable resistor $x\\Omega$ adjustable from $0$ to $100\\Omega$. Total resistance is the sum. a) Write $I$ as a function of $x$. b) Give an appropriate domain. Does the contextual graph have a vertical asymptote? Explain. c) Graph it and find the setting for exactly $0.2$ A. d) How would the function change with only the battery and variable resistor? Explain the vertical asymptote.",
+          "steps": [
+            {
+              "title": "a) Add the resistances",
+              "body": "$R=15+x$, so $I(x)=12/(x+15)$ A."
+            },
+            {
+              "title": "b) Separate algebraic and contextual domains",
+              "body": "The contextual domain is $0\\le x\\le100$. The extended function has vertical asymptote $x=-15$, outside this domain; the contextual graph has no vertical asymptote. Endpoints are $(0,0.8),(100,12/115)$."
+            },
+            {
+              "title": "c) Solve for the current",
+              "body": "Draw the decreasing curve between the endpoints. $0.2=12/(x+15)$ gives $0.2x+3=12$, $x=45\\Omega$, within the allowed range. Check $12/(45+15)=0.2$ A."
+            },
+            {
+              "title": "d) Remove the bulb",
+              "body": "With only the variable resistor, $I=12/x$, with $0<x\\le100$. The asymptote $x=0$ expresses unbounded predicted current as ideal resistance approaches zero. Zero resistance is a short circuit; the formula is undefined there, and a real circuit cannot supply infinite current."
+            }
+          ],
+          "answer": "a) $I=12/(x+15)$ A. b) $[0,100]$, with no contextual vertical asymptote. c) $45\\Omega$. d) $I=12/x$, $0<x\\le100$, with vertical asymptote $x=0$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            12
+          ],
+          "denominator": [
+            1,
+            15
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 100,
+            "yMin": 0,
+            "yMax": 1
+          },
+          "verticalAsymptotes": [],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [
+            {
+              "x": 0,
+              "y": 0.8
+            },
+            {
+              "x": 45,
+              "y": 0.2
+            },
+            {
+              "x": 100,
+              "y": 0.10434782608695652
+            }
+          ],
+          "label": "I=12/(x+15), 0<=x<=100"
+        },
+        "sourceImage": "assets/9-1-ex17-circuit.png"
+      },
+      {
+        "number": 18,
+        "prompt": "两家商店出租自行车。一家收固定费 $20$ 元加每小时 $4$ 元；另一家收固定费 $10$ 元加每小时 $5$ 元。a) 写平均每小时费用关于租用时数的方程，并画图。b) 指出图像主要特征；不同租用时长怎样影响平均费用？c) 是否总有一家更合适？解释。",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "a) 建立函数",
+            "body": "设 $t>0$ h，$A(t)=(20+4t)/t=20/t+4$，$B(t)=(10+5t)/t=10/t+5$，单位元/小时。$t=2,5,10,20$ 时 $A=14,8,6,5$，$B=10,7,6,5.5$。"
+          },
+          {
+            "title": "b) 解释特征",
+            "body": "两者都随时间递减，竖直渐近线为 $t=0$；水平渐近线为 $4$ 与 $5$ 元/小时。租得越久，固定费越被摊薄，平均费用趋近每小时费率且保持高于费率。"
+          },
+          {
+            "title": "c) 找选择分界",
+            "body": "$20/t+4=10/t+5$ 得 $t=10$。当 $0<t<10$ 时第二家较便宜；$t>10$ 时第一家较便宜；$t=10$ 时都为每小时 $6$ 元、总共 $60$ 元。因此没有一家总是最便宜。"
+          }
+        ],
+        "answer": "$A=20/t+4,B=10/t+5$，$t>0$；少于 $10$ h 选二，多于 $10$ h 选一，$10$ h 同价。",
+        "printedPage": 445,
+        "pdfPage": 454,
+        "en": {
+          "prompt": "Two stores rent bikes. One charges a fixed fee of 20 dollars plus 4 dollars/h; the other a fixed fee of 10 dollars plus 5 dollars/h. a) Write and graph average cost per hour as a function of rental time. b) Identify key graph features and explain average charges for different rental times. c) Is one store always the better choice? Explain.",
+          "steps": [
+            {
+              "title": "a) Write the functions",
+              "body": "For $t>0$ h, $A(t)=(20+4t)/t=20/t+4$ and $B(t)=(10+5t)/t=10/t+5$, in dollars/hour. At $t=2,5,10,20$, $A=14,8,6,5$ and $B=10,7,6,5.5$."
+            },
+            {
+              "title": "b) Interpret features",
+              "body": "Both decrease with time and have vertical asymptote $t=0$. Horizontal asymptotes are $4$ and $5$ dollars/hour. Longer rentals spread the fixed fee over more hours, so averages approach the hourly rates from above."
+            },
+            {
+              "title": "c) Find the decision boundary",
+              "body": "$20/t+4=10/t+5$ gives $t=10$. The second is cheaper for $0<t<10$, the first for $t>10$. At $10$ h both average $6$/h and total $60$. Neither store is always cheaper."
+            }
+          ],
+          "answer": "$A=20/t+4,B=10/t+5$, $t>0$; choose the second below $10$ h, the first above $10$ h, equal at $10$ h."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "graph": {
+          "numerator": [
+            4,
+            20
+          ],
+          "denominator": [
+            1,
+            0
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 30,
+            "yMin": 0,
+            "yMax": 20
+          },
+          "verticalAsymptotes": [
+            0
+          ],
+          "horizontalAsymptote": 4,
+          "holes": [],
+          "points": [],
+          "label": "Store A",
+          "traces": [
+            {
+              "numerator": [
+                4,
+                20
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 4,
+              "holes": [],
+              "points": [],
+              "label": "Store A"
+            },
+            {
+              "numerator": [
+                5,
+                10
+              ],
+              "denominator": [
+                1,
+                0
+              ],
+              "verticalAsymptotes": [
+                0
+              ],
+              "horizontalAsymptote": 5,
+              "label": "Store B"
+            }
+          ]
+        }
+      },
+      {
+        "number": 19,
+        "prompt": "一辆卡车从 Regina 向东行驶。施工使它用 $2$ h 才开完最初 $80$ km；离开施工区后以 $100$ km/h 行驶。a) 设全程平均速度为 $v$ km/h，离开施工区后时间为 $t$ h，写 $v(t)$。b) 对合适定义域画图。c) 求渐近线并解释在此情境中的意义。d) 平均速度达到 $80$ km/h 前须开多久？e) 若你开发 GPS，怎样用这类计算帮助旅客节油？",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "a) 全程总量建模",
+            "body": "离开施工区后又走 $100t$ km，总路程 $80+100t$ km，总时间 $2+t$ h。因此 $v(t)=(80+100t)/(t+2)=100-120/(t+2)$。"
+          },
+          {
+            "title": "b) 合适定义域与图像",
+            "body": "取 $t\\ge0$；图像从实心端点 $(0,40)$ 开始，经过 $(1,60),(4,80),(10,90)$，递增并逐渐变平。实际值域为 $40\\le v<100$。"
+          },
+          {
+            "title": "c) 渐近线的意义",
+            "body": "延伸函数有 $t=-2$ 和 $v=100$。$t=-2$ 不在实际定义域内，对离开施工区后行程无实际意义；$v=100$ 表示继续开时全程平均速度从下方趋近巡航速度，但任何有限时间都达不到它。"
+          },
+          {
+            "title": "d) 解平均速度",
+            "body": "令 $80=(80+100t)/(t+2)$，得 $80t+160=80+100t$，所以 $t=4$ h。也就是离开施工区后 $4$ h，自出发起共 $6$ h；总路程 $480$ km，$480/6=80$。"
+          },
+          {
+            "title": "e) 开放设计建议",
+            "body": "可用各路段距离、耗时和车辆的实测耗油模型，比较拥堵绕行与平稳行驶路线，估计到达时间和燃油需求。平均速度计算本身不能决定最省油路线，还需真实车辆与路况数据；不编造节油百分比。"
+          }
+        ],
+        "answer": "$v=(100t+80)/(t+2)$，$t\\ge0$，$40\\le v<100$；延伸渐近线 $t=-2,v=100$；离开施工区后 $4$ h（出发后共 $6$ h）达到平均 $80$ km/h。",
+        "printedPage": 445,
+        "pdfPage": 454,
+        "en": {
+          "prompt": "A truck leaves Regina eastbound. Road construction makes the first 80 km take 2 h; after the construction zone it travels at 100 km/h. a) Let $v$ be average speed for the entire trip and $t$ the hours since leaving the zone. Write $v(t)$. b) Graph for an appropriate domain. c) Give and interpret asymptotes. d) How long must it drive before average speed is 80 km/h? e) As a GPS developer, how could such calculations help travellers save fuel?",
+          "steps": [
+            {
+              "title": "a) Model whole-trip totals",
+              "body": "After leaving the zone, additional distance is $100t$ km. Total distance is $80+100t$ km and total time is $2+t$ h. Thus $v(t)=(80+100t)/(t+2)=100-120/(t+2)$."
+            },
+            {
+              "title": "b) Domain and graph",
+              "body": "Use $t\\ge0$. The graph begins at the included endpoint $(0,40)$, passes through $(1,60),(4,80),(10,90)$, increases, and flattens. Its contextual range is $40\\le v<100$."
+            },
+            {
+              "title": "c) Meaning of asymptotes",
+              "body": "The extended function has $t=-2$ and $v=100$. The line $t=-2$ is outside the contextual domain and has no meaning for the post-zone trip. $v=100$ means the whole-trip average approaches cruising speed from below but never reaches it in finite time."
+            },
+            {
+              "title": "d) Solve for the average",
+              "body": "Set $80=(80+100t)/(t+2)$: $80t+160=80+100t$, so $t=4$ h after the zone, or $6$ h since departure. Total distance is $480$ km, and $480/6=80$."
+            },
+            {
+              "title": "e) Open design suggestion",
+              "body": "Combine segment distances and times with measured vehicle fuel-use data to compare congested detours and steady-speed routes, estimating arrival time and fuel demand. Average speed alone cannot determine the most fuel-efficient route; real vehicle and traffic data are needed, so no savings percentage is invented."
+            }
+          ],
+          "answer": "$v=(100t+80)/(t+2)$, $t\\ge0$, $40\\le v<100$; extended asymptotes $t=-2,v=100$; average $80$ km/h after $4$ h beyond the zone ($6$ h total)."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "graph": {
+          "numerator": [
+            100,
+            80
+          ],
+          "denominator": [
+            1,
+            2
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 15,
+            "yMin": 30,
+            "yMax": 105
+          },
+          "verticalAsymptotes": [],
+          "horizontalAsymptote": 100,
+          "holes": [],
+          "points": [
+            {
+              "x": 0,
+              "y": 40
+            },
+            {
+              "x": 4,
+              "y": 80
+            }
+          ],
+          "label": "v=(100t+80)/(t+2), t>=0"
+        }
+      },
+      {
+        "number": 20,
+        "prompt": "求形如 $y=(ax+b)/(cx+d)$ 的有理函数，使其竖直渐近线为 $x=6$、水平渐近线为 $y=-4$，且 $x$ 截距为 $-1$。",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "由零点构造",
+            "body": "分母取 $x-6$，分子含 $x+1$，故设 $y=A(x+1)/(x-6)$。"
+          },
+          {
+            "title": "匹配水平渐近线",
+            "body": "同次分子分母的首项系数比为 $A$，所以 $A=-4$。在 $x=6$ 时分子 $-28\\ne0$，确为竖直渐近线；在 $x=-1$ 分母 $-7\\ne0$，确为横截距。"
+          }
+        ],
+        "answer": "一个方程为 $y=(-4x-4)/(x-6)$，$x\\ne6$（分子分母同乘非零常数给出同一函数）。",
+        "printedPage": 445,
+        "pdfPage": 454,
+        "en": {
+          "prompt": "Determine a rational function $y=(ax+b)/(cx+d)$ with vertical asymptote $x=6$, horizontal asymptote $y=-4$, and $x$-intercept $-1$.",
+          "steps": [
+            {
+              "title": "Use the zero and excluded value",
+              "body": "Take denominator $x-6$ and numerator proportional to $x+1$, giving $y=A(x+1)/(x-6)$."
+            },
+            {
+              "title": "Match the horizontal asymptote",
+              "body": "The ratio of leading coefficients is $A$, so $A=-4$. At $x=6$, the numerator is $-28\\ne0$, confirming a vertical asymptote; at $x=-1$, denominator $-7\\ne0$, confirming the intercept."
+            }
+          ],
+          "answer": "One equation is $y=(-4x-4)/(x-6)$, $x\\ne6$. Multiplying numerator and denominator by the same nonzero constant gives the same function."
+        }
+      },
+      {
+        "number": 21,
+        "prompt": "求各有理函数的反函数 $f^{-1}(x)$。a) $f(x)=(x-3)/(x+1)$；b) $f(x)=2x/(x-5)+4$。",
+        "concept": "inversefunction",
+        "steps": [
+          {
+            "title": "a) 解出原变量",
+            "body": "设 $y=(x-3)/(x+1)$，原定义域 $x\\ne-1$。$yx+y=x-3$ 给出 $x(y-1)=-y-3$，所以 $x=(y+3)/(1-y)$。交换变量得 $f^{-1}(x)=(x+3)/(1-x)$，定义域 $x\\ne1$、值域 $y\\ne-1$。"
+          },
+          {
+            "title": "b) 先合并再解",
+            "body": "原式为 $y=(6x-20)/(x-5)$，$x\\ne5$。$yx-5y=6x-20$ 得 $x(y-6)=5y-20$，所以 $f^{-1}(x)=(5x-20)/(x-6)$，定义域 $x\\ne6$、值域 $y\\ne5$。"
+          },
+          {
+            "title": "验证反函数",
+            "body": "a 中代回原式可化成 $x$，前提 $x\\ne1$；b 中 $u=(5x-20)/(x-6)$ 给出 $u-5=10/(x-6)$，于是 $2u/(u-5)+4=(5x-20)/5+4=x$。"
+          }
+        ],
+        "answer": "a) $f^{-1}(x)=(x+3)/(1-x)$，$x\\ne1$。b) $f^{-1}(x)=(5x-20)/(x-6)$，$x\\ne6$。",
+        "printedPage": 445,
+        "pdfPage": 454,
+        "en": {
+          "prompt": "For each rational function, determine the inverse function $f^{-1}(x)$. a) $f(x)=(x-3)/(x+1)$; b) $f(x)=2x/(x-5)+4$.",
+          "steps": [
+            {
+              "title": "a) Solve for the original variable",
+              "body": "Let $y=(x-3)/(x+1)$, with $x\\ne-1$. From $yx+y=x-3$, obtain $x(y-1)=-y-3$, so $x=(y+3)/(1-y)$. Exchange variables: $f^{-1}(x)=(x+3)/(1-x)$, domain $x\\ne1$, range $y\\ne-1$."
+            },
+            {
+              "title": "b) Combine and solve",
+              "body": "The original is $y=(6x-20)/(x-5)$, $x\\ne5$. From $yx-5y=6x-20$, get $x(y-6)=5y-20$. Thus $f^{-1}(x)=(5x-20)/(x-6)$, domain $x\\ne6$, range $y\\ne5$."
+            },
+            {
+              "title": "Verify the inverses",
+              "body": "Substitution in part a simplifies to $x$ on $x\\ne1$. In part b, let $u=(5x-20)/(x-6)$; then $u-5=10/(x-6)$ and $2u/(u-5)+4=(5x-20)/5+4=x$."
+            }
+          ],
+          "answer": "a) $f^{-1}(x)=(x+3)/(1-x)$, $x\\ne1$. b) $f^{-1}(x)=(5x-20)/(x-6)$, $x\\ne6$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 22,
+        "prompt": "描述函数 $y=x/(x+2)+(x-4)/(x-2)$ 的图像特征。",
+        "concept": [
+          "linearquotient",
+          "construct"
+        ],
+        "steps": [
+          {
+            "title": "保留原限制并通分",
+            "body": "原分母要求 $x\\ne-2,2$。通分得 $y=(2x^2-4x-8)/(x^2-4)=2-4x/(x^2-4)$；在 $x=-2,2$ 时分子分别为 $8,-8$，均不为零，因此两点都是竖直渐近线，不是孔洞。"
+          },
+          {
+            "title": "求截距与水平渐近线",
+            "body": "同次数的首项系数比为 $2$，水平渐近线 $y=2$。$x=0$ 时 $y=2$，图像在 $(0,2)$ 穿过水平渐近线；分子 $2(x^2-2x-4)=0$ 给出横截距 $x=1\\pm\\sqrt{5}$，均在定义域中。"
+          },
+          {
+            "title": "确定分支和值域",
+            "body": "在 $-2<x<2$，$x$ 从 $-2$ 右侧趋近时 $y$ 趋负无穷，从 $2$ 左侧趋近时趋正无穷，连续中间支因此取得所有实数值。三支分别在 $(-\\infty,-2),(-2,2),(2,\\infty)$ 上递增；也可从每支的图像核对。$x=-2$ 左侧、$2$ 左侧趋正无穷，右侧均趋负无穷。"
+          }
+        ],
+        "answer": "定义域 $x\\ne\\pm2$；值域所有实数；竖直渐近线 $x=-2,2$；水平渐近线 $y=2$（在 $(0,2)$ 被穿过）；截距 $(1\\pm\\sqrt{5},0),(0,2)$；无孔洞。",
+        "printedPage": 445,
+        "pdfPage": 454,
+        "en": {
+          "prompt": "State the characteristics of the graph of $y=x/(x+2)+(x-4)/(x-2)$.",
+          "steps": [
+            {
+              "title": "Retain restrictions and combine",
+              "body": "Original denominators require $x\\ne-2,2$. Combining gives $y=(2x^2-4x-8)/(x^2-4)=2-4x/(x^2-4)$. At $x=-2,2$ the numerators are $8,-8$, both nonzero, so both are vertical asymptotes, not holes."
+            },
+            {
+              "title": "Find intercepts and the horizontal asymptote",
+              "body": "The equal-degree leading-coefficient ratio gives horizontal asymptote $y=2$. At $x=0$, $y=2$, so the graph crosses it at $(0,2)$. Solve $2(x^2-2x-4)=0$ for $x=1\\pm\\sqrt{5}$, both allowed."
+            },
+            {
+              "title": "Determine branches and range",
+              "body": "On $-2<x<2$, values tend downward without bound near $-2$ from the right and upward without bound near $2$ from the left, so the continuous middle branch attains every real value. All three branches increase on $(-\\infty,-2),(-2,2),(2,\\infty)$, as the graph confirms. At both vertical asymptotes, the left side tends upward and right side downward."
+            }
+          ],
+          "answer": "Domain $x\\ne\\pm2$; range all real numbers; vertical asymptotes $x=-2,2$; horizontal asymptote $y=2$, crossed at $(0,2)$; intercepts $(1\\pm\\sqrt{5},0),(0,2)$; no holes."
+        },
+        "graph": {
+          "numerator": [
+            2,
+            -4,
+            -8
+          ],
+          "denominator": [
+            1,
+            0,
+            -4
+          ],
+          "bounds": {
+            "xMin": -10,
+            "xMax": 10,
+            "yMin": -12,
+            "yMax": 12
+          },
+          "verticalAsymptotes": [
+            -2,
+            2
+          ],
+          "horizontalAsymptote": 2,
+          "holes": [],
+          "points": [
+            {
+              "x": 0,
+              "y": 2
+            }
+          ],
+          "label": "y=x/(x+2)+(x-4)/(x-2)"
+        }
+      },
+      {
+        "number": "C1",
+        "prompt": "你认为有理函数的变换比以前学过的其他函数的变换更难、更容易，还是没有区别？用具体例子说明理由。",
+        "concept": [
+          "transform1",
+          "transform2"
+        ],
+        "steps": [
+          {
+            "title": "比较共同规则",
+            "body": "一种合理回答是“基本变换规则没有区别”：$y=2/(x-3)+4$ 和 $y=2(x-3)^2+4$ 都是对各自基本函数纵向拉伸 $2$ 倍、右移 $3$、上移 $4$，点映射同为 $(x,y)\\to(x+3,2y+4)$。"
+          },
+          {
+            "title": "解释额外注意点",
+            "body": "有理函数还需保留分母限制并移动渐近线，例如前者的 $x=3,y=4$；平方函数则有顶点 $(3,4)$。可因此认为有理函数需多一些注意，但有依据的不同观点都可接受。"
+          }
+        ],
+        "answer": "开放题示例：变换规则相同；有理函数额外需要检查禁值和渐近线。",
+        "printedPage": 445,
+        "pdfPage": 454,
+        "en": {
+          "prompt": "Would you say transformations with rational functions are more difficult, easier, or no different than with other functions you have studied? Give reasons using specific examples.",
+          "steps": [
+            {
+              "title": "Compare common rules",
+              "body": "One reasonable answer is that the basic transformation rules are the same: $y=2/(x-3)+4$ and $y=2(x-3)^2+4$ both stretch their respective base functions vertically by $2$, shift right $3$, and up $4$, with mapping $(x,y)\\to(x+3,2y+4)$."
+            },
+            {
+              "title": "Explain extra care",
+              "body": "Rational functions also require denominator restrictions and transformed asymptotes, such as $x=3,y=4$ above; the quadratic instead has vertex $(3,4)$. This may make rational graphs require more care, but different well-supported views are acceptable."
+            }
+          ],
+          "answer": "Sample open response: transformation rules are the same, with extra attention to excluded values and asymptotes for rational functions."
+        }
+      },
+      {
+        "number": "C2",
+        "prompt": "工厂用 $C(p)=200000p/(100-p)$ 估计消除 $p\\%$ 有害排放所需的费用 $C$（元）。a) 什么定义域适合此情境？为什么？b) 画函数；形状怎样联系工厂情境？c) 消除 $80\\%$ 的费用是消除 $40\\%$ 的两倍吗？解释。d) 按此模型能完全消除排放吗？用图像特征说明。",
+        "concept": "application",
+        "steps": [
+          {
+            "title": "a) 限定百分数",
+            "body": "百分数不能为负，最多为 $100$；但 $p=100$ 使分母为零，所以实际定义域 $0\\le p<100$。$p=0$ 时 $C=0$。"
+          },
+          {
+            "title": "b) 画图与解释",
+            "body": "改写 $C=-200000+20000000/(100-p)$。标出 $(0,0),(40,400000/3),(50,200000),(75,600000),(80,800000)$。曲线递增且越来越陡，表示进一步消除排放的成本增加得越来越快；竖直渐近线 $p=100$。"
+          },
+          {
+            "title": "c) 直接计算比较",
+            "body": "$C(40)=8000000/60=400000/3\\approx133333.33$ 元，$C(80)=16000000/20=800000$ 元。比值为 $800000/(400000/3)=6$，所以是六倍而不是两倍。"
+          },
+          {
+            "title": "d) 检查完全消除",
+            "body": "$p$ 从左侧趋近 $100$ 时费用无界增加，且 $C(100)$ 无定义。模型不允许用有限费用达到完全消除。此结论限于给定成本模型。"
+          }
+        ],
+        "answer": "定义域 $[0,100)$；消除 $80\\%$ 成本 $800000$ 元，是 $40\\%$ 成本的六倍；有限成本不能按此模型达到 $100\\%$。",
+        "printedPage": 445,
+        "pdfPage": 454,
+        "en": {
+          "prompt": "A manufacturing plant uses $C(p)=200000p/(100-p)$ to estimate the dollar cost to eliminate $p$ percent of harmful emissions. a) What domain is appropriate, and why? b) Graph it and relate its shape to the context. c) Does eliminating $80\\%$ cost twice as much as eliminating $40\\%$? Explain. d) Is complete elimination possible under this model? Justify using graph characteristics.",
+          "steps": [
+            {
+              "title": "a) Restrict the percentage",
+              "body": "The percentage cannot be negative and cannot exceed $100$, but $p=100$ makes the denominator zero. Thus the contextual domain is $0\\le p<100$, with $C(0)=0$."
+            },
+            {
+              "title": "b) Graph and interpret",
+              "body": "Rewrite $C=-200000+20000000/(100-p)$. Plot $(0,0),(40,400000/3),(50,200000),(75,600000),(80,800000)$. The curve increases and steepens, representing rapidly increasing costs for further emissions removal; its vertical asymptote is $p=100$."
+            },
+            {
+              "title": "c) Calculate and compare",
+              "body": "$C(40)=8000000/60=400000/3\\approx133333.33$ dollars and $C(80)=16000000/20=800000$ dollars. The ratio is $800000/(400000/3)=6$, so it costs six times as much, not twice."
+            },
+            {
+              "title": "d) Check complete elimination",
+              "body": "As $p$ approaches $100$ from below, cost grows without bound, and $C(100)$ is undefined. The model cannot achieve complete elimination at any finite cost; this conclusion is specific to this cost model."
+            }
+          ],
+          "answer": "Domain $[0,100)$; $80\\%$ removal costs $800000$, six times the $40\\%$ cost; the model cannot reach $100\\%$ at finite cost."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "graph": {
+          "numerator": [
+            200000,
+            0
+          ],
+          "denominator": [
+            -1,
+            100
+          ],
+          "bounds": {
+            "xMin": 0,
+            "xMax": 100,
+            "yMin": 0,
+            "yMax": 2000000
+          },
+          "verticalAsymptotes": [
+            100
+          ],
+          "horizontalAsymptote": null,
+          "holes": [],
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 50,
+              "y": 200000
+            },
+            {
+              "x": 80,
+              "y": 800000
+            }
+          ],
+          "label": "C(p)=200000p/(100-p), 0<=p<100"
+        }
+      },
+      {
+        "number": "C3",
+        "prompt": "不用技术作图时，画 $y=2/(x-3)+4$ 和 $y=2\\sqrt{x-3}+4$ 有哪些相同与不同之处？",
+        "concept": [
+          "transform1",
+          "transform2"
+        ],
+        "steps": [
+          {
+            "title": "共同变换",
+            "body": "各从自己的基本函数 $1/x$ 与 $\\sqrt{x}$ 出发，都纵向拉伸 $2$ 倍、右移 $3$、上移 $4$；点映射同为 $(u,v)\\to(u+3,2v+4)$。"
+          },
+          {
+            "title": "有理函数作图",
+            "body": "先画渐近线 $x=3,y=4$；标出 $(4,6),(5,5),(2,2),(1,3)$，画两支曲线。定义域 $x\\ne3$、值域 $y\\ne4$，无端点。"
+          },
+          {
+            "title": "根式函数作图",
+            "body": "用基本点 $(0,0),(1,1),(4,2),(9,3)$，变成 $(3,4),(4,6),(7,8),(12,10)$。只有一支，从包括在内的端点 $(3,4)$ 向右上方延伸；定义域 $x\\ge3$、值域 $y\\ge4$，没有上述两条渐近线。"
+          }
+        ],
+        "answer": "共同：相同的拉伸和平移。不同：有理图有两支及渐近线 $x=3,y=4$；根式图只有一支和端点 $(3,4)$，定义域和值域含边界。",
+        "printedPage": 445,
+        "pdfPage": 454,
+        "en": {
+          "prompt": "What are the similarities and differences between graphing $y=2/(x-3)+4$ and $y=2\\sqrt{x-3}+4$ without technology?",
+          "steps": [
+            {
+              "title": "Common transformations",
+              "body": "Start from the respective base functions $1/x$ and $\\sqrt{x}$. Both stretch vertically by $2$, shift right $3$, and up $4$, with mapping $(u,v)\\to(u+3,2v+4)$."
+            },
+            {
+              "title": "Graph the rational function",
+              "body": "Draw asymptotes $x=3,y=4$, then points $(4,6),(5,5),(2,2),(1,3)$ and two branches. Domain $x\\ne3$, range $y\\ne4$, with no endpoints."
+            },
+            {
+              "title": "Graph the radical function",
+              "body": "Map base points $(0,0),(1,1),(4,2),(9,3)$ to $(3,4),(4,6),(7,8),(12,10)$. There is one branch from the included endpoint $(3,4)$ extending upward to the right. Domain $x\\ge3$, range $y\\ge4$, without those asymptotes."
+            }
+          ],
+          "answer": "Same scaling and translations; the rational graph has two branches and asymptotes $x=3,y=4$, while the radical has one branch and included endpoint $(3,4)$, with boundary values included in domain and range."
+        }
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3",
+      "example-4",
+      "example-5"
+    ],
+    "expectedPractice": [
+      "opening-question",
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "investigate-5",
+      "investigate-6",
+      "investigate-7",
+      "investigate-8",
+      "investigate-9",
+      "margin-433",
+      "your-turn-1",
+      "margin-434",
+      "margin-435",
+      "your-turn-2",
+      "margin-436",
+      "your-turn-3",
+      "your-turn-4",
+      "margin-439",
+      "your-turn-5"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "expectedSubparts": {
+      "investigate-1": [
+        "a",
+        "b"
+      ],
+      "investigate-2": [
+        "a",
+        "b"
+      ],
+      "investigate-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "investigate-4": [
+        "a",
+        "b"
+      ],
+      "investigate-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "investigate-6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "investigate-7": [
+        "a",
+        "b"
+      ],
+      "investigate-9": [
+        "a",
+        "b",
+        "c"
+      ],
+      "example-4": [
+        "fg",
+        "fh"
+      ],
+      "example-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "your-turn-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "margin-433": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "margin-434": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "margin-435": [
+        "a",
+        "b"
+      ],
+      "margin-436": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-8": [
+        "a",
+        "b"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-10": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b"
+      ],
+      "exercise-14": [
+        "a",
+        "b"
+      ],
+      "exercise-15": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-16": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-17": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-18": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-19": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-21": [
+        "a",
+        "b"
+      ],
+      "exercise-C2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "All16 original pages, every record and both language solutions independently compared by root; algebraic derivations and corrections in audit/9-1-independent.json. Graph trace semantics corrected to include every primary curve."
+  }
+}

@@ -1,0 +1,2453 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "11-3",
+    "section": "11.3",
+    "title": "二项式定理",
+    "en": {
+      "title": "Binomial Theorem",
+      "description": "Connect Pascal’s triangle, combinations, binomial expansion, and specific terms, with all textbook activities and exercises."
+    },
+    "description": "联系帕斯卡三角形、组合数、二项式展开与指定项，包含全部原书活动和习题。",
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545
+      ],
+      "pdfPages": [
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554
+      ]
+    },
+    "concepts": [
+      {
+        "id": "pascal",
+        "title": "帕斯卡三角形与组合数",
+        "summary": "顶端 1 为第 1 行。第 $n+1$ 行是 $\\binom n0,\\binom n1,\\ldots,\\binom nn$，用于 $(x+y)^n$ 的系数；该行有 $n+1$ 个数，左右对称，总和 $2^n$。",
+        "method": [
+          {
+            "title": "步骤 1",
+            "body": "边缘为 1，内部是上方相邻两数之和。这与 $\\binom nk=\\binom{n-1}{k-1}+\\binom{n-1}k$ 一致。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "第 $k+1$ 个数为 $\\binom nk=n!/[k!(n-k)!]$；整数 $n\\ge0$，$0\\le k\\le n$，$0!=1$。相邻系数比为 $(n-k)/(k+1)$。"
+          }
+        ],
+        "pitfalls": [
+          "行号与指数相差 1。多位数系数不能直接当十进制数字连写。"
+        ],
+        "en": {
+          "title": "Pascal’s triangle and combinations",
+          "summary": "The top 1 is row 1. Row $n+1$ is $\\binom n0,\\binom n1,\\ldots,\\binom nn$, the coefficients of $(x+y)^n$. It has $n+1$ entries, is symmetric, and sums to $2^n$.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Place 1 at the edges and add the two entries immediately above for an interior entry, matching $\\binom nk=\\binom{n-1}{k-1}+\\binom{n-1}k$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Entry $k+1$ is $\\binom nk=n!/[k!(n-k)!]$, for integers $n\\ge0$, $0\\le k\\le n$, with $0!=1$. Adjacent coefficients have ratio $(n-k)/(k+1)$."
+            }
+          ],
+          "pitfalls": [
+            "Row number and exponent differ by 1. Multi-digit coefficients cannot be concatenated as decimal digits."
+          ]
+        }
+      },
+      {
+        "id": "binomial-expansion",
+        "title": "二项式展开",
+        "summary": "$(u+v)^n$ 的项依次为 $\\binom nk u^{n-k}v^k$，$k=0,1,\\ldots,n$。本节按第一个二项式项的指数降序排列。二项式本身可含数值、幂或分式。",
+        "method": [
+          {
+            "title": "步骤 1",
+            "body": "确定整体的 $u,v,n$。减法写作相加负数，例如 $(2a-3b)^4$ 取 $v=-3b$，不能漏掉负号。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "每项代入组合系数和两个整体的幂，再化简。对独立变量 $u,v$，每项总次数为 $n$；若 $u,v$ 已含同一变量的不同幂，须另算化简后的指数。"
+          }
+        ],
+        "pitfalls": [
+          "先给负数或分式加括号再乘方。含 $1/x$ 的原式要求 $x\\ne0$，展开后仍保留。"
+        ],
+        "en": {
+          "title": "Binomial expansion",
+          "summary": "The terms of $(u+v)^n$ are $\\binom nk u^{n-k}v^k$ for $k=0,1,\\ldots,n$, written in descending powers of the first binomial term. The terms may themselves contain numbers, powers, or fractions.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Identify the whole terms $u,v$ and exponent $n$. Treat subtraction as addition of a negative: in $(2a-3b)^4$, use $v=-3b$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Substitute coefficients and powers of both complete terms, then simplify. Each term has degree $n$ in independent $u,v$; if $u,v$ contain powers of the same variable, compute the simplified exponent separately."
+            }
+          ],
+          "pitfalls": [
+            "Use parentheses before raising negative or fractional terms to powers. An original $1/x$ requires $x\\ne0$, retained after expansion."
+          ]
+        }
+      },
+      {
+        "id": "specific-term",
+        "title": "一般项、指定项与常数项",
+        "summary": "第 $k+1$ 项为 $t_{k+1}=\\binom nk u^{n-k}v^k$。第 $j$ 项取 $k=j-1$；不必完整展开即可求某一项。",
+        "method": [
+          {
+            "title": "步骤 1",
+            "body": "先按项号找 $k$。若有 $n+1$ 个项且为奇数，中间项编号为 $(n+2)/2$；倒数第二项编号为 $n$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "若寻找某变量的指定幂，先化简一般项指数，再令它等于目标指数；常数项令指数为 0。所得 $k$ 须为 $0\\le k\\le n$ 的整数，否则没有该项。"
+          }
+        ],
+        "pitfalls": [
+          "第三项用 $k=2$；常数项的系数也要保留负号和数值幂。"
+        ],
+        "en": {
+          "title": "General, specified, and constant terms",
+          "summary": "Term $k+1$ is $t_{k+1}=\\binom nk u^{n-k}v^k$. For term $j$, set $k=j-1$; a single term can be found without expanding everything.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Find $k$ from the requested term number. If the $n+1$ terms number an odd amount, the middle term is numbered $(n+2)/2$; the second-last is term $n$."
+            },
+            {
+              "title": "Step 2",
+              "body": "For a specified variable power, simplify its general exponent and set it equal to the target; use exponent 0 for a constant term. The resulting $k$ must be an integer with $0\\le k\\le n$, or no such term occurs."
+            }
+          ],
+          "pitfalls": [
+            "The third term uses $k=2$. A constant term still includes its numerical powers and sign."
+          ]
+        }
+      },
+      {
+        "id": "counting-applications",
+        "title": "组合、树图与数学创作",
+        "summary": "从 $n$ 个因子中选择 $k$ 个提供第二项，有 $\\binom nk$ 种选法。二项式系数把相同乘积合并，也联系子集、硬币树图与圆周多边形计数。",
+        "method": [
+          {
+            "title": "步骤 1",
+            "body": "先区分有序结果与无序选择：硬币三次有 $2^3=8$ 条路径，恰两正一反有 $\\binom32=3$ 条。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "从圆周 $n$ 个不同点选 $k\\ge3$ 个形成凸 $k$ 边形，数目 $\\binom nk$。开放研究或艺术题给出数学规则与清楚标注的示例；个人作品、设备读数和访谈由学生实际完成。"
+          }
+        ],
+        "pitfalls": [
+          "概率示例须说明独立与同成功率；不能把示例当作学生个人调查数据。"
+        ],
+        "en": {
+          "title": "Combinations, trees, and mathematical creation",
+          "summary": "Choosing which $k$ of $n$ factors supply the second term gives $\\binom nk$ choices. Binomial coefficients collect equal products and connect subsets, coin trees, and polygons on a circle.",
+          "method": [
+            {
+              "title": "Step 1",
+              "body": "Distinguish ordered outcomes from unordered selections: three tosses have $2^3=8$ paths; exactly two heads have $\\binom32=3$ paths."
+            },
+            {
+              "title": "Step 2",
+              "body": "Selecting $k\\ge3$ of $n$ distinct points on a circle gives $\\binom nk$ convex $k$-gons. For open research and art, provide mathematical rules and clearly labelled examples; students complete their actual artifacts, device readings, and interviews."
+            }
+          ],
+          "pitfalls": [
+            "Probability examples must state independence and equal success rates; illustrative data are not personal student research."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "观察所示帕斯卡三角形，找出至少三个规律，并与同伴比较、讨论。给出的五行为：1；1 1；1 2 1；1 3 3 1；1 4 6 4 1。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "每行首尾都是 1；从左到右与从右到左相同，例如第五行是 1,4,6,4,1。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "从第二行起，内部数是上一行左上与右上两数之和，例如 $6=3+3$，$4=1+3$。第 $r$ 行有 $r$ 个数。"
+          }
+        ],
+        "answer": "示例规律：两端为 1、左右对称、上方相邻两数相加、每行比上一行多一个数。个人讨论内容由学生记录。",
+        "printedPage": 537,
+        "pdfPage": 546,
+        "en": {
+          "prompt": "Examine the given Pascal triangle and identify at least three patterns. Compare and discuss your patterns with a partner. Its five rows are: 1; 1 1; 1 2 1; 1 3 3 1; 1 4 6 4 1.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Every row begins and ends with 1 and is symmetric; for example the fifth row is 1,4,6,4,1."
+            },
+            {
+              "title": "Step 2",
+              "body": "Each interior entry is the sum of the two entries immediately above it: $6=3+3$ and $4=1+3$. Row $r$ has $r$ entries."
+            }
+          ],
+          "answer": "Sample patterns: end entries 1, symmetry, adjacent sums, and one more entry per row. Students record their own discussion.",
+          "label": "Investigate 1"
+        },
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1"
+      },
+      {
+        "prompt": "写出所示帕斯卡三角形的下一行。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "在两端写 1，中间依次相加：$1+4=5$，$4+6=10$，$6+4=10$，$4+1=5$。"
+          }
+        ],
+        "answer": "下一行是 1,5,10,10,5,1。",
+        "printedPage": 537,
+        "pdfPage": 546,
+        "en": {
+          "prompt": "Write the next row of the Pascal triangle shown.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Place 1 at each end. Add adjacent entries: $1+4=5$, $4+6=10$, $6+4=10$, $4+1=5$."
+            }
+          ],
+          "answer": "The next row is 1,5,10,10,5,1.",
+          "label": "Investigate 2"
+        },
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 2"
+      },
+      {
+        "prompt": "建立一个至少 20 行的帕斯卡三角形。标记或用计数片盖住 20 行中所有 7 的倍数，然后分别盖住 5 的倍数和 3 的倍数。你能得出什么结论？偶数的倍数会怎样？",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "用首行 1 及相邻相加法生成 20 行，即 $n=0,1,\\ldots,19$ 的 $\\binom{n}{k}$。附图给出全部数，并分别标记被 7、5、3、2 整除的项。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "标记关于中线对称，两侧的 1 永远不被盖住。对素数 $p$，第 $p+1$ 行内部项都为 $p$ 的倍数：例如第八行 1,7,21,35,35,21,7,1。对 3、5、7 可见重复的三角形空白/标记区域。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "偶数也有结构，但不能把素数结论直接用于所有偶数。例如第五行内部的 4,6,4 并非都是 4 的倍数；第七行内部的 6,15,20,15,6 也并非都是 6 的倍数。被偶数 $d$ 整除必须同时满足 $d$ 的各素数幂因子要求。图中 2 的倍数呈现对称的重复三角形。"
+          }
+        ],
+        "answer": "图示提供一个可核验的 20 行实验；对称与重复空间规律可见。复合偶数的标记规律须按实际整除检查，不能假定与素数完全相同。",
+        "printedPage": 537,
+        "pdfPage": 546,
+        "en": {
+          "prompt": "Create a large Pascal triangle with at least 20 rows. Mark or cover all multiples of 7 in your 20-row triangle, then all multiples of 5 and of 3. What do you conclude? What happens for multiples of even numbers?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Generate 20 rows, $n=0,1,\\ldots,19$, using the starting 1 and adjacent sums; entries are $\\binom{n}{k}$. The image lists every value and separately marks multiples of 7,5,3,2."
+            },
+            {
+              "title": "Step 2",
+              "body": "The marked pattern is symmetric and never covers the edge 1s. For a prime $p$, every interior entry of row $p+1$ is divisible by $p$: row 8 is 1,7,21,35,35,21,7,1. Repeated triangular marked/unmarked regions appear for 3,5,7."
+            },
+            {
+              "title": "Step 3",
+              "body": "Even divisors also give structure, but the prime conclusion does not apply to every even number. Row 5 contains 4,6,4, not all multiples of 4; row 7 contains 6,15,20,15,6, not all multiples of 6. Divisibility by an even $d$ requires all of its prime-power factors. The panel for 2 shows repeated symmetric triangular regions."
+            }
+          ],
+          "answer": "The figure provides a verifiable 20-row experiment. Symmetry and repeated spatial patterns are visible. Check composite even divisors by actual divisibility rather than assuming the prime pattern.",
+          "label": "Investigate 3"
+        },
+        "id": "investigate-3",
+        "type": "practice",
+        "label": "探究 3",
+        "solutionImages": [
+          "assets/11-3-investigate3-multiples-7.png",
+          "assets/11-3-investigate3-multiples-5.png",
+          "assets/11-3-investigate3-multiples-3.png",
+          "assets/11-3-investigate3-multiples-2.png"
+        ]
+      },
+      {
+        "prompt": "求每个水平行中各数之和。你发现什么规律？",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "前五行的和依次为 $1,2,4,8,16$，每次加倍。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "设第一行为第 1 行，则第 $r$ 行的和为 $2^{r-1}$；用相邻相加建立下一行时，原行每个数被计两次。"
+          }
+        ],
+        "answer": "第 $r$ 行之和为 $2^{r-1}$。",
+        "printedPage": 537,
+        "pdfPage": 546,
+        "en": {
+          "prompt": "Determine the sum of the numbers in each horizontal row. What pattern do you find?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "The first five row sums are $1,2,4,8,16$, doubling each time."
+            },
+            {
+              "title": "Step 2",
+              "body": "With the top row called row 1, row $r$ sums to $2^{r-1}$: forming the next row counts each old entry twice."
+            }
+          ],
+          "answer": "Row $r$ sums to $2^{r-1}$.",
+          "label": "Investigate 4"
+        },
+        "id": "investigate-4",
+        "type": "practice",
+        "label": "探究 4"
+      },
+      {
+        "prompt": "帕斯卡三角形每个数都可写为组合数 ${}_nC_r$。例如第三行是 ${}_2C_0,{}_2C_1,{}_2C_2$。用组合符号表示第五行，并核对数值。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "第五行对应 $n=4$，依次选择 $r=0,1,2,3,4$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "${}_4C_0=1$，${}_4C_1=4$，${}_4C_2=4!/(2!2!)=6$，${}_4C_3=4$，${}_4C_4=1$。"
+          }
+        ],
+        "answer": "${}_4C_0,{}_4C_1,{}_4C_2,{}_4C_3,{}_4C_4=1,4,6,4,1$。",
+        "printedPage": 537,
+        "pdfPage": 546,
+        "en": {
+          "prompt": "Each entry in Pascal’s triangle can be written as a combination ${}_nC_r$; for example the third row is ${}_2C_0,{}_2C_1,{}_2C_2$. Express the fifth row in combination notation and check its values.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "The fifth row has $n=4$ and $r=0,1,2,3,4$."
+            },
+            {
+              "title": "Step 2",
+              "body": "${}_4C_0=1$, ${}_4C_1=4$, ${}_4C_2=4!/(2!2!)=6$, ${}_4C_3=4$, ${}_4C_4=1$."
+            }
+          ],
+          "answer": "${}_4C_0,{}_4C_1,{}_4C_2,{}_4C_3,{}_4C_4=1,4,6,4,1$.",
+          "label": "Investigate 5"
+        },
+        "id": "investigate-5",
+        "type": "practice",
+        "label": "探究 5"
+      },
+      {
+        "prompt": "用乘法展开：(a) $(x+y)^2$；(b) $(x+y)^3$；(c) $(x+y)^4$。",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) $(x+y)(x+y)=x^2+xy+yx+y^2=x^2+2xy+y^2$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) $(x^2+2xy+y^2)(x+y)=x^3+x^2y+2x^2y+2xy^2+xy^2+y^3=x^3+3x^2y+3xy^2+y^3$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 把 (b) 乘 $x+y$，相同项系数相加得到 $x^4+(1+3)x^3y+(3+3)x^2y^2+(3+1)xy^3+y^4$。"
+          }
+        ],
+        "answer": "(a) $x^2+2xy+y^2$；(b) $x^3+3x^2y+3xy^2+y^3$；(c) $x^4+4x^3y+6x^2y^2+4xy^3+y^4$。",
+        "printedPage": 538,
+        "pdfPage": 547,
+        "en": {
+          "prompt": "Expand by multiplying: (a) $(x+y)^2$; (b) $(x+y)^3$; (c) $(x+y)^4$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $(x+y)(x+y)=x^2+xy+yx+y^2=x^2+2xy+y^2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $(x^2+2xy+y^2)(x+y)=x^3+x^2y+2x^2y+2xy^2+xy^2+y^3=x^3+3x^2y+3xy^2+y^3$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Multiply (b) by $x+y$ and collect like terms to get $x^4+(1+3)x^3y+(3+3)x^2y^2+(3+1)xy^3+y^4$."
+            }
+          ],
+          "answer": "(a) $x^2+2xy+y^2$; (b) $x^3+3x^2y+3xy^2+y^3$; (c) $x^4+4x^3y+6x^2y^2+4xy^3+y^4$.",
+          "label": "Investigate 6"
+        },
+        "id": "investigate-6",
+        "type": "practice",
+        "label": "探究 6",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "解释如何从帕斯卡三角形前一行得到下一行，用例子说明。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "在首尾放 1，内部依次加前一行相邻的两数。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "例如从 1,3,3,1 得 1,1+3,3+3,3+1,1，即 1,4,6,4,1；再得到 1,5,10,10,5,1。"
+          }
+        ],
+        "answer": "两端为 1，内部是前一行相邻两数之和。",
+        "printedPage": 538,
+        "pdfPage": 547,
+        "en": {
+          "prompt": "Explain how to get the next row from the previous row in Pascal’s triangle. Use examples.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Place 1 at each end and add adjacent entries from the previous row for each interior entry."
+            },
+            {
+              "title": "Step 2",
+              "body": "For example, 1,3,3,1 gives 1,1+3,3+3,3+1,1, or 1,4,6,4,1. The next row is 1,5,10,10,5,1."
+            }
+          ],
+          "answer": "Put 1 at both ends and use adjacent sums inside.",
+          "label": "Reflect and Respond 7"
+        },
+        "id": "reflect-7",
+        "type": "practice",
+        "label": "反思与回应 7"
+      },
+      {
+        "prompt": "步骤 4 和 5 得到的值有什么关系？用具体行的数值说明。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "步骤 5 把第 $n+1$ 行写为 $\\binom n0,\\binom n1,\\ldots,\\binom nn$。步骤 4 是把该行所有组合数相加，结果为 $2^n$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "例如第三行 $\\binom20+\\binom21+\\binom22=1+2+1=4=2^2$；第五行 $1+4+6+4+1=16=2^4$。每个元素选或不选，所以总共有 $2^n$ 个子集。"
+          }
+        ],
+        "answer": "同一行所有组合数之和等于相应的 2 的幂。",
+        "printedPage": 538,
+        "pdfPage": 547,
+        "en": {
+          "prompt": "How are the values obtained in steps 4 and 5 related? Explain using values from specific rows.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Step 5 writes row $n+1$ as $\\binom n0,\\binom n1,\\ldots,\\binom nn$. Step 4 adds all these combinations to obtain $2^n$."
+            },
+            {
+              "title": "Step 2",
+              "body": "For row 3, $\\binom20+\\binom21+\\binom22=1+2+1=4=2^2$. For row 5, $1+4+6+4+1=16=2^4$. Every element is either selected or not selected, giving $2^n$ subsets altogether."
+            }
+          ],
+          "answer": "The combinations in a row sum to the corresponding power of 2.",
+          "label": "Reflect and Respond 8"
+        },
+        "id": "reflect-8",
+        "type": "practice",
+        "label": "反思与回应 8"
+      },
+      {
+        "prompt": "步骤 6 中合并同类项后的系数与帕斯卡三角形有什么关系？",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "平方的系数 1,2,1 是第三行；立方的 1,3,3,1 是第四行；四次方的 1,4,6,4,1 是第五行。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "因此 $(x+y)^n$ 的系数依次来自第 $n+1$ 行（顶端 1 为第一行）。"
+          }
+        ],
+        "answer": "指数为 $n$ 时使用第 $n+1$ 行。",
+        "printedPage": 538,
+        "pdfPage": 547,
+        "en": {
+          "prompt": "How do the coefficients of the simplified expansions in step 6 relate to Pascal’s triangle?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "The coefficients 1,2,1 for the square form row 3; 1,3,3,1 for the cube form row 4; and 1,4,6,4,1 for the fourth power form row 5."
+            },
+            {
+              "title": "Step 2",
+              "body": "Thus $(x+y)^n$ uses row $n+1$, counting the top 1 as row 1."
+            }
+          ],
+          "answer": "An exponent of $n$ uses row $n+1$.",
+          "label": "Reflect and Respond 9"
+        },
+        "id": "reflect-9",
+        "type": "practice",
+        "label": "反思与回应 9"
+      },
+      {
+        "prompt": "已知 $(x+y)^4=x^4+4x^3y+6x^2y^2+4xy^3+y^4$。(a) 如何通过乘法得到此展开式？(b) 你观察到什么规律？",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 先乘 $(x+y)^2=x^2+2xy+y^2$，再平方：$(x^2+2xy+y^2)^2=x^4+4x^3y+(2+4)x^2y^2+4xy^3+y^4$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 系数 1,4,6,4,1 左右对称；$x$ 指数每项降 1，$y$ 指数每项升 1，总次数恒为 4，共 5 项。"
+          }
+        ],
+        "answer": "直接乘法并合并同类项得到展开式；系数对称、总次数不变。",
+        "printedPage": 538,
+        "pdfPage": 547,
+        "en": {
+          "prompt": "Given $(x+y)^4=x^4+4x^3y+6x^2y^2+4xy^3+y^4$: (a) how could you get this expansion by multiplying? (b) what patterns do you observe?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) First multiply $(x+y)^2=x^2+2xy+y^2$, then square: $(x^2+2xy+y^2)^2=x^4+4x^3y+(2+4)x^2y^2+4xy^3+y^4$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Coefficients 1,4,6,4,1 are symmetric; powers of $x$ decrease by 1 and powers of $y$ increase by 1. Each term has degree 4, and there are 5 terms."
+            }
+          ],
+          "answer": "Direct multiplication and collection give the expansion, with symmetric coefficients and constant total degree.",
+          "label": "Link the Ideas · Margin questions"
+        },
+        "id": "sidebar-multiply",
+        "type": "practice",
+        "label": "联系知识 · 旁注问题",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "(a) 展开 $(p+q)^6$。(b) 找出其展开式中的规律。",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 第七行系数为 $1,6,15,20,15,6,1$；也可由 $\\binom 6k=6!/[k!(6-k)!]$ 逐项得到。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "依次乘上 $p^{6-k}q^k$：$(p+q)^6=p^6+6p^5q+15p^4q^2+20p^3q^3+15p^2q^4+6pq^5+q^6$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(b) 有 7 项。$p$ 的指数从 6 降到 0，$q$ 的指数从 0 升到 6；每项总次数为 6。系数对称，首尾都是 1。"
+          }
+        ],
+        "answer": "(a) $p^6+6p^5q+15p^4q^2+20p^3q^3+15p^2q^4+6pq^5+q^6$；(b) 7 项、系数对称、总次数 6。",
+        "printedPage": 539,
+        "pdfPage": 548,
+        "en": {
+          "prompt": "(a) Expand $(p+q)^6$. (b) Identify patterns in its expansion.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Row 7 gives coefficients $1,6,15,20,15,6,1$; equivalently compute $\\binom 6k=6!/[k!(6-k)!]$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Multiply each by $p^{6-k}q^k$: $(p+q)^6=p^6+6p^5q+15p^4q^2+20p^3q^3+15p^2q^4+6pq^5+q^6$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b) There are 7 terms. Powers of $p$ decrease from 6 to 0 while powers of $q$ increase from 0 to 6; every term has total degree 6. Coefficients are symmetric and begin and end with 1."
+            }
+          ],
+          "answer": "(a) $p^6+6p^5q+15p^4q^2+20p^3q^3+15p^2q^4+6pq^5+q^6$; (b) 7 terms, symmetric coefficients, total degree 6.",
+          "label": "Example 1"
+        },
+        "id": "example-1",
+        "type": "example",
+        "label": "例题 1",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "为什么所用帕斯卡行号比二项式指数大 1？",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "顶端的 1 被称为第 1 行，但它对应指数 0，即 $(p+q)^0=1$。指数增加 1 才进入下一行，所以指数 6 对应第 7 行。"
+          }
+        ],
+        "answer": "行号 $=$ 指数 $+1$，源于第一行对应指数 0。",
+        "printedPage": 539,
+        "pdfPage": 548,
+        "en": {
+          "prompt": "Why is the Pascal row number different by one from the exponent on the binomial?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "The top 1 is called row 1 but corresponds to exponent 0: $(p+q)^0=1$. Each increase of 1 in the exponent advances one row, so exponent 6 uses row 7."
+            }
+          ],
+          "answer": "Row number = exponent + 1 because row 1 corresponds to exponent 0.",
+          "label": "Example 1 · Row-number question"
+        },
+        "id": "sidebar-row-number",
+        "type": "practice",
+        "label": "例题 1 · 行号问题"
+      },
+      {
+        "prompt": "第七行 1,6,15,20,15,6,1 的数如何得到？",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "从第六行 1,5,10,10,5,1 出发，两端补 1，中间相加：$1+5=6$，$5+10=15$，$10+10=20$，$10+5=15$，$5+1=6$。"
+          }
+        ],
+        "answer": "通过上一行相邻两数相加得到。",
+        "printedPage": 539,
+        "pdfPage": 548,
+        "en": {
+          "prompt": "How are the numbers 1,6,15,20,15,6,1 in the seventh row obtained?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Start from row 6, 1,5,10,10,5,1. Add 1 at each end and compute $1+5=6$, $5+10=15$, $10+10=20$, $10+5=15$, $5+1=6$."
+            }
+          ],
+          "answer": "They are adjacent sums of the previous row.",
+          "label": "Example 1 · Coefficient question"
+        },
+        "id": "sidebar-row-values",
+        "type": "practice",
+        "label": "例题 1 · 系数问题"
+      },
+      {
+        "prompt": "证明 ${}_6C_4=15$。对称性如何帮助求出各项？",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "${}_6C_4=6!/(4!2!)=(6\\cdot5)/2=15$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "$\\binom 6k=\\binom 6{6-k}$，所以前四个系数 1,6,15,20 决定后三个 15,6,1；对应项的 $p,q$ 指数交换。"
+          }
+        ],
+        "answer": "${}_6C_4=15={}_6C_2$；利用镜像系数减少计算。",
+        "printedPage": 539,
+        "pdfPage": 548,
+        "en": {
+          "prompt": "Show that ${}_6C_4=15$. How does symmetry help find the terms?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "${}_6C_4=6!/(4!2!)=(6\\cdot5)/2=15$."
+            },
+            {
+              "title": "Step 2",
+              "body": "$\\binom 6k=\\binom 6{6-k}$, so coefficients 1,6,15,20 determine the remaining 15,6,1. Corresponding terms exchange the powers of $p$ and $q$."
+            }
+          ],
+          "answer": "${}_6C_4=15={}_6C_2$; mirror coefficients reduce calculation.",
+          "label": "Example 1 · Symmetry question"
+        },
+        "id": "sidebar-symmetry",
+        "type": "practice",
+        "label": "例题 1 · 对称问题"
+      },
+      {
+        "prompt": "(a) $(c+d)^5$ 的系数是什么？(b) 你偏好用帕斯卡三角形还是组合数求系数？为什么？(c) 有多少项？(d) 按 $c$ 的降幂排列，第二项化简后是什么？",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 使用第六行，得到 1,5,10,10,5,1。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 一种合理选择：小指数用三角形能迅速看到全部系数；若只找某项，用组合数更直接。偏好与理由可不同。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) $5+1=6$ 项。(d) 第二项取 $k=1$：$\\binom51c^{5-1}d=5c^4d$。"
+          }
+        ],
+        "answer": "(a) 1,5,10,10,5,1；(b) 有理由的个人选择；(c) 6；(d) $5c^4d$。",
+        "printedPage": 539,
+        "pdfPage": 548,
+        "en": {
+          "prompt": "(a) What are the coefficients of $(c+d)^5$? (b) Do you prefer Pascal’s triangle or combinations to determine coefficients? Why? (c) How many terms are there? (d) What is the simplified second term when written in descending powers of $c$?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Use row 6 to get 1,5,10,10,5,1."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) One reasonable preference is Pascal’s triangle for small exponents because all coefficients are visible; combinations are more direct for just one term. Preferences and reasons may vary."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) There are $5+1=6$ terms. (d) The second term has $k=1$: $\\binom51c^{5-1}d=5c^4d$."
+            }
+          ],
+          "answer": "(a) 1,5,10,10,5,1; (b) a reasoned personal choice; (c) 6; (d) $5c^4d$.",
+          "label": "Your Turn · Example 1"
+        },
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "轮到你 · 例题 1",
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "(a) 用二项式定理展开 $(2a-3b)^4$。(b) $(4b-5)^6$ 的第三项是什么？(c) $(a^2-\\frac1a)^5$ 的哪一项化简后含 $a$？求出该项。",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 取第一项 $2a$、第二项 $-3b$，系数为 1,4,6,4,1。各项为 $(2a)^4,4(2a)^3(-3b),6(2a)^2(-3b)^2,4(2a)(-3b)^3,(-3b)^4$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "化简得到 $16a^4-96a^3b+216a^2b^2-216ab^3+81b^4$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(b) 第三项取 $k=2$：$t_3=\\binom62(4b)^4(-5)^2=15\\cdot256b^4\\cdot25=96000b^4$。"
+          },
+          {
+            "title": "步骤 4",
+            "body": "(c) 要求 $a\\ne0$。一般项 $t_{k+1}=\\binom5k(a^2)^{5-k}(-1/a)^k=(-1)^k\\binom5k a^{10-3k}$。令 $10-3k=1$，得 $k=3$，所以第四项为 $-\\binom53a=-10a$。"
+          }
+        ],
+        "answer": "(a) $16a^4-96a^3b+216a^2b^2-216ab^3+81b^4$；(b) $96000b^4$；(c) 第四项 $-10a$，$a\\ne0$。",
+        "printedPage": 540,
+        "pdfPage": 549,
+        "en": {
+          "prompt": "(a) Use the binomial theorem to expand $(2a-3b)^4$. (b) What is the third term of $(4b-5)^6$? (c) In $(a^2-\\frac1a)^5$, which simplified term contains $a$? Determine that term.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Use first term $2a$, second term $-3b$, and coefficients 1,4,6,4,1. The terms are $(2a)^4,4(2a)^3(-3b),6(2a)^2(-3b)^2,4(2a)(-3b)^3,(-3b)^4$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Simplifying gives $16a^4-96a^3b+216a^2b^2-216ab^3+81b^4$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b) The third term has $k=2$: $t_3=\\binom62(4b)^4(-5)^2=15\\cdot256b^4\\cdot25=96000b^4$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(c) Require $a\\ne0$. The general term is $t_{k+1}=\\binom5k(a^2)^{5-k}(-1/a)^k=(-1)^k\\binom5k a^{10-3k}$. Set $10-3k=1$, giving $k=3$, so the fourth term is $-\\binom53a=-10a$."
+            }
+          ],
+          "answer": "(a) $16a^4-96a^3b+216a^2b^2-216ab^3+81b^4$; (b) $96000b^4$; (c) fourth term $-10a$, $a\\ne0$.",
+          "label": "Example 2"
+        },
+        "id": "example-2",
+        "type": "example",
+        "label": "例题 2",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "$(2a-3b)^4$ 展开后各项的符号有什么规律？",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "第 $k+1$ 项含 $(-3b)^k$，其系数符号由 $(-1)^k$ 决定。$k=0,1,2,3,4$ 时系数符号依次为 $+,-,+,-,+$。"
+          }
+        ],
+        "answer": "系数正负交替，从正开始。",
+        "printedPage": 540,
+        "pdfPage": 549,
+        "en": {
+          "prompt": "What pattern occurs in the signs of the terms of $(2a-3b)^4$?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Term $k+1$ contains $(-3b)^k$, so its coefficient has sign $(-1)^k$. For $k=0,1,2,3,4$ the signs are $+,-,+,-,+$."
+            }
+          ],
+          "answer": "The coefficients alternate in sign, beginning positive.",
+          "label": "Example 2 · Sign question"
+        },
+        "id": "sidebar-signs",
+        "type": "practice",
+        "label": "例题 2 · 符号问题"
+      },
+      {
+        "prompt": "为什么 $(4b-5)^6$ 的第三项系数不使用 ${}_6C_3$？",
+        "concept": "specific-term",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "第一项用 $k=0$，第二项用 $k=1$，第三项用 $k=2$。一般项编号是 $k+1$，所以第三项用 ${}_6C_2$；${}_6C_3$ 对应第四项。"
+          }
+        ],
+        "answer": "第三项对应 $k=2$，不是 $k=3$。",
+        "printedPage": 541,
+        "pdfPage": 550,
+        "en": {
+          "prompt": "Why does the coefficient of the third term of $(4b-5)^6$ not involve ${}_6C_3$?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "The first term uses $k=0$, the second $k=1$, and the third $k=2$. The term number is $k+1$, so the third uses ${}_6C_2$; ${}_6C_3$ belongs to the fourth term."
+            }
+          ],
+          "answer": "The third term corresponds to $k=2$, not $k=3$.",
+          "label": "Example 2 · Term-index question"
+        },
+        "id": "sidebar-term-index",
+        "type": "practice",
+        "label": "例题 2 · 项号问题"
+      },
+      {
+        "prompt": "(a) $(2a-7)^8$ 有多少项？(b) $(2a-7)^8$ 的第四项是什么？(c) 用二项式定理求 $(3a+2b)^7$ 展开的前四项。",
+        "concept": "specific-term",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 项数为 $8+1=9$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 第四项取 $k=3$：$t_4=\\binom83(2a)^5(-7)^3=56\\cdot32a^5\\cdot(-343)=-614656a^5$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 取 $k=0,1,2,3$：$(3a)^7=2187a^7$；$7(3a)^6(2b)=10206a^6b$；$21(3a)^5(2b)^2=20412a^5b^2$；$35(3a)^4(2b)^3=22680a^4b^3$。"
+          }
+        ],
+        "answer": "(a) 9；(b) $-614656a^5$；(c) $2187a^7+10206a^6b+20412a^5b^2+22680a^4b^3+\\cdots$。",
+        "printedPage": 541,
+        "pdfPage": 550,
+        "en": {
+          "prompt": "(a) How many terms are in $(2a-7)^8$? (b) What is the fourth term of $(2a-7)^8$? (c) Use the binomial theorem to find the first four terms of $(3a+2b)^7$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) There are $8+1=9$ terms."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Term 4 uses $k=3$: $t_4=\\binom83(2a)^5(-7)^3=56\\cdot32a^5\\cdot(-343)=-614656a^5$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Use $k=0,1,2,3$: $(3a)^7=2187a^7$; $7(3a)^6(2b)=10206a^6b$; $21(3a)^5(2b)^2=20412a^5b^2$; $35(3a)^4(2b)^3=22680a^4b^3$."
+            }
+          ],
+          "answer": "(a) 9; (b) $-614656a^5$; (c) $2187a^7+10206a^6b+20412a^5b^2+22680a^4b^3+\\cdots$.",
+          "label": "Your Turn · Example 2"
+        },
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "轮到你 · 例题 2",
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "Project Corner：Art Presentation。手工或使用技术创作一件艺术作品，展示本数学课程的一个主题。决定用数学建模一个现实物体，或发挥想象创作；创作媒介不限。",
+        "concept": "counting-applications",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "创作任务：学生自行选择主题并实际制作作品。可核验示例方案是“帕斯卡三角形的奇偶图案”：从 1 出发，用相邻相加生成 20 行，再把奇数格与偶数格分别着色；附图仅是说明方案的数学示例，不声称是学生已完成的个人作品。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "选择任务：该示例选用想象创作而非现实物体建模；每行左右对称，由相邻数模 2 相加决定色彩，可解释为组合数的可视化。学生也可选择其他已学主题并说明数学规则。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "媒介任务：可使用方格纸、颜料、电子表格或绘图程序；制作时保留行号、颜色图例和一段说明，例如“第 5 行是 1,4,6,4,1，奇偶颜色为奇、偶、偶、偶、奇”。作品、媒介和个人说明由学生完成与提交。"
+          }
+        ],
+        "answer": "开放创作：无唯一作品。已给出可核验示例方案与数学依据；学生实际作品及个人选择待自行完成。",
+        "printedPage": 545,
+        "pdfPage": 554,
+        "en": {
+          "prompt": "Project Corner: Art Presentation. Create a piece of art by hand or with technology demonstrating a topic from this mathematics course. Decide whether to model a real-world object mathematically or create something using imagination. Use any medium you like.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Creation task: students choose a topic and actually produce their art. One verifiable sample proposal is “Parity in Pascal’s triangle”: generate 20 rows by adjacent sums, then colour odd and even entries differently. The image only illustrates the mathematical proposal; it is not claimed as a completed personal student artwork."
+            },
+            {
+              "title": "Step 2",
+              "body": "Choice task: the sample uses imagination rather than modelling an object. Each row is symmetric, and colours follow adjacent addition modulo 2, visualizing combinations. Students may instead choose another learned topic and explain its mathematical rule."
+            },
+            {
+              "title": "Step 3",
+              "body": "Medium task: use graph paper, paint, a spreadsheet, or drawing software. Include row labels, a colour legend, and an explanation such as “Row 5 is 1,4,6,4,1, coloured odd,even,even,even,odd.” Students complete and submit their own artifact, medium, and personal explanation."
+            }
+          ],
+          "answer": "Open creation: there is no unique artwork. A verifiable sample proposal and mathematical basis are supplied; students make their actual artwork and personal choices.",
+          "label": "Project Corner · Art Presentation"
+        },
+        "id": "project-art",
+        "type": "practice",
+        "label": "项目角 · 艺术展示",
+        "subpartIds": [
+          "create",
+          "choice",
+          "medium"
+        ],
+        "solutionImage": "assets/11-3-project-parity.png"
+      }
+    ],
+    "kind": "section"
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "prompt": "给出帕斯卡三角形若干行。求每种情形的下一行：(a) 1 3 3 1；(b) 1 7 21 35 35 21 7 1；(c) 1 10 45 120 210 252 210 120 45 10 1。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 两端补 1，内部为 $1+3,3+3,3+1$，得到 1,4,6,4,1。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 相邻和是 8,28,56,70,56,28,8，补上首尾 1。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 相邻和是 11,55,165,330,462,462,330,165,55,11，补上首尾 1。"
+          }
+        ],
+        "answer": "(a) 1,4,6,4,1；(b) 1,8,28,56,70,56,28,8,1；(c) 1,11,55,165,330,462,462,330,165,55,11,1。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "Some Pascal rows are given. Find the next row in each case: (a) 1 3 3 1; (b) 1 7 21 35 35 21 7 1; (c) 1 10 45 120 210 252 210 120 45 10 1.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Add 1 at each end and use $1+3,3+3,3+1$ inside: 1,4,6,4,1."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Adjacent sums are 8,28,56,70,56,28,8; add the two end 1s."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Adjacent sums are 11,55,165,330,462,462,330,165,55,11; add the two end 1s."
+            }
+          ],
+          "answer": "(a) 1,4,6,4,1; (b) 1,8,28,56,70,56,28,8,1; (c) 1,11,55,165,330,462,462,330,165,55,11,1."
+        },
+        "number": 1,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "用组合数表示每一行，保留 ${}_nC_r$ 形式：(a) 1 2 1；(b) 1 4 6 4 1；(c) 1 7 21 35 35 21 7 1。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 三个数对应 $n=2$，故 ${}_2C_0,{}_2C_1,{}_2C_2$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 五个数对应 $n=4$，故 ${}_4C_0,{}_4C_1,{}_4C_2,{}_4C_3,{}_4C_4$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 八个数对应 $n=7$，故 ${}_7C_0,{}_7C_1,{}_7C_2,{}_7C_3,{}_7C_4,{}_7C_5,{}_7C_6,{}_7C_7$。"
+          }
+        ],
+        "answer": "(a) ${}_2C_r$，$r=0,1,2$；(b) ${}_4C_r$，$r=0,1,2,3,4$；(c) ${}_7C_r$，$r=0,1,\\ldots,7$，均依次排列。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "Express each Pascal row using combinations, leaving each entry as ${}_nC_r$: (a) 1 2 1; (b) 1 4 6 4 1; (c) 1 7 21 35 35 21 7 1.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Three entries mean $n=2$: ${}_2C_0,{}_2C_1,{}_2C_2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Five entries mean $n=4$: ${}_4C_0,{}_4C_1,{}_4C_2,{}_4C_3,{}_4C_4$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Eight entries mean $n=7$: ${}_7C_0,{}_7C_1,{}_7C_2,{}_7C_3,{}_7C_4,{}_7C_5,{}_7C_6,{}_7C_7$."
+            }
+          ],
+          "answer": "(a) ${}_2C_r$, $r=0,1,2$; (b) ${}_4C_r$, $r=0,1,2,3,4$; (c) ${}_7C_r$, $r=0,1,\\ldots,7$, in order."
+        },
+        "number": 2,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "把每行圈出的项写成组合数：(a) 1 3 ③ 1；(b) 1 6 15 ⑳ 15 6 1；(c) ① 1。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 行对应 $n=3$，圈出的是第 3 个数，所以 $r=2$，为 ${}_3C_2=3$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) $n=6$，第 4 个数对应 $r=3$，为 ${}_6C_3=20$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) $n=1$，第 1 个数对应 $r=0$，为 ${}_1C_0=1$。"
+          }
+        ],
+        "answer": "(a) ${}_3C_2$；(b) ${}_6C_3$；(c) ${}_1C_0$。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "Express each circled entry as a combination: (a) the second 3 in 1 3 3 1; (b) 20 in 1 6 15 20 15 6 1; (c) the first 1 in 1 1.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The row has $n=3$; the circled third entry has $r=2$, giving ${}_3C_2=3$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Here $n=6$ and the fourth entry has $r=3$, giving ${}_6C_3=20$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Here $n=1$ and the first entry has $r=0$, giving ${}_1C_0=1$."
+            }
+          ],
+          "answer": "(a) ${}_3C_2$; (b) ${}_6C_3$; (c) ${}_1C_0$."
+        },
+        "number": 3,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/11-3-ex3-circles.png"
+      },
+      {
+        "prompt": "各展开式有多少项？(a) $(x-3y)^4$；(b) $(1+3t^2)^7$；(c) $(a+6)^q$。",
+        "concept": "specific-term",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 指数为 4，所以 $4+1=5$ 项。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 指数为 7，所以 $7+1=8$ 项；$t^2$ 不会改变二项式项数。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 在本节自然数指数条件下，$q+1$ 项；若允许 $q=0$，也正确给出 1 项。"
+          }
+        ],
+        "answer": "(a) 5；(b) 8；(c) $q+1$。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "How many terms are in each expansion? (a) $(x-3y)^4$; (b) $(1+3t^2)^7$; (c) $(a+6)^q$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The exponent is 4, giving $4+1=5$ terms."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) The exponent is 7, giving $7+1=8$ terms; $t^2$ does not change the binomial term count."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) For a natural-number exponent $q$, there are $q+1$ terms. If $q=0$ is allowed, the formula also gives 1 term."
+            }
+          ],
+          "answer": "(a) 5; (b) 8; (c) $q+1$."
+        },
+        "number": 4,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "用二项式定理展开：(a) $(x+y)^2$；(b) $(a+1)^3$；(c) $(1-p)^4$。",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 系数 1,2,1 给出 $x^2+2xy+y^2$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 系数 1,3,3,1 给出 $a^3+3a^2(1)+3a(1)^2+1=a^3+3a^2+3a+1$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 第二项为 $-p$，所以 $1+4(-p)+6(-p)^2+4(-p)^3+(-p)^4=1-4p+6p^2-4p^3+p^4$。"
+          }
+        ],
+        "answer": "(a) $x^2+2xy+y^2$；(b) $a^3+3a^2+3a+1$；(c) $1-4p+6p^2-4p^3+p^4$。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "Use the binomial theorem to expand: (a) $(x+y)^2$; (b) $(a+1)^3$; (c) $(1-p)^4$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Coefficients 1,2,1 give $x^2+2xy+y^2$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Coefficients 1,3,3,1 give $a^3+3a^2(1)+3a(1)^2+1=a^3+3a^2+3a+1$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) The second term is $-p$, so $1+4(-p)+6(-p)^2+4(-p)^3+(-p)^4=1-4p+6p^2-4p^3+p^4$."
+            }
+          ],
+          "answer": "(a) $x^2+2xy+y^2$; (b) $a^3+3a^2+3a+1$; (c) $1-4p+6p^2-4p^3+p^4$."
+        },
+        "number": 5,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "用二项式定理展开并化简：(a) $(a+3b)^3$；(b) $(3a-2b)^5$；(c) $(2x-5)^4$。",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) $a^3+3a^2(3b)+3a(3b)^2+(3b)^3=a^3+9a^2b+27ab^2+27b^3$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 使用 1,5,10,10,5,1：$(3a)^5+5(3a)^4(-2b)+10(3a)^3(-2b)^2+10(3a)^2(-2b)^3+5(3a)(-2b)^4+(-2b)^5$。化简为 $243a^5-810a^4b+1080a^3b^2-720a^2b^3+240ab^4-32b^5$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) $(2x)^4+4(2x)^3(-5)+6(2x)^2(25)+4(2x)(-125)+625=16x^4-160x^3+600x^2-1000x+625$。"
+          }
+        ],
+        "answer": "(a) $a^3+9a^2b+27ab^2+27b^3$；(b) $243a^5-810a^4b+1080a^3b^2-720a^2b^3+240ab^4-32b^5$；(c) $16x^4-160x^3+600x^2-1000x+625$。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "Expand and simplify using the binomial theorem: (a) $(a+3b)^3$; (b) $(3a-2b)^5$; (c) $(2x-5)^4$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $a^3+3a^2(3b)+3a(3b)^2+(3b)^3=a^3+9a^2b+27ab^2+27b^3$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Use 1,5,10,10,5,1: $(3a)^5+5(3a)^4(-2b)+10(3a)^3(-2b)^2+10(3a)^2(-2b)^3+5(3a)(-2b)^4+(-2b)^5$. This simplifies to $243a^5-810a^4b+1080a^3b^2-720a^2b^3+240ab^4-32b^5$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $(2x)^4+4(2x)^3(-5)+6(2x)^2(25)+4(2x)(-125)+625=16x^4-160x^3+600x^2-1000x+625$."
+            }
+          ],
+          "answer": "(a) $a^3+9a^2b+27ab^2+27b^3$; (b) $243a^5-810a^4b+1080a^3b^2-720a^2b^3+240ab^4-32b^5$; (c) $16x^4-160x^3+600x^2-1000x+625$."
+        },
+        "number": 6,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "求指定项并化简：(a) $(a+b)^9$ 的第六项；(b) $(x-3y)^6$ 的第四项；(c) $(1-2t)^{14}$ 的第七项；(d) $(4x+y)^4$ 的中间项；(e) $(3w^2+2)^8$ 的倒数第二项。",
+        "concept": "specific-term",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) $k=5$，$t_6=\\binom95a^4b^5=126a^4b^5$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) $k=3$，$t_4=\\binom63x^3(-3y)^3=20x^3(-27y^3)=-540x^3y^3$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) $k=6$，$t_7=\\binom{14}6(-2t)^6=3003\\cdot64t^6=192192t^6$。"
+          },
+          {
+            "title": "步骤 4",
+            "body": "(d) 一共 5 项，中间是第三项：$t_3=\\binom42(4x)^2y^2=96x^2y^2$。"
+          },
+          {
+            "title": "步骤 5",
+            "body": "(e) 一共 9 项，倒数第二是第八项，$k=7$：$t_8=\\binom87(3w^2)2^7=8\\cdot3\\cdot128w^2=3072w^2$。"
+          }
+        ],
+        "answer": "(a) $126a^4b^5$；(b) $-540x^3y^3$；(c) $192192t^6$；(d) $96x^2y^2$；(e) $3072w^2$。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "Determine the simplified specified term: (a) sixth term of $(a+b)^9$; (b) fourth term of $(x-3y)^6$; (c) seventh term of $(1-2t)^{14}$; (d) middle term of $(4x+y)^4$; (e) second-last term of $(3w^2+2)^8$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $k=5$: $t_6=\\binom95a^4b^5=126a^4b^5$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $k=3$: $t_4=\\binom63x^3(-3y)^3=20x^3(-27y^3)=-540x^3y^3$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) $k=6$: $t_7=\\binom{14}6(-2t)^6=3003\\cdot64t^6=192192t^6$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) There are 5 terms, so the third is central: $t_3=\\binom42(4x)^2y^2=96x^2y^2$."
+            },
+            {
+              "title": "Step 5",
+              "body": "(e) Of 9 terms, the second-last is term 8, so $k=7$: $t_8=\\binom87(3w^2)2^7=8\\cdot3\\cdot128w^2=3072w^2$."
+            }
+          ],
+          "answer": "(a) $126a^4b^5$; (b) $-540x^3y^3$; (c) $192192t^6$; (d) $96x^2y^2$; (e) $3072w^2$."
+        },
+        "number": 7,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      {
+        "prompt": "解释如何构建帕斯卡三角形。图中顶端 1 为第 1 行，接下来是 1 1、1 2 1、1 3 3 1、1 4 6 4 1、1 5 10 10 5 1。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "先写一个 1。每个新行首尾都写 1，内部每个数等于正上方左右两数之和。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "例如 1,2,1 产生 1,1+2,2+1,1，即 1,3,3,1；再产生 1,4,6,4,1。"
+          }
+        ],
+        "answer": "顶端 1、边缘 1、内部相邻相加。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "Explain how Pascal’s triangle is constructed. The top 1 is row 1; the next rows are 1 1; 1 2 1; 1 3 3 1; 1 4 6 4 1; 1 5 10 10 5 1.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Begin with a single 1. Start and end every new row with 1; each interior entry equals the sum of the two entries immediately above it."
+            },
+            {
+              "title": "Step 2",
+              "body": "For example, 1,2,1 gives 1,1+2,2+1,1, or 1,3,3,1; the next row is 1,4,6,4,1."
+            }
+          ],
+          "answer": "Start with 1, use edge 1s, and add adjacent entries inside."
+        },
+        "number": 8
+      },
+      {
+        "prompt": "(a) 求帕斯卡三角形前五行的各行总和。(b) 第九行的总和可用什么表达式表示？(c) 第 $n$ 行总和的公式是什么？",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) $1=1$；$1+1=2$；$1+2+1=4$；$1+3+3+1=8$；$1+4+6+4+1=16$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 每前进一步总和乘 2；第九行有 $2^8=256$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 第 $n$ 行对应指数 $n-1$。在 $(x+y)^{n-1}$ 中令 $x=y=1$，系数总和为 $(1+1)^{n-1}=2^{n-1}$，$n\\ge1$。"
+          }
+        ],
+        "answer": "(a) 1,2,4,8,16；(b) $2^8=256$；(c) $2^{n-1}$。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "(a) Find the sums of the first five rows of Pascal’s triangle. (b) What expression gives the sum of the ninth row? (c) What is a formula for the sum of row $n$?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $1=1$; $1+1=2$; $1+2+1=4$; $1+3+3+1=8$; $1+4+6+4+1=16$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Each row doubles the sum, so row 9 sums to $2^8=256$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Row $n$ corresponds to exponent $n-1$. Set $x=y=1$ in $(x+y)^{n-1}$ to get coefficient sum $(1+1)^{n-1}=2^{n-1}$ for $n\\ge1$."
+            }
+          ],
+          "answer": "(a) 1,2,4,8,16; (b) $2^8=256$; (c) $2^{n-1}$."
+        },
+        "number": 9,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "观察图中帕斯卡三角形的每个“冰球杆”图案。(a) 描述每根杆中数的一个规律。(b) 该规律是否适用于所有可能的冰球杆？解释。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 斜杆上各数之和等于弯头的数。例如橙色 $1+2+3=6$，绿色 $1+4=5$，蓝色 $1+5+15+35+70=126$，右侧橙色 $1+7+28+84=120$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 对整数 $0\\le r\\le m$，恒等式为 $\\binom rr+\\binom{r+1}r+\\cdots+\\binom mr=\\binom{m+1}{r+1}$。由帕斯卡关系 $\\binom jr=\\binom{j+1}{r+1}-\\binom j{r+1}$ 相加，中间项抵消，留下右端（把 $\\binom r{r+1}$ 视为 0）。镜像同样成立。"
+          }
+        ],
+        "answer": "(a) 斜杆的和等于弯头；(b) 对所有这种从边缘 1 开始的连续冰球杆成立。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "Examine each hockey-stick pattern in the given Pascal triangle. (a) Describe a pattern among the numbers in each stick. (b) Does it work for all possible hockey sticks? Explain.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The entries along a diagonal shaft sum to the number at its bend: orange $1+2+3=6$, green $1+4=5$, blue $1+5+15+35+70=126$, and right orange $1+7+28+84=120$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) For integers $0\\le r\\le m$, $\\binom rr+\\binom{r+1}r+\\cdots+\\binom mr=\\binom{m+1}{r+1}$. Pascal’s identity gives $\\binom jr=\\binom{j+1}{r+1}-\\binom j{r+1}$; adding cancels intermediate terms, leaving the right side (taking $\\binom r{r+1}=0$). Reflections also work."
+            }
+          ],
+          "answer": "(a) Shaft sum = bend entry; (b) yes, for every such continuous hockey stick beginning at an edge 1."
+        },
+        "number": 10,
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/11-3-ex10-hockey.png"
+      },
+      {
+        "prompt": "不展开 $(x+y)^{12}$、也不计算所有系数，回答：(a) 有多少项？(b) 第四项化简后是什么？(c) 什么 $r$ 使 ${}_{12}C_r$ 最大？最大系数是多少？",
+        "concept": "specific-term",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 项数 $12+1=13$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) $k=3$，$t_4=\\binom{12}3x^9y^3=\\frac{12\\cdot11\\cdot10}{6}x^9y^3=220x^9y^3$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 相邻系数比 $\\binom{12}{r+1}/\\binom{12}r=(12-r)/(r+1)$，在中间前大于 1，中间后小于 1；最大在 $r=6$，系数 $\\binom{12}6=12!/(6!6!)=924$。"
+          }
+        ],
+        "answer": "(a) 13；(b) $220x^9y^3$；(c) $r=6$，924。",
+        "printedPage": 542,
+        "pdfPage": 551,
+        "en": {
+          "prompt": "For $(x+y)^{12}$, without expanding or computing every coefficient: (a) how many terms are there? (b) what is the simplified fourth term? (c) for which $r$ is ${}_{12}C_r$ greatest, and what is the coefficient?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) There are $12+1=13$ terms."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $k=3$: $t_4=\\binom{12}3x^9y^3=\\frac{12\\cdot11\\cdot10}{6}x^9y^3=220x^9y^3$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) The ratio $\\binom{12}{r+1}/\\binom{12}r=(12-r)/(r+1)$ is above 1 before the centre and below 1 afterward. Thus the maximum occurs at $r=6$, where $\\binom{12}6=12!/(6!6!)=924$."
+            }
+          ],
+          "answer": "(a) 13; (b) $220x^9y^3$; (c) $r=6$, coefficient 924."
+        },
+        "number": 11,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "把每个展开式写成 $(a+b)^n$ 的形式，$n\\in\\mathbb N$：(a) ${}_4C_0x^4+{}_4C_1x^3y+{}_4C_2x^2y^2+{}_4C_3xy^3+{}_4C_4y^4$；(b) ${}_5C_0-{}_5C_1y+{}_5C_2y^2-{}_5C_3y^3+{}_5C_4y^4-{}_5C_5y^5$。",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 每项是 $\\binom4k x^{4-k}y^k$，$k=0,1,2,3,4$，所以原式为 $(x+y)^4$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 符号交替来自 $(-y)^k$。每项可写为 $\\binom5k1^{5-k}(-y)^k$，所以原式为 $[1+(-y)]^5=(1-y)^5$。"
+          }
+        ],
+        "answer": "(a) $(x+y)^4$；(b) $(1-y)^5$。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "Express each expansion in the form $(a+b)^n$, $n\\in\\mathbb N$: (a) ${}_4C_0x^4+{}_4C_1x^3y+{}_4C_2x^2y^2+{}_4C_3xy^3+{}_4C_4y^4$; (b) ${}_5C_0-{}_5C_1y+{}_5C_2y^2-{}_5C_3y^3+{}_5C_4y^4-{}_5C_5y^5$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Each term is $\\binom4k x^{4-k}y^k$ for $k=0,1,2,3,4$, so the expression is $(x+y)^4$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Alternating signs come from $(-y)^k$. Each term is $\\binom5k1^{5-k}(-y)^k$, giving $[1+(-y)]^5=(1-y)^5$."
+            }
+          ],
+          "answer": "(a) $(x+y)^4$; (b) $(1-y)^5$."
+        },
+        "number": 12,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "(a) Penelope 说，把帕斯卡三角形任一行读成一个数，都可以写为 $11^m$，其中 $m$ 是非负整数。你同意吗？解释。(b) $m$ 可以表示什么？",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 前五行的各项都是一位数，连写为 1,11,121,1331,14641，分别为 $11^0$ 到 $11^4$。但第六行 1,5,10,10,5,1 直接连写为 15101051，而 $11^5=161051$，所以“任一行直接连写”不正确。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "若把各项当作十进制各位的系数并正确进位，则永远有 $\\binom n0 10^n+\\binom n1 10^{n-1}+\\cdots+\\binom nn=11^n$。第六行算成 $100000+50000+10000+1000+50+1=161051$，不是简单连写。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(b) 在有效的进位解释中，$m$ 是行号减 1，也就是 $(10+1)^m$ 的指数。"
+          }
+        ],
+        "answer": "(a) 不同意不进位的直接连写；带十进制进位的解释成立。(b) $m=$ 行号 $-1$。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "(a) Penelope claims that reading any Pascal row as a single number produces $11^m$ for a whole number $m$. Do you agree? Explain. (b) What could $m$ represent?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) The first five rows contain only single-digit entries, giving 1,11,121,1331,14641, or $11^0$ through $11^4$. But concatenating row 6, 1,5,10,10,5,1, gives 15101051, whereas $11^5=161051$. Thus arbitrary direct concatenation is false."
+            },
+            {
+              "title": "Step 2",
+              "body": "If entries are treated as decimal place coefficients and carrying is performed, $\\binom n0 10^n+\\binom n1 10^{n-1}+\\cdots+\\binom nn=11^n$ always holds. Row 6 gives $100000+50000+10000+1000+50+1=161051$, rather than mere concatenation."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b) Under the valid carrying interpretation, $m$ is the row number minus 1, the exponent in $(10+1)^m$."
+            }
+          ],
+          "answer": "(a) Direct concatenation is false in general; the place-value interpretation with carrying is valid. (b) $m=$ row number $-1$."
+        },
+        "number": 13,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "(a) 展开 $(x+y)^3$ 与 $(x-y)^3$，比较它们。(b) 证明 $(x+y)^3+(x-y)^3=2x(x^2+3y^2)$。(c) 求 $(x+y)^3-(x-y)^3$，并比较 (b)、(c)。",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) $(x+y)^3=x^3+3x^2y+3xy^2+y^3$；$(x-y)^3=x^3-3x^2y+3xy^2-y^3$。$y$ 的奇数次幂项变号，偶数次幂项相同。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 相加时奇数次幂项抵消：$2x^3+6xy^2=2x(x^2+3y^2)$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 相减时偶数次幂项抵消：$6x^2y+2y^3=2y(3x^2+y^2)$。两个结果交换 $x,y$ 后相同；和保留 $y$ 的偶数次幂，差保留奇数次幂。"
+          }
+        ],
+        "answer": "(a) 奇数次 $y$ 项变号；(b) $2x(x^2+3y^2)$；(c) $2y(3x^2+y^2)$。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "(a) Expand $(x+y)^3$ and $(x-y)^3$. How do they differ? (b) Show that $(x+y)^3+(x-y)^3=2x(x^2+3y^2)$. (c) Find $(x+y)^3-(x-y)^3$ and compare with (b).",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) $(x+y)^3=x^3+3x^2y+3xy^2+y^3$ and $(x-y)^3=x^3-3x^2y+3xy^2-y^3$. Odd powers of $y$ change sign; even powers do not."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Adding cancels the odd-power terms: $2x^3+6xy^2=2x(x^2+3y^2)$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Subtracting cancels the even-power terms: $6x^2y+2y^3=2y(3x^2+y^2)$. The results exchange $x$ and $y$. The sum retains even powers of $y$ and the difference retains odd powers."
+            }
+          ],
+          "answer": "(a) Odd powers of $y$ change sign; (b) $2x(x^2+3y^2)$; (c) $2y(3x^2+y^2)$."
+        },
+        "number": 14,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "你邀请五位朋友吃晚饭，却忘记要求回复。(a) 晚餐来客人数可能有哪些情形？(b) 可能有哪些朋友组合来吃饭，共多少种？(c) (b) 的答案与帕斯卡三角形有什么关系？",
+        "concept": "counting-applications",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 只数被邀请的朋友，可能有 0,1,2,3,4,5 位到场。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 来 $r$ 位有 $\\binom5r$ 种组合，各人数依次为 1,5,10,10,5,1 种，总计 $1+5+10+10+5+1=32$。也可每位来/不来两种独立选择，共 $2^5=32$ 个子集。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 按人数分类的六个计数就是帕斯卡三角形第六行，所有组合数是该行总和。"
+          }
+        ],
+        "answer": "(a) 0–5 位朋友；(b) 32 种，包括无人来；(c) 第六行的总和。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "You invite five friends for dinner but forget to ask for a reply. (a) What numbers of dinner guests are possible? (b) How many combinations of friends could come? (c) How does (b) relate to Pascal’s triangle?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Counting the invited friends, there may be 0,1,2,3,4,5 guests."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Exactly $r$ friends can attend in $\\binom5r$ ways, giving 1,5,10,10,5,1 ways. The total is $1+5+10+10+5+1=32$. Equivalently, each friend either attends or does not, giving $2^5=32$ subsets."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) The six counts by group size are row 6 of Pascal’s triangle, and all combinations sum to the row total."
+            }
+          ],
+          "answer": "(a) 0–5 friends; (b) 32 combinations, including nobody; (c) the sum of row 6."
+        },
+        "number": 15,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "prompt": "(a) 画掷硬币三次的树图，用 H 表示正面、T 表示反面；沿分支列出所有 H、T 排列。(b) 用乘法展开 $(H+T)^3$，先把各项完整写出（如 HHH），应有八个不同的乘积，再写作 $H^3$ 等形式并合并同类项。(c) HHH 或 $H^3$ 在 (a)、(b) 中表示什么？解释 $3\\mathrm{HHT}$ 或 $3H^2T$ 表示什么。",
+        "concept": "counting-applications",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 每次分 H/T 两支，三层叶端依次为 HHH,HHT,HTH,HTT,THH,THT,TTH,TTT，共 $2^3=8$ 种有序结果。附树图完整标明三次掷币。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) $(H+T)(H+T)(H+T)=\\mathrm{HHH}+\\mathrm{HHT}+\\mathrm{HTH}+\\mathrm{HTT}+\\mathrm{THH}+\\mathrm{THT}+\\mathrm{TTH}+\\mathrm{TTT}$。乘法交换后得到 $H^3+H^2T+H^2T+HT^2+H^2T+HT^2+HT^2+T^3=H^3+3H^2T+3HT^2+T^3$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) HHH 是三次全正面的唯一路径；$H^3$ 是该乘积。$3H^2T$ 的系数 3 统计恰有两次 H、一次 T 的 HHT,HTH,THH 三个顺序，不是把 HHT 同一路径重复三次。书中的 $3\\mathrm{HHT}$ 是合并交换乘积的简写。"
+          }
+        ],
+        "answer": "(a) 八条路径如树图；(b) $H^3+3H^2T+3HT^2+T^3$；(c) $H^3$ 对应全正面，$3H^2T$ 对应恰两正一反的三个排列。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "(a) Draw a tree diagram for three coin tosses, using H for heads and T for tails; list all arrangements along its branches. (b) Expand $(H+T)^3$ by multiplying, first writing all eight products in full (such as HHH), then writing $H^3$ and combining like terms. (c) What do HHH or $H^3$ represent in (a) and (b)? Explain what $3\\mathrm{HHT}$ or $3H^2T$ represents.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Branch into H/T at each toss. The eight leaves are HHH,HHT,HTH,HTT,THH,THT,TTH,TTT, giving $2^3=8$ ordered outcomes. The tree labels all three tosses."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) $(H+T)(H+T)(H+T)=\\mathrm{HHH}+\\mathrm{HHT}+\\mathrm{HTH}+\\mathrm{HTT}+\\mathrm{THH}+\\mathrm{THT}+\\mathrm{TTH}+\\mathrm{TTT}$. Commuting factors gives $H^3+H^2T+H^2T+HT^2+H^2T+HT^2+HT^2+T^3=H^3+3H^2T+3HT^2+T^3$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) HHH is the unique all-heads path; $H^3$ is its product. The coefficient 3 in $3H^2T$ counts HHT,HTH,THH, the three orders with two H and one T. It does not mean the identical HHT path occurs three times; the book’s $3\\mathrm{HHT}$ abbreviates collection of commuting products."
+            }
+          ],
+          "answer": "(a) Eight tree paths; (b) $H^3+3H^2T+3HT^2+T^3$; (c) $H^3$ represents all heads, while $3H^2T$ counts the three orders with two heads and one tail."
+        },
+        "number": 16,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/11-3-ex16-tree.png"
+      },
+      {
+        "prompt": "用二项式定理展开并化简：(a) $(\\frac ab+2)^3$；(b) $(\\frac ab-a)^4$；(c) $(1-\\frac x2)^6$；(d) $(2x^2-\\frac1x)^4$。",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) $b\\ne0$。$(a/b)^3+3(a/b)^2(2)+3(a/b)(2)^2+2^3=\\frac{a^3}{b^3}+\\frac{6a^2}{b^2}+\\frac{12a}{b}+8$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) $b\\ne0$。$(a/b)^4+4(a/b)^3(-a)+6(a/b)^2(-a)^2+4(a/b)(-a)^3+(-a)^4=\\frac{a^4}{b^4}-\\frac{4a^4}{b^3}+\\frac{6a^4}{b^2}-\\frac{4a^4}b+a^4$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 使用系数 1,6,15,20,15,6,1 及 $(-x/2)^k$，得到 $1-3x+\\frac{15}4x^2-\\frac52x^3+\\frac{15}{16}x^4-\\frac3{16}x^5+\\frac1{64}x^6$。"
+          },
+          {
+            "title": "步骤 4",
+            "body": "(d) $x\\ne0$。$(2x^2)^4+4(2x^2)^3(-1/x)+6(2x^2)^2(1/x^2)+4(2x^2)(-1/x^3)+1/x^4=16x^8-32x^5+24x^2-\\frac8x+\\frac1{x^4}$。"
+          }
+        ],
+        "answer": "(a) $\\frac{a^3}{b^3}+\\frac{6a^2}{b^2}+\\frac{12a}{b}+8$；(b) $\\frac{a^4}{b^4}-\\frac{4a^4}{b^3}+\\frac{6a^4}{b^2}-\\frac{4a^4}b+a^4$；均 $b\\ne0$。(c) $1-3x+\\frac{15}4x^2-\\frac52x^3+\\frac{15}{16}x^4-\\frac3{16}x^5+\\frac1{64}x^6$；(d) $16x^8-32x^5+24x^2-\\frac8x+\\frac1{x^4}$，$x\\ne0$。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "Expand and simplify using the binomial theorem: (a) $(\\frac ab+2)^3$; (b) $(\\frac ab-a)^4$; (c) $(1-\\frac x2)^6$; (d) $(2x^2-\\frac1x)^4$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Require $b\\ne0$. $(a/b)^3+3(a/b)^2(2)+3(a/b)(2)^2+2^3=\\frac{a^3}{b^3}+\\frac{6a^2}{b^2}+\\frac{12a}{b}+8$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Require $b\\ne0$. $(a/b)^4+4(a/b)^3(-a)+6(a/b)^2(-a)^2+4(a/b)(-a)^3+(-a)^4=\\frac{a^4}{b^4}-\\frac{4a^4}{b^3}+\\frac{6a^4}{b^2}-\\frac{4a^4}b+a^4$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Use coefficients 1,6,15,20,15,6,1 with $(-x/2)^k$ to obtain $1-3x+\\frac{15}4x^2-\\frac52x^3+\\frac{15}{16}x^4-\\frac3{16}x^5+\\frac1{64}x^6$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) Require $x\\ne0$. $(2x^2)^4+4(2x^2)^3(-1/x)+6(2x^2)^2(1/x^2)+4(2x^2)(-1/x^3)+1/x^4=16x^8-32x^5+24x^2-\\frac8x+\\frac1{x^4}$."
+            }
+          ],
+          "answer": "(a) $\\frac{a^3}{b^3}+\\frac{6a^2}{b^2}+\\frac{12a}{b}+8$; (b) $\\frac{a^4}{b^4}-\\frac{4a^4}{b^3}+\\frac{6a^4}{b^2}-\\frac{4a^4}b+a^4$; both require $b\\ne0$. (c) $1-3x+\\frac{15}4x^2-\\frac52x^3+\\frac{15}{16}x^4-\\frac3{16}x^5+\\frac1{64}x^6$; (d) $16x^8-32x^5+24x^2-\\frac8x+\\frac1{x^4}$, $x\\ne0$."
+        },
+        "number": 17,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "prompt": "(a) 求 $(a-3b^3)^8$ 的中间项。(b) 求 $(x^2-\\frac1x)^{10}$ 中含 $x^{11}$ 的项。",
+        "concept": "specific-term",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 共 9 项，中间为第五项，$k=4$。$t_5=\\binom84a^4(-3b^3)^4=70\\cdot81a^4b^{12}=5670a^4b^{12}$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) $x\\ne0$，$t_{k+1}=\\binom{10}k(x^2)^{10-k}(-1/x)^k=(-1)^k\\binom{10}k x^{20-3k}$。令 $20-3k=11$ 得 $k=3$，第四项 $t_4=-120x^{11}$。"
+          }
+        ],
+        "answer": "(a) 第五项 $5670a^4b^{12}$；(b) 第四项 $-120x^{11}$，$x\\ne0$。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "(a) Determine the middle term of $(a-3b^3)^8$. (b) Determine the term containing $x^{11}$ in $(x^2-\\frac1x)^{10}$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Of 9 terms, the fifth is central: $k=4$. $t_5=\\binom84a^4(-3b^3)^4=70\\cdot81a^4b^{12}=5670a^4b^{12}$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Require $x\\ne0$. $t_{k+1}=\\binom{10}k(x^2)^{10-k}(-1/x)^k=(-1)^k\\binom{10}k x^{20-3k}$. Set $20-3k=11$ to get $k=3$, so term 4 is $-120x^{11}$."
+            }
+          ],
+          "answer": "(a) Fifth term $5670a^4b^{12}$; (b) fourth term $-120x^{11}$, $x\\ne0$."
+        },
+        "number": 18,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "(a) 求 $(x^2-\\frac2x)^{12}$ 的常数项。(b) 求 $(y-\\frac1{y^2})^{12}$ 的常数项。",
+        "concept": "specific-term",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) $x\\ne0$。$t_{k+1}=\\binom{12}k(-2)^kx^{24-3k}$。常数项要求 $24-3k=0$，所以 $k=8$ 合法，得到第九项 $\\binom{12}8(-2)^8=495\\cdot256=126720$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) $y\\ne0$。$t_{k+1}=\\binom{12}k(-1)^ky^{12-3k}$。令 $12-3k=0$，得 $k=4$，第五项 $\\binom{12}4(-1)^4=495$。"
+          }
+        ],
+        "answer": "(a) 126720，$x\\ne0$；(b) 495，$y\\ne0$。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "(a) Determine the constant term of $(x^2-\\frac2x)^{12}$. (b) What is the constant term of $(y-\\frac1{y^2})^{12}$?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Require $x\\ne0$. $t_{k+1}=\\binom{12}k(-2)^kx^{24-3k}$. Set $24-3k=0$ to get the valid $k=8$; term 9 is $\\binom{12}8(-2)^8=495\\cdot256=126720$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Require $y\\ne0$. $t_{k+1}=\\binom{12}k(-1)^ky^{12-3k}$. Set $12-3k=0$, so $k=4$; term 5 is $\\binom{12}4(-1)^4=495$."
+            }
+          ],
+          "answer": "(a) 126720, $x\\ne0$; (b) 495, $y\\ne0$."
+        },
+        "number": 19,
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "$(2x-m)^7$ 的展开式中有一项为 $-15120x^4y^3$。求 $m$。",
+        "concept": "specific-term",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "$x$ 的四次幂要求 $7-k=4$，即 $k=3$。该项为 $\\binom73(2x)^4(-m)^3=-560x^4m^3$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "比较多项式项系数：$-560m^3=-15120y^3$，所以 $m^3=27y^3$。在实数变量下取立方根得到 $m=3y$；代回 $35(2x)^4(-3y)^3=-15120x^4y^3$。"
+          }
+        ],
+        "answer": "$m=3y$（实数情形）。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "One term in the expansion of $(2x-m)^7$ is $-15120x^4y^3$. Determine $m$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "The fourth power of $x$ requires $7-k=4$, so $k=3$. That term is $\\binom73(2x)^4(-m)^3=-560x^4m^3$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Compare polynomial coefficients: $-560m^3=-15120y^3$, so $m^3=27y^3$. Taking real cube roots gives $m=3y$. Substitution gives $35(2x)^4(-3y)^3=-15120x^4y^3$."
+            }
+          ],
+          "answer": "$m=3y$ for real variables."
+        },
+        "number": 20
+      },
+      {
+        "prompt": "MINI LAB：有学生认为帕斯卡三角形只适合小指数。与同伴研究能写任一行的规律。第五行 1,4,6,4,1 的相邻乘数如图为 $4/1,3/2,2/3,1/4$。Step 1：乘数有什么规律？用第六行 1,5,10,10,5,1 检查。Step 2：行号与第二个数有什么关系？Step 3：第 21 行前两个数是什么？该行连续项之间的乘数是什么？",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "Step 1：对含 $n+1$ 个数的一行，从 1 开始，第 $k+1$ 个数到第 $k+2$ 个数的乘数是 $(n-k)/(k+1)$，$k=0,\\ldots,n-1$。分子递减，分母递增。第六行用 $5/1,4/2,3/3,2/4,1/5$：$1\\to5\\to10\\to10\\to5\\to1$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "Step 2：第 $r$ 行对应 $n=r-1$，第二个数为 $\\binom{r-1}1=r-1$，比行号少 1。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "Step 3：第 21 行前两个数为 1,20；连续乘数为 $20/1,19/2,18/3,17/4,16/5,15/6,14/7,13/8,12/9,11/10,10/11,9/12,8/13,7/14,6/15,5/16,4/17,3/18,2/19,1/20$。该规律来自 $\\binom n{k+1}/\\binom nk=(n-k)/(k+1)$。"
+          }
+        ],
+        "answer": "Step 1：乘数 $(n-k)/(k+1)$；Step 2：第二个数 $=$ 行号 $-1$；Step 3：1,20，依次乘 $(20-k)/(k+1)$，$k=0,\\ldots,19$。",
+        "printedPage": 543,
+        "pdfPage": 552,
+        "en": {
+          "prompt": "MINI LAB: Some students say Pascal’s triangle is useful only for small powers. Work with a partner to find a pattern for any row. In row 5, 1,4,6,4,1, the successive multipliers shown are $4/1,3/2,2/3,1/4$. Step 1: What pattern do you see? Check row 6, 1,5,10,10,5,1. Step 2: How are the row number and second entry related? Step 3: What are the first two terms of row 21 and the multipliers between successive terms?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Step 1: For a row with $n+1$ entries, start with 1 and multiply entry $k+1$ by $(n-k)/(k+1)$ to get entry $k+2$, for $k=0,\\ldots,n-1$. Numerators decrease and denominators increase. Row 6 uses $5/1,4/2,3/3,2/4,1/5$: $1\\to5\\to10\\to10\\to5\\to1$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Step 2: Row $r$ has $n=r-1$, so its second entry is $\\binom{r-1}1=r-1$, one less than the row number."
+            },
+            {
+              "title": "Step 3",
+              "body": "Step 3: Row 21 begins 1,20. Its multipliers are $20/1,19/2,18/3,17/4,16/5,15/6,14/7,13/8,12/9,11/10,10/11,9/12,8/13,7/14,6/15,5/16,4/17,3/18,2/19,1/20$. The rule follows from $\\binom n{k+1}/\\binom nk=(n-k)/(k+1)$."
+            }
+          ],
+          "answer": "Step 1: multiplier $(n-k)/(k+1)$; Step 2: second entry = row number $-1$; Step 3: 1,20, then multipliers $(20-k)/(k+1)$, $k=0,\\ldots,19$."
+        },
+        "number": 21,
+        "subpartIds": [
+          "step1",
+          "step2",
+          "step3"
+        ],
+        "sourceImage": "assets/11-3-ex21-multipliers.png"
+      },
+      {
+        "prompt": "所示莱布尼茨三角形前五行为：$1$；$1/2,1/2$；$1/3,1/6,1/3$；$1/4,1/12,1/12,1/4$；$1/5,1/20,1/30,1/20,1/5$。(a) 每个数是哪两个数之和？它不同于帕斯卡三角形。(b) 写出接下来两行。(c) 描述至少两个规律。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 每个数是下一行左下和右下相邻两数之和。例如 $1/3=1/4+1/12$，$1/6=1/12+1/12$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 第六行：$1/6,1/30,1/60,1/60,1/30,1/6$；第七行：$1/7,1/42,1/105,1/140,1/105,1/42,1/7$。可从边缘 $1/r$ 开始，用上方数减去已知下方相邻数递推；例如 $1/5-1/6=1/30$，$1/20-1/30=1/60$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 每行左右对称；第 $r$ 行两端为 $1/r$。更一般，第 $r$ 行第 $k+1$ 项是 $1/[r\\binom{r-1}k]$，$0\\le k\\le r-1$，可核对前述各行。"
+          }
+        ],
+        "answer": "(a) 下方相邻两数相加；(b) 第六、七行如上；(c) 对称、边缘为行号的倒数，以及 $1/[r\\binom{r-1}k]$。",
+        "printedPage": 544,
+        "pdfPage": 553,
+        "en": {
+          "prompt": "The first five Leibniz-triangle rows are $1$; $1/2,1/2$; $1/3,1/6,1/3$; $1/4,1/12,1/12,1/4$; $1/5,1/20,1/30,1/20,1/5$. (a) Which two entries add to each entry, unlike Pascal’s triangle? (b) Write the next two rows. (c) Describe at least two patterns.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Each entry is the sum of the two adjacent entries below it: $1/3=1/4+1/12$ and $1/6=1/12+1/12$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Row 6 is $1/6,1/30,1/60,1/60,1/30,1/6$; row 7 is $1/7,1/42,1/105,1/140,1/105,1/42,1/7$. Begin with edge $1/r$ and subtract a known lower entry from the upper one: $1/5-1/6=1/30$, $1/20-1/30=1/60$."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) Every row is symmetric, and row $r$ has edge entries $1/r$. More generally, its entry $k+1$ is $1/[r\\binom{r-1}k]$, $0\\le k\\le r-1$, which verifies the listed rows."
+            }
+          ],
+          "answer": "(a) Sum adjacent entries below; (b) rows 6 and 7 as listed; (c) symmetry, reciprocal-row edges, and $1/[r\\binom{r-1}k]$."
+        },
+        "number": 22,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/11-3-ex22-leibniz.png"
+      },
+      {
+        "prompt": "说明如何用二项式定理展开三项式；展开并化简 $(a+b+c)^3$。",
+        "concept": "binomial-expansion",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "把 $a+b$ 作为第一项：$[(a+b)+c]^3=(a+b)^3+3(a+b)^2c+3(a+b)c^2+c^3$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "分别展开 $(a+b)^3=a^3+3a^2b+3ab^2+b^3$、$(a+b)^2=a^2+2ab+b^2$；代入得到 $a^3+3a^2b+3ab^2+b^3+3a^2c+6abc+3b^2c+3ac^2+3bc^2+c^3$。"
+          }
+        ],
+        "answer": "$a^3+b^3+c^3+3a^2b+3a^2c+3ab^2+3b^2c+3ac^2+3bc^2+6abc$。",
+        "printedPage": 544,
+        "pdfPage": 553,
+        "en": {
+          "prompt": "Show how to expand a trinomial using the binomial theorem. Expand and simplify $(a+b+c)^3$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "Treat $a+b$ as the first term: $[(a+b)+c]^3=(a+b)^3+3(a+b)^2c+3(a+b)c^2+c^3$."
+            },
+            {
+              "title": "Step 2",
+              "body": "Expand $(a+b)^3=a^3+3a^2b+3ab^2+b^3$ and $(a+b)^2=a^2+2ab+b^2$; substitution gives $a^3+3a^2b+3ab^2+b^3+3a^2c+6abc+3b^2c+3ac^2+3bc^2+c^3$."
+            }
+          ],
+          "answer": "$a^3+b^3+c^3+3a^2b+3a^2c+3ab^2+3b^2c+3ac^2+3bc^2+6abc$."
+        },
+        "number": 23
+      },
+      {
+        "prompt": "(a) 按所示表格完成圆周上 1–6 个点的情况：列出点数、任意两点连成的线段数，以及三角形、四边形、五边形、六边形数。自行画 3、4、5、6 个点的图；表中不写零。(b) 说明每行数与帕斯卡三角形的关系。(c) 圆上有 8 个点时，预计各数是多少？",
+        "concept": "counting-applications",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 圆周上任取 $k$ 个不同点（$k\\ge3$）唯一形成一个凸 $k$ 边形；线段用两点。所以各列为 $\\binom n1,\\binom n2,\\binom n3,\\binom n4,\\binom n5,\\binom n6$，$k>n$ 留空。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "按“点、线段、三角形、四边形、五边形、六边形”顺序：\n1：1, —, —, —, —, —\n2：2, 1, —, —, —, —\n3：3, 3, 1, —, —, —\n4：4, 6, 4, 1, —, —\n5：5, 10, 10, 5, 1, —\n6：6, 15, 20, 15, 6, 1。\n“—”表示按题意留空，不写零。附图给出 3–6 点及连接线。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(b) 对 $n$ 个点，各行来自帕斯卡第 $n+1$ 行，省略开头 $\\binom n0=1$，且只列到六边形这一列。"
+          },
+          {
+            "title": "步骤 4",
+            "body": "(c) $n=8$ 时：$\\binom81=8$，$\\binom82=28$，$\\binom83=56$，$\\binom84=70$，$\\binom85=56$，$\\binom86=28$。"
+          }
+        ],
+        "answer": "(a) 表格与图如解析；(b) 第 $n+1$ 行去掉开头 1，取所列各列；(c) 8,28,56,70,56,28。",
+        "printedPage": 544,
+        "pdfPage": 553,
+        "en": {
+          "prompt": "(a) Complete a table like the given one for 1–6 points on a circle: points, line segments joining any two points, triangles, quadrilaterals, pentagons, and hexagons. Draw diagrams for 3,4,5,6 points. Omit zero values. (b) Relate each table row to Pascal’s triangle. (c) What values would you expect for 8 points?",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Any $k$ distinct points on a circle uniquely define a convex $k$-gon for $k\\ge3$; a line segment uses two points. The columns are $\\binom n1,\\binom n2,\\binom n3,\\binom n4,\\binom n5,\\binom n6$, leaving $k>n$ blank."
+            },
+            {
+              "title": "Step 2",
+              "body": "In order points, segments, triangles, quadrilaterals, pentagons, hexagons:\n1: 1, —, —, —, —, —\n2: 2, 1, —, —, —, —\n3: 3, 3, 1, —, —, —\n4: 4, 6, 4, 1, —, —\n5: 5, 10, 10, 5, 1, —\n6: 6, 15, 20, 15, 6, 1.\nA dash denotes a blank cell, omitting zeros as instructed. The solution figure draws the 3–6-point cases with connecting segments."
+            },
+            {
+              "title": "Step 3",
+              "body": "(b) For $n$ points, the row comes from Pascal row $n+1$, omitting the initial $\\binom n0=1$ and stopping at the hexagon column."
+            },
+            {
+              "title": "Step 4",
+              "body": "(c) For $n=8$: $\\binom81=8$, $\\binom82=28$, $\\binom83=56$, $\\binom84=70$, $\\binom85=56$, $\\binom86=28$."
+            }
+          ],
+          "answer": "(a) Table and diagrams above; (b) row $n+1$ without the first 1, through the listed columns; (c) 8,28,56,70,56,28."
+        },
+        "number": 24,
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/11-3-ex24-table.png",
+        "solutionImage": "assets/11-3-ex24-circles.png"
+      },
+      {
+        "prompt": "实数 $e$ 是自然对数的底，并用于增长、衰减及阶乘近似。给定 $e=\\frac1{0!}+\\frac1{1!}+\\frac1{2!}+\\frac1{3!}+\\frac1{4!}+\\cdots$。(a) 用前五项求 $e$ 的近似值。(b) 用七项、八项时近似值如何变化？得出什么结论？(c) 计算器上的 $e$ 是多少？(d) 用 Stirling 公式 $n!\\approx(n/e)^n\\sqrt{2\\pi n}$ 估计 $15!$，与真值比较。(e) 更精确的变式为 $n!\\approx(n/e)^n\\sqrt{2\\pi n}(1+\\frac1{12n})$；用原公式与变式比较 $50!$ 的估计值。",
+        "concept": "counting-applications",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 因 $0!=1$，前五项为 $1+1+1/2+1/6+1/24=65/24\\approx2.708333333$。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 七项至 $1/6!$：$1957/720\\approx2.718055556$；八项至 $1/7!$：$685/252\\approx2.718253968$。正项不断加入，近似值递增并从下方趋近 $e$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "(c) 标准计算器显示随精度不同，例如 $e\\approx2.718281828459045$。这是数学常数的参考值，不是声称取得某位学生的计算器读数。"
+          },
+          {
+            "title": "步骤 4",
+            "body": "(d) $(15/e)^{15}\\sqrt{30\\pi}\\approx1.300430722199\\times10^{12}$；真值 $15!=1307674368000\\approx1.307674368000\\times10^{12}$。原公式偏低约 $7.24365\\times10^9$，相对误差约 $0.55393\\%$。"
+          },
+          {
+            "title": "步骤 5",
+            "body": "(e) 真值 $50!\\approx3.041409320171\\times10^{64}$。原公式 $\\approx3.036344593938\\times10^{64}$，偏低约 $0.166526\\%$。乘修正因子 $1+1/600=601/600$ 后得 $\\approx3.041405168261\\times10^{64}$，偏低约 $0.000136513\\%$，明显更精确。"
+          }
+        ],
+        "answer": "(a) 2.708333333；(b) 2.718055556、2.718253968；(c) 2.718281828459045（参考）；(d) $1.300430722199\\times10^{12}$，略低；(e) $3.036344593938\\times10^{64}$ 与 $3.041405168261\\times10^{64}$，修正公式更准确。",
+        "printedPage": 544,
+        "pdfPage": 553,
+        "en": {
+          "prompt": "The real number $e$ is the base of natural logarithms and occurs in growth, decay, and factorial approximation. Given $e=\\frac1{0!}+\\frac1{1!}+\\frac1{2!}+\\frac1{3!}+\\frac1{4!}+\\cdots$: (a) approximate $e$ using the first five terms; (b) how do seven and eight terms change the approximation, and what do you conclude? (c) What is $e$ on your calculator? (d) Use Stirling’s formula $n!\\approx(n/e)^n\\sqrt{2\\pi n}$ to estimate $15!$ and compare with its true value. (e) Compare estimates for $50!$ from that formula and the refinement $n!\\approx(n/e)^n\\sqrt{2\\pi n}(1+\\frac1{12n})$.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) Since $0!=1$, the first five terms are $1+1+1/2+1/6+1/24=65/24\\approx2.708333333$."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Seven terms, through $1/6!$, give $1957/720\\approx2.718055556$; eight terms, through $1/7!$, give $685/252\\approx2.718253968$. Adding positive terms increases the estimates toward $e$ from below."
+            },
+            {
+              "title": "Step 3",
+              "body": "(c) A standard reference value is $e\\approx2.718281828459045$; displayed digits vary by calculator. This is not a claimed reading from a student’s device."
+            },
+            {
+              "title": "Step 4",
+              "body": "(d) $(15/e)^{15}\\sqrt{30\\pi}\\approx1.300430722199\\times10^{12}$; the true value is $15!=1307674368000\\approx1.307674368000\\times10^{12}$. The estimate is low by about $7.24365\\times10^9$, a relative error of about $0.55393\\%$."
+            },
+            {
+              "title": "Step 5",
+              "body": "(e) The true value is $50!\\approx3.041409320171\\times10^{64}$. The basic formula gives $3.036344593938\\times10^{64}$, about $0.166526\\%$ low. Multiplying by $1+1/600=601/600$ gives $3.041405168261\\times10^{64}$, about $0.000136513\\%$ low, substantially improving accuracy."
+            }
+          ],
+          "answer": "(a) 2.708333333; (b) 2.718055556, 2.718253968; (c) reference 2.718281828459045; (d) $1.300430722199\\times10^{12}$, slightly low; (e) $3.036344593938\\times10^{64}$ and $3.041405168261\\times10^{64}$, with the refinement more accurate."
+        },
+        "number": 25,
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      {
+        "prompt": "把 $(x+y)^n$（$n\\in\\mathbb N$）展开式各项的系数与帕斯卡三角形联系起来。至少举两个例子。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "一般系数为 $\\binom n0,\\binom n1,\\ldots,\\binom nn$，即从顶端 1 为第 1 行起数的第 $n+1$ 行。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "例 1：$(x+y)^2=x^2+2xy+y^2$ 的 1,2,1 是第三行。例 2：$(x+y)^4=x^4+4x^3y+6x^2y^2+4xy^3+y^4$ 的 1,4,6,4,1 是第五行。"
+          }
+        ],
+        "answer": "系数是第 $n+1$ 行；两个具体展开式如上。",
+        "printedPage": 545,
+        "pdfPage": 554,
+        "en": {
+          "prompt": "Relate the coefficients of $(x+y)^n$, $n\\in\\mathbb N$, to Pascal’s triangle. Use at least two examples.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "The coefficients are $\\binom n0,\\binom n1,\\ldots,\\binom nn$, row $n+1$ when the top 1 is row 1."
+            },
+            {
+              "title": "Step 2",
+              "body": "Example 1: $(x+y)^2=x^2+2xy+y^2$ uses row 3, 1,2,1. Example 2: $(x+y)^4=x^4+4x^3y+6x^2y^2+4xy^3+y^4$ uses row 5, 1,4,6,4,1."
+            }
+          ],
+          "answer": "The coefficients form row $n+1$; two explicit examples are given above."
+        },
+        "number": "C1"
+      },
+      {
+        "prompt": "(a) 创编三道题，使 $\\frac{4!}{2!2!}$ 是答案或答案的一部分：一道排列题，一道组合题，一道涉及 $(a+b)$ 的幂的二项式展开题。(b) 说明这三题的相同点和不同点。",
+        "concept": "counting-applications",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 以下是示例题而非学生的个人创作。排列题：“把 A,A,B,B 排成一行有几种不同次序？”答案 $4!/(2!2!)=6$，次序重要，两个 A、两个 B 各自不可区分。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "组合题：“从四位不同学生中选两位组成无职务小组，有几种选法？”答案 $\\binom42=4!/(2!2!)=6$，组内次序不重要。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "二项式题：“$(a+b)^4$ 中 $a^2b^2$ 的系数是多少？”从四个因子选两个提供 $b$，系数为 $\\binom42=6$。"
+          },
+          {
+            "title": "步骤 4",
+            "body": "(b) 三者都选择四个位置中的两个，故有相同组合因子。排列题区别位置并消去相同元素的重复；组合题选择无序集合；展开题选择因子提供哪一项并合并同类项。"
+          }
+        ],
+        "answer": "(a) 示例三题均得到 6；(b) 同一计数因子，情境分别是重复元素排列、无序选择与二项式系数。",
+        "printedPage": 545,
+        "pdfPage": 554,
+        "en": {
+          "prompt": "(a) Create three problems for which $\\frac{4!}{2!2!}$ is the answer or part of it: one permutation, one combination, and one involving a power of $(a+b)$. (b) Explain their similarities and differences.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) These are illustrative authored examples, not a student’s personal creations. Permutation: “How many distinct rows can be made from A,A,B,B?” The answer is $4!/(2!2!)=6$: order matters but the two As and the two Bs are indistinguishable."
+            },
+            {
+              "title": "Step 2",
+              "body": "Combination: “How many unassigned two-person groups can be selected from four distinct students?” The answer is $\\binom42=4!/(2!2!)=6$, with group order irrelevant."
+            },
+            {
+              "title": "Step 3",
+              "body": "Binomial: “What is the coefficient of $a^2b^2$ in $(a+b)^4$?” Choose the two factors supplying $b$, giving coefficient $\\binom42=6$."
+            },
+            {
+              "title": "Step 4",
+              "body": "(b) All choose two of four positions, giving the same combination factor. The permutation distinguishes positions while removing repeated identical letters; the combination selects an unordered set; expansion selects factor terms and collects like products."
+            }
+          ],
+          "answer": "(a) The three sample problems each give 6; (b) the common counting factor appears in repeated-element permutations, unordered selection, and binomial coefficients."
+        },
+        "number": "C2",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "(a) 求 $(a+b)^n$（$n\\in\\mathbb N$）的系数时，你偏好帕斯卡三角形还是组合数？(b) 说明各方法的优点与缺点。",
+        "concept": "pascal",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "(a) 示例偏好：只求一项或指数较大时用组合数，因为可直接定位所需系数，不必写出所有前行。学生可选择别的方法并说明理由。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "(b) 帕斯卡三角形直观显示对称与相邻相加，小指数时容易列出全部系数；但指数很大时写所有行费时，容易抄错。组合公式 $\\binom nk=n!/[k!(n-k)!]$ 可直接求任一合法 $0\\le k\\le n$ 的系数，适合计算器；但阶乘可能很大，也容易把项号 $k+1$ 误作 $k$。"
+          }
+        ],
+        "answer": "(a) 偏好可不同；(b) 三角形直观而高次费时，组合数直接而须准确处理阶乘与项号。",
+        "printedPage": 545,
+        "pdfPage": 554,
+        "en": {
+          "prompt": "(a) Which do you prefer for coefficients of $(a+b)^n$, $n\\in\\mathbb N$: Pascal’s triangle or combinations? (b) Identify each method’s strengths and weaknesses.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "(a) A sample preference is combinations for one term or a large exponent, since the desired coefficient can be found without constructing earlier rows. Students may justify another preference."
+            },
+            {
+              "title": "Step 2",
+              "body": "(b) Pascal’s triangle makes symmetry and adjacent sums visible and gives all coefficients easily for small exponents; constructing many rows is time-consuming and prone to copying errors. The formula $\\binom nk=n!/[k!(n-k)!]$ directly finds a coefficient for legal $0\\le k\\le n$ and works well with a calculator, but factorials can be large and the term number $k+1$ may be confused with $k$."
+            }
+          ],
+          "answer": "(a) Preferences vary; (b) triangle: visual but cumbersome at high powers; combinations: direct but require careful factorials and indexing."
+        },
+        "number": "C3",
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "prompt": "为本章的数学职业档案补充内容：找出需要用二项式定理的职业，创编至少两道可能适用于该职业的问题，并解释这些问题与职业的关系。",
+        "concept": "counting-applications",
+        "steps": [
+          {
+            "title": "步骤 1",
+            "body": "以下为可核验示例，不代替学生的个人职业调查：可靠性工程师分析独立零件的成功/失效组合；二项式系数统计相同成功数对应的不同顺序。"
+          },
+          {
+            "title": "步骤 2",
+            "body": "示例题 1：“五个零件各自独立地以 0.9 的概率正常工作，恰有三个正常的概率是多少？”在 $[p+(1-p)]^5$ 中取三次 $p$：$\\binom53(0.9)^3(0.1)^2=10\\cdot0.729\\cdot0.01=0.0729$。"
+          },
+          {
+            "title": "步骤 3",
+            "body": "示例题 2：“同一系统至少四个零件正常工作的概率是多少？”互斥地计四个、五个：$\\binom54(0.9)^4(0.1)+(0.9)^5=0.32805+0.59049=0.91854$。"
+          },
+          {
+            "title": "步骤 4",
+            "body": "两题分别估计某故障等级和达到运行门槛的机会，可用于系统可靠性比较。独立、同成功率是此示例额外明确给出的模型条件；不声称教材提供了这些数值或真实职业访谈。"
+          }
+        ],
+        "answer": "示例职业：可靠性工程师。两道示例题的答案分别是 0.0729 和 0.91854；学生仍需完成自己的职业档案选择和说明。",
+        "printedPage": 545,
+        "pdfPage": 554,
+        "en": {
+          "prompt": "Add to your mathematics career file: identify an occupation using the binomial theorem, create at least two problems relevant to it, and explain their relationship to that occupation.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "This is a verifiable example rather than a student’s personal career investigation: reliability engineers analyse independent component successes and failures. Binomial coefficients count the arrangements with the same number of successes."
+            },
+            {
+              "title": "Step 2",
+              "body": "Sample problem 1: “Five components each work independently with probability 0.9. What is the probability that exactly three work?” In $[p+(1-p)]^5$, choose three factors $p$: $\\binom53(0.9)^3(0.1)^2=10\\cdot0.729\\cdot0.01=0.0729$."
+            },
+            {
+              "title": "Step 3",
+              "body": "Sample problem 2: “For that system, what is the probability that at least four work?” Add disjoint cases of four and five: $\\binom54(0.9)^4(0.1)+(0.9)^5=0.32805+0.59049=0.91854$."
+            },
+            {
+              "title": "Step 4",
+              "body": "The problems estimate a particular failure level and the chance of meeting an operating threshold. Independence and equal success rates are explicit assumptions of these sample problems; the numbers and a real career interview are not claimed as textbook data."
+            }
+          ],
+          "answer": "Example occupation: reliability engineer. The two sample answers are 0.0729 and 0.91854; students complete their own career-file choice and explanation."
+        },
+        "number": "C4"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "investigate-3",
+      "investigate-4",
+      "investigate-5",
+      "investigate-6",
+      "reflect-7",
+      "reflect-8",
+      "reflect-9",
+      "sidebar-multiply",
+      "sidebar-row-number",
+      "sidebar-row-values",
+      "sidebar-symmetry",
+      "your-turn-1",
+      "sidebar-signs",
+      "sidebar-term-index",
+      "your-turn-2",
+      "project-art"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "expectedSubparts": {
+      "investigate-6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "sidebar-multiply": [
+        "a",
+        "b"
+      ],
+      "example-1": [
+        "a",
+        "b"
+      ],
+      "your-turn-1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "example-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "project-art": [
+        "create",
+        "choice",
+        "medium"
+      ],
+      "exercise-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-7": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-9": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-10": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-12": [
+        "a",
+        "b"
+      ],
+      "exercise-13": [
+        "a",
+        "b"
+      ],
+      "exercise-14": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-15": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-16": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-17": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-18": [
+        "a",
+        "b"
+      ],
+      "exercise-19": [
+        "a",
+        "b"
+      ],
+      "exercise-21": [
+        "step1",
+        "step2",
+        "step3"
+      ],
+      "exercise-22": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-24": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-25": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "exercise-C2": [
+        "a",
+        "b"
+      ],
+      "exercise-C3": [
+        "a",
+        "b"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "reviewer": "root (independent of binomial author)",
+    "note": "All original pages 537–545/PDF546–554 visually read; all bilingual questions, explicit subparts, steps, answers and figures compared. Exact convolution/Fraction/combination checks are recorded in independent audit. YT2b exponent and Q25 approximations corrected; large Pascal image divided into four readable panels."
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "10-overview",
+    "section": "10",
+    "title": "函数运算：章节导读",
+    "en": {
+      "title": "Function Operations: Chapter Overview"
+    },
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        472,
+        473
+      ],
+      "pdfPages": [
+        481,
+        482
+      ]
+    },
+    "concepts": [
+      {
+        "id": "operations",
+        "title": "组合函数描述关系",
+        "summary": "本章通过和、差、积、商及复合描述工程、商业、自然与社会科学中的关系。本章关键术语是复合函数（composite function）。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "10.1 学习和差，10.2 学习积商，10.3 学习复合；每一步检查输入条件。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Combine functions to model relationships",
+          "summary": "This chapter combines functions through addition, subtraction, multiplication, division, and composition to describe relationships in engineering, business, and the sciences. The key term is composite function.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "Study sums and differences in 10.1, products and quotients in 10.2, and composition in 10.3; check allowable inputs at each step."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "waves",
+        "title": "波的叠加",
+        "summary": "在线性叠加模型中，应将同一点、同一时刻的带方向位移（函数值）逐项相加。合成峰值振幅通常不等于两峰值振幅之和，它还取决于相位关系；波池与降噪耳机是教材所举的例子。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "先在同一位置 $x$、同一时刻 $t$ 求各波相对平衡位置的带正负号位移，再计算 $y(x,t)=y_1(x,t)+y_2(x,t)$；之后从合成波求峰值振幅，不能把两峰值直接相加。例如，同频同相时两波峰同时出现，峰值振幅相加。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Wave interference",
+          "summary": "In a linear superposition model, add the signed displacements (function values) of the waves at the same position and the same instant. The resultant peak amplitude generally does not equal the sum of the individual peak amplitudes; relative phase matters. Wave pools and noise-cancelling headphones are the textbook examples.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "At the same position $x$ and instant $t$, find each wave’s signed displacement from equilibrium, then calculate $y(x,t)=y_1(x,t)+y_2(x,t)$. Find the peak amplitude from the resultant wave rather than adding the individual peaks directly. Equal-frequency waves in phase have peak amplitudes that add."
+            }
+          ],
+          "pitfalls": []
+        }
+      },
+      {
+        "id": "career",
+        "title": "激光研究背景",
+        "summary": "原书以 2004 年开始使用 ALLS 的历史介绍联系飞秒激光研究；一飞秒为 $10^{-15}$ 秒。",
+        "method": [
+          {
+            "title": "方法",
+            "body": "这是教材的历史职业介绍，没有待解数学题。教材的旧 Web Link 不视为已核实的当前职业信息。"
+          }
+        ],
+        "pitfalls": [],
+        "en": {
+          "title": "Laser research context",
+          "summary": "The historical career note describes ALLS research beginning in 2004; one femtosecond is $10^{-15}$ seconds.",
+          "method": [
+            {
+              "title": "Method",
+              "body": "This is a historical career note with no posed mathematics question. The textbook web link is not treated as verified current career information."
+            }
+          ],
+          "pitfalls": []
+        }
+      }
+    ],
+    "questions": [],
+    "kind": "overview"
+  },
+  "textbook": {
+    "exercises": []
+  },
+  "coverage": {
+    "expectedExamples": [],
+    "expectedPractice": [],
+    "expectedExercises": [],
+    "expectedSubparts": {}
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "reviewer": "author_10_3 (independent of root extras author)",
+    "reviewNote": "All original pages visually inspected and solutions independently derived before content comparison. Reviewed every English and Chinese condition, named subpart, calculation, domain/range, source crop and analytical plot. Corrections and exact file hashes are recorded in extras-independent-review.json.",
+    "waveRevisionReview": "Accepted by independent reviewer author_10_3: signed pointwise displacement versus phase-dependent peak amplitude; original question records unchanged. See audit/wave-superposition-independent-review.json."
+  }
+}

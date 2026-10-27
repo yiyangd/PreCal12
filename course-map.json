@@ -2167,39 +2167,209 @@
               "slug": "9-1",
               "title": "用变换探究有理函数",
               "en": {
-                "title": "Exploring Rational Functions Using Transformations"
+                "title": "Exploring Rational Functions Using Transformations",
+                "description": "Use reciprocal and reciprocal-square transformations to graph, compare, and apply rational functions."
               },
               "printedPage": 430,
               "pdfPage": 439,
-              "status": "planned",
-              "kind": "section"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/9-1/",
+              "counts": {
+                "concepts": 7,
+                "examples": 5,
+                "practice": 20,
+                "investigations": 9,
+                "yourTurn": 5,
+                "otherPractice": 6,
+                "exercises": 25
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  430,
+                  431,
+                  432,
+                  433,
+                  434,
+                  435,
+                  436,
+                  437,
+                  438,
+                  439,
+                  440,
+                  441,
+                  442,
+                  443,
+                  444,
+                  445
+                ],
+                "pdfPages": [
+                  439,
+                  440,
+                  441,
+                  442,
+                  443,
+                  444,
+                  445,
+                  446,
+                  447,
+                  448,
+                  449,
+                  450,
+                  451,
+                  452,
+                  453,
+                  454
+                ]
+              },
+              "description": "用倒数与平方倒数函数的变换作图、比较与建立实际模型。"
             },
             {
               "section": "9.2",
               "slug": "9-2",
               "title": "分析有理函数",
               "en": {
-                "title": "Analysing Rational Functions"
+                "title": "Analysing Rational Functions",
+                "description": "Distinguish holes from vertical asymptotes, match rational graphs, and interpret models with their original domain restrictions."
               },
               "printedPage": 446,
               "pdfPage": 455,
-              "status": "planned",
-              "kind": "section"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/9-2/",
+              "counts": {
+                "concepts": 5,
+                "examples": 3,
+                "practice": 13,
+                "investigations": 2,
+                "yourTurn": 3,
+                "otherPractice": 8,
+                "exercises": 26
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  446,
+                  447,
+                  448,
+                  449,
+                  450,
+                  451,
+                  452,
+                  453,
+                  454,
+                  455,
+                  456
+                ],
+                "pdfPages": [
+                  455,
+                  456,
+                  457,
+                  458,
+                  459,
+                  460,
+                  461,
+                  462,
+                  463,
+                  464,
+                  465
+                ]
+              },
+              "description": "区分孔洞与竖直渐近线，配对有理函数图形，并保留原定义域限制解释应用模型。"
             },
             {
               "section": "9.3",
               "slug": "9-3",
               "title": "联系图像与有理方程",
               "en": {
-                "title": "Connecting Graphs and Rational Equations"
+                "title": "Connecting Graphs and Rational Equations",
+                "description": "Relate roots to intercepts and intersections, preserve original restrictions, and solve rational models with all valid branches."
               },
               "printedPage": 457,
               "pdfPage": 466,
-              "status": "planned",
-              "kind": "section"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/9-3/",
+              "counts": {
+                "concepts": 5,
+                "examples": 4,
+                "practice": 18,
+                "investigations": 6,
+                "yourTurn": 4,
+                "otherPractice": 8,
+                "exercises": 20
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  457,
+                  458,
+                  459,
+                  460,
+                  461,
+                  462,
+                  463,
+                  464,
+                  465,
+                  466,
+                  467
+                ],
+                "pdfPages": [
+                  466,
+                  467,
+                  468,
+                  469,
+                  470,
+                  471,
+                  472,
+                  473,
+                  474,
+                  475,
+                  476
+                ]
+              },
+              "description": "联系方程根、截距与交点；保留原限制，检验增根并处理模型的全部合法分支。"
             }
           ],
           "extras": [
+            {
+              "kind": "overview",
+              "slug": "9-overview",
+              "title": "有理函数：本章导学",
+              "en": {
+                "title": "Rational Functions: Chapter Overview"
+              },
+              "status": "ready",
+              "section": "9",
+              "href": "sections/9-overview/",
+              "counts": {
+                "concepts": 2,
+                "examples": 0,
+                "practice": 5,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 5,
+                "exercises": 0
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  428,
+                  429
+                ],
+                "pdfPages": [
+                  437,
+                  438
+                ]
+              },
+              "printedPage": 428,
+              "pdfPage": 437
+            },
             {
               "kind": "review",
               "title": "第 9 章复习",
@@ -2208,8 +2378,31 @@
               },
               "printedPage": 468,
               "pdfPage": 477,
-              "status": "planned",
-              "slug": "9-review"
+              "status": "ready",
+              "slug": "9-review",
+              "section": "9",
+              "href": "sections/9-review/",
+              "counts": {
+                "concepts": 4,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 11
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  468,
+                  469
+                ],
+                "pdfPages": [
+                  477,
+                  478
+                ]
+              }
             },
             {
               "kind": "practice-test",
@@ -2219,8 +2412,31 @@
               },
               "printedPage": 470,
               "pdfPage": 479,
-              "status": "planned",
-              "slug": "9-test"
+              "status": "ready",
+              "slug": "9-test",
+              "section": "9",
+              "href": "sections/9-test/",
+              "counts": {
+                "concepts": 4,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 16
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  470,
+                  471
+                ],
+                "pdfPages": [
+                  479,
+                  480
+                ]
+              }
             }
           ]
         },
@@ -2238,39 +2454,205 @@
               "slug": "10-1",
               "title": "函数的和与差",
               "en": {
-                "title": "Sums and Differences of Functions"
+                "title": "Sums and Differences of Functions",
+                "description": "Combine functions at common inputs, preserve their domains, and interpret graphs and applications. Source context: physicists use ripple tanks and sine waves to model interfering waves. An operation is commutative when reversing its operands preserves the result, as addition does. Linear superposition adds signed displacements (function values) at the same position and the same instant: displacements in the same direction reinforce, while opposite directions cancel. Find the resultant peak amplitude from the combined function; it generally does not equal the sum of the individual peaks, and relative phase matters for equal-frequency waves. Moguls are modelled as waves: crests are high points and troughs low points. Historical sidebars in this edition state that Math Kangaroo (Kangourou sans frontieres) began in France in 1991, with the first Canadian edition in 2001; the Saskatchewan International Raceway was built in 1966 outside Saskatoon. These are textbook context statements, not newly researched current claims."
               },
               "printedPage": 474,
               "pdfPage": 483,
-              "status": "planned",
-              "kind": "section"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/10-1/",
+              "counts": {
+                "concepts": 5,
+                "examples": 4,
+                "practice": 21,
+                "investigations": 8,
+                "yourTurn": 4,
+                "otherPractice": 9,
+                "exercises": 25
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  474,
+                  475,
+                  476,
+                  477,
+                  478,
+                  479,
+                  480,
+                  481,
+                  482,
+                  483,
+                  484,
+                  485,
+                  486,
+                  487
+                ],
+                "pdfPages": [
+                  483,
+                  484,
+                  485,
+                  486,
+                  487,
+                  488,
+                  489,
+                  490,
+                  491,
+                  492,
+                  493,
+                  494,
+                  495,
+                  496
+                ]
+              },
+              "description": "在共同输入处组合函数，保留定义域限制，并解释图像与情境。教材背景：物理学家用波纹槽、正弦波模拟波的干涉。交换运算数顺序后结果不变的运算称可交换，加法即如此。波的线性叠加是在同一点、同一时刻将带方向位移（函数值）相加：同方向位移加强，反方向位移相互抵消。合成峰值振幅须从合成函数求，通常不等于两峰值振幅之和；同频波的相位关系决定峰值。雪包可视作波，波峰是高点、波谷是低点。本版历史旁注记载：Math Kangaroo（Kangourou sans frontieres）于 1991 年在法国开始，加拿大首届于 2001 年举行；萨斯喀彻温国际赛车场建于 1966 年，位于萨斯卡通郊外。上述为教材历史背景，并非本次新调查的现况。"
             },
             {
               "section": "10.2",
               "slug": "10-2",
               "title": "函数的积与商",
               "en": {
-                "title": "Products and Quotients of Functions"
+                "title": "Products and Quotients of Functions",
+                "description": "Study products and quotients through original graphs, algebra, models, and damped oscillation; retain original formulas and domain restrictions."
               },
               "printedPage": 488,
               "pdfPage": 497,
-              "status": "planned",
-              "kind": "section"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/10-2/",
+              "counts": {
+                "concepts": 5,
+                "examples": 3,
+                "practice": 16,
+                "investigations": 6,
+                "yourTurn": 3,
+                "otherPractice": 7,
+                "exercises": 20
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  488,
+                  489,
+                  490,
+                  491,
+                  492,
+                  493,
+                  494,
+                  495,
+                  496,
+                  497,
+                  498
+                ],
+                "pdfPages": [
+                  497,
+                  498,
+                  499,
+                  500,
+                  501,
+                  502,
+                  503,
+                  504,
+                  505,
+                  506,
+                  507
+                ]
+              },
+              "description": "由原图、代数、应用模型与阻尼振荡学习函数的积与商；完整保留原式及定义域限制。"
             },
             {
               "section": "10.3",
               "slug": "10-3",
               "title": "复合函数",
               "en": {
-                "title": "Composite Functions"
+                "title": "Composite Functions",
+                "description": "Evaluate, compose, graph, and decompose functions while retaining every domain restriction."
               },
               "printedPage": 499,
               "pdfPage": 508,
-              "status": "planned",
-              "kind": "section"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/10-3/",
+              "counts": {
+                "concepts": 7,
+                "examples": 5,
+                "practice": 15,
+                "investigations": 7,
+                "yourTurn": 5,
+                "otherPractice": 3,
+                "exercises": 27
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  499,
+                  500,
+                  501,
+                  502,
+                  503,
+                  504,
+                  505,
+                  506,
+                  507,
+                  508,
+                  509
+                ],
+                "pdfPages": [
+                  508,
+                  509,
+                  510,
+                  511,
+                  512,
+                  513,
+                  514,
+                  515,
+                  516,
+                  517,
+                  518
+                ]
+              },
+              "description": "求复合函数的值、表达式与图像，并在分解及应用中保留全部定义域限制。"
             }
           ],
           "extras": [
+            {
+              "kind": "overview",
+              "slug": "10-overview",
+              "title": "函数运算：章节导读",
+              "en": {
+                "title": "Function Operations: Chapter Overview"
+              },
+              "status": "ready",
+              "section": "10",
+              "href": "sections/10-overview/",
+              "counts": {
+                "concepts": 3,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 0
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  472,
+                  473
+                ],
+                "pdfPages": [
+                  481,
+                  482
+                ]
+              },
+              "printedPage": 472,
+              "pdfPage": 481
+            },
             {
               "kind": "review",
               "title": "第 10 章复习",
@@ -2279,8 +2661,31 @@
               },
               "printedPage": 510,
               "pdfPage": 519,
-              "status": "planned",
-              "slug": "10-review"
+              "status": "ready",
+              "slug": "10-review",
+              "section": "10 Review",
+              "href": "sections/10-review/",
+              "counts": {
+                "concepts": 4,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 15
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  510,
+                  511
+                ],
+                "pdfPages": [
+                  519,
+                  520
+                ]
+              }
             },
             {
               "kind": "practice-test",
@@ -2290,8 +2695,31 @@
               },
               "printedPage": 512,
               "pdfPage": 521,
-              "status": "planned",
-              "slug": "10-test"
+              "status": "ready",
+              "slug": "10-test",
+              "section": "10 Test",
+              "href": "sections/10-test/",
+              "counts": {
+                "concepts": 4,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 14
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  512,
+                  513
+                ],
+                "pdfPages": [
+                  521,
+                  522
+                ]
+              }
             }
           ]
         },
@@ -2313,35 +2741,187 @@
               },
               "printedPage": 516,
               "pdfPage": 525,
-              "status": "planned",
-              "kind": "section"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/11-1/",
+              "counts": {
+                "concepts": 6,
+                "examples": 5,
+                "practice": 21,
+                "investigations": 3,
+                "yourTurn": 5,
+                "otherPractice": 13,
+                "exercises": 37
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  516,
+                  517,
+                  518,
+                  519,
+                  520,
+                  521,
+                  522,
+                  523,
+                  524,
+                  525,
+                  526,
+                  527
+                ],
+                "pdfPages": [
+                  525,
+                  526,
+                  527,
+                  528,
+                  529,
+                  530,
+                  531,
+                  532,
+                  533,
+                  534,
+                  535,
+                  536
+                ]
+              }
             },
             {
               "section": "11.2",
               "slug": "11-2",
               "title": "组合",
               "en": {
-                "title": "Combinations"
+                "title": "Combinations",
+                "description": "Use every original question to distinguish ordered assignments from unordered selections and check grouped choices, disjoint cases, identities, and geometric counts."
               },
               "printedPage": 528,
               "pdfPage": 537,
-              "status": "planned",
-              "kind": "section"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/11-2/",
+              "counts": {
+                "concepts": 5,
+                "examples": 3,
+                "practice": 13,
+                "investigations": 5,
+                "yourTurn": 3,
+                "otherPractice": 5,
+                "exercises": 28
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  528,
+                  529,
+                  530,
+                  531,
+                  532,
+                  533,
+                  534,
+                  535,
+                  536
+                ],
+                "pdfPages": [
+                  537,
+                  538,
+                  539,
+                  540,
+                  541,
+                  542,
+                  543,
+                  544,
+                  545
+                ]
+              },
+              "description": "通过完整原题区分有序安排与无序选择，核查分组、互斥分类、组合恒等式和几何计数。"
             },
             {
               "section": "11.3",
               "slug": "11-3",
               "title": "二项式定理",
               "en": {
-                "title": "Binomial Theorem"
+                "title": "Binomial Theorem",
+                "description": "Connect Pascal’s triangle, combinations, binomial expansion, and specific terms, with all textbook activities and exercises."
               },
               "printedPage": 537,
               "pdfPage": 546,
-              "status": "planned",
-              "kind": "section"
+              "status": "ready",
+              "kind": "section",
+              "href": "sections/11-3/",
+              "counts": {
+                "concepts": 4,
+                "examples": 2,
+                "practice": 18,
+                "investigations": 6,
+                "yourTurn": 2,
+                "otherPractice": 10,
+                "exercises": 29
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  537,
+                  538,
+                  539,
+                  540,
+                  541,
+                  542,
+                  543,
+                  544,
+                  545
+                ],
+                "pdfPages": [
+                  546,
+                  547,
+                  548,
+                  549,
+                  550,
+                  551,
+                  552,
+                  553,
+                  554
+                ]
+              },
+              "description": "联系帕斯卡三角形、组合数、二项式展开与指定项，包含全部原书活动和习题。"
             }
           ],
           "extras": [
+            {
+              "kind": "overview",
+              "slug": "11-overview",
+              "title": "排列、组合与二项式定理",
+              "en": {
+                "title": "Permutations, Combinations, and the Binomial Theorem"
+              },
+              "status": "ready",
+              "section": "11",
+              "href": "sections/11-overview/",
+              "counts": {
+                "concepts": 3,
+                "examples": 0,
+                "practice": 2,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 2,
+                "exercises": 0
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  514,
+                  515
+                ],
+                "pdfPages": [
+                  523,
+                  524
+                ]
+              },
+              "printedPage": 514,
+              "pdfPage": 523
+            },
             {
               "kind": "review",
               "title": "第 11 章复习",
@@ -2350,8 +2930,31 @@
               },
               "printedPage": 546,
               "pdfPage": 555,
-              "status": "planned",
-              "slug": "11-review"
+              "status": "ready",
+              "slug": "11-review",
+              "section": "11 Review",
+              "href": "sections/11-review/",
+              "counts": {
+                "concepts": 6,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 19
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  546,
+                  547
+                ],
+                "pdfPages": [
+                  555,
+                  556
+                ]
+              }
             },
             {
               "kind": "practice-test",
@@ -2361,8 +2964,29 @@
               },
               "printedPage": 548,
               "pdfPage": 557,
-              "status": "planned",
-              "slug": "11-test"
+              "status": "ready",
+              "slug": "11-test",
+              "section": "11 Practice Test",
+              "href": "sections/11-test/",
+              "counts": {
+                "concepts": 6,
+                "examples": 0,
+                "practice": 0,
+                "investigations": 0,
+                "yourTurn": 0,
+                "otherPractice": 0,
+                "exercises": 16
+              },
+              "source": {
+                "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+                "kind": "pdf",
+                "printedPages": [
+                  548
+                ],
+                "pdfPages": [
+                  557
+                ]
+              }
             }
           ]
         }
@@ -2439,23 +3063,23 @@
     "units": 4,
     "chapters": 11,
     "sections": 39,
-    "readySections": 23,
-    "plannedSections": 16,
-    "readyExtras": 18,
-    "readyPages": 41,
-    "plannedExtras": 22
+    "readySections": 32,
+    "plannedSections": 7,
+    "readyExtras": 27,
+    "readyPages": 59,
+    "plannedExtras": 16
   },
   "readyContentCounts": {
-    "concepts": 210,
-    "examples": 87,
-    "practice": 347,
-    "investigations": 145,
-    "yourTurn": 85,
-    "otherPractice": 117,
-    "exercises": 749
+    "concepts": 295,
+    "examples": 121,
+    "practice": 509,
+    "investigations": 197,
+    "yourTurn": 119,
+    "otherPractice": 193,
+    "exercises": 1077
   },
   "availability": {
-    "manifestEntries": 41,
+    "manifestEntries": 59,
     "pending": [],
     "warnings": []
   }

@@ -1,0 +1,2162 @@
+{
+  "course": {
+    "id": "precal12-mhr",
+    "title": "微积分预备 12",
+    "en": {
+      "title": "Pre-Calculus 12"
+    }
+  },
+  "lesson": {
+    "id": "9-2",
+    "section": "9.2",
+    "title": "分析有理函数",
+    "en": {
+      "title": "Analysing Rational Functions",
+      "description": "Distinguish holes from vertical asymptotes, match rational graphs, and interpret models with their original domain restrictions."
+    },
+    "description": "区分孔洞与竖直渐近线，配对有理函数图形，并保留原定义域限制解释应用模型。",
+    "source": {
+      "title": "McGraw-Hill Ryerson Pre-Calculus 12",
+      "kind": "pdf",
+      "printedPages": [
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456
+      ],
+      "pdfPages": [
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465
+      ]
+    },
+    "concepts": [
+      {
+        "id": "restrictions",
+        "title": "原式限制与孔洞",
+        "summary": "先由原分母确定限制，再约分。约去全部分母因子可留下孔洞；约分后仍为零的分母对应竖直渐近线。",
+        "method": [
+          {
+            "title": "记录限制",
+            "body": "令原分母不为零，把每一个禁止值保留到最后。"
+          },
+          {
+            "title": "判断特征",
+            "body": "分解并约分；在约分式中代入已约去的禁止值，得到孔洞的纵坐标。"
+          }
+        ],
+        "pitfalls": [
+          "分母与分子同时为零不一定就是孔洞；必须看约分后分母是否仍为零。",
+          "$0/0$ 不是数值；两种原式在禁止值处都没有定义。"
+        ],
+        "en": {
+          "title": "Original restrictions and holes",
+          "summary": "Find restrictions from the original denominator before cancelling. A removable denominator zero gives a hole; a denominator zero that remains gives a vertical asymptote.",
+          "method": [
+            {
+              "title": "Record restrictions",
+              "body": "Require the original denominator to be nonzero and keep every excluded value."
+            },
+            {
+              "title": "Identify the feature",
+              "body": "Factor and cancel; substitute a removable excluded value into the reduced expression to obtain the hole height."
+            }
+          ],
+          "pitfalls": [
+            "A common zero is a hole only if the reduced denominator is nonzero there.",
+            "$0/0$ is not a number; the original function is undefined at either kind of excluded value."
+          ]
+        }
+      },
+      {
+        "id": "behaviour",
+        "title": "近点行为、定义域与值域",
+        "summary": "使用化简式和左右两侧数值分析禁止值附近；孔洞处趋于有限值，竖直渐近线附近至少一侧无界。值域还须检查孔洞是否移除了唯一的原像。",
+        "method": [
+          {
+            "title": "左右分别看",
+            "body": "用 $a-0.1,a-0.01,a+0.01,a+0.1$ 等值；禁止值本身写“无定义”。"
+          },
+          {
+            "title": "核对域和值域",
+            "body": "定义域排除原分母零点；解 $y=f(x)$ 或利用已知图形确定哪些输出确实能达到。"
+          }
+        ],
+        "pitfalls": [
+          "水平渐近线不一定是值域的禁止值。"
+        ],
+        "en": {
+          "title": "Local behaviour, domain, and range",
+          "summary": "Use the reduced expression and values on both sides of an excluded input. A hole has a finite limiting height; near a vertical asymptote the function is unbounded on at least one side. Check whether a hole removes the only input for an output.",
+          "method": [
+            {
+              "title": "Check both sides",
+              "body": "Use inputs such as $a-0.1,a-0.01,a+0.01,a+0.1$ and mark the excluded input undefined."
+            },
+            {
+              "title": "Check domain and range",
+              "body": "Exclude original denominator zeros from the domain. Solve $y=f(x)$ or use the graph to find which outputs are actually attained."
+            }
+          ],
+          "pitfalls": [
+            "A horizontal asymptote is not automatically an excluded output."
+          ]
+        }
+      },
+      {
+        "id": "features",
+        "title": "由因式、截距与渐近线配图",
+        "summary": "由原分母、化简后的分子分母、$f(0)$ 和最高次项确定图形特征，再比较原图。",
+        "method": [
+          {
+            "title": "列特征",
+            "body": "保留原限制；求有效的分子零点、竖直渐近线、孔洞和纵截距。"
+          },
+          {
+            "title": "看远端行为",
+            "body": "次数相同取首项系数比；分子次数低时 $y=0$；分子高一次可作除法得到斜渐近线。"
+          }
+        ],
+        "pitfalls": [
+          "孔洞处不能算作截距；图上空心点须保留。"
+        ],
+        "en": {
+          "title": "Match graphs using factors, intercepts, and asymptotes",
+          "summary": "Use the original denominator, reduced factors, $f(0)$, and leading terms to determine graph features before matching a diagram.",
+          "method": [
+            {
+              "title": "List features",
+              "body": "Keep the original restrictions; find permitted numerator zeros, vertical asymptotes, holes, and the y-intercept."
+            },
+            {
+              "title": "Check end behaviour",
+              "body": "Equal degrees give the ratio of leading coefficients; a lower numerator degree gives $y=0$; division gives a slant asymptote when the numerator degree is one greater."
+            }
+          ],
+          "pitfalls": [
+            "A hole cannot be counted as an intercept; keep every open point."
+          ]
+        }
+      },
+      {
+        "id": "construct",
+        "title": "根据图形或条件构造函数",
+        "summary": "把截距因子放入分子、竖直渐近线因子放入分母。要构造指定孔洞，须先确认基础约简函数在该输入处有有限值，再将相应因子同乘到分子和分母；用图上已知点确定比例常数。",
+        "method": [
+          {
+            "title": "建立最简模型",
+            "body": "用所给根和渐近线写因式模型。必要时，在基础约简式的分母非零、函数值有限的输入处，给分子和分母同乘共同因子，产生相应孔洞。"
+          },
+          {
+            "title": "代入已知点",
+            "body": "用孔洞高度的极限值或一个实心已知点求系数，再检验全部特征。"
+          }
+        ],
+        "pitfalls": [
+          "图题通常要求最简单的相符模型；有限图形信息一般不能排除更复杂的有理函数。"
+        ],
+        "en": {
+          "title": "Construct a function from a graph or features",
+          "summary": "Place intercept factors in the numerator and vertical-asymptote factors in the denominator. To create a specified hole, first confirm that the base reduced function has a finite value at that input, then multiply numerator and denominator by the corresponding factor. Use a given point to fix the scale.",
+          "method": [
+            {
+              "title": "Build a simple model",
+              "body": "Write a factored model from the specified zeros and asymptotes. If a hole is required, multiply numerator and denominator by a common factor only at an input where the base reduced denominator is nonzero and its value is finite."
+            },
+            {
+              "title": "Fit a point",
+              "body": "Use a hole height or a known included point to find the coefficient and verify every specified feature."
+            }
+          ],
+          "pitfalls": [
+            "A diagram normally calls for the simplest matching model; finite graph information does not rule out more complicated rational functions."
+          ]
+        }
+      },
+      {
+        "id": "models",
+        "title": "情境中的有理模型",
+        "summary": "模型的代数定义域与实际有效域可能不同。时间、百分比、速度和物距必须保留单位及情境限制。",
+        "method": [
+          {
+            "title": "列量与关系",
+            "body": "由时间=路程÷速度等关系写函数，并解释变量正负号。"
+          },
+          {
+            "title": "取实际范围",
+            "body": "把代数限制与实际范围相交；负时间、超过100%的接种率等不解释为实际结果。"
+          }
+        ],
+        "pitfalls": [
+          "竖直渐近线处没有有限函数值；“趋于无穷”不是把无穷代入当作答案。"
+        ],
+        "en": {
+          "title": "Rational models in context",
+          "summary": "The algebraic domain and the useful contextual domain may differ. Preserve units and physical limits for time, percentages, speeds, and object distances.",
+          "method": [
+            {
+              "title": "Define quantities",
+              "body": "Use relations such as time=distance/speed and state the meaning of signed variables."
+            },
+            {
+              "title": "Restrict the model",
+              "body": "Intersect algebraic restrictions with contextual limits. Negative travel times or vaccination percentages beyond 100% do not describe the situation."
+            }
+          ],
+          "pitfalls": [
+            "There is no finite value at a vertical asymptote; infinity describes limiting behaviour, not an attained function value."
+          ]
+        }
+      }
+    ],
+    "questions": [
+      {
+        "id": "investigate-1",
+        "type": "practice",
+        "label": "探究 1",
+        "prompt": "考虑函数 $y=\\frac{x^2-x-2}{x-2}$。(a) 分析时哪个 $x$ 值很重要？预测该处图形特征。(b) 绘图并显示数值表。(c) 表中规律和图形是否符合预期？解释。",
+        "concept": "restrictions",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "分母在 $x=2$ 为零，所以先排除 $2$。仅凭这一点不能断言是竖直渐近线；须检查分子。"
+          },
+          {
+            "title": "(b)",
+            "body": "$x^2-x-2=(x-2)(x+1)$，故 $y=x+1$，但 $x\\ne2$。表：$x=1.9,1.99,2,2.01,2.1$ 时，$y=2.9,2.99,$无定义$,3.01,3.1$。图为直线并在 $(2,3)$ 留孔。"
+          },
+          {
+            "title": "(c)",
+            "body": "两侧数值都趋于 $3$，并不无界。若预测有渐近线，该预测应修正；共因子消去解释了直线形状。"
+          }
+        ],
+        "answer": "$x\\ne2$；孔洞 $(2,3)$，两侧趋于 $3$。",
+        "printedPage": 446,
+        "pdfPage": 455,
+        "en": {
+          "label": "Investigate 1",
+          "prompt": "Consider $y=\\frac{x^2-x-2}{x-2}$. (a) What value of $x$ is important when analysing this function? Predict the nature of the graph there. (b) Graph the function and display a table of values. (c) Are the pattern and shape what you expected? Explain.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The denominator is zero at $x=2$, so exclude $2$. This alone does not establish a vertical asymptote; examine the numerator."
+            },
+            {
+              "title": "(b)",
+              "body": "$x^2-x-2=(x-2)(x+1)$, so $y=x+1$ for $x\\ne2$. At $x=1.9,1.99,2,2.01,2.1$, the outputs are $2.9,2.99,$ undefined, $3.01,3.1$. The graph is a line with a hole at $(2,3)$."
+            },
+            {
+              "title": "(c)",
+              "body": "Both sides approach $3$ rather than becoming unbounded. A prediction of an asymptote must be revised; cancellation explains the line shape."
+            }
+          ],
+          "answer": "$x\\ne2$; hole $(2,3)$, approached from both sides."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/9-2-investigate.png"
+      },
+      {
+        "id": "investigate-2",
+        "type": "practice",
+        "label": "探究 2",
+        "prompt": "对上一题函数：(a) 定义域有什么限制？(b) 如何化简？与什么函数相等？(c) 绘出化简函数并显示数值表，与原函数比较。(d) 怎样画图清楚显示两者差别？",
+        "concept": "restrictions",
+        "steps": [
+          {
+            "title": "(a)–(b)",
+            "body": "原式要求 $x\\ne2$。约分得 $x+1$；附带 $x\\ne2$ 才是同一函数。未加限制的直线 $h(x)=x+1$ 定义域是全体实数。"
+          },
+          {
+            "title": "(c)",
+            "body": "在 $1.9,1.99,2,2.01,2.1$，$h(x)$ 为 $2.9,2.99,3,3.01,3.1$。除 $x=2$ 外与原表相同。"
+          },
+          {
+            "title": "(d)",
+            "body": "原函数在 $(2,3)$ 画空心圆；不受限制的直线在该点有实心点。其余部分重合。"
+          }
+        ],
+        "answer": "原式为 $x+1$ 且 $x\\ne2$；完整直线多一个点 $(2,3)$。",
+        "printedPage": 446,
+        "pdfPage": 455,
+        "en": {
+          "label": "Investigate 2",
+          "prompt": "For the preceding function: (a) What are the domain restrictions? (b) Simplify it and identify the equivalent function. (c) Graph the simplified function with a table and compare it with the original. (d) How can the sketches make their difference clear?",
+          "steps": [
+            {
+              "title": "(a)–(b)",
+              "body": "The original requires $x\\ne2$. Cancellation gives $x+1$, representing the same function only with $x\\ne2$. The unrestricted line $h(x)=x+1$ has all real inputs."
+            },
+            {
+              "title": "(c)",
+              "body": "At $1.9,1.99,2,2.01,2.1$, $h(x)$ is $2.9,2.99,3,3.01,3.1$. Every value except the one at $x=2$ agrees with the original table."
+            },
+            {
+              "title": "(d)",
+              "body": "Use an open circle at $(2,3)$ for the original and an included point there for the unrestricted line; all other points coincide."
+            }
+          ],
+          "answer": "The original is $x+1$ with $x\\ne2$; the full line contains the additional point $(2,3)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/9-2-investigate.png"
+      },
+      {
+        "id": "reflect-3",
+        "type": "practice",
+        "label": "反思与回应 3",
+        "prompt": "(a) $y=\\frac{x^2-x-2}{x-2}$ 在禁止值附近的行为与以前的有理函数有什么不同？(b) 原方程的什么特点造成这一差别？",
+        "concept": "behaviour",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "当 $x$ 从两侧趋近 $2$，$y$ 都趋近有限值 $3$，而以前如 $1/(x-2)$ 的值在该处无界。"
+          },
+          {
+            "title": "(b)",
+            "body": "分子与分母有共同因子 $x-2$；约去后分母为 $1$，所以留下孔洞而非竖直渐近线。"
+          }
+        ],
+        "answer": "有限极限 $3$；共因子 $x-2$ 产生孔洞。",
+        "printedPage": 446,
+        "pdfPage": 455,
+        "en": {
+          "label": "Reflect and Respond 3",
+          "prompt": "(a) How does $y=\\frac{x^2-x-2}{x-2}$ behave near its non-permissible value compared with rational functions studied previously? (b) What feature of the original equation causes the difference?",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "As $x$ approaches $2$ from either side, $y$ approaches the finite value $3$, whereas a function such as $1/(x-2)$ is unbounded there."
+            },
+            {
+              "title": "(b)",
+              "body": "The numerator and denominator share $x-2$. After cancellation the denominator is $1$, leaving a hole rather than a vertical asymptote."
+            }
+          ],
+          "answer": "Finite limiting value $3$; the common factor $x-2$ creates a hole."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "example-1",
+        "type": "example",
+        "label": "教材例题 1",
+        "prompt": "画出 $f(x)=\\frac{x^2-5x+6}{x-3}$ 的草图，分析禁止值附近的行为。",
+        "concept": "restrictions",
+        "steps": [
+          {
+            "title": "1",
+            "body": "原分母给出 $x\\ne3$。分解 $x^2-5x+6=(x-2)(x-3)$，所以 $f(x)=x-2$，$x\\ne3$。"
+          },
+          {
+            "title": "2",
+            "body": "把 $3$ 代入约分式得 $1$；直线斜率为 $1$、纵截距为 $-2$，在 $(3,1)$ 画空心圆。"
+          },
+          {
+            "title": "3",
+            "body": "$x=2.9,2.99,3,3.01,3.1$ 时，$f(x)=0.9,0.99,$无定义$,1.01,1.1$。两侧趋于 $1$。定义域排除 $3$，值域排除 $1$。"
+          }
+        ],
+        "answer": "$f(x)=x-2$，$x\\ne3$；孔洞 $(3,1)$，没有竖直渐近线。",
+        "printedPage": 447,
+        "pdfPage": 456,
+        "en": {
+          "label": "Textbook Example 1",
+          "prompt": "Sketch $f(x)=\\frac{x^2-5x+6}{x-3}$. Analyse its behaviour near its non-permissible value.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The original denominator requires $x\\ne3$. Since $x^2-5x+6=(x-2)(x-3)$, $f(x)=x-2$ for $x\\ne3$."
+            },
+            {
+              "title": "2",
+              "body": "The reduced expression gives $1$ at $3$. Draw the line of slope $1$ and y-intercept $-2$ with an open circle at $(3,1)$."
+            },
+            {
+              "title": "3",
+              "body": "For $x=2.9,2.99,3,3.01,3.1$, $f(x)=0.9,0.99,$ undefined, $1.01,1.1$. Both sides approach $1$. The domain excludes $3$ and the range excludes $1$."
+            }
+          ],
+          "answer": "$f(x)=x-2$, $x\\ne3$; hole $(3,1)$ and no vertical asymptote."
+        },
+        "solutionImage": "assets/9-2-example1.png"
+      },
+      {
+        "id": "margin-example-1-substitution",
+        "type": "practice",
+        "label": "例题 1 旁注：代入原式",
+        "prompt": "把 $x=3$ 代入原函数会怎样？",
+        "concept": "restrictions",
+        "steps": [
+          {
+            "title": "1",
+            "body": "分子为 $9-15+6=0$，分母为 $3-3=0$；得到 $0/0$，不是定义的实数值。不能把约分式的 $1$ 当作原函数在 $3$ 的值。"
+          }
+        ],
+        "answer": "$f(3)$ 无定义；孔洞高度为 $1$。",
+        "printedPage": 447,
+        "pdfPage": 456,
+        "en": {
+          "label": "Example 1 margin: substitution",
+          "prompt": "What happens when $x=3$ is substituted into the original function?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The numerator is $9-15+6=0$ and denominator $3-3=0$, giving $0/0$, which is not a defined real number. The reduced expression gives a limiting height, not an original value at $3$."
+            }
+          ],
+          "answer": "$f(3)$ is undefined; the hole height is $1$."
+        }
+      },
+      {
+        "id": "margin-example-1-line",
+        "type": "practice",
+        "label": "例题 1 旁注：直线形状",
+        "prompt": "方程看起来很复杂，为什么图形是一条直线？",
+        "concept": "restrictions",
+        "steps": [
+          {
+            "title": "1",
+            "body": "对 $x\\ne3$，$\\frac{(x-2)(x-3)}{x-3}=x-2$。因此所有允许点都在直线 $y=x-2$ 上，但 $(3,1)$ 不属于图形。"
+          }
+        ],
+        "answer": "约分后是一次式，原限制留下一个孔洞。",
+        "printedPage": 447,
+        "pdfPage": 456,
+        "en": {
+          "label": "Example 1 margin: the line shape",
+          "prompt": "Why is the graph a straight line when its equation looks quite complex?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "For $x\\ne3$, $\\frac{(x-2)(x-3)}{x-3}=x-2$. Every allowed point lies on the line $y=x-2$, but $(3,1)$ is missing."
+            }
+          ],
+          "answer": "Cancellation leaves a linear expression, with one hole from the original restriction."
+        }
+      },
+      {
+        "id": "your-turn-1",
+        "type": "practice",
+        "label": "自己试一试 1",
+        "prompt": "画出 $f(x)=\\frac{x^2+2x-3}{x-1}$ 的草图，分析禁止值附近的行为。",
+        "concept": "restrictions",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$x\\ne1$；分子为 $(x+3)(x-1)$，约分得 $x+3$。"
+          },
+          {
+            "title": "2",
+            "body": "画直线 $y=x+3$，去掉 $(1,4)$。例如 $x=0.99,1.01$ 时，$y=3.99,4.01$，故两侧趋于 $4$，并无竖直渐近线。"
+          }
+        ],
+        "answer": "孔洞 $(1,4)$；定义域 $\\mathbb R\\setminus\\{1\\}$，值域 $\\mathbb R\\setminus\\{4\\}$。",
+        "printedPage": 448,
+        "pdfPage": 457,
+        "en": {
+          "label": "Your Turn 1",
+          "prompt": "Sketch $f(x)=\\frac{x^2+2x-3}{x-1}$. Analyse its behaviour near its non-permissible value.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$x\\ne1$; factor the numerator as $(x+3)(x-1)$ and reduce to $x+3$."
+            },
+            {
+              "title": "2",
+              "body": "Draw $y=x+3$ with $(1,4)$ removed. For example $x=0.99,1.01$ gives $y=3.99,4.01$, so both sides approach $4$ with no vertical asymptote."
+            }
+          ],
+          "answer": "Hole $(1,4)$; domain $\\mathbb R\\setminus\\{1\\}$, range $\\mathbb R\\setminus\\{4\\}$."
+        },
+        "solutionImage": "assets/9-2-yourturn1.png"
+      },
+      {
+        "id": "example-2",
+        "type": "example",
+        "label": "教材例题 2",
+        "prompt": "(a) 比较 $f(x)=\\frac{x^2-2x}{4-2x}$ 与 $g(x)=\\frac{x^2+2x}{4-2x}$ 在所有禁止值附近的行为。(b) 解释差别。",
+        "concept": "behaviour",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "两者均要求 $x\\ne2$。$f(x)=-x/2$，$x\\ne2$，故在 $(2,-1)$ 有孔洞，两侧趋于 $-1$。$g$ 在 $x=2$ 的分子为 $8$，所以 $x\\to2^-$ 时 $g\\to+\\infty$，$x\\to2^+$ 时 $g\\to-\\infty$。"
+          },
+          {
+            "title": "(b)",
+            "body": "$f=\\frac{x(x-2)}{-2(x-2)}$ 可以约去该因子；$g=\\frac{x(x+2)}{-2(x-2)}$ 不能约去 $x-2$。所以同一禁止值对应不同特征。"
+          }
+        ],
+        "answer": "$f$：孔洞 $(2,-1)$；$g$：竖直渐近线 $x=2$。两者在 $x=2$ 都无定义。",
+        "printedPage": 448,
+        "pdfPage": 457,
+        "en": {
+          "label": "Textbook Example 2",
+          "prompt": "(a) Compare $f(x)=\\frac{x^2-2x}{4-2x}$ and $g(x)=\\frac{x^2+2x}{4-2x}$ near any non-permissible values. (b) Explain any differences.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Both require $x\\ne2$. Since $f(x)=-x/2$ for $x\\ne2$, it has a hole at $(2,-1)$ and approaches $-1$ from both sides. The numerator of $g$ is $8$ at $2$, so $g\\to+\\infty$ as $x\\to2^-$ and $g\\to-\\infty$ as $x\\to2^+$."
+            },
+            {
+              "title": "(b)",
+              "body": "$f=\\frac{x(x-2)}{-2(x-2)}$ permits cancellation, while $g=\\frac{x(x+2)}{-2(x-2)}$ does not. The same excluded input therefore produces different features."
+            }
+          ],
+          "answer": "$f$: hole $(2,-1)$; $g$: vertical asymptote $x=2$. Both functions are undefined at $2$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/9-2-example2.png"
+      },
+      {
+        "id": "margin-example-2",
+        "type": "practice",
+        "label": "例题 2 旁注",
+        "prompt": "方程如此相似，图形为什么差别很大？",
+        "concept": "restrictions",
+        "steps": [
+          {
+            "title": "1",
+            "body": "负号改变了分子的因式：$x^2-2x=x(x-2)$，$x^2+2x=x(x+2)$。前者消去分母零点，后者不消去，分别形成孔洞与竖直渐近线。"
+          }
+        ],
+        "answer": "关键是是否有可完全约去的分母因子，而不是方程外观。",
+        "printedPage": 448,
+        "pdfPage": 457,
+        "en": {
+          "label": "Example 2 margin",
+          "prompt": "Why are the graphs so different when the equations look so similar?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The sign changes the numerator factors: $x^2-2x=x(x-2)$ but $x^2+2x=x(x+2)$. Only the first cancels the denominator zero, producing a hole instead of a vertical asymptote."
+            }
+          ],
+          "answer": "The decisive issue is whether the denominator factor cancels completely."
+        }
+      },
+      {
+        "id": "your-turn-2",
+        "type": "practice",
+        "label": "自己试一试 2",
+        "prompt": "比较 $f(x)=\\frac{x^2-3x}{2x+6}$ 与 $g(x)=\\frac{x^2+3x}{2x+6}$，并解释差别。",
+        "concept": "behaviour",
+        "steps": [
+          {
+            "title": "1",
+            "body": "两者均有原限制 $x\\ne-3$。$f=\\frac{x(x-3)}{2(x+3)}$，分子在 $-3$ 为 $18$，所以有竖直渐近线 $x=-3$。左侧趋于 $-\\infty$，右侧趋于 $+\\infty$。"
+          },
+          {
+            "title": "2",
+            "body": "$g=\\frac{x(x+3)}{2(x+3)}=x/2$，$x\\ne-3$，所以有孔洞 $(-3,-3/2)$，两侧趋于 $-3/2$。"
+          }
+        ],
+        "answer": "$f$ 有竖直渐近线 $x=-3$；$g$ 有孔洞 $(-3,-3/2)$。",
+        "printedPage": 449,
+        "pdfPage": 458,
+        "en": {
+          "label": "Your Turn 2",
+          "prompt": "Compare $f(x)=\\frac{x^2-3x}{2x+6}$ and $g(x)=\\frac{x^2+3x}{2x+6}$ and explain any differences.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "Both have the original restriction $x\\ne-3$. For $f=\\frac{x(x-3)}{2(x+3)}$, the numerator at $-3$ is $18$, giving a vertical asymptote at $x=-3$, with left limit $-\\infty$ and right limit $+\\infty$."
+            },
+            {
+              "title": "2",
+              "body": "$g=\\frac{x(x+3)}{2(x+3)}=x/2$ for $x\\ne-3$, so it has a hole at $(-3,-3/2)$ and approaches $-3/2$ from both sides."
+            }
+          ],
+          "answer": "$f$ has vertical asymptote $x=-3$; $g$ has hole $(-3,-3/2)$."
+        },
+        "solutionImage": "assets/9-2-yourturn2.png"
+      },
+      {
+        "id": "example-3",
+        "type": "example",
+        "label": "教材例题 3",
+        "prompt": "将每个有理函数与最相符的原图配对并说明理由：$A(x)=\\frac{x^2+2x}{x^2-4}$，$B(x)=\\frac{2x+4}{x^2+1}$，$C(x)=\\frac{2x}{x^2-4}$。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "A",
+            "body": "$A=\\frac{x(x+2)}{(x-2)(x+2)}=\\frac{x}{x-2}$，$x\\ne\\pm2$。竖直渐近线 $x=2$、孔洞 $(-2,1/2)$、截距 $(0,0)$，故配图 2。"
+          },
+          {
+            "title": "B",
+            "body": "$x^2+1>0$ 对所有实数成立，无竖直渐近线或孔洞；零点 $-2$、纵截距 $4$，故配图 3。"
+          },
+          {
+            "title": "C",
+            "body": "分母 $(x-2)(x+2)$ 没有共因子；竖直渐近线 $x=\\pm2$，零点为 $0$，没有孔洞，故配图 1。"
+          }
+        ],
+        "answer": "$A\\to2$，$B\\to3$，$C\\to1$。",
+        "printedPage": 449,
+        "pdfPage": 458,
+        "en": {
+          "label": "Textbook Example 3",
+          "prompt": "Match each rational function with the most appropriate given graph and give reasons: $A(x)=\\frac{x^2+2x}{x^2-4}$, $B(x)=\\frac{2x+4}{x^2+1}$, $C(x)=\\frac{2x}{x^2-4}$.",
+          "steps": [
+            {
+              "title": "A",
+              "body": "$A=\\frac{x(x+2)}{(x-2)(x+2)}=\\frac{x}{x-2}$ with $x\\ne\\pm2$. It has vertical asymptote $x=2$, hole $(-2,1/2)$ and intercept $(0,0)$, so it matches Graph 2."
+            },
+            {
+              "title": "B",
+              "body": "$x^2+1>0$ for every real input, so there are no vertical asymptotes or holes. Its zero is $-2$ and y-intercept is $4$, matching Graph 3."
+            },
+            {
+              "title": "C",
+              "body": "The denominator $(x-2)(x+2)$ has no common factor with $2x$. There are vertical asymptotes at $x=\\pm2$, a zero at $0$, and no holes, matching Graph 1."
+            }
+          ],
+          "answer": "$A\\to2$, $B\\to3$, $C\\to1$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/9-2-source-example3.png"
+      },
+      {
+        "id": "margin-example-3-factors",
+        "type": "practice",
+        "label": "例题 3 旁注：因式与特征",
+        "prompt": "方程中的因式如何揭示图形特征？",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "1",
+            "body": "以 $A=\\frac{x(x+2)}{(x-2)(x+2)}$ 为例：$x$ 给出有效零点 $0$；仅分母剩余的 $x-2$ 给出渐近线 $x=2$；完全约去的 $x+2$ 给出孔洞，其高度为 $(-2)/(-4)=1/2$。"
+          }
+        ],
+        "answer": "有效分子零点、未约尽的分母零点、完全可去的原分母零点分别对应截距、渐近线、孔洞。",
+        "printedPage": 450,
+        "pdfPage": 459,
+        "en": {
+          "label": "Example 3 margin: factors and features",
+          "prompt": "How do the factors in the equation reveal the features of the graph?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "For $A=\\frac{x(x+2)}{(x-2)(x+2)}$, $x$ gives the allowed zero $0$, the remaining denominator factor $x-2$ gives vertical asymptote $x=2$, and the cancelled $x+2$ gives a hole of height $(-2)/(-4)=1/2$."
+            }
+          ],
+          "answer": "Allowed numerator zeros, remaining denominator zeros, and removable original denominator zeros identify intercepts, asymptotes, and holes."
+        }
+      },
+      {
+        "id": "margin-example-3-b",
+        "type": "practice",
+        "label": "例题 3 旁注：函数 B",
+        "prompt": "怎样知道 $B(x)$ 没有孔洞或竖直渐近线？",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$B=\\frac{2(x+2)}{x^2+1}$；实数平方非负，所以分母至少为 $1$，永不为零。没有禁止的实数输入，也就没有上述两种特征。"
+          }
+        ],
+        "answer": "$x^2+1>0$，定义域为全部实数。",
+        "printedPage": 450,
+        "pdfPage": 459,
+        "en": {
+          "label": "Example 3 margin: function B",
+          "prompt": "How can you tell that $B(x)$ has no points of discontinuity or vertical asymptotes?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$B=\\frac{2(x+2)}{x^2+1}$; a real square is nonnegative, so the denominator is at least $1$ and never zero. There are no excluded real inputs and hence neither feature."
+            }
+          ],
+          "answer": "$x^2+1>0$; the domain is all real numbers."
+        }
+      },
+      {
+        "id": "margin-example-3-c",
+        "type": "practice",
+        "label": "例题 3 旁注：函数 C",
+        "prompt": "怎样知道 $C(x)$ 有两条竖直渐近线、一个横截距而无孔洞？",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$C=\\frac{2x}{(x-2)(x+2)}$。分母的两个不同实根 $\\pm2$ 都不能约去，故各有竖直渐近线；分子唯一零点 $0$ 在定义域内，故唯一横截距为 $(0,0)$。没有完全约去的分母因子。"
+          }
+        ],
+        "answer": "竖直渐近线 $x=-2,2$；横截距 $(0,0)$；无孔洞。",
+        "printedPage": 450,
+        "pdfPage": 459,
+        "en": {
+          "label": "Example 3 margin: function C",
+          "prompt": "How can you tell that $C(x)$ has two vertical asymptotes and one x-intercept, but no points of discontinuity?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$C=\\frac{2x}{(x-2)(x+2)}$. The two distinct denominator zeros $\\pm2$ do not cancel, giving two vertical asymptotes. The sole numerator zero $0$ is allowed, giving the only x-intercept $(0,0)$. No denominator factor cancels completely."
+            }
+          ],
+          "answer": "Vertical asymptotes $x=-2,2$; x-intercept $(0,0)$; no holes."
+        }
+      },
+      {
+        "id": "your-turn-3",
+        "type": "practice",
+        "label": "自己试一试 3",
+        "prompt": "将每个有理函数与最相符的原图配对并解释：$K(x)=\\frac{x^2+2}{x^2-x-2}$，$L(x)=\\frac{x-1}{x^2-1}$，$M(x)=\\frac{x^2-5x+6}{3-x}$。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "K",
+            "body": "$K=\\frac{x^2+2}{(x-2)(x+1)}$，分子无实根；竖直渐近线 $x=-1,2$，水平渐近线 $y=1$，无横截距，配图 3。"
+          },
+          {
+            "title": "L",
+            "body": "$L=\\frac{x-1}{(x-1)(x+1)}=1/(x+1)$，$x\\ne\\pm1$。孔洞 $(1,1/2)$，竖直渐近线 $x=-1$，配图 1。"
+          },
+          {
+            "title": "M",
+            "body": "$M=\\frac{(x-2)(x-3)}{-(x-3)}=2-x$，$x\\ne3$。直线斜率 $-1$、纵截距 $2$，孔洞 $(3,-1)$，配图 2。"
+          }
+        ],
+        "answer": "$K\\to3$，$L\\to1$，$M\\to2$。",
+        "printedPage": 450,
+        "pdfPage": 459,
+        "en": {
+          "label": "Your Turn 3",
+          "prompt": "Match each rational function with the most appropriate given graph and explain: $K(x)=\\frac{x^2+2}{x^2-x-2}$, $L(x)=\\frac{x-1}{x^2-1}$, $M(x)=\\frac{x^2-5x+6}{3-x}$.",
+          "steps": [
+            {
+              "title": "K",
+              "body": "$K=\\frac{x^2+2}{(x-2)(x+1)}$ has no real numerator zeros, vertical asymptotes $x=-1,2$, horizontal asymptote $y=1$, and no x-intercepts. It matches Graph 3."
+            },
+            {
+              "title": "L",
+              "body": "$L=\\frac{x-1}{(x-1)(x+1)}=1/(x+1)$ for $x\\ne\\pm1$. Its hole $(1,1/2)$ and vertical asymptote $x=-1$ match Graph 1."
+            },
+            {
+              "title": "M",
+              "body": "$M=\\frac{(x-2)(x-3)}{-(x-3)}=2-x$ for $x\\ne3$. The line has slope $-1$, y-intercept $2$, and hole $(3,-1)$, matching Graph 2."
+            }
+          ],
+          "answer": "$K\\to3$, $L\\to1$, $M\\to2$."
+        },
+        "subpartIds": [
+          "k",
+          "l",
+          "m"
+        ],
+        "sourceImage": "assets/9-2-source-yourturn3.png"
+      },
+      {
+        "id": "project-corner",
+        "type": "practice",
+        "label": "Project Corner：视觉展示",
+        "prompt": "制作一段视频或幻灯片，展示你对 Unit 4 某个主题的理解。①选题后，为视频写脚本，或为幻灯片写提纲。②若制作视频，选主持人/演员及地点，准备材料并排练；拍摄、剪辑、配音，制作片名和演职员表。③若制作幻灯片，收集或制作数字图像，设置标题、目录、致谢/来源页，加入声音或音乐并测试展示。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "选题与脚本",
+            "body": "可选本节主题“孔洞还是渐近线？”提纲示例：标题；比较 $(x^2-1)/(x-1)$ 与 $1/(x-1)$；先写原限制 $x\\ne1$；展示两侧表；解释前者孔洞 $(1,2)$、后者竖直渐近线 $x=1$；最后回顾分母限制并列教材来源。此为可实施的示例提纲，选题仍由学生决定。"
+          },
+          {
+            "title": "视频制作",
+            "body": "示例制作计划：一位讲解者在安静桌面前，用两张带坐标标记的图和数值表讲解；先排练一遍，检查空心点和渐近线标签在镜头内可读；分段拍摄、剪去停顿、录制清楚解说，加入片头和教材/制作者鸣谢。实际拍摄和剪辑由学生完成，不能把此计划称为成片。"
+          },
+          {
+            "title": "幻灯片制作",
+            "body": "示例六页结构：标题、目录、原式与限制、数值表、两幅图及结论、来源与鸣谢。自己绘制数字图；解说或轻背景音不遮盖讲解；逐页测试公式、图像、音量、切换顺序和投影可读性。提交前请伙伴指出数学条件是否完整。"
+          }
+        ],
+        "answer": "开放项目：提供选题、脚本提纲及视频/幻灯片两种制作方案；最终媒体与伙伴反馈需学生实际完成。",
+        "printedPage": 456,
+        "pdfPage": 465,
+        "en": {
+          "label": "Project Corner: Visual Presentation",
+          "prompt": "Create a video or slide presentation demonstrating your understanding of a Unit 4 topic. (1) After choosing a topic, write a movie script or a slide outline. (2) For a video, choose a presenter/cast and location, prepare materials and rehearse; film, edit, add sound, and create title and credits. (3) For slides, collect or make digital images, create title, contents, and credits slides, add sound or music, and test the presentation.",
+          "steps": [
+            {
+              "title": "Topic / script",
+              "body": "One suitable topic is “Hole or asymptote?” A sample outline is: title; compare $(x^2-1)/(x-1)$ with $1/(x-1)$; state original restriction $x\\ne1$; show two-sided tables; explain hole $(1,2)$ versus vertical asymptote $x=1$; finish with the restriction rule and textbook credit. This is an actionable sample outline; the student chooses the actual topic."
+            },
+            {
+              "title": "Video",
+              "body": "Sample production plan: one presenter at a quiet desk explains two fully labelled graphs and a value table. Rehearse, checking that the holes and asymptote labels remain readable; film in segments, edit pauses, add clear narration, and include title and textbook/creator credits. The student must carry out the filming and editing; this plan is not a completed video."
+            },
+            {
+              "title": "Slides",
+              "body": "Sample six-slide structure: title, contents, original expressions and restrictions, value table, two graphs with conclusion, and sources/credits. Make digital graphs, keep narration or music subordinate to the explanation, and test equations, images, audio, slide order, and projected readability. Ask a partner to check that every mathematical condition is stated."
+            }
+          ],
+          "answer": "Open project: a topic, script outline, and video/slide production paths are supplied; final media and partner feedback must be completed by the student."
+        },
+        "subpartIds": [
+          "topicscript",
+          "video",
+          "slides"
+        ]
+      }
+    ]
+  },
+  "textbook": {
+    "exercises": [
+      {
+        "number": 1,
+        "prompt": "图示有理函数 $y=\\frac{x-4}{x^2-6x+8}$。(a) 复制并填表：禁止值、每个禁止值处的特征、附近行为、定义域、值域。(b) 解释每个禁止值附近的行为。",
+        "concept": [
+          "restrictions",
+          "behaviour"
+        ],
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$x^2-6x+8=(x-2)(x-4)$，故原限制为 $x\\ne2,4$，化简为 $1/(x-2)$。在 $x=2$ 有竖直渐近线；在 $(4,1/2)$ 有孔洞。定义域 $\\mathbb R\\setminus\\{2,4\\}$，值域 $\\mathbb R\\setminus\\{0,1/2\\}$。"
+          },
+          {
+            "title": "(b)",
+            "body": "$x\\to2^-$ 时 $y\\to-\\infty$，$x\\to2^+$ 时 $y\\to+\\infty$，因为分母趋于零而分子化简后为 $1$。$x\\to4$ 时两侧都趋于 $1/2$；原来的 $x-4$ 已约去。$y=0$ 无解；$y=1/2$ 唯一给出被排除的 $x=4$。"
+          }
+        ],
+        "answer": "禁止值 $2,4$；竖直渐近线 $x=2$；孔洞 $(4,1/2)$；定义域排除 $2,4$，值域排除 $0,1/2$。",
+        "printedPage": 451,
+        "pdfPage": 460,
+        "en": {
+          "prompt": "The graph of $y=\\frac{x-4}{x^2-6x+8}$ is shown. (a) Complete a table giving non-permissible values, the feature and behaviour at each, domain, and range. (b) Explain the behaviour at each non-permissible value.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$x^2-6x+8=(x-2)(x-4)$, so the original restrictions are $x\\ne2,4$ and the reduced expression is $1/(x-2)$. There is a vertical asymptote at $x=2$ and a hole at $(4,1/2)$. Domain: $\\mathbb R\\setminus\\{2,4\\}$; range: $\\mathbb R\\setminus\\{0,1/2\\}$."
+            },
+            {
+              "title": "(b)",
+              "body": "As $x\\to2^-$, $y\\to-\\infty$; as $x\\to2^+$, $y\\to+\\infty$, since the reduced numerator is $1$ and denominator tends to zero. Both sides approach $1/2$ at $x=4$, where the factor cancelled. The output $0$ is impossible and $1/2$ occurs only at excluded input $4$."
+            }
+          ],
+          "answer": "Excluded inputs $2,4$; vertical asymptote $x=2$; hole $(4,1/2)$; domain excludes $2,4$ and range excludes $0,1/2$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/9-2-source-ex1.png"
+      },
+      {
+        "number": 2,
+        "prompt": "为各函数在禁止值附近建立数值表，说明表如何显示孔洞或渐近线：(a) $y=\\frac{x^2-3x}{x}$；(b) $y=\\frac{x^2-3x-10}{x-2}$；(c) $y=\\frac{3x^2+4x-4}{x+4}$；(d) $y=\\frac{5x^2+4x-1}{5x-1}$。",
+        "concept": "behaviour",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$y=x-3$，$x\\ne0$。$x=-0.1,-0.01,0,0.01,0.1$ 对应 $y=-3.1,-3.01,$无定义$,-2.99,-2.9$。趋于 $-3$，孔洞 $(0,-3)$。"
+          },
+          {
+            "title": "(b)",
+            "body": "$y=x-1-12/(x-2)$，$x\\ne2$。输入 $1.9,1.99,2,2.01,2.1$，输出 $120.9,1200.99,$无定义$,-1198.99,-118.9$。左侧趋于 $+\\infty$、右侧趋于 $-\\infty$；渐近线 $x=2$。"
+          },
+          {
+            "title": "(c)",
+            "body": "$y=3x-8+28/(x+4)$，$x\\ne-4$。输入 $-4.1,-4.01,-4,-3.99,-3.9$，输出 $-300.3,-2820.03,$无定义$,2780.03,260.3$。左侧趋于 $-\\infty$、右侧趋于 $+\\infty$；渐近线 $x=-4$。"
+          },
+          {
+            "title": "(d)",
+            "body": "$5x^2+4x-1=(5x-1)(x+1)$，故 $y=x+1$，$x\\ne1/5$。输入 $0.1,0.19,0.2,0.21,0.3$，输出 $1.1,1.19,$无定义$,1.21,1.3$。孔洞 $(1/5,6/5)$。"
+          }
+        ],
+        "answer": "(a) 孔洞 $(0,-3)$；(b) 渐近线 $x=2$；(c) 渐近线 $x=-4$；(d) 孔洞 $(1/5,6/5)$。",
+        "printedPage": 451,
+        "pdfPage": 460,
+        "en": {
+          "prompt": "Create a table near each non-permissible value and explain whether it shows a point of discontinuity or an asymptote: (a) $y=\\frac{x^2-3x}{x}$; (b) $y=\\frac{x^2-3x-10}{x-2}$; (c) $y=\\frac{3x^2+4x-4}{x+4}$; (d) $y=\\frac{5x^2+4x-1}{5x-1}$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$y=x-3$ for $x\\ne0$. Inputs $-0.1,-0.01,0,0.01,0.1$ give $-3.1,-3.01,$ undefined, $-2.99,-2.9$. The limiting value is $-3$, so the hole is $(0,-3)$."
+            },
+            {
+              "title": "(b)",
+              "body": "$y=x-1-12/(x-2)$, $x\\ne2$. Inputs $1.9,1.99,2,2.01,2.1$ give $120.9,1200.99,$ undefined, $-1198.99,-118.9$. The left side tends to $+\\infty$ and right side to $-\\infty$; vertical asymptote $x=2$."
+            },
+            {
+              "title": "(c)",
+              "body": "$y=3x-8+28/(x+4)$, $x\\ne-4$. Inputs $-4.1,-4.01,-4,-3.99,-3.9$ give $-300.3,-2820.03,$ undefined, $2780.03,260.3$. The left side tends to $-\\infty$ and right side to $+\\infty$; vertical asymptote $x=-4$."
+            },
+            {
+              "title": "(d)",
+              "body": "$5x^2+4x-1=(5x-1)(x+1)$, so $y=x+1$ for $x\\ne1/5$. Inputs $0.1,0.19,0.2,0.21,0.3$ give $1.1,1.19,$ undefined, $1.21,1.3$. The hole is $(1/5,6/5)$."
+            }
+          ],
+          "answer": "(a) Hole $(0,-3)$; (b) vertical asymptote $x=2$; (c) vertical asymptote $x=-4$; (d) hole $(1/5,6/5)$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/9-2-ex2.png"
+      },
+      {
+        "number": 3,
+        "prompt": "(a) 绘出 $f(x)=\\frac{x^2-2x-3}{x+3}$ 与 $g(x)=\\frac{x^2+2x-3}{x+3}$ 并分析特征。(b) 解释它们在禁止值附近的行为差异。",
+        "concept": [
+          "features",
+          "behaviour"
+        ],
+        "steps": [
+          {
+            "title": "(a): f",
+            "body": "$f=\\frac{(x-3)(x+1)}{x+3}=x-5+12/(x+3)$，$x\\ne-3$。竖直渐近线 $x=-3$、斜渐近线 $y=x-5$；横截距 $-1,3$、纵截距 $-1$，无孔洞。值域由 $y^2+16y+16\\ge0$ 得 $y\\le-8-4\\sqrt3$ 或 $y\\ge-8+4\\sqrt3$。"
+          },
+          {
+            "title": "(a): g",
+            "body": "$g=\\frac{(x+3)(x-1)}{x+3}=x-1$，$x\\ne-3$。图为直线，孔洞 $(-3,-4)$；横截距 $1$、纵截距 $-1$；值域排除 $-4$。"
+          },
+          {
+            "title": "(b)",
+            "body": "$f$ 的分子在 $-3$ 为 $12$，不能约去，左侧趋于 $-\\infty$、右侧趋于 $+\\infty$。$g$ 的共同因子完全约去，两侧都趋于 $-4$。"
+          }
+        ],
+        "answer": "$f$ 有竖直渐近线 $x=-3$；$g$ 有孔洞 $(-3,-4)$。",
+        "printedPage": 451,
+        "pdfPage": 460,
+        "en": {
+          "prompt": "(a) Graph $f(x)=\\frac{x^2-2x-3}{x+3}$ and $g(x)=\\frac{x^2+2x-3}{x+3}$ and analyse their characteristics. (b) Explain differences near non-permissible values.",
+          "steps": [
+            {
+              "title": "(a): f",
+              "body": "$f=\\frac{(x-3)(x+1)}{x+3}=x-5+12/(x+3)$ for $x\\ne-3$. Its vertical asymptote is $x=-3$, slant asymptote $y=x-5$, x-intercepts $-1,3$, and y-intercept $-1$, with no hole. Solving for a real input requires $y^2+16y+16\\ge0$, so the range is $y\\le-8-4\\sqrt3$ or $y\\ge-8+4\\sqrt3$."
+            },
+            {
+              "title": "(a): g",
+              "body": "$g=\\frac{(x+3)(x-1)}{x+3}=x-1$ for $x\\ne-3$. It is a line with hole $(-3,-4)$, x-intercept $1$, y-intercept $-1$, and range excluding $-4$."
+            },
+            {
+              "title": "(b)",
+              "body": "The numerator of $f$ is $12$ at $-3$, so its factor does not cancel: the left side tends to $-\\infty$ and right side to $+\\infty$. In $g$ the common factor cancels completely and both sides approach $-4$."
+            }
+          ],
+          "answer": "$f$ has vertical asymptote $x=-3$; $g$ has hole $(-3,-4)$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/9-2-ex3.png"
+      },
+      {
+        "number": 4,
+        "prompt": "对每个函数，预测所有竖直渐近线、孔洞及截距的位置，再绘图核实：(a) $y=\\frac{x^2+4x}{x^2+9x+20}$；(b) $y=\\frac{2x^2-5x-3}{x^2-1}$；(c) $y=\\frac{x^2+2x-8}{x^2-2x-8}$；(d) $y=\\frac{2x^2+7x-15}{9-4x^2}$。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$y=\\frac{x(x+4)}{(x+4)(x+5)}=x/(x+5)$，$x\\ne-4,-5$。竖直渐近线 $x=-5$；孔洞 $(-4,-4)$；横纵截距均为 $(0,0)$；水平渐近线 $y=1$。"
+          },
+          {
+            "title": "(b)",
+            "body": "$y=\\frac{(2x+1)(x-3)}{(x-1)(x+1)}$，$x\\ne\\pm1$。无约分，故无孔洞；竖直渐近线 $x=\\pm1$；横截距 $(-1/2,0),(3,0)$；纵截距 $(0,3)$；水平渐近线 $y=2$。"
+          },
+          {
+            "title": "(c)",
+            "body": "$y=\\frac{(x+4)(x-2)}{(x-4)(x+2)}$，$x\\ne4,-2$。无孔洞；竖直渐近线 $x=4,-2$；横截距 $(-4,0),(2,0)$；纵截距 $(0,1)$；水平渐近线 $y=1$。"
+          },
+          {
+            "title": "(d)",
+            "body": "$y=\\frac{(2x-3)(x+5)}{-(2x-3)(2x+3)}=-\\frac{x+5}{2x+3}$，$x\\ne\\pm3/2$。竖直渐近线 $x=-3/2$；孔洞 $(3/2,-13/12)$；横截距 $(-5,0)$；纵截距 $(0,-5/3)$；水平渐近线 $y=-1/2$。"
+          }
+        ],
+        "answer": "特征与解析图一致；全部原限制须保留：(a) $-4,-5$；(b) $\\pm1$；(c) $4,-2$；(d) $\\pm3/2$。",
+        "printedPage": 452,
+        "pdfPage": 461,
+        "en": {
+          "prompt": "For each function, predict all vertical asymptotes, points of discontinuity, and intercepts, then graph to verify: (a) $y=\\frac{x^2+4x}{x^2+9x+20}$; (b) $y=\\frac{2x^2-5x-3}{x^2-1}$; (c) $y=\\frac{x^2+2x-8}{x^2-2x-8}$; (d) $y=\\frac{2x^2+7x-15}{9-4x^2}$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$y=\\frac{x(x+4)}{(x+4)(x+5)}=x/(x+5)$ with $x\\ne-4,-5$. Vertical asymptote: $x=-5$; hole: $(-4,-4)$; both intercepts: $(0,0)$; horizontal asymptote: $y=1$."
+            },
+            {
+              "title": "(b)",
+              "body": "$y=\\frac{(2x+1)(x-3)}{(x-1)(x+1)}$, $x\\ne\\pm1$. No factors cancel, so there are no holes. Vertical asymptotes: $x=\\pm1$; x-intercepts: $(-1/2,0),(3,0)$; y-intercept: $(0,3)$; horizontal asymptote: $y=2$."
+            },
+            {
+              "title": "(c)",
+              "body": "$y=\\frac{(x+4)(x-2)}{(x-4)(x+2)}$, $x\\ne4,-2$. There are no holes. Vertical asymptotes: $x=4,-2$; x-intercepts: $(-4,0),(2,0)$; y-intercept: $(0,1)$; horizontal asymptote: $y=1$."
+            },
+            {
+              "title": "(d)",
+              "body": "$y=\\frac{(2x-3)(x+5)}{-(2x-3)(2x+3)}=-\\frac{x+5}{2x+3}$ for $x\\ne\\pm3/2$. Vertical asymptote: $x=-3/2$; hole: $(3/2,-13/12)$; x-intercept: $(-5,0)$; y-intercept: $(0,-5/3)$; horizontal asymptote: $y=-1/2$."
+            }
+          ],
+          "answer": "The plotted features agree with the analysis. Keep all original exclusions: (a) $-4,-5$; (b) $\\pm1$; (c) $4,-2$; (d) $\\pm3/2$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/9-2-ex4.png"
+      },
+      {
+        "number": 5,
+        "prompt": "哪个原图与每个有理函数相符？说明理由。(a) $A(x)=\\frac{x^2+2x}{x^2+4}$；(b) $B(x)=\\frac{x-2}{x^2-2x}$；(c) $C(x)=\\frac{x+2}{x^2-4}$；(d) $D(x)=\\frac{2x}{x^2+2x}$。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$x^2+4>0$；无禁止值，零点为 $-2,0$，故配图 C。"
+          },
+          {
+            "title": "(b)",
+            "body": "$B=1/x$，但 $x\\ne0,2$；竖直渐近线 $x=0$、孔洞 $(2,1/2)$，配图 A。"
+          },
+          {
+            "title": "(c)",
+            "body": "$C=1/(x-2)$，但 $x\\ne-2,2$；竖直渐近线 $x=2$、孔洞 $(-2,-1/4)$，配图 D。"
+          },
+          {
+            "title": "(d)",
+            "body": "$D=2/(x+2)$，但 $x\\ne-2,0$；竖直渐近线 $x=-2$、孔洞 $(0,1)$，配图 B。"
+          }
+        ],
+        "answer": "(a) C；(b) A；(c) D；(d) B。",
+        "printedPage": 452,
+        "pdfPage": 461,
+        "en": {
+          "prompt": "Which given graph matches each rational function? Explain. (a) $A(x)=\\frac{x^2+2x}{x^2+4}$; (b) $B(x)=\\frac{x-2}{x^2-2x}$; (c) $C(x)=\\frac{x+2}{x^2-4}$; (d) $D(x)=\\frac{2x}{x^2+2x}$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$x^2+4>0$, so there are no excluded inputs. Zeros $-2,0$ identify Graph C."
+            },
+            {
+              "title": "(b)",
+              "body": "$B=1/x$ with $x\\ne0,2$; vertical asymptote $x=0$ and hole $(2,1/2)$ identify Graph A."
+            },
+            {
+              "title": "(c)",
+              "body": "$C=1/(x-2)$ with $x\\ne-2,2$; vertical asymptote $x=2$ and hole $(-2,-1/4)$ identify Graph D."
+            },
+            {
+              "title": "(d)",
+              "body": "$D=2/(x+2)$ with $x\\ne-2,0$; vertical asymptote $x=-2$ and hole $(0,1)$ identify Graph B."
+            }
+          ],
+          "answer": "(a) C; (b) A; (c) D; (d) B."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/9-2-source-ex5.png"
+      },
+      {
+        "number": 6,
+        "prompt": "把原图 (a)–(d) 与最相符的方程配对，并说明理由。A：$f(x)=\\frac{x^2+x-2}{x^2+x-20}$；B：$g(x)=\\frac{x^2-5x+4}{x^2-x-2}$；C：$h(x)=\\frac{x^2-5x+6}{x^2-5x+4}$；D：$j(x)=\\frac{x^2+x-12}{x^2-3x-10}$。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "C 的因式为 $\\frac{(x-2)(x-3)}{(x-1)(x-4)}$；竖直渐近线 $1,4$，横截距 $2,3$，故图 (a) 配 C。"
+          },
+          {
+            "title": "(b)",
+            "body": "B 为 $\\frac{(x-1)(x-4)}{(x-2)(x+1)}$；竖直渐近线 $-1,2$，横截距 $1,4$，故图 (b) 配 B。"
+          },
+          {
+            "title": "(c)",
+            "body": "D 为 $\\frac{(x+4)(x-3)}{(x-5)(x+2)}$；竖直渐近线 $-2,5$，横截距 $-4,3$，故图 (c) 配 D。"
+          },
+          {
+            "title": "(d)",
+            "body": "A 为 $\\frac{(x+2)(x-1)}{(x+5)(x-4)}$；竖直渐近线 $-5,4$，横截距 $-2,1$，故图 (d) 配 A。所有选择都无共因子，均无孔洞，且水平渐近线为 $y=1$。"
+          }
+        ],
+        "answer": "(a) C；(b) B；(c) D；(d) A。",
+        "printedPage": 452,
+        "pdfPage": 461,
+        "en": {
+          "prompt": "Match each given graph (a)–(d) with the most appropriate equation and give reasons. A: $f(x)=\\frac{x^2+x-2}{x^2+x-20}$; B: $g(x)=\\frac{x^2-5x+4}{x^2-x-2}$; C: $h(x)=\\frac{x^2-5x+6}{x^2-5x+4}$; D: $j(x)=\\frac{x^2+x-12}{x^2-3x-10}$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "C factors as $\\frac{(x-2)(x-3)}{(x-1)(x-4)}$. Vertical asymptotes $1,4$ and zeros $2,3$ match graph (a)."
+            },
+            {
+              "title": "(b)",
+              "body": "B is $\\frac{(x-1)(x-4)}{(x-2)(x+1)}$. Vertical asymptotes $-1,2$ and zeros $1,4$ match graph (b)."
+            },
+            {
+              "title": "(c)",
+              "body": "D is $\\frac{(x+4)(x-3)}{(x-5)(x+2)}$. Vertical asymptotes $-2,5$ and zeros $-4,3$ match graph (c)."
+            },
+            {
+              "title": "(d)",
+              "body": "A is $\\frac{(x+2)(x-1)}{(x+5)(x-4)}$. Vertical asymptotes $-5,4$ and zeros $-2,1$ match graph (d). None of the choices has common factors; all have no holes and horizontal asymptote $y=1$."
+            }
+          ],
+          "answer": "(a) C; (b) B; (c) D; (d) A."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "sourceImage": "assets/9-2-source-ex6.png"
+      },
+      {
+        "number": 7,
+        "prompt": "写出原图 (a)、(b) 中各有理函数的方程。",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "原图给出竖直渐近线 $x=-2$、水平渐近线 $y=1$、横截距 $-6$ 和孔洞 $(0,3)$。最简约分式为 $(x+6)/(x+2)$；为保留孔洞，把 $x$ 同乘到分子分母。"
+          },
+          {
+            "title": "(b)",
+            "body": "原图给出竖直渐近线 $x=1$、水平渐近线 $y=1$、横截距 $7$ 和孔洞 $(-3,5/2)$。最简约分式为 $(x-7)/(x-1)$；加共因子 $x+3$。在 $-3$ 的极限确为 $(-10)/(-4)=5/2$。"
+          }
+        ],
+        "answer": "(a) $y=\\frac{x(x+6)}{x(x+2)}$，$x\\ne0,-2$；(b) $y=\\frac{(x-7)(x+3)}{(x-1)(x+3)}$，$x\\ne1,-3$。这些是最简单的相符模型。",
+        "printedPage": 453,
+        "pdfPage": 462,
+        "en": {
+          "prompt": "Write an equation for each rational function graphed in (a) and (b).",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The graph has vertical asymptote $x=-2$, horizontal asymptote $y=1$, zero $-6$, and hole $(0,3)$. A simplest reduced model is $(x+6)/(x+2)$. Multiply numerator and denominator by $x$ to retain the hole."
+            },
+            {
+              "title": "(b)",
+              "body": "The graph has vertical asymptote $x=1$, horizontal asymptote $y=1$, zero $7$, and hole $(-3,5/2)$. Use reduced model $(x-7)/(x-1)$ and add common factor $x+3$. At $-3$ its limiting height is $(-10)/(-4)=5/2$."
+            }
+          ],
+          "answer": "(a) $y=\\frac{x(x+6)}{x(x+2)}$, $x\\ne0,-2$; (b) $y=\\frac{(x-7)(x+3)}{(x-1)(x+3)}$, $x\\ne1,-3$. These are simplest matching models."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/9-2-source-ex7.png"
+      },
+      {
+        "number": 8,
+        "prompt": "对每组特征写一个可能的有理函数：(a) 竖直渐近线 $x=\\pm5$，横截距 $-10,4$；(b) 竖直渐近线 $x=-4$，孔洞 $(-11/2,9)$，横截距 $8$；(c) 孔洞 $(-2,1/5)$，竖直渐近线 $x=3$，横截距 $-1$；(d) 竖直渐近线 $x=3,6/7$，横截距 $-1/4,0$。",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "取分子 $(x+10)(x-4)$、分母 $(x-5)(x+5)$。零点互不重合，恰给出所需两条竖直渐近线和两个截距。"
+          },
+          {
+            "title": "(b)",
+            "body": "先取 $k(x-8)/(x+4)$，在 $x=-11/2$ 的极限为 $9k$；令其等于 $9$ 得 $k=1$。加入共同因子 $2x+11$，并保留 $x\\ne-11/2,-4$。"
+          },
+          {
+            "title": "(c)",
+            "body": "取 $k(x+1)/(x-3)$，在 $-2$ 的极限为 $k/5$，所以 $k=1$。加入共同因子 $x+2$，保留 $x\\ne-2,3$。"
+          },
+          {
+            "title": "(d)",
+            "body": "分子取 $x(4x+1)$，分母取 $(x-3)(7x-6)$；四个根互异，不会约去。"
+          }
+        ],
+        "answer": "一组答案：(a) $\\frac{(x+10)(x-4)}{(x-5)(x+5)}$；(b) $\\frac{(x-8)(2x+11)}{(x+4)(2x+11)}$；(c) $\\frac{(x+1)(x+2)}{(x-3)(x+2)}$；(d) $\\frac{x(4x+1)}{(x-3)(7x-6)}$。各分母零点均排除。",
+        "printedPage": 453,
+        "pdfPage": 462,
+        "en": {
+          "prompt": "Write a possible rational function for each set of characteristics: (a) vertical asymptotes $x=\\pm5$, x-intercepts $-10,4$; (b) vertical asymptote $x=-4$, hole $(-11/2,9)$, x-intercept $8$; (c) hole $(-2,1/5)$, vertical asymptote $x=3$, x-intercept $-1$; (d) vertical asymptotes $x=3,6/7$, x-intercepts $-1/4,0$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Use numerator $(x+10)(x-4)$ and denominator $(x-5)(x+5)$. No roots overlap, giving exactly the required two asymptotes and two zeros."
+            },
+            {
+              "title": "(b)",
+              "body": "Start with $k(x-8)/(x+4)$. Its limiting value at $-11/2$ is $9k$, so $k=1$. Add common factor $2x+11$ and keep $x\\ne-11/2,-4$."
+            },
+            {
+              "title": "(c)",
+              "body": "Use $k(x+1)/(x-3)$; its limiting value at $-2$ is $k/5$, so $k=1$. Add common factor $x+2$, retaining $x\\ne-2,3$."
+            },
+            {
+              "title": "(d)",
+              "body": "Use numerator $x(4x+1)$ and denominator $(x-3)(7x-6)$. The four roots are distinct, so none cancels."
+            }
+          ],
+          "answer": "One set: (a) $\\frac{(x+10)(x-4)}{(x-5)(x+5)}$; (b) $\\frac{(x-8)(2x+11)}{(x+4)(2x+11)}$; (c) $\\frac{(x+1)(x+2)}{(x-3)(x+2)}$; (d) $\\frac{x(4x+1)}{(x-3)(7x-6)}$. Exclude every original denominator zero."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "number": 9,
+        "prompt": "Sydney 发现 $f(x)=\\frac{x-3}{x^2-5x-6}$ 与 $g(x)=\\frac{x-3}{x^2-5x+6}$ 的方程很相似，便猜它们的图形也很相似。(a) 预测她是否正确并说明理由。(b) 绘图并解释预测是否准确。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "不能由外观断定相似。$f$ 分母为 $(x-6)(x+1)$，无约分，竖直渐近线是 $-1,6$；$g$ 分母为 $(x-2)(x-3)$，可以约去 $x-3$。"
+          },
+          {
+            "title": "(b)",
+            "body": "$f$ 定义域排除 $-1,6$，有横截距 $(3,0)$、纵截距 $(0,1/2)$。$g=1/(x-2)$，$x\\ne2,3$，有竖直渐近线 $x=2$、孔洞 $(3,1)$、纵截距 $(0,-1/2)$，没有横截距。两者水平渐近线均为 $y=0$，但图的分支和不连续特征明显不同。"
+          }
+        ],
+        "answer": "Sydney 的推断不成立：$f$ 有两条竖直渐近线；$g$ 有一条竖直渐近线和一个孔洞。",
+        "printedPage": 453,
+        "pdfPage": 462,
+        "en": {
+          "prompt": "Sydney notices that $f(x)=\\frac{x-3}{x^2-5x-6}$ and $g(x)=\\frac{x-3}{x^2-5x+6}$ have similar equations and assumes their graphs are similar. (a) Predict whether she is correct and explain. (b) Graph them and explain why your prediction is or is not accurate.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The appearance is misleading. The denominator of $f$ is $(x-6)(x+1)$, with no cancellation and vertical asymptotes $-1,6$. The denominator of $g$ is $(x-2)(x-3)$, permitting cancellation of $x-3$."
+            },
+            {
+              "title": "(b)",
+              "body": "$f$ excludes $-1,6$, has x-intercept $(3,0)$ and y-intercept $(0,1/2)$. In contrast $g=1/(x-2)$ with $x\\ne2,3$, vertical asymptote $x=2$, hole $(3,1)$, y-intercept $(0,-1/2)$ and no x-intercept. Both approach $y=0$ at infinity, but their branches and discontinuities differ substantially."
+            }
+          ],
+          "answer": "Sydney’s assumption is not supported: $f$ has two vertical asymptotes; $g$ has one vertical asymptote and one hole."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/9-2-ex9.png"
+      },
+      {
+        "number": 10,
+        "prompt": "原图表示什么有理函数？",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "1",
+            "body": "图形是水平线 $y=-3$，在 $x=-3$ 和 $x=2$ 各有一个空心点。因此以 $(x+3)(x-2)$ 为共因子构造可去间断。"
+          },
+          {
+            "title": "2",
+            "body": "取 $y=\\frac{-3(x+3)(x-2)}{(x+3)(x-2)}$，原分母要求 $x\\ne-3,2$，在其余所有输入处恰等于 $-3$。"
+          }
+        ],
+        "answer": "$y=\\frac{-3(x+3)(x-2)}{(x+3)(x-2)}$，$x\\ne-3,2$。",
+        "printedPage": 453,
+        "pdfPage": 462,
+        "en": {
+          "prompt": "What rational function is shown in the given graph?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The graph is the horizontal line $y=-3$ with open points at $x=-3$ and $x=2$. Use common factors $(x+3)(x-2)$ to create both removable discontinuities."
+            },
+            {
+              "title": "2",
+              "body": "Use $y=\\frac{-3(x+3)(x-2)}{(x+3)(x-2)}$. The original denominator requires $x\\ne-3,2$, and every other input gives $-3$."
+            }
+          ],
+          "answer": "$y=\\frac{-3(x+3)(x-2)}{(x+3)(x-2)}$, $x\\ne-3,2$."
+        },
+        "sourceImage": "assets/9-2-source-ex10.png"
+      },
+      {
+        "number": 11,
+        "prompt": "(a) 预测 $y=\\frac{2x^2+2}{x^2-1}$ 的图形形状并解释。(b) 使用绘图技术核实。(c) 比较下列函数与(a)中的图形，并用绘图技术检查：(i) $y=\\frac{2x^2-2}{x^2-1}$；(ii) $y=\\frac{2x^2+2}{x^2+1}$。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$y=2+4/(x^2-1)$ 是偶函数，关于纵轴对称。分母在 $\\pm1$ 为零，分子恒正，故有两条竖直渐近线 $x=\\pm1$ 和水平渐近线 $y=2$；外侧分支在 $2$ 上方，中间分支在 $-2$ 及以下，顶点 $(0,-2)$，无横截距。"
+          },
+          {
+            "title": "(b)",
+            "body": "解析图按原式绘制，显示上述三分支。定义域排除 $\\pm1$；值域为 $(-\\infty,-2]\\cup(2,\\infty)$。"
+          },
+          {
+            "title": "(c.i)",
+            "body": "$\\frac{2(x^2-1)}{x^2-1}=2$，但 $x\\ne\\pm1$。原来的两条竖直渐近线改为水平线上的两个孔洞 $(-1,2),(1,2)$。"
+          },
+          {
+            "title": "(c.ii)",
+            "body": "$\\frac{2(x^2+1)}{x^2+1}=2$ 对所有实数成立，因为分母总为正。图为完整直线 $y=2$，没有孔洞或竖直渐近线。"
+          }
+        ],
+        "answer": "(a) 三个关于纵轴对称的分支；(c.i) $y=2$ 去掉 $x=\\pm1$；(c.ii) 完整的 $y=2$。",
+        "printedPage": 453,
+        "pdfPage": 462,
+        "en": {
+          "prompt": "(a) Predict the shape of $y=\\frac{2x^2+2}{x^2-1}$ and explain. (b) Use graphing technology to confirm. (c) Compare each following graph with part (a) and check using technology: (i) $y=\\frac{2x^2-2}{x^2-1}$; (ii) $y=\\frac{2x^2+2}{x^2+1}$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$y=2+4/(x^2-1)$ is even. Its numerator is positive and denominator zeros are $\\pm1$, giving vertical asymptotes $x=\\pm1$ and horizontal asymptote $y=2$. Outer branches lie above $2$; the middle branch lies at or below $-2$ with highest point $(0,-2)$. There are no x-intercepts."
+            },
+            {
+              "title": "(b)",
+              "body": "The graph plotted from the original expression confirms the three branches. The domain excludes $\\pm1$ and the range is $(-\\infty,-2]\\cup(2,\\infty)$."
+            },
+            {
+              "title": "(c.i)",
+              "body": "$\\frac{2(x^2-1)}{x^2-1}=2$ for $x\\ne\\pm1$. The two vertical asymptotes are replaced by holes $(-1,2),(1,2)$ on a horizontal line."
+            },
+            {
+              "title": "(c.ii)",
+              "body": "$\\frac{2(x^2+1)}{x^2+1}=2$ for every real input, because the denominator is positive. Its graph is the full line $y=2$, with no holes or vertical asymptotes."
+            }
+          ],
+          "answer": "(a) Three branches symmetric about the y-axis; (c.i) $y=2$ with $x=\\pm1$ removed; (c.ii) the full line $y=2$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "ci",
+          "cii"
+        ],
+        "solutionImage": "assets/9-2-ex11.png"
+      },
+      {
+        "number": 12,
+        "prompt": "de Havilland Beaver 小型飞机在静止空气中的空速约为 $250$ km/h，现从萨斯喀彻温省 Athabasca 湖飞往西北地区 Great Slave 湖，航程 $500$ km。(a) 令 $w$ 为风速(km/h)，顺风为正、逆风为负，$t$ 为飞行时间(h)，写出 $t$ 关于 $w$ 的函数与禁止值。(b) 在覆盖禁止值两侧的范围绘图。(c) 解释各风速（包括禁止值附近）的意义。(d) 哪些图形部分在本情境中合理？与伙伴讨论并解释。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "地速为 $250+w$ km/h，故 $t(w)=500/(250+w)$ h；代数禁止值为 $w=-250$ km/h。"
+          },
+          {
+            "title": "(b)",
+            "body": "绘制两侧分支，竖直渐近线 $w=-250$、水平渐近线 $t=0$。标点：$w=-200,-150,0,250$ 时 $t=10,5,2,1$ h。"
+          },
+          {
+            "title": "(c)",
+            "body": "顺风 $w>0$ 使 $0<t<2$；逆风 $-250<w<0$ 使 $t>2$。当 $w\\to-250^+$，向前地速趋于零、时间无界增长；在 $-250$，飞机不能完成该方向航程。"
+          },
+          {
+            "title": "(d)",
+            "body": "有限正时间要求 $w>-250$；$w<-250$ 的负时间分支没有本题意义。极大风速及临界逆风还会超出飞机可安全飞行的条件，但题目未提供具体上限，不能另造数值界限。"
+          }
+        ],
+        "answer": "$t=500/(250+w)$ h，$w\\ne-250$；完成该方向航程的模型有效域为 $w>-250$。",
+        "printedPage": 453,
+        "pdfPage": 462,
+        "en": {
+          "prompt": "A de Havilland Beaver has an airspeed of about $250$ km/h in still air. It flies $500$ km from Lake Athabasca, Saskatchewan, to Great Slave Lake, Northwest Territories. (a) Let $w$ be wind speed in km/h, positive for a tailwind and negative for a headwind, and let $t$ be time in hours. Write $t$ as a function of $w$ and state its non-permissible value. (b) Graph over a window spanning the non-permissible value. (c) Explain the meaning of various $w$ values, including near the non-permissible value. (d) Discuss which parts of the graph are realistic and explain.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Ground speed is $250+w$ km/h, so $t(w)=500/(250+w)$ hours. The algebraically excluded value is $w=-250$ km/h."
+            },
+            {
+              "title": "(b)",
+              "body": "Plot both branches, with vertical asymptote $w=-250$ and horizontal asymptote $t=0$. Points include $w=-200,-150,0,250$ giving $t=10,5,2,1$ hours."
+            },
+            {
+              "title": "(c)",
+              "body": "A tailwind $w>0$ gives $0<t<2$; a headwind $-250<w<0$ gives $t>2$. As $w\\to-250^+$, forward ground speed approaches zero and travel time grows without bound. At $-250$ the trip cannot be completed in the intended direction."
+            },
+            {
+              "title": "(d)",
+              "body": "Finite positive travel time requires $w>-250$. The negative-time branch for $w<-250$ does not describe the trip. Extreme winds would also exceed practical flying conditions, but no numerical safety limit is supplied, so no additional bound can be calculated."
+            }
+          ],
+          "answer": "$t=500/(250+w)$ h, $w\\ne-250$; the model describes completing the intended trip for $w>-250$."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "solutionImage": "assets/9-2-ex12.png"
+      },
+      {
+        "number": 13,
+        "prompt": "Ryan 与 Kandra 在 BC 省 Grenville Channel 的 Lowe Inlet Marine Provincial Park 附近划皮艇。潮流可向任一方向流动，最大 $4$ km/h；他们在无流时能稳定划行 $4$ km/h。(a) 用潮流速度 $w$(km/h) 写出沿水道行进 $4$ km 所需时间 $t$(h) 的函数，并给出情境中的定义域。(b) 在适当定义域绘图。(c) 解释禁止值处及附近的行为及实际意义。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "约定顺行方向的水流速度为正、逆行为负。合速度为 $4+w$，所以 $t=4/(4+w)$。潮流物理范围为 $-4\\le w\\le4$，但有限完成时间的函数定义域为 $-4<w\\le4$。"
+          },
+          {
+            "title": "(b)",
+            "body": "在该区间画递减曲线：$w=-3,-2,0,2,4$ 时，$t=4,2,1,2/3,1/2$ h。右端 $(4,1/2)$ 包含；$w=-4$ 是不包含的竖直渐近线。"
+          },
+          {
+            "title": "(c)",
+            "body": "当 $w\\to-4^+$，合速度趋近 $0^+$，$t\\to+\\infty$。在 $w=-4$ 时划速恰被水流抵消，无法完成航程，并不是有限时间的函数点。"
+          }
+        ],
+        "answer": "$t=4/(4+w)$ h；完成航程时 $-4<w\\le4$，值域 $t\\ge1/2$ h。",
+        "printedPage": 454,
+        "pdfPage": 463,
+        "en": {
+          "prompt": "Ryan and Kandra kayak near Lowe Inlet Marine Provincial Park on Grenville Channel, BC. The current can flow either way at up to $4$ km/h, and they can paddle steadily at $4$ km/h in still water. (a) Relate the time $t$ in hours to travel $4$ km to current speed $w$ in km/h, and state the contextual domain. (b) Graph for an appropriate domain. (c) Explain behaviour at and near the non-permissible value and its meaning.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "Take current in the travel direction as positive and opposing current as negative. Ground speed is $4+w$, so $t=4/(4+w)$. The current can physically range over $[-4,4]$, but finite completion times require domain $-4<w\\le4$."
+            },
+            {
+              "title": "(b)",
+              "body": "On this interval draw the decreasing curve through $(-3,4),(-2,2),(0,1),(2,2/3),(4,1/2)$. Include endpoint $(4,1/2)$; $w=-4$ is an excluded vertical asymptote."
+            },
+            {
+              "title": "(c)",
+              "body": "As $w\\to-4^+$, net speed tends to $0^+$ and $t\\to+\\infty$. At $w=-4$, paddling is exactly cancelled by the current, so the trip cannot be completed; this is not a finite-time point."
+            }
+          ],
+          "answer": "$t=4/(4+w)$ hours; finite completion domain $-4<w\\le4$, range $t\\ge1/2$ hour."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/9-2-ex13.png"
+      },
+      {
+        "number": 14,
+        "prompt": "人道援助工作者 Paul 用 $C(p)=\\frac{500p}{100-p}$ 估计为当地 $p\\%$ 人口接种疫苗的成本，$C$ 的单位为千元。(a) 预测禁止值处的图形特征并说明理由。(b) 在适当定义域绘图，解释实际意义。(c) 你认为这是好的成本模型吗？解释。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "分母在 $p=100$ 为零，分子为 $50000\\ne0$，所以有竖直渐近线 $p=100$，而不是孔洞。"
+          },
+          {
+            "title": "(b)",
+            "body": "实际模型取 $0\\le p<100$，从 $(0,0)$ 上升。$C(50)=500$、$C(90)=4500$、$C(99)=49500$，均为千元；当 $p\\to100^-$，$C\\to+\\infty$。越接近全民接种，模型给出的增量成本越大。"
+          },
+          {
+            "title": "(c)",
+            "body": "这是可讨论的近似模型：它表达最后一部分人口更难覆盖的成本趋势，但在 $100\\%$ 处预测无有限成本，不能用来计算完整覆盖费用。它也没有反映固定费用等因素；没有实际成本资料不能断言拟合精度。"
+          }
+        ],
+        "answer": "竖直渐近线 $p=100$；有效域 $[0,100)$，值域 $[0,\\infty)$（千元）；全覆盖处模型失效。",
+        "printedPage": 454,
+        "pdfPage": 463,
+        "en": {
+          "prompt": "Paul, a humanitarian aid worker, uses $C(p)=\\frac{500p}{100-p}$ to estimate the cost $C$, in thousands of dollars, of vaccinating $p$ percent of a country’s population. (a) Predict the graph’s feature at the non-permissible value and explain. (b) Graph over an appropriate domain and interpret it. (c) Is this a good cost model? Explain.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "At $p=100$ the denominator is zero but numerator $50000$ is nonzero, giving a vertical asymptote rather than a hole."
+            },
+            {
+              "title": "(b)",
+              "body": "Use $0\\le p<100$. The graph rises from $(0,0)$, with $C(50)=500$, $C(90)=4500$, and $C(99)=49500$, all in thousands of dollars. As $p\\to100^-$, $C\\to+\\infty$. The model assigns increasing marginal difficulty to approaching full coverage."
+            },
+            {
+              "title": "(c)",
+              "body": "This is a discussable approximation: it models the growing cost of reaching the final fraction of the population, but cannot estimate a finite cost at $100\\%$. It also omits factors such as fixed costs. Its empirical accuracy cannot be established without cost data."
+            }
+          ],
+          "answer": "Vertical asymptote $p=100$; useful domain $[0,100)$ and range $[0,\\infty)$ in thousands of dollars; the model does not give a finite full-coverage cost."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/9-2-ex14.png"
+      },
+      {
+        "number": 15,
+        "prompt": "忽略空气阻力、发射后不再推进时，从地球表面竖直向上发射物体的最大高度为 $h(v)=\\frac{6378v^2}{125-v^2}$，$h$ 单位 km，初速度 $v$ 单位 km/s。(a) 绘图，哪些部分适用本情境？(b) 图形说明初速度怎样影响最大高度？(c) 逃逸速度是脱离引力场所需初速度；描述禁止值处的图形，并解释其逃逸速度意义。",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "代数禁止值为 $v=\\pm\\sqrt{125}=\\pm5\\sqrt5$。图为偶函数，有两条竖直渐近线和水平渐近线 $h=-6378$。向上初速度及有限非负最大高度要求 $0\\le v<5\\sqrt5$；此为实际适用分支。"
+          },
+          {
+            "title": "(b)",
+            "body": "在此区间，$v^2$ 增大而 $125-v^2$ 减小，故高度增大且越来越快。$h(0)=0$，$h(5)=1594.5$ km，$h(10)=25512$ km。"
+          },
+          {
+            "title": "(c)",
+            "body": "当 $v\\to5\\sqrt5^-$，$h\\to+\\infty$，所以逃逸速度为 $5\\sqrt5\\approx11.18$ km/s。达到或超过这一速度时没有有限的返回最大高度，不能把代数上大于此速度时的负值解释为真实高度。"
+          }
+        ],
+        "answer": "实际有限高度分支为 $0\\le v<5\\sqrt5$；逃逸速度约 $11.18$ km/s。",
+        "printedPage": 454,
+        "pdfPage": 463,
+        "en": {
+          "prompt": "With no further propulsion and with air resistance ignored, $h(v)=\\frac{6378v^2}{125-v^2}$ gives maximum height $h$ in km for an object launched upward from Earth’s surface with initial velocity $v$ in km/s. (a) Graph it and identify applicable parts. (b) Explain how maximum height depends on initial velocity. (c) Escape velocity is the initial speed needed to break free of a gravitational field. Describe the graph at its non-permissible value and explain this connection.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The algebraically excluded values are $v=\\pm\\sqrt{125}=\\pm5\\sqrt5$. The graph is even, with two vertical asymptotes and horizontal asymptote $h=-6378$. Upward launch speed and finite nonnegative maximum height require $0\\le v<5\\sqrt5$; this is the applicable branch."
+            },
+            {
+              "title": "(b)",
+              "body": "On this interval $v^2$ increases while $125-v^2$ decreases, so height increases increasingly rapidly. Values include $h(0)=0$, $h(5)=1594.5$ km, and $h(10)=25512$ km."
+            },
+            {
+              "title": "(c)",
+              "body": "As $v\\to5\\sqrt5^-$, $h\\to+\\infty$. Thus escape speed is $5\\sqrt5\\approx11.18$ km/s. At or above it there is no finite turnaround height; negative algebraic outputs beyond this speed are not physical heights in this model."
+            }
+          ],
+          "answer": "The finite-height physical branch is $0\\le v<5\\sqrt5$; escape speed is approximately $11.18$ km/s."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "solutionImage": "assets/9-2-ex15.png"
+      },
+      {
+        "number": 16,
+        "prompt": "不使用技术，确定原图中有理函数的方程。",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "1",
+            "body": "原图的竖直渐近线为 $x=-2,3$，横截距为 $-6,2$；最简单的相符模型取 $y=k\\frac{(x+6)(x-2)}{(x+2)(x-3)}$。"
+          },
+          {
+            "title": "2",
+            "body": "从格点读出纵截距 $(0,-1)$。代入得 $-1=k(-12)/(-6)=2k$，所以 $k=-1/2$。所得远端渐近线为 $y=-1/2$，与原图相符；不能把接近横轴误判为 $y=0$。"
+          }
+        ],
+        "answer": "$y=-\\frac{(x+6)(x-2)}{2(x+2)(x-3)}$，$x\\ne-2,3$，是最简单的相符模型。",
+        "printedPage": 454,
+        "pdfPage": 463,
+        "en": {
+          "prompt": "Determine an equation of the rational function shown, without using technology.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The graph shows vertical asymptotes $x=-2,3$ and zeros $-6,2$. Use the simplest matching model $y=k\\frac{(x+6)(x-2)}{(x+2)(x-3)}$."
+            },
+            {
+              "title": "2",
+              "body": "The grid gives y-intercept $(0,-1)$. Substitution gives $-1=k(-12)/(-6)=2k$, so $k=-1/2$. The resulting horizontal asymptote is $y=-1/2$, consistent with the diagram; proximity to the x-axis does not imply $y=0$."
+            }
+          ],
+          "answer": "$y=-\\frac{(x+6)(x-2)}{2(x+2)(x-3)}$, $x\\ne-2,3$, is a simplest matching model."
+        },
+        "sourceImage": "assets/9-2-source-ex16.png"
+      },
+      {
+        "number": 17,
+        "prompt": "凸透镜将物体光线会聚成像。像距 $I$ 与物距 $b$ 满足 $I=\\frac{fb}{b-f}$，$f$ 是由透镜曲率决定的固定焦距。物体比焦距更靠近透镜时，像看起来位于透镜后方，称为虚像。(a) 对 $f=4$ cm 绘出 $I$ 关于 $b$ 的图。(b) 当 $b$ 变化时像的位置怎样变化？(c) 禁止值处的图形有什么行为？与情境如何联系？",
+        "concept": "models",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$I=4b/(b-4)=4+16/(b-4)$，物距取 $b>0$ 且 $b\\ne4$ cm。竖直渐近线 $b=4$，水平渐近线 $I=4$。点 $(2,-4),(3,-12),(5,20),(8,8),(12,6)$ 均以 cm 计。"
+          },
+          {
+            "title": "(b)",
+            "body": "当 $b>4$，$I>4$，物体远离透镜时实像向焦点靠近，$I\\to4^+$；物体从外侧靠近焦点时 $I\\to+\\infty$。当 $0<b<4$，$I<0$，表示虚像；$b\\to4^-$ 时 $I\\to-\\infty$，$b\\to0^+$ 时 $I\\to0^-$。"
+          },
+          {
+            "title": "(c)",
+            "body": "$b=4$ 处未约去的分母零点造成竖直渐近线。物体位于焦点时出射光近于平行，模型没有有限像距，不能在屏上得到一个有限位置的会聚像。"
+          }
+        ],
+        "answer": "$I=4b/(b-4)$ cm；$b>0,b\\ne4$。焦点处无有限像距，$0<b<4$ 对应负像距的虚像。",
+        "printedPage": 455,
+        "pdfPage": 464,
+        "en": {
+          "prompt": "A convex lens focuses light rays from an object to form an image, as illustrated. Image distance $I$ and object distance $b$ satisfy $I=\\frac{fb}{b-f}$, where focal length $f$ is constant for the particular lens and depends on its curvature. An object closer than the focal length produces an image perceived behind the lens, called a virtual image. (a) Graph $I$ against $b$ for $f=4$ cm. (b) How does image location change with $b$? (c) What behaviour occurs at the non-permissible value and how is it connected to the situation?",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$I=4b/(b-4)=4+16/(b-4)$, with physical object distance $b>0$, $b\\ne4$ cm. Asymptotes are $b=4$ and $I=4$. Points $(2,-4),(3,-12),(5,20),(8,8),(12,6)$ use centimetres."
+            },
+            {
+              "title": "(b)",
+              "body": "For $b>4$, $I>4$: moving the object farther away moves the real image toward the focal distance, $I\\to4^+$. Approaching the focal point from outside sends $I\\to+\\infty$. For $0<b<4$, $I<0$ indicates a virtual image; $I\\to-\\infty$ as $b\\to4^-$ and $I\\to0^-$ as $b\\to0^+$."
+            },
+            {
+              "title": "(c)",
+              "body": "The uncancelled denominator zero at $b=4$ gives a vertical asymptote. At the focal point outgoing rays are parallel in this model, so there is no finite image distance or finite screen location of convergence."
+            }
+          ],
+          "answer": "$I=4b/(b-4)$ cm for $b>0,b\\ne4$. There is no finite image distance at the focal point; $0<b<4$ gives negative image distance for a virtual image."
+        },
+        "subpartIds": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sourceImage": "assets/9-2-source-ex17.png",
+        "solutionImage": "assets/9-2-ex17.png"
+      },
+      {
+        "number": 18,
+        "prompt": "考虑 $f(x)=\\frac{x+a}{x+b}$，$g(x)=\\frac{x+a}{(x+b)(x+c)}$，$h(x)=\\frac{(x+a)(x+c)}{(x+b)(x+c)}$，其中 $a,b,c$ 是互不相同的实数。(a) 哪两个图形看起来最相似？解释。(b) 三个图形共有哪些特征？说明理由。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "$h$ 约分为 $(x+a)/(x+b)$，但还要排除 $x=-c$。故 $f,h$ 除一个点外重合；$h$ 有孔洞 $(-c,(a-c)/(b-c))$，而 $f$ 在该点有定义。两者均有水平渐近线 $y=1$。"
+          },
+          {
+            "title": "(b)",
+            "body": "三者在 $x=-b$ 的分子均不为零（参数互异），所以都有竖直渐近线 $x=-b$；三者都有有效横截距 $(-a,0)$。$g$ 另外在 $x=-c$ 有竖直渐近线，水平渐近线为 $y=0$；不存在对所有互异参数都通用的共同纵截距。"
+          }
+        ],
+        "answer": "(a) $f$ 与 $h$ 最相似；(b) 共有竖直渐近线 $x=-b$ 和横截距 $(-a,0)$。",
+        "printedPage": 455,
+        "pdfPage": 464,
+        "en": {
+          "prompt": "Consider $f(x)=\\frac{x+a}{x+b}$, $g(x)=\\frac{x+a}{(x+b)(x+c)}$, and $h(x)=\\frac{(x+a)(x+c)}{(x+b)(x+c)}$, where $a,b,c$ are distinct real numbers. (a) Which pair of graphs appears most similar? Explain. (b) What characteristics do all three graphs share? Give reasons.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "$h$ reduces to $(x+a)/(x+b)$ but must also exclude $x=-c$. Thus $f,h$ coincide except at one point: $h$ has hole $(-c,(a-c)/(b-c))$, where $f$ is defined. Both have horizontal asymptote $y=1$."
+            },
+            {
+              "title": "(b)",
+              "body": "At $x=-b$ all numerators are nonzero because the parameters are distinct, so all have vertical asymptote $x=-b$. All share the allowed x-intercept $(-a,0)$. In addition $g$ has a vertical asymptote at $x=-c$ and horizontal asymptote $y=0$. No common y-intercept is guaranteed for all distinct parameter choices."
+            }
+          ],
+          "answer": "(a) $f$ and $h$ are most similar; (b) all share vertical asymptote $x=-b$ and x-intercept $(-a,0)$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": 19,
+        "prompt": "若 $y=\\frac{x^2+bx+c}{4x^2+29x+c}$（$b,c$ 为实数）在 $(-8,11/35)$ 有孔洞，求所有横截距与竖直渐近线（若存在）。",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "1",
+            "body": "孔洞的原分母为零：$4(-8)^2+29(-8)+c=24+c=0$，所以 $c=-24$。分子也必须为零：$64-8b-24=0$，故 $b=5$。"
+          },
+          {
+            "title": "2",
+            "body": "$y=\\frac{(x+8)(x-3)}{(x+8)(4x-3)}=\\frac{x-3}{4x-3}$，原限制 $x\\ne-8,3/4$。在 $-8$ 的极限为 $(-11)/(-35)=11/35$，核对了所给孔洞。"
+          },
+          {
+            "title": "3",
+            "body": "分子在 $x=3$ 为零且分母为 $9\\ne0$，横截距为 $(3,0)$。在 $x=3/4$ 分母为零、分子非零，故为竖直渐近线。"
+          }
+        ],
+        "answer": "横截距 $(3,0)$；竖直渐近线 $x=3/4$（$b=5,c=-24$）。",
+        "printedPage": 455,
+        "pdfPage": 464,
+        "en": {
+          "prompt": "If $y=\\frac{x^2+bx+c}{4x^2+29x+c}$, with real $b,c$, has a point of discontinuity at $(-8,11/35)$, where are its x-intercepts and vertical asymptotes, if any?",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The original denominator must vanish at the hole: $4(-8)^2+29(-8)+c=24+c=0$, so $c=-24$. The numerator must also vanish: $64-8b-24=0$, so $b=5$."
+            },
+            {
+              "title": "2",
+              "body": "$y=\\frac{(x+8)(x-3)}{(x+8)(4x-3)}=\\frac{x-3}{4x-3}$, retaining $x\\ne-8,3/4$. At $-8$, the reduced value is $(-11)/(-35)=11/35$, confirming the hole."
+            },
+            {
+              "title": "3",
+              "body": "The numerator is zero at $x=3$ and the denominator there is $9\\ne0$, giving x-intercept $(3,0)$. At $x=3/4$ the reduced denominator is zero and numerator nonzero, giving a vertical asymptote."
+            }
+          ],
+          "answer": "X-intercept $(3,0)$; vertical asymptote $x=3/4$ ($b=5,c=-24$)."
+        }
+      },
+      {
+        "number": 20,
+        "prompt": "已知 $f(x)=\\frac{2x^2-4x}{x^2+3x-28}$，将 $y=\\frac14 f[-(x-3)]$ 写成最简式。",
+        "concept": "restrictions",
+        "steps": [
+          {
+            "title": "1",
+            "body": "原函数 $f(u)=\\frac{2u(u-2)}{(u+7)(u-4)}$，$u\\ne-7,4$。令 $u=-(x-3)=3-x$，故新限制为 $x\\ne10,-1$。"
+          },
+          {
+            "title": "2",
+            "body": "$y=\\frac{(3-x)(1-x)}{2(10-x)(-1-x)}=\\frac{(x-3)(x-1)}{2(x-10)(x+1)}$。分子分母各有两个负号相消，没有可约的因子。"
+          }
+        ],
+        "answer": "$y=\\frac{(x-3)(x-1)}{2(x-10)(x+1)}$，$x\\ne-1,10$。",
+        "printedPage": 455,
+        "pdfPage": 464,
+        "en": {
+          "prompt": "Given $f(x)=\\frac{2x^2-4x}{x^2+3x-28}$, find $y=\\frac14 f[-(x-3)]$ in simplest form.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "The original function is $f(u)=\\frac{2u(u-2)}{(u+7)(u-4)}$, $u\\ne-7,4$. Put $u=-(x-3)=3-x$; the transformed exclusions are $x\\ne10,-1$."
+            },
+            {
+              "title": "2",
+              "body": "$y=\\frac{(3-x)(1-x)}{2(10-x)(-1-x)}=\\frac{(x-3)(x-1)}{2(x-10)(x+1)}$. The signs cancel in pairs and no factors cancel."
+            }
+          ],
+          "answer": "$y=\\frac{(x-3)(x-1)}{2(x-10)(x+1)}$, $x\\ne-1,10$."
+        }
+      },
+      {
+        "number": 21,
+        "prompt": "写出原图 (a)、(b) 各有理函数的方程，答案保留因式形式。",
+        "concept": "construct",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "直线纵截距为 $1$；孔洞为 $(-4,-2)$、$(2,5/2)$。斜率为 $[(5/2)-(-2)]/[2-(-4)]=3/4$，所以直线为 $y=(3x+4)/4$。将 $(x+4)(x-2)$ 同乘到分子分母，得到两个孔洞。"
+          },
+          {
+            "title": "(b)",
+            "body": "抛物线顶点为 $(0,-4)$，对应 $y=x^2-4=(x-2)(x+2)$；空心点为 $(-2,0)$ 和 $(1,-3)$。将 $(x+2)(x-1)$ 同乘到分子分母。只有 $(2,0)$ 是有效横截距。"
+          }
+        ],
+        "answer": "(a) $y=\\frac{(3x+4)(x+4)(x-2)}{4(x+4)(x-2)}$，$x\\ne-4,2$；(b) $y=\\frac{(x-2)(x+2)^2(x-1)}{(x+2)(x-1)}$，$x\\ne-2,1$。",
+        "printedPage": 455,
+        "pdfPage": 464,
+        "en": {
+          "prompt": "Write an equation of the rational function in each given graph (a), (b). Leave answers in factored form.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The line has y-intercept $1$ and holes $(-4,-2),(2,5/2)$. Its slope is $[(5/2)-(-2)]/[2-(-4)]=3/4$, so it is $y=(3x+4)/4$. Add common factors $(x+4)(x-2)$ for the holes."
+            },
+            {
+              "title": "(b)",
+              "body": "The parabola has vertex $(0,-4)$, so use $y=x^2-4=(x-2)(x+2)$. The open points are $(-2,0)$ and $(1,-3)$. Add common factors $(x+2)(x-1)$. Only $(2,0)$ is an included x-intercept."
+            }
+          ],
+          "answer": "(a) $y=\\frac{(3x+4)(x+4)(x-2)}{4(x+4)(x-2)}$, $x\\ne-4,2$; (b) $y=\\frac{(x-2)(x+2)^2(x-1)}{(x+2)(x-1)}$, $x\\ne-2,1$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "sourceImage": "assets/9-2-source-ex21.png"
+      },
+      {
+        "number": 22,
+        "prompt": "函数 $f(x)=\\frac{x^2+4}{x^2-4}$ 与 $g(x)=\\frac{x^2-4}{x^2+4}$ 互为倒数，即 $f(x)=1/g(x)$，反之亦然。将两者画在同一坐标系，解释图形如何支持这一事实。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "1",
+            "body": "$f=1+8/(x^2-4)$，定义域排除 $\\pm2$，有竖直渐近线 $x=\\pm2$，无零点，$f(0)=-1$。$g=1-8/(x^2+4)$，定义域为全部实数，无竖直渐近线，零点为 $\\pm2$，$g(0)=-1$。两者均为偶函数、水平渐近线为 $y=1$。"
+          },
+          {
+            "title": "2",
+            "body": "在共同允许域 $x\\ne\\pm2$，相乘恰为 $1$，故同号且纵坐标互为倒数：$|f|>1$ 时 $|g|<1$，$f=-1$ 时 $g=-1$。当 $f$ 在 $\\pm2$ 附近无界，$g$ 趋于零；两者远端都趋于 $1$。"
+          },
+          {
+            "title": "3",
+            "body": "严格地说，“反之亦然”须附定义域条件：$1/f$ 作为原式在 $x=\\pm2$ 无定义，而 $g$ 本身在这些点有值 $0$。图中这些零点是 $g$ 的延拓，不能删除来迁就文字。"
+          }
+        ],
+        "answer": "在 $x\\ne\\pm2$ 时 $f(x)g(x)=1$；$g(\\pm2)=0$ 是额外定义的点。",
+        "printedPage": 456,
+        "pdfPage": 465,
+        "en": {
+          "prompt": "The functions $f(x)=\\frac{x^2+4}{x^2-4}$ and $g(x)=\\frac{x^2-4}{x^2+4}$ are reciprocals: $f(x)=1/g(x)$ and vice versa. Graph them on the same axes and explain how the shapes support this fact.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "$f=1+8/(x^2-4)$ excludes $\\pm2$, has vertical asymptotes there, no zeros, and $f(0)=-1$. In contrast $g=1-8/(x^2+4)$ is defined for all reals, has no vertical asymptotes, zeros $\\pm2$, and $g(0)=-1$. Both are even and have horizontal asymptote $y=1$."
+            },
+            {
+              "title": "2",
+              "body": "On the common permitted domain $x\\ne\\pm2$, the product is $1$, so the outputs have the same sign and reciprocal magnitudes: $|f|>1$ gives $|g|<1$, and $f=-1$ gives $g=-1$. Where $f$ becomes unbounded near $\\pm2$, $g$ tends to zero; both tend to $1$ at infinity."
+            },
+            {
+              "title": "3",
+              "body": "Strictly, “vice versa” needs domain qualification: the expression $1/f$ is undefined at $x=\\pm2$, while $g$ itself equals $0$ there. Those zeros extend the reciprocal expression and must remain on the graph."
+            }
+          ],
+          "answer": "For $x\\ne\\pm2$, $f(x)g(x)=1$; $g(\\pm2)=0$ are additional defined points."
+        },
+        "solutionImage": "assets/9-2-ex22.png"
+      },
+      {
+        "number": 23,
+        "prompt": "预测各函数的所有渐近线和孔洞，再用技术核实：(a) $y=\\frac{x+2}{x^2-4}+\\frac5{x+2}$；(b) $y=\\frac{2x^3-7x^2-15x}{x^2-x-20}$。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "原限制为 $x\\ne\\pm2$。通分：$y=\\frac{x+2+5(x-2)}{(x-2)(x+2)}=\\frac{6x-8}{(x-2)(x+2)}$。分子在 $2,-2$ 分别为 $4,-20$，均非零，故竖直渐近线为 $x=\\pm2$；水平渐近线 $y=0$，无孔洞。第一项本来在 $-2$ 有可去间断，但第二项在那里无界，整个和仍是渐近线。"
+          },
+          {
+            "title": "(b)",
+            "body": "分解得 $y=\\frac{x(2x+3)(x-5)}{(x-5)(x+4)}=\\frac{x(2x+3)}{x+4}$，$x\\ne5,-4$。因此孔洞为 $(5,65/9)$；竖直渐近线为 $x=-4$。除法得 $y=2x-5+20/(x+4)$，斜渐近线 $y=2x-5$，无水平渐近线。"
+          }
+        ],
+        "answer": "(a) 竖直 $x=\\pm2$、水平 $y=0$、无孔洞；(b) 竖直 $x=-4$、斜渐近线 $y=2x-5$、孔洞 $(5,65/9)$。",
+        "printedPage": 456,
+        "pdfPage": 465,
+        "en": {
+          "prompt": "Predict all asymptotes and points of discontinuity for each function, then use technology to check: (a) $y=\\frac{x+2}{x^2-4}+\\frac5{x+2}$; (b) $y=\\frac{2x^3-7x^2-15x}{x^2-x-20}$.",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "The original restrictions are $x\\ne\\pm2$. Combine to obtain $y=\\frac{x+2+5(x-2)}{(x-2)(x+2)}=\\frac{6x-8}{(x-2)(x+2)}$. At $2,-2$ the numerator is $4,-20$, both nonzero, so both are vertical asymptotes. The horizontal asymptote is $y=0$, with no holes. Although the first term has a removable point at $-2$, the second term is unbounded there, so the sum has an asymptote."
+            },
+            {
+              "title": "(b)",
+              "body": "Factor: $y=\\frac{x(2x+3)(x-5)}{(x-5)(x+4)}=\\frac{x(2x+3)}{x+4}$ with $x\\ne5,-4$. Thus there is a hole at $(5,65/9)$ and vertical asymptote $x=-4$. Division gives $y=2x-5+20/(x+4)$, so the slant asymptote is $y=2x-5$ and there is no horizontal asymptote."
+            }
+          ],
+          "answer": "(a) Vertical $x=\\pm2$, horizontal $y=0$, no holes; (b) vertical $x=-4$, slant $y=2x-5$, hole $(5,65/9)$."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ],
+        "solutionImage": "assets/9-2-ex23.png"
+      },
+      {
+        "number": "C1",
+        "prompt": "Jeremy 缺席了开始学习有理函数的一天。朋友 Rohan 告诉他有理函数是有渐近线和孔洞的函数，但 Jeremy 不理解。(a) Jeremy 将此理解为“所有有理函数都有渐近线和孔洞”。这是真的吗？用几个例子解释。(b) 怎样补充 Rohan 的解释，使 Jeremy 更清楚有理函数是什么？",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "(a)",
+            "body": "不正确。$1/x$ 有竖直渐近线但无孔洞；$(x^2-1)/(x-1)$ 有孔洞 $(1,2)$，无竖直渐近线；$1/(x^2+1)$ 无竖直渐近线或孔洞（但有水平渐近线 $y=0$）；多项式 $x^2=x^2/1$ 没有孔洞，也没有直线渐近线。"
+          },
+          {
+            "title": "(b)",
+            "body": "定义应为 $P(x)/Q(x)$，其中 $P,Q$ 为多项式，$Q$ 不是零多项式，定义域排除 $Q(x)=0$。完全可去的分母零点形成孔洞；约分后仍为零的分母形成竖直渐近线。远端行为再由次数和系数决定。"
+          }
+        ],
+        "answer": "该断言为假；有理函数由“多项式之商及其原定义域”定义，而不是由必有某些图形特征定义。",
+        "printedPage": 456,
+        "pdfPage": 465,
+        "en": {
+          "prompt": "Jeremy missed the first class on rational functions. Rohan says rational functions are functions with asymptotes and points of discontinuity, but Jeremy is unsure what this means. (a) Jeremy takes this to mean all rational functions have asymptotes and holes. Is that true? Explain using several examples. (b) How would you elaborate on Rohan’s explanation to make rational functions clearer?",
+          "steps": [
+            {
+              "title": "(a)",
+              "body": "No. The function $1/x$ has a vertical asymptote but no holes. The function $(x^2-1)/(x-1)$ has hole $(1,2)$ and no vertical asymptote. The function $1/(x^2+1)$ has neither finite feature, though it has horizontal asymptote $y=0$. The polynomial $x^2=x^2/1$ has no holes or straight-line asymptotes."
+            },
+            {
+              "title": "(b)",
+              "body": "Define a rational function as $P(x)/Q(x)$, where $P,Q$ are polynomials and $Q$ is not the zero polynomial, with all zeros of $Q$ excluded. Removable denominator zeros give holes; zeros remaining in the reduced denominator give vertical asymptotes. Degrees and coefficients determine end behaviour."
+            }
+          ],
+          "answer": "The claim is false. A rational function is defined by a quotient of polynomials and its original domain, not by mandatory graph features."
+        },
+        "subpartIds": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "number": "C2",
+        "prompt": "判断“所有多项式函数都是有理函数”是否正确，并解释思考过程。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "1",
+            "body": "任一多项式 $P(x)$ 都可写成 $P(x)/1$。分子、分母均为多项式，分母常数 $1$ 永不为零，故其定义域与原多项式一致，为全部实数。"
+          }
+        ],
+        "answer": "正确；$P(x)=P(x)/1$ 满足有理函数定义。",
+        "printedPage": 456,
+        "pdfPage": 465,
+        "en": {
+          "prompt": "Is the statement “All polynomial functions are rational functions” true? Explain your thinking.",
+          "steps": [
+            {
+              "title": "1",
+              "body": "Any polynomial $P(x)$ can be written as $P(x)/1$. Both numerator and denominator are polynomials and denominator $1$ never vanishes, preserving the polynomial’s domain of all real numbers."
+            }
+          ],
+          "answer": "True; $P(x)=P(x)/1$ satisfies the definition of a rational function."
+        }
+      },
+      {
+        "number": "C3",
+        "prompt": "MINI LAB：与伙伴为有理函数建立自己的分类系统。Step 1：使用技术，尝试不同类型方程，作出尽可能多种一般形状；能作出多少类？Step 2：按图形特征、形态和对称性分类。Step 3：为每类取描述性名称。Step 4：为每类说明一个函数，包括方程及图形。",
+        "concept": "features",
+        "steps": [
+          {
+            "title": "Step 1",
+            "body": "这是开放活动，类别数量没有唯一答案。一个可复现示例选五式：$1/x$、$1/(x^2-1)$、$1/(x^2+1)$、$(x^2-1)/(x-1)$、$x^2$。解析图实际按这五式绘制，不代表伙伴已经完成活动。"
+          },
+          {
+            "title": "Step 2",
+            "body": "可先按有限不连续点分类：一个极点、两个极点、无有限极点或孔洞、可去孔洞；再把多项式作为无分母零点的子类。还可按奇偶对称或远端行为再细分。分类原则可以不同，但须一致说明重叠情况。"
+          },
+          {
+            "title": "Step 3",
+            "body": "本示例名称依次为“单极点双曲线”“双极点对称图”“光滑钟形”“带孔直线”“多项式抛物线”。这些是自定名称，不是教材要求的唯一标准。"
+          },
+          {
+            "title": "Step 4",
+            "body": "$1/x$ 为奇函数，渐近线 $x=0,y=0$；$1/(x^2-1)$ 为偶函数，竖直渐近线 $x=\\pm1$；$1/(x^2+1)$ 为偶函数，定义域全体实数；$(x^2-1)/(x-1)=x+1$，$x\\ne1$，孔洞 $(1,2)$；$x^2$ 为偶函数，顶点 $(0,0)$，无孔洞或竖直渐近线。"
+          }
+        ],
+        "answer": "示例给出五类、五个方程和五幅图；伙伴可用清楚、一致的不同系统。类别数没有唯一正确值。",
+        "printedPage": 456,
+        "pdfPage": 465,
+        "en": {
+          "prompt": "MINI LAB: Work with a partner to create a classification system for rational functions. Step 1: Use technology and varied equation types to make as many different general graph shapes as possible. How many can you create? Step 2: Group them using features, aspects, and symmetries. Step 3: Give each category a descriptive name. Step 4: Describe one example in each category, including equation and graph.",
+          "steps": [
+            {
+              "title": "Step 1",
+              "body": "This is open-ended; no unique number of classes is required. One reproducible sample uses five equations: $1/x$, $1/(x^2-1)$, $1/(x^2+1)$, $(x^2-1)/(x-1)$, and $x^2$. The attached plots are made from these equations and are examples, not a claim of completed partner work."
+            },
+            {
+              "title": "Step 2",
+              "body": "One scheme starts with finite singularities: one pole, two poles, no poles or holes, and removable holes; polynomial graphs form a further subclass with no denominator zeros. Odd/even symmetry or end behaviour can refine it. Other schemes are valid if their overlap rules are stated consistently."
+            },
+            {
+              "title": "Step 3",
+              "body": "Sample descriptive names are “one-pole hyperbola,” “two-pole symmetric graph,” “smooth bell,” “line with a hole,” and “polynomial parabola.” These are chosen labels, not a unique textbook standard."
+            },
+            {
+              "title": "Step 4",
+              "body": "$1/x$ is odd with asymptotes $x=0,y=0$. The even function $1/(x^2-1)$ has vertical asymptotes $x=\\pm1$. The even function $1/(x^2+1)$ is defined for all reals. The expression $(x^2-1)/(x-1)=x+1$, $x\\ne1$, has hole $(1,2)$. Finally $x^2$ is even, has vertex $(0,0)$, and has no holes or vertical asymptotes."
+            }
+          ],
+          "answer": "The sample supplies five classes, equations, and plots. Partners may use a different clear and consistent scheme; there is no unique correct class count."
+        },
+        "subpartIds": [
+          "step1",
+          "step2",
+          "step3",
+          "step4"
+        ],
+        "solutionImage": "assets/9-2-C3.png"
+      }
+    ]
+  },
+  "coverage": {
+    "expectedExamples": [
+      "example-1",
+      "example-2",
+      "example-3"
+    ],
+    "expectedPractice": [
+      "investigate-1",
+      "investigate-2",
+      "reflect-3",
+      "margin-example-1-substitution",
+      "margin-example-1-line",
+      "your-turn-1",
+      "margin-example-2",
+      "your-turn-2",
+      "margin-example-3-factors",
+      "margin-example-3-b",
+      "margin-example-3-c",
+      "your-turn-3",
+      "project-corner"
+    ],
+    "expectedExercises": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "expectedSubparts": {
+      "investigate-1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "investigate-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "reflect-3": [
+        "a",
+        "b"
+      ],
+      "example-2": [
+        "a",
+        "b"
+      ],
+      "example-3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "your-turn-3": [
+        "k",
+        "l",
+        "m"
+      ],
+      "project-corner": [
+        "topicscript",
+        "video",
+        "slides"
+      ],
+      "exercise-1": [
+        "a",
+        "b"
+      ],
+      "exercise-2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-3": [
+        "a",
+        "b"
+      ],
+      "exercise-4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-6": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-7": [
+        "a",
+        "b"
+      ],
+      "exercise-8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-9": [
+        "a",
+        "b"
+      ],
+      "exercise-11": [
+        "a",
+        "b",
+        "ci",
+        "cii"
+      ],
+      "exercise-12": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "exercise-13": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-14": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-15": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-17": [
+        "a",
+        "b",
+        "c"
+      ],
+      "exercise-18": [
+        "a",
+        "b"
+      ],
+      "exercise-21": [
+        "a",
+        "b"
+      ],
+      "exercise-23": [
+        "a",
+        "b"
+      ],
+      "exercise-C1": [
+        "a",
+        "b"
+      ],
+      "exercise-C3": [
+        "step1",
+        "step2",
+        "step3",
+        "step4"
+      ]
+    }
+  },
+  "audit": {
+    "sourceReviewed": true,
+    "solutionsReviewed": true,
+    "note": "Original source and full solutions previously independently reviewed; cancellation concept qualification independently re-reviewed in audit/concept-cancellation-revision-independent.json. All question records unchanged."
+  }
+}

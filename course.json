@@ -669,6 +669,309 @@
         "exercises": 17
       },
       "kind": "practice-test"
+    },
+    {
+      "slug": "9-overview",
+      "section": "9",
+      "title": "有理函数：本章导学",
+      "en": {
+        "title": "Rational Functions: Chapter Overview",
+        "chapter": "Chapter9 · Rational Functions"
+      },
+      "chapter": "第9章 · 有理函数",
+      "counts": {
+        "concepts": 2,
+        "examples": 0,
+        "practice": 5,
+        "exercises": 0
+      },
+      "kind": "overview"
+    },
+    {
+      "slug": "9-1",
+      "section": "9.1",
+      "title": "用变换探究有理函数",
+      "en": {
+        "title": "Exploring Rational Functions Using Transformations",
+        "chapter": "Chapter9 · Rational Functions"
+      },
+      "chapter": "第9章 · 有理函数",
+      "counts": {
+        "concepts": 7,
+        "examples": 5,
+        "practice": 20,
+        "exercises": 25
+      }
+    },
+    {
+      "slug": "9-2",
+      "section": "9.2",
+      "title": "分析有理函数",
+      "en": {
+        "title": "Analysing Rational Functions",
+        "chapter": "Chapter9 · Rational Functions"
+      },
+      "chapter": "第9章 · 有理函数",
+      "counts": {
+        "concepts": 5,
+        "examples": 3,
+        "practice": 13,
+        "exercises": 26
+      }
+    },
+    {
+      "slug": "9-3",
+      "section": "9.3",
+      "title": "联系图像与有理方程",
+      "en": {
+        "title": "Connecting Graphs and Rational Equations",
+        "chapter": "Chapter9 · Rational Functions"
+      },
+      "chapter": "第9章 · 有理函数",
+      "counts": {
+        "concepts": 5,
+        "examples": 4,
+        "practice": 18,
+        "exercises": 20
+      }
+    },
+    {
+      "slug": "9-review",
+      "section": "9",
+      "title": "第 9 章复习",
+      "en": {
+        "title": "Chapter 9 Review",
+        "chapter": "Chapter9 · Rational Functions"
+      },
+      "chapter": "第9章 · 有理函数",
+      "counts": {
+        "concepts": 4,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 11
+      },
+      "kind": "review"
+    },
+    {
+      "slug": "9-test",
+      "section": "9",
+      "title": "第 9 章练习测试",
+      "en": {
+        "title": "Chapter 9 Practice Test",
+        "chapter": "Chapter9 · Rational Functions"
+      },
+      "chapter": "第9章 · 有理函数",
+      "counts": {
+        "concepts": 4,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 16
+      },
+      "kind": "practice-test"
+    },
+    {
+      "slug": "10-overview",
+      "section": "10",
+      "kind": "overview",
+      "title": "函数运算：章节导读",
+      "en": {
+        "title": "Function Operations: Chapter Overview",
+        "chapter": "Chapter 10 Function Operations"
+      },
+      "chapter": "第 10 章 函数运算",
+      "counts": {
+        "concepts": 3,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 0
+      }
+    },
+    {
+      "slug": "10-1",
+      "section": "10.1",
+      "kind": "section",
+      "title": "函数的和与差",
+      "en": {
+        "title": "Sums and Differences of Functions",
+        "chapter": "Chapter 10 Function Operations"
+      },
+      "chapter": "第 10 章 函数运算",
+      "counts": {
+        "concepts": 5,
+        "examples": 4,
+        "practice": 21,
+        "exercises": 25
+      }
+    },
+    {
+      "slug": "10-2",
+      "section": "10.2",
+      "kind": "section",
+      "title": "函数的积与商",
+      "en": {
+        "title": "Products and Quotients of Functions",
+        "chapter": "Chapter 10 Function Operations"
+      },
+      "chapter": "第 10 章 函数运算",
+      "counts": {
+        "concepts": 5,
+        "examples": 3,
+        "practice": 16,
+        "exercises": 20
+      }
+    },
+    {
+      "slug": "10-3",
+      "section": "10.3",
+      "kind": "section",
+      "title": "复合函数",
+      "en": {
+        "title": "Composite Functions",
+        "chapter": "Chapter 10 Function Operations"
+      },
+      "chapter": "第 10 章 函数运算",
+      "counts": {
+        "concepts": 7,
+        "examples": 5,
+        "practice": 15,
+        "exercises": 27
+      }
+    },
+    {
+      "slug": "10-review",
+      "section": "10 Review",
+      "kind": "review",
+      "title": "第 10 章复习",
+      "en": {
+        "title": "Chapter 10 Review",
+        "chapter": "Chapter 10 Function Operations"
+      },
+      "chapter": "第 10 章 函数运算",
+      "counts": {
+        "concepts": 4,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 15
+      }
+    },
+    {
+      "slug": "10-test",
+      "section": "10 Test",
+      "kind": "practice-test",
+      "title": "第 10 章练习测试",
+      "en": {
+        "title": "Chapter 10 Practice Test",
+        "chapter": "Chapter 10 Function Operations"
+      },
+      "chapter": "第 10 章 函数运算",
+      "counts": {
+        "concepts": 4,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 14
+      }
+    },
+    {
+      "slug": "11-overview",
+      "section": "11",
+      "kind": "overview",
+      "title": "排列、组合与二项式定理",
+      "en": {
+        "title": "Permutations, Combinations, and the Binomial Theorem",
+        "chapter": "Permutations, Combinations, and the Binomial Theorem"
+      },
+      "chapter": "排列、组合与二项式定理",
+      "counts": {
+        "concepts": 3,
+        "examples": 0,
+        "practice": 2,
+        "exercises": 0
+      }
+    },
+    {
+      "slug": "11-1",
+      "section": "11.1",
+      "kind": "section",
+      "title": "排列",
+      "en": {
+        "title": "Permutations",
+        "chapter": "Permutations, Combinations, and the Binomial Theorem"
+      },
+      "chapter": "排列、组合与二项式定理",
+      "counts": {
+        "concepts": 6,
+        "examples": 5,
+        "practice": 21,
+        "exercises": 37
+      }
+    },
+    {
+      "slug": "11-2",
+      "section": "11.2",
+      "kind": "section",
+      "title": "组合",
+      "en": {
+        "title": "Combinations",
+        "chapter": "Permutations, Combinations, and the Binomial Theorem"
+      },
+      "chapter": "排列、组合与二项式定理",
+      "counts": {
+        "concepts": 5,
+        "examples": 3,
+        "practice": 13,
+        "exercises": 28
+      }
+    },
+    {
+      "slug": "11-3",
+      "section": "11.3",
+      "kind": "section",
+      "title": "二项式定理",
+      "en": {
+        "title": "Binomial Theorem",
+        "chapter": "Permutations, Combinations, and the Binomial Theorem"
+      },
+      "chapter": "排列、组合与二项式定理",
+      "counts": {
+        "concepts": 4,
+        "examples": 2,
+        "practice": 18,
+        "exercises": 29
+      }
+    },
+    {
+      "slug": "11-review",
+      "section": "11 Review",
+      "kind": "review",
+      "title": "第 11 章复习",
+      "en": {
+        "title": "Chapter 11 Review",
+        "chapter": "Permutations, Combinations, and the Binomial Theorem"
+      },
+      "chapter": "排列、组合与二项式定理",
+      "counts": {
+        "concepts": 6,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 19
+      }
+    },
+    {
+      "slug": "11-test",
+      "section": "11 Practice Test",
+      "kind": "practice-test",
+      "title": "第 11 章练习测试",
+      "en": {
+        "title": "Chapter 11 Practice Test",
+        "chapter": "Permutations, Combinations, and the Binomial Theorem"
+      },
+      "chapter": "排列、组合与二项式定理",
+      "counts": {
+        "concepts": 6,
+        "examples": 0,
+        "practice": 0,
+        "exercises": 16
+      }
     }
   ]
 }
